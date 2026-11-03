@@ -559,6 +559,18 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
   for(const item of greekEvents)map.set(item.id,item);
+  // Venue-owned reference URLs are authoritative for the few exceptional
+  // listings missing from the public rolling indexes. Only future dates.
+  const verified=await read('data/verified-events.json',{events:[]});
+  let officialVerified=0;
+  for(const e of verified.events||[]){
+    if(!e||e.source!=='official'||e.country!=='GR'||!validDate(e.date)||
+       e.date<today||e.date>festivalEnd||!e.venue||!e.city||
+       !e.artist||!safeUrl(e.url))continue;
+    map.set(e.id,e);
+    officialVerified++;
+  }
+  console.log('Venue-confirmed Greek fallback records: '+officialVerified);
   // Prefer existing More.com listings with full artwork when both sources
   // have independently indexed the same headliner on the same date.
   const already=list=>list.some(e=>e.country==='GR');
