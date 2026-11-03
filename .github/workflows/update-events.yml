@@ -1,5 +1,11 @@
 name: Update event catalog
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-events.yml'
+      - 'scripts/fetch-events.mjs'
+      - 'data/artist-watchlist.json'
   schedule:
     - cron: '19 5 * * *'
   workflow_dispatch:
