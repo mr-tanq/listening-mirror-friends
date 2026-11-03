@@ -120,8 +120,8 @@ test('Similar uses shared specific metalcore styles, not just same city',()=>{
     country:'NL',city:'Utrecht',venue:'Concert hall'};
   const unrelated={id:'nl-2',artist:'Taylor Swift',artists:['Taylor Swift'],date:'2027-07-18',
     country:'NL',city:'Utrecht',venue:'Concert hall'};
-  const related= (await import('../js/model.js')).recommendEvent(northlane,user,tags);
+  const related= recommendEvent(northlane,user,tags);
   assert.equal(related?.kind,'similar');
   assert.match(related?.reason||'',/shared .*Metalcore|shared .*Djent/i);
-  assert.equal((await import('../js/model.js')).recommendEvent(unrelated,user,tags),null);
+  assert.equal(recommendEvent(unrelated,user,tags),null);
 });
