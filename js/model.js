@@ -6,7 +6,7 @@ export const dateToday=()=>{const d=new Date();const y=d.getFullYear(),m=String(
 // are equivalent when sources localize location names differently.
 export function cityKey(value){
   const key=norm(value);
-  if(['athens','athina','athinai','αθηνα','αθηνας','αθηναι'].includes(key))return 'athens';
+  if(['athens','athina','athina','athinai','athena','αθηνα','αθηνας','αθηναι','mets','gazi','γκαζι','κυψελη','kypseli','tavros','ταυρος','n kosmos','neos kosmos','νεος κοσμος','petralona','πετραλωνα','kallithea','καλλιθεα','moschato','μοσχατο'].includes(key))return 'athens';
   if(['thessaloniki','salonika','salonica','θεσσαλονικη','θεσσαλονικης'].includes(key))return 'thessaloniki';
   if(['piraeus','peiraias','πειραιας','πειραια'].includes(key))return 'piraeus';
   return key;
