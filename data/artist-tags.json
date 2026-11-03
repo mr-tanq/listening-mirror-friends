@@ -1,1 +1,716 @@
-{"artists":{}}
+{
+  "artists": {
+    "froukje": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:41:41.220Z"
+    },
+    "davina michelle": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:41:46.329Z"
+    },
+    "the dirty daddies": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:41:50.469Z"
+    },
+    "bankzitters": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:41:50.983Z"
+    },
+    "merol": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:41:51.469Z"
+    },
+    "gallowstreet": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:41:58.268Z"
+    },
+    "clean pete s kerstshow": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:42:00.871Z"
+    },
+    "naft": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:42:08.123Z"
+    },
+    "jack and the weatherman": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:08.720Z"
+    },
+    "classic hits": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:09.317Z"
+    },
+    "kinderen voor kinderen de grote show": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:42:11.247Z"
+    },
+    "temples": {
+      "genres": [
+        "Psychedelic"
+      ],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:42:14.603Z"
+    },
+    "flemming": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:15.199Z"
+    },
+    "van dik hout": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:15.750Z"
+    },
+    "bartofso": {
+      "genres": [
+        "Hip-Hop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:16.301Z"
+    },
+    "hiigo": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:16.810Z"
+    },
+    "gotu jim": {
+      "genres": [
+        "Hip-Hop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:17.293Z"
+    },
+    "j bernardt": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:17.822Z"
+    },
+    "stuurbaard bakkebaard": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:18.450Z"
+    },
+    "my baby": {
+      "genres": [
+        "Jazz",
+        "Folk",
+        "Alternative"
+      ],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T20:42:26.862Z"
+    },
+    "tramhaus": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:27.398Z"
+    },
+    "state power": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:27.981Z"
+    },
+    "the james brown experience": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:28.489Z"
+    },
+    "new cool collective": {
+      "genres": [
+        "Jazz"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:29.013Z"
+    },
+    "kovacs": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:29.571Z"
+    },
+    "henge": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:30.117Z"
+    },
+    "the obsessed": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:30.634Z"
+    },
+    "fink": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:31.188Z"
+    },
+    "hippotraktor": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:31.741Z"
+    },
+    "desinteresse": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:32.428Z"
+    },
+    "gruppo sportivo": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:33.043Z"
+    },
+    "sons": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:33.766Z"
+    },
+    "prins s en de geit": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:34.363Z"
+    },
+    "rijck": {
+      "genres": [
+        "Hip-Hop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:35.033Z"
+    },
+    "elmer": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:35.712Z"
+    },
+    "pitou": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:36.291Z"
+    },
+    "pro pain": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:36.851Z"
+    },
+    "lois lane 40 jaar live": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:37.394Z"
+    },
+    "daoud": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:37.999Z"
+    },
+    "sugar spine": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:38.545Z"
+    },
+    "shantel bucovina club soundsystem": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:39.075Z"
+    },
+    "maite hontele la novia": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:39.618Z"
+    },
+    "rianne": {
+      "genres": [
+        "Electronic"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:40.195Z"
+    },
+    "bente avondshow": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:40.832Z"
+    },
+    "muziekfeest van het jaar": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:41.344Z"
+    },
+    "nusantara beat": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:41.831Z"
+    },
+    "isabel usher": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:42.360Z"
+    },
+    "la pegatina": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:42.844Z"
+    },
+    "thijs boontjes": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:43.483Z"
+    },
+    "jett rebel": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:44.014Z"
+    },
+    "milolaathetlukken": {
+      "genres": [
+        "Hip-Hop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:44.559Z"
+    },
+    "zzz": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:45.165Z"
+    },
+    "the mary wallopers": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:45.702Z"
+    },
+    "ao": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:46.164Z"
+    },
+    "the howlers": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:46.649Z"
+    },
+    "wies": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:47.128Z"
+    },
+    "de rolf sanchez club": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:47.579Z"
+    },
+    "digitalism": {
+      "genres": [
+        "Electronic"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T20:42:48.040Z"
+    },
+    "frank boeijen": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:48.525Z"
+    },
+    "the bug": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.030Z"
+    },
+    "mutabaruka": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "kelsey lu": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "scientist": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "etran de l air": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "tash lc": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "kelman duran": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "fuji ta": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "introspekt": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "chinnamasta": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "azu tiwaline": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "ojoo": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "aba shanti i": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "warrior queen": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "angeles toledano": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "nakibembe embaire group": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "touching bass djs": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "seekersinternational": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "sa pa": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "the fatal flowers": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "willow avalon": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "distant": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "nems unleashed": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "swae lee same difference tour europe": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "swae lee": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "fischer z": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "maha": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "oi va voi": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "kiwi jr": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "adult dvd": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "macy gray the trouble with the truth tour": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "macy gray": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "takuya kuroda": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "dizzy dros": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "robert lester folsom": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "ares": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "big sleep": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "eek a mouse": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "jazz for lunch": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "leenalchi": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "noor": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "supersuckers": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "julia sabate": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "saint levant": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "yndling": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "haevn": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "l a sagne": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "subterranean street society": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "yves berendse": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "amistat": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "blanks": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "bløf": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "immersion": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "songwriter night": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "zimmer90": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "bleachers": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "electric six": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "kneecap the fenian tour": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "kneecap": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "david eugene edwards": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "maria arnal": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "bettie serveert": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "support": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "the sheepdogs": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "call it off": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "hilight tribe": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "max cooper": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "frederik daelemans": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "triggerfinger": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "zoeper": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    },
+    "iron jinn temple fang": {
+      "genres": [],
+      "source": "unclassified",
+      "checkedAt": "2026-11-03T20:42:49.494Z"
+    }
+  }
+}
