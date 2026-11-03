@@ -1,0 +1,44 @@
+name: Update event catalog
+on:
+  schedule:
+    - cron: '19 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-events
+  cancel-in-progress: false
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout Friends Edition
+        uses: actions/checkout@v4
+      - name: Check out existing public discovery adapters (read-only)
+        uses: actions/checkout@v4
+        with:
+          repository: mr-tanq/concerts
+          path: .source
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing scraper dependencies
+        run: npm ci --prefix .source --ignore-scripts
+      - name: Run tests
+        run: npm test
+      - name: Update verified Podiuminfo + Festivalinfo catalog
+        env:
+          CATALOG_DAYS: '100'
+          NEW_ARTISTS_PER_RUN: '35'
+          FESTIVAL_TIME_BUDGET_MS: '480000'
+          NEW_GENRE_LOOKUPS_PER_RUN: '16'
+        run: node scripts/fetch-events.mjs
+      - name: Commit public catalog and scraper cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json data/discovery-cache.json data/artist-tags.json
+          git diff --cached --quiet || (git commit -m "chore: refresh Podiuminfo and Festivalinfo catalog" && git push)

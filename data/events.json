@@ -1,0 +1,9 @@
+{
+  "updatedAt": null,
+  "source": "podiuminfo+festivalinfo",
+  "events": [],
+  "coverage": {
+    "countries": ["NL", "BE"],
+    "note": "The catalog updates daily from Podiuminfo and Festivalinfo. Run Update event catalog in GitHub Actions after publishing the repo. It is a growing rolling catalog, not exhaustive real-time search."
+  }
+}
