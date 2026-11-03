@@ -55,8 +55,22 @@ function scoreAll() {
   const current = dateToday();
   return catalog.events.filter(e=>e.date>=current).map(e=>({event:e, score:rankEvent(e,state.profile),reason:matchReason(e,state.profile)})).filter(r=>r.score>0).sort((a,b)=>b.score-a.score||a.event.date.localeCompare(b.event.date));
 }
+function discoverFeed() {
+  const matched=scoreAll().filter(x=>!state.saved[x.event.id]);
+  if(matched.length)return {items:matched,explore:false};
+  const country=state.profile?.country;
+  if(!country)return {items:[],explore:false};
+  const city=norm(state.profile?.city);
+  const events=catalog.events.filter(e=>e.date>=dateToday() && e.country===country && !state.saved[e.id])
+    .sort((a,b)=>{
+      const aLocal=city && norm(a.city)===city?1:0;
+      const bLocal=city && norm(b.city)===city?1:0;
+      return bLocal-aLocal || a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist);
+    }).slice(0,80);
+  return {items:events.map(event=>({event,score:0})),explore:events.length>0};
+}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:scoreAll().filter(x=>!state.saved[x.event.id]).length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
+function counts(){return {discover:discoverFeed().items.length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
 function setStatus(e,status){state.saved[e.id]={status,event:normalizeEvent(e)};persist();render();}
 function archiveEvent(e){
   const event=normalizeEvent(e);if(!event)return;
@@ -73,6 +87,7 @@ function card(raw,scoreInfo=null,mode='discover') {
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));
   if(scoreInfo?.reason)body.append(el('p','show-reason',scoreInfo.reason));
   else if(e.genre)body.append(el('p','show-reason',e.genre));
+  if(e.source==='podiuminfo-agenda')body.append(el('p','show-reason','Podiuminfo day listing · Confirm event details on source site'));
   const foot=el('div','show-bottom');
   if(mode==='discover'){
     foot.append(button('Going','button small primary',()=>setStatus(e,'going')),button('Deciding','button small',()=>setStatus(e,'deciding')));
@@ -90,7 +105,12 @@ function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
   let list=[];
-  if(collection==='discover')list=scoreAll().filter(x=>!state.saved[x.event.id]);
+  if(collection==='discover'){
+    const feed=discoverFeed();
+    list=feed.items;
+    if(feed.explore)root.append(el('p','help-note',
+      'No direct artist/genre matches are available yet. Explore upcoming shows in your country while genre tags are being added. These are agenda previews: confirm event details at the source.'));
+  }
   else list=savedItems(collection).map(x=>({event:x.event}));
   if(searchText.trim())list=list.filter(x=>norm([x.event.artist,x.event.venue,x.event.city,x.event.genre].join(' ')).includes(norm(searchText)));
   const message=!catalog.updatedAt && !catalog.events.length && collection==='discover' ? 'The event catalog has not been populated yet. You can still add your concerts manually. The public Podiuminfo/Festivalinfo catalog starts filling after its first GitHub Actions update.' : 'No matching shows yet. Try adjusting your music taste, or add a concert you already know about.';
@@ -104,13 +124,14 @@ function renderTonight(){
   const info=el('div','notice');
   const desc=el('span');
   if(catalog.error){info.classList.add('error');desc.textContent=`Concert feed unavailable: ${catalog.error}`;}
-  else if(catalog.updatedAt)desc.textContent=`Event feed · ${catalog.events.length.toLocaleString()} listings · updated ${new Date(catalog.updatedAt).toLocaleDateString('en-GB')} · Podiuminfo / Festivalinfo / verified venue listings · rolling coverage`;
+  else if(catalog.updatedAt)desc.textContent=
+    `Event feed · ${catalog.events.length.toLocaleString()} listings · ${(catalog.coverage?.agendaOnlyPodiuminfoEvents||0).toLocaleString()} Podiuminfo agenda previews (check source) · ${catalog.coverage?.festivalEvents||0} verified festival listings · updated ${new Date(catalog.updatedAt).toLocaleDateString('en-GB')}`;
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
   for(const [key,title] of [['discover','For you'],['deciding','Deciding'],['going','Going']]){
     const tab=button('','segment'+(collection===key?' active':''),()=>{collection=key;render();});
-    tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
+    tab.textContent=`${key==='discover'&&discoverFeed().explore?'Explore':title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
   const search=el('input','search');search.placeholder='Search artist, city, venue…';search.value=searchText;search.type='search';search.setAttribute('aria-label','Search concerts');search.addEventListener('input',e=>{searchText=e.target.value;renderTonightList();});
   filter.append(tabs,search);app.append(filter);
