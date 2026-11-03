@@ -78,10 +78,17 @@ function artistBillingRoot(artist){
     .replace(/\s+(?:with\s+special\s+guests?|with\s+guests)\b.*$/i,'')
     .replace(/\s*\((?:UK|USA|US|NL|GR)\)\s*$/i,'').trim();
 }
-function metadataGenres(artist,tags) {
+function metadataForArtist(artist,tags) {
   const key=norm(artist),root=norm(artistBillingRoot(artist));
-  const entry=tags?.artists?.[key]||tags?.artists?.[root]||tags?.[key]||tags?.[root];
+  return tags?.artists?.[key]||tags?.artists?.[root]||tags?.[key]||tags?.[root]||{};
+}
+function metadataGenres(artist,tags) {
+  const entry=metadataForArtist(artist,tags);
   return Array.isArray(entry?.genres)?entry.genres.filter(g=>GENRES.includes(g)):[];
+}
+function metadataStyles(artist,tags) {
+  const entry=metadataForArtist(artist,tags);
+  return Array.isArray(entry?.subgenres)?entry.subgenres.filter(x=>typeof x==='string').slice(0,12):[];
 }
 function matchingGenres(available,wanted) {
   const text=' '+norm(available.join(' '))+' ';
@@ -104,6 +111,7 @@ export function recommendEvent(event,profile,artistTags={}) {
   if(!event||!profile||!profile.country||event.country!==profile.country)return null;
   const favorites=Array.isArray(profile.artists)?profile.artists:[];
   const genresWanted=Array.isArray(profile.genres)?profile.genres.filter(g=>GENRES.includes(g)):[];
+  const stylesWanted=Array.isArray(profile.subgenres)?profile.subgenres.filter(x=>typeof x==='string').slice(0,40):[];
   const names=[event.artist,...(event.artists||[])].filter(x=>typeof x==='string').slice(0,250);
   const exact=artistMatch(event,favorites);
   const exactName=names.find(a=>favorites.some(f=>norm(f)===norm(a))) ||
@@ -112,15 +120,17 @@ export function recommendEvent(event,profile,artistTags={}) {
   const observed=[];
   for(const name of names) {
     const genres=metadataGenres(name,artistTags);
-    if(genres.length)observed.push({name,genres});
+    const styles=metadataStyles(name,artistTags);
+    if(genres.length||styles.length)observed.push({name,genres,styles});
   }
   const feedGenres=event.genreEvidence==='title-cue'?[]:String(event.genre||'').split(/\s+\/\s+/).filter(x=>GENRES.includes(x));
   const titleHints=event.genreEvidence==='title-cue'?titleGenreHints(event.artist):[];
-  const sources=observed.length?observed: [{name:event.artist,genres:feedGenres}];
+  const sources=observed.length?observed: [{name:event.artist,genres:feedGenres,styles:[]}];
   const matches=[];
   for(const item of sources) {
     const overlap=matchingGenres(item.genres,genresWanted);
-    if(overlap.length)matches.push({name:item.name,genres:overlap});
+    const deep=(item.styles||[]).filter(x=>stylesWanted.some(w=>norm(x)===norm(w)));
+    if(overlap.length||deep.length)matches.push({name:item.name,genres:overlap,styles:deep});
   }
   if(!matches.length&&titleHints.length) {
     const overlap=matchingGenres(titleHints,genresWanted);
@@ -138,18 +148,23 @@ export function recommendEvent(event,profile,artistTags={}) {
   // The user may select only favorite artists. Find comparable artists in
   // the confirmed shared music-tag space, without calling them similar if
   // all we know is the generic category Rock/Pop/Metal.
-  const seedTags=new Map();
-  for(const artist of favorites)for(const genre of metadataGenres(artist,artistTags)) {
-    if(!seedTags.has(genre))seedTags.set(genre,artist);
+  const seedTags=new Map(),seedStyles=new Map();
+  for(const artist of favorites) {
+    for(const genre of metadataGenres(artist,artistTags))
+      if(!seedTags.has(genre))seedTags.set(genre,artist);
+    for(const style of metadataStyles(artist,artistTags))
+      if(!seedStyles.has(norm(style)))seedStyles.set(norm(style),artist);
   }
   let closest=null;
   for(const item of observed) {
     const shared=item.genres.filter(g=>seedTags.has(g));
+    const sharedStyles=(item.styles||[]).filter(x=>seedStyles.has(norm(x)));
     const niche=shared.filter(g=>NICHE_SIMILAR.has(g));
     const broad=shared.filter(g=>COMMON_SIMILAR.has(g));
-    if(!niche.length && broad.length<2)continue;
-    const score=niche.length*22+broad.length*5;
-    if(!closest || score>closest.score)closest={score,artist:item.name,shared,seed:seedTags.get(niche[0]||broad[0])};
+    if(!sharedStyles.length && !niche.length && broad.length<2)continue;
+    const score=sharedStyles.length*40+niche.length*22+broad.length*5;
+    if(!closest || score>closest.score)closest={score,artist:item.name,
+      shared:[...sharedStyles,...shared],seed:sharedStyles.length?seedStyles.get(norm(sharedStyles[0])):seedTags.get(niche[0]||broad[0])};
   }
   if(closest) {
     return {kind:'similar',score:95+closest.score+cityBonus,
@@ -157,11 +172,13 @@ export function recommendEvent(event,profile,artistTags={}) {
       matchedArtist:closest.artist,genres:closest.shared};
   }
   if(matches.length) {
-    const best=matches.sort((a,b)=>b.genres.length-a.genres.length)[0];
-    return {kind:'genre',score:65+best.genres.length*8+cityBonus,
-      reason:(best.title?'Event title suggests ':'Matches your ')+best.genres.join(' / ')+
+    const best=matches.sort((a,b)=>(b.styles?.length||0)-(a.styles?.length||0)||b.genres.length-a.genres.length)[0];
+    const styles=best.styles||[];
+    const labels=[...styles,...best.genres].slice(0,3);
+    return {kind:'genre',score:65+best.genres.length*8+styles.length*30+cityBonus,
+      reason:(best.title?'Event title suggests ':'Matches your ')+labels.join(' / ')+
         (best.title?' · check source':best.name!==event.artist?' · '+best.name:''),
-      matchedArtist:best.name,genres:best.genres};
+      matchedArtist:best.name,genres:best.genres,styles};
   }
   return null;
 }
