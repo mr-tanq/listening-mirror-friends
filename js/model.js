@@ -99,7 +99,7 @@ export function recommendEvent(event,profile,artistTags={}) {
     const genres=metadataGenres(name,artistTags);
     if(genres.length)observed.push({name,genres});
   }
-  const feedGenres=String(event.genre||'').split(/\s+\/\s+/).filter(x=>GENRES.includes(x));
+  const feedGenres=event.genreEvidence==='title-cue'?[]:String(event.genre||'').split(/\s+\/\s+/).filter(x=>GENRES.includes(x));
   const titleHints=event.genreEvidence==='title-cue'?titleGenreHints(event.artist):[];
   const sources=observed.length?observed: [{name:event.artist,genres:feedGenres}];
   const matches=[];
