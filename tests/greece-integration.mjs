@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import {createRequire} from 'node:module';
 import {pathToFileURL} from 'node:url';
-import {parseGreekMusicCatalog} from '../scripts/fetch-events.mjs';
+import {parseGreekMusicCatalog,cleanGreekBilling} from '../scripts/fetch-events.mjs';
 
 const source=path.resolve('.source');
 const cheerio=createRequire(path.join(source,'package.json'))('cheerio');
@@ -39,4 +39,12 @@ test('Greek adapter excludes ambiguous multi-day concert listings',()=>{
       'content="2026-11-12T23:00:00+02:00"','content="2026-11-13T23:00:00+02:00"');
   const found=parseGreekMusicCatalog(html,{cheerio,moreEvents,today:'2026-11-03',endDate:'2027-04-01'});
   assert.equal(found.events.length,1);
+});
+
+test('source billed tours normalize names without inventing events',()=>{
+  assert.equal(cleanGreekBilling('KREATOR with special guests OVERKILL'),'KREATOR');
+  assert.equal(cleanGreekBilling('NILE - UNDERWORLD EUROPE TOUR 2026 @ FUZZ 29/11/2026'),'NILE');
+  assert.equal(cleanGreekBilling('Discharge (UK)'),'Discharge');
+  assert.equal(cleanGreekBilling('ACID ARAB live in Athens'),'ACID ARAB');
+  assert.equal(cleanGreekBilling('PARADISE LOST'),'PARADISE LOST');
 });
