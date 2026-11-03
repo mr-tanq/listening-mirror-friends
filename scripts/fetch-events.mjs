@@ -222,9 +222,10 @@ export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLo
     for(const name of names) {
       const key=norm(name);
       if(!key||key.length>100||key.length<2)continue;
-      if(!candidates.has(key))candidates.set(key,{name,count:0,firstDate:event.date});
+      if(!candidates.has(key))candidates.set(key,{name,count:0,greekCount:0,firstDate:event.date});
       const row=candidates.get(key);
       row.count++;
+      if(event.country==='GR')row.greekCount++;
       if(event.date<row.firstDate)row.firstDate=event.date;
     }
   }
@@ -235,7 +236,7 @@ export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLo
       const age=clock()-Date.parse(old.checkedAt||'');
       return !Number.isFinite(age)||age>(old.genres?.length?80:7)*86400000;
     })
-    .sort((a,b)=>b[1].count-a[1].count || a[1].firstDate.localeCompare(b[1].firstDate))
+    .sort((a,b)=>b[1].greekCount-a[1].greekCount || b[1].count-a[1].count || a[1].firstDate.localeCompare(b[1].firstDate))
     .slice(0,Math.max(0,Math.min(450,limit)));
   let attempts=0,identified=0;
   for(const [key,row] of queue) {
