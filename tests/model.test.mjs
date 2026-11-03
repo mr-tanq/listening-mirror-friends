@@ -109,3 +109,24 @@ test('iTunes artist genre metadata requires an exact unambiguous artist result',
     {wrapperType:'artist',artistName:'Mono',primaryGenreName:'Pop'}
   ],'MONO'),[]);
 });
+
+test('tour headlines inherit genre metadata from their canonical headliner',()=>{
+  const tags={artists:{
+    'chelsea wolfe':{genres:['Alternative']},
+    'riot v':{genres:['Metal']}
+  }};
+  const p={country:'GR',city:'Athens',artists:[],genres:['Metal','Alternative']};
+  const chelsea=normalizeEvent({id:'cw',artist:'Chelsea Wolfe: THE DARK World Tour',
+    date:'2026-12-19',country:'GR',city:'Athens'});
+  const riot=normalizeEvent({id:'riot',artist:'Riot V - 50th Anniversary Tour - Athens',
+    date:'2026-11-06',country:'GR',city:'Athens'});
+  assert.equal(recommendEvent(chelsea,p,tags).kind,'genre');
+  assert.equal(recommendEvent(riot,p,tags).kind,'genre');
+  assert.equal(recommendEvent(riot,{...p,genres:[],artists:['Riot V']},tags).kind,'favorite');
+});
+test('venue-confirmed Solstafir and seed genres match the Metal and Post-Rock user tastes',()=>{
+  const event=normalizeEvent({id:'solstafir',artist:'Sólstafir',date:'2026-11-14',
+    country:'GR',city:'Athens',genre:'Metal / Post-Rock / Psychedelic'});
+  const p={country:'GR',city:'Athens',genres:['Metal','Post-Rock'],artists:[]};
+  assert.equal(recommendEvent(event,p,{}).kind,'genre');
+});
