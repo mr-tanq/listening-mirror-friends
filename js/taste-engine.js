@@ -327,27 +327,66 @@ export function suggestedNiches(genres=[]){
   return [...scores].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
     .slice(0,44).map(([name,score])=>({name,score,artists:TASTE_BANDS.filter(b=>b.styles.includes(name)).slice(0,3).map(b=>b.name)}));
 }
-export function suggestTasteBands(profile={},events=[],max=36) {
-  const wantedGenres=new Set(profile.genres||[]);
+export function suggestTasteBands(profile={},events=[],max=36,metadata={artists:{}}) {
+  const wantedGenres=new Set((profile.genres||[]).filter(g=>GENRES.includes(g)));
   const wantedStyles=new Set(profile.subgenres||[]);
   const selected=new Set((profile.artists||[]).map(norm));
-  const future=(events||[]).filter(e=>e?.country===profile.country && e.date>=dateToday());
+  const current=dateToday();
+  const future=(events||[]).filter(e=>e?.country===profile.country&&e.date>=current);
   const upcoming=new Map();
-  for(const e of future)for(const a of [e.artist,...(e.artists||[])]) {
-    const key=norm(a); if(!upcoming.has(key))upcoming.set(key,{city:e.city,date:e.date});
+  const candidates=new Map(TASTE_BANDS.map(b=>[norm(b.name),{...b}]));
+  const favoriteStyles=new Set();
+  for(const a of (profile.artists||[])){
+    const detail=candidates.get(norm(a));
+    for(const style of detail?.styles||[])favoriteStyles.add(norm(style));
+    const extra=metadata?.artists?.[norm(a)];
+    for(const style of extra?.subgenres||[])favoriteStyles.add(norm(style));
+  }
+  // Discover extra acts through the user's actual concert region, not only
+  // the editorial starter library. Only include genre-tagged artists.
+  for(const event of future){
+    const names=[event.artist,...(event.artists||[])].filter(x=>typeof x==='string').slice(0,50);
+    for(const name of names){
+      const key=norm(name);
+      if(key.length<2||key.length>85||/\d{4}|tickets|festivals? [0-9]|&more|\bwith guest\b/i.test(name))continue;
+      const entry=metadata?.artists?.[key]||{};
+      const fromEntry=(entry.genres||[]).filter(g=>GENRES.includes(g));
+      const eventHeadliner=key===norm(event.artist);
+      const feed=eventHeadliner&&event.genreEvidence!=='title-cue'
+        ?String(event.genre||'').split(/\s+\/\s+/).filter(g=>GENRES.includes(g)):[];
+      const genres=[...new Set([...fromEntry,...feed])];
+      const styles=Array.isArray(entry.subgenres)?entry.subgenres.filter(x=>typeof x==='string'):[];
+      if(!genres.length&&!styles.length)continue;
+      const old=candidates.get(key);
+      if(old){
+        old.genres=[...new Set([...old.genres,...genres])];
+        old.styles=[...new Set([...old.styles,...styles])];
+      }else{
+        candidates.set(key,{name,genres,styles});
+      }
+      const earlier=upcoming.get(key);
+      if(!earlier || event.date<earlier.date || 
+         (cityKey(event.city)===cityKey(profile.city)&&cityKey(earlier.city)!==cityKey(profile.city))){
+        upcoming.set(key,{city:event.city,date:event.date});
+      }
+    }
   }
   const picks=[];
-  for(const band of TASTE_BANDS){
+  for(const band of candidates.values()){
     const broad=band.genres.filter(g=>wantedGenres.has(g));
     const special=band.styles.filter(s=>wantedStyles.has(s));
-    if(!broad.length&&!special.length)continue;
+    const related=band.styles.filter(s=>favoriteStyles.has(norm(s)));
+    if(!broad.length&&!special.length&&!related.length&&!selected.has(norm(band.name)))continue;
     const show=upcoming.get(norm(band.name));
-    const nearby=show && cityKey(show.city)===cityKey(profile.city) && !!cityKey(profile.city);
+    const nearby=show && !!cityKey(profile.city)&&cityKey(show.city)===cityKey(profile.city);
     picks.push({...band,
-      score:broad.length*9+special.length*34+(nearby?22:show?8:0),
-      upcoming:show||null,selected:selected.has(norm(band.name))});
+      score:broad.length*12+special.length*38+related.length*21+
+       (nearby?32:show?12:0)+(selected.has(norm(band.name))?50:0),
+      upcoming:show||null,selected:selected.has(norm(band.name))
+    });
   }
-  return picks.sort((a,b)=>b.score-a.score||a.name.localeCompare(b.name)).slice(0,Math.max(1,max));
+  return picks.sort((a,b)=>b.score-a.score||a.name.localeCompare(b.name))
+    .slice(0,Math.max(1,Math.min(500,max)));
 }
 export function mergeTasteTags(base={},bands=TASTE_BANDS) {
   const map={artists:{...(base.artists||{})}};
