@@ -40,11 +40,16 @@ jobs:
           CATALOG_DAYS: '100'
           NEW_ARTISTS_PER_RUN: '0'  # Public agenda cache is the fallback; direct event pages may return HTTP 403
           FESTIVAL_TIME_BUDGET_MS: '480000'
-          NEW_GENRE_LOOKUPS_PER_RUN: '16'
+          NEW_GENRE_LOOKUPS_PER_RUN: '130'
         run: node scripts/fetch-events.mjs
       - name: Commit public catalog and scraper cache
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/events.json data/discovery-cache.json data/artist-tags.json
-          git diff --cached --quiet || (git commit -m "chore: refresh Podiuminfo and Festivalinfo catalog" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh concert feed and artist genre metadata"
+            git fetch origin main
+            git rebase -X theirs origin/main
+            git push origin HEAD:main
+          fi
