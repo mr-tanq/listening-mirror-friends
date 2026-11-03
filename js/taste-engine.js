@@ -225,16 +225,12 @@ export function mergeTasteTags(base={},bands=TASTE_BANDS) {
 export function seedDeciding(events,profile,tags,previous={},limit=12,today=dateToday()){
   if(!profile||!Array.isArray(events))return [];
   const byId=new Set(Object.keys(previous||{}));
-  const seen=new Set();
   const ranked=[];
   for(const raw of events){
     const event=normalizeEvent(raw);
     if(!event||event.date<today||byId.has(event.id))continue;
     const match=recommendEvent(event,profile,tags);
     if(!match)continue;
-    const artistKey=norm(event.artist)+'|'+event.date;
-    if(seen.has(artistKey))continue;
-    seen.add(artistKey);
     const local=!!cityKey(profile.city)&&cityKey(event.city)===cityKey(profile.city);
     ranked.push({event,match,local});
   }
@@ -242,12 +238,17 @@ export function seedDeciding(events,profile,tags,previous={},limit=12,today=date
   const local=ranked.filter(x=>x.local).sort(byRank);
   const away=ranked.filter(x=>!x.local).sort(byRank);
   const size=Math.min(Math.max(0,limit),20);
-  // In a city-based profile, favor nearby concerts and allow up to two
-  // discoveries elsewhere only when the user has fewer than 10 local matches.
-  const choose=local.length
+  // Keep local shows first. If there are none, show only a small number
+  // of other-city alternatives rather than filling the queue with distant trips.
+  const picks=local.length
     ?[...local.slice(0,size),...away.slice(0,Math.max(0,Math.min(2,size-local.length)))].slice(0,size)
-    :away.slice(0,size);
-  return choose.sort((a,b)=>a.event.date.localeCompare(b.event.date))
+    :away.slice(0,profile.city?Math.min(4,size):size);
+  const seen=new Set();
+  return picks.filter(x=>{
+    const duplicate=norm(x.event.artist)+'|'+x.event.date;
+    if(seen.has(duplicate))return false;
+    seen.add(duplicate);return true;
+  }).sort((a,b)=>a.event.date.localeCompare(b.event.date))
     .map(x=>({id:x.event.id,event:x.event,status:'deciding',suggested:true,
       suggestionReason:x.match.reason}));
 }
