@@ -53,7 +53,7 @@ function displayName(){return state.profile?.name?.trim()||'you';}
 function heading(title,description){const frag=document.createDocumentFragment();const hero=el('div','hero');hero.append(el('p','eyebrow','YOUR LIVE MUSIC COMPANION'),el('h1','page-title',title),el('p','page-subtitle',description));frag.append(hero);return frag;}
 function empty(title,body,cb,label){const n=el('div','empty');n.append(el('h3','',title),el('p','',body));if(cb)n.append(button(label||'Add a concert','button primary',cb));return n;}
 function validDate(date){return typeof date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(date)&&!Number.isNaN(new Date(date+'T12:00:00').getTime());}
-function fixSavedItem(x){const event=normalizeEvent(x?.event||x);return event&&validDate(event.date)?{status:['going','deciding','passed'].includes(x?.status)?x.status:'going',event}:null;}
+function fixSavedItem(x){const event=normalizeEvent(x?.event||x);return event&&validDate(event.date)?{status:['going','deciding','passed'].includes(x?.status)?x.status:'going',event,suggested:x?.suggested===true,suggestionReason:String(x?.suggestionReason||'').slice(0,180)}:null;}
 function go(next){page=next;location.hash=next;render();window.scrollTo({top:0,behavior:'smooth'});}
 
 function scoreAll() {
@@ -106,7 +106,7 @@ function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
   const personal=collection==='discover';
-  let list=personal?discoverFeed():savedItems(collection).map(x=>({event:x.event}));
+  let list=personal?discoverFeed():savedItems(collection).map(x=>({event:x.event,reason:x.suggested?'Suggested for your taste · '+x.suggestionReason:''}));
   if(searchText.trim())list=list.filter(x=>norm([
     x.event.artist,...(x.event.artists||[]),x.event.venue,x.event.city,x.event.genre,x.reason
   ].join(' ')).includes(norm(searchText)));
@@ -116,14 +116,14 @@ function renderTonightList(){
     const countryName=COUNTRIES.find(c=>c.code===currentCountry)?.name||'your selected country';
     const supported=['NL','BE','GR'].includes(currentCountry);
     const title=personal?(supported&&!countryListings?'No listings loaded for '+countryName+'.':'No music matches yet.')
-      :collection==='going'?'Nothing planned yet.':'Nothing in Deciding.';
+      :collection==='going'?'Nothing planned yet.':state.pendingDeciding?'Finding your first concerts…':'Nothing in Deciding.';
     const message=personal?(!supported?
       'Concert discovery is not available in this country yet. Currently the shared catalog supports the Netherlands, Belgium and Greece; your profile is saved safely.'
       :!countryListings?
       ('The '+countryName+' source has not returned any upcoming shows yet. We cannot match genres or similar artists until those events are imported.'+
        (currentCountry==='GR'&&catalog.coverage?.greeceFeedError?' Latest source error: '+catalog.coverage.greeceFeedError:''))
       : 'There are '+countryListings+' concerts listed for '+countryName+', but no reliable matches for your selected genres or bands yet. Artist genre coverage is incomplete; unrelated events are not shown as recommendations.')
-      :'Save a concert from Discover, or add a concert manually.';
+      :state.pendingDeciding?'Matching live events to your completed music taste. Your first Deciding selections will appear when the concert feed loads.':'Save a concert from Discover, or add a concert manually.';
     root.append(empty(title,message,()=>personal?openProfileDialog(false):openConcertDialog(),personal?'Edit my music taste':'+ Add concert'));
     return;
   }
@@ -157,7 +157,7 @@ function renderTonightList(){
     root.append(el('p','help-note','Matches use your favorite artists and available music tags. “Similar” means shared specific genres, not a verified recommendation from a streaming service. Podiuminfo agenda entries require confirmation on their source page.'));
   } else {
     const grid=el('div','show-grid');
-    for(const x of list.slice(0,200)){const n=card(x.event,null,collection);if(n)grid.append(n);}
+    for(const x of list.slice(0,200)){const n=card(x.event,x.reason?{reason:x.reason}:null,collection);if(n)grid.append(n);}
     root.append(grid);
   }
 }
