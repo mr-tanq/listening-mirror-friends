@@ -35,7 +35,9 @@ jobs:
         run: npm ci --prefix .source --ignore-scripts
       - name: Run tests
         run: npm test
-      - name: Update verified Podiuminfo + Festivalinfo catalog
+      - name: Verify Greece feed against original More.com parser
+        run: node tests/greece-integration.mjs
+      - name: Update public NL/BE/GR concert catalog
         env:
           CATALOG_DAYS: '100'
           NEW_ARTISTS_PER_RUN: '0'  # Public agenda cache is the fallback; direct event pages may return HTTP 403
