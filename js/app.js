@@ -151,7 +151,8 @@ function makeField(label,type,name,value='',options=null){
   const wrap=el('div','field');const id='field-'+name;const lbl=el('label','',label);lbl.htmlFor=id;wrap.append(lbl);
   let input;
   if(options){input=el('select');for(const [v,t] of options){const opt=el('option','',t);opt.value=v;input.append(opt);}}
-  else input=el('input');input.type=type||'text';input.id=id;input.name=name;input.value=value||'';if(options)input.value=value||options[0][0];wrap.append(input);return {wrap,input};
+  else { input=el('input'); input.type=type||'text'; }
+  input.id=id;input.name=name;input.value=value||'';if(options)input.value=value||options[0][0];wrap.append(input);return {wrap,input};
 }
 function openProfileDialog(firstTime=false){
   const {dlg,content}=startDialog(firstTime?'Make it yours.':'My music taste.');
