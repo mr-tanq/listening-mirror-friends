@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {suggestedNiches,suggestTasteBands,mergeTasteTags,seedDeciding,TASTE_BANDS} from '../js/taste-engine.js';
+import {suggestedNiches,suggestTasteBands,mergeTasteTags,seedDeciding,TASTE_BANDS,NICHE_BY_GENRE} from '../js/taste-engine.js';
 import {recommendEvent} from '../js/model.js';
 
 const profile={name:'Alex',country:'GR',city:'Athens',genres:['Metal','Rock'],subgenres:['Doom Metal'],artists:['Paradise Lost']};
@@ -84,4 +84,31 @@ test('seed respects an empty event catalog and an unsupported country',()=>{
 test('curated sample library has broad musical coverage for all selectable genres',()=>{
   const expected=['Metal','Post-Rock','Electronic','Jazz','Hip-Hop','Reggae','Folk','Pop','Classical','Ambient'];
   for(const genre of expected)assert.ok(TASTE_BANDS.some(x=>x.genres.includes(genre)),genre+' lacks artist suggestions');
+});
+
+test('mainstream styles and metalcore have real suggested artists',()=>{
+  for(const genre of ['Metalcore','Deathcore','Hardcore','Pop-Punk','R&B / Soul','Blues','Funk / Disco','Country','Latin','K-Pop','Afrobeats']){
+    assert.ok((NICHE_BY_GENRE[genre]||[]).length>=5,genre);
+    assert.ok(TASTE_BANDS.some(x=>x.genres.includes(genre)),genre);
+  }
+  const b=suggestTasteBands({genres:['Metalcore'],subgenres:['Progressive Metalcore'],artists:[],country:'NL'},[],100);
+  assert.ok(b.some(x=>x.name==='ERRA'));
+  assert.ok(b.some(x=>x.name==='Bring Me the Horizon'));
+  assert.equal(b.some(x=>x.name==='Taylor Swift'),false);
+});
+test('band suggestions include genre-tagged artists on real regional concert listings',()=>{
+  const evt=[{id:'local',artist:'New Heavy Artist',artists:['New Heavy Artist'],
+    country:'GR',city:'Athens',date:'2099-04-16',genre:'Metalcore'}];
+  const tags={artists:{'new heavy artist':{genres:['Metalcore'],subgenres:['Progressive Metalcore']}}};
+  const matches=suggestTasteBands({country:'GR',city:'Athens',genres:['Metalcore'],subgenres:[],artists:[]},evt,500,tags);
+  assert.ok(matches.some(x=>x.name==='New Heavy Artist'&&x.upcoming?.city==='Athens'));
+  assert.equal(matches.some(x=>x.name==='Unknown Artist'),false);
+});
+test('choosing a favorite helps rank other stylistically similar bands',()=>{
+  const a={genres:['Metalcore'],subgenres:[],artists:['ERRA'],country:'GR',city:'Athens'};
+  const b=suggestTasteBands(a,[],500);
+  const erra=b.find(x=>x.name==='ERRA');
+  const northlane=b.find(x=>x.name==='Northlane');
+  assert.ok(erra.selected);
+  assert.ok(northlane.score>0);
 });
