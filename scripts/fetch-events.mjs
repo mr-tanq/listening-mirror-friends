@@ -270,6 +270,18 @@ export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLo
  * city, Greek location and HTTPS event link; ambiguous/multi-date cards are
  * discarded. No Ticketmaster, no invented event details.
  */
+/** Safely identify the headlining name from common More.com billing suffixes. */
+export function cleanGreekBilling(title) {
+  const raw=String(title||'').trim();
+  let head=raw.split(/\s+(?:with\s+special\s+guests?\b|special\s+guests?\b|support\s*:\s*|\+)\s*/i)[0];
+  head=head.replace(/\s*\|\s*.+$/,'')
+    .replace(/\s+[-–—]\s+(?:(?:[A-Z][A-Za-z -]+\s)?(?:world\s+|europe\s+)?tour\b|underworld\s+.*\btour\b).*/i,'')
+    .replace(/\s+live\s+in\s+(?:athens|thessaloniki|αθηνα|αθηνα|θεσσαλονικη)\s*!?$/i,'')
+    .replace(/\s+["“][^"”]+["”]\s*$/u,'')
+    .replace(/\s*\((?:UK|USA|US|NL|FR|DE|GR)\)\s*$/i,'')
+    .trim();
+  return head.length>=2&&head.length<=150?head:raw.slice(0,150);
+}
 export function parseGreekMusicCatalog(html,{cheerio,moreEvents,today=dayNow(),endDate=plusDays(today,180)}={}){
   const $=cheerio.load(html);
   const cards=$('article.play-template[itemtype$="/Event"]');
@@ -281,14 +293,23 @@ export function parseGreekMusicCatalog(html,{cheerio,moreEvents,today=dayNow(),e
     // Extract the named billing; pass only this single verified card to it.
     const artist=title.split(/\s+(?:with special guests?:|with guests?:|special guests?:|support:|\+)\s*/i)[0]
       .replace(/\s*\|\s*.+$|\s+live(?:\s|$).*$/i,'').trim();
-    if(artist.length<2 || artist.length>150)return;
+    if(artist.length<2||artist.length>150)return;
     let parsed=[];
-    try {parsed=moreEvents($.html(node),artist);}catch{return;}
+    // The source adapter validates every event card. Some billing titles
+    // include a tour subtitle and are only accepted with the full title.
+    try {
+      parsed=moreEvents($.html(node),artist);
+      if(!parsed.length&&artist!==title)parsed=moreEvents($.html(node),title);
+    }catch{return;}
     for(const event of parsed){
       if(event.country!=='GR'||!validDate(event.date)||event.date<today||event.date>endDate)continue;
       if(!event.sourceUrl||!safeUrl(event.sourceUrl)||!event.city||!event.venue)continue;
       const id='more-'+event.sourceId;
-      events.set(id,{id,artist:event.artist,artists:[event.artist],date:event.date,
+      const headliner=cleanGreekBilling(event.artist);
+      const billed=[headliner];
+      const guest=event.artist.match(/\bwith\s+special\s+guests?\s*:?\s*(.+)$/i)?.[1]?.trim();
+      if(guest && guest.length>=2 && guest.length<100)billed.push(guest);
+      events.set(id,{id,artist:headliner,artists:billed,date:event.date,
         venue:event.venue,city:event.city,country:'GR',
         genre:'',subgenre:'',url:event.sourceUrl,
         image:safeUrl(event.image),source:'more',verification:'source-catalog'});
