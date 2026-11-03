@@ -2,6 +2,15 @@ export const GENRES=['Rock','Metal','Post-Rock','Indie','Alternative','Punk','El
 export const COUNTRIES=[{code:'NL',name:'Netherlands'},{code:'BE',name:'Belgium'},{code:'DE',name:'Germany'},{code:'GR',name:'Greece'},{code:'GB',name:'United Kingdom'},{code:'FR',name:'France'},{code:'ES',name:'Spain'},{code:'IT',name:'Italy'},{code:'US',name:'United States'},{code:'AU',name:'Australia'}];
 export const norm = value => String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
 export const dateToday=()=>{const d=new Date();const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`;};
+// Normalize a few bilingual city names so Athens/Αθήνα search preferences
+// are equivalent when sources localize location names differently.
+export function cityKey(value){
+  const key=norm(value);
+  if(['athens','athina','athinai','αθηνα','αθηνας','αθηναι'].includes(key))return 'athens';
+  if(['thessaloniki','salonika','salonica','θεσσαλονικη','θεσσαλονικης'].includes(key))return 'thessaloniki';
+  if(['piraeus','peiraias','πειραιας','πειραια'].includes(key))return 'piraeus';
+  return key;
+}
 export function safeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:null;}catch{return null;}}
 const genreTerms={
   'Rock':['rock'], 'Metal':['metal','hard rock','heavy metal'], 'Post-Rock':['post rock','postrock'], 'Indie':['indie'],
@@ -112,7 +121,7 @@ export function recommendEvent(event,profile,artistTags={}) {
     if(overlap.length)matches.push({name:event.artist,genres:overlap,title:true});
   }
 
-  const sameCity=norm(event.city)===norm(profile.city)&&!!norm(profile.city);
+  const sameCity=cityKey(event.city)===cityKey(profile.city)&&!!cityKey(profile.city);
   const cityBonus=sameCity?12:0;
   if(exact) {
     return {kind:'favorite',score:150+cityBonus,
