@@ -1,4 +1,6 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=area-sorting-20261103-v9';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=guided-setup-20261104-a';
+import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=guided-setup-20261104-a';
+import {createOnboarding} from './onboarding.js?v=guided-setup-20261104-a';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -11,6 +13,7 @@ let page = 'tonight';
 let collection = 'discover';
 let searchText = '';
 let archiveSearch = '';
+let onboarding = null;
 
 function loadState() {
   try {
@@ -19,10 +22,11 @@ function loadState() {
       version: 1,
       profile: parsed.profile && typeof parsed.profile === 'object' ? parsed.profile : null,
       saved: parsed.saved && typeof parsed.saved === 'object' && !Array.isArray(parsed.saved) ? parsed.saved : {},
-      archive: Array.isArray(parsed.archive) ? parsed.archive : []
+      archive: Array.isArray(parsed.archive) ? parsed.archive : [],
+      pendingDeciding: parsed.pendingDeciding === true
     };
   } catch (err) { console.warn('Could not read saved data', err); }
-  return {version:1,profile:null,saved:{},archive:[]};
+  return {version:1,profile:null,saved:{},archive:[],pendingDeciding:false};
 }
 function persist() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
@@ -209,9 +213,48 @@ function renderArchive(){
   const list=el('section');list.id='archive-list';app.append(list);renderArchiveList();
 }
 function render(){
+  document.querySelector('.bottom-nav').hidden=!!onboarding;
+  document.querySelector('#settings-button').hidden=!!onboarding;
+  if(onboarding){onboarding.render(app);return;}
   document.querySelector('#nav-tonight').classList.toggle('active',page==='tonight');
   document.querySelector('#nav-archive').classList.toggle('active',page==='archive');
   if(page==='archive')renderArchive();else renderTonight();
+}
+
+/** Initial setup commits preferences only after the user presses Finish.
+ * Existing Going, Deciding, Passed and Archive entries are always preserved.
+ */
+function startGuidedSetup(){
+  onboarding=createOnboarding({
+    initial:state.profile||{},
+    getEvents:()=>catalog.events,
+    onCancel:state.profile?()=>{onboarding=null;render();}:null,
+    onFinish:(profile)=>{
+      state.profile=profile;
+      state.pendingDeciding=true;
+      onboarding=null;
+      page='tonight';collection='deciding';searchText='';
+      persist();
+      fillInitialDeciding();
+      render();
+      window.scrollTo({top:0,behavior:'instant'});
+    }
+  });
+  render();
+  window.scrollTo({top:0,behavior:'instant'});
+}
+function fillInitialDeciding(){
+  if(!state.pendingDeciding||!state.profile||!catalog.updatedAt)return;
+  const picks=seedDeciding(catalog.events,state.profile,artistTags,state.saved,12);
+  for(const item of picks){
+    // Never overwrite manual decisions or a previously passed event.
+    if(!state.saved[item.id])state.saved[item.id]={
+      status:'deciding',event:item.event,suggested:true,suggestionReason:item.suggestionReason
+    };
+  }
+  state.pendingDeciding=false;
+  state.lastSuggestedCount=picks.length;
+  persist();
 }
 
 function startDialog(title){
@@ -227,21 +270,38 @@ function makeField(label,type,name,value='',options=null){
 function openProfileDialog(firstTime=false){
   const {dlg,content}=startDialog(firstTime?'Make it yours.':'My music taste.');
   const p=state.profile||{name:'',country:'NL',city:'',genres:[],artists:[]};
-  const selected=new Set(Array.isArray(p.genres)?p.genres:[]);let artists=Array.isArray(p.artists)?[...p.artists]:[];
+  const selected=new Set(Array.isArray(p.genres)?p.genres:[]);const selectedStyles=new Set(Array.isArray(p.subgenres)?p.subgenres:[]);let artists=Array.isArray(p.artists)?[...p.artists]:[];
   content.append(el('p','help-note',firstTime?'No Last.fm or Spotify needed. Choose your music and where you want to see it live.':'These preferences personalize Tonight. Changes apply immediately.'));
   const name=makeField('Your name (optional)','text','name',p.name);name.input.placeholder='What should we call you?';content.append(name.wrap);
   const area=el('div','field-row');const country=makeField('Country',null,'country',p.country||'NL',COUNTRIES.map(c=>[c.code,c.name]));const city=makeField('City (preferred, optional)','text','city',p.city||'');city.input.placeholder='Utrecht, Amsterdam…';area.append(country.wrap,city.wrap);content.append(area);
   const label=el('div','field');label.append(el('label','','Favorite music genres'),el('p','field-hint','Select a few. You can change these later.'));const chips=el('div','chip-list');
   for(const g of GENRES){const chip=button(g,'chip'+(selected.has(g)?' selected':''),()=>{if(selected.has(g))selected.delete(g);else selected.add(g);chip.classList.toggle('selected',selected.has(g));chip.setAttribute('aria-pressed',String(selected.has(g)));});chip.setAttribute('aria-pressed',String(selected.has(g)));chips.append(chip);}label.append(chips);content.append(label);
+  const stylesBlock=el('div','field');
+  stylesBlock.append(el('label','','More specific styles'),el('p','field-hint','Fine-tune genres and related sounds in the guided setup, or update the selections below.'));
+  const styleChips=el('div','chip-list');
+  const updateStyles=()=>{
+    styleChips.replaceChildren();
+    const list=[...new Set([...suggestedNiches([...selected]).map(x=>x.name),...selectedStyles])].slice(0,56);
+    for(const style of list){
+      const chip=button(style,'chip'+(selectedStyles.has(style)?' selected':''),()=>{
+        if(selectedStyles.has(style))selectedStyles.delete(style);else selectedStyles.add(style);
+        chip.classList.toggle('selected',selectedStyles.has(style));
+        chip.setAttribute('aria-pressed',String(selectedStyles.has(style)));
+      });
+      chip.setAttribute('aria-pressed',String(selectedStyles.has(style)));
+      styleChips.append(chip);
+    }
+  };
+  updateStyles();stylesBlock.append(styleChips);content.append(stylesBlock);
   const artistsField=el('div','field');artistsField.append(el('label','','Favorite artists / bands'),el('p','field-hint','Type a band and press Add or Enter. You can paste comma-separated names.'));
   const entry=el('div','artist-row');const input=el('input');input.placeholder='e.g. MONO, Amenra, Sigur Rós';input.maxLength=220;const tags=el('div','artist-list');const redraw=()=>{tags.replaceChildren();for(const a of artists){const p=el('span','artist-pill',a);p.append(button('×','',()=>{artists=artists.filter(x=>x!==a);redraw();}));tags.append(p);}};
   const add=()=>{const names=input.value.split(/[,\n;]/).map(x=>x.trim()).filter(Boolean);for(const n of names){if(!artists.some(x=>norm(x)===norm(n)))artists.push(n.slice(0,110));}artists=artists.slice(0,100);input.value='';redraw();};
   input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();add();}});entry.append(input,button('Add','button small',add));artistsField.append(entry,tags);content.append(artistsField);redraw();
   const status=el('p','status');status.setAttribute('role','status');content.append(status);
-  const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));}
+  const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Guided setup ↗','button small',()=>{dlg.close();startGuidedSetup();}),button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));}
   controls.append(button(firstTime?'Start exploring →':'Save taste','button primary',()=>{
     if(input.value.trim())add();if(!selected.size&&!artists.length){status.textContent='Choose at least one genre or add a favorite band.';return;}
-    state.profile={name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],artists};persist();collection='discover';dlg.close();render();
+    state.profile={...state.profile,name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],subgenres:[...selectedStyles],artists};persist();collection='discover';dlg.close();render();
   }));content.append(controls);
   if(!firstTime){const note=el('p','help-note','Private to this browser · no account, no cloud sync. Export a backup before clearing your browser or changing phones.');content.append(el('div','separator'),note);}
 }
@@ -272,7 +332,7 @@ importFile.addEventListener('change',async()=>{
     const cleanArchive=next.archive.slice(0,3000).map(normalizeEvent).filter(x=>x&&validDate(x.date));
     const cleanSaved=Object.fromEntries(Object.values(next.saved).slice(0,2000).map(fixSavedItem).filter(Boolean).map(x=>[x.event.id,x]));
     if(!confirm(`Restore ${cleanArchive.length} archived concerts and ${Object.keys(cleanSaved).length} saved shows? This will replace current data.`))return;
-    state={version:1,profile:{name:String(next.profile.name||'').slice(0,80),country:COUNTRIES.some(c=>c.code===next.profile.country)?next.profile.country:'NL',city:String(next.profile.city||'').slice(0,100),genres:Array.isArray(next.profile.genres)?next.profile.genres.filter(x=>GENRES.includes(x)).slice(0,GENRES.length):[],artists:Array.isArray(next.profile.artists)?next.profile.artists.filter(x=>typeof x==='string').slice(0,100):[]},saved:cleanSaved,archive:cleanArchive};persist();render();alert('Your backup is restored.');
+    state={version:1,profile:{name:String(next.profile.name||'').slice(0,80),country:COUNTRIES.some(c=>c.code===next.profile.country)?next.profile.country:'NL',city:String(next.profile.city||'').slice(0,100),genres:Array.isArray(next.profile.genres)?next.profile.genres.filter(x=>GENRES.includes(x)).slice(0,GENRES.length):[],artists:Array.isArray(next.profile.artists)?next.profile.artists.filter(x=>typeof x==='string').slice(0,100):[],subgenres:Array.isArray(next.profile.subgenres)?next.profile.subgenres.filter(x=>typeof x==='string').slice(0,40):[]},saved:cleanSaved,archive:cleanArchive,pendingDeciding:false};persist();render();alert('Your backup is restored.');
   }catch(e){alert(`Could not import backup: ${e.message}`);}
 });
 
@@ -296,7 +356,7 @@ async function fetchCatalog(){
         }
       }
     }catch(error){console.warn('Curated artist styles temporarily unavailable',error);}
-    artistTags=tags;
+    artistTags=mergeTasteTags(tags);
     let allEvents=data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date));
     try{
       const resp=await fetch('./data/verified-events.json',{cache:'no-store'});
@@ -314,6 +374,7 @@ async function fetchCatalog(){
       }
     }catch(error){console.warn('Venue-confirmed event fallback temporarily unavailable',error);}
     catalog={events:allEvents,updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
+    fillInitialDeciding();
   }catch(e){catalog.error=e.message||'Could not load';}render();
 }
 function init(){
@@ -321,6 +382,6 @@ function init(){
   document.querySelector('#nav-archive').addEventListener('click',()=>go('archive'));
   document.querySelector('#settings-button').addEventListener('click',()=>openProfileDialog(!state.profile));
   window.addEventListener('hashchange',()=>{const dest=location.hash.replace('#','');if(dest==='tonight'||dest==='archive'){page=dest;render();}});
-  page=location.hash==='#archive'?'archive':'tonight';render();fetchCatalog();if(!state.profile)openProfileDialog(true);
+  page=location.hash==='#archive'?'archive':'tonight';if(!state.profile)startGuidedSetup();else render();fetchCatalog();
 }
 init();
