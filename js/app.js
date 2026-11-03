@@ -285,6 +285,7 @@ function startGuidedSetup(){
   onboarding=createOnboarding({
     initial:state.profile||{},
     getEvents:()=>catalog.events,
+    getTags:()=>artistTags,
     onCancel:state.profile?()=>{onboarding=null;render();}:null,
     onFinish:(profile)=>{
       state.profile=profile;
