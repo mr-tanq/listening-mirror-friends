@@ -167,7 +167,7 @@ function renderTonight(){
   if(taste.length)app.querySelector('.hero').append(el('p','help-note',`Genres: ${taste.join(' · ')}`));
   if(state.profile?.artists?.length)app.querySelector('.hero').append(el('p','help-note',
     `Favorite bands: ${state.profile.artists.slice(0,8).join(' · ')}${state.profile.artists.length>8?' …':''}`));
-  const actions=el('div','actions');actions.append(button('+ Add concert','button primary',openConcertDialog),button('Edit my taste','button',()=>openProfileDialog(false)));
+  const actions=el('div','actions');actions.append(button('+ Add concert','button primary',openConcertDialog),button('Edit my taste','button',()=>openProfileDialog(false)),button('Redo music setup','button ghost',startGuidedSetup));
   const info=el('div','notice');
   const desc=el('span');
   if(catalog.error){info.classList.add('error');desc.textContent=`Concert feed unavailable: ${catalog.error}`;}
