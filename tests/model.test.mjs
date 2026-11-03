@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {norm,safeUrl,rankEvent,matchReason,normalizeEvent,titleGenreHints} from '../js/model.js';
-import {fromPodiuminfo,fromFestivalinfo,fromOfficialVenue,chooseArtistBatch,classifyMusicBrainzTags,applyGenreMetadata} from '../scripts/fetch-events.mjs';
+import {norm,safeUrl,rankEvent,matchReason,normalizeEvent,titleGenreHints,recommendEvent} from '../js/model.js';
+import {fromPodiuminfo,fromFestivalinfo,fromOfficialVenue,chooseArtistBatch,classifyMusicBrainzTags,classifyItunesArtist,applyGenreMetadata} from '../scripts/fetch-events.mjs';
 const profile={country:'NL',city:'Utrecht',artists:['Sigur Rós'],genres:['Post-Rock']};
 const event={id:'1',artist:'Sigur Rós',artists:['Sigur Rós'],date:'2027-01-03',country:'NL',city:'Utrecht',genre:'Rock'};
 test('normalizes diacritics',()=>assert.equal(norm('Sigur Rós'),'sigur ros'));
@@ -63,4 +63,49 @@ test('title hints are conservative, not broad location or artist guesses',()=>{
   assert.deepEqual(titleGenreHints('Boeklancering JOB Dutchtuber'),[]);
   assert.deepEqual(titleGenreHints('MONO'),[]);
   assert.deepEqual(titleGenreHints('Carpenter Brut'),[]);
+});
+
+test('Discover never suggests an unrelated event solely because its city matches',()=>{
+  const e=normalizeEvent({artist:'Carpenter Brut',date:'2027-01-12',country:'NL',city:'Utrecht'});
+  const profile={country:'NL',city:'Utrecht',artists:['MONO'],genres:['Jazz']};
+  assert.equal(recommendEvent(e,profile,{artists:{}}),null);
+});
+test('Discover identifies exact favorites before genre or similarity matching',()=>{
+  const e=normalizeEvent({artist:'MONO',date:'2027-01-12',country:'NL',city:'Amsterdam',genre:'Post-Rock'});
+  const p={country:'NL',city:'Utrecht',artists:['MONO'],genres:['Post-Rock']};
+  assert.equal(recommendEvent(e,p,{artists:{}}).kind,'favorite');
+});
+test('Discover proposes a related artist when distinctive music metadata overlaps',()=>{
+  const p={country:'NL',city:'Utrecht',artists:['MONO'],genres:[]};
+  const e=normalizeEvent({artist:'We Lost The Sea',date:'2027-01-12',country:'NL',city:'Amsterdam'});
+  const tags={artists:{'mono':{genres:['Post-Rock']},'we lost the sea':{genres:['Post-Rock']}}};
+  const r=recommendEvent(e,p,tags);
+  assert.equal(r.kind,'similar');
+  assert.match(r.reason,/Related to MONO/);
+});
+test('one broad Rock category does not justify a similar artist claim',()=>{
+  const p={country:'NL',city:'Utrecht',artists:['MONO'],genres:[]};
+  const e=normalizeEvent({artist:'Other Rock Act',date:'2027-01-12',country:'NL',city:'Amsterdam'});
+  const tags={artists:{mono:{genres:['Rock']},'other rock act':{genres:['Rock']}}};
+  assert.equal(recommendEvent(e,p,tags),null);
+});
+test('selected Jazz genre finds an artist with Jazz metadata even without the word Jazz in title',()=>{
+  const p={country:'NL',city:'Utrecht',artists:[],genres:['Jazz']};
+  const e=normalizeEvent({artist:'Yussef Dayes',date:'2027-01-12',country:'NL',city:'Amsterdam'});
+  const r=recommendEvent(e,p,{artists:{'yussef dayes':{genres:['Jazz']}}});
+  assert.equal(r.kind,'genre');
+  assert.match(r.reason,/Jazz/);
+});
+test('genre-only users are never silently moved to unfiltered Explore',()=>{
+  const e=normalizeEvent({artist:'Mystery Metal',date:'2027-01-12',country:'NL',city:'Utrecht'});
+  const p={country:'NL',city:'Utrecht',artists:[],genres:['Jazz']};
+  assert.equal(recommendEvent(e,p),null);
+});
+test('iTunes artist genre metadata requires an exact unambiguous artist result',()=>{
+  assert.deepEqual(classifyItunesArtist([{wrapperType:'artist',artistName:'Yussef Dayes',primaryGenreName:'Jazz'}],'Yussef Dayes'),['Jazz']);
+  assert.deepEqual(classifyItunesArtist([{wrapperType:'artist',artistName:'Yussef Dayes Tribute',primaryGenreName:'Jazz'}],'Yussef Dayes'),[]);
+  assert.deepEqual(classifyItunesArtist([
+    {wrapperType:'artist',artistName:'MONO',primaryGenreName:'Rock'},
+    {wrapperType:'artist',artistName:'Mono',primaryGenreName:'Pop'}
+  ],'MONO'),[]);
 });
