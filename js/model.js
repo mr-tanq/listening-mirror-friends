@@ -53,35 +53,107 @@ export function normalizeEvent(input){
   const genreEvidence=genreFromFeed?'metadata':titleHints.length?'title-cue':'';
   return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
 }
-function artistMatch(event,wanted){
-  const names=[event.artist,...(event.artists||[])].map(norm);
+function artistMatch(event,wanted) {
+  const names=[event.artist,...(event.artists||[])].map(norm).filter(Boolean);
   const title=norm(event.artist);
-  return wanted.some(a=>{const key=norm(a);return key.length>=2&&(names.some(n=>n===key)||title.split(' with ').includes(key)||title.split(' and ').includes(key)||new RegExp(`(^| )${key.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}( |$)`).test(title));});
-}
-function genreMatch(event,wanted){
-  const genre=norm([event.genre,event.subgenre].join(' '));
-  if(!genre)return [];
-  return wanted.filter(g=>{
-    const target=norm(g);if(genre===target||genre.includes(target))return true;
-    // Avoid treating any generic 'Rock' event as verified 'Post-Rock', 'Stoner / Doom' or 'Psychedelic'
-    return (genreTerms[g]||[]).some(s=>genre.split(' ').includes(norm(s))||genre.includes(norm(s)));
+  return wanted.some(a=>{
+    const key=norm(a);
+    return key.length>=2&&(names.includes(key) ||
+      title.split(' with ').includes(key) ||
+      title.split(' and ').includes(key) ||
+      (title.startsWith(key+' ') && event.source==='podiuminfo-agenda'));
   });
 }
-export function rankEvent(event,profile){
-  if(!event||!profile)return 0;
-  const sameArtist=artistMatch(event,Array.isArray(profile.artists)?profile.artists:[]);
-  const genres=genreMatch(event,Array.isArray(profile.genres)?profile.genres:[]);
-  const countryMatch=event.country&&event.country===profile.country;
-  if(!countryMatch)return 0; // First release: exact country only, no invented distance/radius
-  if(!sameArtist&&!genres.length)return 0;
-  const sameCity=event.city&&profile.city&&norm(event.city)===norm(profile.city);
-  return (sameArtist?100:0)+(genres.length?35+Math.min(genres.length,3)*6:0)+(sameCity?14:0)+5;
+function metadataGenres(artist,tags) {
+  const entry=tags?.artists?.[norm(artist)]||tags?.[norm(artist)];
+  return Array.isArray(entry?.genres)?entry.genres.filter(g=>GENRES.includes(g)):[];
 }
-export function matchReason(event,profile){
-  if(!event||!profile)return '';
-  const sameArtist=artistMatch(event,Array.isArray(profile.artists)?profile.artists:[]);
-  const genres=genreMatch(event,Array.isArray(profile.genres)?profile.genres:[]);
-  if(sameArtist)return '★ Your favorite artist'+(genres.length?` · ${genres[0]}`:'');
-  if(genres.length)return event.genreEvidence==='title-cue'?`Event title suggests ${genres.join(' / ')} · check event details`:`Matches your ${genres.join(' / ')} taste`;
-  return '';
+function matchingGenres(available,wanted) {
+  const text=' '+norm(available.join(' '))+' ';
+  return wanted.filter(g=>{
+    if(!GENRES.includes(g))return false;
+    const exact=available.some(a=>norm(a)===norm(g));
+    if(exact)return true;
+    return (genreTerms[g]||[]).some(term=>text.includes(' '+norm(term)+' '));
+  });
+}
+const NICHE_SIMILAR=new Set(['Post-Rock','Stoner / Doom','Psychedelic','Experimental','Ambient','Jazz','Reggae','Classical','Folk','Punk']);
+const COMMON_SIMILAR=new Set(['Rock','Pop','Metal','Indie','Alternative','Electronic','Hip-Hop']);
+
+/**
+ * Discover ONLY evidence-backed music matches.
+ * Similar = shared distinctive artist metadata, never merely the same venue,
+ * town or an unverified word in an event title.
+ */
+export function recommendEvent(event,profile,artistTags={}) {
+  if(!event||!profile||!profile.country||event.country!==profile.country)return null;
+  const favorites=Array.isArray(profile.artists)?profile.artists:[];
+  const genresWanted=Array.isArray(profile.genres)?profile.genres.filter(g=>GENRES.includes(g)):[];
+  const names=[event.artist,...(event.artists||[])].filter(x=>typeof x==='string').slice(0,250);
+  const exact=artistMatch(event,favorites);
+  const exactName=names.find(a=>favorites.some(f=>norm(f)===norm(a))) ||
+    (exact?event.artist:null);
+  // Tag each performer independently; festival bills often contain many genres.
+  const observed=[];
+  for(const name of names) {
+    const genres=metadataGenres(name,artistTags);
+    if(genres.length)observed.push({name,genres});
+  }
+  const feedGenres=String(event.genre||'').split(/\s+\/\s+/).filter(x=>GENRES.includes(x));
+  const titleHints=event.genreEvidence==='title-cue'?titleGenreHints(event.artist):[];
+  const sources=observed.length?observed: [{name:event.artist,genres:feedGenres}];
+  const matches=[];
+  for(const item of sources) {
+    const overlap=matchingGenres(item.genres,genresWanted);
+    if(overlap.length)matches.push({name:item.name,genres:overlap});
+  }
+  if(!matches.length&&titleHints.length) {
+    const overlap=matchingGenres(titleHints,genresWanted);
+    if(overlap.length)matches.push({name:event.artist,genres:overlap,title:true});
+  }
+
+  const sameCity=norm(event.city)===norm(profile.city)&&!!norm(profile.city);
+  const cityBonus=sameCity?12:0;
+  if(exact) {
+    return {kind:'favorite',score:150+cityBonus,
+      reason:'Favorite artist'+(exactName?': '+exactName:''),
+      matchedArtist:exactName||event.artist,genres:[]};
+  }
+
+  // The user may select only favorite artists. Find comparable artists in
+  // the confirmed shared music-tag space, without calling them similar if
+  // all we know is the generic category Rock/Pop/Metal.
+  const seedTags=new Map();
+  for(const artist of favorites)for(const genre of metadataGenres(artist,artistTags)) {
+    if(!seedTags.has(genre))seedTags.set(genre,artist);
+  }
+  let closest=null;
+  for(const item of observed) {
+    const shared=item.genres.filter(g=>seedTags.has(g));
+    const niche=shared.filter(g=>NICHE_SIMILAR.has(g));
+    const broad=shared.filter(g=>COMMON_SIMILAR.has(g));
+    if(!niche.length && broad.length<2)continue;
+    const score=niche.length*22+broad.length*5;
+    if(!closest || score>closest.score)closest={score,artist:item.name,shared,seed:seedTags.get(niche[0]||broad[0])};
+  }
+  if(closest) {
+    return {kind:'similar',score:95+closest.score+cityBonus,
+      reason:'Related to '+closest.seed+' · shared '+closest.shared.slice(0,2).join(' / '),
+      matchedArtist:closest.artist,genres:closest.shared};
+  }
+  if(matches.length) {
+    const best=matches.sort((a,b)=>b.genres.length-a.genres.length)[0];
+    return {kind:'genre',score:65+best.genres.length*8+cityBonus,
+      reason:(best.title?'Event title suggests ':'Matches your ')+best.genres.join(' / ')+
+        (best.title?' · check source':best.name!==event.artist?' · '+best.name:''),
+      matchedArtist:best.name,genres:best.genres};
+  }
+  return null;
+}
+
+export function rankEvent(event,profile,artistTags={}) {
+  return recommendEvent(event,profile,artistTags)?.score||0;
+}
+export function matchReason(event,profile,artistTags={}) {
+  return recommendEvent(event,profile,artistTags)?.reason||'';
 }
