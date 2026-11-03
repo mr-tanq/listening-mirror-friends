@@ -112,3 +112,16 @@ test('choosing a favorite helps rank other stylistically similar bands',()=>{
   assert.ok(erra.selected);
   assert.ok(northlane.score>0);
 });
+
+test('Similar uses shared specific metalcore styles, not just same city',()=>{
+  const tags=mergeTasteTags({artists:{}});
+  const user={country:'NL',city:'Utrecht',genres:[],subgenres:[],artists:['ERRA']};
+  const northlane={id:'nl-1',artist:'Northlane',artists:['Northlane'],date:'2027-07-17',
+    country:'NL',city:'Utrecht',venue:'Concert hall'};
+  const unrelated={id:'nl-2',artist:'Taylor Swift',artists:['Taylor Swift'],date:'2027-07-18',
+    country:'NL',city:'Utrecht',venue:'Concert hall'};
+  const related= (await import('../js/model.js')).recommendEvent(northlane,user,tags);
+  assert.equal(related?.kind,'similar');
+  assert.match(related?.reason||'',/shared .*Metalcore|shared .*Djent/i);
+  assert.equal((await import('../js/model.js')).recommendEvent(unrelated,user,tags),null);
+});
