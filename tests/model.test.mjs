@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {norm,safeUrl,rankEvent,matchReason,normalizeEvent} from '../js/model.js';
+import {norm,safeUrl,rankEvent,matchReason,normalizeEvent,titleGenreHints} from '../js/model.js';
 import {fromPodiuminfo,fromFestivalinfo,fromOfficialVenue,chooseArtistBatch,classifyMusicBrainzTags,applyGenreMetadata} from '../scripts/fetch-events.mjs';
 const profile={country:'NL',city:'Utrecht',artists:['Sigur Rós'],genres:['Post-Rock']};
 const event={id:'1',artist:'Sigur Rós',artists:['Sigur Rós'],date:'2027-01-03',country:'NL',city:'Utrecht',genre:'Rock'};
@@ -45,4 +45,22 @@ test('genre metadata annotates verified concerts and reuses cache',async()=>{
 test('official venue checks keep authoritative URL and lineup',()=>{
  const e=fromOfficialVenue({id:'rec-official-abc',artist:'MONO',lineup:['MONO'],date:'2027-04-10',venue:'Melkweg',city:'Amsterdam',country:'NL',sourceUrl:'https://www.melkweg.nl/en/agenda/test'});
  assert.equal(e.source,'official');assert.equal(e.artist,'MONO');assert.match(e.url,/melkweg/);
+});
+
+test('Jazz title cue personalizes event listing without inventing genre for unrelated acts',()=>{
+  const jazz=normalizeEvent({id:'jazz-1',artist:'Paradox Jazz Orchestra & James Carter',date:'2026-11-29',city:'Utrecht',country:'NL',source:'podiuminfo-agenda'});
+  const unrelated=normalizeEvent({id:'other',artist:'Carpenter Brut',date:'2026-11-03',city:'Utrecht',country:'NL',source:'podiuminfo-agenda'});
+  const jazzTaste={name:'',country:'NL',city:'Utrecht',artists:[],genres:['Jazz']};
+  assert.equal(jazz.genre,'Jazz');
+  assert.equal(jazz.genreEvidence,'title-cue');
+  assert.ok(rankEvent(jazz,jazzTaste)>0);
+  assert.match(matchReason(jazz,jazzTaste),/title suggests Jazz/i);
+  assert.equal(rankEvent(unrelated,jazzTaste),0);
+});
+test('title hints are conservative, not broad location or artist guesses',()=>{
+  assert.deepEqual(titleGenreHints('Eindhoven Metal Meeting'),['Metal']);
+  assert.deepEqual(titleGenreHints('The Jazz Room'),['Jazz']);
+  assert.deepEqual(titleGenreHints('Boeklancering JOB Dutchtuber'),[]);
+  assert.deepEqual(titleGenreHints('MONO'),[]);
+  assert.deepEqual(titleGenreHints('Carpenter Brut'),[]);
 });
