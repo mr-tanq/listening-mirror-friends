@@ -25,7 +25,7 @@ const unique=(names)=>[...new Map(names.filter(x=>typeof x==='string'&&x.trim())
  * Full-page, accessible four-step setup. The user can go back without losing
  * draft choices. Existing profiles are never changed until Finish is pressed.
  */
-export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}={}){
+export function createOnboarding({initial={},getEvents=()=>[],getTags=()=>({artists:{}}),onFinish,onCancel}={}){
   const draft={
     name:String(initial.name||'').slice(0,80),
     country:COUNTRIES.some(c=>c.code===initial.country)?initial.country:'NL',
@@ -140,6 +140,7 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
     }
   }
   function artistStep(body){
+    let visibleCount=36;
     const display=mk('div','onboarding-artist-options');
     const search=mk('input','onboarding-input onboarding-band-search');
     search.type='search';search.placeholder='Search suggestions…';search.setAttribute('aria-label','Filter suggested bands');
@@ -165,9 +166,9 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
         remove.setAttribute('aria-label','Remove '+name);pill.append(remove);selected.append(pill);
       }
       display.replaceChildren();
-      const matches=suggestTasteBands(profile(),getEvents(),160);
+      const matches=suggestTasteBands(profile(),getEvents(),500,getTags());
       const query=norm(search.value);
-      const visible=(query?matches.filter(x=>norm(x.name).includes(query)):matches.slice(0,36));
+      const visible=(query?matches.filter(x=>norm(x.name).includes(query)):matches.slice(0,visibleCount));
       if(!visible.length)display.append(mk('p','onboarding-hint','No suggested bands match that search. You can add any artist below.'));
       for(const item of visible){
         const active=draft.artists.some(a=>norm(a)===norm(item.name));
@@ -183,6 +184,13 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
           paint();
         });
         display.append(b);
+      }
+      if(!query && visible.length<matches.length){
+        const more=btn('Show more bands · '+(matches.length-visible.length)+' remaining','button onboarding-load-more',()=>{
+          visibleCount=Math.min(matches.length,visibleCount+30);
+          paint();
+        });
+        display.append(more);
       }
     };
     search.addEventListener('input',paint);
