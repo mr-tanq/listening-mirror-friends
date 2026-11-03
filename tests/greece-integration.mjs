@@ -47,6 +47,8 @@ test('source billed tours normalize names without inventing events',()=>{
   assert.equal(cleanGreekBilling('Discharge (UK)'),'Discharge');
   assert.equal(cleanGreekBilling('ACID ARAB live in Athens'),'ACID ARAB');
   assert.equal(cleanGreekBilling('PARADISE LOST'),'PARADISE LOST');
+  assert.equal(cleanGreekBilling('Riot V - 50th Anniversary Tour - Παρασκευή 6 Νοεμβρίου'),'Riot V');
+  assert.equal(cleanGreekBilling('Chelsea Wolfe: THE DARK World Tour'),'Chelsea Wolfe');
 });
 
 test('Rocking agenda provides dated Greek music concerts not found in More catalogue',()=>{
