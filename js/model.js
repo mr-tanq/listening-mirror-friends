@@ -63,7 +63,7 @@ export function normalizeEvent(input){
   return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
 }
 function artistMatch(event,wanted) {
-  const names=[event.artist,...(event.artists||[])].map(norm).filter(Boolean);
+  const names=[event.artist,...(event.artists||[])].flatMap(a=>[norm(a),norm(artistBillingRoot(a))]).filter(Boolean);
   const title=norm(event.artist);
   return wanted.some(a=>{
     const key=norm(a);
@@ -73,8 +73,14 @@ function artistMatch(event,wanted) {
       (title.startsWith(key+' ') && event.source==='podiuminfo-agenda'));
   });
 }
+function artistBillingRoot(artist){
+  return String(artist||'').replace(/\s+[-–—:]\s+.{0,100}\b(?:tour|anniversary)\b.*$/i,'')
+    .replace(/\s+(?:with\s+special\s+guests?|with\s+guests)\b.*$/i,'')
+    .replace(/\s*\((?:UK|USA|US|NL|GR)\)\s*$/i,'').trim();
+}
 function metadataGenres(artist,tags) {
-  const entry=tags?.artists?.[norm(artist)]||tags?.[norm(artist)];
+  const key=norm(artist),root=norm(artistBillingRoot(artist));
+  const entry=tags?.artists?.[key]||tags?.artists?.[root]||tags?.[key]||tags?.[root];
   return Array.isArray(entry?.genres)?entry.genres.filter(g=>GENRES.includes(g)):[];
 }
 function matchingGenres(available,wanted) {
