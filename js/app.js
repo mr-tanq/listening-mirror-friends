@@ -1,6 +1,6 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=guided-setup-20261104-a';
-import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=guided-setup-20261104-a';
-import {createOnboarding} from './onboarding.js?v=guided-setup-20261104-a';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=guided-setup-20261104-b';
+import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=guided-setup-20261104-b';
+import {createOnboarding} from './onboarding.js?v=guided-setup-20261104-b';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
