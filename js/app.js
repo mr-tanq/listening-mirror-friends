@@ -1,4 +1,4 @@
-import { recommendEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=country-20261103-v6';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=area-sorting-20261103-v9';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -57,7 +57,13 @@ function scoreAll() {
   return catalog.events.filter(e=>e.date>=current).map(event=>{
     const match=recommendEvent(event,state.profile,artistTags);
     return match?{event,...match}:null;
-  }).filter(Boolean).sort((a,b)=>a.event.date.localeCompare(b.event.date)||b.score-a.score||a.event.artist.localeCompare(b.event.artist));
+  }).filter(Boolean).sort((a,b)=>{
+    const preferred=cityKey(state.profile?.city||'');
+    const nearA=preferred&&cityKey(a.event.city)===preferred?1:0;
+    const nearB=preferred&&cityKey(b.event.city)===preferred?1:0;
+    return nearB-nearA || a.event.date.localeCompare(b.event.date) ||
+      b.score-a.score || a.event.artist.localeCompare(b.event.artist);
+  });
 }
 function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]);}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
@@ -123,18 +129,26 @@ function renderTonightList(){
       ['similar','Similar artists · shared music styles'],
       ['genre','Your selected genres']
     ];
+    const preferred=cityKey(state.profile?.city||'');
     for(const [kind,title] of buckets){
       const group=list.filter(x=>x.kind===kind);
       if(!group.length)continue;
-      const section=el('section','recommend-group');
-      const head=el('div','section-header');
-      head.append(el('h2','section-title',title),el('p','section-sub',group.length+' matched show'+(group.length===1?'':'s')));
-      section.append(head);
-      const grid=el('div','show-grid');
-      for(const x of group.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
-      section.append(grid);
-      if(group.length>100)section.append(el('p','help-note','Showing 100 of '+group.length+' matches in this group.'));
-      root.append(section);
+      const heading=el('div','section-header');
+      heading.append(el('h2','section-title',title),el('p','section-sub',group.length+' matched show'+(group.length===1?'':'s')));
+      const groupRoot=el('section','recommend-group');groupRoot.append(heading);
+      const local=preferred?group.filter(x=>cityKey(x.event.city)===preferred):group;
+      const away=preferred?group.filter(x=>cityKey(x.event.city)!==preferred):[];
+      const display=(records,label)=>{
+        if(!records.length)return;
+        if(preferred)groupRoot.append(el('p','help-note',label+' · '+records.length));
+        const grid=el('div','show-grid');
+        for(const x of records.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
+        groupRoot.append(grid);
+        if(records.length>100)groupRoot.append(el('p','help-note','Showing the first 100 of '+records.length+'.'));
+      };
+      display(local,preferred?'Near '+(state.profile?.city||'your city'):'Upcoming');
+      display(away,'Elsewhere in '+(COUNTRIES.find(c=>c.code===state.profile?.country)?.name||'your country'));
+      root.append(groupRoot);
     }
     root.append(el('p','help-note','Matches use your favorite artists and available music tags. “Similar” means shared specific genres, not a verified recommendation from a streaming service. Podiuminfo agenda entries require confirmation on their source page.'));
   } else {
