@@ -1,0 +1,22 @@
+{
+  "note": "Dated events directly checked against a named venue's own event page; fallback when third-party public agenda endpoints are unreachable. Remove expired events automatically.",
+  "events": [
+    {
+      "id": "official-fuzzclub-solstafir-20261114",
+      "artist": "Sólstafir",
+      "artists": [
+        "Sólstafir"
+      ],
+      "date": "2026-11-14",
+      "venue": "Fuzz Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Post-Rock / Psychedelic",
+      "subgenre": "",
+      "url": "https://www.fuzzclub.gr/event/solstafir-2/",
+      "image": "",
+      "source": "official",
+      "verification": "venue-page"
+    }
+  ]
+}
