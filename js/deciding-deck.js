@@ -1,4 +1,4 @@
-import {safeUrl,norm} from './model.js';
+import {safeUrl,norm} from './model.js?v=swipe-friends-v3';
 
 const el=(tag,cls,text)=>{
   const n=document.createElement(tag);if(cls)n.className=cls;
