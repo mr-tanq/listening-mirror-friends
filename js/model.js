@@ -77,7 +77,7 @@ export function normalizeEvent(input){
   const titleHints=genreFromFeed?[]:titleGenreHints(artist);
   const genre=genreFromFeed||titleHints.join(' / ');
   const genreEvidence=genreFromFeed?'metadata':titleHints.length?'title-cue':'';
-  return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
+  return {id,artist,artists,date,endDate:String(input.endDate||'').slice(0,10),time:String(input.time||input.startTime||'').slice(0,25),venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',ticketUrl:safeUrl(input.ticketUrl)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60),verification:String(input.verification||'').slice(0,50)};
 }
 function artistMatch(event,wanted) {
   const names=[event.artist,...(event.artists||[])].flatMap(a=>[norm(a),norm(artistBillingRoot(a))]).filter(Boolean);
