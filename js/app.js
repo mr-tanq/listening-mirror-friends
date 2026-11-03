@@ -1,7 +1,7 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=guided-setup-20261104-b';
-import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=guided-setup-20261104-b';
-import {createOnboarding} from './onboarding.js?v=guided-setup-20261104-b';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=swipe-stage-1';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=swipe-friends-v3';
+import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=swipe-friends-v3';
+import {createOnboarding} from './onboarding.js?v=swipe-friends-v3';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=swipe-friends-v3';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
