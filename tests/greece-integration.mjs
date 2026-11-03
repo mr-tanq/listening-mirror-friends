@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import {createRequire} from 'node:module';
 import {pathToFileURL} from 'node:url';
-import {parseGreekMusicCatalog,cleanGreekBilling} from '../scripts/fetch-events.mjs';
+import {parseGreekMusicCatalog,parseRockingAgenda,cleanGreekBilling} from '../scripts/fetch-events.mjs';
 
 const source=path.resolve('.source');
 const cheerio=createRequire(path.join(source,'package.json'))('cheerio');
@@ -47,4 +47,29 @@ test('source billed tours normalize names without inventing events',()=>{
   assert.equal(cleanGreekBilling('Discharge (UK)'),'Discharge');
   assert.equal(cleanGreekBilling('ACID ARAB live in Athens'),'ACID ARAB');
   assert.equal(cleanGreekBilling('PARADISE LOST'),'PARADISE LOST');
+});
+
+test('Rocking agenda provides dated Greek music concerts not found in More catalogue',()=>{
+  const html='<h2>14 Νοεμβρίου 2026</h2>'+
+    '<a href="/agenda/2026/11/14/27497">Sólstafir Αθήνα @ Fuzz Club Από 30 e</a>'+
+    '<a href="/agenda/2026/11/23/29777">Kreator, Overkill Αθήνα @ FLOYD Από 55 e</a>'+
+    '<a href="/agenda/2026/11/11/20011">Paradise Lost Αθήνα @ FLOYD</a>';
+  const rows=parseRockingAgenda(html,{cheerio,today:'2026-11-03',endDate:'2027-03-31',city:'Athens'});
+  assert.equal(rows.length,3);
+  assert.equal(rows[0].artist,'Sólstafir');
+  assert.equal(rows[0].venue,'Fuzz Club');
+  assert.equal(rows[0].source,'rocking');
+  assert.deepEqual(rows[1].artists,['Kreator','Overkill']);
+  assert.equal(rows[0].date,'2026-11-14');
+  assert.equal(rows[0].country,'GR');
+});
+test('Rocking parser refuses unrelated links, wrong city, non-current or invalid dates',()=>{
+  const html='<a href="https://attacker.example/agenda/2026/11/14/27497">Sólstafir Αθήνα @ Fuzz Club</a>'+
+    '<a href="/agenda/2026/11/14/27497">Sólstafir Θεσσαλονίκη @ Fuzz Club</a>'+
+    '<a href="/agenda/2026/10/01/27491">Old Show Αθήνα @ Fuzz Club</a>'+
+    '<a href="/agenda/2026/11/41/27497">Invalid Show Αθήνα @ Fuzz Club</a>'+
+    '<a href="/agenda/2026/11/23/1234">Sólstafir Αθήνα @ Fuzz Club</a>';
+  const rows=parseRockingAgenda(html,{cheerio,today:'2026-11-03',endDate:'2026-12-01',city:'Athens'});
+  assert.equal(rows.length,1);
+  assert.equal(rows[0].date,'2026-11-23');
 });
