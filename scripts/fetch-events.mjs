@@ -23,7 +23,7 @@ const write = async (file, data) => {
 };
 const validDate = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) &&
   !Number.isNaN(Date.parse(value + 'T12:00:00Z'));
-const norm = text => String(text || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const norm = text => String(text || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 const safeUrl = raw => {
   try { const u = new URL(raw); return u.protocol === 'https:' && !u.username && !u.password ? u.href : ''; }
   catch { return ''; }
@@ -187,14 +187,24 @@ async function itunesArtistGenres(artist,{fetcher=fetch,delay=ms=>new Promise(r=
   const data=await r.json();
   return classifyItunesArtist(data.results,artist);
 }
+let itunesFailures=0,musicBrainzFallbacks=0;
 async function genreLookup(artist) {
   let apple=[];
-  try{apple=await itunesArtistGenres(artist);if(apple.length)return {genres:apple,source:'itunes'};}
-  catch(error){console.warn('iTunes genre unavailable for '+artist+': '+error.message);}
-  // MusicBrainz is called only when a name is not classified by iTunes.
-  // Respect its 1-request/sec rate limit through the existing adapter.
-  try{const genres=await musicBrainzTags(artist);return {genres,source:'musicbrainz'};}
-  catch(error){console.warn('MusicBrainz genre unavailable for '+artist+': '+error.message);throw error;}
+  if(itunesFailures<3){
+    try{apple=await itunesArtistGenres(artist);itunesFailures=0;}
+    catch(error){itunesFailures++;console.warn('iTunes metadata unavailable for '+artist+': '+error.message);}
+  }
+  if(apple.length)return {genres:apple,source:'itunes'};
+  // Avoid a long 403/503 storm on GitHub-hosted runners; retry later.
+  if(musicBrainzFallbacks>=8)return {genres:[],source:'unclassified'};
+  musicBrainzFallbacks++;
+  try{
+    const genres=await musicBrainzTags(artist);
+    return {genres,source:'musicbrainz'};
+  }catch(error){
+    console.warn('MusicBrainz metadata unavailable for '+artist+': '+error.message);
+    return {genres:[],source:'unclassified'};
+  }
 }
 export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLookup,clock=Date.now}={}) {
   cached.artists ||= {};
