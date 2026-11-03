@@ -295,13 +295,15 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
       try {
         const link=new URL(item.href);
         if(link.protocol!=='https:' || link.hostname!=='www.podiuminfo.nl')continue;
-        const match=link.pathname.match(/^\\/concert\\/(\\d+)\\/[^/]+\\/([^/]+)\\/?$/);
-        if(!match || String(item.concertId)!==match[1])continue;
-        const venue=venueIndex.get(venueKey(decodeURIComponent(match[2])));
+        const segments=link.pathname.split('/').filter(Boolean);
+        if(segments.length!==4 || segments[0]!=='concert' ||
+           !segments[1].split('').every(ch=>ch>='0' && ch<='9'))continue;
+        if(String(item.concertId)!==segments[1])continue;
+        const venue=venueIndex.get(venueKey(decodeURIComponent(segments[3])));
         if(!venue || typeof item.rawTitle!=='string')continue;
         const names=source.splitLineup(item.rawTitle).filter(x=>x.length>=2 && x.length<=150);
         if(!names.length)continue;
-        const id='podiuminfo-'+match[1];
+        const id='podiuminfo-'+segments[1];
         if(map.has(id))continue; // Individually verified cached details win.
         map.set(id,{id,artist:names[0],artists:names.slice(0,20),date,
           venue:venue.name,city:venue.city,country:venue.country,
