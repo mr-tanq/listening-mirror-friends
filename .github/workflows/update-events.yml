@@ -38,7 +38,7 @@ jobs:
       - name: Update verified Podiuminfo + Festivalinfo catalog
         env:
           CATALOG_DAYS: '100'
-          NEW_ARTISTS_PER_RUN: '35'
+          NEW_ARTISTS_PER_RUN: '0'  # Public agenda cache is the fallback; direct event pages may return HTTP 403
           FESTIVAL_TIME_BUDGET_MS: '480000'
           NEW_GENRE_LOOKUPS_PER_RUN: '16'
         run: node scripts/fetch-events.mjs
