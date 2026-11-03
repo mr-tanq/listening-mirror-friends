@@ -264,6 +264,52 @@ export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLo
     taggedArtists:Object.values(cached.artists).filter(x=>x.genres?.length).length};
 }
 
+/**
+ * Read More.com's public, structured music catalogue using the existing
+ * source adapter. Each card must independently validate an exact date, venue,
+ * city, Greek location and HTTPS event link; ambiguous/multi-date cards are
+ * discarded. No Ticketmaster, no invented event details.
+ */
+export function parseGreekMusicCatalog(html,{cheerio,moreEvents,today=dayNow(),endDate=plusDays(today,180)}={}){
+  const $=cheerio.load(html);
+  const cards=$('article.play-template[itemtype$="/Event"]');
+  const events=new Map();
+  cards.each((_,node)=>{
+    const title=$(node).find('h3[itemprop="name"]').first().text().trim();
+    if(!title || title.length>250 || /cancelled|postponed|ακυρ[ωώ]|αναβ[οά]λ/i.test(title))return;
+    // The original source adapter expects an artist, not a catalogue browse.
+    // Extract the named billing; pass only this single verified card to it.
+    const artist=title.split(/\s+(?:with special guests?:|with guests?:|special guests?:|support:|\+)\s*/i)[0]
+      .replace(/\s*\|\s*.+$|\s+live(?:\s|$).*$/i,'').trim();
+    if(artist.length<2 || artist.length>150)return;
+    let parsed=[];
+    try {parsed=moreEvents($.html(node),artist);}catch{return;}
+    for(const event of parsed){
+      if(event.country!=='GR'||!validDate(event.date)||event.date<today||event.date>endDate)continue;
+      if(!event.sourceUrl||!safeUrl(event.sourceUrl)||!event.city||!event.venue)continue;
+      const id='more-'+event.sourceId;
+      events.set(id,{id,artist:event.artist,artists:[event.artist],date:event.date,
+        venue:event.venue,city:event.city,country:'GR',
+        genre:'',subgenre:'',url:event.sourceUrl,
+        image:safeUrl(event.image),source:'more',verification:'source-catalog'});
+    }
+  });
+  return {events:[...events.values()],cards:cards.length};
+}
+async function discoverGreekEvents(base,{today,endDate}){
+  const {createRequire}=await import('node:module');
+  const requireFromSource=createRequire(path.join(base,'package.json'));
+  const cheerio=requireFromSource('cheerio');
+  const original=await import(pathToFileURL(path.join(base,'scripts/sources/international-concert-search.mjs')).href);
+  const manual=await import(pathToFileURL(path.join(base,'scripts/sources/manual-concert-search.mjs')).href);
+  const url='https://www.more.com/gr-en/tickets/music/';
+  const html=await manual.fetchHTML(url,'more.com');
+  const result=parseGreekMusicCatalog(html,{cheerio,moreEvents:original.moreEvents,today,endDate});
+  if(result.cards===0)throw new Error('More.com returned no recognizable structured music event cards');
+  console.log('More.com Greek music feed: '+result.events.length+' valid single-date Greek shows from '+result.cards+' listing cards.');
+  return result.events;
+}
+
 export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE_DIR || '.source'}={}) {
   const base = path.resolve(ROOT, sourceDir);
   const source = await import(pathToFileURL(path.join(base,'scripts/sources/podiuminfo.mjs')).href);
@@ -351,10 +397,19 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     } catch(error) { console.warn(`Official-venue check unavailable: ${error.message}`); }
   }
 
+  let greekEvents=[];
+  let greeceFeedError='';
+  try{
+    greekEvents=await discoverGreekEvents(base,{today,endDate:festivalEnd});
+  }catch(error){
+    greeceFeedError=error.message||'Greek music source unavailable';
+    console.warn('Greek feed temporarily unavailable; retaining prior source-verified events: '+greeceFeedError);
+  }
+
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -405,6 +460,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     }
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
+  for(const item of greekEvents)map.set(item.id,item);
   console.log('Added '+agendaOnly+' agenda-only previews. Their event details must be confirmed on Podiuminfo.');
   for(const item of officialEvents)map.set(item.id,item);
   const missing=first.stats.daysMissing || 0;
@@ -424,12 +480,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 140)});
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
-    coverage:{countries:['NL','BE'],daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),
+    coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
       festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
-      notes:'Podiuminfo agenda previews have NOT been checked against individual event pages. Confirm date, city, lineup and status at the source before travel or ticket purchase. Festival editions come from the original verified Festivalinfo cache. Coverage is incomplete and NL/BE-focused; preferences remain on each device.'}};
+      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: dated events from the public More.com music listing when accessible; this is not a complete country calendar. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
