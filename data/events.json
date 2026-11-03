@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T21:05:58.462Z",
+  "updatedAt": "2026-11-03T21:10:08.259Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -965,7 +965,7 @@
       "venue": "Le Guess Who?",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Hip-Hop",
+      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Jazz / Hip-Hop",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35545/Le-Guess-Who-/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/0/6//Le_Guess_Who__2026.png",
@@ -16969,7 +16969,7 @@
       "venue": "Circus Entertainment Hub",
       "city": "Larisa",
       "country": "GR",
-      "genre": "Jazz / Folk",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nouvelle-vague-live-sti-larisa/",
       "image": "https://www.more.com/getattachment/AA88B6B6-25D2-40B9-9FE1-AF498CED9C04/evg_nouvellevaguelivestelarisa_1901_5053.png",
@@ -18427,7 +18427,7 @@
       "venue": "Fuzz Club",
       "city": "Tavros",
       "country": "GR",
-      "genre": "Jazz / Folk",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nouvelle-vague-2/",
       "image": "https://www.more.com/getattachment/EC64CD3E-48E0-47D0-86BF-FE8F9CE0269C/evg_nouvellevague_2106_1249.png",
@@ -18822,7 +18822,7 @@
       "venue": "Royal Theater",
       "city": "Ptra",
       "country": "GR",
-      "genre": "Jazz / Folk",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nouvelle-vague-patra/",
       "image": "https://www.more.com/getattachment/D0578F69-3AD4-496C-91A7-A29A93D9955F/evg_nouvellevaguelivestenpatra_1646_4175.png",
@@ -27524,8 +27524,8 @@
     "officialVenueEvents": 0,
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 284,
-    "taggedArtists": 132,
+    "genreTaggedEvents": 281,
+    "taggedArtists": 143,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: dated events from the public More.com music listing when accessible; this is not a complete country calendar. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
