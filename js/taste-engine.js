@@ -1,4 +1,4 @@
-import {norm,cityKey,recommendEvent,normalizeEvent,dateToday,GENRES} from './model.js';
+import {norm,cityKey,recommendEvent,normalizeEvent,dateToday,GENRES} from './model.js?v=swipe-friends-v3';
 
 /**
  * Curated starting palette for the onboarding experience.
