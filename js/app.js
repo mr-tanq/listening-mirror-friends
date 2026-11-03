@@ -55,22 +55,24 @@ function scoreAll() {
   const current = dateToday();
   return catalog.events.filter(e=>e.date>=current).map(e=>({event:e, score:rankEvent(e,state.profile),reason:matchReason(e,state.profile)})).filter(r=>r.score>0).sort((a,b)=>b.score-a.score||a.event.date.localeCompare(b.event.date));
 }
-function discoverFeed() {
-  const matched=scoreAll().filter(x=>!state.saved[x.event.id]);
-  if(matched.length)return {items:matched,explore:false};
+function discoverFeed(){
+  return scoreAll().filter(x=>!state.saved[x.event.id]);
+}
+// Explore is deliberately separate from For You, and is not claimed to be
+// personalized. A preference change must not silently return unrelated shows.
+function exploreFeed(){
   const country=state.profile?.country;
-  if(!country)return {items:[],explore:false};
+  if(!country)return [];
   const city=norm(state.profile?.city);
-  const events=catalog.events.filter(e=>e.date>=dateToday() && e.country===country && !state.saved[e.id])
+  return catalog.events.filter(e=>e.date>=dateToday() && e.country===country && !state.saved[e.id])
     .sort((a,b)=>{
       const aLocal=city && norm(a.city)===city?1:0;
       const bLocal=city && norm(b.city)===city?1:0;
       return bLocal-aLocal || a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist);
-    }).slice(0,80);
-  return {items:events.map(event=>({event,score:0})),explore:events.length>0};
+    }).slice(0,80).map(event=>({event,score:0}));
 }
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:discoverFeed().items.length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
+function counts(){return {discover:discoverFeed().length,explore:exploreFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
 function setStatus(e,status){state.saved[e.id]={status,event:normalizeEvent(e)};persist();render();}
 function archiveEvent(e){
   const event=normalizeEvent(e);if(!event)return;
@@ -86,10 +88,10 @@ function card(raw,scoreInfo=null,mode='discover') {
   const body=el('div','show-body');
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));
   if(scoreInfo?.reason)body.append(el('p','show-reason',scoreInfo.reason));
-  else if(e.genre)body.append(el('p','show-reason',e.genre));
+  else if(e.genre)body.append(el('p','show-reason',(e.genreEvidence==='title-cue'?'Event title suggests: ':'')+e.genre));
   if(e.source==='podiuminfo-agenda')body.append(el('p','show-reason','Podiuminfo day listing · Confirm event details on source site'));
   const foot=el('div','show-bottom');
-  if(mode==='discover'){
+  if(mode==='discover'||mode==='explore'){
     foot.append(button('Going','button small primary',()=>setStatus(e,'going')),button('Deciding','button small',()=>setStatus(e,'deciding')));
     foot.append(button('Pass','button small ghost',()=>setStatus(e,'passed')));
   } else {
@@ -105,16 +107,23 @@ function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
   let list=[];
-  if(collection==='discover'){
-    const feed=discoverFeed();
-    list=feed.items;
-    if(feed.explore)root.append(el('p','help-note',
-      'No direct artist/genre matches are available yet. Explore upcoming shows in your country while genre tags are being added. These are agenda previews: confirm event details at the source.'));
-  }
-  else list=savedItems(collection).map(x=>({event:x.event}));
+  if(collection==='discover')list=discoverFeed();
+  else if(collection==='explore'){
+    list=exploreFeed();
+    root.append(el('p','help-note',
+      'Explore is unfiltered by taste. For personal results choose For you. Podiuminfo agenda previews are not individually verified: confirm on the source page.'));
+  } else list=savedItems(collection).map(x=>({event:x.event}));
   if(searchText.trim())list=list.filter(x=>norm([x.event.artist,x.event.venue,x.event.city,x.event.genre].join(' ')).includes(norm(searchText)));
-  const message=!catalog.updatedAt && !catalog.events.length && collection==='discover' ? 'The event catalog has not been populated yet. You can still add your concerts manually. The public Podiuminfo/Festivalinfo catalog starts filling after its first GitHub Actions update.' : 'No matching shows yet. Try adjusting your music taste, or add a concert you already know about.';
-  if(!list.length){root.append(empty(collection==='discover'?'A quieter night.':collection==='going'?'Nothing planned yet.':'Nothing in Deciding.',collection==='discover'?message:'Save concerts from Discover or add one manually.',openConcertDialog,'+ Add concert'));return;}
+  const message=!catalog.updatedAt && !catalog.events.length && collection==='discover'
+    ? 'The event catalog has not been populated yet. You can still add concerts manually.'
+    : collection==='discover'
+      ? 'No matching concerts found for your current genres or favorite bands. Artist genre metadata is incomplete. Explore has other public listings, but they are not personalized.'
+      : 'No shows in this section yet.';
+  if(!list.length){
+    root.append(empty(collection==='discover'?'No matches for your taste.':collection==='going'?'Nothing planned yet.':collection==='explore'?'No listings available.':'Nothing in Deciding.',message,openConcertDialog,'+ Add concert'));
+    if(collection==='discover')root.append(button('Browse all concerts in Explore','button',()=>{collection='explore';render();}));
+    return;
+  }
   const grid=el('div','show-grid');for(const x of list.slice(0,200)){const n=card(x.event,x.score?x:null,collection);if(n)grid.append(n);}root.append(grid);
   if(list.length>200)root.append(el('p','help-note',`Showing the first 200 of ${list.length} matches. Narrow your search to see more.`));
 }
@@ -129,9 +138,9 @@ function renderTonight(){
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
-  for(const [key,title] of [['discover','For you'],['deciding','Deciding'],['going','Going']]){
+  for(const [key,title] of [['discover','For you'],['explore','Explore'],['deciding','Deciding'],['going','Going']]){
     const tab=button('','segment'+(collection===key?' active':''),()=>{collection=key;render();});
-    tab.textContent=`${key==='discover'&&discoverFeed().explore?'Explore':title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
+    tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
   const search=el('input','search');search.placeholder='Search artist, city, venue…';search.value=searchText;search.type='search';search.setAttribute('aria-label','Search concerts');search.addEventListener('input',e=>{searchText=e.target.value;renderTonightList();});
   filter.append(tabs,search);app.append(filter);
@@ -192,7 +201,7 @@ function openProfileDialog(firstTime=false){
   const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));}
   controls.append(button(firstTime?'Start exploring →':'Save taste','button primary',()=>{
     if(input.value.trim())add();if(!selected.size&&!artists.length){status.textContent='Choose at least one genre or add a favorite band.';return;}
-    state.profile={name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],artists};persist();dlg.close();render();
+    state.profile={name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],artists};persist();collection='discover';dlg.close();render();
   }));content.append(controls);
   if(!firstTime){const note=el('p','help-note','Private to this browser · no account, no cloud sync. Export a backup before clearing your browser or changing phones.');content.append(el('div','separator'),note);}
 }
