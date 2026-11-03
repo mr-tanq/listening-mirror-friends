@@ -1,6 +1,7 @@
 import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=guided-setup-20261104-b';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=guided-setup-20261104-b';
 import {createOnboarding} from './onboarding.js?v=guided-setup-20261104-b';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=swipe-stage-1';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -14,6 +15,7 @@ let collection = 'discover';
 let searchText = '';
 let archiveSearch = '';
 let onboarding = null;
+let deckOrder=[];
 
 function loadState() {
   try {
@@ -71,8 +73,38 @@ function scoreAll() {
 }
 function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]);}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:discoverFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
-function setStatus(e,status){state.saved[e.id]={status,event:normalizeEvent(e)};persist();render();}
+function counts(){return {discover:discoverFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length,passed:savedItems('passed').length};}
+function setStatus(e,status){
+  const previous=state.saved[e.id]||{};
+  state.saved[e.id]={...previous,status,event:normalizeEvent(e)};
+  if(status!=='deciding')deckOrder=deckOrder.filter(id=>id!==e.id);
+  persist();render();
+}
+function replenishDeciding(){
+  if(!catalog.updatedAt||!state.profile?.onboarded||savedItems('deciding').length>=4)return;
+  const next=seedDeciding(catalog.events,state.profile,artistTags,state.saved,10);
+  if(!next.length)return;
+  for(const x of next){
+    if(!state.saved[x.id])state.saved[x.id]={
+      status:'deciding',event:x.event,suggested:true,suggestionReason:x.suggestionReason
+    };
+  }
+  persist();
+}
+function decideFromDeck(event,status){
+  if(!event||!['going','passed'].includes(status))return;
+  const original=state.saved[event.id];
+  if(!original||original.status!=='deciding')return;
+  state.saved[event.id]={...original,status,event:normalizeEvent(original.event)};
+  deckOrder=deckOrder.filter(id=>id!==event.id);
+  replenishDeciding();
+  persist();render();
+}
+function postponeFromDeck(){
+  if(deckOrder.length>1)deckOrder.push(deckOrder.shift());
+  renderTonightList();
+}
+
 function archiveEvent(e){
   const event=normalizeEvent(e);if(!event)return;
   if(!state.archive.some(a=>a.id===event.id||[a.artist,a.date,a.venue].join('|')===[event.artist,event.date,event.venue].join('|'))){state.archive.unshift(event);}
@@ -95,6 +127,7 @@ function card(raw,scoreInfo=null,mode='discover') {
     foot.append(button('Pass','button small ghost',()=>setStatus(e,'passed')));
   } else {
     if(mode==='deciding')foot.append(button('Going','button small primary',()=>setStatus(e,'going')));
+    if(mode==='passed')foot.append(button('Restore','button small primary',()=>setStatus(e,'deciding')));
     if(mode==='going')foot.append(button('Attended ✓','button small primary',()=>archiveEvent(e)));
     if(mode==='deciding')foot.append(button('Attended ✓','button small',()=>archiveEvent(e)));
     foot.append(button('Remove','button small ghost',()=>{delete state.saved[e.id];persist();render();}));
@@ -105,6 +138,30 @@ function card(raw,scoreInfo=null,mode='discover') {
 function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
+  if(collection==='deciding'){
+    const items=savedItems('deciding');
+    const byId=new Map(items.map(x=>[x.event.id,x]));
+    deckOrder=[...deckOrder.filter(id=>byId.has(id)),...items.map(x=>x.event.id).filter(id=>!deckOrder.includes(id))];
+    const queue=deckOrder.map(id=>byId.get(id)).filter(Boolean)
+      .filter(x=>!searchText.trim()||norm([x.event.artist,x.event.city,x.event.venue,x.suggestionReason].join(' ')).includes(norm(searchText)));
+    if(!queue.length){
+      const message=items.length?'No Deciding card matches your search. Clear the search to see your other concerts.'
+        :state.pendingDeciding?'Preparing your first matches from your music taste…'
+        :'You have reviewed all your current recommendations. Discover can show more, and passing on a show keeps it in Set aside.';
+      root.append(empty(items.length?'No matching card.':'All caught up.',message,
+        ()=>{if(items.length){searchText='';render();}
+          else{replenishDeciding();render();}},items.length?'Clear search':'Look for more matches'));
+      return;
+    }
+    const item=queue[0];
+    mountDecidingDeck(root,{event:item.event,suggestionReason:item.suggestionReason||''},{
+      remaining:queue.length,
+      onDecide:decideFromDeck,
+      onLater:postponeFromDeck,
+      onDetails:openConcertDetail
+    });
+    return;
+  }
   const personal=collection==='discover';
   let list=personal?discoverFeed():savedItems(collection).map(x=>({event:x.event,reason:x.suggested?'Suggested for your taste · '+x.suggestionReason:''}));
   if(searchText.trim())list=list.filter(x=>norm([
@@ -182,7 +239,7 @@ function renderTonight(){
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
-  for(const [key,title] of [['discover','Discover'],['deciding','Deciding'],['going','Going']]){
+  for(const [key,title] of [['discover','Discover'],['deciding','Deciding'],['going','Going'],['passed','Set aside']]){
     const tab=button('','segment'+(collection===key?' active':''),()=>{collection=key;render();});
     tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
