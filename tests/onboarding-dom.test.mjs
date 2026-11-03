@@ -50,7 +50,8 @@ test('full 4-step onboarding accepts name, genres, niche and optional artists',(
   click(root,'Metal');
   click(root,'Continue →');
   assert.match(root.textContent,/Go a little deeper/);
-  click(root,'Doom Metal');
+  const doom=find(root,n=>n.tagName==='BUTTON'&&n.className.includes('onboarding-niche')&&n.textContent.startsWith('Doom Metal'));
+  assert.ok(doom,'Expected a Doom Metal niche suggestion');doom.send('click');
   click(root,'Continue →');
   assert.match(root.textContent,/Who should we follow/);
   const band=find(root,n=>n.tagName==='BUTTON'&&n.className.includes('onboarding-artist')&&n.textContent.includes('Paradise Lost'));
