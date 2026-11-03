@@ -74,7 +74,7 @@ function artistMatch(event,wanted) {
   });
 }
 function artistBillingRoot(artist){
-  return String(artist||'').replace(/\s+[-–—:]\s+.{0,100}\b(?:tour|anniversary)\b.*$/i,'')
+  return String(artist||'').replace(/(?:\s+[-–—]\s+|:\s*).{0,100}\b(?:tour|anniversary)\b.*$/i,'')
     .replace(/\s+(?:with\s+special\s+guests?|with\s+guests)\b.*$/i,'')
     .replace(/\s*\((?:UK|USA|US|NL|GR)\)\s*$/i,'').trim();
 }
