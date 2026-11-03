@@ -416,6 +416,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   for (const [id,detail] of Object.entries(cache.concert.entries)) if (detail?.date<today || detail?.date>festivalEnd || !detail?.date) delete cache.concert.entries[id];
   const events=[...map.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));
   const tags=await read('data/artist-tags.json',{artists:{}});
+  tags.artists ||= {};
+  // Historical provider failures were not valid classifications.
+  // Retry them in a later run rather than treating them as artist metadata.
+  for(const [key,entry] of Object.entries(tags.artists)){
+    if(entry?.source==='unclassified')delete tags.artists[key];
+  }
   const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 140)});
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
     coverage:{countries:['NL','BE'],daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),
