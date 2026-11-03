@@ -148,29 +148,99 @@ async function musicBrainzTags(artist, {fetcher=fetch,delay=ms=>new Promise(r=>s
   const detail=await ask(`https://musicbrainz.org/ws/2/artist/${encodeURIComponent(exact.id)}?inc=genres+tags&fmt=json`);
   return classifyMusicBrainzTags([...(detail.genres || []),...(detail.tags || [])]);
 }
-export async function applyGenreMetadata(events, cached, {limit=16, lookup=musicBrainzTags,clock=Date.now}={}) {
+
+/**
+ * Apple's public iTunes catalog provides broad artist genres without accounts
+ * or API keys. Require an exact artist name: a search hit alone is not evidence.
+ * MusicBrainz remains available as a conservative fallback for niche genres.
+ */
+export function classifyItunesArtist(results, artist) {
+  const exact=(results || []).filter(x=>x && x.wrapperType==='artist'
+    && norm(x.artistName)===norm(artist) && typeof x.primaryGenreName==='string');
+  const styles=[...new Set(exact.map(x=>x.primaryGenreName))];
+  // Disambiguation: ambiguous identical artist names with incompatible genres.
+  if(styles.length!==1)return [];
+  const name=styles[0];
+  const tokens=name.split(/\s*[\/,;&]\s*/).filter(Boolean);
+  const mapped=classifyMusicBrainzTags(tokens.map(t=>({name:t,count:1})));
+  if(mapped.length)return mapped;
+  // Apple's broad labels have slightly different names than MusicBrainz tags.
+  const special={
+    'dance':['Electronic'],
+    'dance & electronic':['Electronic'],
+    'alternative & indie':['Alternative','Indie'],
+    'alternative':['Alternative'],
+    'hard rock':['Rock'],
+    'r&b/soul':[],
+    'singer/songwriter':['Folk'],
+    'hip-hop/rap':['Hip-Hop'],
+    'world':[]
+  };
+  return special[norm(name)]||[];
+}
+async function itunesArtistGenres(artist,{fetcher=fetch,delay=ms=>new Promise(r=>setTimeout(r,ms))}={}) {
+  await delay(350);
+  const url=new URL('https://itunes.apple.com/search');
+  url.search=new URLSearchParams({term:artist,media:'music',entity:'musicArtist',limit:'15'});
+  const r=await fetcher(url,{headers:{'Accept':'application/json'},signal:AbortSignal.timeout(12000)});
+  if(!r.ok)throw Error('iTunes artist metadata HTTP '+r.status);
+  const data=await r.json();
+  return classifyItunesArtist(data.results,artist);
+}
+async function genreLookup(artist) {
+  let apple=[];
+  try{apple=await itunesArtistGenres(artist);if(apple.length)return {genres:apple,source:'itunes'};}
+  catch(error){console.warn('iTunes genre unavailable for '+artist+': '+error.message);}
+  // MusicBrainz is called only when a name is not classified by iTunes.
+  // Respect its 1-request/sec rate limit through the existing adapter.
+  try{const genres=await musicBrainzTags(artist);return {genres,source:'musicbrainz'};}
+  catch(error){console.warn('MusicBrainz genre unavailable for '+artist+': '+error.message);throw error;}
+}
+export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLookup,clock=Date.now}={}) {
   cached.artists ||= {};
-  let attempts=0;
+  const candidates=new Map();
+  // Frequency-weighted unique artists. Include festival performers for
+  // genre discovery, not just the festival name.
   for(const event of events) {
-    // Festivals have several artists and no defensible single genre.
-    const names=event.source==='festivalinfo' ? event.artists.slice(0,3) : event.artists.slice(0,2);
+    const names=event.source==='festivalinfo' ? (event.artists||[]).slice(0,90)
+      : (event.artists||[event.artist]).slice(0,3);
     for(const name of names) {
       const key=norm(name);
-      if(!key || key.length>100)continue;
-      const old=cached.artists[key];
-      if(old && clock()-Date.parse(old.checkedAt || '')<90*86400000)continue;
-      if(attempts>=limit)continue;
-      attempts++;
-      try { cached.artists[key]={genres:await lookup(name),checkedAt:new Date(clock()).toISOString()}; }
-      catch(error) { console.warn(`Genre metadata unavailable for ${name}: ${error.message}`); }
+      if(!key||key.length>100||key.length<2)continue;
+      if(!candidates.has(key))candidates.set(key,{name,count:0,firstDate:event.date});
+      const row=candidates.get(key);
+      row.count++;
+      if(event.date<row.firstDate)row.firstDate=event.date;
     }
   }
-  for(const event of events) {
-    const names=event.source==='festivalinfo'?event.artists.slice(0,6):event.artists;
-    const genres=[...new Set(names.flatMap(name=>cached.artists[norm(name)]?.genres || []))];
-    if(genres.length)event.genre=genres.slice(0,5).join(' / ');
+  const queue=[...candidates.entries()]
+    .filter(([key])=>{
+      const old=cached.artists[key];
+      if(!old)return true;
+      const age=clock()-Date.parse(old.checkedAt||'');
+      return !Number.isFinite(age)||age>(old.genres?.length?80:7)*86400000;
+    })
+    .sort((a,b)=>b[1].count-a[1].count || a[1].firstDate.localeCompare(b[1].firstDate))
+    .slice(0,Math.max(0,Math.min(450,limit)));
+  let attempts=0,identified=0;
+  for(const [key,row] of queue) {
+    attempts++;
+    try {
+      const result=await lookup(row.name);
+      const genres=Array.isArray(result)?result:Array.isArray(result?.genres)?result.genres:[];
+      cached.artists[key]={genres:genres.filter(g=>Object.keys(genreAliases).includes(g)).slice(0,6),
+        source:typeof result?.source==='string'?result.source:'musicbrainz',
+        checkedAt:new Date(clock()).toISOString()};
+      if(genres.length)identified++;
+    } catch(error){console.warn('Artist metadata temporarily unavailable: '+row.name+' - '+error.message);}
   }
-  return {events,attempts,withGenres:events.filter(x=>!!x.genre).length};
+  for(const event of events) {
+    const genres=[...new Set((event.artists||[event.artist])
+      .flatMap(name=>cached.artists[norm(name)]?.genres||[]))];
+    if(genres.length)event.genre=genres.slice(0,8).join(' / ');
+  }
+  return {events,attempts,identified,withGenres:events.filter(x=>!!x.genre).length,
+    taggedArtists:Object.values(cached.artists).filter(x=>x.genres?.length).length};
 }
 
 export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE_DIR || '.source'}={}) {
@@ -325,18 +395,18 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   for (const [id,detail] of Object.entries(cache.concert.entries)) if (detail?.date<today || detail?.date>festivalEnd || !detail?.date) delete cache.concert.entries[id];
   const events=[...map.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));
   const tags=await read('data/artist-tags.json',{artists:{}});
-  const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 16)});
+  const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 140)});
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
     coverage:{countries:['NL','BE'],daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
       festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
-      datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,
+      datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'Podiuminfo agenda previews have NOT been checked against individual event pages. Confirm date, city, lineup and status at the source before travel or ticket purchase. Festival editions come from the original verified Festivalinfo cache. Coverage is incomplete and NL/BE-focused; preferences remain on each device.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
-  console.log(`Published ${events.length} verified concerts/festivals. Concert sources: Podiuminfo, Festivalinfo and official venues; no Ticketmaster or Last.fm.`);
+  console.log(`Published ${events.length} concert/festival listings (${genreStatus.withGenres} tagged with artist genres; ${events.filter(x=>x.source==='podiuminfo-agenda').length} agenda-only). Sources: Podiuminfo/Festivalinfo/official venues; no Ticketmaster or Last.fm.`);
   return result;
 }
 
