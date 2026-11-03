@@ -1,0 +1,87 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {suggestedNiches,suggestTasteBands,mergeTasteTags,seedDeciding,TASTE_BANDS} from '../js/taste-engine.js';
+import {recommendEvent} from '../js/model.js';
+
+const profile={name:'Alex',country:'GR',city:'Athens',genres:['Metal','Rock'],subgenres:['Doom Metal'],artists:['Paradise Lost']};
+const show=(id,artist,date,city='Athens',country='GR')=>({
+  id,artist,artists:[artist],date,city,country,venue:'Test music venue',url:'https://example.com/'+id
+});
+const list=[
+  show('paradise','Paradise Lost','2027-02-09'),
+  show('doom','Candlemass','2027-01-12'),
+  show('metal','Kreator','2027-01-13'),
+  show('indie','Beach House','2027-01-14'),
+  show('far','YOB','2027-01-11','Thessaloniki'),
+  show('out','Kyuss','2027-01-10','Utrecht','NL')
+];
+
+test('onboarding offers more specific styles related to selected main genres',()=>{
+  const names=suggestedNiches(['Metal','Rock']).map(x=>x.name);
+  assert.ok(names.includes('Doom Metal'));
+  assert.ok(names.includes('Thrash Metal'));
+  assert.ok(names.includes('Post-Metal'));
+  assert.ok(names.includes('Progressive Rock'));
+  assert.equal(names.includes('Dancehall'),false);
+});
+test('artist suggestions reflect selected niche instead of a random alphabetic list',()=>{
+  const suggestions=suggestTasteBands(profile,[],100);
+  assert.ok(suggestions.find(x=>x.name==='Paradise Lost'));
+  assert.ok(suggestions.find(x=>x.name==='Candlemass'));
+  assert.ok(suggestions.find(x=>x.name==='Kreator'));
+  assert.equal(suggestions.some(x=>x.name==='Yussef Dayes'),false);
+  const top=suggestions.slice(0,10).map(x=>x.name);
+  assert.ok(top.includes('Paradise Lost'));
+});
+test('different taste chooses different suggested artists',()=>{
+  const jazz=suggestTasteBands({...profile,genres:['Jazz'],subgenres:['Spiritual Jazz'],artists:[]},[],50);
+  assert.ok(jazz.find(x=>x.name==='Kamasi Washington'));
+  assert.equal(jazz.some(x=>x.name==='Kreator'),false);
+});
+test('taste metadata adds specialist styles without discarding trusted original genres',()=>{
+  const tags=mergeTasteTags({artists:{'paradise lost':{genres:['Metal'],source:'source'}}});
+  assert.ok(tags.artists['paradise lost'].genres.includes('Stoner / Doom'));
+  assert.ok(tags.artists['paradise lost'].subgenres.includes('Doom Metal'));
+  assert.ok(tags.artists['paradise lost'].genres.includes('Metal'));
+});
+test('selected subgenres increase the relevance of matching concert listings',()=>{
+  const tags=mergeTasteTags({artists:{}});
+  const doom=recommendEvent(list[1],{...profile,artists:[]},tags);
+  const thrash=recommendEvent(list[2],{...profile,artists:[]},tags);
+  assert.ok(doom.score>thrash.score);
+  assert.ok(doom.reason.includes('Doom Metal'));
+});
+test('onboarding seeds only real matching upcoming events and never adds random shows',()=>{
+  const picks=seedDeciding(list,profile,mergeTasteTags({artists:{}}),{},12,'2027-01-01');
+  const ids=picks.map(x=>x.id);
+  assert.ok(ids.includes('paradise'));
+  assert.ok(ids.includes('doom'));
+  assert.ok(ids.includes('metal'));
+  assert.equal(ids.includes('indie'),false);
+  assert.equal(ids.includes('out'),false);
+  assert.ok(picks.every(x=>x.status==='deciding'&&x.suggested===true));
+});
+test('onboarding never overwrites Going/Passed/previously saved decisions',()=>{
+  const saved={
+    paradise:{status:'going',event:list[0]},
+    doom:{status:'passed',event:list[1]}
+  };
+  const picks=seedDeciding(list,profile,mergeTasteTags({artists:{}}),saved,12,'2027-01-01');
+  assert.ok(picks.every(x=>!['paradise','doom'].includes(x.id)));
+});
+test('more local events come before distant shows, with at most two distant backups',()=>{
+  const tags=mergeTasteTags({artists:{}});
+  const picks=seedDeciding(list,profile,tags,{},12,'2027-01-01');
+  const local=picks.filter(x=>x.event.city==='Athens');
+  const other=picks.filter(x=>x.event.city==='Thessaloniki');
+  assert.ok(local.length>=2);assert.ok(other.length<=2);
+});
+test('seed respects an empty event catalog and an unsupported country',()=>{
+  const tags=mergeTasteTags({artists:{}});
+  assert.deepEqual(seedDeciding([],profile,tags),[]);
+  assert.deepEqual(seedDeciding(list,{...profile,country:'DE'},tags,{},10,'2027-01-01'),[]);
+});
+test('curated sample library has broad musical coverage for all selectable genres',()=>{
+  const expected=['Metal','Post-Rock','Electronic','Jazz','Hip-Hop','Reggae','Folk','Pop','Classical','Ambient'];
+  for(const genre of expected)assert.ok(TASTE_BANDS.some(x=>x.genres.includes(genre)),genre+' lacks artist suggestions');
+});
