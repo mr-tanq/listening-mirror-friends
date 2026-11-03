@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T21:45:50.979Z",
+  "updatedAt": "2026-11-03T21:48:27.855Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -8294,7 +8294,7 @@
       "venue": "Ίλιον Plus",
       "city": "Athens",
       "country": "GR",
-      "genre": "Rock",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/18/27545",
       "image": "",
@@ -18597,7 +18597,7 @@
       "venue": "Soul SKG",
       "city": "Thessaloniki",
       "country": "GR",
-      "genre": "",
+      "genre": "Jazz",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/12/11/27473",
       "image": "",
@@ -19466,7 +19466,7 @@
       "venue": "AN Club",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Jazz",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/memorials-live/",
       "image": "https://www.more.com/getattachment/D127FBC6-DA1B-42FD-BAE1-ACDC1B5BF1DD/evg_memorialslive_1113_4970.png",
@@ -28293,7 +28293,7 @@
     "officialVenueEvents": 1,
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 341,
+    "genreTaggedEvents": 342,
     "taggedArtists": 189,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
