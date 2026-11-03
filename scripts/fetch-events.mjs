@@ -351,7 +351,7 @@ export function parseRockingAgenda(html,{cheerio,today=dayNow(),endDate=plusDays
     const text=$(node).text().replace(/\s+/g,' ').trim();
     const found=text.match(/^(.{2,190}?)\s+(Αθήνα|Θεσσαλονίκη|Athens|Thessaloniki)\s+@\s+(.+)$/i);
     if(!found)return;
-    const [_,billing,place,venueWithPrice]=found;
+    const [,billing,place,venueWithPrice]=found;
     const cityFromText=/^(?:αθήνα|athens)$/i.test(place)?'Athens':'Thessaloniki';
     if(norm(cityFromText)!==norm(city))return;
     const venue=venueWithPrice.replace(/\s+(?:Από\s+)?\d+(?:[,.]\d+)?\s*(?:€|e)(?:\s*\/\s*\d+\s*(?:€|e))?\s*$/i,'').trim();
