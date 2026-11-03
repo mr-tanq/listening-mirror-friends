@@ -179,32 +179,37 @@ export function classifyItunesArtist(results, artist) {
   return special[norm(name)]||[];
 }
 async function itunesArtistGenres(artist,{fetcher=fetch,delay=ms=>new Promise(r=>setTimeout(r,ms))}={}) {
-  await delay(350);
+  // Slow down requests to the public catalog and stop on its HTTP 429 limit.
+  await delay(1400);
   const url=new URL('https://itunes.apple.com/search');
   url.search=new URLSearchParams({term:artist,media:'music',entity:'musicArtist',limit:'15'});
   const r=await fetcher(url,{headers:{'Accept':'application/json'},signal:AbortSignal.timeout(12000)});
+  if(r.status===429)throw Object.assign(new Error('iTunes rate limit HTTP 429'),{code:'RATE_LIMIT'});
   if(!r.ok)throw Error('iTunes artist metadata HTTP '+r.status);
   const data=await r.json();
   return classifyItunesArtist(data.results,artist);
 }
-let itunesFailures=0,musicBrainzFallbacks=0;
-async function genreLookup(artist) {
+let musicBrainzFallbacks=0;
+async function genreLookup(artist){
   let apple=[];
-  if(itunesFailures<3){
-    try{apple=await itunesArtistGenres(artist);itunesFailures=0;}
-    catch(error){itunesFailures++;console.warn('iTunes metadata unavailable for '+artist+': '+error.message);}
+  let appleResponded=false;
+  try{apple=await itunesArtistGenres(artist);appleResponded=true;}
+  catch(error){
+    if(error.code==='RATE_LIMIT')throw error;
+    console.warn('iTunes metadata temporarily unavailable for '+artist+': '+error.message);
   }
   if(apple.length)return {genres:apple,source:'itunes'};
-  // Avoid a long 403/503 storm on GitHub-hosted runners; retry later.
-  if(musicBrainzFallbacks>=8)return {genres:[],source:'unclassified'};
-  musicBrainzFallbacks++;
-  try{
-    const genres=await musicBrainzTags(artist);
-    return {genres,source:'musicbrainz'};
-  }catch(error){
-    console.warn('MusicBrainz metadata unavailable for '+artist+': '+error.message);
-    return {genres:[],source:'unclassified'};
+  if(musicBrainzFallbacks<8){
+    musicBrainzFallbacks++;
+    try{
+      const genres=await musicBrainzTags(artist);
+      return {genres,source:'musicbrainz'};
+    }catch(error){
+      console.warn('MusicBrainz metadata unavailable for '+artist+': '+error.message);
+    }
   }
+  if(appleResponded)return {genres:[],source:'itunes'};
+  throw Object.assign(new Error('Artist genre sources temporarily unavailable'),{code:'PROVIDER_UNAVAILABLE'});
 }
 export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLookup,clock=Date.now}={}) {
   cached.artists ||= {};
@@ -242,7 +247,13 @@ export async function applyGenreMetadata(events,cached,{limit=140,lookup=genreLo
         source:typeof result?.source==='string'?result.source:'musicbrainz',
         checkedAt:new Date(clock()).toISOString()};
       if(genres.length)identified++;
-    } catch(error){console.warn('Artist metadata temporarily unavailable: '+row.name+' - '+error.message);}
+    } catch(error){
+      console.warn('Artist metadata temporarily unavailable: '+row.name+' - '+error.message);
+      if(error.code==='RATE_LIMIT'){
+        console.log('Provider rate limited: stopping enrichment until next scheduled update, leaving unprocessed artists uncached.');
+        break;
+      }
+    }
   }
   for(const event of events) {
     const genres=[...new Set((event.artists||[event.artist])
