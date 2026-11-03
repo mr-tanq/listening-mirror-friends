@@ -17,7 +17,7 @@ export function normalizeEvent(input){
   const date=String(input.date||'').slice(0,10);
   if(!artist||!date)return null;
   const id=String(input.id||`${artist}-${date}-${input.venue||''}`).slice(0,250);
-  const artists=Array.isArray(input.artists)?input.artists.filter(x=>typeof x==='string').slice(0,30):[];
+  const artists=Array.isArray(input.artists)?input.artists.filter(x=>typeof x==='string').slice(0,250):[];
   return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre:String(input.genre||'').slice(0,100),subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
 }
 function artistMatch(event,wanted){
