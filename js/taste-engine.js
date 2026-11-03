@@ -169,7 +169,7 @@ const SEED_ROWS=[
 export const TASTE_BANDS=SEED_ROWS.map(([name,genres,styles])=>({
   name,genres:genres.split('|'),styles:styles.split('|')
 }));
-export const ALL_SUBGENRES=[...new Set(Object.values(NICHE_BY_GENRE).flat())].sort();
+export const ALL_SUBGENRES=[...new Set([...Object.values(NICHE_BY_GENRE).flat(),...TASTE_BANDS.flatMap(b=>b.styles)])].sort();
 export function suggestedNiches(genres=[]){
   const selected=genres.filter(g=>GENRES.includes(g));
   const scores=new Map();
