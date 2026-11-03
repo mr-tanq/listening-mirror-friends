@@ -22,7 +22,18 @@ export const NICHE_BY_GENRE={
   'Psychedelic':['Psychedelic Rock','Heavy Psych','Neo-Psychedelia','Krautrock','Space Rock','Psychedelic Folk','Desert Rock'],
   'Folk':['Indie Folk','Dark Folk','Neo-Folk','Psych Folk','Singer-Songwriter','Americana','Traditional Folk'],
   'Experimental':['Noise Rock','Drone','Art Rock','Avant-Garde','Post-Metal','IDM','Industrial','Minimalism'],
-  'Ambient':['Dark Ambient','Ambient Electronic','Drone','Ambient Rock','Neo-Classical','Soundscape','Downtempo']
+  'Ambient':['Dark Ambient','Ambient Electronic','Drone','Ambient Rock','Neo-Classical','Soundscape','Downtempo'],
+  'Metalcore':['Melodic Metalcore','Progressive Metalcore','Djent','Post-Hardcore','Electronicore','Nu Metalcore','Alternative Metal'],
+  'Deathcore':['Symphonic Deathcore','Technical Deathcore','Blackened Deathcore','Death Metal','Djent'],
+  'Hardcore':['Hardcore Punk','Beatdown Hardcore','Melodic Hardcore','Post-Hardcore','Metalcore','Screamo'],
+  'Pop-Punk':['Pop Punk','Emo','Easycore','Alternative Rock','Post-Hardcore','Emo Pop','Power Pop'],
+  'R&B / Soul':['Neo-Soul','Contemporary R&B','Alternative R&B','Soul','Funk','Quiet Storm'],
+  'Blues':['Blues Rock','Electric Blues','Delta Blues','Chicago Blues','Soul Blues','Psychedelic Blues'],
+  'Funk / Disco':['Disco','Nu-Disco','Funk Rock','Jazz Funk','P-Funk','Electro Funk'],
+  'Country':['Modern Country','Outlaw Country','Americana','Alt-Country','Bluegrass','Country Pop'],
+  'Latin':['Reggaeton','Latin Trap','Latin Pop','Salsa','Bachata','Latin Rock','Regional Mexican'],
+  'K-Pop':['K-Pop','K-R&B','K-Hip-Hop','Dance Pop','Synthpop','K-Rock'],
+  'Afrobeats':['Afrobeats','Afropop','Amapiano','Afroswing','Afro-Fusion','Highlife']
 };
 // Each tuple: artist, broad musical genres, stylistic subgenres. These are
 // approximate editorial associations, not streaming-service similarity scores.
