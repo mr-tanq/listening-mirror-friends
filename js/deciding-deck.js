@@ -124,6 +124,9 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
     if(decided)return;
     pointerId=e.pointerId;startX=e.clientX;startY=e.clientY;axis=null;dx=0;
     card.classList.add('dragging');
+    if(typeof card.setPointerCapture==='function') {
+      try { card.setPointerCapture(e.pointerId); } catch { /* A pointer may already be cancelled */ }
+    }
   };
   const pointerMove=e=>{
     if(decided||pointerId!==e.pointerId)return;
