@@ -1,4 +1,4 @@
-import { rankEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES, matchReason } from './model.js?v=taste-filter-20261103-2';
+import { recommendEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=discovery-20261103-v4';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -6,6 +6,7 @@ const dialogRoot = document.querySelector('#dialog-root');
 const importFile = document.querySelector('#import-file');
 let state = loadState();
 let catalog = { events: [], updatedAt: null, coverage: null, source: 'podiuminfo+festivalinfo', error: '' };
+let artistTags = {artists:{}};
 let page = 'tonight';
 let collection = 'discover';
 let searchText = '';
@@ -52,27 +53,15 @@ function fixSavedItem(x){const event=normalizeEvent(x?.event||x);return event&&v
 function go(next){page=next;location.hash=next;render();window.scrollTo({top:0,behavior:'smooth'});}
 
 function scoreAll() {
-  const current = dateToday();
-  return catalog.events.filter(e=>e.date>=current).map(e=>({event:e, score:rankEvent(e,state.profile),reason:matchReason(e,state.profile)})).filter(r=>r.score>0).sort((a,b)=>b.score-a.score||a.event.date.localeCompare(b.event.date));
+  const current=dateToday();
+  return catalog.events.filter(e=>e.date>=current).map(event=>{
+    const match=recommendEvent(event,state.profile,artistTags);
+    return match?{event,...match}:null;
+  }).filter(Boolean).sort((a,b)=>b.score-a.score||a.event.date.localeCompare(b.event.date));
 }
-function discoverFeed(){
-  return scoreAll().filter(x=>!state.saved[x.event.id]);
-}
-// Explore is deliberately separate from For You, and is not claimed to be
-// personalized. A preference change must not silently return unrelated shows.
-function exploreFeed(){
-  const country=state.profile?.country;
-  if(!country)return [];
-  const city=norm(state.profile?.city);
-  return catalog.events.filter(e=>e.date>=dateToday() && e.country===country && !state.saved[e.id])
-    .sort((a,b)=>{
-      const aLocal=city && norm(a.city)===city?1:0;
-      const bLocal=city && norm(b.city)===city?1:0;
-      return bLocal-aLocal || a.date.localeCompare(b.date) || a.artist.localeCompare(b.artist);
-    }).slice(0,80).map(event=>({event,score:0}));
-}
+function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]);}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:discoverFeed().length,explore:exploreFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
+function counts(){return {discover:discoverFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length};}
 function setStatus(e,status){state.saved[e.id]={status,event:normalizeEvent(e)};persist();render();}
 function archiveEvent(e){
   const event=normalizeEvent(e);if(!event)return;
@@ -106,31 +95,53 @@ function card(raw,scoreInfo=null,mode='discover') {
 function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
-  let list=[];
-  if(collection==='discover')list=discoverFeed();
-  else if(collection==='explore'){
-    list=exploreFeed();
-    root.append(el('p','help-note',
-      'Explore is unfiltered by taste. For personal results choose For you. Podiuminfo agenda previews are not individually verified: confirm on the source page.'));
-  } else list=savedItems(collection).map(x=>({event:x.event}));
-  if(searchText.trim())list=list.filter(x=>norm([x.event.artist,x.event.venue,x.event.city,x.event.genre].join(' ')).includes(norm(searchText)));
-  const message=!catalog.updatedAt && !catalog.events.length && collection==='discover'
-    ? 'The event catalog has not been populated yet. You can still add concerts manually.'
-    : collection==='discover'
-      ? 'No matching concerts found for your current genres or favorite bands. Artist genre metadata is incomplete. Explore has other public listings, but they are not personalized.'
-      : 'No shows in this section yet.';
+  const personal=collection==='discover';
+  let list=personal?discoverFeed():savedItems(collection).map(x=>({event:x.event}));
+  if(searchText.trim())list=list.filter(x=>norm([
+    x.event.artist,...(x.event.artists||[]),x.event.venue,x.event.city,x.event.genre,x.reason
+  ].join(' ')).includes(norm(searchText)));
   if(!list.length){
-    root.append(empty(collection==='discover'?'No matches for your taste.':collection==='going'?'Nothing planned yet.':collection==='explore'?'No listings available.':'Nothing in Deciding.',message,openConcertDialog,'+ Add concert'));
-    if(collection==='discover')root.append(button('Browse all concerts in Explore','button',()=>{collection='explore';render();}));
+    const title=personal?'No music matches yet.':collection==='going'?'Nothing planned yet.':'Nothing in Deciding.';
+    const message=personal?(
+      catalog.updatedAt?
+       'No confirmed matches for your genres or favorite bands in the current catalogue. Music genres are still being enriched. You can edit your taste or try more favorite artists — unrelated shows are not added.'
+       :'The concert catalogue is not available yet. Add a concert manually or check back after the next update.'
+    ):'Save a concert from Discover, or add a concert manually.';
+    root.append(empty(title,message,()=>personal?openProfileDialog(false):openConcertDialog(),personal?'Edit my music taste':'+ Add concert'));
     return;
   }
-  const grid=el('div','show-grid');for(const x of list.slice(0,200)){const n=card(x.event,x.score?x:null,collection);if(n)grid.append(n);}root.append(grid);
-  if(list.length>200)root.append(el('p','help-note',`Showing the first 200 of ${list.length} matches. Narrow your search to see more.`));
+  if(personal){
+    const buckets=[
+      ['favorite','Your favorite artists'],
+      ['similar','Similar artists · shared music styles'],
+      ['genre','Your selected genres']
+    ];
+    for(const [kind,title] of buckets){
+      const group=list.filter(x=>x.kind===kind);
+      if(!group.length)continue;
+      const section=el('section','recommend-group');
+      const head=el('div','section-header');
+      head.append(el('h2','section-title',title),el('p','section-sub',group.length+' matched show'+(group.length===1?'':'s')));
+      section.append(head);
+      const grid=el('div','show-grid');
+      for(const x of group.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
+      section.append(grid);
+      if(group.length>100)section.append(el('p','help-note','Showing 100 of '+group.length+' matches in this group.'));
+      root.append(section);
+    }
+    root.append(el('p','help-note','Matches use your favorite artists and available music tags. “Similar” means shared specific genres, not a verified recommendation from a streaming service. Podiuminfo agenda entries require confirmation on their source page.'));
+  } else {
+    const grid=el('div','show-grid');
+    for(const x of list.slice(0,200)){const n=card(x.event,null,collection);if(n)grid.append(n);}
+    root.append(grid);
+  }
 }
 function renderTonight(){
   app.replaceChildren(heading('Tonight.',`Hi ${displayName()}. Find shows worth leaving the house for, then decide what to see.`));
   const taste=state.profile?.genres || [];
-  if(taste.length)app.querySelector('.hero').append(el('p','help-note',`Your selected music: ${taste.join(' · ')}`));
+  if(taste.length)app.querySelector('.hero').append(el('p','help-note',`Genres: ${taste.join(' · ')}`));
+  if(state.profile?.artists?.length)app.querySelector('.hero').append(el('p','help-note',
+    `Favorite bands: ${state.profile.artists.slice(0,8).join(' · ')}${state.profile.artists.length>8?' …':''}`));
   const actions=el('div','actions');actions.append(button('+ Add concert','button primary',openConcertDialog),button('Edit my taste','button',()=>openProfileDialog(false)));
   const info=el('div','notice');
   const desc=el('span');
@@ -140,7 +151,7 @@ function renderTonight(){
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
-  for(const [key,title] of [['discover','For you'],['explore','Explore'],['deciding','Deciding'],['going','Going']]){
+  for(const [key,title] of [['discover','Discover'],['deciding','Deciding'],['going','Going']]){
     const tab=button('','segment'+(collection===key?' active':''),()=>{collection=key;render();});
     tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
@@ -241,6 +252,12 @@ importFile.addEventListener('change',async()=>{
 async function fetchCatalog(){
   try{const response=await fetch('./data/events.json',{cache:'no-store'});if(!response.ok)throw Error(`HTTP ${response.status}`);
     const data=await response.json();if(!Array.isArray(data.events))throw Error('Invalid events feed');
+    let tags={artists:{}};
+    try{
+      const tagResponse=await fetch('./data/artist-tags.json',{cache:'no-store'});
+      if(tagResponse.ok){const raw=await tagResponse.json();if(raw?.artists && typeof raw.artists==='object')tags=raw;}
+    }catch(e){console.warn('Artist genres unavailable',e);}
+    artistTags=tags;
     catalog={events:data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date)),updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
   }catch(e){catalog.error=e.message||'Could not load';}render();
 }
