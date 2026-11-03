@@ -36,6 +36,8 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
   };
   let step=0;
   let root=null;
+  let pendingStyleInput='';
+  let pendingArtistInput='';
   const titles=['Welcome to your sound.','What do you listen to?','Go a little deeper.','Who should we follow?'];
   const notes=[
     'Give this Listening Mirror a name and choose where you would like to find live music.',
@@ -121,12 +123,13 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
     const custom=mk('div','onboarding-custom');
     custom.append(mk('p','onboarding-hint','Not seeing your sound? Add a specific style yourself.'));
     const field=mk('input','onboarding-input');
-    field.placeholder='e.g. Atmospheric Sludge';field.maxLength=70;
+    field.placeholder='e.g. Atmospheric Sludge';field.maxLength=70;field.value=pendingStyleInput;
+    field.addEventListener('input',()=>pendingStyleInput=field.value);
     const add=()=>{
       const value=field.value.trim();
       if(value.length<3||draft.subgenres.size>=40)return;
       if(![...draft.subgenres].some(s=>norm(s)===norm(value)))draft.subgenres.add(value);
-      field.value='';render();
+      field.value='';pendingStyleInput='';render();
     };
     field.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();add();}});
     custom.append(field,btn('Add style','button',add));
@@ -144,10 +147,11 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
     const selected=mk('div','artist-list');
     const manual=mk('div','onboarding-custom');
     const input=mk('input','onboarding-input');input.placeholder='Add a favorite band not listed';input.maxLength=110;
+    input.value=pendingArtistInput;input.addEventListener('input',()=>pendingArtistInput=input.value);
     const add=()=>{
       const names=input.value.split(/[,;\n]+/).map(s=>s.trim()).filter(Boolean);
       draft.artists=unique([...draft.artists,...names]).slice(0,100);
-      input.value='';paint();
+      input.value='';pendingArtistInput='';paint();
     };
     input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();add();}});
     manual.append(input,btn('+ Add','button',add));
@@ -205,9 +209,17 @@ export function createOnboarding({initial={},getEvents=()=>[],onFinish,onCancel}
     const next=btn(step===3?'Finish & fill my Deciding →':'Continue →','button primary',()=>{
       if(step===0&&!draft.name.trim()){status.textContent='Please enter your name to continue.';return;}
       if(step===1&&!draft.genres.size){status.textContent='Choose at least one music genre.';return;}
-      if(step===3){onFinish?.(profile());return;}
+      if(step===3){
+        if(pendingArtistInput.trim())draft.artists=unique([...draft.artists,...pendingArtistInput.split(/[,;\n]+/)]).slice(0,100);
+        pendingArtistInput='';
+        onFinish?.(profile());return;
+      }
+      if(step===2 && pendingStyleInput.trim().length>=3 && draft.subgenres.size<40){
+        draft.subgenres.add(pendingStyleInput.trim().slice(0,70));
+        pendingStyleInput='';
+      }
       step++;render();
-      window.scrollTo({top:0,behavior:'instant'});
+      window.scrollTo(0,0);
     });
     actions.append(next);panel.append(actions);
     panel.append(mk('p','onboarding-privacy','Private to this device · No Last.fm or Spotify connection · You can edit your taste later'));
