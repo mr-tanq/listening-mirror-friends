@@ -332,6 +332,66 @@ async function discoverGreekEvents(base,{today,endDate}){
   return result.events;
 }
 
+/**
+ * Supplemental event index for the Greek heavy music scene. Entries must
+ * contain a link to Rocking.gr's own date-specific event record.
+ * These are third-party listings, NOT confirmations by the venue itself.
+ */
+export function parseRockingAgenda(html,{cheerio,today=dayNow(),endDate=plusDays(today,170),city='Athens'}={}){
+  const $=cheerio.load(html),map=new Map();
+  $('a[href]').each((_,node)=>{
+    const raw=$(node).attr('href');
+    if(typeof raw!=='string')return;
+    let u;try{u=new URL(raw,'https://www.rocking.gr');}catch{return;}
+    if(u.protocol!=='https:'||!['rocking.gr','www.rocking.gr'].includes(u.hostname))return;
+    const m=u.pathname.match(/^\/agenda\/(20\d{2})\/(\d{1,2})\/(\d{1,2})\/(\d{3,9})\/?$/);
+    if(!m)return;
+    const date=m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0');
+    if(!validDate(date)||date<today||date>endDate)return;
+    const text=$(node).text().replace(/\s+/g,' ').trim();
+    const found=text.match(/^(.{2,190}?)\s+(Αθήνα|Θεσσαλονίκη|Athens|Thessaloniki)\s+@\s+(.+)$/i);
+    if(!found)return;
+    const [_,billing,place,venueWithPrice]=found;
+    const cityFromText=/^(?:αθήνα|athens)$/i.test(place)?'Athens':'Thessaloniki';
+    if(norm(cityFromText)!==norm(city))return;
+    const venue=venueWithPrice.replace(/\s+(?:Από\s+)?\d+(?:[,.]\d+)?\s*(?:€|e)(?:\s*\/\s*\d+\s*(?:€|e))?\s*$/i,'').trim();
+    if(venue.length<2||venue.length>160)return;
+    const performers=billing.split(/\s*,\s*|\s+\+\s+/).map(x=>x.trim()).filter(x=>x.length>=2&&x.length<=150);
+    if(!performers.length)return;
+    const id='rocking-'+m[1]+m[2].padStart(2,'0')+m[3].padStart(2,'0')+'-'+m[4];
+    map.set(id,{id,artist:performers[0],artists:performers,date,venue,city:cityFromText,country:'GR',
+      genre:'',subgenre:'',url:u.href,image:'',source:'rocking',verification:'third-party-agenda'});
+  });
+  return [...map.values()];
+}
+async function discoverRockingGreekEvents(base,{today,endDate}){
+  const {createRequire}=await import('node:module');
+  const cheerio=createRequire(path.join(base,'package.json'))('cheerio');
+  const manual=await import(pathToFileURL(path.join(base,'scripts/sources/manual-concert-search.mjs')).href);
+  const listings=new Map(),warnings=[];
+  const first=new Date(today+'T12:00:00Z'),last=new Date(endDate+'T12:00:00Z');
+  for(const citySlug of ['athens','thessaloniki']){
+    for(let month=new Date(Date.UTC(first.getUTCFullYear(),first.getUTCMonth(),1));
+      month<=last;month.setUTCMonth(month.getUTCMonth()+1)){
+      const year=month.getUTCFullYear(),m=String(month.getUTCMonth()+1).padStart(2,'0');
+      const url='https://www.rocking.gr/agenda/'+year+'/'+m+'/'+citySlug;
+      try{
+        const html=await manual.fetchHTML(url,'rocking.gr');
+        const rows=parseRockingAgenda(html,{cheerio,today,endDate,city:citySlug==='athens'?'Athens':'Thessaloniki'});
+        if(!rows.length && !/Πρόγραμμα συναυλιών/i.test(html))throw Error('Unrecognized page');
+        for(const row of rows)listings.set(row.id,row);
+      }catch(error){
+        warnings.push(citySlug+' '+year+'-'+m+': '+error.message);
+        // Runner IPs may be blocked. Stop retrying a blocked city this run.
+        break;
+      }
+      await new Promise(resolve=>setTimeout(resolve,320));
+    }
+  }
+  console.log('Rocking.gr Greek concert index: '+listings.size+' listings. '+warnings.slice(0,3).join('; '));
+  return {events:[...listings.values()],warnings};
+}
+
 export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE_DIR || '.source'}={}) {
   const base = path.resolve(ROOT, sourceDir);
   const source = await import(pathToFileURL(path.join(base,'scripts/sources/podiuminfo.mjs')).href);
@@ -428,10 +488,19 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     console.warn('Greek feed temporarily unavailable; retaining prior source-verified events: '+greeceFeedError);
   }
 
+  let rockingEvents=[],rockingWarning='';
+  try{
+    const rocking=await discoverRockingGreekEvents(base,{today,endDate:festivalEnd});
+    rockingEvents=rocking.events;
+    rockingWarning=rocking.warnings.slice(0,2).join('; ');
+  }catch(error){
+    rockingWarning=String(error.message||error);
+    console.warn('Rocking.gr agenda unavailable: '+rockingWarning);
+  }
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -483,6 +552,20 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
   for(const item of greekEvents)map.set(item.id,item);
+  // Prefer existing More.com listings with full artwork when both sources
+  // have independently indexed the same headliner on the same date.
+  const already=list=>list.some(e=>e.country==='GR');
+  let extraRocking=0;
+  for(const item of rockingEvents){
+    const first=norm(cleanGreekBilling(item.artist)),venue=norm(item.venue);
+    const duplicate=[...map.values()].some(e=>e.country==='GR'&&e.date===item.date&&
+      (norm(cleanGreekBilling(e.artist))===first ||
+       (venue===norm(e.venue)&&norm(e.artist).startsWith(first+' '))));
+    if(duplicate)continue;
+    map.set(item.id,item);
+    extraRocking++;
+  }
+  console.log('Extra Greek concerts from Rocking.gr after dedupe: '+extraRocking);
   console.log('Added '+agendaOnly+' agenda-only previews. Their event details must be confirmed on Podiuminfo.');
   for(const item of officialEvents)map.set(item.id,item);
   const missing=first.stats.daysMissing || 0;
@@ -502,12 +585,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 140)});
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
-    coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,
+    coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
       festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
-      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: dated events from the public More.com music listing when accessible; this is not a complete country calendar. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
+      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus Rocking.gr's dated concert index when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
