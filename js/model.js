@@ -116,7 +116,7 @@ export function recommendEvent(event,profile,artistTags={}) {
   const cityBonus=sameCity?12:0;
   if(exact) {
     return {kind:'favorite',score:150+cityBonus,
-      reason:'Favorite artist'+(exactName?': '+exactName:''),
+      reason:'favorite artist'+(exactName?': '+exactName:''),
       matchedArtist:exactName||event.artist,genres:[]};
   }
 
