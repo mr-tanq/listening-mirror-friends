@@ -303,6 +303,11 @@ function startGuidedSetup(){
 }
 function fillInitialDeciding(){
   if(!state.pendingDeciding||!state.profile||!catalog.updatedAt)return;
+  // Rebuilding preferences retires only untouched auto-recommendations.
+  // Going, Passed, Archive and manually added Deciding shows remain intact.
+  for(const [id,item] of Object.entries(state.saved)){
+    if(item?.status==='deciding'&&item?.suggested===true)delete state.saved[id];
+  }
   const picks=seedDeciding(catalog.events,state.profile,artistTags,state.saved,12);
   for(const item of picks){
     // Never overwrite manual decisions or a previously passed event.
@@ -359,7 +364,12 @@ function openProfileDialog(firstTime=false){
   const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Guided setup ↗','button small',()=>{dlg.close();startGuidedSetup();}),button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));}
   controls.append(button(firstTime?'Start exploring →':'Save taste','button primary',()=>{
     if(input.value.trim())add();if(!selected.size&&!artists.length){status.textContent='Choose at least one genre or add a favorite band.';return;}
-    state.profile={...state.profile,name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],subgenres:[...selectedStyles],artists};persist();collection='discover';dlg.close();render();
+    state.profile={...state.profile,name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],subgenres:[...selectedStyles],artists};
+    state.pendingDeciding=state.profile?.onboarded===true;
+    persist();
+    if(state.pendingDeciding)fillInitialDeciding();
+    collection=state.pendingDeciding||state.profile?.onboarded?'deciding':'discover';
+    dlg.close();render();
   }));content.append(controls);
   if(!firstTime){const note=el('p','help-note','Private to this browser · no account, no cloud sync. Export a backup before clearing your browser or changing phones.');content.append(el('div','separator'),note);}
 }
