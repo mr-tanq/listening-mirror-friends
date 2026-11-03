@@ -23,4 +23,6 @@ jobs:
       - name: Check frontend JavaScript syntax
         run: |
           node --check js/model.js
+          node --check js/taste-engine.js
+          node --check js/onboarding.js
           node --check js/app.js
