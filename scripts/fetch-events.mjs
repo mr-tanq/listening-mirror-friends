@@ -180,7 +180,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   const windowDays = Math.min(150, Math.max(14, Number(process.env.CATALOG_DAYS || 100)));
   const endDate = plusDays(today, windowDays);
   const festivalEnd = plusDays(today, Math.min(210,windowDays + 70));
-  const limit = Math.min(100, Math.max(5, Number(process.env.NEW_ARTISTS_PER_RUN || 35)));
+  const limit = Math.min(100, Math.max(0, Number(process.env.NEW_ARTISTS_PER_RUN ?? 0)));
 
   const cache = await read('data/discovery-cache.json', {day:{entries:{}},concert:{entries:{}},festival:{months:{},editions:{}}});
   cache.day ||= {entries:{}}; cache.day.entries ||= {};
@@ -189,6 +189,28 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   const existing = await read('data/events.json', {events:[]});
   const watchlist = await read('data/artist-watchlist.json',{artists:[]});
   const editorial = [...new Set((watchlist.artists || []).filter(x=>typeof x==='string').map(x=>x.trim()).filter(x=>x.length>=2 && x.length<=110))].slice(0, 100);
+
+  // Reuse only PUBLIC event-index caches built by the original project's working crawl.
+  // GitHub Actions runner IPs can be denied by source websites (HTTP 403).
+  // Import no personal archives, plans, music profiles, or recommendation scoring.
+  const upstreamDay = await fs.readFile(path.join(base,'data/podiuminfo-day-cache.json'),'utf8')
+    .then(JSON.parse).catch(() => ({entries:{}}));
+  let mirroredDays=0;
+  for (const [date, entry] of Object.entries(upstreamDay.entries || {})) {
+    if (date<today || date>endDate || !Array.isArray(entry?.candidates)) continue;
+    const old=cache.day.entries[date];
+    if (!old || Date.parse(entry.checkedAt || '') > Date.parse(old.checkedAt || '')) {
+      cache.day.entries[date]=entry;
+      mirroredDays++;
+    }
+  }
+  const upstreamFestivals = await fs.readFile(path.join(base,'data/festivalinfo-cache.json'),'utf8')
+    .then(JSON.parse).catch(() => null);
+  if (upstreamFestivals?.editions && upstreamFestivals?.months) {
+    cache.festival=upstreamFestivals;
+  }
+  console.log('Mirrored public caches: '+mirroredDays+' Podiuminfo dates; '+
+    Object.keys(cache.festival.editions || {}).length+' previously verified festival editions.');
 
   // First pass: populate/refresh Podiuminfo daily listings using unchanged current adapter.
   // An intentionally unlikely seed also works when the shared watchlist is empty.
@@ -206,17 +228,15 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     concertCacheEntries:cache.concert.entries,
   });
 
-  let festivalEvents=[]; let festivalIncomplete=false;
-  try {
-    const result = await festivals.discoverFestivals({
-      trackedArtistNames:[],festivalQuery:'festival',startDate:today,endDate:festivalEnd,
-      countries:['NL','BE'],cache:cache.festival,
-      deadline:Date.now()+Math.min(8*60000,Number(process.env.FESTIVAL_TIME_BUDGET_MS || 480000))
-    });
-    festivalEvents = result.events;
-    festivalIncomplete=!!(result.stats.monthsMissing || result.stats.monthsStale || result.stats.editionsFailed);
-    console.log('Festivalinfo status:',JSON.stringify(result.stats));
-  } catch (error) { festivalIncomplete=true; console.warn(`Festivalinfo unavailable: ${error.message}`); }
+  // Festival editions were individually validated by the original scraper.
+  // Prefer its published verification cache rather than retry blocked remote fetches.
+  const festivalEvents=Object.values(cache.festival.editions || {})
+    .filter(entry=>entry && entry.version===1 && entry.event)
+    .map(entry=>entry.event)
+    .filter(e=>!e.cancelled && validDate(e.date) && (e.endDate||e.date)>=today
+      && e.date<=festivalEnd && ['NL','BE'].includes(e.country));
+  const festivalIncomplete=!festivalEvents.length;
+  console.log('Reusable verified Festivalinfo editions: '+festivalEvents.length);
 
   // Optional editor watchlist: use the existing official-venue + Podiuminfo
   // per-artist search. One watched artist per run prevents hammering venues.
@@ -243,7 +263,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','festivalinfo','official'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -251,7 +271,48 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     const event = fromPodiuminfo(id,detail,source.detectCountry);
     if(event && event.date>=today && event.date<=endDate)map.set(event.id,event);
   }
+  // The original Podiuminfo day agenda is a verified INDEX, not an individually
+  // verified concert detail page. Publish only listed venues with known cities,
+  // and keep an explicit agenda-only provenance warning for visitors.
+  const knownVenues=[
+    ['Hall Of Fame','Tilburg','NL'],['Paard','Den Haag','NL'],
+    ['TivoliVredenburg','Utrecht','NL'],['013','Tilburg','NL'],
+    ['Paradiso','Amsterdam','NL'],['Melkweg','Amsterdam','NL'],
+    ['Ziggo Dome','Amsterdam','NL'],['Patronaat','Haarlem','NL'],
+    ['Doornroosje','Nijmegen','NL'],['AFAS Live','Amsterdam','NL'],
+    ["dB's",'Utrecht','NL'],['Vera','Groningen','NL'],
+    ['Effenaar','Eindhoven','NL'],['Muziekgieterij','Maastricht','NL'],
+    ['Baroeg','Rotterdam','NL'],['Annabel','Rotterdam','NL'],
+    ['Botanique','Brussels','BE'],['Bibelot','Dordrecht','NL'],
+    ['Grenswerk','Venlo','NL'],['Willemeen','Arnhem','NL']
+  ];
+  const venueKey=s=>norm(s).replace(/[^a-z0-9]/g,'');
+  const venueIndex=new Map(knownVenues.map(([name,city,country])=>[venueKey(name),{name,city,country}]));
+  let agendaOnly=0;
+  for(const [date,listing] of Object.entries(cache.day.entries)) {
+    if(date<today || date>endDate || !Array.isArray(listing.candidates))continue;
+    for(const item of listing.candidates) {
+      try {
+        const link=new URL(item.href);
+        if(link.protocol!=='https:' || link.hostname!=='www.podiuminfo.nl')continue;
+        const match=link.pathname.match(/^\\/concert\\/(\\d+)\\/[^/]+\\/([^/]+)\\/?$/);
+        if(!match || String(item.concertId)!==match[1])continue;
+        const venue=venueIndex.get(venueKey(decodeURIComponent(match[2])));
+        if(!venue || typeof item.rawTitle!=='string')continue;
+        const names=source.splitLineup(item.rawTitle).filter(x=>x.length>=2 && x.length<=150);
+        if(!names.length)continue;
+        const id='podiuminfo-'+match[1];
+        if(map.has(id))continue; // Individually verified cached details win.
+        map.set(id,{id,artist:names[0],artists:names.slice(0,20),date,
+          venue:venue.name,city:venue.city,country:venue.country,
+          genre:'',subgenre:'',url:link.href,image:'',source:'podiuminfo-agenda',
+          verification:'agenda-only'});
+        agendaOnly++;
+      } catch { /* Invalid public index entry; don't publish. */ }
+    }
+  }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
+  console.log('Added '+agendaOnly+' agenda-only previews. Their event details must be confirmed on Podiuminfo.');
   for(const item of officialEvents)map.set(item.id,item);
   const missing=first.stats.daysMissing || 0;
   if (missing > Math.ceil(first.stats.daysTotal * 0.2)) throw Error(`Too many Podiuminfo dates unavailable: ${missing}/${first.stats.daysTotal}; previous published feed preserved.`);
@@ -266,9 +327,10 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
     coverage:{countries:['NL','BE'],daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
+      agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
       festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,
-      notes:'Rolling, rate-limited coverage of public Podiuminfo, Festivalinfo, and selected official venue listings. Not complete or instant. Favorite artists are matched privately in your browser; no listening history is needed.'}};
+      notes:'Podiuminfo agenda previews have NOT been checked against individual event pages. Confirm date, city, lineup and status at the source before travel or ticket purchase. Festival editions come from the original verified Festivalinfo cache. Coverage is incomplete and NL/BE-focused; preferences remain on each device.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
