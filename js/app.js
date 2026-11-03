@@ -283,7 +283,23 @@ async function fetchCatalog(){
       }
     }catch(error){console.warn('Curated artist styles temporarily unavailable',error);}
     artistTags=tags;
-    catalog={events:data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date)),updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
+    let allEvents=data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date));
+    try{
+      const resp=await fetch('./data/verified-events.json',{cache:'no-store'});
+      if(resp.ok){
+        const verified=await resp.json();
+        for(const item of verified.events||[]){
+          const event=normalizeEvent(item);
+          if(!event||!validDate(event.date)||event.date<dateToday())continue;
+          // A venue-confirmed listing takes priority over a matching
+          // unverified aggregator listing with identical headliner/date.
+          allEvents=allEvents.filter(e=>!(e.date===event.date &&
+            e.country===event.country&&norm(e.artist)===norm(event.artist)));
+          allEvents.push(event);
+        }
+      }
+    }catch(error){console.warn('Venue-confirmed event fallback temporarily unavailable',error);}
+    catalog={events:allEvents,updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
   }catch(e){catalog.error=e.message||'Could not load';}render();
 }
 function init(){
