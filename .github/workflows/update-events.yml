@@ -42,7 +42,7 @@ jobs:
           CATALOG_DAYS: '100'
           NEW_ARTISTS_PER_RUN: '0'  # Public agenda cache is the fallback; direct event pages may return HTTP 403
           FESTIVAL_TIME_BUDGET_MS: '480000'
-          NEW_GENRE_LOOKUPS_PER_RUN: '130'
+          NEW_GENRE_LOOKUPS_PER_RUN: '60'
         run: node scripts/fetch-events.mjs
       - name: Commit public catalog and scraper cache
         run: |
@@ -51,7 +51,16 @@ jobs:
           git add data/events.json data/discovery-cache.json data/artist-tags.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh concert feed and artist genre metadata"
-            git fetch origin main
-            git rebase -X theirs origin/main
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5 6 7 8; do
+              git fetch origin main
+              git rebase -X theirs origin/main
+              if git push origin HEAD:main; then
+                echo "Public concert catalog successfully published"
+                exit 0
+              fi
+              echo "Concurrent update detected (attempt $attempt); retrying..."
+              sleep 3
+            done
+            echo "Could not publish catalog after 8 attempts" >&2
+            exit 1
           fi
