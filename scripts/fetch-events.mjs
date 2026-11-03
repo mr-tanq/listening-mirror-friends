@@ -608,7 +608,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
       festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
-      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus Rocking.gr's dated concert index when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
+      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
