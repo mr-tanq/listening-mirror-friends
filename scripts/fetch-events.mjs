@@ -117,12 +117,23 @@ const genreAliases = {
   'Indie': ['indie','indie rock','indie pop','indie folk'],
   'Punk': ['punk','punk rock','hardcore punk','post-punk'],
   'Electronic': ['electronic','electronic music','techno','house','electronica','trance','idm','downtempo'],
-  'Jazz': ['jazz','blues','jazz fusion','free jazz'],
+  'Jazz': ['jazz','jazz fusion','free jazz'],
   'Classical': ['classical','contemporary classical','orchestral','neoclassical'],
   'Hip-Hop': ['hip-hop','hip hop','rap','trip hop'],
   'Pop': ['pop','synthpop','dream pop','chamber pop'],
   'Folk': ['folk','folk rock','neofolk','acoustic','americana'],
-  'Experimental': ['experimental','avant-garde','noise','experimental rock']
+  'Experimental': ['experimental','avant-garde','noise','experimental rock'],
+  'Metalcore':['metalcore','melodic metalcore','progressive metalcore','djent'],
+  'Deathcore':['deathcore','symphonic deathcore','blackened deathcore'],
+  'Hardcore':['hardcore','hardcore punk','post-hardcore','melodic hardcore'],
+  'Pop-Punk':['pop punk','pop-punk','emo pop'],
+  'R&B / Soul':['r&b','rnb','rhythm and blues','soul','neo-soul','contemporary r&b','alternative r&b'],
+  'Blues':['blues','electric blues','blues rock'],
+  'Funk / Disco':['funk','disco','nu-disco','funk rock'],
+  'Country':['country','country pop','americana','alt-country'],
+  'Latin':['latin pop','latin','reggaeton','bachata','salsa','latin trap'],
+  'K-Pop':['k-pop','kpop','korean pop'],
+  'Afrobeats':['afrobeats','afropop','afro-pop','amapiano']
 };
 export function classifyMusicBrainzTags(tags) {
   const ranked = (tags || []).filter(x=>x && typeof x.name==='string' && (x.count===undefined || Number(x.count)>=0))
@@ -171,7 +182,13 @@ export function classifyItunesArtist(results, artist) {
     'alternative & indie':['Alternative','Indie'],
     'alternative':['Alternative'],
     'hard rock':['Rock'],
-    'r&b/soul':[],
+    'r b soul':['R&B / Soul'],
+    'r b':['R&B / Soul'],
+    'soul':['R&B / Soul'],
+    'country':['Country'],
+    'latin':['Latin'],
+    'k pop':['K-Pop'],
+    'afrobeats':['Afrobeats'],
     'singer/songwriter':['Folk'],
     'hip-hop/rap':['Hip-Hop'],
     'world':[]
