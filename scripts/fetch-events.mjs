@@ -583,6 +583,17 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   for(const [key,entry] of Object.entries(tags.artists)){
     if(entry?.source==='unclassified')delete tags.artists[key];
   }
+  // Keep small, reviewed genre seeds in sync with the public feed.
+  // They provide coverage for well-known touring artists when public
+  // provider lookups fail or return ambiguous names.
+  const seeds=await read('data/curated-genres.json',{artists:{}});
+  for(const [key,row] of Object.entries(seeds.artists||{})){
+    if(!Array.isArray(row?.genres)||!row.genres.length)continue;
+    const old=tags.artists[key]||{};
+    tags.artists[key]={...old,
+      genres:[...new Set([...row.genres,...(old.genres||[])])],
+      source:'curated+metadata',checkedAt:new Date().toISOString()};
+  }
   const genreStatus=await applyGenreMetadata(events,tags,{limit:Number(process.env.NEW_GENRE_LOOKUPS_PER_RUN || 140)});
   const result={updatedAt:new Date().toISOString(),source:'podiuminfo+festivalinfo',events,
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
