@@ -1,4 +1,4 @@
-export const GENRES=['Rock','Metal','Post-Rock','Indie','Alternative','Punk','Electronic','Jazz','Classical','Hip-Hop','Pop','Reggae','Stoner / Doom','Psychedelic','Folk','Experimental','Ambient'];
+export const GENRES=['Rock','Metal','Metalcore','Deathcore','Hardcore','Post-Rock','Stoner / Doom','Punk','Pop-Punk','Alternative','Indie','Electronic','Pop','Hip-Hop','R&B / Soul','Jazz','Blues','Funk / Disco','Reggae','Country','Latin','K-Pop','Afrobeats','Classical','Folk','Psychedelic','Experimental','Ambient'];
 export const COUNTRIES=[{code:'NL',name:'Netherlands'},{code:'BE',name:'Belgium'},{code:'DE',name:'Germany'},{code:'GR',name:'Greece'},{code:'GB',name:'United Kingdom'},{code:'FR',name:'France'},{code:'ES',name:'Spain'},{code:'IT',name:'Italy'},{code:'US',name:'United States'},{code:'AU',name:'Australia'}];
 export const norm = value => String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
 export const dateToday=()=>{const d=new Date();const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`;};
@@ -18,7 +18,13 @@ const genreTerms={
   'Jazz':['jazz','blues'], 'Classical':['classical','orchestra','symphonic'], 'Hip-Hop':['hip hop','rap'],
   'Pop':['pop'], 'Reggae':['reggae','ska','dub'], 'Stoner / Doom':['stoner','doom','desert rock','sludge'],
   'Psychedelic':['psychedelic','psych rock'], 'Folk':['folk','acoustic','americana'],
-  'Experimental':['experimental','avant garde'], 'Ambient':['ambient','drone']
+  'Experimental':['experimental','avant garde'], 'Ambient':['ambient','drone'],
+  'Metalcore':['metalcore','melodic metalcore','djent','post hardcore'], 'Deathcore':['deathcore'],
+  'Hardcore':['hardcore','hardcore punk','post hardcore'], 'Pop-Punk':['pop punk','emo pop','punk rock'],
+  'R&B / Soul':['r b','rnb','soul','neo soul','contemporary r b'], 'Blues':['blues','blues rock'],
+  'Funk / Disco':['funk','disco','funk rock'], 'Country':['country','americana'],
+  'Latin':['latin','reggaeton','latin pop','salsa','bachata'], 'K-Pop':['k pop','kpop'],
+  'Afrobeats':['afrobeats','afropop','afro pop']
 };
 // Only explicit words in a public concert/festival title can be used when
 // reliable artist-level genre metadata is not yet available. This is a hint,
@@ -30,6 +36,17 @@ export function titleGenreHints(value){
     ['Post-Rock',['post rock','postrock']],
     ['Stoner / Doom',['stoner','doom','sludge','desert rock']],
     ['Jazz',['jazz','bebop','jazzfusion']],
+    ['Metalcore',['metalcore','metal core']],
+    ['Deathcore',['deathcore']],
+    ['Hardcore',['hardcore']],
+    ['Pop-Punk',['pop punk','pop-punk']],
+    ['R&B / Soul',['neo soul','r b','rnb']],
+    ['Funk / Disco',['disco','funk']],
+    ['Country',['country']],
+    ['Latin',['reggaeton','latin pop','salsa']],
+    ['K-Pop',['k pop','kpop']],
+    ['Afrobeats',['afrobeats','afropop']],
+    ['Blues',['blues']],
     ['Metal',['metal','deathfest','death metal','black metal']],
     ['Reggae',['reggae','dub','ska']],
     ['Punk',['punk']],
@@ -100,7 +117,7 @@ function matchingGenres(available,wanted) {
   });
 }
 const NICHE_SIMILAR=new Set(['Post-Rock','Stoner / Doom','Psychedelic','Experimental','Ambient','Jazz','Reggae','Classical','Folk','Punk']);
-const COMMON_SIMILAR=new Set(['Rock','Pop','Metal','Indie','Alternative','Electronic','Hip-Hop']);
+const COMMON_SIMILAR=new Set(['Rock','Pop','Metal','Metalcore','Deathcore','Hardcore','Pop-Punk','Indie','Alternative','Electronic','Hip-Hop','R&B / Soul','Blues','Funk / Disco','Country','Latin','K-Pop','Afrobeats']);
 
 /**
  * Discover ONLY evidence-backed music matches.
