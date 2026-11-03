@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T21:10:08.259Z",
+  "updatedAt": "2026-11-03T21:12:41.465Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -982,7 +982,7 @@
       "venue": "Klakaz",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/mamasingsfire/",
       "image": "https://www.more.com/getattachment/B00BEDE5-DF9C-4923-8DA8-DD83D8EBADFF/evg_mamasingsfire_1309_750.png",
@@ -1281,9 +1281,9 @@
     },
     {
       "id": "more-57834af16a341968",
-      "artist": "ΕΥΗ ΜΑΖΗ  “BEYOND TIME”",
+      "artist": "ΕΥΗ ΜΑΖΗ",
       "artists": [
-        "ΕΥΗ ΜΑΖΗ  “BEYOND TIME”"
+        "ΕΥΗ ΜΑΖΗ"
       ],
       "date": "2026-11-05",
       "venue": "Half Note Jazz Club",
@@ -1800,7 +1800,7 @@
       "venue": "Architectoniki Live Stage",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/pindos-atletico-live-stin-athina-2/",
       "image": "https://www.more.com/getattachment/65C5A288-C179-4839-AF4C-6EEC879685D4/evg_pindosatleticolivestenath_1557_4594.png",
@@ -1885,7 +1885,7 @@
       "venue": "Γυαλινο Μουσικο Θεατρο",
       "city": "Nea Smirni",
       "country": "GR",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/six-appeal/",
       "image": "https://www.more.com/getattachment/2E9C3CD1-A412-41D5-ACAD-C6B73AB9083A/evg_sixappeal_1155_521.png",
@@ -2090,7 +2090,7 @@
       "venue": "ΙΛΙΟΝ Plus",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/olina-live-at-ilion-plus/",
       "image": "https://www.more.com/getattachment/E112336C-C510-4AE7-902E-25F2B6A0B72E/evg_olinaliveatilionplus_0821_2303.png",
@@ -2314,7 +2314,7 @@
       "venue": "Θεατρο Μεταξουργειο",
       "city": "Metaksourgeio",
       "country": "GR",
-      "genre": "",
+      "genre": "Folk",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/offer/cinemusic/",
       "image": "https://www.more.com/getattachment/51CA524B-0B19-432F-B5F5-A4A4451676F3/evg_cinemusic_1504_525.png",
@@ -2624,7 +2624,7 @@
       "venue": "Broadway the Bar",
       "city": "Larisa",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/otra-rota-live-at-larissa/",
       "image": "https://www.more.com/getattachment/73B5F616-6691-43C6-9DE2-B482AEFEE762/evg_otrarotaliveatlarissa_1333_5054.png",
@@ -2760,7 +2760,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/sleaford-mods2026/",
       "image": "https://www.more.com/getattachment/81EBC958-A55D-48EB-BED3-65F52DF9826F/evg_sleafordmods_1234_750.png",
@@ -2964,7 +2964,7 @@
       "venue": "gazarte",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/sergian-live/",
       "image": "https://www.more.com/getattachment/9F8212AA-1FDC-4887-A767-01B57B274BC0/evg_sergianlive_1549_1881.png",
@@ -3296,15 +3296,16 @@
     },
     {
       "id": "more-b53b98b1752477a6",
-      "artist": "Uriah Heep \"The Magician’s Farewell\" with Special Guests Heavy Pettin",
+      "artist": "Uriah Heep",
       "artists": [
-        "Uriah Heep \"The Magician’s Farewell\" with Special Guests Heavy Pettin"
+        "Uriah Heep",
+        "Heavy Pettin"
       ],
       "date": "2026-11-08",
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/uriah-heep2026/",
       "image": "https://www.more.com/getattachment/9994A0D8-79C6-4CC9-B9DA-DA80AA40F101/evg_uriahheep_2022_750.png",
@@ -3347,9 +3348,9 @@
     },
     {
       "id": "more-b2b5a71f2d5b7107",
-      "artist": "Άσαρκος \"Ρίμες εν Αθήναις\"",
+      "artist": "Άσαρκος",
       "artists": [
-        "Άσαρκος \"Ρίμες εν Αθήναις\""
+        "Άσαρκος"
       ],
       "date": "2026-11-08",
       "venue": "Kyttaro Live",
@@ -4191,7 +4192,7 @@
       "venue": "AN Club",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/kwoon-live-in-athens/",
       "image": "https://www.more.com/getattachment/8AD1813F-6A2D-43E2-81AF-556085420C41/evg_kwoonliveinathens_1927_5209.png",
@@ -4364,7 +4365,7 @@
       "venue": "gazarte",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/vapors-of-morphine-live-in-athens/",
       "image": "https://www.more.com/getattachment/342FC0CF-3666-47D1-BE26-D404E634CA1A/evg_vaporsofmorphineliveinath_1632_1881.png",
@@ -4956,9 +4957,9 @@
     },
     {
       "id": "more-8c1f74eb131ff352",
-      "artist": "ΓΕΩΡΓΙΑ ΝΤΑΓΑΚΗ \"ΑΠΟ ΤΗΝ ΚΡΗΤΗ ΩΣ ΤΟ ΑΠΕΙΡΟ\"",
+      "artist": "ΓΕΩΡΓΙΑ ΝΤΑΓΑΚΗ",
       "artists": [
-        "ΓΕΩΡΓΙΑ ΝΤΑΓΑΚΗ \"ΑΠΟ ΤΗΝ ΚΡΗΤΗ ΩΣ ΤΟ ΑΠΕΙΡΟ\""
+        "ΓΕΩΡΓΙΑ ΝΤΑΓΑΚΗ"
       ],
       "date": "2026-11-12",
       "venue": "MIKRI SKINI - Mikri Skini",
@@ -5556,9 +5557,9 @@
     },
     {
       "id": "more-14f8cb98ab01602e",
-      "artist": "Warning (UK)",
+      "artist": "Warning",
       "artists": [
-        "Warning (UK)"
+        "Warning"
       ],
       "date": "2026-11-13",
       "venue": "AN Club",
@@ -5624,9 +5625,9 @@
     },
     {
       "id": "more-12bdc254eda61039",
-      "artist": "Σημάδι - Παρουσίαση δίσκου \"Εντός Πεδίου\"",
+      "artist": "Σημάδι - Παρουσίαση δίσκου",
       "artists": [
-        "Σημάδι - Παρουσίαση δίσκου \"Εντός Πεδίου\""
+        "Σημάδι - Παρουσίαση δίσκου"
       ],
       "date": "2026-11-13",
       "venue": "Fuzz Club",
@@ -8277,15 +8278,15 @@
     },
     {
       "id": "more-b33f0432a415f421",
-      "artist": "HUGO KANT (FR)",
+      "artist": "HUGO KANT",
       "artists": [
-        "HUGO KANT (FR)"
+        "HUGO KANT"
       ],
       "date": "2026-11-19",
       "venue": "Cafe Santan",
       "city": "Volos",
       "country": "GR",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/hugo-kant-fr-live-in-volos/",
       "image": "https://www.more.com/getattachment/9CFCA61C-607A-4BA6-8373-93C085EB07E8/evg_hugokantfrliveinvolos_1514_4963.png",
@@ -8652,9 +8653,9 @@
     },
     {
       "id": "more-71fb6543bc98535a",
-      "artist": "AEPHANEMER (FR)",
+      "artist": "AEPHANEMER",
       "artists": [
-        "AEPHANEMER (FR)"
+        "AEPHANEMER"
       ],
       "date": "2026-11-20",
       "venue": "ARCH",
@@ -8873,9 +8874,9 @@
     },
     {
       "id": "more-665dbf4c690cacbc",
-      "artist": "Jazz στο Μουσείο: Yiotis Samaras – \"2 to 3: Acoustic Duo to Electric Trio\"",
+      "artist": "Jazz στο Μουσείο: Yiotis Samaras –",
       "artists": [
-        "Jazz στο Μουσείο: Yiotis Samaras – \"2 to 3: Acoustic Duo to Electric Trio\""
+        "Jazz στο Μουσείο: Yiotis Samaras –"
       ],
       "date": "2026-11-20",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -9455,9 +9456,9 @@
     },
     {
       "id": "more-c0262142a730be1d",
-      "artist": "Ο Σπύρος Γραμμένος στο Κύτταρο ! “Συγγνώμη για το εισιτήριο”",
+      "artist": "Ο Σπύρος Γραμμένος στο Κύτταρο !",
       "artists": [
-        "Ο Σπύρος Γραμμένος στο Κύτταρο ! “Συγγνώμη για το εισιτήριο”"
+        "Ο Σπύρος Γραμμένος στο Κύτταρο !"
       ],
       "date": "2026-11-20",
       "venue": "Kyttaro Live",
@@ -9728,15 +9729,15 @@
     },
     {
       "id": "more-5305721fc130d6e7",
-      "artist": "HUGO KANT (FR)",
+      "artist": "HUGO KANT",
       "artists": [
-        "HUGO KANT (FR)"
+        "HUGO KANT"
       ],
       "date": "2026-11-21",
       "venue": "AUX CLUB",
       "city": "Athena",
       "country": "GR",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/hugo-kant-fr-live-in-athens-1/",
       "image": "https://www.more.com/getattachment/D980938E-776A-49B9-98A7-B8E5B7C60B8C/evg_hugokantfrliveinathens_1439_4963.png",
@@ -10597,9 +10598,10 @@
     },
     {
       "id": "more-93b995a1f440ed26",
-      "artist": "KREATOR with special guests OVERKILL",
+      "artist": "KREATOR",
       "artists": [
-        "KREATOR with special guests OVERKILL"
+        "KREATOR",
+        "OVERKILL"
       ],
       "date": "2026-11-23",
       "venue": "FLOYD",
@@ -11794,9 +11796,9 @@
     },
     {
       "id": "more-3afb9e93259c69fb",
-      "artist": "ΚΑΛΟΓΕΡΑΚΙΑ \"Τα Παιδιά Που Αγαπιούνται\"",
+      "artist": "ΚΑΛΟΓΕΡΑΚΙΑ",
       "artists": [
-        "ΚΑΛΟΓΕΡΑΚΙΑ \"Τα Παιδιά Που Αγαπιούνται\""
+        "ΚΑΛΟΓΕΡΑΚΙΑ"
       ],
       "date": "2026-11-26",
       "venue": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
@@ -11969,9 +11971,9 @@
     },
     {
       "id": "more-30f761f0a532b59d",
-      "artist": "EVANGELIA \"THE PARÉA TOUR\"",
+      "artist": "EVANGELIA",
       "artists": [
-        "EVANGELIA \"THE PARÉA TOUR\""
+        "EVANGELIA"
       ],
       "date": "2026-11-27",
       "venue": "Piraeus Club Academy",
@@ -12565,9 +12567,9 @@
     },
     {
       "id": "more-114601ed8d7cbe86",
-      "artist": "dPans & Sourbis \"Handbrakes & Heartbreaks\"",
+      "artist": "dPans & Sourbis",
       "artists": [
-        "dPans & Sourbis \"Handbrakes & Heartbreaks\""
+        "dPans & Sourbis"
       ],
       "date": "2026-11-28",
       "venue": "Piraeus Club Academy",
@@ -13365,15 +13367,15 @@
     },
     {
       "id": "more-0d87290e89a45107",
-      "artist": "NILE - UNDERWORLD EUROPE TOUR 2026 @ FUZZ 29/11/2026",
+      "artist": "NILE",
       "artists": [
-        "NILE - UNDERWORLD EUROPE TOUR 2026 @ FUZZ 29/11/2026"
+        "NILE"
       ],
       "date": "2026-11-29",
       "venue": "Fuzz Club",
       "city": "Tavros",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nile-underworld-europe-tour-2026-fuzz-29/11/2026/",
       "image": "https://www.more.com/getattachment/DF4F9815-4637-4196-BD0D-D37ACB3BB2E6/evg_nile-underworldeuropetour_1413_3022.png",
@@ -13638,9 +13640,9 @@
     },
     {
       "id": "more-452ff1914cf3fa76",
-      "artist": "Αίνιγμα - \"Vest Off\"",
+      "artist": "Αίνιγμα -",
       "artists": [
-        "Αίνιγμα - \"Vest Off\""
+        "Αίνιγμα -"
       ],
       "date": "2026-11-29",
       "venue": "Death Disco",
@@ -15425,9 +15427,9 @@
     },
     {
       "id": "more-56a2957ef9744cc3",
-      "artist": "Restive - \"Homeboys\"",
+      "artist": "Restive -",
       "artists": [
-        "Restive - \"Homeboys\""
+        "Restive -"
       ],
       "date": "2026-12-04",
       "venue": "Death Disco",
@@ -15663,9 +15665,9 @@
     },
     {
       "id": "more-5543ab2fa971b68c",
-      "artist": "FUNDRACAR - 15 ΧΡΟΝΙΑ \"ΠΛΑΚΩΣΟΥ\"",
+      "artist": "FUNDRACAR - 15 ΧΡΟΝΙΑ",
       "artists": [
-        "FUNDRACAR - 15 ΧΡΟΝΙΑ \"ΠΛΑΚΩΣΟΥ\""
+        "FUNDRACAR - 15 ΧΡΟΝΙΑ"
       ],
       "date": "2026-12-05",
       "venue": "Fuzz Club",
@@ -17709,15 +17711,15 @@
     },
     {
       "id": "more-1fd9ac1a1369b010",
-      "artist": "Discharge (UK)",
+      "artist": "Discharge",
       "artists": [
-        "Discharge (UK)"
+        "Discharge"
       ],
       "date": "2026-12-11",
       "venue": "Fuzz Club",
       "city": "Tavros",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/discharge-uk-live-stin-athina/",
       "image": "https://www.more.com/getattachment/EF7B62D2-3F76-40E4-BA8B-6B6A6FD26B1C/evg_dischargeuklivestenathena_1537_4551.png",
@@ -17875,9 +17877,9 @@
     },
     {
       "id": "more-8bc22f52f0f3a2b2",
-      "artist": "Jazz στο Μουσείο: Dimitris Tsakas, Alexandros Drakos Ktistakis, Mariza Kapsabeli – \"Three\"",
+      "artist": "Jazz στο Μουσείο: Dimitris Tsakas, Alexandros Drakos Ktistakis, Mariza Kapsabeli –",
       "artists": [
-        "Jazz στο Μουσείο: Dimitris Tsakas, Alexandros Drakos Ktistakis, Mariza Kapsabeli – \"Three\""
+        "Jazz στο Μουσείο: Dimitris Tsakas, Alexandros Drakos Ktistakis, Mariza Kapsabeli –"
       ],
       "date": "2026-12-11",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -18079,9 +18081,9 @@
     },
     {
       "id": "more-333e71d523cc8a9d",
-      "artist": "APOLLO BROWN & SKYZOO SPECIAL GUEST SA-ROC",
+      "artist": "APOLLO BROWN & SKYZOO",
       "artists": [
-        "APOLLO BROWN & SKYZOO SPECIAL GUEST SA-ROC"
+        "APOLLO BROWN & SKYZOO"
       ],
       "date": "2026-12-12",
       "venue": "gazarte roof stage",
@@ -18164,15 +18166,15 @@
     },
     {
       "id": "more-aee6d8d57661067c",
-      "artist": "Discharge (UK)",
+      "artist": "Discharge",
       "artists": [
-        "Discharge (UK)"
+        "Discharge"
       ],
       "date": "2026-12-12",
       "venue": "Circus Entertainment Hub",
       "city": "Larisa",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/discharge-uk-live-stin-larisa/",
       "image": "https://www.more.com/getattachment/3FAD6878-CF13-419E-B42E-9E512E836DF6/evg_dischargeuklivestenlarisa_1557_4551.png",
@@ -18805,7 +18807,7 @@
       "venue": "Baroeg",
       "city": "Rotterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/495585/Nile-Redsphere-Intrepid-Orecus/Baroeg/",
       "image": "",
@@ -20895,9 +20897,9 @@
     },
     {
       "id": "more-f9a883f0211fd1b4",
-      "artist": "Jazz στο Μουσείο: Markos Chaidemenos – \"Light Beam\"",
+      "artist": "Jazz στο Μουσείο: Markos Chaidemenos –",
       "artists": [
-        "Jazz στο Μουσείο: Markos Chaidemenos – \"Light Beam\""
+        "Jazz στο Μουσείο: Markos Chaidemenos –"
       ],
       "date": "2026-12-23",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -21885,9 +21887,9 @@
     },
     {
       "id": "more-35d180071a2616e4",
-      "artist": "Anorimoi \"Γυροβύζιον\"",
+      "artist": "Anorimoi",
       "artists": [
-        "Anorimoi \"Γυροβύζιον\""
+        "Anorimoi"
       ],
       "date": "2027-01-09",
       "venue": "Gagarin 205 Live Music Space",
@@ -22614,9 +22616,9 @@
     },
     {
       "id": "more-f4af8d168c943df0",
-      "artist": "Jazz στο Μουσείο: George Georgiadis Quartet – \"2 COLORs\"",
+      "artist": "Jazz στο Μουσείο: George Georgiadis Quartet –",
       "artists": [
-        "Jazz στο Μουσείο: George Georgiadis Quartet – \"2 COLORs\""
+        "Jazz στο Μουσείο: George Georgiadis Quartet –"
       ],
       "date": "2027-01-15",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -23111,9 +23113,9 @@
     },
     {
       "id": "more-f64a84b5eca4fba0",
-      "artist": "THE EXPLOITED (UK)",
+      "artist": "THE EXPLOITED",
       "artists": [
-        "THE EXPLOITED (UK)"
+        "THE EXPLOITED"
       ],
       "date": "2027-01-18",
       "venue": "ARCH",
@@ -23930,9 +23932,9 @@
     },
     {
       "id": "more-0c776ba17d4b0941",
-      "artist": "INVUNCHE (NL) & FINAL DOSE (UK)",
+      "artist": "INVUNCHE (NL) & FINAL DOSE",
       "artists": [
-        "INVUNCHE (NL) & FINAL DOSE (UK)"
+        "INVUNCHE (NL) & FINAL DOSE"
       ],
       "date": "2027-01-23",
       "venue": "AN Club",
@@ -27085,9 +27087,9 @@
     },
     {
       "id": "more-3145472c8f503afb",
-      "artist": "Jazz στο Μουσείο: Takis Paterelis & Costis Christodoulou Duet – \"12 bars more to go\"",
+      "artist": "Jazz στο Μουσείο: Takis Paterelis & Costis Christodoulou Duet –",
       "artists": [
-        "Jazz στο Μουσείο: Takis Paterelis & Costis Christodoulou Duet – \"12 bars more to go\""
+        "Jazz στο Μουσείο: Takis Paterelis & Costis Christodoulou Duet –"
       ],
       "date": "2027-02-19",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -27317,9 +27319,9 @@
     },
     {
       "id": "more-5eb1a6a9c23ab405",
-      "artist": "Jazz στο Μουσείο: Irina Valentinova-Karpouchina & Kimon Karoutzos – \"2 solos\"",
+      "artist": "Jazz στο Μουσείο: Irina Valentinova-Karpouchina & Kimon Karoutzos –",
       "artists": [
-        "Jazz στο Μουσείο: Irina Valentinova-Karpouchina & Kimon Karoutzos – \"2 solos\""
+        "Jazz στο Μουσείο: Irina Valentinova-Karpouchina & Kimon Karoutzos –"
       ],
       "date": "2027-03-19",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -27492,9 +27494,9 @@
     },
     {
       "id": "more-aaa84fc35c9154c5",
-      "artist": "Jazz στο Μουσείο: Qua'SH – \"A Symphony of four\"",
+      "artist": "Jazz στο Μουσείο: Qua'SH –",
       "artists": [
-        "Jazz στο Μουσείο: Qua'SH – \"A Symphony of four\""
+        "Jazz στο Μουσείο: Qua'SH –"
       ],
       "date": "2027-04-16",
       "venue": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
@@ -27524,8 +27526,8 @@
     "officialVenueEvents": 0,
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 281,
-    "taggedArtists": 143,
+    "genreTaggedEvents": 301,
+    "taggedArtists": 147,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: dated events from the public More.com music listing when accessible; this is not a complete country calendar. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
