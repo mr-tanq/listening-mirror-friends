@@ -270,6 +270,18 @@ async function fetchCatalog(){
       const tagResponse=await fetch('./data/artist-tags.json',{cache:'no-store'});
       if(tagResponse.ok){const raw=await tagResponse.json();if(raw?.artists && typeof raw.artists==='object')tags=raw;}
     }catch(e){console.warn('Artist genres unavailable',e);}
+    try{
+      const seeds=await fetch('./data/curated-genres.json',{cache:'no-store'});
+      if(seeds.ok){
+        const file=await seeds.json();
+        for(const [key,item] of Object.entries(file.artists||{})){
+          if(Array.isArray(item?.genres)&&item.genres.length){
+            const old=tags.artists[key]?.genres||[];
+            tags.artists[key]={...tags.artists[key],genres:[...new Set([...item.genres,...old])],source:'curated+metadata'};
+          }
+        }
+      }
+    }catch(error){console.warn('Curated artist styles temporarily unavailable',error);}
     artistTags=tags;
     catalog={events:data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date)),updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
   }catch(e){catalog.error=e.message||'Could not load';}render();
