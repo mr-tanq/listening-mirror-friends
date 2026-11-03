@@ -57,7 +57,7 @@ function scoreAll() {
   return catalog.events.filter(e=>e.date>=current).map(event=>{
     const match=recommendEvent(event,state.profile,artistTags);
     return match?{event,...match}:null;
-  }).filter(Boolean).sort((a,b)=>b.score-a.score||a.event.date.localeCompare(b.event.date));
+  }).filter(Boolean).sort((a,b)=>a.event.date.localeCompare(b.event.date)||b.score-a.score||a.event.artist.localeCompare(b.event.artist));
 }
 function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]);}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
