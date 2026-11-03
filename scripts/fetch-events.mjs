@@ -276,6 +276,9 @@ export function cleanGreekBilling(title) {
   const raw=String(title||'').trim();
   let head=raw.split(/\s+(?:with\s+special\s+guests?\b|special\s+guests?\b|support\s*:\s*|\+)\s*/i)[0];
   head=head.replace(/\s*\|\s*.+$/,'')
+    .replace(/\s+[-–—]\s+[^:]{0,95}\b(?:anniversary|tour)\b.*$/i,'')
+    .replace(/\s*:\s*[^:]{0,95}\b(?:world\s+)?tour\b.*$/i,'')
+    .replace(/\s*\/\s*[A-Z][A-Z '-]{3,}.*$/,'')
     .replace(/\s+[-–—]\s+(?:(?:[A-Z][A-Za-z -]+\s)?(?:world\s+|europe\s+)?tour\b|underworld\s+.*\btour\b).*/i,'')
     .replace(/\s+live\s+in\s+(?:athens|thessaloniki|αθηνα|αθηνα|θεσσαλονικη)\s*!?$/i,'')
     .replace(/\s+["“][^"”]+["”]\s*$/u,'')
@@ -356,7 +359,11 @@ export function parseRockingAgenda(html,{cheerio,today=dayNow(),endDate=plusDays
     if(norm(cityFromText)!==norm(city))return;
     const venue=venueWithPrice.replace(/\s+(?:Από\s+)?\d+(?:[,.]\d+)?\s*(?:€|e)(?:\s*\/\s*\d+\s*(?:€|e))?\s*$/i,'').trim();
     if(venue.length<2||venue.length>160)return;
-    const performers=billing.split(/\s*,\s*|\s+\+\s+/).map(x=>x.trim()).filter(x=>x.length>=2&&x.length<=150);
+    const groups=billing.split(/\s*,\s*|\s+\+\s+/).map(x=>x.trim()).filter(Boolean);
+    // A festival title can contain the first artist after a colon.
+    const first=groups[0]?.match(/^([^:]+\bfestival)\s*:\s*(.+)$/i);
+    const performers=(first?[first[1],first[2],...groups.slice(1)]:groups)
+      .filter(x=>x.length>=2&&x.length<=150);
     if(!performers.length)return;
     const id='rocking-'+m[1]+m[2].padStart(2,'0')+m[3].padStart(2,'0')+'-'+m[4];
     map.set(id,{id,artist:performers[0],artists:performers,date,venue,city:cityFromText,country:'GR',
