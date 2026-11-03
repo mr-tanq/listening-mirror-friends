@@ -1,4 +1,4 @@
-import { rankEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES, matchReason } from './model.js?v=festival-lineup-20261103';
+import { rankEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES, matchReason } from './model.js?v=taste-filter-20261103-2';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -129,6 +129,8 @@ function renderTonightList(){
 }
 function renderTonight(){
   app.replaceChildren(heading('Tonight.',`Hi ${displayName()}. Find shows worth leaving the house for, then decide what to see.`));
+  const taste=state.profile?.genres || [];
+  if(taste.length)app.querySelector('.hero').append(el('p','help-note',`Your selected music: ${taste.join(' · ')}`));
   const actions=el('div','actions');actions.append(button('+ Add concert','button primary',openConcertDialog),button('Edit my taste','button',()=>openProfileDialog(false)));
   const info=el('div','notice');
   const desc=el('span');
