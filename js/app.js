@@ -1,4 +1,4 @@
-import { rankEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES, matchReason } from './model.js';
+import { rankEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES, matchReason } from './model.js?v=festival-lineup-20261103';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
