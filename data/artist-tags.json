@@ -1031,16 +1031,16 @@
       "genres": [
         "Metal"
       ],
-      "source": "musicbrainz",
-      "checkedAt": "2026-11-03T21:06:51.397Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "soen": {
       "genres": [
         "Metal",
         "Rock"
       ],
-      "source": "musicbrainz",
-      "checkedAt": "2026-11-03T21:06:55.830Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "hugo kant fr": {
       "genres": [],
@@ -1056,8 +1056,8 @@
       "genres": [
         "Metal"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:07:06.198Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "luup meadow rituals": {
       "genres": [],
@@ -1065,9 +1065,13 @@
       "checkedAt": "2026-11-03T21:07:07.662Z"
     },
     "the ocean": {
-      "genres": [],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:07:09.073Z"
+      "genres": [
+        "Metal",
+        "Post-Rock",
+        "Experimental"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "artemas": {
       "genres": [
@@ -1230,10 +1234,11 @@
     },
     "black veil brides": {
       "genres": [
-        "Rock"
+        "Rock",
+        "Metal"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:07:50.737Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "novastar": {
       "genres": [],
@@ -1673,17 +1678,18 @@
     },
     "discharge": {
       "genres": [
+        "Punk",
         "Metal"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:10:38.221Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "nile": {
       "genres": [
         "Metal"
       ],
-      "source": "musicbrainz",
-      "checkedAt": "2026-11-03T21:10:43.229Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "apollo brown skyzoo": {
       "genres": [],
@@ -1864,10 +1870,12 @@
     },
     "sleaford mods": {
       "genres": [
-        "Alternative"
+        "Alternative",
+        "Electronic",
+        "Punk"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:11:50.880Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "the coal νουοκ μαμ album release": {
       "genres": [],
@@ -1925,8 +1933,8 @@
       "genres": [
         "Rock"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:12:08.301Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "heavy pettin": {
       "genres": [
@@ -1997,15 +2005,19 @@
     },
     "kwoon": {
       "genres": [
+        "Post-Rock",
         "Pop"
       ],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:12:30.136Z"
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "paradise lost": {
-      "genres": [],
-      "source": "itunes",
-      "checkedAt": "2026-11-03T21:12:31.699Z"
+      "genres": [
+        "Metal",
+        "Stoner / Doom"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
     },
     "vapors of morphine": {
       "genres": [
@@ -2033,6 +2045,562 @@
       "genres": [],
       "source": "itunes",
       "checkedAt": "2026-11-03T21:12:39.884Z"
+    },
+    "kreator": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "overkill": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "riot v": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "solstafir": {
+      "genres": [
+        "Metal",
+        "Post-Rock",
+        "Psychedelic"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "psychonaut": {
+      "genres": [
+        "Metal",
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "chelsea wolfe": {
+      "genres": [
+        "Alternative",
+        "Experimental"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "warning": {
+      "genres": [
+        "Metal",
+        "Stoner / Doom"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "1000mods": {
+      "genres": [
+        "Stoner / Doom",
+        "Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "god is an astronaut": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "tarja": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "mother of millions": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "acid death": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "into battle festival": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "up the hammers": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "old man's child": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "blasphemy": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "the ocean collective": {
+      "genres": [
+        "Metal",
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "yellow eyes": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "godspeed you black emperor": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "sigur ros": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "mono": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "amenra": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "kyuss": {
+      "genres": [
+        "Stoner / Doom",
+        "Rock"
+      ],
+      "source": "curated+metadata",
+      "checkedAt": "2026-11-03T21:43:40.478Z"
+    },
+    "glitter grotesque let s swing in new orleans": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:43:43.732Z"
+    },
+    "stand up με τις μπαντες hλιας φουντουλης": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:43:46.651Z"
+    },
+    "αγγελος σπηλιοπουλος": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:43:51.964Z"
+    },
+    "dire straits legacy": {
+      "genres": [],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:43:56.461Z"
+    },
+    "flotsam and jetsam": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:43:57.979Z"
+    },
+    "praying mantis": {
+      "genres": [
+        "Metal",
+        "Rock"
+      ],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:44:03.643Z"
+    },
+    "whiplash": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:44:08.109Z"
+    },
+    "ultha": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:09.616Z"
+    },
+    "sun worship": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:11.069Z"
+    },
+    "nazareth": {
+      "genres": [
+        "Rock"
+      ],
+      "source": "musicbrainz",
+      "checkedAt": "2026-11-03T21:44:15.427Z"
+    },
+    "memorials": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:18.438Z"
+    },
+    "stygian path": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:20.026Z"
+    },
+    "ari hoenig": {
+      "genres": [
+        "Jazz"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:21.560Z"
+    },
+    "delines fest τακι τσαν dj alx": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:23.079Z"
+    },
+    "χατ τρικ κ α": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:24.509Z"
+    },
+    "vigljos": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:26.104Z"
+    },
+    "jam pedals villagers of ioannina city": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:27.693Z"
+    },
+    "raining pleasure": {
+      "genres": [
+        "Pop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:29.242Z"
+    },
+    "υπογεια ρευματα κ α": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:30.789Z"
+    },
+    "angelo perlepes mystery": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:32.224Z"
+    },
+    "balothizer w": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:33.718Z"
+    },
+    "stouraitis papadopoulos quintet": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:35.232Z"
+    },
+    "γεωργια νταγακη": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:36.816Z"
+    },
+    "θανασης βουτσας diatopo sessions on stage 7": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:38.329Z"
+    },
+    "νικολας razastarr sadahzinia jk one dj wheel m χωρις τελεια": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:39.816Z"
+    },
+    "amr": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:41.375Z"
+    },
+    "anja huwe": {
+      "genres": [
+        "Electronic"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:42.993Z"
+    },
+    "conceive": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:44.505Z"
+    },
+    "george zervos": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:46.012Z"
+    },
+    "horse jumper of love": {
+      "genres": [
+        "Alternative"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:47.501Z"
+    },
+    "xzibit": {
+      "genres": [
+        "Hip-Hop"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:49.137Z"
+    },
+    "ανδρονικος": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:50.712Z"
+    },
+    "σημαδι παρουσιαση δισκου": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:52.193Z"
+    },
+    "υπογεια ρευματα": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:53.806Z"
+    },
+    "ταξιδι στον χρονο με το ρεμπετικο": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:55.395Z"
+    },
+    "1550 γιαννης ζουγανελης": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:56.952Z"
+    },
+    "biliana voutchkova little sae guests": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:44:58.543Z"
+    },
+    "billy cobham time machine": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:00.073Z"
+    },
+    "cannibal radio clubnight": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:01.590Z"
+    },
+    "iron beast caught somewhere in greece 40 years of somewhere in time": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:03.160Z"
+    },
+    "italiano party": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:04.809Z"
+    },
+    "n o e": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:06.263Z"
+    },
+    "nostalgic vibes by dj timo skyfall bar": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:07.814Z"
+    },
+    "psychobreak": {
+      "genres": [
+        "Rock"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:09.373Z"
+    },
+    "red bull soundclash": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:10.921Z"
+    },
+    "richard youngs": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:12.469Z"
+    },
+    "stk": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:14.088Z"
+    },
+    "tunnel hunee paula tape": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:15.635Z"
+    },
+    "ελεονορα μανονα": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:17.231Z"
+    },
+    "ιωαννα καβρουλακη": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:18.738Z"
+    },
+    "χαρης νικολαιδης": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:20.297Z"
+    },
+    "andri j περα απο το περας": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:21.876Z"
+    },
+    "jehovah on death": {
+      "genres": [
+        "Rock"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:23.368Z"
+    },
+    "the 3 tenors": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:24.929Z"
+    },
+    "γ μπιθικωτσης γ πουλοπουλος τ βοσκοπουλος": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:26.426Z"
+    },
+    "δημητρης γαλακτοπουλος": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:27.911Z"
+    },
+    "συναυλια συνδικατου επισιτισμου τουρισμου": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:29.505Z"
+    },
+    "kronos quartet": {
+      "genres": [
+        "Classical"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:30.997Z"
+    },
+    "μιμης πλεσσας ποιος το ξερει": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:32.602Z"
+    },
+    "μχ lonely": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:34.083Z"
+    },
+    "sports us athens": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:35.642Z"
+    },
+    "wormhog": {
+      "genres": [
+        "Rock"
+      ],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:37.307Z"
+    },
+    "thanasis valsamis quintet": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:38.862Z"
+    },
+    "τραγουδαμε μαζι": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:40.401Z"
+    },
+    "blues cargo feat nick dounousis": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:41.984Z"
+    },
+    "bruce": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:43.414Z"
+    },
+    "bus": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:44.950Z"
+    },
+    "χωμα": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:46.444Z"
+    },
+    "lost childhood tapes weird electronica calmdown degear0001": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:47.929Z"
+    },
+    "48 ores": {
+      "genres": [],
+      "source": "itunes",
+      "checkedAt": "2026-11-03T21:45:49.479Z"
     }
   }
 }

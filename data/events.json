@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T21:12:41.465Z",
+  "updatedAt": "2026-11-03T21:45:50.979Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -636,6 +636,26 @@
       "verification": "source-catalog"
     },
     {
+      "id": "rocking-20261104-27544",
+      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+      "artists": [
+        "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+        "Άγγελος Σπηλιόπουλος",
+        "Stygian Path",
+        "Enemy Of Reality"
+      ],
+      "date": "2026-11-04",
+      "venue": "Ίλιον Plus",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/4/27544",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-dcb5f3b1dcb67fde",
       "artist": "Από την Σαπφώ στον Ελύτη",
       "artists": [
@@ -965,7 +985,7 @@
       "venue": "Le Guess Who?",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Jazz / Hip-Hop",
+      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Hip-Hop",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35545/Le-Guess-Who-/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/0/6//Le_Guess_Who__2026.png",
@@ -1826,15 +1846,15 @@
     },
     {
       "id": "more-eeaaeb7e3c158ed3",
-      "artist": "Riot V - 50th Anniversary Tour - Παρασκευή 6 Νοεμβρίου, Κύτταρο Αθήνα w Angelo Perlepes Mystery",
+      "artist": "Riot V",
       "artists": [
-        "Riot V - 50th Anniversary Tour - Παρασκευή 6 Νοεμβρίου, Κύτταρο Αθήνα w Angelo Perlepes Mystery"
+        "Riot V"
       ],
       "date": "2026-11-06",
       "venue": "Kyttaro Live",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/riot-50th-anniversary-tour-athens/",
       "image": "https://www.more.com/getattachment/37FAEA24-9990-4620-99A1-4663974ED0EF/evg_riotv-angeloperlepesmyste_1139_1571.png",
@@ -2166,6 +2186,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261107-27564",
+      "artist": "Ari Hoenig",
+      "artists": [
+        "Ari Hoenig"
+      ],
+      "date": "2026-11-07",
+      "venue": "Αθηνά Live",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Jazz",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27564",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-ebb025fdd9b1574f",
       "artist": "ARI HOENIG TRIO",
       "artists": [
@@ -2337,6 +2374,24 @@
       "image": "https://www.more.com/getattachment/A5014CEC-EE60-455A-B2C1-BBF2B332D8F9/evg_delinesfest_1607_854.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "rocking-20261107-27437",
+      "artist": "Delines Fest: Τάκι Τσαν & DJ ALX",
+      "artists": [
+        "Delines Fest: Τάκι Τσαν & DJ ALX",
+        "Χατ Τρικ κ.α."
+      ],
+      "date": "2026-11-07",
+      "venue": "Gagarin 205",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27437",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-455867",
@@ -2760,7 +2815,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "Alternative",
+      "genre": "Alternative / Electronic / Punk",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/sleaford-mods2026/",
       "image": "https://www.more.com/getattachment/81EBC958-A55D-48EB-BED3-65F52DF9826F/evg_sleafordmods_1234_750.png",
@@ -2870,6 +2925,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261107-27423",
+      "artist": "The Veils",
+      "artists": [
+        "The Veils"
+      ],
+      "date": "2026-11-07",
+      "venue": "Arch Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Alternative",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27423",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-af7c2dd16be45cdf",
       "artist": "THE VEILS (NZ)",
       "artists": [
@@ -2885,6 +2957,40 @@
       "image": "https://www.more.com/getattachment/611F71C6-E605-42C5-999F-E72C52357665/evg_theveilsnzliveinathens_1156_2659.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "rocking-20261107-27307",
+      "artist": "Uriah Heep",
+      "artists": [
+        "Uriah Heep"
+      ],
+      "date": "2026-11-07",
+      "venue": "Principal Club Theater: Mylos Area",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27307",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
+      "id": "rocking-20261107-27567",
+      "artist": "Vígljós",
+      "artists": [
+        "Vígljós"
+      ],
+      "date": "2026-11-07",
+      "venue": "Temple Athens",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27567",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "more-b117bd7faa25e33b",
@@ -3108,6 +3214,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261108-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-11-08",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/8/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-ebe5db5b8301c24f",
       "artist": "JAM PEDALS",
       "artists": [
@@ -3123,6 +3246,25 @@
       "image": "https://www.more.com/getattachment/AB8EBB58-1D34-424E-8C73-91D8824D44BA/evg_jampedals-20yearsannivers_1539_1881.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "rocking-20261108-27578",
+      "artist": "Jam Pedals: Villagers of Ioannina City",
+      "artists": [
+        "Jam Pedals: Villagers of Ioannina City",
+        "Raining Pleasure",
+        "Υπόγεια Ρεύματα κ.α."
+      ],
+      "date": "2026-11-08",
+      "venue": "Gazarte",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/8/27578",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-457899",
@@ -3877,6 +4019,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261110-27295",
+      "artist": "Riot V",
+      "artists": [
+        "Riot V",
+        "Angelo Perlepes' Mystery"
+      ],
+      "date": "2026-11-10",
+      "venue": "Eightball",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/10/27295",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-451605",
       "artist": "Rymden",
       "artists": [
@@ -4192,7 +4352,7 @@
       "venue": "AN Club",
       "city": "Athens",
       "country": "GR",
-      "genre": "Pop",
+      "genre": "Post-Rock / Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/kwoon-live-in-athens/",
       "image": "https://www.more.com/getattachment/8AD1813F-6A2D-43E2-81AF-556085420C41/evg_kwoonliveinathens_1927_5209.png",
@@ -4244,7 +4404,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal / Stoner / Doom",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/paradise-lost/",
       "image": "https://www.more.com/getattachment/9CC4B136-C544-423C-B25A-BE01B18994D0/evg_paradiselost_1745_1839.png",
@@ -4443,9 +4603,9 @@
     },
     {
       "id": "more-3c184b63a033b977",
-      "artist": "BALOTHIZER w/ KARP.OS -",
+      "artist": "BALOTHIZER w",
       "artists": [
-        "BALOTHIZER w/ KARP.OS -"
+        "BALOTHIZER w"
       ],
       "date": "2026-11-12",
       "venue": "EXA",
@@ -5025,15 +5185,15 @@
     },
     {
       "id": "more-1ccf347ce3e4d59c",
-      "artist": "ANJA HUWE / XMAL DEUTSCHLAND",
+      "artist": "ANJA HUWE",
       "artists": [
-        "ANJA HUWE / XMAL DEUTSCHLAND"
+        "ANJA HUWE"
       ],
       "date": "2026-11-13",
       "venue": "gazarte",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/anja-huwe/xmal-deutschland/",
       "image": "https://www.more.com/getattachment/279CBB78-57DB-4EB6-A7EE-1CC5EDB848D1/evg_anjahuwe/xmaldeutschland_1807_949.png",
@@ -5159,6 +5319,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261113-27537",
+      "artist": "Dire Straits Legacy",
+      "artists": [
+        "Dire Straits Legacy"
+      ],
+      "date": "2026-11-13",
+      "venue": "FLOYD",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/13/27537",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-474626",
@@ -5323,7 +5500,7 @@
       "venue": "Death Disco",
       "city": "Monastiraki",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/house-jumper-of-love-live-stin-athina/",
       "image": "https://www.more.com/getattachment/E56E0AC8-CD96-4934-82A8-ACA24B35C23B/evg_housejumperoflovelivesten_0108_4551.png",
@@ -5521,6 +5698,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261113-27496",
+      "artist": "Sólstafir",
+      "artists": [
+        "Sólstafir"
+      ],
+      "date": "2026-11-13",
+      "venue": "Eightball",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal / Post-Rock / Psychedelic",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/13/27496",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-497347",
       "artist": "Suzan & Freek",
       "artists": [
@@ -5565,7 +5759,7 @@
       "venue": "AN Club",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal / Stoner / Doom",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/warning-uk-the-temple-gr-live-stin-athina/",
       "image": "https://www.more.com/getattachment/617D5ABF-CAE4-4522-9530-59A67E1A34A9/evg_warninguklivestenathena_1246_4551.png",
@@ -5582,7 +5776,7 @@
       "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/xzibit-live-in-athens-new-date-13-11-26/",
       "image": "https://www.more.com/getattachment/DEBBA7CA-50CB-4E30-81EC-7660B4B4085B/evg_xzibitliveinathensnewdate_1617_345.png",
@@ -5760,6 +5954,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261114-27503",
+      "artist": "Billy Cobham: Time Machine",
+      "artists": [
+        "Billy Cobham: Time Machine"
+      ],
+      "date": "2026-11-14",
+      "venue": "Μέγαρο Μουσικής Αθηνών",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/14/27503",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-94b0cfe9539a2437",
       "artist": "Cannibal Radio Clubnight",
       "artists": [
@@ -5828,6 +6039,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261114-27536",
+      "artist": "Dire Straits Legacy",
+      "artists": [
+        "Dire Straits Legacy"
+      ],
+      "date": "2026-11-14",
+      "venue": "Ράδιο City",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/14/27536",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-496180",
@@ -6058,6 +6286,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261114-27436",
+      "artist": "Iron Beast: Caught Somewhere in Greece - 40 Years of Somewhere in Time",
+      "artists": [
+        "Iron Beast: Caught Somewhere in Greece - 40 Years of Somewhere in Time"
+      ],
+      "date": "2026-11-14",
+      "venue": "We",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/14/27436",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-6116185d6a74b038",
       "artist": "ITALIANO PARTY",
       "artists": [
@@ -6186,7 +6431,7 @@
       "venue": "ARCH",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/mother-of-millions-live-in-athens-w/special-guests-universe217/",
       "image": "https://www.more.com/getattachment/F174F8A7-A438-4744-A9A4-94CA9E6B6089/evg_motherofmillionsliveinath_1759_4963.png",
@@ -6305,7 +6550,7 @@
       "venue": "Kyttaro Live",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/psychobreak-live-kyttaro/",
       "image": "https://www.more.com/getattachment/CCBB45F9-CC92-44AB-B3FC-FF9F225D1C18/evg_psychobreaklivekuttaro_1412_3608.png",
@@ -6379,6 +6624,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "official-fuzzclub-solstafir-20261114",
+      "artist": "Sólstafir",
+      "artists": [
+        "Sólstafir"
+      ],
+      "date": "2026-11-14",
+      "venue": "Fuzz Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Post-Rock / Psychedelic",
+      "subgenre": "",
+      "url": "https://www.fuzzclub.gr/event/solstafir-2/",
+      "image": "",
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "more-6240a3fe122b320e",
@@ -6656,6 +6918,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261115-27536",
+      "artist": "Dire Straits Legacy",
+      "artists": [
+        "Dire Straits Legacy"
+      ],
+      "date": "2026-11-15",
+      "venue": "Ράδιο City",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/15/27536",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-479117",
       "artist": "Early James",
       "artists": [
@@ -6724,6 +7003,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261115-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-11-15",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/15/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-455720",
       "artist": "HAEVN",
       "artists": [
@@ -6776,15 +7072,15 @@
     },
     {
       "id": "more-cc4b2db7e0317710",
-      "artist": "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL",
+      "artist": "JEHOVAH ON DEATH",
       "artists": [
-        "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL"
+        "JEHOVAH ON DEATH"
       ],
       "date": "2026-11-15",
       "venue": "AN Club",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/offer/jehovah-on-death/lucenthia/this-i-owe/vespel/",
       "image": "https://www.more.com/getattachment/CF570935-07AA-4FC1-A2D0-8F7084292673/evg_jehovahondeath/lucenthia/_1535_3727.png",
@@ -7159,7 +7455,7 @@
       "venue": "Gazarte - Main Stage",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Classical",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/kronos-quartet/",
       "image": "https://www.more.com/getattachment/2109E5F7-B0DF-40AF-936F-DF2B3264D2AD/evg_kronosquartet_1233_1881.png",
@@ -7986,6 +8282,26 @@
       "verification": "source-catalog"
     },
     {
+      "id": "rocking-20261118-27545",
+      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+      "artists": [
+        "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+        "Άγγελος Σπηλιόπουλος",
+        "Wormhog",
+        "Savatage Greek Legion Band"
+      ],
+      "date": "2026-11-18",
+      "venue": "Ίλιον Plus",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/18/27545",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-463454",
       "artist": "Strangelove – The Depeche Mode Experience - 40 Years Of Black Celeb...",
       "artists": [
@@ -8174,9 +8490,9 @@
     },
     {
       "id": "more-479b1e38347e3523",
-      "artist": "Bruce. // ALBUM RELEASE w/UVVUTV @ ILION plus",
+      "artist": "Bruce. /",
       "artists": [
-        "Bruce. // ALBUM RELEASE w/UVVUTV @ ILION plus"
+        "Bruce. /"
       ],
       "date": "2026-11-19",
       "venue": "ΙΛΙΟΝ Plus",
@@ -8670,9 +8986,9 @@
     },
     {
       "id": "more-1d838c5834ce8c9d",
-      "artist": "BABA ZULA (TR) W/ KOYAMAN",
+      "artist": "BABA ZULA (TR) W",
       "artists": [
-        "BABA ZULA (TR) W/ KOYAMAN"
+        "BABA ZULA (TR) W"
       ],
       "date": "2026-11-20",
       "venue": "ARCH",
@@ -9550,7 +9866,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative / Experimental",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/481544/Chelsea-Wolfe-The-Dark-World-Tour/TivoliVredenburg/",
       "image": "",
@@ -10239,6 +10555,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261122-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-11-22",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/22/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-476443",
       "artist": "Iron Jinn / Temple Fang",
       "artists": [
@@ -10607,7 +10940,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/kreator-overkill/",
       "image": "https://www.more.com/getattachment/2FA63B09-9703-478C-B15C-ABAD50123BD4/evg_kreatoroverkill_2045_1611.png",
@@ -11573,6 +11906,26 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261126-27339",
+      "artist": "Napalm Death",
+      "artists": [
+        "Napalm Death",
+        "Master",
+        "Brat",
+        "Goatburner"
+      ],
+      "date": "2026-11-26",
+      "venue": "We",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/26/27339",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-455822",
       "artist": "SACE6",
       "artists": [
@@ -12055,6 +12408,25 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261127-27513",
+      "artist": "Into Battle Festival",
+      "artists": [
+        "Into Battle Festival",
+        "Artillery",
+        "Strana Officina κ.α."
+      ],
+      "date": "2026-11-27",
+      "venue": "Κύτταρο",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/27/27513",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-450016",
       "artist": "Jack and the Weatherman",
       "artists": [
@@ -12208,6 +12580,25 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261127-27442",
+      "artist": "Munly & The Lupercalians",
+      "artists": [
+        "Munly & The Lupercalians",
+        "Manos Six",
+        "The Muddy Devil"
+      ],
+      "date": "2026-11-27",
+      "venue": "Temple Athens",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/27/27442",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-5b013cb23983c563",
       "artist": "NAPALM DEATH",
       "artists": [
@@ -12292,6 +12683,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261127-27384",
+      "artist": "Praying Mantis",
+      "artists": [
+        "Praying Mantis"
+      ],
+      "date": "2026-11-27",
+      "venue": "Eightball",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal / Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/27/27384",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-455485",
@@ -12718,6 +13126,25 @@
       "isFestival": true
     },
     {
+      "id": "rocking-20261128-27514",
+      "artist": "Into Battle Festival",
+      "artists": [
+        "Into Battle Festival",
+        "Whiplash",
+        "Elixir κ.α."
+      ],
+      "date": "2026-11-28",
+      "venue": "Κύτταρο",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/28/27514",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-456167",
       "artist": "Kaat Van Stralen",
       "artists": [
@@ -13076,6 +13503,25 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261128-27461",
+      "artist": "Yellow Eyes",
+      "artists": [
+        "Yellow Eyes",
+        "Ultha",
+        "Sun Worship"
+      ],
+      "date": "2026-11-28",
+      "venue": "AN Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Alternative",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/28/27461",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-494076",
       "artist": "ZALZALA FEST feat. TAQBIR",
       "artists": [
@@ -13280,6 +13726,42 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261129-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-11-29",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/29/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
+      "id": "rocking-20261129-27378",
+      "artist": "Into Battle Festival",
+      "artists": [
+        "Into Battle Festival",
+        "Flotsam And Jetsam",
+        "Mindless Sinner κ.α."
+      ],
+      "date": "2026-11-29",
+      "venue": "Κύτταρο",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/29/27378",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-445a70f683680047",
       "artist": "LEVI.SCT",
       "artists": [
@@ -13398,6 +13880,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261129-27386",
+      "artist": "Praying Mantis",
+      "artists": [
+        "Praying Mantis"
+      ],
+      "date": "2026-11-29",
+      "venue": "Ίλιον Plus",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/29/27386",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-490281",
@@ -13622,6 +14121,25 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261129-27461",
+      "artist": "Yellow Eyes",
+      "artists": [
+        "Yellow Eyes",
+        "Ultha",
+        "Sun Worship"
+      ],
+      "date": "2026-11-29",
+      "venue": "AN Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Alternative",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/29/27461",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-451375",
       "artist": "Zimmer90",
       "artists": [
@@ -13690,6 +14208,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "rocking-20261130-27575",
+      "artist": "Atrophy",
+      "artists": [
+        "Atrophy"
+      ],
+      "date": "2026-11-30",
+      "venue": "AN Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/30/27575",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-490715",
       "artist": "DakhaBrakha - Ptakh",
       "artists": [
@@ -13722,6 +14257,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261130-27379",
+      "artist": "Flotsam And Jetsam",
+      "artists": [
+        "Flotsam And Jetsam",
+        "Whiplash"
+      ],
+      "date": "2026-11-30",
+      "venue": "Eightball",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/30/27379",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "more-0a05727182e46bd9",
@@ -14431,6 +14984,26 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261202-27546",
+      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+      "artists": [
+        "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+        "Άγγελος Σπηλιόπουλος",
+        "Dismiss",
+        "Godsleep"
+      ],
+      "date": "2026-12-02",
+      "venue": "Ίλιον Plus",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/2/27546",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-486829",
       "artist": "Terror",
       "artists": [
@@ -14956,7 +15529,7 @@
       "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal / Post-Rock / Experimental",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/the-ocean-gagarin/",
       "image": "https://www.more.com/getattachment/673B2AB8-530E-4F1C-9D69-88EF74C06ABD/evg_theocean_1219_854.png",
@@ -15391,6 +15964,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261204-27266",
+      "artist": "Nazareth",
+      "artists": [
+        "Nazareth"
+      ],
+      "date": "2026-12-04",
+      "venue": "Block 33",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/4/27266",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-481786",
       "artist": "Nieuwe Oogst: ILA",
       "artists": [
@@ -15407,6 +15997,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261204-27285",
+      "artist": "Nine Below Zero",
+      "artists": [
+        "Nine Below Zero",
+        "Bags Of Nails"
+      ],
+      "date": "2026-12-04",
+      "venue": "Piraeus Club Academy",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/4/27285",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-494605",
@@ -15783,6 +16391,25 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261205-27458",
+      "artist": "Mother of Millions",
+      "artists": [
+        "Mother of Millions",
+        "Universe217",
+        "Altar of the Stag"
+      ],
+      "date": "2026-12-05",
+      "venue": "Eightball",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/5/27458",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "more-68fd63a5afec1823",
@@ -16193,6 +16820,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261206-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-12-06",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/6/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-474719",
       "artist": "Kehlani",
       "artists": [
@@ -16225,6 +16869,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261206-27388",
+      "artist": "Kovacs",
+      "artists": [
+        "Kovacs"
+      ],
+      "date": "2026-12-06",
+      "venue": "We",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/6/27388",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-497817",
@@ -16305,7 +16966,7 @@
       "venue": "Fuzz Club",
       "city": "Tavros",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nazareth-athens-fuzz-club/",
       "image": "https://www.more.com/getattachment/BDF896FF-C3CF-413E-B469-3DC6B32780C7/evg_nazarethathensfuzzclub_1730_4866.png",
@@ -16345,6 +17006,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261206-27474",
+      "artist": "SPK",
+      "artists": [
+        "SPK"
+      ],
+      "date": "2026-12-06",
+      "venue": "Temple Athens",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/6/27474",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-460602",
@@ -17719,7 +18397,7 @@
       "venue": "Fuzz Club",
       "city": "Tavros",
       "country": "GR",
-      "genre": "Metal",
+      "genre": "Punk / Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/discharge-uk-live-stin-athina/",
       "image": "https://www.more.com/getattachment/EF7B62D2-3F76-40E4-BA8B-6B6A6FD26B1C/evg_dischargeuklivestenathena_1537_4551.png",
@@ -17766,7 +18444,7 @@
       "venue": "Eindhoven Metal Meeting",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35648/Eindhoven-Metal-Meeting/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/7/5//Eindhoven_Metal_Meeting_7953.jpg",
@@ -17908,6 +18586,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261211-27473",
+      "artist": "Memorials",
+      "artists": [
+        "Memorials"
+      ],
+      "date": "2026-12-11",
+      "venue": "Soul SKG",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/11/27473",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "more-2ef49f612e719033",
@@ -18063,6 +18758,25 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261211-27482",
+      "artist": "Warhammer",
+      "artists": [
+        "Warhammer",
+        "Hope Behind the Hills",
+        "Noxulifer"
+      ],
+      "date": "2026-12-11",
+      "venue": "Temple Athens",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/11/27482",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-f05440baba2b8ff9",
       "artist": "ΔΗΜΗΤΡΗΣ ΜΗΤΣΟΤΑΚΗΣ «ΤΡΑΓΟΥΔΙΑ ΧΩΡΙΣ ΑΔΕΙΑ»",
       "artists": [
@@ -18174,7 +18888,7 @@
       "venue": "Circus Entertainment Hub",
       "city": "Larisa",
       "country": "GR",
-      "genre": "Metal",
+      "genre": "Punk / Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/discharge-uk-live-stin-larisa/",
       "image": "https://www.more.com/getattachment/3FAD6878-CF13-419E-B42E-9E512E836DF6/evg_dischargeuklivestenlarisa_1557_4551.png",
@@ -18656,6 +19370,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261213-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "artists": [
+        "Glitter Grotesque: Let's Swing in New Orleans"
+      ],
+      "date": "2026-12-13",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/13/27562",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-471862",
@@ -20165,6 +20896,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "rocking-20261219-27253",
+      "artist": "Bryan Adams",
+      "artists": [
+        "Bryan Adams"
+      ],
+      "date": "2026-12-19",
+      "venue": "Ολυμπιακό Κλειστό Γυμναστήριο \"Telekom Center Athens\"",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/19/27253",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "more-20701d6f2f47f02d",
       "artist": "Bryan Adams Roll With The Punches",
       "artists": [
@@ -20183,15 +20931,15 @@
     },
     {
       "id": "more-54cc4d7fd627d014",
-      "artist": "Chelsea Wolfe: THE DARK World Tour",
+      "artist": "Chelsea Wolfe",
       "artists": [
-        "Chelsea Wolfe: THE DARK World Tour"
+        "Chelsea Wolfe"
       ],
       "date": "2026-12-19",
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative / Experimental",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/chelsea-wolfe2026/",
       "image": "https://www.more.com/getattachment/5BED9637-98E6-45D4-9CB3-D80E18547CD8/evg_chelseawolfe_1442_750.png",
@@ -20265,6 +21013,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "rocking-20261219-27464",
+      "artist": "God Is An Astronaut",
+      "artists": [
+        "God Is An Astronaut"
+      ],
+      "date": "2026-12-19",
+      "venue": "Gagarin 205",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Post-Rock",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/12/19/27464",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-499674",
@@ -20956,7 +21721,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Stoner / Doom / Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/1000mods-12-2026/",
       "image": "https://www.more.com/getattachment/E5417CE0-0D5D-44E2-85AC-64E43785B0BB/evg_1000mods_1702_750.png",
@@ -21460,9 +22225,9 @@
     },
     {
       "id": "more-84b687f69bfe91ed",
-      "artist": "NIGHTKILL/SECULAR UPHEAVAL/VICIOUS VOID στο ΙΛΙΟΝ plus",
+      "artist": "NIGHTKILL",
       "artists": [
-        "NIGHTKILL/SECULAR UPHEAVAL/VICIOUS VOID στο ΙΛΙΟΝ plus"
+        "NIGHTKILL"
       ],
       "date": "2027-01-02",
       "venue": "ΙΛΙΟΝ Plus",
@@ -22926,15 +23691,15 @@
     },
     {
       "id": "more-f6c9fc072d001777",
-      "artist": "ACID DEATH / NULL O ZERO / KARMA VIOLENS / GUNSMITH στο ΚΥΤΤΑΡΟ",
+      "artist": "ACID DEATH",
       "artists": [
-        "ACID DEATH / NULL O ZERO / KARMA VIOLENS / GUNSMITH στο ΚΥΤΤΑΡΟ"
+        "ACID DEATH"
       ],
       "date": "2027-01-17",
       "venue": "Kyttaro Live",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/acid-death/null-o-zero/karma-violens/gunsmith-sto-kyttaro-live-stage/",
       "image": "https://www.more.com/getattachment/9DBEEEE7-ECAC-4509-AC55-F7C3FFA4ED16/evg_37acidyears_1015_5031.png",
@@ -23156,7 +23921,7 @@
       "venue": "013",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "Rock",
+      "genre": "Rock / Metal",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/479459/Black-Veil-Brides/013/",
       "image": "",
@@ -24214,7 +24979,7 @@
       "venue": "Vera",
       "city": "Groningen",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal / Post-Rock / Experimental",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/497728/The-Ocean/Vera/",
       "image": "",
@@ -26501,9 +27266,9 @@
     },
     {
       "id": "more-ac5e63ff74406515",
-      "artist": "SIRIUS/ILLUSORY/FIGHTING FLIES @KYTTARO",
+      "artist": "SIRIUS",
       "artists": [
-        "SIRIUS/ILLUSORY/FIGHTING FLIES @KYTTARO"
+        "SIRIUS"
       ],
       "date": "2027-02-07",
       "venue": "Kyttaro Live",
@@ -26834,7 +27599,7 @@
       "venue": "FLOYD",
       "city": "Athens",
       "country": "GR",
-      "genre": "Rock",
+      "genre": "Rock / Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/black-veil-brides2027/",
       "image": "https://www.more.com/getattachment/A1D84AEE-7D8A-43CF-A142-ADDC9368D9D4/evg_blackveilbrides_1418_750.png",
@@ -27121,9 +27886,9 @@
     },
     {
       "id": "more-08d6fc51de4b71b9",
-      "artist": "GAD. - 20 Years Anniversary Concert",
+      "artist": "GAD.",
       "artists": [
-        "GAD. - 20 Years Anniversary Concert"
+        "GAD."
       ],
       "date": "2027-02-20",
       "venue": "Temple",
@@ -27285,9 +28050,9 @@
     },
     {
       "id": "more-8b5ef11dcfa7d3c5",
-      "artist": "Delta Goodrem // PURE World Tour",
+      "artist": "Delta Goodrem /",
       "artists": [
-        "Delta Goodrem // PURE World Tour"
+        "Delta Goodrem /"
       ],
       "date": "2027-03-18",
       "venue": "Gagarin 205 Live Music Space",
@@ -27344,7 +28109,7 @@
       "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/tarja-athens/",
       "image": "https://www.more.com/getattachment/4B638CAE-EA85-4845-8B99-9342976C9083/evg_tarjaathens_1052_854.png",
@@ -27518,16 +28283,18 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 320,
+    "greeceEvents": 363,
     "greeceFeedError": "",
+    "rockingEvents": 42,
+    "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1241,
     "festivalEvents": 16,
-    "officialVenueEvents": 0,
+    "officialVenueEvents": 1,
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 301,
-    "taggedArtists": 147,
-    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: dated events from the public More.com music listing when accessible; this is not a complete country calendar. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
+    "genreTaggedEvents": 341,
+    "taggedArtists": 189,
+    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
