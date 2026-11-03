@@ -11,6 +11,35 @@ const genreTerms={
   'Psychedelic':['psychedelic','psych rock'], 'Folk':['folk','acoustic','americana'],
   'Experimental':['experimental','avant garde'], 'Ambient':['ambient','drone']
 };
+// Only explicit words in a public concert/festival title can be used when
+// reliable artist-level genre metadata is not yet available. This is a hint,
+// not a verified genre classification of the performer's music.
+export function titleGenreHints(value){
+  const title=' '+norm(value)+' ';
+  if(!title.trim())return [];
+  const words=[
+    ['Post-Rock',['post rock','postrock']],
+    ['Stoner / Doom',['stoner','doom','sludge','desert rock']],
+    ['Jazz',['jazz','bebop','jazzfusion']],
+    ['Metal',['metal','deathfest','death metal','black metal']],
+    ['Reggae',['reggae','dub','ska']],
+    ['Punk',['punk']],
+    ['Electronic',['techno','electronic','rave','trance','house music']],
+    ['Classical',['classical','symphony','symphonic']],
+    ['Psychedelic',['psychedelic','psych rock']],
+    ['Ambient',['ambient','drone music']],
+    ['Experimental',['experimental','avant garde']],
+    ['Hip-Hop',['hip hop','hiphop','rap']],
+    ['Folk',['folk']],
+    ['Indie',['indie']],
+    ['Alternative',['alternative']],
+    ['Rock',['rock']],
+    ['Pop',['pop']]
+  ];
+  return words.filter(([,terms])=>terms.some(term=>title.includes(' '+term+' ')))
+    .map(([genre])=>genre);
+}
+
 export function normalizeEvent(input){
   if(!input||typeof input!=='object')return null;
   const artist=String(input.artist||input.name||'').trim().slice(0,200);
@@ -18,7 +47,11 @@ export function normalizeEvent(input){
   if(!artist||!date)return null;
   const id=String(input.id||`${artist}-${date}-${input.venue||''}`).slice(0,250);
   const artists=Array.isArray(input.artists)?input.artists.filter(x=>typeof x==='string').slice(0,250):[];
-  return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre:String(input.genre||'').slice(0,100),subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
+  const genreFromFeed=String(input.genre||'').trim().slice(0,100);
+  const titleHints=genreFromFeed?[]:titleGenreHints(artist);
+  const genre=genreFromFeed||titleHints.join(' / ');
+  const genreEvidence=genreFromFeed?'metadata':titleHints.length?'title-cue':'';
+  return {id,artist,artists,date,venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60)};
 }
 function artistMatch(event,wanted){
   const names=[event.artist,...(event.artists||[])].map(norm);
@@ -49,6 +82,6 @@ export function matchReason(event,profile){
   const sameArtist=artistMatch(event,Array.isArray(profile.artists)?profile.artists:[]);
   const genres=genreMatch(event,Array.isArray(profile.genres)?profile.genres:[]);
   if(sameArtist)return '★ Your favorite artist'+(genres.length?` · ${genres[0]}`:'');
-  if(genres.length)return `Matches your ${genres.join(' / ')} taste`;
+  if(genres.length)return event.genreEvidence==='title-cue'?`Event title suggests ${genres.join(' / ')} · check event details`:`Matches your ${genres.join(' / ')} taste`;
   return '';
 }
