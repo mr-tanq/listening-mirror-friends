@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "note": "Small manually reviewed genre labels for well-known acts; labels are broad musical categories, not individualized similar-artist claims. Artist names are exact normalized keys only; automated iTunes/MusicBrainz enrichment remains primary for everyone else.",
+  "artists": {
+    "paradise lost": {
+      "genres": [
+        "Metal",
+        "Stoner / Doom"
+      ],
+      "source": "curated"
+    },
+    "kreator": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "overkill": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "riot v": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "solstafir": {
+      "genres": [
+        "Metal",
+        "Post-Rock",
+        "Psychedelic"
+      ],
+      "source": "curated"
+    },
+    "the ocean": {
+      "genres": [
+        "Metal",
+        "Post-Rock",
+        "Experimental"
+      ],
+      "source": "curated"
+    },
+    "psychonaut": {
+      "genres": [
+        "Metal",
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "chelsea wolfe": {
+      "genres": [
+        "Alternative",
+        "Experimental"
+      ],
+      "source": "curated"
+    },
+    "warning": {
+      "genres": [
+        "Metal",
+        "Stoner / Doom"
+      ],
+      "source": "curated"
+    },
+    "napalm death": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "nile": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "discharge": {
+      "genres": [
+        "Punk"
+      ],
+      "source": "curated"
+    },
+    "1000mods": {
+      "genres": [
+        "Stoner / Doom",
+        "Rock"
+      ],
+      "source": "curated"
+    },
+    "god is an astronaut": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "prong": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "tarja": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "sleaford mods": {
+      "genres": [
+        "Alternative",
+        "Electronic",
+        "Punk"
+      ],
+      "source": "curated"
+    },
+    "kwoon": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "mother of millions": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "acid death": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "soen": {
+      "genres": [
+        "Metal",
+        "Rock"
+      ],
+      "source": "curated"
+    },
+    "uriah heep": {
+      "genres": [
+        "Rock"
+      ],
+      "source": "curated"
+    },
+    "black veil brides": {
+      "genres": [
+        "Rock",
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "into battle festival": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "up the hammers": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "old man's child": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "blasphemy": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "the ocean collective": {
+      "genres": [
+        "Metal",
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "yellow eyes": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "godspeed you black emperor": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "sigur ros": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "mono": {
+      "genres": [
+        "Post-Rock"
+      ],
+      "source": "curated"
+    },
+    "amenra": {
+      "genres": [
+        "Metal"
+      ],
+      "source": "curated"
+    },
+    "kyuss": {
+      "genres": [
+        "Stoner / Doom",
+        "Rock"
+      ],
+      "source": "curated"
+    }
+  }
+}
