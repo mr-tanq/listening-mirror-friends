@@ -1,4 +1,4 @@
-import { recommendEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=discovery-20261103-v4';
+import { recommendEvent, dateToday, norm, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=country-20261103-v6';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -101,12 +101,19 @@ function renderTonightList(){
     x.event.artist,...(x.event.artists||[]),x.event.venue,x.event.city,x.event.genre,x.reason
   ].join(' ')).includes(norm(searchText)));
   if(!list.length){
-    const title=personal?'No music matches yet.':collection==='going'?'Nothing planned yet.':'Nothing in Deciding.';
-    const message=personal?(
-      catalog.updatedAt?
-       'No confirmed matches for your genres or favorite bands in the current catalogue. Music genres are still being enriched. You can edit your taste or try more favorite artists — unrelated shows are not added.'
-       :'The concert catalogue is not available yet. Add a concert manually or check back after the next update.'
-    ):'Save a concert from Discover, or add a concert manually.';
+    const currentCountry=state.profile?.country||'';
+    const countryListings=catalog.events.filter(e=>e.country===currentCountry&&e.date>=dateToday()).length;
+    const countryName=COUNTRIES.find(c=>c.code===currentCountry)?.name||'your selected country';
+    const supported=['NL','BE','GR'].includes(currentCountry);
+    const title=personal?(supported&&!countryListings?'No listings loaded for '+countryName+'.':'No music matches yet.')
+      :collection==='going'?'Nothing planned yet.':'Nothing in Deciding.';
+    const message=personal?(!supported?
+      'Concert discovery is not available in this country yet. Currently the shared catalog supports the Netherlands, Belgium and Greece; your profile is saved safely.'
+      :!countryListings?
+      ('The '+countryName+' source has not returned any upcoming shows yet. We cannot match genres or similar artists until those events are imported.'+
+       (currentCountry==='GR'&&catalog.coverage?.greeceFeedError?' Latest source error: '+catalog.coverage.greeceFeedError:''))
+      : 'There are '+countryListings+' concerts listed for '+countryName+', but no reliable matches for your selected genres or bands yet. Artist genre coverage is incomplete; unrelated events are not shown as recommendations.')
+      :'Save a concert from Discover, or add a concert manually.';
     root.append(empty(title,message,()=>personal?openProfileDialog(false):openConcertDialog(),personal?'Edit my music taste':'+ Add concert'));
     return;
   }
@@ -146,8 +153,14 @@ function renderTonight(){
   const info=el('div','notice');
   const desc=el('span');
   if(catalog.error){info.classList.add('error');desc.textContent=`Concert feed unavailable: ${catalog.error}`;}
-  else if(catalog.updatedAt)desc.textContent=
-    `Event feed · ${catalog.events.length.toLocaleString()} listings · ${(catalog.coverage?.agendaOnlyPodiuminfoEvents||0).toLocaleString()} Podiuminfo agenda previews (check source) · ${catalog.coverage?.festivalEvents||0} verified festival listings · updated ${new Date(catalog.updatedAt).toLocaleDateString('en-GB')}`;
+  else if(catalog.updatedAt){
+    const country=state.profile?.country||'';
+    const totalInCountry=catalog.events.filter(e=>e.country===country&&e.date>=dateToday()).length;
+    const name=COUNTRIES.find(c=>c.code===country)?.name||country;
+    desc.textContent=`Live catalogue · ${name}: ${totalInCountry.toLocaleString()} listed events · ${catalog.events.length.toLocaleString()} total · updated ${new Date(catalog.updatedAt).toLocaleDateString('en-GB')}`;
+    if(country==='GR'&&catalog.coverage?.greeceFeedError&&!totalInCountry)
+      desc.textContent+=' · Greek source temporarily unavailable';
+  }
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
