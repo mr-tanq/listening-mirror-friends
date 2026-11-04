@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "notes": "Reviewed single-event agenda supplements for dates missing from bounded index; not a general scraping source.",
+  "events": [
+    {
+      "id": "rocking-20261107-27567",
+      "artist": "Vígljós",
+      "artists": [
+        "Vígljós"
+      ],
+      "date": "2026-11-07",
+      "venue": "Temple Athens",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "Black Metal",
+      "url": "https://www.rocking.gr/agenda/2026/11/7/27567",
+      "image": "https://images.rocking.gr/posters/2026/500/Vigljos26.jpg",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    }
+  ]
+}
