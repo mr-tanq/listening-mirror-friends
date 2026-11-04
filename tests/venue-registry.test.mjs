@@ -11,7 +11,8 @@ test('Greek source inventory has unique stable IDs and reviewable metadata',()=>
    assert.ok(row.name&&row.country==='GR'&&row.city);
    assert.ok(['venue','promoter','editorial'].includes(row.type));
    assert.ok(['active','verified-index','planned','research'].includes(row.status));
-   assert.equal(new URL(row.agenda).protocol,'https:');
+   if(row.agenda)assert.equal(new URL(row.agenda).protocol,'https:');
+   else assert.equal(row.status,'research');
  }
 });
 test('a research or verified index listing is never labeled active',()=>{
