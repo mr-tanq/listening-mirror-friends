@@ -71,6 +71,66 @@ export function fromOfficialVenue(event) {
 }
 
 /**
+ * Gagarin 205 publishes an official iCalendar feed via The Events Calendar.
+ * Keep only dated, canonical venue event links; filter known comedy categories.
+ * A valid venue calendar entry confirms the listing, not its musical genre.
+ * This is deliberately independent of per-user music preferences.
+ */
+export function parseGagarinCalendar(ics,{today=dayNow(),endDate=plusDays(today,170)}={}){
+  if(typeof ics!=='string'||!ics.includes('BEGIN:VCALENDAR'))return [];
+  const entries=[],lines=ics.replace(/\r?\n[ \t]/g,'').split(/\r?\n/);
+  let event=null;
+  for(const line of lines){
+    if(line==='BEGIN:VEVENT'){event=new Map();continue;}
+    if(line==='END:VEVENT'){if(event)entries.push(event);event=null;continue;}
+    if(!event)continue;
+    const colon=line.indexOf(':');
+    if(colon<1)continue;
+    const key=line.slice(0,colon).split(';',1)[0].toUpperCase();
+    const value=line.slice(colon+1).replace(/\\[nN]/g,' ').replace(/\\([,;\\])/g,'$1').trim();
+    if(!event.has(key))event.set(key,value);
+  }
+  const results=new Map();
+  for(const fields of entries){
+    const rawDate=fields.get('DTSTART')||'';
+    const m=/^(\d{4})(\d{2})(\d{2})/.exec(rawDate);
+    if(!m)continue;
+    const date=m[1]+'-'+m[2]+'-'+m[3];
+    if(!validDate(date)||date<today||date>endDate)continue;
+    const artist=String(fields.get('SUMMARY')||'').replace(/<[^>]*>/g,'').trim().slice(0,140);
+    const category=norm(fields.get('CATEGORIES')||'');
+    if(!artist||artist.length<2||/(^| )(comedy|stand up|standup|theater|theatre|κωμωδια|θεατρο)( |$)/.test(category))continue;
+    // Exclude overt non-concert items even if the venue has not categorized them.
+    if(/stand[\s-]?up|comedy|κωμωδ|σεβαστερ|θεατρικ|παραστασ/i.test(artist))continue;
+    const url=safeUrl(fields.get('URL'));
+    if(!url)continue;
+    let canonical;
+    try{canonical=new URL(url);}catch{continue;}
+    if(canonical.hostname!=='gagarin205.gr'&&canonical.hostname!=='www.gagarin205.gr')continue;
+    if(!canonical.pathname.startsWith('/event/'))continue;
+    const id='gagarin-'+date+'-'+encodeURIComponent(norm(artist)).slice(0,100);
+    results.set(date+'|'+norm(artist),{
+      id,artist,artists:[artist],date,venue:'Gagarin 205',city:'Athens',country:'GR',
+      genre:'',subgenre:'',url,image:'',source:'gagarin-calendar',verification:'venue-calendar'
+    });
+  }
+  return [...results.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));
+}
+
+async function discoverGagarinCalendar({today,endDate,fetcher=fetch}={}){
+  const url='https://gagarin205.gr/events/?ical=1';
+  const response=await fetcher(url,{
+    headers:{Accept:'text/calendar, text/plain;q=0.9','User-Agent':'ListeningMirrorFriends/1.0 (https://github.com/mr-tanq/listening-mirror-friends)'},
+    signal:AbortSignal.timeout(15000)
+  });
+  if(!response.ok)throw new Error('Official venue calendar HTTP '+response.status);
+  const content=await response.text();
+  if(content.length>5_000_000)throw new Error('Official venue calendar is unexpectedly large');
+  if(!content.includes('BEGIN:VCALENDAR'))throw new Error('Official venue calendar is not iCalendar');
+  return parseGagarinCalendar(content,{today,endDate});
+}
+
+/**
  * Incrementally verify artists whose shows have not yet been opened.
  * Prefer unverified events in different calendar weeks, then fill remaining slots.
  * A second run processes the next batch rather than re-reading the same pages.
@@ -521,10 +581,19 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     rockingWarning=String(error.message||error);
     console.warn('Rocking.gr agenda unavailable: '+rockingWarning);
   }
+  // Also check a venue-owned calendar directly; failures preserve the last-good catalogue.
+  let gagarinEvents=[],gagarinWarning='';
+  try{
+    gagarinEvents=await discoverGagarinCalendar({today,endDate:festivalEnd});
+    console.log('Gagarin 205 official calendar: '+gagarinEvents.length+' dated listings.');
+  }catch(error){
+    gagarinWarning=String(error.message||error);
+    console.warn('Gagarin 205 calendar unavailable: '+gagarinWarning);
+  }
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -576,6 +645,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
   for(const item of greekEvents)map.set(item.id,item);
+  for(const item of gagarinEvents){
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
+    map.set(item.id,{...item,image:duplicate?.image||'',
+      artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
+  }
   // Reviewed venue and artist tour URLs supplement missing indexed shows.
   // These are dated fallbacks, not a complete automated tour search.
   const verified=await read('data/verified-events.json',{events:[]});
@@ -639,9 +714,9 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
-      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
+      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
