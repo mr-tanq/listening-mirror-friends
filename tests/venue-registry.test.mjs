@@ -17,7 +17,7 @@ test('Greek source inventory has unique stable IDs and reviewable metadata',()=>
 });
 test('a research or verified index listing is never labeled active',()=>{
  const active=registry.venues.filter(x=>x.status==='active').map(x=>x.id).sort();
- assert.deepEqual(active,['floyd','gagarin205','rocking']);
+ assert.deepEqual(active,['anclub','floyd','fuzzclub','gagarin205','rocking']);
 });
 test('broad Athens and Thessaloniki source coverage is represented',()=>{
  for(const id of ['gagarin205','anclub','fuzzclub','floyd','technopolis','megaron-athens','principal','moni-lazariston','release','rocking','musicity'])
