@@ -12,6 +12,7 @@ on:
       - 'scripts/anclub-index.mjs'
       - 'scripts/catalog-audit.mjs'
       - 'scripts/venue-dedupe.mjs'
+      - 'scripts/event-image-recovery.mjs'
       - 'scripts/technopolis-watch.mjs'
       - 'data/venue-registry.json'
       - 'data/partner-feeds.json'
