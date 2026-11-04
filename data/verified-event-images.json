@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "note": "Manually reviewed event-specific poster URLs, tied to published event IDs. Reapply after each feed refresh; do not guess artwork for unmatched concerts.",
+  "records": [
+    {
+      "ids": [
+        "rocking-20261127-27384",
+        "rocking-20261129-27386"
+      ],
+      "image": "https://images.rocking.gr/posters/2026/500/PrayingMantis26.jpg",
+      "sourceUrl": "https://www.rocking.gr/agenda/2026/11/29/27386",
+      "description": "Official three-city Praying Mantis tour flyer"
+    },
+    {
+      "ids": [
+        "rocking-20261127-27513",
+        "rocking-20261128-27514",
+        "rocking-20261129-27378"
+      ],
+      "image": "https://images.rocking.gr/posters/2026/500/500/intobattle26.jpg",
+      "sourceUrl": "https://www.rocking.gr/agenda/2026/11/27/27513",
+      "description": "Into Battle 2026 three-day festival poster"
+    },
+    {
+      "ids": [
+        "rocking-20261128-27461",
+        "rocking-20261129-27461"
+      ],
+      "image": "https://images.rocking.gr/posters/2026/500/unnamed_2.jpg",
+      "sourceUrl": "https://www.rocking.gr/agenda/2026/11/28/27461",
+      "description": "Yellow Eyes / Ultha / Sun Worship two-night poster"
+    },
+    {
+      "ids": [
+        "rocking-20261211-27482"
+      ],
+      "image": "https://images.rocking.gr/posters/2026/500/warhammer26.jpg",
+      "sourceUrl": "https://www.rocking.gr/agenda/2026/12/11/27482",
+      "description": "Warhammer 11 December Athens show"
+    },
+    {
+      "ids": [
+        "official-tour-moonspell-20270307-eindhoven",
+        "official-tour-moonspell-20270330-thessaloniki",
+        "official-tour-moonspell-20270331-athens",
+        "official-tour-moonspell-20270418-haarlem"
+      ],
+      "image": "https://www.moonspell.com/galeria/images/MoonspellVampire_Tour_Poster_A3_Web-1.jpg",
+      "sourceUrl": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "description": "Official Moonspell God Is A Vampire 2027 European tour poster"
+    }
+  ]
+}
