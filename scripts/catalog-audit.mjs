@@ -4,10 +4,13 @@
  */
 export function buildSourceAudit(data,{today=new Date().toISOString().slice(0,10)}={}){
  const events=Array.isArray(data?.events)?data.events:[];
- const sources={};const venues={};
+ const sources={};const venues={};const byCountry={};
  const isHttpImage=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password;}catch{return false;}};
  for(const e of events){
   if(!e||typeof e!=='object'||e.date<today)continue;
+  const code=String(e.country||'UNKNOWN').toUpperCase();
+  const country=byCountry[code]||={events:0,withImage:0,withoutImage:0};
+  country.events++;if(isHttpImage(e.image))country.withImage++;else country.withoutImage++;
   const source=String(e.source||'unknown').slice(0,60);
   const row=sources[source]||={events:0,withImage:0,withoutImage:0,greekEvents:0};
   row.events++;
@@ -32,5 +35,5 @@ export function buildSourceAudit(data,{today=new Date().toISOString().slice(0,10
  }
  const sourceKeys=Object.keys(sources).sort();
  const images=Object.values(sources).reduce((n,x)=>n+x.withImage,0);
- return {catalogUpdatedAt:data?.updatedAt||null,auditedFor:today,totalPublished:events.filter(e=>e?.date>=today).length,greekPublished:events.filter(e=>e?.date>=today&&e.country==='GR').length,imageCoverage:{withImage:images,withoutImage:Object.values(sources).reduce((n,x)=>n+x.withoutImage,0)},sources:Object.fromEntries(sourceKeys.map(k=>[k,sources[k]])),venueAdapters:status,topGreekVenues:Object.entries(venues).sort((a,b)=>b[1].events-a[1].events).slice(0,40).map(([name,row])=>({name,...row}))};
+ return {catalogUpdatedAt:data?.updatedAt||null,auditedFor:today,totalPublished:events.filter(e=>e?.date>=today).length,greekPublished:events.filter(e=>e?.date>=today&&e.country==='GR').length,imageCoverage:{withImage:images,withoutImage:Object.values(sources).reduce((n,x)=>n+x.withoutImage,0)},imageCoverageByCountry:byCountry,sources:Object.fromEntries(sourceKeys.map(k=>[k,sources[k]])),venueAdapters:status,topGreekVenues:Object.entries(venues).sort((a,b)=>b[1].events-a[1].events).slice(0,40).map(([name,row])=>({name,...row}))};
 }
