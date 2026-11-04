@@ -81,6 +81,22 @@ function cityMatches(event,scope=cityScope){
 function visibleDeciding(){return savedItems('deciding').filter(x=>cityMatches(x.event));}
 function allShows(){return catalog.events.filter(e=>e.date>=dateToday()&&e.country===state.profile?.country&&cityMatches(e)).sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
+function refreshSavedArtwork(events){
+  const byId=new Map(events.map(e=>[e.id,e]));
+  let changed=false;
+  for(const entry of Object.values(state.saved)){
+    if(!entry?.event?.id)continue;
+    const saved=entry.event;
+    const live=byId.get(saved.id)||events.find(e=>e.country===saved.country&&e.date===saved.date&&
+      norm(e.artist)===norm(saved.artist)&&cityKey(e.city)===cityKey(saved.city));
+    if(live?.image&&live.image!==saved.image){
+      entry.event={...saved,image:live.image};
+      changed=true;
+    }
+  }
+  if(changed)persist();
+}
+
 function counts(){return {all:allShows().length,deciding:visibleDeciding().length,going:savedItems('going').length,passed:savedItems('passed').length};}
 function setStatus(e,status){
   const previous=state.saved[e.id]||{};
@@ -421,15 +437,20 @@ async function fetchCatalog(){
         for(const item of verified.events||[]){
           const event=normalizeEvent(item);
           if(!event||!validDate(event.date)||event.date<dateToday())continue;
-          // A venue-confirmed listing takes priority over a matching
-          // unverified aggregator listing with identical headliner/date.
-          allEvents=allEvents.filter(e=>!(e.date===event.date &&
-            e.country===event.country&&norm(e.artist)===norm(event.artist)));
-          allEvents.push(event);
+          // Official details win, but MUST preserve artwork already found
+          // in the published catalog. Empty fallback images should never
+          // replace an event poster with a blank card.
+          const matches=allEvents.filter(e=>e.date===event.date &&
+            e.country===event.country&&norm(e.artist)===norm(event.artist));
+          const prior=matches.find(e=>e.id===event.id)||matches.find(e=>e.image)||matches[0];
+          allEvents=allEvents.filter(e=>!matches.includes(e));
+          allEvents.push(prior?{...event,id:prior.id,image:event.image||prior.image||'',
+            artists:[...new Set([...(prior.artists||[]),...(event.artists||[])])]}:event);
         }
       }
     }catch(error){console.warn('Venue-confirmed event fallback temporarily unavailable',error);}
     catalog={events:allEvents,updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
+    refreshSavedArtwork(catalog.events);
     fillInitialDeciding();
   }catch(e){catalog.error=e.message||'Could not load';}render();
 }
