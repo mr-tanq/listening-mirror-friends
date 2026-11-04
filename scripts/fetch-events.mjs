@@ -719,7 +719,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   fuzzEvents=fuzzPoster.events;
   const directVenueEvents=[...fuzzEvents,...anClubEvents];
   for(const item of directVenueEvents){
-    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist)&&norm(e.venue)===norm(item.venue));
     if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
     const image=item.image||duplicate?.image||'';
     map.set(item.id,{...item,image,artists:[...new Set([...(duplicate?.artists||[]),...(item.artists||[])])]});
