@@ -1,5 +1,5 @@
-import {COUNTRIES,GENRES,norm} from './model.js?v=swipe-friends-v3';
-import {suggestedNiches,suggestTasteBands,ALL_SUBGENRES} from './taste-engine.js?v=swipe-friends-v3';
+import {COUNTRIES,GENRES,norm} from './model.js?v=city-scope-v4';
+import {suggestedNiches,suggestTasteBands,ALL_SUBGENRES} from './taste-engine.js?v=city-scope-v4';
 
 const mk=(tag,cls='',text=null)=>{
   const node=document.createElement(tag);
