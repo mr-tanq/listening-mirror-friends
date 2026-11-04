@@ -13,6 +13,8 @@ on:
       - 'scripts/catalog-audit.mjs'
       - 'scripts/venue-dedupe.mjs'
       - 'scripts/event-image-recovery.mjs'
+      - 'scripts/verified-posters.mjs'
+      - 'data/verified-event-images.json'
       - 'scripts/technopolis-watch.mjs'
       - 'data/venue-registry.json'
       - 'data/partner-feeds.json'
