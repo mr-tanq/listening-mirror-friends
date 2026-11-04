@@ -31,14 +31,24 @@ export async function enrichPodiuminfoImages(events,cache,{fetcher=fetch,parseCo
  let requests=0,found=0,cacheHits=0,skippedBlocked=0;
  const start=now();
  const additions=new Map();
+ const photosByArtist=new Map();
+ const activeEventById=new Map(events.map(e=>[e.id,e]));
+ for(const [id,entry] of Object.entries(images)){
+   const event=activeEventById.get(id);
+   const photo=allowedPodiumArtistPhoto(entry?.image);
+   if(event&&photo&&normalize(event.artist).length>=4)
+     photosByArtist.set(normalize(event.artist),photo);
+ }
  const eligible=events.filter(e=>e.source==='podiuminfo-agenda'&&
     ['NL','BE'].includes(e.country)&&e.date>=today&&!e.image&&validPodiumConcertUrl(e.url,e.id))
    .sort((a,b)=>a.date.localeCompare(b.date)||String(a.id).localeCompare(String(b.id)));
  for(const item of eligible){
   const entry=images[item.id];
-  if(entry?.image){
-   const photo=allowedPodiumArtistPhoto(entry.image);
-   if(photo){additions.set(item.id,photo);cacheHits++;continue;}
+  const name=normalize(item.artist);
+  const cached=allowedPodiumArtistPhoto(entry?.image);
+  const artistPhoto=name.length>=4?photosByArtist.get(name):'';
+  if(cached||artistPhoto){
+   additions.set(item.id,cached||artistPhoto);cacheHits++;continue;
   }
   // Back off for one week after any failed fetch, including access denial.
   if(entry?.retryAfter&&entry.retryAfter>today){skippedBlocked++;continue;}
@@ -57,7 +67,8 @@ export async function enrichPodiuminfoImages(events,cache,{fetcher=fetch,parseCo
    const img=allowedPodiumArtistPhoto(parsed.image);
    if(!img)throw Error('No suitable artist photo');
    additions.set(item.id,img);found++;
-   images[item.id]={image:img,checkedAt:freshISO(),kind:'artist-photo'};
+   if(name.length>=4)photosByArtist.set(name,img);
+   images[item.id]={image:img,artist:name,checkedAt:freshISO(),kind:'artist-photo'};
   }catch(error){
    const d=new Date(today+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+7);
    images[item.id]={checkedAt:freshISO(),retryAfter:d.toISOString().slice(0,10),reason:String(error.message||error).slice(0,85)};
