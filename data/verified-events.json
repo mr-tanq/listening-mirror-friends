@@ -89,10 +89,48 @@
       "country": "GR",
       "genre": "Metal / Experimental / Electronic",
       "subgenre": "Avant-Garde Metal",
-      "url": "https://igorrr.com/",
+      "url": "https://www.more.com/gr-el/tickets/music/igorrr-thessaloniki/",
+      "image": "",
+      "source": "official",
+      "verification": "ticket-provider"
+    },
+    {
+      "id": "official-tour-moonspell-20270307-eindhoven",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-03-07",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
       "image": "",
       "source": "official",
       "verification": "artist-tour"
+    },
+    {
+      "id": "official-igorrr-20270320-athens",
+      "artist": "Igorrr",
+      "artists": [
+        "Igorrr",
+        "Secret Chiefs 3",
+        "Fange"
+      ],
+      "date": "2027-03-20",
+      "venue": "Gagarin 205",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal / Experimental / Electronic",
+      "subgenre": "Avant-Garde Metal",
+      "url": "https://gagarin205.gr/event/igorrr/",
+      "image": "",
+      "source": "official",
+      "verification": "venue-page"
     }
   ]
 }
