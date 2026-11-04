@@ -125,3 +125,26 @@ test('Similar uses shared specific metalcore styles, not just same city',()=>{
   assert.match(related?.reason||'',/shared .*Metalcore|shared .*Djent/i);
   assert.equal(recommendEvent(unrelated,user,tags),null);
 });
+
+
+test('Igorrr and Moonspell become genre-matched even when the aggregator lacks genre tags',()=>{
+  const tags=mergeTasteTags({artists:{
+    igorrr:{genres:['Metal','Experimental','Electronic'],source:'curated'},
+    moonspell:{genres:['Metal'],source:'curated'}
+  }});
+  const user={country:'GR',city:'Athens',genres:['Metal'],subgenres:[],artists:[]};
+  const igorrr=show('igorrr-gagarin','IGORRR','2027-03-20');
+  const moonspell=show('moonspell-gagarin','Moonspell','2027-03-31');
+  assert.equal(recommendEvent(igorrr,user,tags)?.kind,'genre');
+  assert.equal(recommendEvent(moonspell,user,tags)?.kind,'genre');
+});
+
+test('city-scoped Deciding does not mix Athens with other cities',()=>{
+  const tags=mergeTasteTags({artists:{}});
+  const athens=seedDeciding(list,profile,tags,{},12,'2027-01-01','local');
+  const elsewhere=seedDeciding(list,profile,tags,{},12,'2027-01-01','away');
+  assert.ok(athens.length>0);
+  assert.ok(athens.every(x=>x.event.city==='Athens'));
+  assert.ok(elsewhere.length>0);
+  assert.ok(elsewhere.every(x=>x.event.city!=='Athens'&&x.event.country==='GR'));
+});
