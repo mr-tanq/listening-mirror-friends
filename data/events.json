@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T13:21:40.709Z",
+  "updatedAt": "2026-11-04T13:26:09.241Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -477,7 +477,7 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/anima-triste-in-the-twilight---release-live-show-special-guests-celuta-red",
-      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6ac38e5d68e963d9fdf826d0_1000007805.jpg",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6aeb31665fa95a3b27b84529_anima%20triste.jpg",
       "source": "anclub-index",
       "verification": "venue-index"
     },
@@ -1109,7 +1109,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2026-11-06-2nd%20greek%20dungeon%20synth%20festival",
+      "id": "more-9b5ef023d55cd886",
       "artist": "2nd Greek Dungeon Synth Festival",
       "artists": [
         "2nd Greek Dungeon Synth Festival"
@@ -2152,27 +2152,12 @@
     },
     {
       "id": "more-731e1ad927b40f74",
-      "artist": "Delines Fest",
-      "artists": [
-        "Delines Fest"
-      ],
-      "date": "2026-11-07",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/delines-fest/",
-      "image": "https://www.more.com/getattachment/A5014CEC-EE60-455A-B2C1-BBF2B332D8F9/evg_delinesfest_1607_854.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2026-11-07-delines%20fest",
       "artist": "DELINES FEST",
       "artists": [
         "Delines Fest",
-        "DELINES FEST"
+        "DELINES FEST",
+        "Delines Fest: Τάκι Τσαν & DJ ALX",
+        "Χατ Τρικ κ.α."
       ],
       "date": "2026-11-07",
       "venue": "Gagarin 205",
@@ -2184,24 +2169,6 @@
       "image": "https://www.more.com/getattachment/A5014CEC-EE60-455A-B2C1-BBF2B332D8F9/evg_delinesfest_1607_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "rocking-20261107-27437",
-      "artist": "Delines Fest: Τάκι Τσαν & DJ ALX",
-      "artists": [
-        "Delines Fest: Τάκι Τσαν & DJ ALX",
-        "Χατ Τρικ κ.α."
-      ],
-      "date": "2026-11-07",
-      "venue": "Gagarin 205",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.rocking.gr/agenda/2026/11/7/27437",
-      "image": "",
-      "source": "rocking",
-      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-455867",
@@ -2411,6 +2378,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-451451",
+      "artist": "Merol",
+      "artists": [
+        "Merol"
+      ],
+      "date": "2026-11-07",
+      "venue": "Annabel",
+      "city": "Rotterdam",
+      "country": "NL",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/451451/Merol/Annabel/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-451467",
       "artist": "Merol",
       "artists": [
@@ -2424,23 +2408,6 @@
       "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/451467/Merol-MAHA/Annabel/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-451451",
-      "artist": "Merol",
-      "artists": [
-        "Merol"
-      ],
-      "date": "2026-11-07",
-      "venue": "Annabel",
-      "city": "Rotterdam",
-      "country": "NL",
-      "genre": "Pop",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/451451/Merol/Annabel/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -2616,7 +2583,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "floyd-2026-11-07-sleaford%20mods",
+      "id": "more-d34064e66fc413f4",
       "artist": "Sleaford Mods",
       "artists": [
         "Sleaford Mods"
@@ -2752,33 +2719,17 @@
       "verification": "agenda-only"
     },
     {
-      "id": "rocking-20261107-27423",
-      "artist": "The Veils",
-      "artists": [
-        "The Veils"
-      ],
-      "date": "2026-11-07",
-      "venue": "Arch Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.rocking.gr/agenda/2026/11/7/27423",
-      "image": "",
-      "source": "rocking",
-      "verification": "third-party-agenda"
-    },
-    {
       "id": "more-af7c2dd16be45cdf",
       "artist": "THE VEILS (NZ)",
       "artists": [
-        "THE VEILS (NZ)"
+        "THE VEILS (NZ)",
+        "The Veils"
       ],
       "date": "2026-11-07",
       "venue": "ARCH",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/the-veils-nz-live-in-athens/",
       "image": "https://www.more.com/getattachment/611F71C6-E605-42C5-999F-E72C52357665/evg_theveilsnzliveinathens_1156_2659.png",
@@ -3093,25 +3044,9 @@
     },
     {
       "id": "more-ebe5db5b8301c24f",
-      "artist": "JAM PEDALS",
-      "artists": [
-        "JAM PEDALS"
-      ],
-      "date": "2026-11-08",
-      "venue": "Gazarte",
-      "city": "Gazi",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/jam-pedals-20years-anniversary-festival/",
-      "image": "https://www.more.com/getattachment/AB8EBB58-1D34-424E-8C73-91D8824D44BA/evg_jampedals-20yearsannivers_1539_1881.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "rocking-20261108-27578",
       "artist": "Jam Pedals: Villagers of Ioannina City",
       "artists": [
+        "JAM PEDALS",
         "Jam Pedals: Villagers of Ioannina City",
         "Raining Pleasure",
         "Υπόγεια Ρεύματα κ.α."
@@ -3123,7 +3058,7 @@
       "genre": "Pop",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/8/27578",
-      "image": "",
+      "image": "https://www.more.com/getattachment/AB8EBB58-1D34-424E-8C73-91D8824D44BA/evg_jampedals-20yearsannivers_1539_1881.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -3264,7 +3199,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
+      "id": "more-de5fbba78a1374bb",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -3315,7 +3250,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-11-08-uriah%20heep",
+      "id": "more-b53b98b1752477a6",
       "artist": "Uriah Heep",
       "artists": [
         "Uriah Heep",
@@ -4240,8 +4175,10 @@
     },
     {
       "id": "more-384b2bcf238f64b2",
-      "artist": "KWOON",
+      "artist": "KWOON &#x27;&#x27;For the first time in 14 years&#x27;&#x27;",
       "artists": [
+        "KWOON ''For the first time in 14 years''",
+        "KWOON &#x27;&#x27;For the first time in 14 years&#x27;&#x27;",
         "KWOON"
       ],
       "date": "2026-11-11",
@@ -4250,42 +4187,8 @@
       "country": "GR",
       "genre": "Post-Rock / Pop",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/kwoon-live-in-athens/",
+      "url": "https://www.anclub.gr/events/kwoon-for-the-first-time-in-14-years",
       "image": "https://www.more.com/getattachment/8AD1813F-6A2D-43E2-81AF-556085420C41/evg_kwoonliveinathens_1927_5209.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-11-11-kwoon%20for%20the%20first%20time%20in%2014%20years",
-      "artist": "KWOON ''For the first time in 14 years''",
-      "artists": [
-        "KWOON ''For the first time in 14 years''"
-      ],
-      "date": "2026-11-11",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.anclub.gr/events/kwoon-for-the-first-time-in-14-years",
-      "image": "",
-      "source": "anclub-index",
-      "verification": "venue-index"
-    },
-    {
-      "id": "anclub-2026-11-11-kwoon%20x27%20x27%20for%20the%20first%20time%20in%2014%20years%20x27%20x27",
-      "artist": "KWOON &#x27;&#x27;For the first time in 14 years&#x27;&#x27;",
-      "artists": [
-        "KWOON &#x27;&#x27;For the first time in 14 years&#x27;&#x27;"
-      ],
-      "date": "2026-11-11",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.anclub.gr/events/kwoon-for-the-first-time-in-14-years",
-      "image": "",
       "source": "anclub-index",
       "verification": "venue-index"
     },
@@ -4325,7 +4228,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-11-11-paradise%20lost",
+      "id": "more-1ee0d038646e85e2",
       "artist": "PARADISE LOST",
       "artists": [
         "PARADISE LOST"
@@ -4583,10 +4486,11 @@
       "verification": "agenda-only"
     },
     {
-      "id": "gagarin-2026-11-12-conway%20the%20machine",
+      "id": "more-82e78f1d798cf1c2",
       "artist": "CONWAY THE MACHINE",
       "artists": [
-        "CONWAY THE MACHINE"
+        "CONWAY THE MACHINE",
+        "CONWAY THE MACHINE Athens"
       ],
       "date": "2026-11-12",
       "venue": "Gagarin 205",
@@ -4598,23 +4502,6 @@
       "image": "https://gagarin205.gr/wp-content/uploads/2026/06/CONWAY-ATHENS.jpg",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-82e78f1d798cf1c2",
-      "artist": "CONWAY THE MACHINE Athens",
-      "artists": [
-        "CONWAY THE MACHINE Athens"
-      ],
-      "date": "2026-11-12",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/conway-the-machine-athens/",
-      "image": "https://www.more.com/getattachment/53A32E0B-41C9-4CE2-B4F6-5FF3FFA3E478/evg_conwaythemachineathens_1433_3092.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-460600",
@@ -5716,8 +5603,9 @@
     },
     {
       "id": "more-14f8cb98ab01602e",
-      "artist": "Warning",
+      "artist": "Warning (UK) + The Temple (GR)",
       "artists": [
+        "Warning (UK) + The Temple (GR)",
         "Warning"
       ],
       "date": "2026-11-13",
@@ -5726,56 +5614,23 @@
       "country": "GR",
       "genre": "Metal / Stoner / Doom",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/warning-uk-the-temple-gr-live-stin-athina/",
-      "image": "https://www.more.com/getattachment/617D5ABF-CAE4-4522-9530-59A67E1A34A9/evg_warninguklivestenathena_1246_4551.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-11-13-warning%20uk%20the%20temple%20gr",
-      "artist": "Warning (UK) + The Temple (GR)",
-      "artists": [
-        "Warning (UK) + The Temple (GR)"
-      ],
-      "date": "2026-11-13",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
       "url": "https://www.anclub.gr/events/warning-uk-the-temple-gr",
-      "image": "",
+      "image": "https://www.more.com/getattachment/617D5ABF-CAE4-4522-9530-59A67E1A34A9/evg_warninguklivestenathena_1246_4551.png",
       "source": "anclub-index",
       "verification": "venue-index"
     },
     {
       "id": "more-189f2c0eb919338c",
-      "artist": "XZIBIT —",
-      "artists": [
-        "XZIBIT —"
-      ],
-      "date": "2026-11-13",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Hip-Hop",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/xzibit-live-in-athens-new-date-13-11-26/",
-      "image": "https://www.more.com/getattachment/DEBBA7CA-50CB-4E30-81EC-7660B4B4085B/evg_xzibitliveinathensnewdate_1617_345.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2026-11-13-xzibit%20live%20in%20athens",
       "artist": "XZIBIT LIVE IN ATHENS!",
       "artists": [
-        "XZIBIT LIVE IN ATHENS!"
+        "XZIBIT LIVE IN ATHENS!",
+        "XZIBIT —"
       ],
       "date": "2026-11-13",
       "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://gagarin205.gr/event/xzibit-live-in-athens/",
       "image": "https://gagarin205.gr/wp-content/uploads/2026/09/XZIBIT-RAKAA.jpg",
@@ -5818,26 +5673,10 @@
     },
     {
       "id": "more-12bdc254eda61039",
-      "artist": "Σημάδι - Παρουσίαση δίσκου",
-      "artists": [
-        "Σημάδι - Παρουσίαση δίσκου"
-      ],
-      "date": "2026-11-13",
-      "venue": "Fuzz Club",
-      "city": "Tavros",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/simadi-parousiasi-diskou-entos-pediou/",
-      "image": "https://www.more.com/getattachment/FEC35333-E156-42AF-BE18-649B6549B7F4/evg_semadi-parousiasediskouen_1727_5304.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "fuzzclub-2026-11-13-%CF%83%CE%B7%CE%BC%CE%B1%CE%B4%CE%B9%20%CF%80%CE%B1%CF%81%CE%BF%CF%85%CF%83%CE%B9%CE%B1%CF%83%CE%B7%20%CE%B4%C",
       "artist": "Σημάδι - Παρουσίαση δίσκου \"Εντός Πεδίου\"",
       "artists": [
-        "Σημάδι - Παρουσίαση δίσκου \"Εντός Πεδίου\""
+        "Σημάδι - Παρουσίαση δίσκου \"Εντός Πεδίου\"",
+        "Σημάδι - Παρουσίαση δίσκου"
       ],
       "date": "2026-11-13",
       "venue": "Fuzz Club",
@@ -7088,8 +6927,9 @@
     },
     {
       "id": "more-cc4b2db7e0317710",
-      "artist": "JEHOVAH ON DEATH",
+      "artist": "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL",
       "artists": [
+        "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL",
         "JEHOVAH ON DEATH"
       ],
       "date": "2026-11-15",
@@ -7097,23 +6937,6 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Rock",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/jehovah-on-death/lucenthia/this-i-owe/vespel/",
-      "image": "https://www.more.com/getattachment/CF570935-07AA-4FC1-A2D0-8F7084292673/evg_jehovahondeath/lucenthia/_1535_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-11-15-jehovah%20on%20death%20lucenthia%20this%20i%20owe%20vespel",
-      "artist": "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL",
-      "artists": [
-        "JEHOVAH ON DEATH / LUCENTHIA / THIS I OWE / VESPEL"
-      ],
-      "date": "2026-11-15",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/jehovah-on-death-lucenthia-this-i-owe-vespel",
       "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6ac397bef50754538db03d1f_November%2015%20Athens%20A2%20PRINT%20POSTER.png",
@@ -10248,7 +10071,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "gagarin-2026-11-21-kaarija",
+      "id": "more-dc9634bfe9b20900",
       "artist": "KAARIJA",
       "artists": [
         "KÄÄRIJÄ",
@@ -10264,23 +10087,6 @@
       "image": "https://www.more.com/getattachment/637C8301-0728-4323-8503-DF91A844452A/evg_kaarija_1603_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-dc9634bfe9b20900",
-      "artist": "KÄÄRIJÄ",
-      "artists": [
-        "KÄÄRIJÄ"
-      ],
-      "date": "2026-11-21",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Hip-Hop",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/kaarija/",
-      "image": "https://www.more.com/getattachment/637C8301-0728-4323-8503-DF91A844452A/evg_kaarija_1603_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "more-04e4502c32cadb4c",
@@ -10590,8 +10396,9 @@
     },
     {
       "id": "more-c42f9e3033a40617",
-      "artist": "ΣΚΙΑΧΤΡΟ",
+      "artist": "ΣΚΙΑΧΤΡΟ + ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΝΙΓΜΕΝΩΝ / ΑΝΤΙΓΝΩΜΟΣ / ΣΚΙΤΣΟ / ΙΘΥ / ΜΟΝΑΣ",
       "artists": [
+        "ΣΚΙΑΧΤΡΟ + ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΝΙΓΜΕΝΩΝ / ΑΝΤΙΓΝΩΜΟΣ / ΣΚΙΤΣΟ / ΙΘΥ / ΜΟΝΑΣ",
         "ΣΚΙΑΧΤΡΟ"
       ],
       "date": "2026-11-21",
@@ -10599,23 +10406,6 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Hip-Hop",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/skiaxtro-live-at-an-club/",
-      "image": "https://www.more.com/getattachment/4FD217E9-DE31-4E97-A291-7CA84B7E2A8E/evg_skiakhtro_1019_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-11-21-%CF%83%CE%BA%CE%B9%CE%B1%CF%87%CF%84%CF%81%CE%BF%20%CF%84%CE%B1%20%CE%BC%CE%B1%CF%84%CE%B9%CE%B1%20%",
-      "artist": "ΣΚΙΑΧΤΡΟ + ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΝΙΓΜΕΝΩΝ / ΑΝΤΙΓΝΩΜΟΣ / ΣΚΙΤΣΟ / ΙΘΥ / ΜΟΝΑΣ",
-      "artists": [
-        "ΣΚΙΑΧΤΡΟ + ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΝΙΓΜΕΝΩΝ / ΑΝΤΙΓΝΩΜΟΣ / ΣΚΙΤΣΟ / ΙΘΥ / ΜΟΝΑΣ"
-      ],
-      "date": "2026-11-21",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/skiahtro",
       "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6a8557719c170bfa17af9f23_778899063_888282410742318_5009885767595692301_n.jpg",
@@ -11084,33 +10874,17 @@
     },
     {
       "id": "more-93b995a1f440ed26",
-      "artist": "KREATOR",
-      "artists": [
-        "KREATOR",
-        "OVERKILL"
-      ],
-      "date": "2026-11-23",
-      "venue": "FLOYD",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/kreator-overkill/",
-      "image": "https://www.more.com/getattachment/2FA63B09-9703-478C-B15C-ABAD50123BD4/evg_kreatoroverkill_2045_1611.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "floyd-2026-11-23-kreator%20overkill",
       "artist": "KREATOR & OVERKILL",
       "artists": [
-        "KREATOR & OVERKILL"
+        "KREATOR & OVERKILL",
+        "KREATOR",
+        "OVERKILL"
       ],
       "date": "2026-11-23",
       "venue": "Floyd Live Music Venue",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.floyd.gr/event/kreator-overkill/",
       "image": "https://www.floyd.gr/wp-content/uploads/2026/07/800%D1%85349.jpg",
@@ -11889,7 +11663,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-11-26-carpenter%20brut",
+      "id": "more-de79dc5d356ad937",
       "artist": "Carpenter Brut",
       "artists": [
         "Carpenter Brut"
@@ -12456,7 +12230,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-11-27-belle%20sebastian",
+      "id": "more-8218d3b1186ea4c1",
       "artist": "Belle & Sebastian",
       "artists": [
         "Belle & Sebastian"
@@ -12820,7 +12594,7 @@
       "verification": "third-party-agenda"
     },
     {
-      "id": "gagarin-2026-11-27-napalm%20death",
+      "id": "more-5b013cb23983c563",
       "artist": "NAPALM DEATH",
       "artists": [
         "NAPALM DEATH"
@@ -12835,23 +12609,6 @@
       "image": "https://www.more.com/getattachment/A4781B06-D555-4C71-AF91-FD66EA957D55/evg_napalmdeathathens_1044_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-5b013cb23983c563",
-      "artist": "NAPALM DEATH",
-      "artists": [
-        "NAPALM DEATH"
-      ],
-      "date": "2026-11-27",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/napalm-death-athens/",
-      "image": "https://www.more.com/getattachment/A4781B06-D555-4C71-AF91-FD66EA957D55/evg_napalmdeathathens_1044_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-474760",
@@ -13263,7 +13020,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-11-28-eddie%20dark",
+      "id": "more-1316f427b97e921c",
       "artist": "Eddie Dark",
       "artists": [
         "Eddie Dark"
@@ -13845,7 +13602,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "gagarin-2026-11-28-%CF%80%CE%B1%CE%B9%CE%B4%CE%B9%20%CF%84%CF%81%CE%B1%CF%85%CE%BC%CE%B1",
+      "id": "more-0d8bc4aec4b5a7ea",
       "artist": "ΠΑΙΔΙ ΤΡΑΥΜΑ",
       "artists": [
         "Παιδί Τραύμα",
@@ -13861,23 +13618,6 @@
       "image": "https://www.more.com/getattachment/CE71D090-E1A4-4A4F-88E0-97107E400AF8/evg_paiditraumalivegagarin205_1943_3524.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-0d8bc4aec4b5a7ea",
-      "artist": "Παιδί Τραύμα",
-      "artists": [
-        "Παιδί Τραύμα"
-      ],
-      "date": "2026-11-28",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/paidi-trauma-live-gagarin-205/",
-      "image": "https://www.more.com/getattachment/CE71D090-E1A4-4A4F-88E0-97107E400AF8/evg_paiditraumalivegagarin205_1943_3524.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "more-9c7a8d7288c179c3",
@@ -14155,7 +13895,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "fuzzclub-2026-11-29-nile",
+      "id": "more-0d87290e89a45107",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -14377,23 +14117,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "podiuminfo-480877",
-      "artist": "The Jazz Room: Een muzikale reis naar het hart van New Orleans",
-      "artists": [
-        "The Jazz Room: Een muzikale reis naar het hart van New Orleans"
-      ],
-      "date": "2026-11-29",
-      "venue": "Muziekgieterij",
-      "city": "Maastricht",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/480877/The-Jazz-Room-Een-muzikale-reis-naar-het-hart-van-New-Orleans/Muziekgieterij/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
       "id": "podiuminfo-480845",
       "artist": "The Jazz Room: Een muzikale reis naar het hart van New Orleans",
       "artists": [
@@ -14406,6 +14129,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/480845/The-Jazz-Room-Een-muzikale-reis-naar-het-hart-van-New-Orleans/Muziekgieterij/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-480877",
+      "artist": "The Jazz Room: Een muzikale reis naar het hart van New Orleans",
+      "artists": [
+        "The Jazz Room: Een muzikale reis naar het hart van New Orleans"
+      ],
+      "date": "2026-11-29",
+      "venue": "Muziekgieterij",
+      "city": "Maastricht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/480877/The-Jazz-Room-Een-muzikale-reis-naar-het-hart-van-New-Orleans/Muziekgieterij/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -14545,7 +14285,7 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/atrophy",
-      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6a917de6e03b6cf6d7012c57_Atrophy%20poster_ATH_WEB.jpg",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6aeb3196855140b29a44c72b_Atrophy%20poster_ATH_WEB.jpg",
       "source": "anclub-index",
       "verification": "venue-index"
     },
@@ -15436,26 +15176,10 @@
     },
     {
       "id": "more-743c34ecff8b60ae",
-      "artist": "Black Curse",
-      "artists": [
-        "Black Curse"
-      ],
-      "date": "2026-12-03",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/black-curse-special-guests-cursed-blood/",
-      "image": "https://www.more.com/getattachment/71C8AFA2-D9E3-490E-81BF-E6F1DC98D5D8/evg_blackcursespecialguestscu_1232_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-12-03-black%20curse%20special%20guests%20cursed%20blood",
       "artist": "Black Curse | Special Guests: Cursed Blood",
       "artists": [
-        "Black Curse | Special Guests: Cursed Blood"
+        "Black Curse | Special Guests: Cursed Blood",
+        "Black Curse"
       ],
       "date": "2026-12-03",
       "venue": "AN Club",
@@ -15469,7 +15193,7 @@
       "verification": "venue-index"
     },
     {
-      "id": "floyd-2026-12-03-cabaret%20voltaire",
+      "id": "more-69cb5cbc31225d21",
       "artist": "Cabaret Voltaire",
       "artists": [
         "Cabaret Voltaire"
@@ -15896,7 +15620,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "gagarin-2026-12-03-the%20ocean",
+      "id": "more-ca50a1d5361dbe1c",
       "artist": "THE OCEAN",
       "artists": [
         "THE OCEAN"
@@ -15911,23 +15635,6 @@
       "image": "https://www.more.com/getattachment/673B2AB8-530E-4F1C-9D69-88EF74C06ABD/evg_theocean_1219_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-ca50a1d5361dbe1c",
-      "artist": "THE OCEAN",
-      "artists": [
-        "THE OCEAN"
-      ],
-      "date": "2026-12-03",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal / Post-Rock / Experimental",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/the-ocean-gagarin/",
-      "image": "https://www.more.com/getattachment/673B2AB8-530E-4F1C-9D69-88EF74C06ABD/evg_theocean_1219_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-478345",
@@ -15999,10 +15706,11 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2026-12-04-sold%20out%20dead%20moon%20night%20with%20toody%20cole%20and%20her%20band%20special%20guest%20jenny%",
+      "id": "more-be8970edb6299275",
       "artist": "*SOLD OUT - DEAD MOON NIGHT with TOODY COLE AND HER BAND | Special guest: JENNY DON'T AND THE SPURS",
       "artists": [
-        "*SOLD OUT - DEAD MOON NIGHT with TOODY COLE AND HER BAND | Special guest: JENNY DON'T AND THE SPURS"
+        "*SOLD OUT - DEAD MOON NIGHT with TOODY COLE AND HER BAND | Special guest: JENNY DON'T AND THE SPURS",
+        "DEAD MOON NIGHT with TOODY COLE AND HER BAND |"
       ],
       "date": "2026-12-04",
       "venue": "AN Club",
@@ -16133,23 +15841,6 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
-    },
-    {
-      "id": "more-be8970edb6299275",
-      "artist": "DEAD MOON NIGHT with TOODY COLE AND HER BAND |",
-      "artists": [
-        "DEAD MOON NIGHT with TOODY COLE AND HER BAND |"
-      ],
-      "date": "2026-12-04",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/toody-cole-and-her-band-dead-moon-night-with-jenny-dont-the-spurs/",
-      "image": "https://www.more.com/getattachment/9BAA0D34-5AC7-4ADA-AC1E-BA5A60FE41A2/evg_toodycoleandherband-deadm_1250_3762.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-493691",
@@ -17658,32 +17349,16 @@
     },
     {
       "id": "more-3000821799bfbcca",
-      "artist": "KOVACS",
-      "artists": [
-        "KOVACS"
-      ],
-      "date": "2026-12-07",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Pop",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/kovacs-live-athina/",
-      "image": "https://www.more.com/getattachment/C04CE2E4-24BF-4860-8B19-2A30FB90DFB9/evg_kovacslive-athena_1030_1972.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2026-12-07-kovacs%20live%20in%20athens",
       "artist": "KOVACS live in Athens",
       "artists": [
-        "KOVACS live in Athens"
+        "KOVACS live in Athens",
+        "KOVACS"
       ],
       "date": "2026-12-07",
       "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://gagarin205.gr/event/kovacs-live-in-athens/",
       "image": "https://gagarin205.gr/wp-content/uploads/2026/06/KOVACS-ATHENS.jpg",
@@ -19715,8 +19390,9 @@
     },
     {
       "id": "more-059196202528c005",
-      "artist": "TURBOFLOW3000",
+      "artist": "TURBOFLOW3000 / THE NOODLES / OYTEKAN | w/ special guests: Pan Pan, 0-100 Seirene, P.I.E.V., Sci-Fi River, Mi55-T, Savina",
       "artists": [
+        "TURBOFLOW3000 / THE NOODLES / OYTEKAN | w/ special guests: Pan Pan, 0-100 Seirene, P.I.E.V., Sci-Fi River, Mi55-T, Savina",
         "TURBOFLOW3000"
       ],
       "date": "2026-12-12",
@@ -19725,30 +19401,13 @@
       "country": "GR",
       "genre": "Hip-Hop",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/turboflow3000-the-noodles-oytekan-an-club/",
-      "image": "https://www.more.com/getattachment/A4A4EB20-9C23-4797-803F-E49CCB021050/evg_turboflow3000thenoodlesoy_1025_3524.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-12-12-turboflow3000%20the%20noodles%20oytekan%20w%20special%20guests%20pan%20pan%200%20100%20seirene%20p%2",
-      "artist": "TURBOFLOW3000 / THE NOODLES / OYTEKAN | w/ special guests: Pan Pan, 0-100 Seirene, P.I.E.V., Sci-Fi River, Mi55-T, Savina",
-      "artists": [
-        "TURBOFLOW3000 / THE NOODLES / OYTEKAN | w/ special guests: Pan Pan, 0-100 Seirene, P.I.E.V., Sci-Fi River, Mi55-T, Savina"
-      ],
-      "date": "2026-12-12",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
       "url": "https://www.anclub.gr/events/turboflow3000-the-noodles-oytekan-w-special-guests-pan-pan-0-100-seirene-p-i-e-v-sci-fi-river-mi55-t-savina",
-      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6ac63645abebbd43c471e097_TURBO%20INSTA%20POST.jpg",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6aeb30c0fc0b3a6ada897c71_6ac63645abebbd43c471e097_TURBO%20INSTA%20POST.jpg",
       "source": "anclub-index",
       "verification": "venue-index"
     },
     {
-      "id": "gagarin-2026-12-12-vodka%20juniors",
+      "id": "more-b8f82a9e47c77110",
       "artist": "VODKA JUNIORS",
       "artists": [
         "VODKA JUNIORS"
@@ -19763,23 +19422,6 @@
       "image": "https://www.more.com/getattachment/9D283C3E-9EF2-4A68-A747-B4C53D32BB7C/evg_vodkajuniorsliveinathensf_1234_2006.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-b8f82a9e47c77110",
-      "artist": "VODKA JUNIORS",
-      "artists": [
-        "VODKA JUNIORS"
-      ],
-      "date": "2026-12-12",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Punk",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/vodka-juniors-live-in-athens-ft-junkheart/",
-      "image": "https://www.more.com/getattachment/9D283C3E-9EF2-4A68-A747-B4C53D32BB7C/evg_vodkajuniorsliveinathensf_1234_2006.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "more-dd02443a875e6650",
@@ -19970,8 +19612,9 @@
     },
     {
       "id": "more-3d1bd46938b9470a",
-      "artist": "MEMORIALS",
+      "artist": "MEMORIALS | Opening Act: Masturbation Goes Cloud",
       "artists": [
+        "MEMORIALS | Opening Act: Masturbation Goes Cloud",
         "MEMORIALS"
       ],
       "date": "2026-12-13",
@@ -19979,23 +19622,6 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Jazz",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/memorials-live/",
-      "image": "https://www.more.com/getattachment/D127FBC6-DA1B-42FD-BAE1-ACDC1B5BF1DD/evg_memorialslive_1113_4970.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2026-12-13-memorials%20opening%20act%20masturbation%20goes%20cloud",
-      "artist": "MEMORIALS | Opening Act: Masturbation Goes Cloud",
-      "artists": [
-        "MEMORIALS | Opening Act: Masturbation Goes Cloud"
-      ],
-      "date": "2026-12-13",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/memorials-opening-act-masturbation-goes-cloud",
       "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6a82e6491ec95dc9cce7ff36_764389138_17904416406527321_8637483254466568599_n.jpg",
@@ -21239,23 +20865,6 @@
     },
     {
       "id": "more-8e41596eddb94cb4",
-      "artist": "Old Man's Child",
-      "artists": [
-        "Old Man's Child"
-      ],
-      "date": "2026-12-18",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/omc-live-in-athens/",
-      "image": "https://www.more.com/getattachment/85296D06-D9BD-4864-B00E-1B0ADDEE7745/evg_oldmanschild/yothiria/dec_1158_4318.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2026-12-18-old%20man%20s%20child",
       "artist": "OLD MAN'S CHILD",
       "artists": [
         "Old Man's Child",
@@ -21494,7 +21103,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "floyd-2026-12-19-chelsea%20wolfe",
+      "id": "more-54cc4d7fd627d014",
       "artist": "Chelsea Wolfe",
       "artists": [
         "Chelsea Wolfe"
@@ -21630,7 +21239,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "gagarin-2026-12-19-jameson%20connects%20god%20is%20an%20astronaut",
+      "id": "more-59c33c1dd5f58bc7",
       "artist": "JAMESON CONNECTS \\ GOD IS AN ASTRONAUT",
       "artists": [
         "JAMESON CONNECTS \\\\ GOD IS AN ASTRONAUT",
@@ -21646,23 +21255,6 @@
       "image": "https://www.more.com/getattachment/2E14EF20-66AB-48A1-94BE-BB93103A5F51/evg_jamesonconnectsgodisanast_1509_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-59c33c1dd5f58bc7",
-      "artist": "JAMESON CONNECTS \\\\ GOD IS AN ASTRONAUT",
-      "artists": [
-        "JAMESON CONNECTS \\\\ GOD IS AN ASTRONAUT"
-      ],
-      "date": "2026-12-19",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/jameson-connects-god-is-an-astronaut/",
-      "image": "https://www.more.com/getattachment/2E14EF20-66AB-48A1-94BE-BB93103A5F51/evg_jamesonconnectsgodisanast_1509_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-462721",
@@ -22345,7 +21937,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "floyd-2026-12-24-1000mods",
+      "id": "more-771a558fed56a943",
       "artist": "1000mods",
       "artists": [
         "1000mods"
@@ -22482,25 +22074,9 @@
     },
     {
       "id": "anclub-2026-12-26-%CE%B1%CE%B3%CF%81%CE%B9%CE%BF%20%CE%BC%CE%B5%CE%BB%CE%B9%20%CE%B1%CF%86%CE%B9%CE%B5%CF%81%CF%89%CE%",
-      "artist": "ΑΓΡΙΟ ΜΕΛΙ ''ΑΦΙΕΡΩΜΑ ΣΤΑ ΔΙΑΦΑΝΑ ΚΡΙΝΑ''",
-      "artists": [
-        "ΑΓΡΙΟ ΜΕΛΙ ''ΑΦΙΕΡΩΜΑ ΣΤΑ ΔΙΑΦΑΝΑ ΚΡΙΝΑ''"
-      ],
-      "date": "2026-12-26",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.anclub.gr/events/agrio-meli-afieroma-sta-diafana-krina",
-      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6ada0ece43242163eb848a59_12.jpg",
-      "source": "anclub-index",
-      "verification": "venue-index"
-    },
-    {
-      "id": "anclub-2026-12-26-%CE%B1%CE%B3%CF%81%CE%B9%CE%BF%20%CE%BC%CE%B5%CE%BB%CE%B9%20x27%20x27%20%CE%B1%CF%86%CE%B9%CE%B5%CF%",
       "artist": "ΑΓΡΙΟ ΜΕΛΙ &#x27;&#x27;ΑΦΙΕΡΩΜΑ ΣΤΑ ΔΙΑΦΑΝΑ ΚΡΙΝΑ&#x27;&#x27;",
       "artists": [
+        "ΑΓΡΙΟ ΜΕΛΙ ''ΑΦΙΕΡΩΜΑ ΣΤΑ ΔΙΑΦΑΝΑ ΚΡΙΝΑ''",
         "ΑΓΡΙΟ ΜΕΛΙ &#x27;&#x27;ΑΦΙΕΡΩΜΑ ΣΤΑ ΔΙΑΦΑΝΑ ΚΡΙΝΑ&#x27;&#x27;"
       ],
       "date": "2026-12-26",
@@ -22772,23 +22348,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "podiuminfo-496956",
-      "artist": "Kinderen voor Kinderen - De Grote Show",
-      "artists": [
-        "Kinderen voor Kinderen - De Grote Show"
-      ],
-      "date": "2026-12-29",
-      "venue": "AFAS Live",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/496956/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
       "id": "podiuminfo-496955",
       "artist": "Kinderen voor Kinderen - De Grote Show",
       "artists": [
@@ -22801,6 +22360,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/496955/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-496956",
+      "artist": "Kinderen voor Kinderen - De Grote Show",
+      "artists": [
+        "Kinderen voor Kinderen - De Grote Show"
+      ],
+      "date": "2026-12-29",
+      "venue": "AFAS Live",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/496956/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -22857,23 +22433,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "podiuminfo-496958",
-      "artist": "Kinderen voor Kinderen - De Grote Show",
-      "artists": [
-        "Kinderen voor Kinderen - De Grote Show"
-      ],
-      "date": "2026-12-30",
-      "venue": "AFAS Live",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/496958/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
       "id": "podiuminfo-496957",
       "artist": "Kinderen voor Kinderen - De Grote Show",
       "artists": [
@@ -22886,6 +22445,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/496957/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-496958",
+      "artist": "Kinderen voor Kinderen - De Grote Show",
+      "artists": [
+        "Kinderen voor Kinderen - De Grote Show"
+      ],
+      "date": "2026-12-30",
+      "venue": "AFAS Live",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/496958/Kinderen-voor-Kinderen-De-Grote-Show/AFAS-Live/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -22926,26 +22502,11 @@
     },
     {
       "id": "more-775b1b2318ea2468",
-      "artist": "BAKV (''VENDETTA'' - Release",
-      "artists": [
-        "BAKV (''VENDETTA'' - Release"
-      ],
-      "date": "2027-01-02",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/bakv-vendetta-release-live-show/",
-      "image": "https://www.more.com/getattachment/5C44D012-A3FE-4356-831A-6D5B782A736C/evg_bakvvendetta-releaselives_1435_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2027-01-02-bakv%20x27%20x27%20vendetta%20x27%20x27%20release%20live%20show",
       "artist": "BAKV &#x27;&#x27;VENDETTA&#x27;&#x27; - Release Live Show",
       "artists": [
-        "BAKV &#x27;&#x27;VENDETTA&#x27;&#x27; - Release Live Show"
+        "BAKV ''VENDETTA'' - Release Live Show",
+        "BAKV &#x27;&#x27;VENDETTA&#x27;&#x27; - Release Live Show",
+        "BAKV (''VENDETTA'' - Release"
       ],
       "date": "2027-01-02",
       "venue": "AN Club",
@@ -23387,32 +22948,16 @@
     },
     {
       "id": "more-35d180071a2616e4",
-      "artist": "Anorimoi",
-      "artists": [
-        "Anorimoi"
-      ],
-      "date": "2027-01-09",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/anorimoiath2027/",
-      "image": "https://www.more.com/getattachment/0D477316-C09C-4BBD-8FC5-64D5E16A011F/evg_anorimoigurobuzionliveste_1747_1801.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2027-01-09-anorimoi%20%CE%B3%CF%85%CF%81%CE%BF%CE%B2%CF%85%CE%B6%CE%B9%CE%BF%CE%BD%20live",
       "artist": "Anorimoi \"Γυροβύζιον\" live",
       "artists": [
-        "Anorimoi \"Γυροβύζιον\" live"
+        "Anorimoi \"Γυροβύζιον\" live",
+        "Anorimoi"
       ],
       "date": "2027-01-09",
       "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://gagarin205.gr/event/anorimoi-gyrovyzion-live/",
       "image": "https://gagarin205.gr/wp-content/uploads/2026/10/ANORIMOI.png",
@@ -25449,26 +24994,10 @@
     },
     {
       "id": "more-0c776ba17d4b0941",
-      "artist": "INVUNCHE (NL) & FINAL DOSE",
-      "artists": [
-        "INVUNCHE (NL) & FINAL DOSE"
-      ],
-      "date": "2027-01-23",
-      "venue": "AN Club",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/invunche-nl-final-dose-uk-live-at-an/",
-      "image": "https://www.more.com/getattachment/4523BE1C-318F-4543-A0DF-885FC18BE8AE/evg_invunchenlfinaldoseuklive_1845_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "anclub-2027-01-23-invunche%20nl%20final%20dose%20uk",
       "artist": "INVUNCHE (NL) & FINAL DOSE (UK)",
       "artists": [
-        "INVUNCHE (NL) & FINAL DOSE (UK)"
+        "INVUNCHE (NL) & FINAL DOSE (UK)",
+        "INVUNCHE (NL) & FINAL DOSE"
       ],
       "date": "2027-01-23",
       "venue": "AN Club",
@@ -26509,32 +26038,16 @@
     },
     {
       "id": "more-485067d93554ee5d",
-      "artist": "BLAKAUT",
-      "artists": [
-        "BLAKAUT"
-      ],
-      "date": "2027-01-30",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/blakaut-simeio-miden-etos-deka/",
-      "image": "https://www.more.com/getattachment/8658258D-8494-4FCC-9231-AD3EB22C9CC8/evg_blakautsemeiomeden-etosde_1544_854.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "gagarin-2027-01-30-blakaut%20%CF%83%CE%B7%CE%BC%CE%B5%CE%B9%CE%BF%20%CE%BC%CE%B7%CE%B4%CE%B5%CE%BD%20%CE%B5%CF%84%CE%BF",
       "artist": "BLAKAUT | ΣΗΜΕΙΟ ΜΗΔΕΝ - ΕΤΟΣ ΔΕΚΑ",
       "artists": [
-        "BLAKAUT | ΣΗΜΕΙΟ ΜΗΔΕΝ - ΕΤΟΣ ΔΕΚΑ"
+        "BLAKAUT | ΣΗΜΕΙΟ ΜΗΔΕΝ - ΕΤΟΣ ΔΕΚΑ",
+        "BLAKAUT"
       ],
       "date": "2027-01-30",
       "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://gagarin205.gr/event/blakaut-simeio-miden-etos-deka/",
       "image": "https://gagarin205.gr/wp-content/uploads/2026/10/BLAKAUT.jpg",
@@ -26832,7 +26345,7 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.anclub.gr/events/sepia-fade-widersin-infected-minds",
-      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6ac3aab42b7b457760bc433e_An-live-3101%20-%20Poster.jpg",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6aeb315c5fa95a3b27b84038_An-live-3101.jpg",
       "source": "anclub-index",
       "verification": "venue-index"
     },
@@ -27637,23 +27150,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "podiuminfo-450606",
-      "artist": "Bankzitters",
-      "artists": [
-        "Bankzitters"
-      ],
-      "date": "2027-02-06",
-      "venue": "Ziggo Dome",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "Pop",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/450606/Bankzitters/Ziggo-Dome/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
       "id": "podiuminfo-450605",
       "artist": "Bankzitters",
       "artists": [
@@ -27666,6 +27162,23 @@
       "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/450605/Bankzitters/Ziggo-Dome/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-450606",
+      "artist": "Bankzitters",
+      "artists": [
+        "Bankzitters"
+      ],
+      "date": "2027-02-06",
+      "venue": "Ziggo Dome",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/450606/Bankzitters/Ziggo-Dome/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -27762,23 +27275,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "podiuminfo-487548",
-      "artist": "Melrose Avenue",
-      "artists": [
-        "Melrose Avenue"
-      ],
-      "date": "2027-02-06",
-      "venue": "TivoliVredenburg",
-      "city": "Utrecht",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/487548/Melrose-Avenue/TivoliVredenburg/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
       "id": "podiuminfo-482708",
       "artist": "Melrose Avenue",
       "artists": [
@@ -27791,6 +27287,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/482708/Melrose-Avenue/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-487548",
+      "artist": "Melrose Avenue",
+      "artists": [
+        "Melrose Avenue"
+      ],
+      "date": "2027-02-06",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/487548/Melrose-Avenue/TivoliVredenburg/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -27830,10 +27343,11 @@
       "verification": "agenda-only"
     },
     {
-      "id": "gagarin-2027-02-06-rory%20gallagher%20band%20of%20friends",
+      "id": "more-c71718d4f71a41ff",
       "artist": "Rory Gallagher - Band of Friends",
       "artists": [
-        "Rory Gallagher - Band of Friends"
+        "Rory Gallagher - Band of Friends",
+        "Rory Gallagher-Band of Friends-Gagarin"
       ],
       "date": "2027-02-06",
       "venue": "Gagarin 205",
@@ -27845,23 +27359,6 @@
       "image": "https://gagarin205.gr/wp-content/uploads/2026/10/RORY-GALLAGHER-BAND_OF_FRIENDS-2027.jpg",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-c71718d4f71a41ff",
-      "artist": "Rory Gallagher-Band of Friends-Gagarin",
-      "artists": [
-        "Rory Gallagher-Band of Friends-Gagarin"
-      ],
-      "date": "2027-02-06",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/rory-gallagher-band-of-friends-gagarin-1/",
-      "image": "https://www.more.com/getattachment/789AB473-41F1-45AC-99A3-118A819192A8/evg_rorygallagher-bandoffrien_1353_3700.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-458231",
@@ -28428,32 +27925,16 @@
     },
     {
       "id": "more-5315871617709595",
-      "artist": "Black Veil Brides",
-      "artists": [
-        "Black Veil Brides"
-      ],
-      "date": "2027-02-11",
-      "venue": "FLOYD",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Rock / Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/black-veil-brides2027/",
-      "image": "https://www.more.com/getattachment/A1D84AEE-7D8A-43CF-A142-ADDC9368D9D4/evg_blackveilbrides_1418_750.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "floyd-2027-02-11-black%20veil%20brides%20special%20guests%20the%20funeral%20portrait%20the%20howling",
       "artist": "Black Veil Brides / Special Guests: The Funeral Portrait & The Howling.",
       "artists": [
-        "Black Veil Brides / Special Guests: The Funeral Portrait & The Howling."
+        "Black Veil Brides / Special Guests: The Funeral Portrait & The Howling.",
+        "Black Veil Brides"
       ],
       "date": "2027-02-11",
       "venue": "Floyd Live Music Venue",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock / Metal",
       "subgenre": "",
       "url": "https://www.floyd.gr/event/black-veil-brides/",
       "image": "https://www.floyd.gr/wp-content/uploads/2026/06/slider-BVB.jpg",
@@ -29107,10 +28588,11 @@
       "isFestival": true
     },
     {
-      "id": "floyd-2027-03-06-planet%20of%20zeus",
+      "id": "more-a9315863f15b1b3e",
       "artist": "Planet of Zeus",
       "artists": [
-        "Planet of Zeus"
+        "Planet of Zeus",
+        "Planet Of Zeus - Athens"
       ],
       "date": "2027-03-06",
       "venue": "Floyd Live Music Venue",
@@ -29122,23 +28604,6 @@
       "image": "https://www.floyd.gr/wp-content/uploads/2026/10/cropped-image-1-1.jpg",
       "source": "floyd-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-a9315863f15b1b3e",
-      "artist": "Planet Of Zeus - Athens",
-      "artists": [
-        "Planet Of Zeus - Athens"
-      ],
-      "date": "2027-03-06",
-      "venue": "FLOYD",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/planet-of-zeus-athens/",
-      "image": "https://www.more.com/getattachment/E0CECA33-4896-4FF0-8B02-A4BE85EA3B29/evg_planetofzeus-athens_1350_3695.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "official-tour-moonspell-20270307-eindhoven",
@@ -29177,7 +28642,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "gagarin-2027-03-18-delta%20goodrem",
+      "id": "more-8b5ef11dcfa7d3c5",
       "artist": "DELTA GOODREM",
       "artists": [
         "Delta Goodrem /",
@@ -29193,23 +28658,6 @@
       "image": "https://www.more.com/getattachment/8881DB3D-E58D-4DCE-BA6E-2421A4B330FF/evg_deltagoodrem/pureworldto_1204_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
-    },
-    {
-      "id": "more-8b5ef11dcfa7d3c5",
-      "artist": "Delta Goodrem /",
-      "artists": [
-        "Delta Goodrem /"
-      ],
-      "date": "2027-03-18",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Pop",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/delta-goodrem/pure-world-tour/",
-      "image": "https://www.more.com/getattachment/8881DB3D-E58D-4DCE-BA6E-2421A4B330FF/evg_deltagoodrem/pureworldto_1204_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "more-c9a166992fd48e2d",
@@ -29263,7 +28711,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "gagarin-2027-03-19-tarja",
+      "id": "more-6ff154fe36aa9cab",
       "artist": "TARJA",
       "artists": [
         "TARJA"
@@ -29280,26 +28728,10 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-6ff154fe36aa9cab",
-      "artist": "TARJA",
-      "artists": [
-        "TARJA"
-      ],
-      "date": "2027-03-19",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/tarja-athens/",
-      "image": "https://www.more.com/getattachment/4B638CAE-EA85-4845-8B99-9342976C9083/evg_tarjaathens_1052_854.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "official-igorrr-20270320-athens",
+      "id": "more-20a9413358deac99",
       "artist": "Igorrr",
       "artists": [
+        "IGORRR",
         "Igorrr",
         "Secret Chiefs 3",
         "Fange"
@@ -29314,23 +28746,6 @@
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
       "source": "official",
       "verification": "venue-page"
-    },
-    {
-      "id": "more-20a9413358deac99",
-      "artist": "IGORRR",
-      "artists": [
-        "IGORRR"
-      ],
-      "date": "2027-03-20",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal / Experimental / Electronic",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/igorrr-athens/",
-      "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "more",
-      "verification": "source-catalog"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -29350,7 +28765,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-03-20-u%20k%20subs",
+      "id": "more-9256f6cbb9511c7d",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -29403,7 +28818,7 @@
       "verification": "ticket-provider"
     },
     {
-      "id": "floyd-2027-03-24-soen",
+      "id": "more-03f20a56f46e2498",
       "artist": "SOEN",
       "artists": [
         "SOEN"
@@ -29510,7 +28925,7 @@
       "isFestival": true
     },
     {
-      "id": "anclub-2027-04-10-oh%20hiroshima",
+      "id": "more-98f8e3f69d11b04a",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -29609,9 +29024,9 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 439,
+    "greeceEvents": 387,
     "greeceFeedError": "",
-    "rockingEvents": 40,
+    "rockingEvents": 38,
     "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1240,
@@ -29619,6 +29034,7 @@
     "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
+    "sameVenueDuplicatesMerged": 52,
     "gagarinCalendarEvents": 21,
     "gagarinPosterEnriched": 0,
     "gagarinWarning": "",
@@ -29628,13 +29044,13 @@
     "fuzzCalendarEvents": 5,
     "fuzzPosterEnriched": 0,
     "fuzzWarning": "",
-    "anClubIndexEvents": 28,
+    "anClubIndexEvents": 25,
     "anClubPosterEnriched": 0,
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 440,
-    "taggedArtists": 325,
+    "genreTaggedEvents": 418,
+    "taggedArtists": 324,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }

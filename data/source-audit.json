@@ -1,18 +1,18 @@
 {
-  "catalogUpdatedAt": "2026-11-04T13:21:40.709Z",
+  "catalogUpdatedAt": "2026-11-04T13:26:09.241Z",
   "auditedFor": "2026-11-04",
-  "totalPublished": 1697,
-  "greekPublished": 439,
+  "totalPublished": 1645,
+  "greekPublished": 387,
   "imageCoverage": {
-    "withImage": 397,
-    "withoutImage": 1300
+    "withImage": 351,
+    "withoutImage": 1294
   },
   "sources": {
     "anclub-index": {
-      "events": 28,
+      "events": 25,
       "withImage": 23,
-      "withoutImage": 5,
-      "greekEvents": 28
+      "withoutImage": 2,
+      "greekEvents": 25
     },
     "festivalinfo": {
       "events": 16,
@@ -36,25 +36,13 @@
       "events": 21,
       "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 14
-    },
-    "fuzzclub-calendar": {
-      "events": 5,
-      "withImage": 5,
-      "withoutImage": 0,
-      "greekEvents": 5
-    },
-    "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
-      "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 21
     },
     "more": {
-      "events": 308,
-      "withImage": 308,
+      "events": 279,
+      "withImage": 279,
       "withoutImage": 0,
-      "greekEvents": 308
+      "greekEvents": 279
     },
     "official": {
       "events": 7,
@@ -69,16 +57,16 @@
       "greekEvents": 0
     },
     "rocking": {
-      "events": 40,
-      "withImage": 0,
-      "withoutImage": 40,
-      "greekEvents": 40
+      "events": 38,
+      "withImage": 1,
+      "withoutImage": 37,
+      "greekEvents": 38
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -92,7 +80,7 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 28,
+      "published": 25,
       "withImage": 23,
       "warning": null
     }
@@ -100,8 +88,8 @@
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 47,
-      "withImage": 40,
+      "events": 30,
+      "withImage": 26,
       "sources": [
         "anclub-index",
         "more",
@@ -110,8 +98,8 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 26,
-      "withImage": 23,
+      "events": 24,
+      "withImage": 22,
       "sources": [
         "gagarin-calendar",
         "rocking",
@@ -161,10 +149,12 @@
       ]
     },
     {
-      "name": "FLOYD",
+      "name": "Fuzz Club",
       "events": 13,
       "withImage": 13,
       "sources": [
+        "fuzzclub-calendar",
+        "official",
         "more"
       ]
     },
@@ -394,14 +384,6 @@
       ]
     },
     {
-      "name": "FLOYD",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -424,6 +406,22 @@
       "sources": [
         "more"
       ]
+    },
+    {
+      "name": "Misirlou Live Stage",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
     }
   ],
   "venueWarnings": {
@@ -431,5 +429,10 @@
     "floyd": "",
     "fuzz": "",
     "anclub": ""
+  },
+  "technopolisMusic": {
+    "status": "empty",
+    "message": "Official music category has no announced events",
+    "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }
