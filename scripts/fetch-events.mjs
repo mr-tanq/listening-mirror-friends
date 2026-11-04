@@ -688,7 +688,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   gagarinEvents=posterResult.events;
   console.log('Gagarin posters: '+posterResult.found+' fetched from '+posterResult.attempts+' official event pages.');
   for(const item of gagarinEvents){
-    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist)&&norm(e.venue)===norm(item.venue));
     if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
     map.set(item.id,{...item,image:item.image||duplicate?.image||'',
       artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
@@ -704,7 +704,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   floydEvents=floydPoster.events;
   console.log('Floyd posters: '+floydPoster.found+' from '+floydPoster.attempts+' official pages.');
   for(const item of floydEvents){
-    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist)&&norm(e.venue)===norm(item.venue));
     if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
     map.set(item.id,{...item,image:item.image||duplicate?.image||'',
       artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
