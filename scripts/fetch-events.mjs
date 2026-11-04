@@ -576,18 +576,22 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
   for(const item of greekEvents)map.set(item.id,item);
-  // Venue-owned reference URLs are authoritative for the few exceptional
-  // listings missing from the public rolling indexes. Only future dates.
+  // Reviewed venue and artist tour URLs supplement missing indexed shows.
+  // These are dated fallbacks, not a complete automated tour search.
   const verified=await read('data/verified-events.json',{events:[]});
   let officialVerified=0;
   for(const e of verified.events||[]){
-    if(!e||e.source!=='official'||e.country!=='GR'||!validDate(e.date)||
+    if(!e||e.source!=='official'||!['NL','BE','GR'].includes(e.country)||!validDate(e.date)||
        e.date<today||e.date>festivalEnd||!e.venue||!e.city||
        !e.artist||!safeUrl(e.url))continue;
-    map.set(e.id,e);
+    // Prefer directly confirmed listings to duplicates on the same date.
+    // Retain artwork from an earlier aggregator record if present.
+    const existingMatch=[...map.values()].find(x=>x.country===e.country&&x.date===e.date&&norm(x.artist)===norm(e.artist));
+    if(existingMatch&&existingMatch.id!==e.id)map.delete(existingMatch.id);
+    map.set(e.id,{...e,image:e.image||existingMatch?.image||''});
     officialVerified++;
   }
-  console.log('Venue-confirmed Greek fallback records: '+officialVerified);
+  console.log('Official artist-tour and venue fallback records: '+officialVerified);
   // Prefer existing More.com listings with full artwork when both sources
   // have independently indexed the same headliner on the same date.
   const already=list=>list.some(e=>e.country==='GR');
