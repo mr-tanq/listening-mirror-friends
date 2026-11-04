@@ -6,9 +6,9 @@ export const dateToday=()=>{const d=new Date();const y=d.getFullYear(),m=String(
 // are equivalent when sources localize location names differently.
 export function cityKey(value){
   const key=norm(value);
-  if(['athens','athina','athina','athinai','athena','αθηνα','αθηνας','αθηναι','mets','gazi','γκαζι','κυψελη','kypseli','tavros','ταυρος','n kosmos','neos kosmos','νεος κοσμος','petralona','πετραλωνα','kallithea','καλλιθεα','moschato','μοσχατο'].includes(key))return 'athens';
+  if(['athens','athina','athina','athinai','athena','αθηνα','αθηνας','αθηναι','mets','gazi','γκαζι','κυψελη','kypseli','tavros','ταυρος','n kosmos','neos kosmos','νεος κοσμος','petralona','πετραλωνα','kallithea','καλλιθεα','moschato','μοσχατο','moskhato','ne smirni','nea smirni','νεα σμυρνη','kerameikos','κεραμεικος','galatsi','γαλατσι','monastiraki','μοναστηρακι','ilisia','ιλισια','marousi','μαρουσι','alimos','αλιμος','egaleo','αιγαλεω','ag dimitrios','αγιος δημητριος','metaksourgeio','μεταξουργειο','goudi','γκουδη','halandri','χαλανδρι','piraeus','peiraias','πειραιας','πειραια'].includes(key))return 'athens';
   if(['thessaloniki','salonika','salonica','θεσσαλονικη','θεσσαλονικης'].includes(key))return 'thessaloniki';
-  if(['piraeus','peiraias','πειραιας','πειραια'].includes(key))return 'piraeus';
+  // Piraeus is treated as metropolitan Athens for the user's city-wide feed.
   return key;
 }
 export function safeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:null;}catch{return null;}}
