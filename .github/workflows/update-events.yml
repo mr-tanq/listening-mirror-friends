@@ -8,6 +8,8 @@ on:
       - 'scripts/partner-feeds.mjs'
       - 'scripts/venue-posters.mjs'
       - 'scripts/floyd-calendar.mjs'
+      - 'scripts/fuzzclub-calendar.mjs'
+      - 'scripts/anclub-index.mjs'
       - 'data/venue-registry.json'
       - 'data/partner-feeds.json'
       - 'data/artist-watchlist.json'
