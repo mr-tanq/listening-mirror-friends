@@ -12,6 +12,8 @@ import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {enrichVenuePosters} from './venue-posters.mjs';
 import {discoverFloydCalendar} from './floyd-calendar.mjs';
+import {discoverFuzzCalendar} from './fuzzclub-calendar.mjs';
+import {discoverAnClub} from './anclub-index.mjs';
 import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -603,10 +605,26 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     floydWarning=String(error.message||error);
     console.warn('Floyd calendar unavailable: '+floydWarning);
   }
+  let fuzzEvents=[],fuzzWarning='';
+  try{
+    fuzzEvents=await discoverFuzzCalendar({today,endDate:festivalEnd});
+    console.log('Fuzz Club official calendar: '+fuzzEvents.length+' listings.');
+  }catch(error){
+    fuzzWarning=String(error.message||error);
+    console.warn('Fuzz Club calendar unavailable: '+fuzzWarning);
+  }
+  let anClubEvents=[],anClubWarning='';
+  try{
+    anClubEvents=await discoverAnClub({today,endDate:festivalEnd});
+    console.log('AN Club official index: '+anClubEvents.length+' dated music listings.');
+  }catch(error){
+    anClubWarning=String(error.message||error);
+    console.warn('AN Club event index unavailable: '+anClubWarning);
+  }
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','floyd-calendar','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','floyd-calendar','fuzzclub-calendar','anclub-index','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -690,6 +708,23 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     map.set(item.id,{...item,image:item.image||duplicate?.image||'',
       artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
   }
+  // Prefer official venue pages, keep earlier images when the index has none.
+  // Fuzz poster requests are bounded and non-fatal when a page is inaccessible.
+  const oldVenueImages=[...map.values()].filter(e=>e.country==='GR'&&e.image);
+  for(const item of fuzzEvents){
+    const found=oldVenueImages.find(e=>e.date===item.date&&norm(e.artist)===norm(item.artist));
+    if(found?.image)item.image=found.image;
+  }
+  const fuzzPoster=await enrichVenuePosters(fuzzEvents,{max:12});
+  fuzzEvents=fuzzPoster.events;
+  const directVenueEvents=[...fuzzEvents,...anClubEvents];
+  for(const item of directVenueEvents){
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
+    const image=item.image||duplicate?.image||'';
+    map.set(item.id,{...item,image,artists:[...new Set([...(duplicate?.artists||[]),...(item.artists||[])])]});
+  }
+  console.log('Fuzz posters: '+fuzzPoster.found+' of '+fuzzPoster.attempts+' official event pages.');
   // Reviewed venue and artist tour URLs supplement missing indexed shows.
   // These are dated fallbacks, not a complete automated tour search.
   const verified=await read('data/verified-events.json',{events:[]});
@@ -759,7 +794,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
