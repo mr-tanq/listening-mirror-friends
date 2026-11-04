@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Verified venue agendas and adapter status. Only active entries with implemented fetchers run automatically. Adding a venue here does NOT initiate scraping.",
+  "note": "Official venues, promoters, and music editorial indexes for source discovery. 'verified-index' means a public page with events was confirmed; NOT an active scraper or permission to reuse data. 'active' only applies to implemented code paths. Every new adapter requires source/access verification and tests.",
   "venues": [
     {
       "id": "gagarin205",
@@ -10,7 +10,9 @@
       "agenda": "https://gagarin205.gr/events/list/",
       "status": "active",
       "method": "official-ical",
-      "images": "official-event-opengraph"
+      "images": "official-event-opengraph",
+      "type": "venue",
+      "access": "review-required"
     },
     {
       "id": "anclub",
@@ -20,7 +22,9 @@
       "agenda": "https://www.anclub.gr/",
       "status": "planned",
       "method": "venue-website",
-      "images": "pending"
+      "images": "pending",
+      "type": "venue",
+      "access": "review-required"
     },
     {
       "id": "fuzzclub",
@@ -30,7 +34,9 @@
       "agenda": "https://www.fuzzclub.gr/events/list/",
       "status": "planned",
       "method": "official-calendar",
-      "images": "pending"
+      "images": "pending",
+      "type": "venue",
+      "access": "review-required"
     },
     {
       "id": "kyttaro",
@@ -40,7 +46,9 @@
       "agenda": "",
       "status": "research",
       "method": "venue-website",
-      "images": "pending"
+      "images": "pending",
+      "type": "venue",
+      "access": "review-required"
     },
     {
       "id": "halfnote",
@@ -50,7 +58,285 @@
       "agenda": "https://www.more.com/gr-el/venues/halfnote/",
       "status": "research",
       "method": "venue-listing",
-      "images": "pending"
+      "images": "pending",
+      "type": "venue",
+      "access": "review-required"
+    },
+    {
+      "id": "oaka",
+      "name": "OAKA / Olympic Stadium",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.oaka.com.gr/",
+      "status": "research",
+      "method": "stadium-multievent",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "kallimarmaro",
+      "name": "Panathenaic Stadium / Kallimarmaro",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.kallimarmaro.gr/",
+      "status": "research",
+      "method": "stadium-multievent",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "technopolis",
+      "name": "Technopolis Athens",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.technopolis-athens.com/",
+      "status": "research",
+      "method": "municipal-cultural-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "festival-vrachon",
+      "name": "Theatro Vrachon",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://festivalvrachon.gr/",
+      "status": "research",
+      "method": "seasonal-festival",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "moni-lazariston",
+      "name": "Moni Lazariston",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.monilazariston.gr/",
+      "status": "research",
+      "method": "seasonal-festival",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "megaron-athens",
+      "name": "Athens Concert Hall / Megaron",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.megaron.gr/event_type/mousiki/",
+      "status": "verified-index",
+      "method": "music-category-filter",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "megaron-thessaloniki",
+      "name": "Thessaloniki Concert Hall",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.tch.gr/",
+      "status": "research",
+      "method": "concert-hall-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "snfcc",
+      "name": "Stavros Niarchos Foundation Cultural Center",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.snfcc.org/",
+      "status": "research",
+      "method": "cultural-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "onassis-stegi",
+      "name": "Onassis Stegi",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.onassis.org/",
+      "status": "research",
+      "method": "cultural-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "floyd",
+      "name": "Floyd Live Music Venue",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://www.floyd.gr/events/",
+      "status": "verified-index",
+      "method": "the-events-calendar",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "archclub",
+      "name": "Arch Club",
+      "city": "Athens",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://archclub.gr/",
+      "status": "research",
+      "method": "venue-website",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "principal",
+      "name": "Principal Club Theater",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://principalclub.com/",
+      "status": "research",
+      "method": "venue-website",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "block33",
+      "name": "Block 33",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://block33.gr/",
+      "status": "research",
+      "method": "venue-website",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "we",
+      "name": "WE Thessaloniki",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "type": "venue",
+      "agenda": "https://wethessaloniki.gr/",
+      "status": "research",
+      "method": "venue-website",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "release",
+      "name": "Release Athens",
+      "city": "Athens",
+      "country": "GR",
+      "type": "promoter",
+      "agenda": "https://www.releaseathens.gr/en/lineup/",
+      "status": "verified-index",
+      "method": "festival-lineup",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "fuzzproductions",
+      "name": "Fuzz Productions",
+      "city": "Athens",
+      "country": "GR",
+      "type": "promoter",
+      "agenda": "https://fuzzproductions.gr/",
+      "status": "research",
+      "method": "promoter-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "didimusic",
+      "name": "Didi Music / Rockwave",
+      "city": "Athens",
+      "country": "GR",
+      "type": "promoter",
+      "agenda": "https://didimusic.gr/",
+      "status": "research",
+      "method": "promoter-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "detox",
+      "name": "Detox Events",
+      "city": "Athens",
+      "country": "GR",
+      "type": "promoter",
+      "agenda": "https://detoxevents.gr/",
+      "status": "research",
+      "method": "promoter-program",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "plissken",
+      "name": "Plissken Festival",
+      "city": "Athens",
+      "country": "GR",
+      "type": "promoter",
+      "agenda": "https://plisskenfestival.gr/",
+      "status": "research",
+      "method": "festival-lineup",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "sinavlia",
+      "name": "Sinavlia",
+      "city": "Athens",
+      "country": "GR",
+      "type": "editorial",
+      "agenda": "https://sinavlia.gr/",
+      "status": "research",
+      "method": "music-agenda",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "rocking",
+      "name": "Rocking.gr concert agenda",
+      "city": "Athens",
+      "country": "GR",
+      "type": "editorial",
+      "agenda": "https://www.rocking.gr/agenda/",
+      "status": "active",
+      "method": "dated-genre-agenda",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "metalhammer",
+      "name": "Metal Hammer Greece",
+      "city": "Athens",
+      "country": "GR",
+      "type": "editorial",
+      "agenda": "https://www.metalhammer.gr/",
+      "status": "research",
+      "method": "news-and-events",
+      "images": "pending",
+      "access": "review-required"
+    },
+    {
+      "id": "musicity",
+      "name": "Musicity",
+      "city": "Athens",
+      "country": "GR",
+      "type": "editorial",
+      "agenda": "https://www.musicity.gr/",
+      "status": "research",
+      "method": "music-agenda",
+      "images": "pending",
+      "access": "review-required"
     }
   ]
 }
