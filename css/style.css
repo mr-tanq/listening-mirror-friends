@@ -116,3 +116,10 @@
 .deciding-detail-actions{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 0}
 @media(max-width:560px){.deck-shell{max-width:100%;margin:2px auto 40px}.deck-image{height:min(55vh,335px)}.deck-copy{padding:18px 17px 23px;min-height:195px}.deck-artist{font-size:42px}.deck-actions{gap:5px}.deck-btn{min-height:54px;font-size:11px;padding:8px 3px}.deck-indicators{padding:14px}.deck-verdict{font-size:19px;padding:5px 7px}}
 @media(prefers-reduced-motion:reduce){.deck-stage,.deck-stage.fly-left,.deck-stage.fly-right{transition:none}}
+
+/* Location scope: deliberate separation of home city and elsewhere */
+.city-switch{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0 4px;padding:5px;border:1px solid var(--line);background:#151311;border-radius:15px;width:fit-content;max-width:100%}
+.city-switch-button{background:transparent;color:var(--muted);border:1px solid transparent;border-radius:11px;padding:11px 15px;min-height:43px;font:600 12px Inter,sans-serif;cursor:pointer;max-width:100%;overflow-wrap:anywhere}
+.city-switch-button.active{background:#39241b;color:#ffe0c7;border-color:#865139}
+.city-switch-button:focus-visible{outline:2px solid var(--ember-pale);outline-offset:2px}
+@media(max-width:560px){.city-switch{width:100%}.city-switch-button{flex:1;min-width:0;padding:10px 7px;font-size:11px}}
