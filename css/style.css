@@ -123,3 +123,13 @@
 .city-switch-button.active{background:#39241b;color:#ffe0c7;border-color:#865139}
 .city-switch-button:focus-visible{outline:2px solid var(--ember-pale);outline-offset:2px}
 @media(max-width:560px){.city-switch{width:100%}.city-switch-button{flex:1;min-width:0;padding:10px 7px;font-size:11px}}
+
+
+/* Premium typographic fallback only when a real concert image is unavailable. */
+.deck-image.no-image:after{display:none}
+.deck-image.no-image{background:radial-gradient(ellipse at 72% 15%,#8b463d77,transparent 48%),linear-gradient(145deg,#3a211d 0%,#161516 58%,#0d0d0e 100%)}
+.deck-typographic-poster{position:absolute;inset:0;padding:32px 26px 48px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:15px;z-index:1;overflow:hidden}
+.deck-typographic-poster:before{content:'';position:absolute;inset:20px;border:1px solid #ffb18b30;pointer-events:none}
+.deck-typographic-kicker{font:10px 'JetBrains Mono',monospace;letter-spacing:3px;text-transform:uppercase;color:#eaa47f}
+.deck-typographic-artist{position:relative;color:#fff3e6;font:clamp(38px,7vw,70px)/.98 'Instrument Serif',serif;font-weight:400;letter-spacing:-1.3px;text-wrap:balance;overflow-wrap:anywhere;max-width:100%;max-height:3.9em;overflow:hidden}
+.deck-typographic-venue{font:10px 'JetBrains Mono',monospace;line-height:1.6;letter-spacing:1.2px;text-transform:uppercase;color:#ddd0c9;max-width:90%;overflow-wrap:anywhere}
