@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T13:03:18.017Z",
+  "updatedAt": "2026-11-04T13:07:58.895Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -726,7 +726,7 @@
       "venue": "Le Guess Who?",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Jazz / R&B / Soul / Ambient",
+      "genre": "Reggae / Alternative / Pop / Electronic / Rock / R&B / Soul / Jazz / Ambient",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35545/Le-Guess-Who-/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/0/6//Le_Guess_Who__2026.png",
@@ -931,7 +931,7 @@
       "venue": "AFAS Live",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/452580/The-Kid-LAROI/AFAS-Live/",
       "image": "",
@@ -1033,7 +1033,7 @@
       "venue": "Botanique",
       "city": "Brussels",
       "country": "BE",
-      "genre": "",
+      "genre": "Jazz",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/464976/Zoh-Amba/Botanique/",
       "image": "",
@@ -28852,12 +28852,12 @@
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
     "gagarinCalendarEvents": 21,
-    "gagarinPosterEnriched": 11,
+    "gagarinPosterEnriched": 0,
     "gagarinWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 400,
-    "taggedArtists": 276,
+    "genreTaggedEvents": 402,
+    "taggedArtists": 278,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
