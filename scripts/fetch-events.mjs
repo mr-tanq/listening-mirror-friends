@@ -11,6 +11,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {enrichVenuePosters} from './venue-posters.mjs';
+import {discoverFloydCalendar} from './floyd-calendar.mjs';
 import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -592,10 +593,20 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     gagarinWarning=String(error.message||error);
     console.warn('Gagarin 205 calendar unavailable: '+gagarinWarning);
   }
+  // The venue's official event calendar also includes occasional comedy dates;
+  // the adapter accepts music events and retains existing records on failure.
+  let floydEvents=[],floydWarning='';
+  try{
+    floydEvents=await discoverFloydCalendar({today,endDate:festivalEnd});
+    console.log('Floyd official calendar: '+floydEvents.length+' music listings.');
+  }catch(error){
+    floydWarning=String(error.message||error);
+    console.warn('Floyd calendar unavailable: '+floydWarning);
+  }
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','floyd-calendar','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -658,6 +669,22 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   gagarinEvents=posterResult.events;
   console.log('Gagarin posters: '+posterResult.found+' fetched from '+posterResult.attempts+' official event pages.');
   for(const item of gagarinEvents){
+    const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
+    if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
+    map.set(item.id,{...item,image:item.image||duplicate?.image||'',
+      artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
+  }
+  // Preserve existing artwork from earlier catalogues and trusted aggregators,
+  // then retrieve a limited number of new Floyd posters from official pages.
+  const priorFloyd=[...map.values()].filter(e=>e.country==='GR'&&e.image);
+  for(const event of floydEvents){
+    const older=priorFloyd.find(e=>e.date===event.date&&norm(e.artist)===norm(event.artist));
+    if(older?.image)event.image=older.image;
+  }
+  const floydPoster=await enrichVenuePosters(floydEvents,{max:12});
+  floydEvents=floydPoster.events;
+  console.log('Floyd posters: '+floydPoster.found+' from '+floydPoster.attempts+' official pages.');
+  for(const item of floydEvents){
     const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
     if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
     map.set(item.id,{...item,image:item.image||duplicate?.image||'',
@@ -732,9 +759,9 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
-      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
+      notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
