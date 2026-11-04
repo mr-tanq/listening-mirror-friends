@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validPodiumConcertUrl,allowedPodiumArtistPhoto,enrichPodiuminfoImages} from '../scripts/podiuminfo-images.mjs';
-const gig=(n)=>({id:'podiuminfo-'+n,url:'https://www.podiuminfo.nl/concert/'+n+'/Artist/12-11-2026/Paard/',date:'2026-11-12',country:'NL',venue:'Paard',artist:'Artist',image:'',source:'podiuminfo-agenda'});
+const gig=(n)=>({id:'podiuminfo-'+n,url:'https://www.podiuminfo.nl/concert/'+n+'/Artist/Paard/',date:'2026-11-12',country:'NL',venue:'Paard',artist:'Artist',image:'',source:'podiuminfo-agenda'});
 const photo='https://www.podiuminfo.nl/img/artist/100/100_Artist_1.jpg';
 test('allow only canonical Podiuminfo concert pages and artist photos',()=>{
  assert.ok(validPodiumConcertUrl(gig(123).url,'podiuminfo-123'));
