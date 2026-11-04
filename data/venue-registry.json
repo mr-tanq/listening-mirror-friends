@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Official venues, promoters, and music editorial indexes for source discovery. 'verified-index' means a public page with events was confirmed; NOT an active scraper or permission to reuse data. 'active' only applies to implemented code paths. Every new adapter requires source/access verification and tests.",
+  "note": "Official venues, promoters, and music editorial indexes for source discovery. 'verified-index' means a public page with events was confirmed; NOT an active scraper or permission to reuse data. 'active' only applies to implemented code paths. Every new adapter requires source/access verification and tests. Floyd official calendar parser and image enrichment are implemented; runner availability and license conditions still require verification.",
   "venues": [
     {
       "id": "gagarin205",
@@ -177,9 +177,9 @@
       "country": "GR",
       "type": "venue",
       "agenda": "https://www.floyd.gr/events/",
-      "status": "verified-index",
-      "method": "the-events-calendar",
-      "images": "pending",
+      "status": "active",
+      "method": "official-ical",
+      "images": "official-event-opengraph",
       "access": "review-required"
     },
     {
