@@ -13,14 +13,17 @@ const reviewHostAllowed=url=>{
 };
 export function applyVerifiedPosters(events,config){
  if(!Array.isArray(events))return {events:[],applied:0,invalid:0};
- const byId=new Map();let invalid=0;
+ const byId=new Map(),byEventUrl=new Map();let invalid=0;
  for(const rule of config?.records||[]){
    if(!Array.isArray(rule?.ids)||!imageHostAllowed(rule.image)||!reviewHostAllowed(rule.sourceUrl)){invalid++;continue;}
    for(const id of rule.ids){if(typeof id==='string'&&id.length<200)byId.set(id,rule.image);else invalid++;}
+   for(const url of rule.eventUrls||[]){
+     try{const u=new URL(url);if(u.protocol==='https:'&&['anclub.gr','www.anclub.gr'].includes(u.hostname)&&u.pathname.startsWith('/events/'))byEventUrl.set(u.href,rule.image);else invalid++;}catch{invalid++;}
+   }
  }
  let applied=0;
  return {events:events.map(e=>{
-   const poster=byId.get(e.id);
+   const poster=byId.get(e.id)||byEventUrl.get(e.url);
    if(!poster||e.image===poster)return e;
    applied++;
    return {...e,image:poster};
