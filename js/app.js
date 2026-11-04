@@ -11,7 +11,7 @@ let state = loadState();
 let catalog = { events: [], updatedAt: null, coverage: null, source: 'podiuminfo+festivalinfo', error: '' };
 let artistTags = {artists:{}};
 let page = 'tonight';
-let collection = 'discover';
+let collection = 'deciding';
 let cityScope = 'local'; // City-only by default; 'away' explicitly includes other cities.
 let searchText = '';
 let archiveSearch = '';
@@ -79,10 +79,9 @@ function cityMatches(event,scope=cityScope){
   return scope==='away'?!same:same;
 }
 function visibleDeciding(){return savedItems('deciding').filter(x=>cityMatches(x.event));}
-function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]&&cityMatches(x.event));}
 function allShows(){return catalog.events.filter(e=>e.date>=dateToday()&&e.country===state.profile?.country&&cityMatches(e)).sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:discoverFeed().length,all:allShows().length,deciding:visibleDeciding().length,going:savedItems('going').length,passed:savedItems('passed').length};}
+function counts(){return {all:allShows().length,deciding:visibleDeciding().length,going:savedItems('going').length,passed:savedItems('passed').length};}
 function setStatus(e,status){
   const previous=state.saved[e.id]||{};
   state.saved[e.id]={...previous,status,event:normalizeEvent(e)};
@@ -155,9 +154,9 @@ function renderTonightList(){
       .filter(x=>!searchText.trim()||norm([x.event.artist,x.event.city,x.event.venue,x.suggestionReason].join(' ')).includes(norm(searchText)));
     if(!queue.length){
       const preferred=cityKey(state.profile?.city||'');
-      const message=!items.length&&preferred?`No ${cityScope==='local'?'local':'outside-city'} Deciding recommendations yet. Try Discover or switch the city filter.`:items.length?'No Deciding card matches your search. Clear the search to see your other concerts.'
+      const message=!items.length&&preferred?`No ${cityScope==='local'?'local':'outside-city'} Deciding recommendations yet. Switch the city filter or browse All shows.`:items.length?'No Deciding card matches your search. Clear the search to see your other concerts.'
         :state.pendingDeciding?'Preparing your first matches from your music taste…'
-        :'You have reviewed all your current recommendations. Discover can show more, and passing on a show keeps it in Set aside.';
+        :'You have reviewed all your current recommendations. All shows can reveal more events, and passing on a show keeps it in Set aside.';
       root.append(empty(items.length?'No matching card.':'All caught up.',message,
         ()=>{if(items.length){searchText='';render();}
           else{replenishDeciding();render();}},items.length?'Clear search':'Look for more matches'));
@@ -172,62 +171,26 @@ function renderTonightList(){
     });
     return;
   }
-  const personal=collection==='discover';
-  let list=personal?discoverFeed():collection==='all'?allShows().map(event=>({event,reason:''})):savedItems(collection).map(x=>({event:x.event,reason:x.suggested?'Suggested for your taste · '+x.suggestionReason:''}));
+  let list=collection==='all'?allShows().map(event=>({event,reason:''})):
+    savedItems(collection).map(x=>({event:x.event,reason:x.suggested?'Suggested for your taste · '+x.suggestionReason:''}));
   if(searchText.trim())list=list.filter(x=>norm([
     x.event.artist,...(x.event.artists||[]),x.event.venue,x.event.city,x.event.genre,x.reason
   ].join(' ')).includes(norm(searchText)));
   if(!list.length){
     if(collection==='all'){
-      root.append(empty('No listings in this area yet.','The shared catalog may be incomplete. Try the other city filter or check a venue’s official concert agenda.',null));
-      return;
+      root.append(empty('No listings in this area yet.','The shared catalog may be incomplete. Try the other city filter or check the venue’s official agenda.'));
+    }else{
+      root.append(empty(collection==='going'?'Nothing planned yet.':'Nothing set aside yet.',
+        'Use Deciding to find and choose live shows, or add a concert manually.',
+        ()=>openConcertDialog(),'Add a concert'));
     }
-    if(personal&&cityKey(state.profile?.city||'')){
-      root.append(empty('No matching concerts here yet.',`No recommended live shows in ${cityScope==='local'?(state.profile.city||'your city'):'other cities'} right now. Switch the location filter to explore the other area, or edit your music taste.`,()=>openProfileDialog(false),'Edit my music taste'));
-      return;
-    }
-    const currentCountry=state.profile?.country||'';
-    const countryListings=catalog.events.filter(e=>e.country===currentCountry&&e.date>=dateToday()).length;
-    const countryName=COUNTRIES.find(c=>c.code===currentCountry)?.name||'your selected country';
-    const supported=['NL','BE','GR'].includes(currentCountry);
-    const title=personal?(supported&&!countryListings?'No listings loaded for '+countryName+'.':'No music matches yet.')
-      :collection==='going'?'Nothing planned yet.':state.pendingDeciding?'Finding your first concerts…':'Nothing in Deciding.';
-    const message=personal?(!supported?
-      'Concert discovery is not available in this country yet. Currently the shared catalog supports the Netherlands, Belgium and Greece; your profile is saved safely.'
-      :!countryListings?
-      ('The '+countryName+' source has not returned any upcoming shows yet. We cannot match genres or similar artists until those events are imported.'+
-       (currentCountry==='GR'&&catalog.coverage?.greeceFeedError?' Latest source error: '+catalog.coverage.greeceFeedError:''))
-      : 'There are '+countryListings+' concerts listed for '+countryName+', but no reliable matches for your selected genres or bands yet. Artist genre coverage is incomplete; unrelated events are not shown as recommendations.')
-      :state.pendingDeciding?'Matching live events to your completed music taste. Your first Deciding selections will appear when the concert feed loads.':'Save a concert from Discover, or add a concert manually.';
-    root.append(empty(title,message,()=>personal?openProfileDialog(false):openConcertDialog(),personal?'Edit my music taste':'+ Add concert'));
     return;
   }
-  if(personal){
-    const buckets=[
-      ['favorite','Your favorite artists'],
-      ['similar','Similar artists · shared music styles'],
-      ['genre','Your selected genres']
-    ];
-    for(const [kind,title] of buckets){
-      const group=list.filter(x=>x.kind===kind);
-      if(!group.length)continue;
-      const heading=el('div','section-header');
-      heading.append(el('h2','section-title',title),el('p','section-sub',group.length+' matched show'+(group.length===1?'':'s')));
-      const groupRoot=el('section','recommend-group');groupRoot.append(heading);
-      const grid=el('div','show-grid');
-      for(const x of group.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
-      groupRoot.append(grid);
-      if(group.length>100)groupRoot.append(el('p','help-note','Showing the first 100 of '+group.length+'.'));
-      root.append(groupRoot);
-    }
-    root.append(el('p','help-note','Matches use your favorite artists and available music tags. “Similar” means shared specific genres, not a verified recommendation from a streaming service. Missing a concert? Try All shows, which also includes untagged events. Podiuminfo agenda entries require confirmation on their source page.'));
-  } else {
-    const grid=el('div','show-grid');
-    if(collection==='all')root.append(el('p','help-note','All indexed shows in this area, including events without music tags. Listings are not personalized and the catalogue is not exhaustive. Confirm details with the source before booking.'));
-    for(const x of list.slice(0,200)){const n=card(x.event,x.reason?{reason:x.reason}:null,collection==='all'?'explore':collection);if(n)grid.append(n);}
-    root.append(grid);
-    if(collection==='all'&&list.length>200)root.append(el('p','help-note',`Showing the first 200 of ${list.length} listings. Search above to narrow the list.`));
-  }
+  const grid=el('div','show-grid');
+  if(collection==='all')root.append(el('p','help-note','All indexed shows in this area, including events without music tags. Listings are not personalized and the catalogue is not exhaustive. Confirm details with the source before booking.'));
+  for(const x of list.slice(0,200)){const n=card(x.event,x.reason?{reason:x.reason}:null,collection==='all'?'explore':collection);if(n)grid.append(n);}
+  root.append(grid);
+  if(collection==='all'&&list.length>200)root.append(el('p','help-note',`Showing the first 200 of ${list.length} listings. Search above to narrow the list.`));
 }
 function renderTonight(){
   app.replaceChildren(heading('Tonight.',`Hi ${displayName()}. Find shows worth leaving the house for, then decide what to see.`));
@@ -250,13 +213,13 @@ function renderTonight(){
   else desc.textContent='Public event catalog not updated yet · Manual concerts work now';
   info.append(desc);app.append(info);
   const filter=el('div','filters');const tabs=el('div','segments');const cs=counts();
-  for(const [key,title] of [['discover','Discover'],['all','All shows'],['deciding','Deciding'],['going','Going'],['passed','Set aside']]){
+  for(const [key,title] of [['deciding','Deciding'],['all','All shows'],['going','Going'],['passed','Set aside']]){
     const tab=button('','segment'+(collection===key?' active':''),()=>{collection=key;render();});
     tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
   const search=el('input','search');search.placeholder='Search artist, city, venue…';search.value=searchText;search.type='search';search.setAttribute('aria-label','Search concerts');search.addEventListener('input',e=>{searchText=e.target.value;renderTonightList();});
   filter.append(tabs);
-  if(cityKey(state.profile?.city||'')&&(collection==='discover'||collection==='all'||collection==='deciding')){
+  if(cityKey(state.profile?.city||'')&&(collection==='all'||collection==='deciding')){
     const area=el('div','city-switch');area.setAttribute('role','group');area.setAttribute('aria-label','Concert location');
     for(const [scope,label] of [['local','📍 '+state.profile.city],['away','Outside '+state.profile.city]]){
       const toggle=button(label,'city-switch-button'+(cityScope===scope?' active':''),()=>{
@@ -393,7 +356,7 @@ function openProfileDialog(firstTime=false){
     state.pendingDeciding=state.profile?.onboarded===true;
     persist();
     if(state.pendingDeciding)fillInitialDeciding();
-    collection=state.pendingDeciding||state.profile?.onboarded?'deciding':'discover';
+    collection='deciding';
     dlg.close();render();
   }));content.append(controls);
   if(!firstTime){const note=el('p','help-note','Private to this browser · no account, no cloud sync. Export a backup before clearing your browser or changing phones.');content.append(el('div','separator'),note);}
