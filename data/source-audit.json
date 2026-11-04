@@ -1,18 +1,18 @@
 {
   "catalogUpdatedAt": "2026-11-04T13:26:09.241Z",
   "auditedFor": "2026-11-04",
-  "totalPublished": 1645,
-  "greekPublished": 387,
+  "totalPublished": 1661,
+  "greekPublished": 403,
   "imageCoverage": {
-    "withImage": 351,
-    "withoutImage": 1294
+    "withImage": 377,
+    "withoutImage": 1284
   },
   "sources": {
     "anclub-index": {
-      "events": 25,
-      "withImage": 23,
+      "events": 26,
+      "withImage": 24,
       "withoutImage": 2,
-      "greekEvents": 25
+      "greekEvents": 26
     },
     "festivalinfo": {
       "events": 16,
@@ -39,15 +39,15 @@
       "greekEvents": 21
     },
     "more": {
-      "events": 279,
-      "withImage": 279,
+      "events": 294,
+      "withImage": 294,
       "withoutImage": 0,
-      "greekEvents": 279
+      "greekEvents": 294
     },
     "official": {
       "events": 7,
-      "withImage": 2,
-      "withoutImage": 5,
+      "withImage": 3,
+      "withoutImage": 4,
       "greekEvents": 5
     },
     "podiuminfo-agenda": {
@@ -58,8 +58,8 @@
     },
     "rocking": {
       "events": 38,
-      "withImage": 1,
-      "withoutImage": 37,
+      "withImage": 10,
+      "withoutImage": 28,
       "greekEvents": 38
     }
   },
@@ -80,16 +80,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 25,
-      "withImage": 23,
+      "published": 26,
+      "withImage": 24,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 30,
-      "withImage": 26,
+      "events": 35,
+      "withImage": 31,
       "sources": [
         "anclub-index",
         "more",
@@ -99,7 +99,7 @@
     {
       "name": "Gagarin 205",
       "events": 24,
-      "withImage": 22,
+      "withImage": 23,
       "sources": [
         "gagarin-calendar",
         "rocking",
@@ -131,16 +131,6 @@
       ]
     },
     {
-      "name": "Fuzz Club",
-      "events": 15,
-      "withImage": 15,
-      "sources": [
-        "fuzzclub-calendar",
-        "more",
-        "official"
-      ]
-    },
-    {
       "name": "Floyd Live Music Venue",
       "events": 14,
       "withImage": 14,
@@ -150,8 +140,8 @@
     },
     {
       "name": "Fuzz Club",
-      "events": 13,
-      "withImage": 13,
+      "events": 14,
+      "withImage": 14,
       "sources": [
         "fuzzclub-calendar",
         "official",
@@ -179,6 +169,14 @@
       "name": "Half Note Jazz Club",
       "events": 11,
       "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "FLOYD",
+      "events": 10,
+      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -290,7 +288,7 @@
     {
       "name": "Eightball",
       "events": 5,
-      "withImage": 0,
+      "withImage": 1,
       "sources": [
         "rocking"
       ]
@@ -298,7 +296,7 @@
     {
       "name": "Ίλιον Plus",
       "events": 4,
-      "withImage": 0,
+      "withImage": 1,
       "sources": [
         "rocking"
       ]
@@ -378,7 +376,7 @@
     {
       "name": "We",
       "events": 3,
-      "withImage": 0,
+      "withImage": 1,
       "sources": [
         "rocking"
       ]
@@ -414,25 +412,7 @@
       "sources": [
         "more"
       ]
-    },
-    {
-      "name": "Μεγαρο Μουσικης Κομοτηνης",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
     }
   ],
-  "venueWarnings": {
-    "gagarin": "",
-    "floyd": "",
-    "fuzz": "",
-    "anclub": ""
-  },
-  "technopolisMusic": {
-    "status": "empty",
-    "message": "Official music category has no announced events",
-    "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
-  }
+  "note": "Snapshot reflects manual verified poster backfill; the daily workflow replaces this with measured live-run source diagnostics."
 }
