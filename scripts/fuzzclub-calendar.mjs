@@ -4,7 +4,7 @@
  * retrieved separately from each official event page.
  */
 const norm=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-const isoDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s+'T12:00:00Z'));
+const isoDate=s=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(s))return false;const d=new Date(s+'T12:00:00Z');return !Number.isNaN(d.getTime())&&d.toISOString().startsWith(s);};
 function eventURL(input){
  try{const u=new URL(input);return u.protocol==='https:'&&['fuzzclub.gr','www.fuzzclub.gr'].includes(u.hostname)&&u.pathname.startsWith('/event/')?u.href:'';}catch{return '';}
 }
