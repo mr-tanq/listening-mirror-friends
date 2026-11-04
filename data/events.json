@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:58:24.683Z",
+  "updatedAt": "2026-11-04T13:03:18.017Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -726,7 +726,7 @@
       "venue": "Le Guess Who?",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "Reggae / Alternative / Pop / Electronic / Rock / R&B / Soul / Jazz / Hip-Hop",
+      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Jazz / R&B / Soul / Ambient",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35545/Le-Guess-Who-/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/0/6//Le_Guess_Who__2026.png",
@@ -2113,6 +2113,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/offer/cinemusic/",
       "image": "https://www.more.com/getattachment/51CA524B-0B19-432F-B5F5-A4A4451676F3/evg_cinemusic_1504_525.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-731e1ad927b40f74",
+      "artist": "Delines Fest",
+      "artists": [
+        "Delines Fest"
+      ],
+      "date": "2026-11-07",
+      "venue": "Gagarin 205 Live Music Space",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/delines-fest/",
+      "image": "https://www.more.com/getattachment/A5014CEC-EE60-455A-B2C1-BBF2B332D8F9/evg_delinesfest_1607_854.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -20708,6 +20725,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-8e41596eddb94cb4",
+      "artist": "Old Man's Child",
+      "artists": [
+        "Old Man's Child"
+      ],
+      "date": "2026-12-18",
+      "venue": "Gagarin 205 Live Music Space",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/omc-live-in-athens/",
+      "image": "https://www.more.com/getattachment/85296D06-D9BD-4864-B00E-1B0ADDEE7745/evg_oldmanschild/yothiria/dec_1158_4318.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "gagarin-2026-12-18-old%20man%20s%20child",
       "artist": "OLD MAN'S CHILD",
       "artists": [
@@ -28565,24 +28599,21 @@
       "verification": "venue-page"
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
+      "id": "more-20a9413358deac99",
       "artist": "IGORRR",
       "artists": [
-        "Igorrr",
-        "Secret Chiefs 3",
-        "Fange",
         "IGORRR"
       ],
       "date": "2027-03-20",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "Metal / Experimental / Electronic / Rock",
+      "genre": "Metal / Experimental / Electronic",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/igorrr/",
+      "url": "https://www.more.com/gr-en/tickets/music/igorrr-athens/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -28810,7 +28841,7 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 392,
+    "greeceEvents": 394,
     "greeceFeedError": "",
     "rockingEvents": 42,
     "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
@@ -28820,13 +28851,13 @@
     "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "gagarinCalendarEvents": 22,
+    "gagarinCalendarEvents": 21,
     "gagarinPosterEnriched": 11,
     "gagarinWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 399,
-    "taggedArtists": 250,
+    "genreTaggedEvents": 400,
+    "taggedArtists": 276,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
