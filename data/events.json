@@ -28045,6 +28045,25 @@
       "verification": "source-catalog"
     },
     {
+      "id": "official-tour-moonspell-20270307-eindhoven",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-03-07",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
+    },
+    {
       "id": "more-ebcfdb2972636e36",
       "artist": "ANDRE RIEU 2027",
       "artists": [
@@ -28147,21 +28166,23 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "IGORRR",
+      "id": "official-igorrr-20270320-athens",
+      "artist": "Igorrr",
       "artists": [
-        "IGORRR"
+        "Igorrr",
+        "Secret Chiefs 3",
+        "Fange"
       ],
       "date": "2027-03-20",
-      "venue": "Gagarin 205 Live Music Space",
+      "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/igorrr-athens/",
+      "subgenre": "Avant-Garde Metal",
+      "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "more",
-      "verification": "source-catalog"
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -28209,12 +28230,12 @@
       "venue": "Principal Club Theater",
       "city": "Thessaloniki",
       "country": "GR",
-      "genre": "Metal / Experimental / Electronic / Rock",
+      "genre": "Metal / Experimental / Electronic",
       "subgenre": "Avant-Garde Metal",
-      "url": "https://igorrr.com/",
+      "url": "https://www.more.com/gr-el/tickets/music/igorrr-thessaloniki/",
       "image": "",
       "source": "official",
-      "verification": "artist-tour"
+      "verification": "ticket-provider"
     },
     {
       "id": "more-03f20a56f46e2498",
@@ -28245,7 +28266,7 @@
       "venue": "Principal Club Theater",
       "city": "Thessaloniki",
       "country": "GR",
-      "genre": "Metal / Stoner / Doom",
+      "genre": "Metal",
       "subgenre": "Gothic Metal",
       "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
       "image": "",
@@ -28264,7 +28285,7 @@
       "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "Metal / Stoner / Doom",
+      "genre": "Metal",
       "subgenre": "Gothic Metal",
       "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
       "image": "",
@@ -28360,6 +28381,25 @@
       "image": "https://www.more.com/getattachment/70FAFD2A-2F3C-4218-87DB-FFE72EB8A293/evg_jazzstomouseioquash_1558_1743.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "official-tour-moonspell-20270418-haarlem",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-04-18",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
     }
   ],
   "coverage": {
@@ -28377,11 +28417,12 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1240,
     "festivalEvents": 16,
-    "officialVenueEvents": 4,
+    "officialVenueEvents": 7,
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 357,
+    "genreTaggedEvents": 359,
     "taggedArtists": 217,
-    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
-  }
+    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: public More.com music catalogue plus the dated concert index of Rocking.gr when accessible, neither is exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing. Verified official artist-tour/venue fallback entries are included for selected missing shows; not an exhaustive roster."
+  },
+  "verifiedSupplementedAt": "2026-11-04"
 }
