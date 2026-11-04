@@ -10,6 +10,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = async (file, fallback) => {
@@ -593,7 +594,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
@@ -683,6 +684,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   console.log('Extra Greek concerts from Rocking.gr after dedupe: '+extraRocking);
   console.log('Added '+agendaOnly+' agenda-only previews. Their event details must be confirmed on Podiuminfo.');
   for(const item of officialEvents)map.set(item.id,item);
+  // Import only permission-confirmed partner records, never crawl providers.
+  const partnerInput=await read('data/partner-feeds.json',{providers:{}});
+  const partner=importedPartnerEvents(partnerInput,{today,endDate:festivalEnd});
+  const partnerMerged=mergePartnerEvents([...map.values()],partner.events);
+  map.clear();for(const event of partnerMerged.events)map.set(event.id,event);
+  console.log('Approved partner feed: '+partnerMerged.added+' added, '+partnerMerged.duplicates+' duplicates, '+partner.diagnostics.rejected+' rejected.');
   const missing=first.stats.daysMissing || 0;
   if (missing > Math.ceil(first.stats.daysTotal * 0.2)) throw Error(`Too many Podiuminfo dates unavailable: ${missing}/${first.stats.daysTotal}; previous published feed preserved.`);
   if (!map.size) throw Error('No verified events available yet; previous published feed preserved.');
@@ -714,7 +721,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
