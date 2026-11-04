@@ -1,35 +1,53 @@
 {
-  "catalogUpdatedAt": "2026-11-04T13:07:58.895Z",
+  "catalogUpdatedAt": "2026-11-04T13:16:51.335Z",
   "auditedFor": "2026-11-04",
-  "totalPublished": 1652,
-  "greekPublished": 394,
+  "totalPublished": 1677,
+  "greekPublished": 419,
   "imageCoverage": {
-    "withImage": 354,
-    "withoutImage": 1298
+    "withImage": 378,
+    "withoutImage": 1299
   },
   "sources": {
+    "anclub-index": {
+      "events": 25,
+      "withImage": 21,
+      "withoutImage": 4,
+      "greekEvents": 25
+    },
     "festivalinfo": {
       "events": 16,
       "withImage": 6,
       "withoutImage": 10,
       "greekEvents": 0
     },
-    "gagarin-calendar": {
-      "events": 21,
-      "withImage": 21,
+    "floyd-calendar": {
+      "events": 14,
+      "withImage": 14,
       "withoutImage": 0,
-      "greekEvents": 21
+      "greekEvents": 14
+    },
+    "fuzzclub-calendar": {
+      "events": 5,
+      "withImage": 5,
+      "withoutImage": 0,
+      "greekEvents": 5
+    },
+    "gagarin-calendar": {
+      "events": 22,
+      "withImage": 22,
+      "withoutImage": 0,
+      "greekEvents": 22
     },
     "more": {
-      "events": 326,
-      "withImage": 326,
+      "events": 308,
+      "withImage": 308,
       "withoutImage": 0,
-      "greekEvents": 326
+      "greekEvents": 308
     },
     "official": {
       "events": 7,
-      "withImage": 1,
-      "withoutImage": 6,
+      "withImage": 2,
+      "withoutImage": 5,
       "greekEvents": 5
     },
     "podiuminfo-agenda": {
@@ -39,39 +57,49 @@
       "greekEvents": 0
     },
     "rocking": {
-      "events": 42,
+      "events": 40,
       "withImage": 0,
-      "withoutImage": 42,
-      "greekEvents": 42
+      "withoutImage": 40,
+      "greekEvents": 40
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 21,
-      "withImage": 21,
+      "published": 22,
+      "withImage": 22,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 0,
-      "withImage": 0,
-      "warning": "No published events; inspect runner logs / seasonality."
+      "published": 14,
+      "withImage": 14,
+      "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 0,
-      "withImage": 0,
-      "warning": "No published events; inspect runner logs / seasonality."
+      "published": 5,
+      "withImage": 5,
+      "warning": null
     },
     "anclub-index": {
-      "published": 0,
-      "withImage": 0,
-      "warning": "No published events; inspect runner logs / seasonality."
+      "published": 25,
+      "withImage": 21,
+      "warning": null
     }
   },
   "topGreekVenues": [
     {
+      "name": "AN Club",
+      "events": 40,
+      "withImage": 34,
+      "sources": [
+        "anclub-index",
+        "more",
+        "rocking"
+      ]
+    },
+    {
       "name": "Gagarin 205",
-      "events": 25,
-      "withImage": 22,
+      "events": 26,
+      "withImage": 23,
       "sources": [
         "gagarin-calendar",
         "rocking",
@@ -79,26 +107,9 @@
       ]
     },
     {
-      "name": "AN Club",
-      "events": 20,
-      "withImage": 17,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
       "name": "ΙΛΙΟΝ Plus",
       "events": 18,
       "withImage": 18,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205 Live Music Space",
-      "events": 17,
-      "withImage": 17,
       "sources": [
         "more"
       ]
@@ -120,12 +131,29 @@
       ]
     },
     {
-      "name": "FLOYD",
+      "name": "Floyd Live Music Venue",
       "events": 14,
-      "withImage": 13,
+      "withImage": 14,
       "sources": [
+        "floyd-calendar"
+      ]
+    },
+    {
+      "name": "Fuzz Club",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "fuzzclub-calendar",
         "more",
-        "rocking"
+        "official"
+      ]
+    },
+    {
+      "name": "Gagarin 205 Live Music Space",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -151,15 +179,6 @@
       "withImage": 11,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Fuzz Club",
-      "events": 10,
-      "withImage": 9,
-      "sources": [
-        "more",
-        "official"
       ]
     },
     {
@@ -363,6 +382,14 @@
       ]
     },
     {
+      "name": "FLOYD",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -385,17 +412,12 @@
       "sources": [
         "more"
       ]
-    },
-    {
-      "name": "Misirlou Live Stage",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
     }
   ],
   "venueWarnings": {
-    "note": "Unavailable in manually generated snapshot; daily job records warnings."
+    "gagarin": "",
+    "floyd": "",
+    "fuzz": "",
+    "anclub": ""
   }
 }

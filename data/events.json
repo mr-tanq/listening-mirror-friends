@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T13:12:24.831Z",
+  "updatedAt": "2026-11-04T13:16:51.335Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -743,7 +743,7 @@
       "venue": "Le Guess Who?",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "Reggae / Alternative / Pop / Electronic / Rock / R&B / Soul / Jazz / Ambient",
+      "genre": "Reggae / Alternative / Pop / Electronic / Rock / Jazz / R&B / Soul / Ambient",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35545/Le-Guess-Who-/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/0/6//Le_Guess_Who__2026.png",
@@ -29294,8 +29294,8 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 411,
-    "taggedArtists": 295,
+    "genreTaggedEvents": 408,
+    "taggedArtists": 293,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
