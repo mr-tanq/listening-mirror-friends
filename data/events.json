@@ -2766,7 +2766,7 @@
       "genre": "Rock",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/7/27307",
-      "image": "",
+      "image": "https://www.more.com/getattachment/9994A0D8-79C6-4CC9-B9DA-DA80AA40F101/evg_uriahheep_2022_750.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -5562,7 +5562,7 @@
       "genre": "Metal / Post-Rock / Psychedelic",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/13/27496",
-      "image": "",
+      "image": "https://www.fuzzclub.gr/wp-content/uploads/2026/08/sols.jpg",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -5908,7 +5908,7 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/14/27536",
-      "image": "",
+      "image": "https://www.floyd.gr/wp-content/uploads/2026/10/cropped-image-1-2.jpg",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -6785,7 +6785,7 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/15/27536",
-      "image": "",
+      "image": "https://www.floyd.gr/wp-content/uploads/2026/10/cropped-image-1-2.jpg",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -11899,7 +11899,7 @@
       "genre": "Metal",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/26/27339",
-      "image": "",
+      "image": "https://www.more.com/getattachment/A4781B06-D555-4C71-AF91-FD66EA957D55/evg_napalmdeathathens_1044_854.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -13958,7 +13958,7 @@
       "genre": "Metal / Rock",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/11/29/27386",
-      "image": "",
+      "image": "https://images.cometogether.live/events/5691/thumbnail_1779983997384.jpg",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -16094,7 +16094,7 @@
       "genre": "Rock",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/12/4/27266",
-      "image": "",
+      "image": "https://www.more.com/getattachment/BDF896FF-C3CF-413E-B469-3DC6B32780C7/evg_nazarethathensfuzzclub_1730_4866.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -21081,7 +21081,7 @@
       "genre": "Rock",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/12/19/27253",
-      "image": "",
+      "image": "https://www.more.com/getattachment/2BA4D41A-E47B-4AA9-BEE2-E5BB6BDFBD8E/evg_bryanadamsrollwiththepunc_1850_3465.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -21217,7 +21217,7 @@
       "genre": "Post-Rock",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2026/12/19/27464",
-      "image": "",
+      "image": "https://www.more.com/getattachment/2E14EF20-66AB-48A1-94BE-BB93103A5F51/evg_jamesonconnectsgodisanast_1509_854.png",
       "source": "rocking",
       "verification": "third-party-agenda"
     },
@@ -28813,7 +28813,7 @@
       "genre": "Metal / Experimental / Electronic / Rock",
       "subgenre": "Avant-Garde Metal",
       "url": "https://www.more.com/gr-el/tickets/music/igorrr-thessaloniki/",
-      "image": "",
+      "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
       "source": "official",
       "verification": "ticket-provider"
     },
@@ -29051,6 +29051,9 @@
     "festivalIncomplete": false,
     "genreTaggedEvents": 418,
     "taggedArtists": 324,
-    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
-  }
+    "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.",
+    "artworkReused": 9,
+    "manualVerifiedPosterLinks": 1
+  },
+  "artworkSupplementedAt": "2026-11-04"
 }
