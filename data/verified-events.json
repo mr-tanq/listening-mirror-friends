@@ -1,5 +1,5 @@
 {
-  "note": "Dated events directly checked against a named venue's own event page; fallback when third-party public agenda endpoints are unreachable. Remove expired events automatically.",
+  "note": "Dated shows confirmed against the artist's official tour or venue event page, curated as a small fallback when public agenda sources miss a concert. Not exhaustive and requires periodic review. Expired entries are omitted.",
   "events": [
     {
       "id": "official-fuzzclub-solstafir-20261114",
@@ -17,6 +17,82 @@
       "image": "",
       "source": "official",
       "verification": "venue-page"
+    },
+    {
+      "id": "official-tour-moonspell-20270330-thessaloniki",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-03-30",
+      "venue": "Principal Club Theater",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
+    },
+    {
+      "id": "official-tour-moonspell-20270331-athens",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-03-31",
+      "venue": "Gagarin 205",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
+    },
+    {
+      "id": "official-tour-moonspell-20270418-haarlem",
+      "artist": "Moonspell",
+      "artists": [
+        "Moonspell",
+        "Iotunn",
+        "Todomal"
+      ],
+      "date": "2027-04-18",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "Metal",
+      "subgenre": "Gothic Metal",
+      "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
+    },
+    {
+      "id": "official-tour-igorrr-20270321-thessaloniki",
+      "artist": "Igorrr",
+      "artists": [
+        "Igorrr",
+        "Secret Chiefs 3",
+        "Fange"
+      ],
+      "date": "2027-03-21",
+      "venue": "Principal Club Theater",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal / Experimental / Electronic",
+      "subgenre": "Avant-Garde Metal",
+      "url": "https://igorrr.com/",
+      "image": "",
+      "source": "official",
+      "verification": "artist-tour"
     }
   ]
 }
