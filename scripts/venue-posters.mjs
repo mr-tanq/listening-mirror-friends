@@ -1,7 +1,8 @@
 /** Fetch poster metadata only from trusted official venue event pages. */
 const OFFICIAL_DOMAINS={
   'gagarin-calendar':['gagarin205.gr','www.gagarin205.gr'],
-  'floyd-calendar':['floyd.gr','www.floyd.gr']
+  'floyd-calendar':['floyd.gr','www.floyd.gr'],
+  'fuzzclub-calendar':['fuzzclub.gr','www.fuzzclub.gr']
 };
 const safeImage=(value,base)=>{
  try{
