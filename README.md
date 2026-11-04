@@ -18,10 +18,15 @@ The GitHub Action reuses the actual tested public event-search modules from [`mr
 - **Podiuminfo:** its day-by-day concert agenda, followed by verification of individual concert pages.
 - **Festivalinfo:** verified festival editions and confirmed lineup artists.
 - **Official venues:** optional rotating checks for artists in the shared editorial watchlist, using the existing official-venue search logic.
+- **Greece:** public More.com music catalogue and Rocking.gr dated concert index (both partial).
+- **Gagarin 205:** directly reads its public official iCalendar feed each daily run (if accessible) and treats its dated venue listings as stronger evidence than third-party agenda previews.
+- **Reviewed tour fallbacks:** a small curated list in `data/verified-events.json` for missed dates (including Moonspell and Igorrr); these are not a substitute for live per-artist scanning.
 
 For artist genre metadata **only** (not concert discovery), the scheduled updater can query MusicBrainz with its public read-only API, respectfully limited to ~1 request per 1.3 seconds. No MusicBrainz login or API key is required.
 
-**IMPORTANT:** This first version is a rolling shared catalog, *not yet* an on-demand search across every source for every possible band typed by every friend. New users instantly match what's already in the public catalog, but their private musical preferences are not uploaded to the repository and do **not** trigger a fresh server search. A separate secure request service will be needed to replicate the original per-artist on-demand discovery for arbitrary friend profiles. The catalog builds incrementally, and coverage is incomplete. It currently mainly covers **the Netherlands and Belgium**. This limitation is shown in Tonight.
+**Discover vs All shows:** Discover is taste-matched and can miss concerts when genres are absent. **All shows** lists every currently indexed event for the selected city (or "Outside city"), even without genre tags. Neither view is exhaustive, and venue calendar feeds may include poorly categorized non-concert events.
+
+**IMPORTANT:** This first version is a rolling shared catalog, *not yet* an on-demand search across every source for every possible band typed by every friend. New users instantly match what's already in the public catalog, but their private musical preferences are not uploaded to the repository and do **not** trigger a fresh server search. A separate secure request service will be needed to replicate the original per-artist on-demand discovery for arbitrary friend profiles. The catalog builds incrementally, and coverage is incomplete. It currently covers **the Netherlands, Belgium and Greece** with uneven coverage and varying source reliability. This limitation is shown in Tonight.
 
 ## Publish as a brand-new repository
 
@@ -79,6 +84,8 @@ data/events.json               Public verified event feed
 data/discovery-cache.json      Rate-limited adapter cache
 data/artist-tags.json         Genre metadata cache
 data/artist-watchlist.json    Optional public editorial watchlist
+data/curated-genres.json     Reviewed genre seeds for artists lacking reliable tags
+data/verified-events.json   Official tour/venue dates missing from the rolling feed
 ```
 
 ## Local verification
