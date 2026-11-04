@@ -1,0 +1,401 @@
+{
+  "catalogUpdatedAt": "2026-11-04T13:07:58.895Z",
+  "auditedFor": "2026-11-04",
+  "totalPublished": 1652,
+  "greekPublished": 394,
+  "imageCoverage": {
+    "withImage": 354,
+    "withoutImage": 1298
+  },
+  "sources": {
+    "festivalinfo": {
+      "events": 16,
+      "withImage": 6,
+      "withoutImage": 10,
+      "greekEvents": 0
+    },
+    "gagarin-calendar": {
+      "events": 21,
+      "withImage": 21,
+      "withoutImage": 0,
+      "greekEvents": 21
+    },
+    "more": {
+      "events": 326,
+      "withImage": 326,
+      "withoutImage": 0,
+      "greekEvents": 326
+    },
+    "official": {
+      "events": 7,
+      "withImage": 1,
+      "withoutImage": 6,
+      "greekEvents": 5
+    },
+    "podiuminfo-agenda": {
+      "events": 1240,
+      "withImage": 0,
+      "withoutImage": 1240,
+      "greekEvents": 0
+    },
+    "rocking": {
+      "events": 42,
+      "withImage": 0,
+      "withoutImage": 42,
+      "greekEvents": 42
+    }
+  },
+  "venueAdapters": {
+    "gagarin-calendar": {
+      "published": 21,
+      "withImage": 21,
+      "warning": null
+    },
+    "floyd-calendar": {
+      "published": 0,
+      "withImage": 0,
+      "warning": "No published events; inspect runner logs / seasonality."
+    },
+    "fuzzclub-calendar": {
+      "published": 0,
+      "withImage": 0,
+      "warning": "No published events; inspect runner logs / seasonality."
+    },
+    "anclub-index": {
+      "published": 0,
+      "withImage": 0,
+      "warning": "No published events; inspect runner logs / seasonality."
+    }
+  },
+  "topGreekVenues": [
+    {
+      "name": "Gagarin 205",
+      "events": 25,
+      "withImage": 22,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
+      ]
+    },
+    {
+      "name": "AN Club",
+      "events": 20,
+      "withImage": 17,
+      "sources": [
+        "more",
+        "rocking"
+      ]
+    },
+    {
+      "name": "ΙΛΙΟΝ Plus",
+      "events": 18,
+      "withImage": 18,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205 Live Music Space",
+      "events": 17,
+      "withImage": 17,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "gazarte",
+      "events": 15,
+      "withImage": 15,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Kyttaro Live",
+      "events": 15,
+      "withImage": 15,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "FLOYD",
+      "events": 14,
+      "withImage": 13,
+      "sources": [
+        "more",
+        "rocking"
+      ]
+    },
+    {
+      "name": "Death Disco",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 12,
+      "withImage": 11,
+      "sources": [
+        "more",
+        "rocking"
+      ]
+    },
+    {
+      "name": "Half Note Jazz Club",
+      "events": 11,
+      "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Fuzz Club",
+      "events": 10,
+      "withImage": 9,
+      "sources": [
+        "more",
+        "official"
+      ]
+    },
+    {
+      "name": "AUX CLUB",
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 8,
+      "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Circus Entertainment Hub",
+      "events": 8,
+      "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "gazarte roof stage",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Το Τρένο Στο Ρουφ",
+      "events": 6,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "CHRISTMAS THEATER",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "MIKRI SKINI - Mikri Skini",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Eightball",
+      "events": 5,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Ίλιον Plus",
+      "events": 4,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Klakaz",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Stage7",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Γυαλινο Μουσικο Θεατρο",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Temple Athens",
+      "events": 4,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Universe | S-2000",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "UNDERFLOW RECORD STORE",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Θεατρο Μεταξουργειο",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Universe - Multivenue",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "We",
+      "events": 3,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Κύτταρο",
+      "events": 3,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Κυτταρο Live",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Misirlou Live Stage",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    }
+  ],
+  "venueWarnings": {
+    "note": "Unavailable in manually generated snapshot; daily job records warnings."
+  }
+}
