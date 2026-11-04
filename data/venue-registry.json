@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "note": "Verified venue agendas and adapter status. Only active entries with implemented fetchers run automatically. Adding a venue here does NOT initiate scraping.",
+  "venues": [
+    {
+      "id": "gagarin205",
+      "name": "Gagarin 205",
+      "city": "Athens",
+      "country": "GR",
+      "agenda": "https://gagarin205.gr/events/list/",
+      "status": "active",
+      "method": "official-ical",
+      "images": "official-event-opengraph"
+    },
+    {
+      "id": "anclub",
+      "name": "AN Club",
+      "city": "Athens",
+      "country": "GR",
+      "agenda": "https://www.anclub.gr/",
+      "status": "planned",
+      "method": "venue-website",
+      "images": "pending"
+    },
+    {
+      "id": "fuzzclub",
+      "name": "Fuzz Club",
+      "city": "Athens",
+      "country": "GR",
+      "agenda": "https://www.fuzzclub.gr/events/list/",
+      "status": "planned",
+      "method": "official-calendar",
+      "images": "pending"
+    },
+    {
+      "id": "kyttaro",
+      "name": "Kyttaro Live Club",
+      "city": "Athens",
+      "country": "GR",
+      "agenda": "",
+      "status": "research",
+      "method": "venue-website",
+      "images": "pending"
+    },
+    {
+      "id": "halfnote",
+      "name": "Half Note Jazz Club",
+      "city": "Athens",
+      "country": "GR",
+      "agenda": "https://www.more.com/gr-el/venues/halfnote/",
+      "status": "research",
+      "method": "venue-listing",
+      "images": "pending"
+    }
+  ]
+}
