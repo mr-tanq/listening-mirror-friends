@@ -1,4 +1,4 @@
-import {norm,cityKey,recommendEvent,normalizeEvent,dateToday,GENRES} from './model.js?v=swipe-friends-v3';
+import {norm,cityKey,recommendEvent,normalizeEvent,dateToday,GENRES} from './model.js?v=city-scope-v4';
 
 /**
  * Curated starting palette for the onboarding experience.
@@ -399,7 +399,7 @@ export function mergeTasteTags(base={},bands=TASTE_BANDS) {
   }
   return map;
 }
-export function seedDeciding(events,profile,tags,previous={},limit=12,today=dateToday()){
+export function seedDeciding(events,profile,tags,previous={},limit=12,today=dateToday(),scope='all'){
   if(!profile||!Array.isArray(events))return [];
   const byId=new Set(Object.keys(previous||{}));
   const ranked=[];
@@ -409,6 +409,8 @@ export function seedDeciding(events,profile,tags,previous={},limit=12,today=date
     const match=recommendEvent(event,profile,tags);
     if(!match)continue;
     const local=!!cityKey(profile.city)&&cityKey(event.city)===cityKey(profile.city);
+    if(cityKey(profile.city)&&scope==='local'&&!local)continue;
+    if(cityKey(profile.city)&&scope==='away'&&local)continue;
     ranked.push({event,match,local});
   }
   const byRank=(a,b)=>b.match.score-a.match.score||a.event.date.localeCompare(b.event.date);
@@ -417,8 +419,9 @@ export function seedDeciding(events,profile,tags,previous={},limit=12,today=date
   const size=Math.min(Math.max(0,limit),20);
   // Keep local shows first. If there are none, show only a small number
   // of other-city alternatives rather than filling the queue with distant trips.
-  const picks=local.length
-    ?[...local.slice(0,size),...away.slice(0,Math.max(0,Math.min(2,size-local.length)))].slice(0,size)
+  const picks=scope==='local'&&cityKey(profile.city)?local.slice(0,size)
+    :scope==='away'&&cityKey(profile.city)?away.slice(0,size)
+    :local.length?[...local.slice(0,size),...away.slice(0,Math.max(0,Math.min(2,size-local.length)))].slice(0,size)
     :away.slice(0,profile.city?Math.min(4,size):size);
   const seen=new Set();
   return picks.filter(x=>{
