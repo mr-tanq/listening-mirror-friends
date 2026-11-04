@@ -1,18 +1,18 @@
 {
-  "catalogUpdatedAt": "2026-11-04T13:16:51.335Z",
+  "catalogUpdatedAt": "2026-11-04T13:21:40.709Z",
   "auditedFor": "2026-11-04",
-  "totalPublished": 1677,
-  "greekPublished": 419,
+  "totalPublished": 1697,
+  "greekPublished": 439,
   "imageCoverage": {
-    "withImage": 378,
-    "withoutImage": 1299
+    "withImage": 397,
+    "withoutImage": 1300
   },
   "sources": {
     "anclub-index": {
-      "events": 25,
-      "withImage": 21,
-      "withoutImage": 4,
-      "greekEvents": 25
+      "events": 28,
+      "withImage": 23,
+      "withoutImage": 5,
+      "greekEvents": 28
     },
     "festivalinfo": {
       "events": 16,
@@ -23,6 +23,18 @@
     "floyd-calendar": {
       "events": 14,
       "withImage": 14,
+      "withoutImage": 0,
+      "greekEvents": 14
+    },
+    "fuzzclub-calendar": {
+      "events": 5,
+      "withImage": 5,
+      "withoutImage": 0,
+      "greekEvents": 5
+    },
+    "gagarin-calendar": {
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
       "greekEvents": 14
     },
@@ -80,16 +92,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 25,
-      "withImage": 21,
+      "published": 28,
+      "withImage": 23,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 40,
-      "withImage": 34,
+      "events": 47,
+      "withImage": 40,
       "sources": [
         "anclub-index",
         "more",
@@ -131,6 +143,16 @@
       ]
     },
     {
+      "name": "Fuzz Club",
+      "events": 15,
+      "withImage": 15,
+      "sources": [
+        "fuzzclub-calendar",
+        "more",
+        "official"
+      ]
+    },
+    {
       "name": "Floyd Live Music Venue",
       "events": 14,
       "withImage": 14,
@@ -139,19 +161,9 @@
       ]
     },
     {
-      "name": "Fuzz Club",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "fuzzclub-calendar",
-        "more",
-        "official"
-      ]
-    },
-    {
-      "name": "Gagarin 205 Live Music Space",
-      "events": 14,
-      "withImage": 14,
+      "name": "FLOYD",
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "more"
       ]
