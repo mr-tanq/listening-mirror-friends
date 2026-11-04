@@ -10,6 +10,7 @@ on:
       - 'scripts/floyd-calendar.mjs'
       - 'scripts/fuzzclub-calendar.mjs'
       - 'scripts/anclub-index.mjs'
+      - 'scripts/catalog-audit.mjs'
       - 'data/venue-registry.json'
       - 'data/partner-feeds.json'
       - 'data/artist-watchlist.json'
@@ -60,7 +61,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/discovery-cache.json data/artist-tags.json
+          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh concert feed and artist genre metadata"
             for attempt in 1 2 3 4 5 6 7 8; do
