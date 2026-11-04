@@ -1,9 +1,14 @@
-/** Fetch poster metadata only from a trusted official venue event page. */
+/** Fetch poster metadata only from trusted official venue event pages. */
+const OFFICIAL_DOMAINS={
+  'gagarin-calendar':['gagarin205.gr','www.gagarin205.gr'],
+  'floyd-calendar':['floyd.gr','www.floyd.gr']
+};
 const safeImage=(value,base)=>{
  try{
    const u=new URL(value,base);
    if(u.protocol!=='https:'||u.username||u.password)return '';
-   if(!['gagarin205.gr','www.gagarin205.gr'].includes(u.hostname))return '';
+   const page=new URL(base);
+   if(u.hostname!==page.hostname)return '';
    if(!/\.(?:jpg|jpeg|png|webp)(?:$|\?)/i.test(u.pathname+u.search))return '';
    return u.href;
  }catch{return '';}
@@ -23,9 +28,9 @@ export function imageFromVenueHtml(html,baseUrl){
 export async function enrichVenuePosters(events,{fetcher=fetch,max=12,delay=ms=>new Promise(r=>setTimeout(r,ms))}={}){
  const result=events.map(x=>({...x}));let attempts=0,found=0;
  for(const row of result){
-   if(row.image||row.source!=='gagarin-calendar'||attempts>=max)continue;
+   if(row.image||!OFFICIAL_DOMAINS[row.source]||attempts>=max)continue;
    let u;try{u=new URL(row.url);}catch{continue;}
-   if(u.protocol!=='https:'||!['gagarin205.gr','www.gagarin205.gr'].includes(u.hostname)||!u.pathname.startsWith('/event/'))continue;
+   if(u.protocol!=='https:'||!OFFICIAL_DOMAINS[row.source].includes(u.hostname)||!u.pathname.startsWith('/event/'))continue;
    attempts++;
    try{
      const res=await fetcher(u.href,{headers:{Accept:'text/html','User-Agent':'ListeningMirrorFriends/1.0 (https://github.com/mr-tanq/listening-mirror-friends)'},signal:AbortSignal.timeout(10000)});
