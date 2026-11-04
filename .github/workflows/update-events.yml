@@ -11,6 +11,7 @@ on:
       - 'scripts/fuzzclub-calendar.mjs'
       - 'scripts/anclub-index.mjs'
       - 'scripts/catalog-audit.mjs'
+      - 'scripts/venue-dedupe.mjs'
       - 'data/venue-registry.json'
       - 'data/partner-feeds.json'
       - 'data/artist-watchlist.json'
