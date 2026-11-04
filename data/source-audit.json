@@ -4,14 +4,14 @@
   "totalPublished": 1661,
   "greekPublished": 403,
   "imageCoverage": {
-    "withImage": 377,
-    "withoutImage": 1284
+    "withImage": 390,
+    "withoutImage": 1271
   },
   "sources": {
     "anclub-index": {
       "events": 26,
-      "withImage": 24,
-      "withoutImage": 2,
+      "withImage": 25,
+      "withoutImage": 1,
       "greekEvents": 26
     },
     "festivalinfo": {
@@ -46,8 +46,8 @@
     },
     "official": {
       "events": 7,
-      "withImage": 3,
-      "withoutImage": 4,
+      "withImage": 7,
+      "withoutImage": 0,
       "greekEvents": 5
     },
     "podiuminfo-agenda": {
@@ -58,8 +58,8 @@
     },
     "rocking": {
       "events": 38,
-      "withImage": 10,
-      "withoutImage": 28,
+      "withImage": 18,
+      "withoutImage": 20,
       "greekEvents": 38
     }
   },
@@ -81,7 +81,7 @@
     },
     "anclub-index": {
       "published": 26,
-      "withImage": 24,
+      "withImage": 25,
       "warning": null
     }
   },
@@ -89,7 +89,7 @@
     {
       "name": "AN Club",
       "events": 35,
-      "withImage": 31,
+      "withImage": 34,
       "sources": [
         "anclub-index",
         "more",
@@ -99,7 +99,7 @@
     {
       "name": "Gagarin 205",
       "events": 24,
-      "withImage": 23,
+      "withImage": 24,
       "sources": [
         "gagarin-calendar",
         "rocking",
@@ -288,7 +288,7 @@
     {
       "name": "Eightball",
       "events": 5,
-      "withImage": 1,
+      "withImage": 2,
       "sources": [
         "rocking"
       ]
@@ -328,7 +328,7 @@
     {
       "name": "Temple Athens",
       "events": 4,
-      "withImage": 0,
+      "withImage": 2,
       "sources": [
         "rocking"
       ]
@@ -392,7 +392,7 @@
     {
       "name": "Κύτταρο",
       "events": 3,
-      "withImage": 0,
+      "withImage": 3,
       "sources": [
         "rocking"
       ]
@@ -414,5 +414,5 @@
       ]
     }
   ],
-  "note": "Snapshot reflects manual verified poster backfill; the daily workflow replaces this with measured live-run source diagnostics."
+  "note": "Artwork count updated after verified poster corrections. Venue health warnings are refreshed by the scheduled catalog job."
 }
