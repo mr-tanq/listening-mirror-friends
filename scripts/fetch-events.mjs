@@ -10,6 +10,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {enrichVenuePosters} from './venue-posters.mjs';
 import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -646,10 +647,20 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   }
   for(const item of festivalEvents){const event=fromFestivalinfo(item);if(event)map.set(event.id,event);}
   for(const item of greekEvents)map.set(item.id,item);
+  // Reuse previously discovered posters when possible, then look up a small
+  // bounded batch of new Gagarin event posters on official event pages.
+  const oldGagarin=[...map.values()].filter(e=>e.country==='GR'&&e.image);
+  for(const event of gagarinEvents){
+    const prior=oldGagarin.find(e=>e.date===event.date&&norm(e.artist)===norm(event.artist));
+    if(prior?.image)event.image=prior.image;
+  }
+  const posterResult=await enrichVenuePosters(gagarinEvents,{max:12});
+  gagarinEvents=posterResult.events;
+  console.log('Gagarin posters: '+posterResult.found+' fetched from '+posterResult.attempts+' official event pages.');
   for(const item of gagarinEvents){
     const duplicate=[...map.values()].find(e=>e.country===item.country&&e.date===item.date&&norm(e.artist)===norm(item.artist));
     if(duplicate&&duplicate.id!==item.id)map.delete(duplicate.id);
-    map.set(item.id,{...item,image:duplicate?.image||'',
+    map.set(item.id,{...item,image:item.image||duplicate?.image||'',
       artists:[...new Set([...(duplicate?.artists||[]),...item.artists])]});
   }
   // Reviewed venue and artist tour URLs supplement missing indexed shows.
@@ -721,7 +732,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
