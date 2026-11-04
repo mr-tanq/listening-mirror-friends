@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Official venues, promoters, and music editorial indexes for source discovery. 'verified-index' means a public page with events was confirmed; NOT an active scraper or permission to reuse data. 'active' only applies to implemented code paths. Every new adapter requires source/access verification and tests. Floyd official calendar parser and image enrichment are implemented; runner availability and license conditions still require verification. AN Club and Fuzz source parsers are implemented. Production access/uptime and full site permissions remain subject to verification.",
+  "note": "Venue and promoter research inventory; active means a parser is integrated, not that live runner fetching is confirmed. Verified-index means publicly corroborated event listings, not an added scraper. The existing More.com feed already includes events at Kyttaro and Arch, while source-side completeness remains unverified. Official Technopolis agenda is athens-technopolis.gr.",
   "venues": [
     {
       "id": "gagarin205",
@@ -43,10 +43,10 @@
       "name": "Kyttaro Live Club",
       "city": "Athens",
       "country": "GR",
-      "agenda": "",
-      "status": "research",
-      "method": "venue-website",
-      "images": "pending",
+      "agenda": "https://www.more.com/gr-el/venues/kyttaro/",
+      "status": "verified-index",
+      "method": "existing-more-com-venue-index",
+      "images": "existing-more-artwork",
       "type": "venue",
       "access": "review-required"
     },
@@ -92,9 +92,9 @@
       "city": "Athens",
       "country": "GR",
       "type": "venue",
-      "agenda": "https://www.technopolis-athens.com/",
-      "status": "research",
-      "method": "municipal-cultural-program",
+      "agenda": "https://www.athens-technopolis.gr/index.php/en/technopolis-events/1-ekdiloseis",
+      "status": "verified-index",
+      "method": "official-event-list",
       "images": "pending",
       "access": "review-required"
     },
@@ -188,10 +188,10 @@
       "city": "Athens",
       "country": "GR",
       "type": "venue",
-      "agenda": "https://archclub.gr/",
-      "status": "research",
-      "method": "venue-website",
-      "images": "pending",
+      "agenda": "https://www.more.com/gr-el/venue/arch/",
+      "status": "verified-index",
+      "method": "existing-more-com-venue-index",
+      "images": "existing-more-artwork",
       "access": "review-required"
     },
     {
