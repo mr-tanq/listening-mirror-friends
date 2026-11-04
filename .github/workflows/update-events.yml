@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/update-events.yml'
       - 'scripts/fetch-events.mjs'
+      - 'scripts/partner-feeds.mjs'
+      - 'data/partner-feeds.json'
       - 'data/artist-watchlist.json'
       - 'data/curated-genres.json'
       - 'data/verified-events.json'
