@@ -15,6 +15,7 @@ import {discoverFloydCalendar} from './floyd-calendar.mjs';
 import {discoverFuzzCalendar} from './fuzzclub-calendar.mjs';
 import {discoverAnClub} from './anclub-index.mjs';
 import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
+import {buildSourceAudit} from './catalog-audit.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = async (file, fallback) => {
@@ -800,6 +801,10 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   await write('data/discovery-cache.json',cache);
   await write('data/artist-tags.json',tags);
   await write('data/events.json',result);
+  const audit=buildSourceAudit(result,{today});
+  audit.venueWarnings={gagarin:gagarinWarning,floyd:floydWarning,fuzz:fuzzWarning,anclub:anClubWarning};
+  await write('data/source-audit.json',audit);
+  console.log('Coverage audit: '+audit.greekPublished+' Greek entries, '+audit.imageCoverage.withImage+' with images across all countries.');
   console.log(`Published ${events.length} concert/festival listings (${genreStatus.withGenres} tagged with artist genres; ${events.filter(x=>x.source==='podiuminfo-agenda').length} agenda-only). Sources: Podiuminfo/Festivalinfo/official venues; no Ticketmaster or Last.fm.`);
   return result;
 }
