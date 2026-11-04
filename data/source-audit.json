@@ -414,5 +414,22 @@
       ]
     }
   ],
-  "note": "Artwork count updated after verified poster corrections. Venue health warnings are refreshed by the scheduled catalog job."
+  "note": "Baseline before incremental NL/BE Podiuminfo image enrichment. Later nightly runs will record photo lookups and new coverage.",
+  "imageCoverageByCountry": {
+    "NL": {
+      "events": 1144,
+      "withImage": 8,
+      "withoutImage": 1136
+    },
+    "BE": {
+      "events": 114,
+      "withImage": 0,
+      "withoutImage": 114
+    },
+    "GR": {
+      "events": 403,
+      "withImage": 382,
+      "withoutImage": 21
+    }
+  }
 }
