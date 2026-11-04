@@ -1,7 +1,7 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=swipe-friends-v3';
-import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=swipe-friends-v3';
-import {createOnboarding} from './onboarding.js?v=swipe-friends-v3';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=swipe-friends-v3';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=city-scope-v4';
+import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=city-scope-v4';
+import {createOnboarding} from './onboarding.js?v=city-scope-v4';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=city-scope-v4';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -12,6 +12,7 @@ let catalog = { events: [], updatedAt: null, coverage: null, source: 'podiuminfo
 let artistTags = {artists:{}};
 let page = 'tonight';
 let collection = 'discover';
+let cityScope = 'local'; // City-only by default; 'away' explicitly includes other cities.
 let searchText = '';
 let archiveSearch = '';
 let onboarding = null;
@@ -71,9 +72,16 @@ function scoreAll() {
       b.score-a.score || a.event.artist.localeCompare(b.event.artist);
   });
 }
-function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]);}
+function cityMatches(event,scope=cityScope){
+  const preferred=cityKey(state.profile?.city||'');
+  if(!preferred)return true; // No preferred city: keep country-wide discovery.
+  const same=event.country===state.profile?.country && cityKey(event.city)===preferred;
+  return scope==='away'?!same:same;
+}
+function visibleDeciding(){return savedItems('deciding').filter(x=>cityMatches(x.event));}
+function discoverFeed(){return scoreAll().filter(x=>!state.saved[x.event.id]&&cityMatches(x.event));}
 function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
-function counts(){return {discover:discoverFeed().length,deciding:savedItems('deciding').length,going:savedItems('going').length,passed:savedItems('passed').length};}
+function counts(){return {discover:discoverFeed().length,deciding:visibleDeciding().length,going:savedItems('going').length,passed:savedItems('passed').length};}
 function setStatus(e,status){
   const previous=state.saved[e.id]||{};
   state.saved[e.id]={...previous,status,event:normalizeEvent(e)};
@@ -81,8 +89,8 @@ function setStatus(e,status){
   persist();render();
 }
 function replenishDeciding(){
-  if(!catalog.updatedAt||!state.profile?.onboarded||savedItems('deciding').length>=4)return;
-  const next=seedDeciding(catalog.events,state.profile,artistTags,state.saved,10);
+  if(!catalog.updatedAt||!state.profile?.onboarded||visibleDeciding().length>=4)return;
+  const next=seedDeciding(catalog.events,state.profile,artistTags,state.saved,10,dateToday(),cityScope);
   if(!next.length)return;
   for(const x of next){
     if(!state.saved[x.id])state.saved[x.id]={
@@ -139,13 +147,14 @@ function renderTonightList(){
   const root=document.querySelector('#listing');if(!root)return;
   root.replaceChildren();
   if(collection==='deciding'){
-    const items=savedItems('deciding');
+    const items=visibleDeciding();
     const byId=new Map(items.map(x=>[x.event.id,x]));
     deckOrder=[...deckOrder.filter(id=>byId.has(id)),...items.map(x=>x.event.id).filter(id=>!deckOrder.includes(id))];
     const queue=deckOrder.map(id=>byId.get(id)).filter(Boolean)
       .filter(x=>!searchText.trim()||norm([x.event.artist,x.event.city,x.event.venue,x.suggestionReason].join(' ')).includes(norm(searchText)));
     if(!queue.length){
-      const message=items.length?'No Deciding card matches your search. Clear the search to see your other concerts.'
+      const preferred=cityKey(state.profile?.city||'');
+      const message=!items.length&&preferred?`No ${cityScope==='local'?'local':'outside-city'} Deciding recommendations yet. Try Discover or switch the city filter.`:items.length?'No Deciding card matches your search. Clear the search to see your other concerts.'
         :state.pendingDeciding?'Preparing your first matches from your music taste…'
         :'You have reviewed all your current recommendations. Discover can show more, and passing on a show keeps it in Set aside.';
       root.append(empty(items.length?'No matching card.':'All caught up.',message,
@@ -168,6 +177,10 @@ function renderTonightList(){
     x.event.artist,...(x.event.artists||[]),x.event.venue,x.event.city,x.event.genre,x.reason
   ].join(' ')).includes(norm(searchText)));
   if(!list.length){
+    if(personal&&cityKey(state.profile?.city||'')){
+      root.append(empty('No matching concerts here yet.',`No recommended live shows in ${cityScope==='local'?(state.profile.city||'your city'):'other cities'} right now. Switch the location filter to explore the other area, or edit your music taste.`,()=>openProfileDialog(false),'Edit my music taste'));
+      return;
+    }
     const currentCountry=state.profile?.country||'';
     const countryListings=catalog.events.filter(e=>e.country===currentCountry&&e.date>=dateToday()).length;
     const countryName=COUNTRIES.find(c=>c.code===currentCountry)?.name||'your selected country';
@@ -190,25 +203,16 @@ function renderTonightList(){
       ['similar','Similar artists · shared music styles'],
       ['genre','Your selected genres']
     ];
-    const preferred=cityKey(state.profile?.city||'');
     for(const [kind,title] of buckets){
       const group=list.filter(x=>x.kind===kind);
       if(!group.length)continue;
       const heading=el('div','section-header');
       heading.append(el('h2','section-title',title),el('p','section-sub',group.length+' matched show'+(group.length===1?'':'s')));
       const groupRoot=el('section','recommend-group');groupRoot.append(heading);
-      const local=preferred?group.filter(x=>cityKey(x.event.city)===preferred):group;
-      const away=preferred?group.filter(x=>cityKey(x.event.city)!==preferred):[];
-      const display=(records,label)=>{
-        if(!records.length)return;
-        if(preferred)groupRoot.append(el('p','help-note',label+' · '+records.length));
-        const grid=el('div','show-grid');
-        for(const x of records.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
-        groupRoot.append(grid);
-        if(records.length>100)groupRoot.append(el('p','help-note','Showing the first 100 of '+records.length+'.'));
-      };
-      display(local,preferred?'Near '+(state.profile?.city||'your city'):'Upcoming');
-      display(away,'Elsewhere in '+(COUNTRIES.find(c=>c.code===state.profile?.country)?.name||'your country'));
+      const grid=el('div','show-grid');
+      for(const x of group.slice(0,100)){const n=card(x.event,x,'discover');if(n)grid.append(n);}
+      groupRoot.append(grid);
+      if(group.length>100)groupRoot.append(el('p','help-note','Showing the first 100 of '+group.length+'.'));
       root.append(groupRoot);
     }
     root.append(el('p','help-note','Matches use your favorite artists and available music tags. “Similar” means shared specific genres, not a verified recommendation from a streaming service. Podiuminfo agenda entries require confirmation on their source page.'));
@@ -244,7 +248,20 @@ function renderTonight(){
     tab.textContent=`${title} · ${cs[key]}`;tab.setAttribute('aria-pressed',String(collection===key));tabs.append(tab);
   }
   const search=el('input','search');search.placeholder='Search artist, city, venue…';search.value=searchText;search.type='search';search.setAttribute('aria-label','Search concerts');search.addEventListener('input',e=>{searchText=e.target.value;renderTonightList();});
-  filter.append(tabs,search);app.append(filter);
+  filter.append(tabs);
+  if(cityKey(state.profile?.city||'')&&(collection==='discover'||collection==='deciding')){
+    const area=el('div','city-switch');area.setAttribute('role','group');area.setAttribute('aria-label','Concert location');
+    for(const [scope,label] of [['local','📍 '+state.profile.city],['away','Outside '+state.profile.city]]){
+      const toggle=button(label,'city-switch-button'+(cityScope===scope?' active':''),()=>{
+        cityScope=scope;deckOrder=[];searchText='';
+        if(collection==='deciding')replenishDeciding();
+        render();
+      });
+      toggle.setAttribute('aria-pressed',String(cityScope===scope));area.append(toggle);
+    }
+    filter.append(area);
+  }
+  filter.append(search);app.append(filter);
   const list=el('div');list.id='listing';app.append(list);renderTonightList();app.append(el('p','help-note','Your music taste and concert decisions stay on this device. Use My Taste → Export backup to keep them safe.'));app.querySelector('.hero').append(actions);
 }
 function renderArchiveList(){
@@ -289,6 +306,7 @@ function startGuidedSetup(){
     onCancel:state.profile?()=>{onboarding=null;render();}:null,
     onFinish:(profile)=>{
       state.profile=profile;
+      cityScope='local';
       state.pendingDeciding=true;
       onboarding=null;
       page='tonight';collection='deciding';searchText='';
@@ -308,7 +326,7 @@ function fillInitialDeciding(){
   for(const [id,item] of Object.entries(state.saved)){
     if(item?.status==='deciding'&&item?.suggested===true)delete state.saved[id];
   }
-  const picks=seedDeciding(catalog.events,state.profile,artistTags,state.saved,12);
+  const picks=seedDeciding(catalog.events,state.profile,artistTags,state.saved,12,dateToday(),'local');
   for(const item of picks){
     // Never overwrite manual decisions or a previously passed event.
     if(!state.saved[item.id])state.saved[item.id]={
