@@ -39,11 +39,11 @@ export function dedupeGreekVenueConcerts(events){
   const matchIndex=result.findIndex(e=>sameVenueGig(e,item));
   if(matchIndex<0){result.push(item);continue;}
   const old=result[matchIndex];
-  // Keep the ID that was published first: stable IDs are more important than
+  // Prefer existing More.com IDs, which predate official calendar adapters;\n  // a stable ID is more important than
   // a changing crawler source name. Prefer authoritative event details.
   const best=isOfficial(item)&&!isOfficial(old)?item:isOfficial(old)&&!isOfficial(item)?old:
     String(item.artist||'').length>String(old.artist||'').length?item:old;
-  result[matchIndex]={...old,...best,id:old.id,
+  result[matchIndex]={...old,...best,id:old.source==='more'?old.id:item.source==='more'?item.id:old.id,
    image:best.image||old.image||item.image||'',
    genre:best.genre||old.genre||item.genre||'',
    artists:[...new Set([...(old.artists||[]),...(item.artists||[])])].slice(0,50)};
