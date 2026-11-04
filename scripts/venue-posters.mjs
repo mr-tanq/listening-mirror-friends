@@ -3,7 +3,8 @@ const OFFICIAL_DOMAINS={
   'gagarin-calendar':['gagarin205.gr','www.gagarin205.gr'],
   'floyd-calendar':['floyd.gr','www.floyd.gr'],
   'fuzzclub-calendar':['fuzzclub.gr','www.fuzzclub.gr'],
-  'anclub-index':['anclub.gr','www.anclub.gr']
+  'anclub-index':['anclub.gr','www.anclub.gr'],
+  'rocking':['rocking.gr','www.rocking.gr']
 };
 const safeImage=(value,base)=>{
  try{
@@ -35,7 +36,9 @@ export async function enrichVenuePosters(events,{fetcher=fetch,max=12,delay=ms=>
  for(const row of result){
    if(row.image||!OFFICIAL_DOMAINS[row.source]||attempts>=max)continue;
    let u;try{u=new URL(row.url);}catch{continue;}
-   if(u.protocol!=='https:'||!OFFICIAL_DOMAINS[row.source].includes(u.hostname)||!(row.source==='anclub-index'?u.pathname.startsWith('/events/'):u.pathname.startsWith('/event/')))continue;
+   if(u.protocol!=='https:'||!OFFICIAL_DOMAINS[row.source].includes(u.hostname)||!(row.source==='anclub-index'?u.pathname.startsWith('/events/'):
+      row.source==='rocking'?/^\/agenda\/20\d{2}\/\d{1,2}\/\d{1,2}\/\d{3,9}\/?$/.test(u.pathname):
+      u.pathname.startsWith('/event/')))continue;
    attempts++;
    try{
      const res=await fetcher(u.href,{headers:{Accept:'text/html','User-Agent':'ListeningMirrorFriends/1.0 (https://github.com/mr-tanq/listening-mirror-friends)'},signal:AbortSignal.timeout(10000)});
