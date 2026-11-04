@@ -17,6 +17,7 @@ import {discoverAnClub} from './anclub-index.mjs';
 import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 import {buildSourceAudit} from './catalog-audit.mjs';
 import {dedupeGreekVenueConcerts} from './venue-dedupe.mjs';
+import {watchTechnopolisMusic} from './technopolis-watch.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = async (file, fallback) => {
@@ -623,6 +624,16 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     anClubWarning=String(error.message||error);
     console.warn('AN Club event index unavailable: '+anClubWarning);
   }
+  // Technopolis is strongly seasonal. Do not treat an empty official music
+  // category as an absent show or scrape unrelated exhibitions.
+  let technopolisMusic={status:'unavailable',message:'Check has not succeeded'};
+  try{
+    technopolisMusic=await watchTechnopolisMusic();
+    console.log('Technopolis official music calendar: '+technopolisMusic.status);
+  }catch(error){
+    technopolisMusic={status:'unavailable',message:String(error.message||error)};
+    console.warn('Technopolis music calendar unavailable: '+technopolisMusic.message);
+  }
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
@@ -815,6 +826,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   await write('data/events.json',result);
   const audit=buildSourceAudit(result,{today});
   audit.venueWarnings={gagarin:gagarinWarning,floyd:floydWarning,fuzz:fuzzWarning,anclub:anClubWarning};
+  audit.technopolisMusic=technopolisMusic;
   await write('data/source-audit.json',audit);
   console.log('Coverage audit: '+audit.greekPublished+' Greek entries, '+audit.imageCoverage.withImage+' with images across all countries.');
   console.log(`Published ${events.length} concert/festival listings (${genreStatus.withGenres} tagged with artist genres; ${events.filter(x=>x.source==='podiuminfo-agenda').length} agenda-only). Sources: Podiuminfo/Festivalinfo/official venues; no Ticketmaster or Last.fm.`);
