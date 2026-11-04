@@ -1,7 +1,7 @@
 import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=discovery-v5';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=discovery-v5';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=nl-artwork-v7';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
