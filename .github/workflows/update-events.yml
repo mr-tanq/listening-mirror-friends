@@ -6,6 +6,11 @@ on:
       - '.github/workflows/update-events.yml'
       - 'scripts/fetch-events.mjs'
       - 'data/artist-watchlist.json'
+      - 'data/curated-genres.json'
+      - 'data/verified-events.json'
+      - 'js/model.js'
+      - 'js/taste-engine.js'
+      - 'tests/**'
   schedule:
     - cron: '19 5 * * *'
   workflow_dispatch:
