@@ -79,7 +79,14 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
     const img=el('img','deck-poster');img.src=url;img.alt=event.artist+' concert poster';
     img.loading='eager';img.addEventListener('error',()=>{img.remove();image.classList.add('no-image');},{once:true});
     image.append(img);
-  }else image.classList.add('no-image');
+  }else{
+    image.classList.add('no-image');
+    const fallback=el('div','deck-typographic-poster');
+    fallback.append(el('span','deck-typographic-kicker','LIVE / '+(event.country||'')),
+      el('strong','deck-typographic-artist',event.artist||'Live concert'),
+      el('span','deck-typographic-venue',event.venue||event.city||'Concert'));
+    image.append(fallback);
+  }
   image.append(el('span','deck-counter','01 / '+String(remaining).padStart(2,'0')));
   const indicators=el('div','deck-indicators');
   const reject=el('span','deck-verdict deck-reject','PASS');
