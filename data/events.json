@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:39:59.834Z",
+  "updatedAt": "2026-11-04T12:53:47.002Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -2113,23 +2113,6 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/offer/cinemusic/",
       "image": "https://www.more.com/getattachment/51CA524B-0B19-432F-B5F5-A4A4451676F3/evg_cinemusic_1504_525.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "more-731e1ad927b40f74",
-      "artist": "Delines Fest",
-      "artists": [
-        "Delines Fest"
-      ],
-      "date": "2026-11-07",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/delines-fest/",
-      "image": "https://www.more.com/getattachment/A5014CEC-EE60-455A-B2C1-BBF2B332D8F9/evg_delinesfest_1607_854.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -9530,6 +9513,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-137a9a214bf41dde",
+      "artist": "ΒΑΣΙΛΙΚΗ ΜΙΧΑΛΟΠΟΥΛΟΥ",
+      "artists": [
+        "ΒΑΣΙΛΙΚΗ ΜΙΧΑΛΟΠΟΥΛΟΥ"
+      ],
+      "date": "2026-11-20",
+      "venue": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "city": "N. Kosmos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/basiliki-mixalopoulou-stauros-tou-notou-club-4/",
+      "image": "https://www.more.com/getattachment/00092315-CC7D-4294-A7D8-25DB31F8DD96/evg_basilikemikhalopouloustau_1431_1512.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-2fbd792f6bd3fc21",
       "artist": "Δύο ψυχές - Ένα ρομάντζο",
       "artists": [
@@ -15085,7 +15085,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/496611/Ghostface-Killah/Patronaat/",
       "image": "",
@@ -17841,6 +17841,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "more-a4d160cec6ba6799",
+      "artist": "｡･:*˚:✧｡ΟΧΙ ΠΙΑ ΔΑΚΡΥΑ ✧ Α. Επίθετη",
+      "artists": [
+        "｡･:*˚:✧｡ΟΧΙ ΠΙΑ ΔΑΚΡΥΑ ✧ Α. Επίθετη"
+      ],
+      "date": "2026-12-10",
+      "venue": "St. Paul's Anglican Church",
+      "city": "Athena",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/oxi-pia-dakrya-a-epitheti-live-at-st-pauls-anglican-church/",
+      "image": "https://www.more.com/getattachment/F6C2DD7D-AE7F-4177-B023-86B8860FCEE8/evg_okhipiadakrua/aepithete/s_1946_6018.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-497866",
@@ -20691,23 +20708,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-8e41596eddb94cb4",
-      "artist": "Old Man's Child",
-      "artists": [
-        "Old Man's Child"
-      ],
-      "date": "2026-12-18",
-      "venue": "Gagarin 205 Live Music Space",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/omc-live-in-athens/",
-      "image": "https://www.more.com/getattachment/85296D06-D9BD-4864-B00E-1B0ADDEE7745/evg_oldmanschild/yothiria/dec_1158_4318.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
       "id": "gagarin-2026-12-18-old%20man%20s%20child",
       "artist": "OLD MAN'S CHILD",
       "artists": [
@@ -21611,6 +21611,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-e648107357ca9a22",
+      "artist": "GHOSTFACE KILLAH",
+      "artists": [
+        "GHOSTFACE KILLAH"
+      ],
+      "date": "2026-12-22",
+      "venue": "gazarte",
+      "city": "Gazi",
+      "country": "GR",
+      "genre": "Hip-Hop",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/ghostface-killah-live-in-athens/",
+      "image": "https://www.more.com/getattachment/0086B380-E452-4ABA-A2C6-1819FB0B5040/evg_ghostfacekillahliveinathe_1352_1881.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-479030",
       "artist": "Jungle By Night",
       "artists": [
@@ -22268,7 +22285,7 @@
       "venue": "ΙΛΙΟΝ Plus",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/nightkill/secular-upheaval/vicious-void-sto-ilion-plus/",
       "image": "https://www.more.com/getattachment/4513C1C7-FF49-40B2-86A7-C9EC5B555445/evg_nightkill/secularupheaval_0818_5031.png",
@@ -22353,7 +22370,7 @@
       "venue": "Θεατρο Εκθεσιακου Κεντρου Περιστεριου",
       "city": "Peristeri",
       "country": "GR",
-      "genre": "",
+      "genre": "K-Pop",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/k-pop-live-show/",
       "image": "https://www.more.com/getattachment/DCD35B5C-27D1-4C0F-9A72-04B0E5DE8356/evg_k-popliveshow_1339_4595.png",
@@ -22695,7 +22712,7 @@
       "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/anorimoiath2027/",
       "image": "https://www.more.com/getattachment/0D477316-C09C-4BBD-8FC5-64D5E16A011F/evg_anorimoigurobuzionliveste_1747_1801.png",
@@ -23390,7 +23407,7 @@
       "venue": "ΙΛΙΟΝ Plus",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/david-shaw-and-the-beat-live/",
       "image": "https://www.more.com/getattachment/5E3B070F-4D79-4690-9A8D-3C3E5CF30E57/evg_davidshawandthebeatlive_2044_4970.png",
@@ -23938,7 +23955,7 @@
       "venue": "ARCH",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/the-exploited-uk-live-in-athens/",
       "image": "https://www.more.com/getattachment/37D58429-8332-474C-900E-0FE4C10F5396/evg_theexploitedukliveinathens_1435_4963.png",
@@ -25800,7 +25817,7 @@
       "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/blakaut-simeio-miden-etos-deka/",
       "image": "https://www.more.com/getattachment/8658258D-8494-4FCC-9231-AD3EB22C9CC8/evg_blakautsemeiomeden-etosde_1544_854.png",
@@ -28167,7 +28184,7 @@
       "venue": "Piraeus Club Academy",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/afsky-athens/",
       "image": "https://www.more.com/getattachment/5E41396E-0851-4892-A8C5-7650137697A3/evg_afskyathens_1902_1571.png",
@@ -28252,7 +28269,7 @@
       "venue": "Bios Romantso",
       "city": "Athens",
       "country": "GR",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/my-new-band-believe/",
       "image": "https://www.more.com/getattachment/80940BB0-90D0-456C-A881-A4F54F3A4099/evg_mynewbandbelieveliveinath_1615_3092.png",
@@ -28320,7 +28337,7 @@
       "venue": "Death Disco",
       "city": "Monastiraki",
       "country": "GR",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/die-selektion/",
       "image": "https://www.more.com/getattachment/FC8E8356-BD8A-4165-9E80-A028ECDC7B13/evg_dieselektion_2231_949.png",
@@ -28444,6 +28461,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "more-c9a166992fd48e2d",
+      "artist": "ΗΧΗΤΙΚΕΣ ΑΠΟΚΛΙΣΕΙΣ",
+      "artists": [
+        "ΗΧΗΤΙΚΕΣ ΑΠΟΚΛΙΣΕΙΣ"
+      ],
+      "date": "2027-03-18",
+      "venue": "B. & M. THEOCHARAKI FOUNDATION",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/ixitikes-apokliseis-ktiria-ti-nyxta/",
+      "image": "https://www.more.com/getattachment/52F31DA8-9BCA-4010-BEF3-6589C906F302/evg_ekhetikesapokliseisktiria_1108_1320.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-c7eed97c843be79a",
       "artist": "CONJURER",
       "artists": [
@@ -28453,7 +28487,7 @@
       "venue": "Temple",
       "city": "Gazi",
       "country": "GR",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/conjurer-live-black-temple/",
       "image": "https://www.more.com/getattachment/77F52B41-0D7E-4B9F-AC1A-60534268433B/evg_conjurerliveblacktemple_2013_1225.png",
@@ -28531,21 +28565,24 @@
       "verification": "venue-page"
     },
     {
-      "id": "more-20a9413358deac99",
+      "id": "gagarin-2027-03-20-igorrr",
       "artist": "IGORRR",
       "artists": [
+        "Igorrr",
+        "Secret Chiefs 3",
+        "Fange",
         "IGORRR"
       ],
       "date": "2027-03-20",
-      "venue": "Gagarin 205 Live Music Space",
+      "venue": "Gagarin 205",
       "city": "Athens",
       "country": "GR",
-      "genre": "Metal / Experimental / Electronic",
+      "genre": "Metal / Experimental / Electronic / Rock",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/igorrr-athens/",
+      "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "more",
-      "verification": "source-catalog"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -28773,22 +28810,22 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 391,
+    "greeceEvents": 392,
     "greeceFeedError": "",
     "rockingEvents": 42,
-    "rockingWarning": "athens 2026-11: HTTP 503; thessaloniki 2026-11: HTTP 503",
+    "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1240,
     "festivalEvents": 16,
     "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "gagarinCalendarEvents": 21,
+    "gagarinCalendarEvents": 22,
     "gagarinWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 383,
-    "taggedArtists": 232,
+    "genreTaggedEvents": 395,
+    "taggedArtists": 243,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
