@@ -8,7 +8,10 @@ test('audit source and image coverage separately from city/venue',()=>{
   {source:'floyd-calendar',date:'2026-10-30',country:'GR',venue:'Floyd',image:'https://example.com/old.jpg'},
   {source:'podiuminfo-agenda',date:'2026-11-07',country:'NL',venue:'Tivoli',image:'http://example.com/insecure.jpg'}]};
  const a=buildSourceAudit(data,{today:'2026-11-04'});
- assert.equal(a.totalPublished,3);assert.equal(a.greekPublished,2);
+ assert.equal(a.totalPublished,3);
+ assert.equal(a.imageCoverageByCountry.GR.events,2);
+ assert.equal(a.imageCoverageByCountry.GR.withImage,1);
+ assert.equal(a.imageCoverageByCountry.NL.withoutImage,1);assert.equal(a.greekPublished,2);
  assert.equal(a.sources['gagarin-calendar'].withImage,1);
  assert.equal(a.sources.more.withoutImage,1);
  assert.equal(a.sources['podiuminfo-agenda'].withoutImage,1);
