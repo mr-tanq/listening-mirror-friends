@@ -18,6 +18,7 @@ import {importedPartnerEvents,mergePartnerEvents} from './partner-feeds.mjs';
 import {buildSourceAudit} from './catalog-audit.mjs';
 import {dedupeGreekVenueConcerts} from './venue-dedupe.mjs';
 import {watchTechnopolisMusic} from './technopolis-watch.mjs';
+import {recoverCatalogImages} from './event-image-recovery.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = async (file, fallback) => {
@@ -794,7 +795,15 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   for (const [id,detail] of Object.entries(cache.concert.entries)) if (detail?.date<today || detail?.date>festivalEnd || !detail?.date) delete cache.concert.entries[id];
   const deduped=dedupeGreekVenueConcerts([...map.values()]);
   console.log('Greek same-venue cross-source duplicates merged: '+deduped.duplicates);
-  const events=deduped.events.sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));
+  // Reuse legitimate event artwork already present elsewhere in the catalog.
+  const recovered=recoverCatalogImages(deduped.events);
+  // Rocking is already part of the music index; a bounded poster lookup
+  // checks only its dated individual event pages, not search/home pages.
+  const pagePosters=await enrichVenuePosters(recovered.events.filter(e=>e.source==='rocking'&&!e.image),{max:24});
+  const matchedImages=new Map(pagePosters.events.filter(e=>e.image).map(e=>[e.id,e.image]));
+  const events=recovered.events.map(e=>matchedImages.has(e.id)?{...e,image:matchedImages.get(e.id)}:e)
+    .sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));
+  console.log('Art recovery: '+recovered.reused+' reused; Rocking event pages '+pagePosters.found+' images from '+pagePosters.attempts+' pages.');
   const tags=await read('data/artist-tags.json',{artists:{}});
   tags.artists ||= {};
   // Historical provider failures were not valid classifications.
@@ -818,7 +827,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,artworkReused:recovered.reused,rockingPagePosters:pagePosters.found,gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
