@@ -18,6 +18,9 @@ on:
       - 'scripts/musicbrainz-identity.mjs'
       - 'scripts/rate-limit.mjs'
       - 'scripts/artist-image-overrides.mjs'
+      - 'scripts/venue-sources/**'
+      - 'scripts/update-venue-catalog.mjs'
+      - 'data/nl-venue-sources.json'
       - 'data/artist-image-overrides.json'
       - 'js/artist-images.js'
       - 'data/artist-images.json'
@@ -76,12 +79,22 @@ jobs:
           DEEZER_ARTIST_IMAGE_TIME_MS: '240000'
           IDENTITY_LOOKUPS_PER_RUN: '120'
           IDENTITY_TIME_MS: '240000'
+        id: catalog
         run: node scripts/fetch-events.mjs
+      # Venue-first stage: official artwork + independent discovery. Runs even
+      # when the Podiuminfo-based step failed, starting from the last
+      # published events.json, so the catalogue keeps updating.
+      - name: Venue-first discovery and official artwork
+        if: ${{ !cancelled() && steps.catalog.conclusion != 'skipped' }}
+        env:
+          VENUE_TIME_MS: '200000'
+        run: node scripts/update-venue-catalog.mjs
       - name: Commit public catalog and scraper cache
+        if: ${{ !cancelled() && steps.catalog.conclusion != 'skipped' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json data/artist-images.json data/artist-identities.json
+          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json data/artist-images.json data/artist-identities.json data/venue-events.json data/venue-image-candidates.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh concert feed and artist genre metadata"
             for attempt in 1 2 3 4 5 6 7 8; do
