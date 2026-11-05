@@ -1,77 +1,136 @@
 /**
- * Fill the public artist-image cache with high-resolution artist portraits.
- * Runs exclusively in the scheduled Node job (never in visitors' browsers).
- * Uses Deezer's public artist search, as in the original Listening Mirror.
- * Matches the FULL artist name exactly; skips ambiguous results.
+ * Fill the public artist-image cache with high-resolution Deezer artist
+ * portraits. Runs only in the scheduled Node job, never in visitors' browsers.
+ *
+ * Identity rules (precision over recall):
+ *  - the artist name must match EXACTLY after normalisation;
+ *  - exactly one Deezer artist id may carry that name, otherwise the name is
+ *    recorded as ambiguous (with the candidate ids) for the MusicBrainz stage;
+ *  - a portrait that is byte-identical to one of the artist's album covers
+ *    (same Deezer md5) is rejected: we want band photos, not cover art.
+ *
+ * Only URLs are stored: images are hot-linked from Deezer's CDN, never copied.
  */
-import {artistKey,verifiedArtistPhoto} from '../js/artist-images.js';
+import {artistKey,verifiedArtistPhoto,headlinerNames,artistImageFor} from '../js/artist-images.js';
+import {createRateLimiter,isoDays} from './rate-limit.mjs';
 
-const isoDays=(day,n)=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);};
-const goodName=name=>{
+const GENERIC=/^(?:unknown|festival|various artists|special guests?|live music|concert|sold out|uitverkocht|tba|tbc|tbd|dj|djs|line ?up|open mic|jam session|karaoke|silent disco|quiz)$/i;
+export const goodName=name=>{
  const key=artistKey(name);
- return key.length>=4&&key.length<=75&&key.split(' ').length<=9&&
- !/^(?:unknown|festival|various artists|special guests?|live music|concert|sold out|tba)$/i.test(key)&&
- !/(?:festival|fest|w\/|\swith\s|\sversus\s|\svs\s|\slive\sat\s)/i.test(key);
+ return key.length>=2&&key.length<=75&&key.split(' ').length<=9&&!GENERIC.test(key)&&
+  !/(?:festival|\bfest\b|w\/|\swith\s|\sversus\s|\svs\s|\slive\sat\s|\bnight\b|\bnacht\b)/i.test(key);
 };
+const md5Of=url=>(String(url||'').match(/\/images\/(?:artist|cover)\/([a-f0-9]{16,64})\//i)||[])[1]?.toLowerCase()||'';
+
+/**
+ * Upcoming NL/BE/GR events without a poster or cached photo, expanded into
+ * headliner names. Sorted so names with the most concerts go first.
+ */
 export function selectArtistCandidates(events,artistCache,{today=new Date().toISOString().slice(0,10)}={}){
  const all=new Map();
  for(const event of events||[]){
-  if(!['NL','BE','GR'].includes(event.country)||event.date<today)continue;
-  const name=String(event.artist||'').trim(),key=artistKey(name);
-  if(!goodName(name)||artistCache?.artists?.[key]?.image)continue;
-  const row=all.get(key)||{name,key,count:0,nextDate:event.date};
-  row.count++;
-  if(event.date<row.nextDate)row.nextDate=event.date;
-  all.set(key,row);
+  if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today||event.image)continue;
+  if(artistImageFor(event,artistCache))continue;
+  headlinerNames(event).filter(goodName).forEach((name,rank)=>{
+   const key=artistKey(name);
+   const row=all.get(key)||{name,key,count:0,rank,nextDate:event.date,country:event.country,genre:event.genre||''};
+   row.count++;row.rank=Math.min(row.rank,rank);
+   if(event.date<row.nextDate)row.nextDate=event.date;
+   all.set(key,row);
+  });
  }
- return [...all.values()].sort((a,b)=>b.count-a.count||a.nextDate.localeCompare(b.nextDate)||a.key.localeCompare(b.key));
+ return [...all.values()].sort((a,b)=>a.rank-b.rank||b.count-a.count||a.nextDate.localeCompare(b.nextDate)||a.key.localeCompare(b.key));
 }
+
+/** Pick one unambiguous exact-name artist from a Deezer /search/artist payload. */
 export function artistFromDeezerSearch(payload,name){
- if(!payload||payload.error||!Array.isArray(payload.data))return null;
- const key=artistKey(name);
- const matches=payload.data.filter(item=>artistKey(item?.name)===key&&
-   Number.isSafeInteger(item?.id)&&item.id>0&&verifiedArtistPhoto(item.picture_xl||item.picture_big||''));
- const ids=new Set(matches.map(x=>x.id));
- if(ids.size!==1)return null; // Avoid choosing the wrong same-named band
- const found=matches[0];
- return {name,source:'deezer',kind:'artist-photo',image:verifiedArtistPhoto(found.picture_xl||found.picture_big),
-  deezerId:found.id,sourceUrl:'https://www.deezer.com/artist/'+found.id};
+ return deezerSearchVerdict(payload,name).artist;
 }
+export function deezerSearchVerdict(payload,name){
+ if(!payload||payload.error||!Array.isArray(payload.data))return {artist:null,reason:'invalid'};
+ const key=artistKey(name);
+ const exact=payload.data.filter(item=>artistKey(item?.name)===key&&Number.isSafeInteger(item?.id)&&item.id>0);
+ const withPhoto=exact.filter(item=>verifiedArtistPhoto(item.picture_xl||item.picture_big||''));
+ const ids=[...new Set(exact.map(x=>x.id))];
+ if(!withPhoto.length)return {artist:null,reason:exact.length?'no-photo':'not-found',candidates:ids};
+ if(ids.length!==1)return {artist:null,reason:'ambiguous-same-name',candidates:ids};
+ const found=withPhoto[0];
+ return {artist:deezerEntry(found,name,'exact-unique-name')};
+}
+export function deezerEntry(found,name,matchedBy){
+ const image=verifiedArtistPhoto(found.picture_xl||found.picture_big||'');
+ if(!image)return null;
+ return {name,source:'deezer',kind:'artist-photo',image,deezerId:found.id,matchedBy,
+  sourceUrl:'https://www.deezer.com/artist/'+found.id,
+  credit:{text:'Photo via Deezer',url:'https://www.deezer.com/artist/'+found.id}};
+}
+/** True when the "portrait" is literally one of the artist's album covers. */
+export function isAlbumCoverPortrait(image,albumsPayload){
+ const md5=md5Of(image);
+ if(!md5||!Array.isArray(albumsPayload?.data))return false;
+ return albumsPayload.data.some(album=>String(album?.md5_image||md5Of(album?.cover_xl)||'').toLowerCase()===md5);
+}
+
+export function createDeezerClient({fetcher=fetch,clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),
+ limiter=createRateLimiter({max:40,perMs:5000,clock,delay})}={}){
+ let requests=0;
+ async function get(path){
+  for(let attempt=0;attempt<2;attempt++){
+   await limiter.wait();requests++;
+   const response=await fetcher('https://api.deezer.com'+path,{headers:{Accept:'application/json','User-Agent':'ListeningMirrorFriends/1.1 (+https://github.com/mr-tanq/listening-mirror-friends)'},
+    signal:AbortSignal.timeout(6500)});
+   if(response.status===429){await delay(5500);continue;}
+   if(!response.ok)throw new Error('HTTP '+response.status);
+   const data=await response.json();
+   // Deezer reports quota (4) and busy (700) inside a 200 response.
+   if([4,700].includes(data?.error?.code)){await delay(5500);continue;}
+   if(data?.error?.code===800)return {data:[],notFound:true};
+   if(data?.error)throw new Error('Provider error '+(data.error.code||''));
+   return data;
+  }
+  const quota=new Error('Deezer quota exceeded');quota.code='RATE_LIMIT';throw quota;
+ }
+ return {get,get requests(){return requests;}};
+}
+
 export async function enrichDeezerArtistImages(events,cache,{
- today=new Date().toISOString().slice(0,10),fetcher=fetch,maxRequests=80,maxDurationMs=110000,
- clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms))
+ today=new Date().toISOString().slice(0,10),fetcher=fetch,maxRequests=450,maxDurationMs=240000,
+ clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),checkAlbumCovers=true,client
 }={}){
  const result={version:1,...cache,artists:{...(cache?.artists||{})},attempted:{...(cache?.attempted||{})}};
  const candidates=selectArtistCandidates(events,result,{today});
- const start=clock();let requests=0,found=0,notFound=0,errors=0,skipped=0,consecutiveFailures=0;
+ const deezer=client||createDeezerClient({fetcher,clock,delay});
+ const start=clock();let found=0,notFound=0,ambiguous=0,coverRejected=0,errors=0,skipped=0,consecutiveFailures=0;
+ const resolvedKeys=new Set();
  for(const item of candidates){
-  if(requests>=maxRequests||clock()-start>=maxDurationMs||consecutiveFailures>=3)break;
-  if(result.attempted[item.key]?.retryAfter>today){skipped++;continue;}
-  requests++;
+  if(deezer.requests>=maxRequests||clock()-start>=maxDurationMs||consecutiveFailures>=3)break;
+  if(result.artists[item.key]?.image||result.attempted[item.key]?.retryAfter>today){skipped++;continue;}
   try{
-   const url='https://api.deezer.com/search/artist?q='+encodeURIComponent(item.name)+'&limit=15';
-   const response=await fetcher(url,{headers:{Accept:'application/json', 'User-Agent':'ListeningMirrorFriends/1.0'},
-     signal:AbortSignal.timeout(6500)});
-   if(!response.ok)throw new Error('HTTP '+response.status);
-   const data=await response.json();
-   if(data?.error)throw new Error('Provider error');
-   const picked=artistFromDeezerSearch(data,item.name);
+   const data=await deezer.get('/search/artist?q='+encodeURIComponent(item.name)+'&limit=25');
+   const verdict=deezerSearchVerdict(data,item.name);
+   let picked=verdict.artist;
+   if(picked&&checkAlbumCovers&&deezer.requests<maxRequests){
+    const albums=await deezer.get('/artist/'+picked.deezerId+'/albums?limit=100').catch(()=>null);
+    if(isAlbumCoverPortrait(picked.image,albums)){picked=null;verdict.reason='album-cover-as-portrait';coverRejected++;}
+   }
    if(picked){
-    result.artists[item.key]={...picked,checkedAt:new Date().toISOString()};
-    delete result.attempted[item.key];found++;
+    result.artists[item.key]={...picked,checkedAt:new Date(clock()).toISOString()};
+    delete result.attempted[item.key];found++;resolvedKeys.add(item.key);
    }else{
-    result.attempted[item.key]={retryAfter:isoDays(today,30),reason:'No unambiguous exact artist'};
-    notFound++;
+    if(verdict.reason==='ambiguous-same-name')ambiguous++;else notFound++;
+    result.attempted[item.key]={retryAfter:isoDays(today,verdict.reason==='ambiguous-same-name'?60:30),
+     reason:verdict.reason,...(verdict.candidates?.length?{deezerCandidates:verdict.candidates.slice(0,10)}:{})};
    }
    consecutiveFailures=0;
   }catch(error){
    errors++;consecutiveFailures++;
    result.attempted[item.key]={retryAfter:isoDays(today,2),reason:String(error?.message||error).slice(0,75)};
+   if(error?.code==='RATE_LIMIT')break;
   }
-  if(requests<maxRequests)await delay(180);
  }
- // Drop attempts for artists no longer in the rolling catalog.
+ // Drop attempts for artists no longer in the rolling catalogue.
  const active=new Set(candidates.map(c=>c.key));
  for(const key of Object.keys(result.attempted))if(!active.has(key))delete result.attempted[key];
- return {cache:result,stats:{candidates:candidates.length,requests,found,notFound,errors,skipped,photos:Object.keys(result.artists).length}};
+ return {cache:result,stats:{candidates:candidates.length,requests:deezer.requests,found,notFound,ambiguous,coverRejected,
+  errors,skipped,photos:Object.keys(result.artists).length}};
 }
