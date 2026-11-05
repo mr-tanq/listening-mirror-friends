@@ -147,7 +147,7 @@ function paradisoSite(){
 test('end to end: images stay candidates until permitted; discovery adds new official concerts only',async()=>{
  const feed={events:[cat('MONO','2026-12-01','Paradiso',{id:'podiuminfo-1',artists:['MONO','Jo Quail']}),cat('Old','2026-10-01','Paradiso',{id:'old'})]};
  const pending={venues:{paradiso:{discovery:true,imageUse:'pending'}}};
- const r=await runVenueStage({today:'2026-11-05',feed,cache:{},policy:pending,fetcher:paradisoSite(),only:['paradiso']});
+ const r=await runVenueStage({today:'2026-11-05',feed,cache:{},policy:pending,fetcher:paradisoSite(),only:['paradiso'],delay:async()=>{}});
  const mono=r.events.find(e=>e.id==='podiuminfo-1');
  assert.equal(mono.officialUrl,'https://www.paradiso.nl/programma/mono/2900001');
  assert.equal(mono.officialMatch.confidence,1);
@@ -160,7 +160,7 @@ test('end to end: images stay candidates until permitted; discovery adds new off
  assert.equal(r.report.venues.paradiso.enrichment.matched,1);
 
  const permitted={venues:{paradiso:{discovery:true,imageUse:'permitted'}}};
- const r2=await runVenueStage({today:'2026-11-05',feed,cache:r.cache,policy:permitted,fetcher:async()=>{throw new Error('cache should suffice');},only:['paradiso']});
+ const r2=await runVenueStage({today:'2026-11-05',feed,cache:r.cache,policy:permitted,fetcher:async()=>{throw new Error('cache should suffice');},only:['paradiso'],delay:async()=>{}});
  const mono2=r2.events.find(e=>e.id==='podiuminfo-1');
  assert.equal(mono2.image,'https://assets.paradiso.nl/images/transforms/event/mono.jpg');
  assert.equal(mono2.imageSource,'venue-official');
@@ -168,11 +168,11 @@ test('end to end: images stay candidates until permitted; discovery adds new off
 
  // An existing (verified) event image is never replaced
  const withPoster={events:[{...feed.events[0],image:'https://reviewed.example/poster.jpg'}]};
- const r3=await runVenueStage({today:'2026-11-05',feed:withPoster,cache:r.cache,policy:permitted,fetcher:async()=>res(500,'',''),only:['paradiso']});
+ const r3=await runVenueStage({today:'2026-11-05',feed:withPoster,cache:r.cache,policy:permitted,fetcher:async()=>res(500,'',''),only:['paradiso'],delay:async()=>{}});
  assert.equal(r3.events.find(e=>e.id==='podiuminfo-1').image,'https://reviewed.example/poster.jpg');
 
  // Discovery off: nothing is added
- const r4=await runVenueStage({today:'2026-11-05',feed,cache:r.cache,policy:{venues:{paradiso:{discovery:false,imageUse:'pending'}}},fetcher:async()=>res(500,'',''),only:['paradiso']});
+ const r4=await runVenueStage({today:'2026-11-05',feed,cache:r.cache,policy:{venues:{paradiso:{discovery:false,imageUse:'pending'}}},fetcher:async()=>res(500,'',''),only:['paradiso'],delay:async()=>{}});
  assert.equal(r4.events.filter(e=>e.source==='venue-official').length,0);
 });
 

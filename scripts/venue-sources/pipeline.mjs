@@ -150,6 +150,35 @@ export function enrichCatalogue(events,adapters,cache,policy,{today}){
  return {events:out,stats,candidates};
 }
 
+/**
+ * Keep previously discovered venue concerts correct over time:
+ *  - drop a venue concert once another source lists the same show (the
+ *    other record stays and gets the official link through enrichment);
+ *  - drop it when discovery is switched off for that venue;
+ *  - drop it when the venue now marks the page cancelled, or the page left
+ *    the venue's listing during a successful refresh (not when access failed).
+ */
+export function reconcileVenueEvents(events,adapters,cache,policy,{today,refreshedToday=new Set()}={}){
+ const removed={duplicate:0,policy:0,cancelled:0,delisted:0};
+ const others=events.filter(e=>e.source!=='venue-official');
+ const kept=events.filter(e=>{
+  if(e.source!=='venue-official')return true;
+  const adapter=adapters.find(a=>e.id.startsWith('venue-'+a.id+'-'));
+  if(!adapter)return true;
+  if(policy?.venues?.[adapter.id]?.discovery!==true){removed.policy++;return false;}
+  const asOfficial={url:e.url,title:e.artist,performers:e.artists||[],date:e.date,venueName:''};
+  const words=new Set([...(e.artists||[]),e.artist].map(artistKey).flatMap(k=>k.split(' ')).filter(w=>w.length>=4));
+  const dup=others.some(o=>o.date===e.date&&venueMatches(adapter,o.venue)&&(scoreMatch(o,asOfficial,adapter).verdict==='match'||
+   [...headlinerNames(o),...(o.artists||[])].map(artistKey).flatMap(k=>k.split(' ')).some(w=>words.has(w))));
+  if(dup){removed.duplicate++;return false;}
+  const page=Object.values(cache.venues?.[adapter.id]?.pages||{}).find(p=>p.event?.url===e.url);
+  if(page?.event?.cancelled){removed.cancelled++;return false;}
+  if(!page&&refreshedToday.has(adapter.id)){removed.delisted++;return false;}
+  return true;
+ });
+ return {events:kept,removed};
+}
+
 /** B. Add official concerts that the catalogue does not have yet. */
 export function discoverFromVenues(events,adapters,cache,policy,{today,endDate}){
  const added=[];const stats={};

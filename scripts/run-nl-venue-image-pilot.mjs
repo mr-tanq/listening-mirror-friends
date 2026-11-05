@@ -12,4 +12,5 @@ const cache=await load('data/venue-events.json').catch(()=>({venues:{}}));
 const only=process.env.VENUES?process.env.VENUES.split(','):null;
 const {report}=await runVenueStage({audit:true,feed,policy,cache,only});
 for(const [id,v] of Object.entries(report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
+for(const d of report.discovered)console.log('DISCOVERED '+JSON.stringify(d));
 console.log('TOTALS '+JSON.stringify(report.totals));

@@ -10,7 +10,7 @@
  */
 import {readFile,writeFile} from 'node:fs/promises';
 import {NL_VENUE_ADAPTERS} from './venue-sources/adapters.mjs';
-import {refreshVenue,enrichCatalogue,discoverFromVenues,officialEventsOf} from './venue-sources/pipeline.mjs';
+import {refreshVenue,enrichCatalogue,discoverFromVenues,officialEventsOf,reconcileVenueEvents} from './venue-sources/pipeline.mjs';
 import {bestOfficialMatch,venueMatches,scoreMatch} from './venue-sources/match.mjs';
 
 const root=new URL('../',import.meta.url);
@@ -19,18 +19,22 @@ const write=(file,data)=>writeFile(new URL(file,root),JSON.stringify(data,null,2
 const addDays=(day,n)=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);};
 
 export async function runVenueStage({today=new Date().toISOString().slice(0,10),audit=false,only=null,fetcher=fetch,
- feed,cache,policy,maxDurationMs=Number(process.env.VENUE_TIME_MS||200000)}={}){
+ feed,cache,policy,maxDurationMs=Number(process.env.VENUE_TIME_MS||200000),delay}={}){
  const adapters=NL_VENUE_ADAPTERS.filter(a=>!only||only.includes(a.id));
  cache={version:1,venues:{},...cache};cache.venues={...cache.venues};
  // Drop concerts that have passed, so the feed stays correct even when the
  // main catalogue job could not run.
  const catalogue=(feed.events||[]).filter(e=>e.date>=today);
  const refresh=await Promise.all(adapters.map(async a=>{
-  const r=await refreshVenue(a,cache.venues[a.id],{catalogue,today,fetcher,maxDurationMs});
+  const r=await refreshVenue(a,cache.venues[a.id],{catalogue,today,fetcher,maxDurationMs,...(delay?{delay}:{})});
   cache.venues[a.id]=r.entry;
   return [a.id,r.stats];
  }));
- const enriched=enrichCatalogue(catalogue,adapters,cache,policy,{today});
+ // Venues whose listing was successfully read today: only for these may a
+ // missing page mean "delisted".
+ const refreshedToday=new Set(refresh.filter(([,s])=>s.access==='ok'&&s.listed>0).map(([id])=>id));
+ const reconciled=reconcileVenueEvents(catalogue,adapters,cache,policy,{today,refreshedToday});
+ const enriched=enrichCatalogue(reconciled.events,adapters,cache,policy,{today});
  const discovered=discoverFromVenues(enriched.events,adapters,cache,policy,{today,endDate:addDays(today,150)});
  const events=discovered.events.sort((a,b)=>a.date.localeCompare(b.date)||String(a.artist).localeCompare(String(b.artist)));
  const report={generatedAt:new Date().toISOString(),today,mode:audit?'audit':'update',venues:{}};
@@ -52,9 +56,14 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
    sampleUnmatched:unmatched.slice(0,5).map(e=>({artist:e.artist,date:e.date,
     sameDayOfficial:officials.filter(o=>o.date===e.date).slice(0,3).map(o=>o.title+(o.venueName?' @ '+o.venueName:''))}))};
  }
+ // Every discovered concert next to the catalogue's other concerts that
+ // night at that venue, for human duplicate review in the audit log.
+ report.discovered=discovered.added.map(e=>({artist:e.artist,date:e.date,venue:e.venue,url:e.url,
+  sameNightCatalogue:enriched.events.filter(x=>x.date===e.date&&x.venue===e.venue).map(x=>x.artist).slice(0,6)}));
  report.totals={catalogueEvents:catalogue.length,officialMatches:enriched.candidates.length,
   imagesPublished:enriched.candidates.filter(c=>c.published).length,imageCandidatesPending:enriched.candidates.filter(c=>!c.published).length,
-  discoveredEvents:discovered.added.length};
+  discoveredEvents:discovered.added.length,venueEventsRemoved:reconciled.removed,
+  venueEventsPublished:events.filter(e=>e.source==='venue-official').length};
  return {events,cache,report,candidates:enriched.candidates};
 }
 
@@ -67,13 +76,19 @@ if(import.meta.url===`file://${process.argv[1]}`){
  const result=await runVenueStage({audit,only,feed,cache,policy});
  // One line per venue keeps CI logs readable and machine-parsable.
  for(const [id,v] of Object.entries(result.report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
+ for(const d of result.report.discovered)console.log('DISCOVERED '+JSON.stringify(d));
  console.log('TOTALS '+JSON.stringify(result.report.totals));
  if(!audit){
   const before=(feed.events||[]).length;
+  // Never publish a catalogue built from a missing or unreadable feed: that
+  // would replace ~1,600 concerts with venue discoveries only.
+  if(before<100){console.error('Refusing to write events.json: input feed has only '+before+' events.');process.exitCode=1;}
+  else {
   await write('data/venue-events.json',result.cache);
   await write('data/venue-image-candidates.json',{generatedAt:result.report.generatedAt,
    note:'Official artwork matched to catalogue concerts. Only venues with imageUse "permitted" are published.',candidates:result.candidates});
   await write('data/events.json',{...feed,events:result.events,venueSources:{updatedAt:result.report.generatedAt,...result.report.totals}});
   console.log(`Venue stage: ${before} -> ${result.events.length} events; ${result.report.totals.officialMatches} official matches; ${result.report.totals.discoveredEvents} discovered.`);
+  }
  }
 }
