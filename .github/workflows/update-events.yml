@@ -14,6 +14,7 @@ on:
       - 'scripts/venue-dedupe.mjs'
       - 'scripts/event-image-recovery.mjs'
       - 'scripts/podiuminfo-images.mjs'
+      - 'scripts/deezer-artist-images.mjs'
       - 'js/artist-images.js'
       - 'data/artist-images.json'
       - 'scripts/verified-posters.mjs'
@@ -67,6 +68,8 @@ jobs:
           NEW_GENRE_LOOKUPS_PER_RUN: '60'
           PODIUMINFO_IMAGE_REQUESTS: '45'
           PODIUMINFO_IMAGE_TIME_MS: '150000'
+          DEEZER_ARTIST_IMAGE_REQUESTS: '70'
+          DEEZER_ARTIST_IMAGE_TIME_MS: '105000'
         run: node scripts/fetch-events.mjs
       - name: Commit public catalog and scraper cache
         run: |
