@@ -88,6 +88,7 @@ jobs:
         if: ${{ !cancelled() && steps.catalog.conclusion != 'skipped' }}
         env:
           VENUE_TIME_MS: '200000'
+          VENUE_GENRE_LOOKUPS_PER_RUN: '12'
         run: node scripts/update-venue-catalog.mjs
       - name: Commit public catalog and scraper cache
         if: ${{ !cancelled() && steps.catalog.conclusion != 'skipped' }}
