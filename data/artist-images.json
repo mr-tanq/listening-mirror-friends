@@ -1,5 +1,807 @@
 {
   "version": 1,
-  "artists": {},
+  "artists": {
+    "fink": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/022c398e8ca51eab67c613f594f6a196/1000x1000-000000-80-0-0.jpg",
+      "name": "Fink",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 8094,
+      "sourceUrl": "https://www.deezer.com/artist/8094",
+      "checkedAt": "2026-07-29T11:49:23.829Z"
+    },
+    "hippotraktor": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/026ca9d091cd8f0f70c271e91cb54e97/1000x1000-000000-80-0-0.jpg",
+      "name": "Hippotraktor",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 12834215,
+      "sourceUrl": "https://www.deezer.com/artist/12834215",
+      "checkedAt": "2026-08-03T06:50:20.366Z"
+    },
+    "temples": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/25fa967aadd1a4ef9a63cb81d1917d1a/1000x1000-000000-80-0-0.jpg",
+      "name": "Temples",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1178234,
+      "sourceUrl": "https://www.deezer.com/artist/1178234",
+      "checkedAt": "2026-07-29T11:50:17.314Z"
+    },
+    "digitalism": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/21e56c7147508853dcdfd9997cd8d271/1000x1000-000000-80-0-0.jpg",
+      "name": "Digitalism",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2508,
+      "sourceUrl": "https://www.deezer.com/artist/2508",
+      "checkedAt": "2026-07-29T11:49:11.812Z"
+    },
+    "etran de l air": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e1c5072b5f70108d8c6098df373d310e/1000x1000-000000-80-0-0.jpg",
+      "name": "Etran de L’Aïr",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 11326050,
+      "sourceUrl": "https://www.deezer.com/artist/11326050",
+      "checkedAt": "2026-11-01T04:36:08.479Z"
+    },
+    "oi va voi": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/dc56898e53d9d2459b1650eac4224d10/1000x1000-000000-80-0-0.jpg",
+      "name": "Oi Va Voi",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 79536,
+      "sourceUrl": "https://www.deezer.com/artist/79536",
+      "checkedAt": "2026-07-29T11:50:20.850Z"
+    },
+    "korn": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "name": "Korn",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 267400112,
+      "sourceUrl": "https://www.deezer.com/artist/267400112",
+      "checkedAt": "2026-07-29T11:50:22.097Z"
+    },
+    "deep purple": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/7e0f1ed0bd551dd9d8941bd9f21271b2/1000x1000-000000-80-0-0.jpg",
+      "name": "Deep Purple",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 864,
+      "sourceUrl": "https://www.deezer.com/artist/864",
+      "checkedAt": "2026-07-29T11:49:03.643Z"
+    },
+    "adult dvd": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/c37bcbe6d2e0f3c98eedc0e59a11119c/1000x1000-000000-80-0-0.jpg",
+      "name": "Adult DVD",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 121127372,
+      "sourceUrl": "https://www.deezer.com/artist/121127372",
+      "checkedAt": "2026-11-01T04:35:54.406Z"
+    },
+    "mogwai": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/2be8f687263d714d876beb6a82b10d21/1000x1000-000000-80-0-0.jpg",
+      "name": "Mogwai",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1207,
+      "sourceUrl": "https://www.deezer.com/artist/1207",
+      "checkedAt": "2026-07-29T11:49:14.648Z"
+    },
+    "piss": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/63ed40ab8588b44fb77fcd72a6510b09/1000x1000-000000-80-0-0.jpg",
+      "name": "PISS",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 419317862,
+      "sourceUrl": "https://www.deezer.com/artist/419317862",
+      "checkedAt": "2026-11-01T04:35:57.804Z"
+    },
+    "kelsey lu": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/3b9ef80ecd88165651fa07248b121391/1000x1000-000000-80-0-0.jpg",
+      "name": "Kelsey Lu",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 10895686,
+      "sourceUrl": "https://www.deezer.com/artist/10895686",
+      "checkedAt": "2026-11-01T04:36:05.866Z"
+    },
+    "paradise lost": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/764b0045f6c8a54dff6718349cf91ce0/1000x1000-000000-80-0-0.jpg",
+      "name": "PARADISE LOST",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 3021,
+      "sourceUrl": "https://www.deezer.com/artist/3021",
+      "checkedAt": "2026-07-29T11:49:04.060Z"
+    },
+    "eek a mouse": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/ccce781d9fbe9437f890abe48e90e61c/1000x1000-000000-80-0-0.jpg",
+      "name": "Eek-a-Mouse",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2719,
+      "sourceUrl": "https://www.deezer.com/artist/2719",
+      "checkedAt": "2026-07-29T11:50:13.491Z"
+    },
+    "froukje": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/bc5b55ee2c9486afc16d8650516f771d/1000x1000-000000-80-0-0.jpg",
+      "name": "Froukje",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 83437732,
+      "sourceUrl": "https://www.deezer.com/artist/83437732",
+      "checkedAt": "2026-11-01T04:35:46.323Z"
+    },
+    "supersuckers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/96531a03014f9318a7faccb7757a463a/1000x1000-000000-80-0-0.jpg",
+      "name": "Supersuckers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 66893,
+      "sourceUrl": "https://www.deezer.com/artist/66893",
+      "checkedAt": "2026-11-01T04:35:40.721Z"
+    },
+    "elmer": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/65eafcf9c60a533c90ae364911488fc9/1000x1000-000000-80-0-0.jpg",
+      "name": "Elmer",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 337074641,
+      "sourceUrl": "https://www.deezer.com/artist/337074641",
+      "checkedAt": "2026-11-01T16:37:54.175Z"
+    },
+    "hiigo": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/b09532dab930777e4069e47af86cc599/1000x1000-000000-80-0-0.jpg",
+      "name": "Hiigo",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 131610002,
+      "sourceUrl": "https://www.deezer.com/artist/131610002",
+      "checkedAt": "2026-11-01T16:37:55.711Z"
+    },
+    "nordic giants": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/c228d535610382d7519a0e16a97ba069/1000x1000-000000-80-0-0.jpg",
+      "name": "Nordic Giants",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1058737,
+      "sourceUrl": "https://www.deezer.com/artist/1058737",
+      "checkedAt": "2026-10-18T09:47:48.548Z"
+    },
+    "solstafir": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/41b88ba274e2b0b5155bc3e285a19e19/1000x1000-000000-80-0-0.jpg",
+      "name": "Sólstafir",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 182911,
+      "sourceUrl": "https://www.deezer.com/artist/182911",
+      "checkedAt": "2026-07-29T11:49:39.489Z"
+    },
+    "changeling": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/f64091b6b34a3ebbbf7032c0bd819443/1000x1000-000000-80-0-0.jpg",
+      "name": "Changeling",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 302795421,
+      "sourceUrl": "https://www.deezer.com/artist/302795421",
+      "checkedAt": "2026-09-15T10:18:06.229Z"
+    },
+    "employed to serve": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/262b1bd9ee4012a93a63722aee45410e/1000x1000-000000-80-0-0.jpg",
+      "name": "Employed To Serve",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5550954,
+      "sourceUrl": "https://www.deezer.com/artist/5550954",
+      "checkedAt": "2026-07-29T11:49:57.969Z"
+    },
+    "haevn": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/eb74b9520a3fabe3297f4921610f561f/1000x1000-000000-80-0-0.jpg",
+      "name": "HAEVN",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 6758479,
+      "sourceUrl": "https://www.deezer.com/artist/6758479",
+      "checkedAt": "2026-07-29T11:50:12.315Z"
+    },
+    "helldorado": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/830e09508f134b0c7efaaebd13be4f17/1000x1000-000000-80-0-0.jpg",
+      "name": "Helldorado",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 329014,
+      "sourceUrl": "https://www.deezer.com/artist/329014",
+      "checkedAt": "2026-11-01T04:35:39.260Z"
+    },
+    "martin kohlstedt": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/34339ddae73e5c9742d96bf432b3ef61/1000x1000-000000-80-0-0.jpg",
+      "name": "Martin Kohlstedt",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 4099221,
+      "sourceUrl": "https://www.deezer.com/artist/4099221",
+      "checkedAt": "2026-08-23T05:55:10.340Z"
+    },
+    "the wallflowers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/682e6edec799b7715dc53b8f9a04254e/1000x1000-000000-80-0-0.jpg",
+      "name": "The Wallflowers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 3459,
+      "sourceUrl": "https://www.deezer.com/artist/3459",
+      "checkedAt": "2026-09-06T09:35:35.372Z"
+    },
+    "bleachers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/16b4bac07438d0616f2a29fac91d311b/1000x1000-000000-80-0-0.jpg",
+      "name": "Bleachers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5525754,
+      "sourceUrl": "https://www.deezer.com/artist/5525754",
+      "checkedAt": "2026-11-01T04:35:55.674Z"
+    },
+    "pro pain": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/eb4defa21d35a606d21a8852f231cf03/1000x1000-000000-80-0-0.jpg",
+      "name": "PRO-PAIN",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 389890,
+      "sourceUrl": "https://www.deezer.com/artist/389890",
+      "checkedAt": "2026-07-29T11:49:52.527Z"
+    },
+    "soen": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/da20571c1465d54631d6d7338f5cc1db/1000x1000-000000-80-0-0.jpg",
+      "name": "Soen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1581851,
+      "sourceUrl": "https://www.deezer.com/artist/1581851",
+      "checkedAt": "2026-07-29T11:50:06.507Z"
+    },
+    "maria arnal": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/7a81490a6e77fe72039ed77e550b9f3c/1000x1000-000000-80-0-0.jpg",
+      "name": "Maria Arnal",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 9878116,
+      "sourceUrl": "https://www.deezer.com/artist/9878116",
+      "checkedAt": "2026-11-01T16:38:06.164Z"
+    },
+    "jet van der steen": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/3a9b09e24e1d655bf4ad3e9080749bae/1000x1000-000000-80-0-0.jpg",
+      "name": "Jet van der Steen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 54865922,
+      "sourceUrl": "https://www.deezer.com/artist/54865922",
+      "checkedAt": "2026-11-01T04:35:49.332Z"
+    },
+    "max cooper": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/840f8fb8174a83cd227a81d24f667fd9/1000x1000-000000-80-0-0.jpg",
+      "name": "Max Cooper",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 181041,
+      "sourceUrl": "https://www.deezer.com/artist/181041",
+      "checkedAt": "2026-11-01T04:36:34.522Z"
+    },
+    "prong": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/ef98f71cf0b548f30bb94b78ae3e47e9/1000x1000-000000-80-0-0.jpg",
+      "name": "Prong",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 12970,
+      "sourceUrl": "https://www.deezer.com/artist/12970",
+      "checkedAt": "2026-11-01T04:35:40.477Z"
+    },
+    "jose gonzalez": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/89efba96bd7a25b879f35bd5ac3003bd/1000x1000-000000-80-0-0.jpg",
+      "name": "José González",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1169,
+      "sourceUrl": "https://www.deezer.com/artist/1169",
+      "checkedAt": "2026-07-29T11:50:14.062Z"
+    },
+    "imperial triumphant": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/bfb3ec42fc28c54665dfad3bbc966936/1000x1000-000000-80-0-0.jpg",
+      "name": "Imperial Triumphant",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 6792237,
+      "sourceUrl": "https://www.deezer.com/artist/6792237",
+      "checkedAt": "2026-08-03T06:50:23.750Z"
+    },
+    "kaat van stralen": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/516063146b767d6713dc6aecae1bd4ac/1000x1000-000000-80-0-0.jpg",
+      "name": "Kaat Van Stralen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 184301687,
+      "sourceUrl": "https://www.deezer.com/artist/184301687",
+      "checkedAt": "2026-11-01T04:35:52.864Z"
+    },
+    "χατ τρικ": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/1b08dd066d2319ced1da7e67f532a0e4/1000x1000-000000-80-0-0.jpg",
+      "name": "ΧΑΤ ΤΡΙΚ",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 74722272,
+      "sourceUrl": "https://www.deezer.com/artist/74722272",
+      "checkedAt": "2026-09-25T10:25:56.724Z"
+    },
+    "the veils": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/8b8e63ccc8119392abb703f594b05778/1000x1000-000000-80-0-0.jpg",
+      "name": "The Veils",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 3568,
+      "sourceUrl": "https://www.deezer.com/artist/3568",
+      "checkedAt": "2026-07-29T11:50:19.115Z"
+    },
+    "dawn brothers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/6e7953702f394898e2120078d877f09c/1000x1000-000000-80-0-0.jpg",
+      "name": "Dawn Brothers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 15132899,
+      "sourceUrl": "https://www.deezer.com/artist/15132899",
+      "checkedAt": "2026-07-29T11:49:44.086Z"
+    },
+    "the prodigy": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/4d884e6864623a3446040eaa8e9fb18d/1000x1000-000000-80-0-0.jpg",
+      "name": "The Prodigy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 85,
+      "sourceUrl": "https://www.deezer.com/artist/85",
+      "checkedAt": "2026-07-29T11:49:05.066Z"
+    },
+    "flotsam and jetsam": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/8dea067ba9f7e2d2fcbe8cb8b82d4c99/1000x1000-000000-80-0-0.jpg",
+      "name": "Flotsam And Jetsam",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 122069,
+      "sourceUrl": "https://www.deezer.com/artist/122069",
+      "checkedAt": "2026-11-01T04:37:15.923Z"
+    },
+    "radio z": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/654235fe6eb5c8f96379bc6f99c2d436/1000x1000-000000-80-0-0.jpg",
+      "name": "RADIO Z",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2199991,
+      "sourceUrl": "https://www.deezer.com/artist/2199991",
+      "checkedAt": "2026-11-01T16:38:15.463Z"
+    },
+    "syml": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/bd0895beeb134cd4af68e5fdb96758a5/1000x1000-000000-80-0-0.jpg",
+      "name": "SYML",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 9755580,
+      "sourceUrl": "https://www.deezer.com/artist/9755580",
+      "checkedAt": "2026-07-29T11:50:16.756Z"
+    },
+    "the ocean": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/cec3f1fd643590c93be437903b990068/1000x1000-000000-80-0-0.jpg",
+      "name": "THE OCEAN",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 332642,
+      "sourceUrl": "https://www.deezer.com/artist/332642",
+      "checkedAt": "2026-07-29T11:49:24.382Z"
+    },
+    "de baron": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/f4a41258645eb0feb44a8b11e36f86fc/1000x1000-000000-80-0-0.jpg",
+      "name": "De Baron",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 7874198,
+      "sourceUrl": "https://www.deezer.com/artist/7874198",
+      "checkedAt": "2026-11-01T16:38:33.698Z"
+    },
+    "gurriers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/faec998e2ded51932ca8266b03c3a474/1000x1000-000000-80-0-0.jpg",
+      "name": "Gurriers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 143101532,
+      "sourceUrl": "https://www.deezer.com/artist/143101532",
+      "checkedAt": "2026-11-01T04:35:53.652Z"
+    },
+    "queensryche": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/f90dc0cf1f143c08d6ec83ac7a177ae4/1000x1000-000000-80-0-0.jpg",
+      "name": "Queensrÿche",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 6016,
+      "sourceUrl": "https://www.deezer.com/artist/6016",
+      "checkedAt": "2026-08-03T06:50:21.128Z"
+    },
+    "tara": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e12c66ecbcdf4b7d11a08fd77556749a/1000x1000-000000-80-0-0.jpg",
+      "name": "TÄRA",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 408889022,
+      "sourceUrl": "https://www.deezer.com/artist/408889022",
+      "checkedAt": "2026-11-01T16:38:16.156Z"
+    },
+    "kadavar": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/3426fa451bd7cf17bc9b2be8cbdf66d3/1000x1000-000000-80-0-0.jpg",
+      "name": "Kadavar",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2706571,
+      "sourceUrl": "https://www.deezer.com/artist/2706571",
+      "checkedAt": "2026-08-14T06:54:05.918Z"
+    },
+    "nouvelle vague": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e5632a779c57b226753356cec9133fdc/1000x1000-000000-80-0-0.jpg",
+      "name": "NOUVELLE VAGUE",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1387,
+      "sourceUrl": "https://www.deezer.com/artist/1387",
+      "checkedAt": "2026-07-29T11:50:19.851Z"
+    },
+    "c est qui": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/36ed9877940598a938171fefda3a8294/1000x1000-000000-80-0-0.jpg",
+      "name": "C'est Qui?",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 308810811,
+      "sourceUrl": "https://www.deezer.com/artist/308810811",
+      "checkedAt": "2026-11-01T16:37:56.291Z"
+    },
+    "customs": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/b4cddbb5cfb8b015f0b59ba7269c0226/1000x1000-000000-80-0-0.jpg",
+      "name": "Customs",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 384180,
+      "sourceUrl": "https://www.deezer.com/artist/384180",
+      "checkedAt": "2026-07-29T11:49:22.863Z"
+    },
+    "nusantara beat": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e137b6053410f5b9d1eb130862086b69/1000x1000-000000-80-0-0.jpg",
+      "name": "Nusantara Beat",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 208901187,
+      "sourceUrl": "https://www.deezer.com/artist/208901187",
+      "checkedAt": "2026-11-01T16:37:54.599Z"
+    },
+    "evergrey": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/17f34d2802b4f1af6563ebbdf022ab5b/1000x1000-000000-80-0-0.jpg",
+      "name": "Evergrey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 8892,
+      "sourceUrl": "https://www.deezer.com/artist/8892",
+      "checkedAt": "2026-10-23T10:23:58.041Z"
+    },
+    "tonic walter": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/cf76c82ef5bf227ab09c1030b96075b3/1000x1000-000000-80-0-0.jpg",
+      "name": "Tonic Walter",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 14879519,
+      "sourceUrl": "https://www.deezer.com/artist/14879519",
+      "checkedAt": "2026-08-23T05:55:10.816Z"
+    },
+    "green lung": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/b04312d0bd99c17740fdb82c160ab8f7/1000x1000-000000-80-0-0.jpg",
+      "name": "Green Lung",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 12555676,
+      "sourceUrl": "https://www.deezer.com/artist/12555676",
+      "checkedAt": "2026-07-29T11:49:58.765Z"
+    },
+    "hermanos gutierrez": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/f7f1a812c29ac6fbcfb77fc632a30fef/1000x1000-000000-80-0-0.jpg",
+      "name": "Hermanos Gutiérrez",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 4617291,
+      "sourceUrl": "https://www.deezer.com/artist/4617291",
+      "checkedAt": "2026-07-29T11:49:43.220Z"
+    },
+    "hiqpy": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e813d9dbe5fbea1fa45b8fdc4a43d841/1000x1000-000000-80-0-0.jpg",
+      "name": "Hiqpy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 291888141,
+      "sourceUrl": "https://www.deezer.com/artist/291888141",
+      "checkedAt": "2026-07-29T11:49:46.314Z"
+    },
+    "rikas": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e0a66c18422dcb511cf10bcfa7208299/1000x1000-000000-80-0-0.jpg",
+      "name": "Rikas",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 13432913,
+      "sourceUrl": "https://www.deezer.com/artist/13432913",
+      "checkedAt": "2026-11-01T16:38:33.891Z"
+    },
+    "accept": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/b2782bdc889d3f4a1c34b6f835aeb67e/1000x1000-000000-80-0-0.jpg",
+      "name": "Accept",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5761,
+      "sourceUrl": "https://www.deezer.com/artist/5761",
+      "checkedAt": "2026-08-03T06:50:20.196Z"
+    },
+    "arstiðir": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/14c057d0472f9fe6cb0899e2d9b5ab23/1000x1000-000000-80-0-0.jpg",
+      "name": "Árstíðir",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 6890063,
+      "sourceUrl": "https://www.deezer.com/artist/6890063",
+      "checkedAt": "2026-07-29T11:50:15.358Z"
+    },
+    "frederik daelemans": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/2dc3341901a062061ae746c4580d0604/1000x1000-000000-80-0-0.jpg",
+      "name": "Frederik Daelemans",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 85446972,
+      "sourceUrl": "https://www.deezer.com/artist/85446972",
+      "checkedAt": "2026-11-01T04:36:45.767Z"
+    },
+    "greenleaf": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/3ba06566a6e0515ddef7a9390d118410/1000x1000-000000-80-0-0.jpg",
+      "name": "Greenleaf",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 119638,
+      "sourceUrl": "https://www.deezer.com/artist/119638",
+      "checkedAt": "2026-07-29T11:50:09.256Z"
+    },
+    "isabel usher": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/7e1e46f917ca8f74b2014eac04cb2bc7/1000x1000-000000-80-0-0.jpg",
+      "name": "Isabèl Usher",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 12944961,
+      "sourceUrl": "https://www.deezer.com/artist/12944961",
+      "checkedAt": "2026-11-01T16:38:00.325Z"
+    },
+    "tramhaus": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/1852b4da90572c7c0ec62025512613aa/1000x1000-000000-80-0-0.jpg",
+      "name": "Tramhaus",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 153791482,
+      "sourceUrl": "https://www.deezer.com/artist/153791482",
+      "checkedAt": "2026-11-01T16:37:53.868Z"
+    },
+    "chelsea wolfe": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/acb9ab10cf16678f98b0d4fe07ea6043/1000x1000-000000-80-0-0.jpg",
+      "name": "Chelsea Wolfe",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 398157,
+      "sourceUrl": "https://www.deezer.com/artist/398157",
+      "checkedAt": "2026-07-29T11:49:25.826Z"
+    },
+    "god is an astronaut": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e476e055ab2cc06142ddbdb001c8a87f/1000x1000-000000-80-0-0.jpg",
+      "name": "God Is An Astronaut",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 16337,
+      "sourceUrl": "https://www.deezer.com/artist/16337",
+      "checkedAt": "2026-07-29T11:49:24.792Z"
+    },
+    "jett rebel": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/dabe928640e5ef3e117e63e53bf656f5/1000x1000-000000-80-0-0.jpg",
+      "name": "Jett Rebel",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 4683340,
+      "sourceUrl": "https://www.deezer.com/artist/4683340",
+      "checkedAt": "2026-11-01T04:35:45.121Z"
+    },
+    "state power": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/86291867cd729ad0a23a88d62f9ce6e8/1000x1000-000000-80-0-0.jpg",
+      "name": "State Power",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 258193452,
+      "sourceUrl": "https://www.deezer.com/artist/258193452",
+      "checkedAt": "2026-11-01T16:37:54.412Z"
+    },
+    "1000mods": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/8765d09eb1f91ecc8610573194cb6517/1000x1000-000000-80-0-0.jpg",
+      "name": "1000mods",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 712219,
+      "sourceUrl": "https://www.deezer.com/artist/712219",
+      "checkedAt": "2026-07-29T11:49:44.746Z"
+    },
+    "morrissey": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/65094273ce26f015638a9fa0f6ebc675/1000x1000-000000-80-0-0.jpg",
+      "name": "Morrissey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1305,
+      "sourceUrl": "https://www.deezer.com/artist/1305",
+      "checkedAt": "2026-07-29T11:50:18.912Z"
+    },
+    "the bird experience": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/9f0efc8c56e48bc35f9b65d15e6ff38a/1000x1000-000000-80-0-0.jpg",
+      "name": "THE BIRD EXPERIENCE",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 369856962,
+      "sourceUrl": "https://www.deezer.com/artist/369856962",
+      "checkedAt": "2026-11-01T16:37:59.804Z"
+    },
+    "lone assembly": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/a5bf9a6052054d5c2fe4c4b305ca5495/1000x1000-000000-80-0-0.jpg",
+      "name": "Lone Assembly",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 227302405,
+      "sourceUrl": "https://www.deezer.com/artist/227302405",
+      "checkedAt": "2026-11-01T16:37:58.293Z"
+    },
+    "nothing but thieves": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/0c2903ae7c3566b8229bf73584b2a141/1000x1000-000000-80-0-0.jpg",
+      "name": "Nothing But Thieves",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2210161,
+      "sourceUrl": "https://www.deezer.com/artist/2210161",
+      "checkedAt": "2026-08-03T06:50:21.900Z"
+    },
+    "the gathering": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/9ecb24edc29cbeb3181f37c9f953aeb7/1000x1000-000000-80-0-0.jpg",
+      "name": "The Gathering",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 2015,
+      "sourceUrl": "https://www.deezer.com/artist/2015",
+      "checkedAt": "2026-08-03T06:50:21.671Z"
+    },
+    "gwenifer raymond": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/33d4b720d6ba55fbbf912d3161a88619/1000x1000-000000-80-0-0.jpg",
+      "name": "Gwenifer Raymond",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 13342239,
+      "sourceUrl": "https://www.deezer.com/artist/13342239",
+      "checkedAt": "2026-11-01T16:38:34.140Z"
+    },
+    "milolaathetlukken": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/31bd907b71ca5bc15d59957dc0f1def1/1000x1000-000000-80-0-0.jpg",
+      "name": "Milolaathetlukken",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 247751742,
+      "sourceUrl": "https://www.deezer.com/artist/247751742",
+      "checkedAt": "2026-11-01T04:35:50.054Z"
+    },
+    "the mary wallopers": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/1c4f2c532000d697baf2d4a46b6bf800/1000x1000-000000-80-0-0.jpg",
+      "name": "The Mary Wallopers",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 74582192,
+      "sourceUrl": "https://www.deezer.com/artist/74582192",
+      "checkedAt": "2026-11-01T04:35:47.748Z"
+    },
+    "dead congregation": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/57be007872b2ff421d67a70950147be1/1000x1000-000000-80-0-0.jpg",
+      "name": "Dead Congregation",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5634282,
+      "sourceUrl": "https://www.deezer.com/artist/5634282",
+      "checkedAt": "2026-11-01T04:37:18.460Z"
+    },
+    "giles corey": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/63bce760c65ae51fb3786751c0301993/1000x1000-000000-80-0-0.jpg",
+      "name": "Giles Corey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 9074376,
+      "sourceUrl": "https://www.deezer.com/artist/9074376",
+      "checkedAt": "2026-09-18T09:58:42.722Z"
+    },
+    "dead poet society": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/51facfb92d1fbf39af07230b5edad8b7/1000x1000-000000-80-0-0.jpg",
+      "name": "Dead Poet Society",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 4231855,
+      "sourceUrl": "https://www.deezer.com/artist/4231855",
+      "checkedAt": "2026-07-29T11:49:56.432Z"
+    },
+    "joshua radin": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/479fb4eea7b047285a54e4027ef33323/1000x1000-000000-80-0-0.jpg",
+      "name": "Joshua Radin",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 4200,
+      "sourceUrl": "https://www.deezer.com/artist/4200",
+      "checkedAt": "2026-10-28T16:45:50.386Z"
+    },
+    "marissa nadler": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/2349c959a5f30294c72d483df1c756d4/1000x1000-000000-80-0-0.jpg",
+      "name": "Marissa Nadler",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 14690,
+      "sourceUrl": "https://www.deezer.com/artist/14690",
+      "checkedAt": "2026-07-29T11:50:08.225Z"
+    },
+    "lee fields": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/b8193a6670a6bbef62ac5ac9b9b2444f/1000x1000-000000-80-0-0.jpg",
+      "name": "Lee Fields",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 263632,
+      "sourceUrl": "https://www.deezer.com/artist/263632",
+      "checkedAt": "2026-11-01T04:35:58.528Z"
+    },
+    "planet of zeus": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/71752c0619e48e395f31a515cb173447/1000x1000-000000-80-0-0.jpg",
+      "name": "Planet of Zeus",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5818131,
+      "sourceUrl": "https://www.deezer.com/artist/5818131",
+      "checkedAt": "2026-07-29T11:49:49.089Z"
+    },
+    "moonspell": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/e63ea0a0becaf7477b6e58cfbd447a33/1000x1000-000000-80-0-0.jpg",
+      "name": "Moonspell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 5767,
+      "sourceUrl": "https://www.deezer.com/artist/5767",
+      "checkedAt": "2026-10-07T11:55:36.449Z"
+    },
+    "igorrr": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/6f34dca28dd2889aedd7597de1d3b325/1000x1000-000000-80-0-0.jpg",
+      "name": "Igorrr",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1025520,
+      "sourceUrl": "https://www.deezer.com/artist/1025520",
+      "checkedAt": "2026-07-29T11:50:08.783Z"
+    },
+    "spectral wound": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/8ab5744334b10056a296b89d82601316/1000x1000-000000-80-0-0.jpg",
+      "name": "Spectral Wound",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 80861432,
+      "sourceUrl": "https://www.deezer.com/artist/80861432",
+      "checkedAt": "2026-07-29T11:50:02.512Z"
+    },
+    "oh hiroshima": {
+      "image": "https://cdn-images.dzcdn.net/images/artist/40ac2593d45316445c330b837917dbc2/1000x1000-000000-80-0-0.jpg",
+      "name": "OH HIROSHIMA",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "deezerId": 1491684,
+      "sourceUrl": "https://www.deezer.com/artist/1491684",
+      "checkedAt": "2026-07-29T11:50:14.712Z"
+    }
+  },
   "note": "Public artist portraits only, exact-name matching. Seeded from the existing Listening Mirror artist photo library; no personal listening data was copied. New public bands added by daily server-side enrichment."
 }
