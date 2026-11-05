@@ -119,14 +119,14 @@ Venue discovery covers the active adapters only: Paradiso, 013, Doornroosje, Eff
 
 ## 7. Measured results (live read-only audits, 2026-11-05)
 
-Four audit runs on GitHub Actions against the real venue sites:
+Five audit runs on GitHub Actions against the real venue sites (final run [42043832663](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42043832663)):
 [42040425586](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42040425586), [42041164480](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42041164480), [42042093191](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42042093191), [42043016450](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42043016450).
 
 Every audit starts with an empty cache and limited page budgets. The daily job keeps its cache, so coverage grows run over run.
 
 | Venue | Catalogue concerts | Official match (best run) | Notes |
 |---|---:|---:|---|
-| Paradiso | 138 | 74 | 102 of 325 listed pages in one run; the remainder are later dates |
+| Paradiso | 138 | 74 | 110 of 325 listed pages in one run; the remainder are later dates |
 | 013 | 51 | 46 | 26 extra official concerts discovered |
 | Doornroosje | 69 | 63 | |
 | Effenaar | 41 | 31 | Needed room names as on-site locations |
@@ -135,7 +135,7 @@ Every audit starts with an empty cache and limited page budgets. The daily job k
 | Bibelot | 35 | 19 | First dated text (enrichment only) |
 | Vera | 43 | 0 | No machine-readable date yet |
 | Tivoli / Melkweg / dB's | 358 | 0 | Blocked or excluded by the venue |
-| **Total** | | **~250** (pilot: 0) | **~50–60 new concerts** discovered |
+| **Total** | | **287** (pilot: 0) | **61 new concerts** discovered |
 
 **Fixes made from the audits:**
 - Room names (`Kleine Zaal`, `GR8`, `Café Wilhelmina`) count as on-site locations.
