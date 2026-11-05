@@ -1,18 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-04T13:26:09.241Z",
-  "auditedFor": "2026-11-04",
-  "totalPublished": 1661,
-  "greekPublished": 403,
+  "catalogUpdatedAt": "2026-11-05T13:06:49.195Z",
+  "auditedFor": "2026-11-05",
+  "totalPublished": 1649,
+  "greekPublished": 393,
   "imageCoverage": {
-    "withImage": 390,
-    "withoutImage": 1271
+    "withImage": 380,
+    "withoutImage": 1269
+  },
+  "imageCoverageByCountry": {
+    "NL": {
+      "events": 1141,
+      "withImage": 8,
+      "withoutImage": 1133
+    },
+    "GR": {
+      "events": 393,
+      "withImage": 372,
+      "withoutImage": 21
+    },
+    "BE": {
+      "events": 115,
+      "withImage": 0,
+      "withoutImage": 115
+    }
   },
   "sources": {
     "anclub-index": {
-      "events": 26,
-      "withImage": 25,
-      "withoutImage": 1,
-      "greekEvents": 26
+      "events": 25,
+      "withImage": 23,
+      "withoutImage": 2,
+      "greekEvents": 25
     },
     "festivalinfo": {
       "events": 16,
@@ -33,40 +50,40 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 21,
-      "withImage": 21,
+      "events": 22,
+      "withImage": 22,
       "withoutImage": 0,
-      "greekEvents": 21
+      "greekEvents": 22
     },
     "more": {
-      "events": 294,
-      "withImage": 294,
+      "events": 286,
+      "withImage": 286,
       "withoutImage": 0,
-      "greekEvents": 294
+      "greekEvents": 286
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
-      "events": 1240,
+      "events": 1238,
       "withImage": 0,
-      "withoutImage": 1240,
+      "withoutImage": 1238,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 38,
+      "events": 37,
       "withImage": 18,
-      "withoutImage": 20,
-      "greekEvents": 38
+      "withoutImage": 19,
+      "greekEvents": 37
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 21,
-      "withImage": 21,
+      "published": 22,
+      "withImage": 22,
       "warning": null
     },
     "floyd-calendar": {
@@ -80,16 +97,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 26,
-      "withImage": 25,
+      "published": 25,
+      "withImage": 23,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 35,
-      "withImage": 34,
+      "events": 30,
+      "withImage": 28,
       "sources": [
         "anclub-index",
         "more",
@@ -131,6 +148,16 @@
       ]
     },
     {
+      "name": "Fuzz Club",
+      "events": 15,
+      "withImage": 15,
+      "sources": [
+        "fuzzclub-calendar",
+        "official",
+        "more"
+      ]
+    },
+    {
       "name": "Floyd Live Music Venue",
       "events": 14,
       "withImage": 14,
@@ -139,13 +166,12 @@
       ]
     },
     {
-      "name": "Fuzz Club",
-      "events": 14,
-      "withImage": 14,
+      "name": "Piraeus Club Academy",
+      "events": 13,
+      "withImage": 12,
       "sources": [
-        "fuzzclub-calendar",
-        "official",
-        "more"
+        "more",
+        "rocking"
       ]
     },
     {
@@ -157,26 +183,9 @@
       ]
     },
     {
-      "name": "Piraeus Club Academy",
-      "events": 12,
-      "withImage": 11,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
       "name": "Half Note Jazz Club",
       "events": 11,
       "withImage": 11,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "FLOYD",
-      "events": 10,
-      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -191,16 +200,24 @@
     },
     {
       "name": "ARCH",
-      "events": 8,
-      "withImage": 8,
+      "events": 9,
+      "withImage": 9,
       "sources": [
         "more"
       ]
     },
     {
       "name": "Circus Entertainment Hub",
-      "events": 8,
-      "withImage": 8,
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -217,22 +234,6 @@
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
       "events": 7,
       "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 6,
-      "withImage": 6,
       "sources": [
         "more"
       ]
@@ -278,7 +279,23 @@
       ]
     },
     {
+      "name": "Stage7",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "MIKRI SKINI - Mikri Skini",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -294,23 +311,7 @@
       ]
     },
     {
-      "name": "Ίλιον Plus",
-      "events": 4,
-      "withImage": 1,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "Klakaz",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Stage7",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -382,6 +383,14 @@
       ]
     },
     {
+      "name": "Ίλιον Plus",
+      "events": 3,
+      "withImage": 1,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -412,24 +421,25 @@
       "sources": [
         "more"
       ]
+    },
+    {
+      "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
     }
   ],
-  "note": "Baseline before incremental NL/BE Podiuminfo image enrichment. Later nightly runs will record photo lookups and new coverage.",
-  "imageCoverageByCountry": {
-    "NL": {
-      "events": 1144,
-      "withImage": 8,
-      "withoutImage": 1136
-    },
-    "BE": {
-      "events": 114,
-      "withImage": 0,
-      "withoutImage": 114
-    },
-    "GR": {
-      "events": 403,
-      "withImage": 382,
-      "withoutImage": 21
-    }
+  "venueWarnings": {
+    "gagarin": "",
+    "floyd": "",
+    "fuzz": "",
+    "anclub": ""
+  },
+  "technopolisMusic": {
+    "status": "empty",
+    "message": "Official music category has no announced events",
+    "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }
