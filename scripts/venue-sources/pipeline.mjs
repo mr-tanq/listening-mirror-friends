@@ -20,9 +20,9 @@ import {createVenueClient,sitemapEntries} from './core.mjs';
 import {parseEventPage,eventLinksFromHtml} from './parse.mjs';
 import {bestOfficialMatch,scoreMatch,venueMatches,slugOf,officialHeadliners} from './match.mjs';
 import {headlinerNames,artistKey} from '../../js/artist-images.js';
+import {nonConcertReason} from './music-filter.mjs';
 
 const addDays=(day,n)=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);};
-const NON_MUSIC=/\b(?:rondleiding|lezing|workshop|markt|pubquiz|quiz|comedy|cabaret|stand-?up|theater|film(?:avond)?|talk|expositie|tentoonstelling|yoga|kindermiddag|vergadering|bedrijfsfeest|besloten|private event|cursus|open dag)\b/i;
 const PAGE_TTL_DAYS=7,MISS_TTL_DAYS=14;
 
 export async function listEventUrls(adapter,client,{today}){
@@ -211,13 +211,14 @@ export function showIdentity(event,official,adapter){
  * 'possible' duplicates are kept, never deleted.
  */
 export function reconcileVenueEvents(events,adapters,cache,policy,{today}={}){
- const removed={duplicate:0,policy:0,cancelled:0,rescheduled:0,gone:0};
+ const removed={duplicate:0,policy:0,cancelled:0,rescheduled:0,gone:0,nonConcert:0};
  const others=events.filter(e=>e.source!=='venue-official');
  const kept=events.filter(e=>{
   if(e.source!=='venue-official')return true;
   const adapter=adapters.find(a=>e.id.startsWith('venue-'+a.id+'-'));
   if(!adapter)return true;
   if(policy?.venues?.[adapter.id]?.discovery!==true){removed.policy++;return false;}
+   if(nonConcertReason(e)){removed.nonConcert++;return false;}
   const asOfficial={url:e.url,title:e.artist,performers:e.artists||[],date:e.date,venueName:''};
   if(others.some(o=>showIdentity(o,asOfficial,adapter)==='same')){removed.duplicate++;return false;}
   const key=canonicalUrlKey(e.url);
@@ -241,7 +242,8 @@ export function discoverFromVenues(events,adapters,cache,policy,{today,endDate})
    if(o.date>endDate)continue;
    s.official++;
    const offSite=o.venueName&&!adapter.onSite.test(o.venueName);
-   const skip=o.cancelled?'cancelled':offSite?'off-site:'+o.venueName:NON_MUSIC.test(o.title)?'non-music':'';
+   const nonMusic=nonConcertReason(o);
+   const skip=o.cancelled?'cancelled':offSite?'off-site:'+o.venueName:nonMusic?'non-music:'+nonMusic:'';
    if(skip){s.skipped++;(s.skipReasons||={})[skip]=(s.skipReasons[skip]||0)+1;continue;}
    const names=officialHeadliners(o);
    const derived=headlinerNames({artist:o.title});
