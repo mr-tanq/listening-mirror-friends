@@ -59,6 +59,14 @@ export function headlinerNames(event){
   // Lists of three or more acts ("A, B, C") start with the headliner.
   if((name.match(/,\s/g)||[]).length>=2)add(name.split(/,\s/)[0]);
  }
+ // Explicit presenter/series prefixes should not outrank the actual act.
+ // Preserve original titles as low-priority fallbacks for uncertain cases.
+ const series=String(event?.artists?.[0]||event?.artist||'').match(/^([^:]{3,60}?)\s*:\s*(.{2,})$/);
+ if(series&&SERIES_PREFIX.test(series[1])){
+  const key=artistKey(series[2]);
+  const pos=out.findIndex(x=>artistKey(x)===key);
+  if(pos>0)out.unshift(...out.splice(pos,1));
+ }
  return out.slice(0,6);
 }
 
