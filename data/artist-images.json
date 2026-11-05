@@ -1376,7 +1376,124 @@
       "image": "https://cdn-images.dzcdn.net/images/artist/217105b92661645417d4d68c82d84a69/1000x1000-000000-80-0-0.jpg",
       "deezerId": 154466302,
       "sourceUrl": "https://www.deezer.com/artist/154466302",
-      "checkedAt": "2026-11-05T13:21:17.991Z"
+      "checkedAt": "2026-11-05T13:13:53.191Z"
+    },
+    "library card": {
+      "name": "Library Card",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9148b3bdca2225d59e8efd93403ef5a2/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 168450267,
+      "sourceUrl": "https://www.deezer.com/artist/168450267",
+      "checkedAt": "2026-11-05T13:27:33.756Z"
+    },
+    "downtown boys": {
+      "name": "Downtown Boys",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a315dd8dfd502d7f6cdbb10f375a4dfc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5863859,
+      "sourceUrl": "https://www.deezer.com/artist/5863859",
+      "checkedAt": "2026-11-05T13:27:34.180Z"
+    },
+    "noisia": {
+      "name": "Noisia",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/665fc51fb4d3b85ff42651d92b7f89d6/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6455,
+      "sourceUrl": "https://www.deezer.com/artist/6455",
+      "checkedAt": "2026-11-05T13:27:35.008Z"
+    },
+    "artemas": {
+      "name": "Artemas",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6f557a91c8294fe5d555a1bf6135cb02/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13425147,
+      "sourceUrl": "https://www.deezer.com/artist/13425147",
+      "checkedAt": "2026-11-05T13:27:35.552Z"
+    },
+    "the scratch": {
+      "name": "The Scratch",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/87ecc8e37d657856770501a093186369/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 983825,
+      "sourceUrl": "https://www.deezer.com/artist/983825",
+      "checkedAt": "2026-11-05T13:27:37.045Z"
+    },
+    "the skints": {
+      "name": "The Skints",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cb986aa57be4d9bcc73dd4f168ce59a8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 343096,
+      "sourceUrl": "https://www.deezer.com/artist/343096",
+      "checkedAt": "2026-11-05T13:27:37.566Z"
+    },
+    "jake xerxes fussell": {
+      "name": "Jake Xerxes Fussell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ea7ea2ee7f011370caaeb502c36608e1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7124379,
+      "sourceUrl": "https://www.deezer.com/artist/7124379",
+      "checkedAt": "2026-11-05T13:27:37.955Z"
+    },
+    "opus kink": {
+      "name": "Opus Kink",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6a0338091f2b3a9c5d7a9ab15016e676/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 56956432,
+      "sourceUrl": "https://www.deezer.com/artist/56956432",
+      "checkedAt": "2026-11-05T13:27:38.349Z"
+    },
+    "widowspeak": {
+      "name": "Widowspeak",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/490289df5eed9b94336133acd4111401/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1034951,
+      "sourceUrl": "https://www.deezer.com/artist/1034951",
+      "checkedAt": "2026-11-05T13:27:38.723Z"
+    },
+    "discharge": {
+      "name": "Discharge",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0334502f394997d86f65b4c80e2e5189/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 183228,
+      "sourceUrl": "https://www.deezer.com/artist/183228",
+      "checkedAt": "2026-11-05T13:27:39.226Z"
+    },
+    "jaimi faulkner": {
+      "name": "Jaimi Faulkner",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5d479e7e54eedaf7c26f09ea90f91980/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 391001,
+      "sourceUrl": "https://www.deezer.com/artist/391001",
+      "checkedAt": "2026-11-05T13:27:39.764Z"
+    },
+    "jungle by night": {
+      "name": "Jungle by Night",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/943eeb9e92ce5903c10be222bd9dd1e0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 550537,
+      "sourceUrl": "https://www.deezer.com/artist/550537",
+      "checkedAt": "2026-11-05T13:27:40.142Z"
+    },
+    "gerson main": {
+      "name": "Gerson Main",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4e7976d08ec55df16c9f04acfe881554/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4688482,
+      "sourceUrl": "https://www.deezer.com/artist/4688482",
+      "checkedAt": "2026-11-05T13:27:41.040Z"
     }
   },
   "attempted": {
@@ -1569,6 +1686,42 @@
       "reason": "No unambiguous exact artist"
     },
     "dyse": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "ghostface killah": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "kensington": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "nazareth": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "sbmg": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "bente middagshow": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "ηχητικες αποκλισεις": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "the hillbilly moonshiners": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "disney": {
+      "retryAfter": "2026-12-05",
+      "reason": "No unambiguous exact artist"
+    },
+    "πετρος γαιτανος καλην εσπεραν αρχοντες": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     }
