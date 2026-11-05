@@ -1,1 +1,40 @@
-{"version":1,"artists":{},"attempted":{}}
+{
+  "version": 1,
+  "artists": {
+    "kovacs": {
+      "name": "Kovacs",
+      "mbid": "d49a7ace-9471-406e-9ba5-1b33a2c4adbf",
+      "mbName": "Kovacs",
+      "country": "NL",
+      "disambiguation": "Dutch singer Sharon Kovacs",
+      "matchedBy": "unique-name",
+      "spotifyId": "62peb1sKdVJQD00xYvMCKF",
+      "deezerId": 1447512,
+      "homepage": "https://kovacsmusic.com/",
+      "wikidata": "Q18015205",
+      "checkedAt": "2026-11-05T13:36:15.868Z"
+    }
+  },
+  "attempted": {
+    "glitter grotesque let s swing in new orleans": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "clean pete s kerstshow": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "classic hits": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kinderen voor kinderen de grote show": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "bartofso": {
+      "retryAfter": "2026-11-07",
+      "reason": "HTTP 503"
+    }
+  }
+}

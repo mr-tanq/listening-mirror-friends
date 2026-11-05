@@ -1494,18 +1494,1579 @@
       "deezerId": 4688482,
       "sourceUrl": "https://www.deezer.com/artist/4688482",
       "checkedAt": "2026-11-05T13:27:41.040Z"
+    },
+    "the jazz room": {
+      "name": "The Jazz Room",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bb3729e36fd2fd05cbea2857854676cb/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 88314732,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/88314732",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/88314732"
+      },
+      "checkedAt": "2026-11-05T13:34:47.347Z"
+    },
+    "lois lane": {
+      "name": "Loïs Lane",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ed6afd9e30ffa20fb545031a8be1014d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 110753,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/110753",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/110753"
+      },
+      "checkedAt": "2026-11-05T13:34:48.148Z"
+    },
+    "snelle": {
+      "name": "Snelle",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/24c01b0014495b0c0075188ebd4ee6fc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7990708,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7990708",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7990708"
+      },
+      "checkedAt": "2026-11-05T13:34:48.676Z"
+    },
+    "julia sabate": {
+      "name": "Julia Sabaté",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ed8ba9c03c281722856aaf2c937a0913/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14597081,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14597081",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14597081"
+      },
+      "checkedAt": "2026-11-05T13:34:49.712Z"
+    },
+    "subterranean street society": {
+      "name": "Subterranean Street Society",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3e4dcbee3ef66e17b30683f1a8c7ade1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11023842,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/11023842",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11023842"
+      },
+      "checkedAt": "2026-11-05T13:34:50.165Z"
+    },
+    "master boot record": {
+      "name": "Master Boot Record",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/864d2485494250b435984a05849c8c14/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12240468,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12240468",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12240468"
+      },
+      "checkedAt": "2026-11-05T13:34:50.478Z"
+    },
+    "strongboi": {
+      "name": "strongboi",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a5bcc6f60c456204e8b8584a98c3595b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 88121392,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/88121392",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/88121392"
+      },
+      "checkedAt": "2026-11-05T13:34:51.266Z"
+    },
+    "belle and sebastian": {
+      "name": "Belle and Sebastian",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6332ef7b8f1f939b5acf23e5d4967d1a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 887535,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/887535",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/887535"
+      },
+      "checkedAt": "2026-11-05T13:34:51.752Z"
+    },
+    "carolina deslandes": {
+      "name": "Carolina Deslandes",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/143223f4a538521709a33ddc6edcd798/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4030998,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4030998",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4030998"
+      },
+      "checkedAt": "2026-11-05T13:34:52.826Z"
+    },
+    "john illsley": {
+      "name": "John Illsley",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9538ca6a15a717abeaf34cff22ce3018/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 329934,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/329934",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/329934"
+      },
+      "checkedAt": "2026-11-05T13:34:53.143Z"
+    },
+    "novastar": {
+      "name": "Novastar",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/46a64fbaf2fcd706c3354877a5732c76/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2844,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2844",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2844"
+      },
+      "checkedAt": "2026-11-05T13:34:53.622Z"
+    },
+    "bywater call": {
+      "name": "Bywater Call",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4fe2c28131667d6266573d750a637dd8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 75045772,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/75045772",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/75045772"
+      },
+      "checkedAt": "2026-11-05T13:34:54.037Z"
+    },
+    "famke louise": {
+      "name": "Famke Louise",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3f46b69c0131780d15022c46b98749db/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13566477,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13566477",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13566477"
+      },
+      "checkedAt": "2026-11-05T13:34:54.485Z"
+    },
+    "kofn": {
+      "name": "KÖFN",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d2f667336c05b910e21f38d6981207e8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 72749562,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/72749562",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/72749562"
+      },
+      "checkedAt": "2026-11-05T13:34:55.161Z"
+    },
+    "nits": {
+      "name": "Nits",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/088bbb7cdc12e57a268de2511aceb354/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14985,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14985",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14985"
+      },
+      "checkedAt": "2026-11-05T13:34:56.016Z"
+    },
+    "sheherazaad": {
+      "name": "Sheherazaad",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/61ed04cb872dcb8b082a76f885a4b9c8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 106203202,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/106203202",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/106203202"
+      },
+      "checkedAt": "2026-11-05T13:34:56.296Z"
+    },
+    "the black dahlia murder": {
+      "name": "The Black Dahlia Murder",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/09e0f0fb4ee9de683fbac6f3a24200f8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12784,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12784",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12784"
+      },
+      "checkedAt": "2026-11-05T13:34:56.780Z"
+    },
+    "melrose avenue": {
+      "name": "Melrose Avenue",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0d0a9e853bb814b4f34f1bbcf2150b9f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 168631067,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/168631067",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/168631067"
+      },
+      "checkedAt": "2026-11-05T13:34:57.316Z"
+    },
+    "samuel welten": {
+      "name": "Samuel Welten",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/13a6a16f091f1da7b76b06316862bb84/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 308594671,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/308594671",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/308594671"
+      },
+      "checkedAt": "2026-11-05T13:34:57.926Z"
+    },
+    "julia adriana": {
+      "name": "Julia Adriana",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6d94915a3475fe6ec24655e78d70a0b4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 132618212,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/132618212",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/132618212"
+      },
+      "checkedAt": "2026-11-05T13:34:59.187Z"
+    },
+    "the obsessed": {
+      "name": "The Obsessed",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8ee7ce9be2dd3a16203011ac50b7114b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 275874,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/275874",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/275874"
+      },
+      "checkedAt": "2026-11-05T13:35:01.393Z"
+    },
+    "wende": {
+      "name": "Wende",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1c8d7f8cafcfd777d7e58e00e394d5b4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 417215,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/417215",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/417215"
+      },
+      "checkedAt": "2026-11-05T13:35:02.141Z"
+    },
+    "zoh amba": {
+      "name": "Zoh Amba",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b8209c73fbda7f07e131306232b03d0d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 137992872,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/137992872",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/137992872"
+      },
+      "checkedAt": "2026-11-05T13:35:02.447Z"
+    },
+    "chasing abbey": {
+      "name": "Chasing Abbey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/523433674ba9b90b65e421df45638e3e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12307542,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12307542",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12307542"
+      },
+      "checkedAt": "2026-11-05T13:35:02.961Z"
+    },
+    "ghostly kisses": {
+      "name": "Ghostly Kisses",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/782776b47b85d398b17e7fb95d8c34fe/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7974878,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7974878",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7974878"
+      },
+      "checkedAt": "2026-11-05T13:35:03.988Z"
+    },
+    "guus meeuwis": {
+      "name": "Guus Meeuwis",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8ef850375072695b0fdc3af8ee841aed/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 205,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/205",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/205"
+      },
+      "checkedAt": "2026-11-05T13:35:04.475Z"
+    },
+    "haute freddy": {
+      "name": "Haute & Freddy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/931b47a8ef9461263dca96e3755244d3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 269558792,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/269558792",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/269558792"
+      },
+      "checkedAt": "2026-11-05T13:35:04.766Z"
+    },
+    "josiah and the bonnevilles": {
+      "name": "Josiah and the Bonnevilles",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f6854ecace20e4d7b971bd67d091483a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 10165876,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/10165876",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/10165876"
+      },
+      "checkedAt": "2026-11-05T13:35:05.154Z"
+    },
+    "naomi sharon": {
+      "name": "Naomi Sharon",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7973e07d6ba5f289f1003149cf56cd6b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 49778722,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/49778722",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/49778722"
+      },
+      "checkedAt": "2026-11-05T13:35:05.686Z"
+    },
+    "skeler": {
+      "name": "Skeler",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/15a98b0877eaf7597544d62edcafdc1c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12787101,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12787101",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12787101"
+      },
+      "checkedAt": "2026-11-05T13:35:06.384Z"
+    },
+    "taxitaxi": {
+      "name": "TAXITAXI",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/083cd94dbb5fc8a6423d82e678b5a4cc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 243763352,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/243763352",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/243763352"
+      },
+      "checkedAt": "2026-11-05T13:35:06.679Z"
+    },
+    "ven1": {
+      "name": "VEN1",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/959d67fe9e40f3779a36e61d828df90d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 243505001,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/243505001",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/243505001"
+      },
+      "checkedAt": "2026-11-05T13:35:07.139Z"
+    },
+    "ari hoenig": {
+      "name": "Ari Hoenig",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7a236b5210f3298b8f00dc4bd969f1d3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 556231,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/556231",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/556231"
+      },
+      "checkedAt": "2026-11-05T13:35:07.821Z"
+    },
+    "bragolin": {
+      "name": "Bragolin",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0337e7694520c3398b91b0ac11c69bf1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14434185,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14434185",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14434185"
+      },
+      "checkedAt": "2026-11-05T13:35:08.718Z"
+    },
+    "chica chica": {
+      "name": "Chica Chica",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5fe51dd9b0a3664b073d1294b5960202/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 131991422,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/131991422",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/131991422"
+      },
+      "checkedAt": "2026-11-05T13:35:09.493Z"
+    },
+    "pagan altar": {
+      "name": "Pagan Altar",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/61d61a56d03070ec4bbe5886018eb7b0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 470782,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/470782",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/470782"
+      },
+      "checkedAt": "2026-11-05T13:35:10.976Z"
+    },
+    "ploegendienst": {
+      "name": "Ploegendienst",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/522771be5828adf9661b428c2c7158c2/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 49768252,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/49768252",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/49768252"
+      },
+      "checkedAt": "2026-11-05T13:35:11.374Z"
+    },
+    "pommelien thijs": {
+      "name": "Pommelien Thijs",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/358acdbba2ce73b50017f00e19eef43c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 85308232,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/85308232",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/85308232"
+      },
+      "checkedAt": "2026-11-05T13:35:11.747Z"
+    },
+    "the homesick": {
+      "name": "The Homesick",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a81931140546798f9353803ff25795ca/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6813505,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/6813505",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6813505"
+      },
+      "checkedAt": "2026-11-05T13:35:12.695Z"
+    },
+    "girl group": {
+      "name": "Girl Group",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/87dc0ab5e5a230bd246ea5162593c23e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1491073,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1491073",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1491073"
+      },
+      "checkedAt": "2026-11-05T13:35:13.791Z"
+    },
+    "jeremy pinnell": {
+      "name": "Jeremy Pinnell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8076df68ab3f6049db5f04384734b487/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6152334,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/6152334",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6152334"
+      },
+      "checkedAt": "2026-11-05T13:35:14.132Z"
+    },
+    "m kids": {
+      "name": "M-Kids",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2f5264592d381ae17ad7fc337ed9bad8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 449017,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/449017",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/449017"
+      },
+      "checkedAt": "2026-11-05T13:35:14.997Z"
+    },
+    "namesbliss": {
+      "name": "NAMESBLISS",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1e5cdbfcd123f95fa75002d88ad69641/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13198295,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13198295",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13198295"
+      },
+      "checkedAt": "2026-11-05T13:35:15.509Z"
+    },
+    "the temperance movement": {
+      "name": "The Temperance Movement",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/780ffee53a08b504878b53111658a252/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4086321,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4086321",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4086321"
+      },
+      "checkedAt": "2026-11-05T13:35:15.879Z"
+    },
+    "boo seeka": {
+      "name": "Boo Seeka",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c454974ecb27692899aa6264ff886b02/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7472050,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7472050",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7472050"
+      },
+      "checkedAt": "2026-11-05T13:35:16.263Z"
+    },
+    "mark lettieri": {
+      "name": "Mark Lettieri",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/aec7d6df8a4857883e4cf5fba4080919/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5328382,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5328382",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5328382"
+      },
+      "checkedAt": "2026-11-05T13:35:16.895Z"
+    },
+    "abigail lapell": {
+      "name": "Abigail Lapell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a1d614bd1f6c9f01e00268e8f7513da7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1022044,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1022044",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1022044"
+      },
+      "checkedAt": "2026-11-05T13:35:17.660Z"
+    },
+    "infinity song": {
+      "name": "Infinity Song",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9867a472edb3fc382a8851442a4758a2/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 102889892,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/102889892",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/102889892"
+      },
+      "checkedAt": "2026-11-05T13:35:18.076Z"
+    },
+    "jack jack": {
+      "name": "Jack & Jack",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/df1f5f91878036f36bee7f01a81b3dd7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5505912,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5505912",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5505912"
+      },
+      "checkedAt": "2026-11-05T13:35:18.469Z"
+    },
+    "keli holiday": {
+      "name": "Keli Holiday",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/45ebe1d6de176c5b7f374b73b04c583a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 118095432,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/118095432",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/118095432"
+      },
+      "checkedAt": "2026-11-05T13:35:18.921Z"
+    },
+    "midwife": {
+      "name": "Midwife",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c4371ecd179a6f791f8b5d43fd6a92ec/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 48474432,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/48474432",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/48474432"
+      },
+      "checkedAt": "2026-11-05T13:35:19.312Z"
+    },
+    "sharp pins": {
+      "name": "Sharp Pins",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1e973a161f35b4f992dfd80a6c40ace4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 201180107,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/201180107",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/201180107"
+      },
+      "checkedAt": "2026-11-05T13:35:21.027Z"
+    },
+    "the fray": {
+      "name": "The Fray",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2f9ec3cb9b7e327d3328e9db69d9df50/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4527,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4527",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4527"
+      },
+      "checkedAt": "2026-11-05T13:35:21.368Z"
+    },
+    "the hardkiss": {
+      "name": "The Hardkiss",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5563c7beed89bf41ecf032bc0c1884fe/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1432088,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1432088",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1432088"
+      },
+      "checkedAt": "2026-11-05T13:35:21.909Z"
+    },
+    "bombino": {
+      "name": "Bombino",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c0d08ffe81148f9c770500edcf57a916/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1201007,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1201007",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1201007"
+      },
+      "checkedAt": "2026-11-05T13:35:23.222Z"
+    },
+    "enter shikari": {
+      "name": "Enter Shikari",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/98e8e2eb25061859979615a43b36736c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12107,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12107",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12107"
+      },
+      "checkedAt": "2026-11-05T13:35:24.106Z"
+    },
+    "gavin james": {
+      "name": "Gavin James",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a6e08eeda7e90a7bc69319d5044ae616/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2668241,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2668241",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2668241"
+      },
+      "checkedAt": "2026-11-05T13:35:24.794Z"
+    },
+    "radio free alice": {
+      "name": "Radio Free Alice",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/23979d9d73fbf69665c9eabec286e10f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 92463262,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/92463262",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/92463262"
+      },
+      "checkedAt": "2026-11-05T13:35:25.660Z"
+    },
+    "shearwater": {
+      "name": "Shearwater",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4cdc4a861546c35552e8c17f629cba69/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4500,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4500",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4500"
+      },
+      "checkedAt": "2026-11-05T13:35:26.525Z"
+    },
+    "isaiah falls": {
+      "name": "Isaiah Falls",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/93acdffc212b517f7efd131f82fa4765/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 110578812,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/110578812",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/110578812"
+      },
+      "checkedAt": "2026-11-05T13:35:28.504Z"
+    },
+    "jenna raine": {
+      "name": "Jenna Raine",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d3848db1c68e6928dda8bf84d21de427/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 52767202,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/52767202",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/52767202"
+      },
+      "checkedAt": "2026-11-05T13:35:28.850Z"
+    },
+    "vals alarm": {
+      "name": "Vals Alarm",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5a57cde689d550fd1230726254b05fa5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 247918312,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/247918312",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/247918312"
+      },
+      "checkedAt": "2026-11-05T13:35:31.579Z"
+    },
+    "westside cowboy": {
+      "name": "Westside Cowboy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6d3cd1a7218c6caba06c8f1a7ef48001/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 287625131,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/287625131",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/287625131"
+      },
+      "checkedAt": "2026-11-05T13:35:31.889Z"
+    },
+    "chris klafford": {
+      "name": "Chris Kläfford",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/07fb13798f3b8f4a3940e3b26b59a8e0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13720517,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13720517",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13720517"
+      },
+      "checkedAt": "2026-11-05T13:35:32.346Z"
+    },
+    "clara kimera": {
+      "name": "Clara Kimera",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c606dd821d059e5768a1d19039aeaa1d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 270977962,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/270977962",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/270977962"
+      },
+      "checkedAt": "2026-11-05T13:35:32.678Z"
+    },
+    "nemzzz": {
+      "name": "Nemzzz",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4e9f29d4171f32a99219c2e79d4ba72c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 50619722,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/50619722",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/50619722"
+      },
+      "checkedAt": "2026-11-05T13:35:34.333Z"
+    },
+    "temptations for the weak": {
+      "name": "Temptations For The Weak",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a5c1c4d33b0b924a06aa4be3f4bbfb2b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5570739,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5570739",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5570739"
+      },
+      "checkedAt": "2026-11-05T13:35:35.229Z"
+    },
+    "arifa": {
+      "name": "Arifa",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/55f130d06f50279e4fcd96d890b1fbd5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4027500,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4027500",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4027500"
+      },
+      "checkedAt": "2026-11-05T13:35:35.635Z"
+    },
+    "doodseskader": {
+      "name": "Doodseskader",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/941e1c91ced94a516f974a34a6275ce8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 107108612,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/107108612",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/107108612"
+      },
+      "checkedAt": "2026-11-05T13:35:37.578Z"
+    },
+    "edsilia rombley": {
+      "name": "Edsilia Rombley",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ce39463b83534ec68b5b732419cd4cdd/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 78891,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/78891",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/78891"
+      },
+      "checkedAt": "2026-11-05T13:35:38.141Z"
+    },
+    "elida almeida": {
+      "name": "Elida Almeida",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3514633430cbb8a1b1d1e2d1846f9330/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7013663,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7013663",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7013663"
+      },
+      "checkedAt": "2026-11-05T13:35:38.446Z"
+    },
+    "early james": {
+      "name": "Early James",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0a30910390b1577ec237d893c8fed011/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 80032672,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/80032672",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/80032672"
+      },
+      "checkedAt": "2026-11-05T13:35:41.822Z"
+    },
+    "mollie elizabeth": {
+      "name": "Mollie Elizabeth",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e3c5a9a7fe50d7caf910b40d6c69d1e8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 60391472,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/60391472",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/60391472"
+      },
+      "checkedAt": "2026-11-05T13:35:42.607Z"
+    },
+    "feeble little horse": {
+      "name": "feeble little horse",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bd614305e29cf62c75a195032eb463b3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 130682022,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/130682022",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/130682022"
+      },
+      "checkedAt": "2026-11-05T13:35:43.816Z"
+    },
+    "howie day": {
+      "name": "Howie Day",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/dc52687b76bc017aeb0f48bd6f8930a0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5305,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5305",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5305"
+      },
+      "checkedAt": "2026-11-05T13:35:44.680Z"
+    },
+    "poppy ackroyd": {
+      "name": "Poppy Ackroyd",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ace79afe585fe1cf9cd1af8f261a6a59/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4098729,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4098729",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4098729"
+      },
+      "checkedAt": "2026-11-05T13:35:45.223Z"
+    },
+    "waylon wyatt": {
+      "name": "Waylon Wyatt",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1626d66e30fb117201d5518bae5f5753/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 241098431,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/241098431",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/241098431"
+      },
+      "checkedAt": "2026-11-05T13:35:45.677Z"
+    },
+    "elder island": {
+      "name": "Elder Island",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4a772626aceb2b2e215ba71f11781ba0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5888103,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5888103",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5888103"
+      },
+      "checkedAt": "2026-11-05T13:35:46.453Z"
+    },
+    "hail the sun": {
+      "name": "Hail The Sun",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ba649415ac43b0ba16d645b8453c9ff8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1045278,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1045278",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1045278"
+      },
+      "checkedAt": "2026-11-05T13:35:46.969Z"
+    },
+    "pearly drops": {
+      "name": "Pearly Drops",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/94823e07171662ea47ef111bbe6a7b34/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 71974552,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/71974552",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/71974552"
+      },
+      "checkedAt": "2026-11-05T13:35:47.663Z"
+    },
+    "blackgold": {
+      "name": "BLACKGOLD",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9b03664659c1e0703cc1d094a1a9ed15/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5136159,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5136159",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5136159"
+      },
+      "checkedAt": "2026-11-05T13:35:48.340Z"
+    },
+    "blair davie": {
+      "name": "Blair Davie",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1a2ae18d80a6fda1c3dd29086d7b17f7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14460075,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14460075",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14460075"
+      },
+      "checkedAt": "2026-11-05T13:35:48.702Z"
+    },
+    "ferocious dog": {
+      "name": "Ferocious Dog",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4c45dcff06efd018c0671965fc8fba83/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5013737,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5013737",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5013737"
+      },
+      "checkedAt": "2026-11-05T13:35:49.452Z"
+    },
+    "kokoroko": {
+      "name": "Kokoroko",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3c466eb7c8fe8132adfd6e3ca54443fc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12002350,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12002350",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12002350"
+      },
+      "checkedAt": "2026-11-05T13:35:50.190Z"
+    },
+    "moha mmz": {
+      "name": "Moha MMZ",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/fde2ccd9ceacb99529a37ff6b382c55f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 99572172,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/99572172",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/99572172"
+      },
+      "checkedAt": "2026-11-05T13:35:50.811Z"
+    },
+    "pan amsterdam": {
+      "name": "Pan Amsterdam",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3ba506fa78fbfd4c74cdba5cac1008b7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14227355,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14227355",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14227355"
+      },
+      "checkedAt": "2026-11-05T13:35:51.657Z"
+    },
+    "strangelove": {
+      "name": "Strangelove",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/21bda24be89d9939ae8207e0674b3f0c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 239774,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/239774",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/239774"
+      },
+      "checkedAt": "2026-11-05T13:35:52.046Z"
+    },
+    "zinadelphia": {
+      "name": "Zinadelphia",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/57fc153f4d595540ea90152d3d821aeb/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 94033522,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/94033522",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/94033522"
+      },
+      "checkedAt": "2026-11-05T13:35:52.365Z"
+    },
+    "anda morts": {
+      "name": "Anda Morts",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1842102681a2a7fedbc921b6233ade4c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 159733872,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/159733872",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/159733872"
+      },
+      "checkedAt": "2026-11-05T13:35:52.736Z"
+    },
+    "anneke van giersbergen": {
+      "name": "Anneke van Giersbergen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1496c51fa1256e5e9769805c1cb7e93a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 402055,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/402055",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/402055"
+      },
+      "checkedAt": "2026-11-05T13:35:53.049Z"
+    },
+    "artms": {
+      "name": "ARTMS",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7d16923e18af6253d6dacaf8160f686b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 111244772,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/111244772",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/111244772"
+      },
+      "checkedAt": "2026-11-05T13:35:53.398Z"
+    },
+    "baby lasagna": {
+      "name": "Baby Lasagna",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/02dc4f4bde28e7dbe2543eddcb22416f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 237789251,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/237789251",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/237789251"
+      },
+      "checkedAt": "2026-11-05T13:35:53.886Z"
+    },
+    "jafunk": {
+      "name": "Jafunk",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ab5b4627aef7a91e8fd48925116a707a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9936356,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/9936356",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9936356"
+      },
+      "checkedAt": "2026-11-05T13:35:55.016Z"
+    },
+    "krav boca": {
+      "name": "Krav Boca",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cd74aa4c0169dfb56b519410b10d4a79/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 91424202,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/91424202",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/91424202"
+      },
+      "checkedAt": "2026-11-05T13:35:55.743Z"
+    },
+    "martin luke brown": {
+      "name": "Martin Luke Brown",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e9d7345c3ee73ff1a61e8582448840e9/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5896886,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5896886",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5896886"
+      },
+      "checkedAt": "2026-11-05T13:35:56.561Z"
+    },
+    "bongeziwe mabandla": {
+      "name": "Bongeziwe Mabandla",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c3b883267607394bb8029966ccb59c76/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 3863401,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/3863401",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/3863401"
+      },
+      "checkedAt": "2026-11-05T13:35:58.310Z"
+    },
+    "chico chico": {
+      "name": "Chico Chico",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9396afd82982b4915859fb7e0e4c9fb9/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 447836,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/447836",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/447836"
+      },
+      "checkedAt": "2026-11-05T13:35:58.997Z"
+    },
+    "emmy d arc": {
+      "name": "Emmy d’Arc",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/00bef8a1a3427cfebaa1505d8f142317/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 121658202,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/121658202",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/121658202"
+      },
+      "checkedAt": "2026-11-05T13:35:59.661Z"
+    },
+    "joshua idehen": {
+      "name": "Joshua Idehen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bfd7a6c2999ae559535e9b48718765e7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5168232,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5168232",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5168232"
+      },
+      "checkedAt": "2026-11-05T13:36:01.023Z"
+    },
+    "leading ladies": {
+      "name": "Leading Ladies",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/21d04e4c018da74b7aa7fe62282a632c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13309713,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13309713",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13309713"
+      },
+      "checkedAt": "2026-11-05T13:36:01.538Z"
+    },
+    "ridgeclub": {
+      "name": "Ridgeclub",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7fe42a0b24c5acf248097d897970ddea/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 257330012,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/257330012",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/257330012"
+      },
+      "checkedAt": "2026-11-05T13:36:02.866Z"
+    },
+    "the zac schulze gang": {
+      "name": "The Zac Schulze Gang",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2a71cb94154a33d0e312acb682bd707b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 152873242,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/152873242",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/152873242"
+      },
+      "checkedAt": "2026-11-05T13:36:04.192Z"
+    },
+    "jack shore": {
+      "name": "Jack Shore",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/393385945613cbb134ab5efc20c8e3be/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13732663,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13732663",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13732663"
+      },
+      "checkedAt": "2026-11-05T13:36:05.884Z"
+    },
+    "nazan oncel": {
+      "name": "Nazan Öncel",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f102760bf9a561359bced4fad6b1941c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 16258,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/16258",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/16258"
+      },
+      "checkedAt": "2026-11-05T13:36:07.026Z"
+    },
+    "jembaa groove": {
+      "name": "Jembaa Groove",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2c21355fd2e52caf8a66a516ddb7a12f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 140527132,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/140527132",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/140527132"
+      },
+      "checkedAt": "2026-11-05T13:36:09.268Z"
+    },
+    "neoni": {
+      "name": "Neoni",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/26c8557d44c69b37f89e13b7ebeed068/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 64437072,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/64437072",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/64437072"
+      },
+      "checkedAt": "2026-11-05T13:36:10.443Z"
+    },
+    "platina": {
+      "name": "Platina",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/62af6cc38112b75179a8ed35600d9c9c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 994045,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/994045",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/994045"
+      },
+      "checkedAt": "2026-11-05T13:36:11.251Z"
+    },
+    "tayc": {
+      "name": "Tayc",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/017316ab248a00003e34b8eae9ed551c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12526056,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12526056",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12526056"
+      },
+      "checkedAt": "2026-11-05T13:36:11.792Z"
+    },
+    "wasia project": {
+      "name": "Wasia Project",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/04aa0a15240d4ba691d7617589758176/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 77341042,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/77341042",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/77341042"
+      },
+      "checkedAt": "2026-11-05T13:36:12.633Z"
+    },
+    "westlife": {
+      "name": "Westlife",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bef8cdfb730a1f3e84d7d2e4be2b6cd5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 274,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/274",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/274"
+      },
+      "checkedAt": "2026-11-05T13:36:12.980Z"
+    },
+    "bryson tiller": {
+      "name": "Bryson Tiller",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d7af8b6f54a0e2b825d5ae92f9e767da/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7004075,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7004075",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7004075"
+      },
+      "checkedAt": "2026-11-05T13:36:13.128Z"
+    },
+    "kovacs": {
+      "name": "Kovacs",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5efcbf3384dd6b9831476e96639de150/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1447512,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/1447512",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1447512"
+      },
+      "mbid": "d49a7ace-9471-406e-9ba5-1b33a2c4adbf",
+      "checkedAt": "2026-11-05T13:36:16.479Z"
     }
   },
   "attempted": {
     "glitter grotesque let s swing in new orleans": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "cilia katrali x savina": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "kovacs": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -1526,14 +3087,6 @@
       "reason": "No unambiguous exact artist"
     },
     "the james brown experience": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "ηχοχρωμιες": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "dire straits legacy": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -1621,10 +3174,6 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "songwriter night": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "kneecap the fenian tour": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
@@ -1646,18 +3195,6 @@
       "reason": "No unambiguous exact artist"
     },
     "the script man": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "praying mantis": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "the dirty daddies let the good times roll": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "luup meadow rituals": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -1697,19 +3234,11 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "nazareth": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "sbmg": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
     "bente middagshow": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "ηχητικες αποκλισεις": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -1721,9 +3250,1115 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "πετρος γαιτανος καλην εσπεραν αρχοντες": {
+    "lois lane 40 jaar": {
       "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
+      "reason": "not-found"
+    },
+    "benjamin herman trio": {
+      "retryAfter": "2026-12-05",
+      "reason": "no-photo",
+      "deezerCandidates": [
+        355623292
+      ]
+    },
+    "disco inferno met discophonic orchestra": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "solex": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5907,
+        415255322,
+        411791632
+      ]
+    },
+    "macy gray": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        259472692,
+        142835932,
+        135
+      ]
+    },
+    "ares": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        183631497,
+        218393645,
+        330010,
+        219573485,
+        392913641,
+        219571665,
+        219581845,
+        219572825,
+        269270972,
+        48963691
+      ]
+    },
+    "hλιας φουντουλης": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kodaline": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        3803881,
+        413374221
+      ]
+    },
+    "raymond van het groenewoud": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        240955,
+        394842091
+      ]
+    },
+    "def brittneysgat": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "extince 30 jaar spraakwater": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "acindc": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "isaiah rashad lil sunny s awful road trip": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "tribute to the cats band": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "black box revelation": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        259138,
+        1273432
+      ]
+    },
+    "job dutchtuber billy the kit echte vrienden de tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "happy mondays": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1310,
+        414455202
+      ]
+    },
+    "elder": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        13024615,
+        77307982,
+        365198,
+        191013467,
+        77307972
+      ]
+    },
+    "oscar lindsey": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "lovelace": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        313406,
+        270595462
+      ]
+    },
+    "mercy girl": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "alceu valenca": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        110746,
+        412347011
+      ]
+    },
+    "don toliver nitrous octane world tour leg 2": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "mark wonder the rude cut band": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "o r k": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        286271171,
+        8332918
+      ]
+    },
+    "pyrex": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        283002381,
+        7694668,
+        102066082
+      ]
+    },
+    "shining norway": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the howlers": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        406876,
+        177932047
+      ]
+    },
+    "the kid laroi": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        51204222,
+        414082962
+      ]
+    },
+    "the soulful sessions david michael wyatt josh barry": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the violet parade ep release": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "back alley ritual cutthroat": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "dan english": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "faithless": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        10,
+        143293442,
+        285742501
+      ]
+    },
+    "frank nick reunie": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kaya": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        415056532,
+        129728892,
+        415056482,
+        392248501,
+        278463541,
+        374700631,
+        89024862,
+        392248451,
+        415056632,
+        145017782
+      ]
+    },
+    "ron pope": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        298609,
+        413430021
+      ]
+    },
+    "sirenia": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        14369505,
+        8524
+      ]
+    },
+    "underscores umru": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "andre hazes de avond van je leven": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "benjamin herman trio featuring tomoaki baba": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "boze wolven ode aan gorky": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "caedere": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "ginger ill": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kay slice": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "marsh": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        175960,
+        92058962,
+        399241151
+      ]
+    },
+    "nagusame": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "slixx extended set": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "snelle clubtour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the bug": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        61146,
+        126597942
+      ]
+    },
+    "brian fallon the painkillers": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "celestial season": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "chali 2na band": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "deer park touching ice the healing power of horses": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "le guess who presents bleak squad": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "lido pimienta": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        793439,
+        412500931
+      ]
+    },
+    "little big": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        103884882,
+        64301122,
+        4606326,
+        74507552,
+        174370387,
+        14574769,
+        417749642
+      ]
+    },
+    "candy dulfer the funk legacy allstar show": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "messa eu uk tour fall 2026": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "sons of legion soul to søl world tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "fontaines d c": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        14175163,
+        416333122
+      ]
+    },
+    "otis gibbs": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "picture this": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        4685222,
+        76526052
+      ]
+    },
+    "radar machine": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "rymden": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "the sisters of mercy": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        2482,
+        389463801
+      ]
+    },
+    "amina": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        164361887,
+        727,
+        196243817,
+        191477547,
+        281552511,
+        113106142,
+        138922862,
+        196291617,
+        196243447,
+        115203902
+      ]
+    },
+    "any kind loma shearwater": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "azc de vlampijp x musicaz x db s viering": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "dav id": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "frankie and the witchfingers": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "funk legacy allstars": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "lp all is not lost tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "oh voyage": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "razorlight": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        622,
+        414465562
+      ]
+    },
+    "roufaida": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1483733,
+        71224592
+      ]
+    },
+    "trio bier": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "against the current": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5506820,
+        398218341
+      ]
+    },
+    "architrackz": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "ares andere man tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "elgrandetoto": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        265267202,
+        52463032,
+        66439462
+      ]
+    },
+    "ini movement jam sessions": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "koala disco": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "kojey radical": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        8433588,
+        165497467,
+        416873812
+      ]
+    },
+    "nate smith": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        540808,
+        67218672,
+        67218812,
+        147110552,
+        325248061,
+        359621982
+      ]
+    },
+    "niall mccabe": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "queen s pleasure": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "talent meets talent marou massin": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the next movement": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "tove lo": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        4103977,
+        8418412
+      ]
+    },
+    "ultrajazz": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "caro returning to innocence": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "clobber": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        11070064,
+        89288542,
+        88915842
+      ]
+    },
+    "emmet cohen quintet": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "flora": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        229326085,
+        876160,
+        13730141,
+        373949501,
+        272660292,
+        314072971,
+        78187062
+      ]
+    },
+    "jan o en de overige bandleden": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "julia sabate egoista tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kreukelzone madame perdu": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "nes": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        169721077,
+        171508,
+        132967282,
+        69178362
+      ]
+    },
+    "sea foam grey": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "suzan freek": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        7703592,
+        415486652
+      ]
+    },
+    "ars musica": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "bill frisell": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5125,
+        413915461
+      ]
+    },
+    "billy cobham time machine": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "cassia": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        572974,
+        281006971,
+        160848942
+      ]
+    },
+    "coos": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "donker dansen darker levels": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "guido belcanto paviljoen der menselijke driften": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "iron beast": {
+      "retryAfter": "2026-12-05",
+      "reason": "no-photo",
+      "deezerCandidates": [
+        95519692
+      ]
+    },
+    "kanine": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        165487487,
+        1137396,
+        84049212
+      ]
+    },
+    "moon walker": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        795437,
+        4317752
+      ]
+    },
+    "peacock": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "prophets of thwaites": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "subterranean street society out of skin into bloom tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the elvis concert special 70th anniversary heartbreak hotel": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "utrechtse meezingerij": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "ash": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        99672522,
+        1781,
+        75816742,
+        330178181,
+        99675432,
+        9302796,
+        151784772,
+        5229206,
+        425726021,
+        11225370
+      ]
+    },
+    "bartofso tour le masque": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "bokoesam": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5821973,
+        414988222
+      ]
+    },
+    "employed to serve cabal": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "fred wesley generations": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "hatsune miku miku expo 2026": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "napa": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        7867188,
+        344674861,
+        344674691,
+        344674731,
+        371616921,
+        418634552,
+        95391592
+      ]
+    },
+    "president the blood of your empire": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "sam gendel sam wilkes": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "carsick": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        253526932,
+        1317229
+      ]
+    },
+    "faux real": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        10445334,
+        95630302
+      ]
+    },
+    "flower face": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "good charlotte": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        703,
+        414427152
+      ]
+    },
+    "pa salieu": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        14743257,
+        412593851
+      ]
+    },
+    "sofy": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        378589641,
+        196240737
+      ]
+    },
+    "zebrahead": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1777,
+        176461327
+      ]
+    },
+    "bloc party interpol": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "fly anakin": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        9936576,
+        416944552
+      ]
+    },
+    "man": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        56148,
+        425221571,
+        255958142
+      ]
+    },
+    "master boot record fulci arottenbit": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "ablaye cissoko cyrille brotto": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "aretha franklin queen of soul metropole orkest shelea": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "de jukebox": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "eloise": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        195762767,
+        195753657,
+        195751397,
+        371809811,
+        51861952,
+        195749707,
+        195751597,
+        195750127
+      ]
+    },
+    "geel changeover en tray": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "iris hond kamerata zuid spelen einaudi": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "master boot record fulci": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "orsini": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "aupinard": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        152058642,
+        420521032
+      ]
+    },
+    "dave mccredie": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "dune sessions": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "hatebreed": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        6021,
+        412543901
+      ]
+    },
+    "kolsch the machine": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "lawn": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        276816,
+        408342942,
+        258115522,
+        418682372
+      ]
+    },
+    "lfrqx": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "michael jackson project ft jared grant off the wall": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "mustbejohn chimer only tears": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "prison religion": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "revolution calling pre show": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "salmo": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1155242,
+        386020151
+      ]
+    },
+    "this is michael": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "de hardheid": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "fondip": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "jim keller": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "kreukelzone mannen met baarden": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "mietze conte": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "muna gets so hot tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "omar doom": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "one block society eden demise kaijuju dogma vile": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "samba roots x lucas santana": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "seyda perincek": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "spinvis": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        16200,
+        413800571
+      ]
+    },
+    "alex agnew the moonlovers the doors": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "bizkit park": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "fay": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        202984717,
+        451522
+      ]
+    },
+    "finale amsterdamse popprijs 2026": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "fun n folk met o a ferocious dog": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "jessie ware the superbloom tour 2026": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "jim gardner": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        351932702,
+        65813652
+      ]
+    },
+    "kurashi": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "push it": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "soul birds the new chapter": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "teach": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1673648,
+        371748521
+      ]
+    },
+    "tough enough david eugene edwards many more": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "vrlcht": {
+      "retryAfter": "2026-12-05",
+      "reason": "album-cover-as-portrait"
+    },
+    "wies": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5480855,
+        108144942
+      ]
+    },
+    "artin muziek friends": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "delany": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        4093955,
+        83841662,
+        123771932
+      ]
+    },
+    "jeremy pelt quintet": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "lords of altamont": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "morbidfest i am morbid atheist cancer narcotic wasteland": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "nightfreak usa cafe de wacht": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "nina june": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1661953,
+        417684102
+      ]
+    },
+    "demo club bandnight auks": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "long distance calling the phantom void": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the pretty reckless": {
+      "retryAfter": "2027-01-04",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        370519,
+        417783452
+      ]
     }
   }
 }
