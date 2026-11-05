@@ -1,0 +1,27 @@
+name: Audit NL venue artwork (read-only)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/nl-venue-image-pilot.mjs'
+      - 'scripts/run-nl-venue-image-pilot.mjs'
+      - 'tests/nl-venue-image-pilot.test.mjs'
+      - '.github/workflows/audit-nl-venue-images.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout Friends
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test matching and image safety
+        run: node --test tests/nl-venue-image-pilot.test.mjs
+      - name: Inspect official NL venue pages (no publication)
+        run: node scripts/run-nl-venue-image-pilot.mjs
