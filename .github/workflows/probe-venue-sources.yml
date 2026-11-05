@@ -1,0 +1,17 @@
+name: Probe official NL venue sources (read-only research)
+# Manual research only: each run sends ~100 requests to venue sites.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Probe venue robots, sitemaps, structured data and feeds
+        run: node scripts/probe-venue-sources.mjs

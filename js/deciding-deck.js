@@ -1,4 +1,4 @@
-import {safeUrl,norm} from './model.js?v=city-scope-v4';
+import {safeUrl,norm} from './model.js?v=venue-v1';
 
 const el=(tag,cls,text)=>{
   const n=document.createElement(tag);if(cls)n.className=cls;
@@ -57,10 +57,16 @@ export function openConcertDetail(event={},reason=''){
     inner.append(el('h3','deciding-detail-lineup-title','Listed artists / support'),
       el('p','deciding-detail-lineup',lineup.join(' · ')));
   }
-  if(event.source==='podiuminfo-agenda')inner.append(el('p','onboarding-hint',
+  const official=safeUrl(event.officialUrl);
+  if(event.source==='podiuminfo-agenda'&&!official)inner.append(el('p','onboarding-hint',
     'This is a day-agenda preview; please confirm the date, venue and lineup on the original event page.'));
+  if(official&&event.source!=='venue-official')inner.append(el('p','onboarding-hint','Date, venue and headliner confirmed on the venue\'s official page.'));
   const buttons=el('div','deciding-detail-actions');
   const source=safeUrl(event.url);
+  if(official&&official!==source){
+    const a=el('a','button primary','Official venue page ↗');
+    a.href=official;a.target='_blank';a.rel='noopener noreferrer';buttons.append(a);
+  }
   if(source){
     const a=el('a','button primary','View event / tickets ↗');
     a.href=source;a.target='_blank';a.rel='noopener noreferrer';buttons.append(a);

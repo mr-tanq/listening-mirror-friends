@@ -4,16 +4,19 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/venue-sources/**'
+      - 'scripts/update-venue-catalog.mjs'
       - 'scripts/nl-venue-image-pilot.mjs'
       - 'scripts/run-nl-venue-image-pilot.mjs'
       - 'tests/nl-venue-image-pilot.test.mjs'
+      - 'tests/venue-sources.test.mjs'
       - '.github/workflows/audit-nl-venue-images.yml'
 permissions:
   contents: read
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Checkout Friends
         uses: actions/checkout@v4
@@ -22,6 +25,6 @@ jobs:
         with:
           node-version: '22'
       - name: Test matching and image safety
-        run: node --test tests/nl-venue-image-pilot.test.mjs
-      - name: Inspect official NL venue pages (no publication)
+        run: node --test tests/nl-venue-image-pilot.test.mjs tests/venue-sources.test.mjs
+      - name: Audit official NL venue sources (no files written, no publication)
         run: node scripts/run-nl-venue-image-pilot.mjs

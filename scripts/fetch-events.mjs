@@ -491,6 +491,10 @@ async function discoverRockingGreekEvents(base,{today,endDate}){
   return {events:[...listings.values()],warnings};
 }
 
+// Sources whose last-good events are carried forward until they expire.
+// 'venue-official' events are reconciled (duplicates, cancellations, policy)
+// by scripts/update-venue-catalog.mjs, which runs right after this job.
+export const RETAINED_SOURCES=['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','floyd-calendar','fuzzclub-calendar','anclub-index','partner-cometogether','partner-ticketservices','venue-official'];
 export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE_DIR || '.source'}={}) {
   const base = path.resolve(ROOT, sourceDir);
   const source = await import(pathToFileURL(path.join(base,'scripts/sources/podiuminfo.mjs')).href);
@@ -644,7 +648,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   // Never mark an unseen day as empty: retain last-good events until expiry.
   const map = new Map();
   for (const event of existing.events || []) {
-    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && ['podiuminfo','podiuminfo-agenda','festivalinfo','official','more','rocking','gagarin-calendar','floyd-calendar','fuzzclub-calendar','anclub-index','partner-cometogether','partner-ticketservices'].includes(event.source)) map.set(event.id,event);
+    if (event && validDate(event.date) && event.date>=today && event.date<=festivalEnd && RETAINED_SOURCES.includes(event.source)) map.set(event.id,event);
   }
   const maxAge=35*86400000;
   for (const [id, detail] of Object.entries(cache.concert.entries)) {
