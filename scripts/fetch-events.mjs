@@ -21,6 +21,7 @@ import {watchTechnopolisMusic} from './technopolis-watch.mjs';
 import {recoverCatalogImages} from './event-image-recovery.mjs';
 import {applyVerifiedPosters} from './verified-posters.mjs';
 import {enrichPodiuminfoImages} from './podiuminfo-images.mjs';
+import {enrichDeezerArtistImages} from './deezer-artist-images.mjs';
 import {addPodiuminfoArtists,verifiedArtistPhoto} from '../js/artist-images.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -846,9 +847,17 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
       .map(e=>({artist:e.artist,image:e.image,sourceUrl:e.url}))
   ];
   const artistImageUpdate=addPodiuminfoArtists(previousArtistImages,sourcePhotos);
-  await write('data/artist-images.json',artistImageUpdate.cache);
-  console.log('Artist image cache: '+Object.keys(artistImageUpdate.cache.artists).length+
-    ' bands, '+artistImageUpdate.added+' new/updated photos.');
+  // The original Listening Mirror also uses public, high-resolution Deezer
+  // ARTIST photos. Fill unresolved NL/BE artists conservatively with exact
+  // identity checks, bounded requests and persistent backoff.
+  const deezerImageUpdate=await enrichDeezerArtistImages(events,artistImageUpdate.cache,{
+    today,maxRequests:Number(process.env.DEEZER_ARTIST_IMAGE_REQUESTS||70),
+    maxDurationMs:Number(process.env.DEEZER_ARTIST_IMAGE_TIME_MS||105000)
+  });
+  await write('data/artist-images.json',deezerImageUpdate.cache);
+  console.log('Artist image cache: '+Object.keys(deezerImageUpdate.cache.artists).length+
+    ' bands; Podiuminfo '+artistImageUpdate.added+' and Deezer '+deezerImageUpdate.stats.found+
+    ' newly verified portraits; lookup '+deezerImageUpdate.stats.requests+' requests.');
   console.log('Art recovery: '+recovered.reused+' reused; Rocking event pages '+pagePosters.found+' images from '+pagePosters.attempts+' pages.');
   const reviewedImages=await read('data/verified-event-images.json',{records:[]});
   const reviewed=applyVerifiedPosters(events,reviewedImages);
@@ -877,7 +886,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,artworkReused:recovered.reused,rockingPagePosters:pagePosters.found,reviewedPostersApplied:reviewed.applied,editorialSupplemented,podiuminfoImages:podiumPhotoResult.stats,artistPhotoCache:{artists:Object.keys(artistImageUpdate.cache.artists).length,updated:artistImageUpdate.added},gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,artworkReused:recovered.reused,rockingPagePosters:pagePosters.found,reviewedPostersApplied:reviewed.applied,editorialSupplemented,podiuminfoImages:podiumPhotoResult.stats,artistPhotoCache:{artists:Object.keys(deezerImageUpdate.cache.artists).length,podiuminfoUpdated:artistImageUpdate.added,deezer:deezerImageUpdate.stats},gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
