@@ -86,7 +86,8 @@ export function createVenueClient(origin,{fetcher=fetch,state={},today=new Date(
  };
 }
 
-const decode=s=>String(s??'').replace(/&#x([\da-f]+);/gi,(_,h)=>String.fromCodePoint(parseInt(h,16)))
+const NAMED={eacute:'é',egrave:'è',ecirc:'ê',euml:'ë',aacute:'á',agrave:'à',auml:'ä',iacute:'í',iuml:'ï',oacute:'ó',ouml:'ö',uacute:'ú',uuml:'ü',ccedil:'ç',ntilde:'ñ',oslash:'ø',aring:'å',szlig:'ß',ndash:'–',mdash:'—',lsquo:'‘',rsquo:'’',ldquo:'“',rdquo:'”',hellip:'…'};
+const decode=s=>String(s??'').replace(/&([a-z]+);/gi,(m,n)=>NAMED[n.toLowerCase()]??m).replace(/&#x([\da-f]+);/gi,(_,h)=>String.fromCodePoint(parseInt(h,16)))
  .replace(/&#(\d+);/g,(_,d)=>String.fromCodePoint(Number(d))).replace(/&quot;/g,'"').replace(/&#0?39;|&apos;/g,"'")
  .replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&');
 export const cleanText=s=>decode(String(s??'').replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();

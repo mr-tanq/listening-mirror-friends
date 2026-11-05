@@ -63,7 +63,9 @@ if(import.meta.url===`file://${process.argv[1]}`){
  const cache=await read('data/venue-events.json',{version:1,venues:{}});
  const policy=await read('data/nl-venue-sources.json',{venues:{}});
  const result=await runVenueStage({audit,only,feed,cache,policy});
- console.log(JSON.stringify(result.report,null,1));
+ // One line per venue keeps CI logs readable and machine-parsable.
+ for(const [id,v] of Object.entries(result.report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
+ console.log('TOTALS '+JSON.stringify(result.report.totals));
  if(!audit){
   const before=(feed.events||[]).length;
   await write('data/venue-events.json',result.cache);

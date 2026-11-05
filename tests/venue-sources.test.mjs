@@ -188,3 +188,32 @@ test('Patronaat listing drops past dates before any page is fetched',async()=>{
  const rows=await listEventUrls(patronaat,client,{today:'2026-11-05'});
  assert.deepEqual(rows.map(r=>r.slugDate),['2026-11-20']);
 });
+
+test('room names count as on-site; encoded room names are decoded',()=>{
+ const effenaar=adapterById('effenaar'),paard=adapterById('paard');
+ const o={url:'https://www.effenaar.nl/agenda/oi-va-voi',title:'Oi Va Voi',performers:[],date:'2026-11-08',venueName:'Kleine Zaal'};
+ assert.equal(scoreMatch(cat('Oi Va Voi','2026-11-08','Effenaar'),o,effenaar).verdict,'match');
+ assert.equal(scoreMatch(cat('Jeremy Pinnell','2026-11-08','Effenaar'),{...o,title:'Jeremy Pinnell',venueName:'Café Wilhelmina'},effenaar).verdict,'match');
+ const page=ld({'@type':'Event',name:'Paardcafé: Ginger ILL',startDate:'2026-11-07T21:00',location:{'@type':'Place',name:'Caf&eacute;'}});
+ const p=parseEventPage(page,'https://www.paard.nl/event/ginger-ill/',paard);
+ assert.equal(p.venueName,'Café');
+ assert.equal(scoreMatch(cat('Paardcafé: Ginger ILL','2026-11-07','Paard'),p,paard).verdict,'match');
+ assert.equal(scoreMatch(cat('Ginger ILL','2026-11-07','Paard'),p,paard).verdict,'match');
+ // A room name of ANOTHER venue type is still off-site
+ assert.equal(scoreMatch(cat('Oi Va Voi','2026-11-08','Effenaar'),{...o,venueName:'Tolhuistuin'},effenaar).verdict,'reject');
+});
+test('Bibelot: first written date with a year is the event date; sidebars without years are ignored',async()=>{
+ const {firstDatedText}=await import('../scripts/venue-sources/parse.mjs');
+ const bibelot=adapterById('bibelot');
+ const html=og('Loïs Lane - Bibelot','https://bibelot.net/wp-content/uploads/lois.jpg')+'<p>6 november</p><span>vr 6 nov 2026</span><aside>za 29 mrt</aside><aside>za 25 apr 2027</aside>';
+ assert.equal(firstDatedText(html),'2026-11-06');
+ const o=parseEventPage(html,'https://bibelot.net/programma/lois-lane/',bibelot);
+ assert.deepEqual([o.title,o.date,o.via],['Loïs Lane','2026-11-06','text-date+opengraph']);
+ assert.equal(scoreMatch(cat('Loïs Lane - 40 jaar!','2026-11-06','Bibelot'),o,bibelot).verdict,'match');
+ assert.equal(firstDatedText('<p>31 feb 2026</p>'),'');
+});
+test('imageUse "denied" stores no image candidates',()=>{
+ const cache={venues:{paradiso:{pages:{a:{checkedAt:'2026-11-05',event:{url:'https://www.paradiso.nl/programma/mono/1',title:'MONO',performers:['MONO'],date:'2026-12-01',venueName:'',image:'https://assets.paradiso.nl/x.jpg'}}}}}};
+ const r=enrichCatalogue([cat('MONO','2026-12-01','Paradiso')],[paradiso],cache,{venues:{paradiso:{imageUse:'denied'}}},{today:'2026-11-05'});
+ assert.equal(r.candidates.length,0);assert.equal(r.events[0].officialUrl,'https://www.paradiso.nl/programma/mono/1');
+});

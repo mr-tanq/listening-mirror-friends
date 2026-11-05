@@ -11,4 +11,5 @@ const policy=await load('data/nl-venue-sources.json').catch(()=>({venues:{}}));
 const cache=await load('data/venue-events.json').catch(()=>({venues:{}}));
 const only=process.env.VENUES?process.env.VENUES.split(','):null;
 const {report}=await runVenueStage({audit:true,feed,policy,cache,only});
-console.log(JSON.stringify(report,null,1));
+for(const [id,v] of Object.entries(report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
+console.log('TOTALS '+JSON.stringify(report.totals));

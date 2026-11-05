@@ -13,6 +13,18 @@ export function timeTagDate(html){
  const dates=new Set([...String(html||'').matchAll(/<time\b[^>]*datetime=["'](\d{4}-\d{2}-\d{2})/gi)].map(m=>m[1]));
  return dates.size===1?[...dates][0]:'';
 }
+const NL_MONTHS={jan:1,januari:1,january:1,feb:2,februari:2,february:2,mrt:3,maart:3,mar:3,march:3,apr:4,april:4,mei:5,may:5,jun:6,juni:6,june:6,jul:7,juli:7,july:7,aug:8,augustus:8,august:8,sep:9,sept:9,september:9,okt:10,oktober:10,oct:10,october:10,nov:11,november:11,dec:12,december:12};
+/** First written date that includes a year, e.g. "do 5 nov 2026". */
+export function firstDatedText(html){
+ const text=String(html||'').replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ');
+ for(const m of text.matchAll(/\b(\d{1,2})\s+([a-z]{3,9})\.?\s+(20\d{2})\b/gi)){
+  const month=NL_MONTHS[m[2].toLowerCase()];const day=Number(m[1]);
+  if(!month||day<1||day>31)continue;
+  const iso=`${m[3]}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  if(new Date(iso+'T12:00:00Z').toISOString().startsWith(iso))return iso;
+ }
+ return '';
+}
 export function parseEventPage(html,pageUrl,adapter){
  const page=canonicalUrl(html,pageUrl)||pageUrl;
  const ogTitle=cleanText(metaContent(html,['og:title'])).replace(adapter.titleSuffix||/$^/,'').trim();
@@ -31,11 +43,12 @@ export function parseEventPage(html,pageUrl,adapter){
    image:ogImage||e.image,cancelled:/Cancelled|Postponed|Rescheduled/i.test(e.status),via:'json-ld'};
  }
  if(ranked.length&&dates.size>1)return null; // a multi-date page cannot prove one concert
- const date=(adapter.slugDate&&adapter.slugDate(pageUrl))||(adapter.timeTagDate&&timeTagDate(html))||'';
+ const date=(adapter.slugDate&&adapter.slugDate(pageUrl))||(adapter.timeTagDate&&timeTagDate(html))||
+  (adapter.textDate==='first-with-year'&&firstDatedText(html))||'';
  if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!ogTitle)return null;
  const performers=ogTitle.split(/\s+\+\s+/).map(s=>s.trim()).filter(Boolean);
  return {url:page,title:ogTitle,performers:performers.length>1?performers:[],date,startDate:date,venueName:'',
-  image:ogImage,cancelled:/\b(?:geannuleerd|afgelast|cancelled|canceled|verplaatst|postponed)\b/i.test(ogTitle),via:adapter.slugDate?'url-date+opengraph':'time-tag+opengraph'};
+  image:ogImage,cancelled:/\b(?:geannuleerd|afgelast|cancelled|canceled|verplaatst|postponed)\b/i.test(ogTitle),via:adapter.slugDate?'url-date+opengraph':adapter.textDate?'text-date+opengraph':'time-tag+opengraph'};
 }
 export function eventLinksFromHtml(html,base,adapter){
  const out=new Set();

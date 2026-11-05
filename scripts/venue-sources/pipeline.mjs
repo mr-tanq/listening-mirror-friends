@@ -131,7 +131,7 @@ export function enrichCatalogue(events,adapters,cache,policy,{today}){
   if(!match){if(reason==='ambiguous')s.ambiguous++;return event;}
   s.matched++;
   const next={...event,officialUrl:match.url,officialMatch:{venue:adapter.id,confidence,via:match.via}};
-  if(match.image){
+  if(match.image&&policy?.venues?.[adapter.id]?.imageUse!=='denied'){
    const permitted=policy?.venues?.[adapter.id]?.imageUse==='permitted';
    candidates.push({eventId:event.id,venue:adapter.id,eventUrl:match.url,image:match.image,confidence,published:permitted&&!event.image});
    if(permitted&&!event.image){
