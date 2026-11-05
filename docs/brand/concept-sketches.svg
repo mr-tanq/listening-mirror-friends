@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Helvetica, Arial, sans-serif">
+  <!-- Rough strategy sketches only. NOT final artwork: proportions, colours and marks are placeholders for a designer to explore. -->
+  <defs>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="2.2" numOctaves="1" seed="3" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2.05" result="speckle"/>
+      <feComposite in="d" in2="speckle" operator="in"/>
+    </filter>
+    <filter id="faded" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="5" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.6 1.85" result="speckle"/>
+      <feComposite in="d" in2="speckle" operator="in"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="sq"><rect width="180" height="180" rx="40"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="760" fill="#f4f1ea"/>
+  <text x="40" y="52" font-size="22" font-weight="700" fill="#1a1820">Five directions as app icons: rough strategy sketches, not final artwork</text>
+  <text x="40" y="78" font-size="13" fill="#5d5866">Each one is shown at 180px and 48px. The 48px version is the real test: if it fails there, it fails on a home screen.</text>
+
+  <!-- 1 SPIKE -->
+  <g transform="translate(40,110)">
+    <g clip-path="url(#sq)">
+      <rect width="180" height="180" fill="#151515"/>
+      <polygon points="14,134 22,126 18,120 150,40 158,46 166,44 160,52 168,58 36,140 30,134 22,140" fill="#e9ff3b"/>
+      <text x="70" y="102" font-family="'Marker Felt','Comic Sans MS',cursive" font-size="20" fill="#151515" transform="rotate(-31 92 94)">21:30</text>
+    </g>
+    <g transform="translate(66,200) scale(0.2667)"><g clip-path="url(#sq)"><rect width="180" height="180" fill="#151515"/><polygon points="14,134 22,126 18,120 150,40 158,46 166,44 160,52 168,58 36,140 30,134 22,140" fill="#e9ff3b"/></g></g>
+    <text x="0" y="280" font-size="15" font-weight="700" fill="#1a1820">1 · Spike</text>
+    <text x="0" y="298" font-size="12" fill="#5d5866">Gaffer and spike tape:</text>
+    <text x="0" y="313" font-size="12" fill="#5d5866">"your spot on the floor"</text>
+  </g>
+
+  <!-- 2 STAMP (recommended) -->
+  <g transform="translate(270,110)">
+    <g clip-path="url(#sq)">
+      <rect width="180" height="180" fill="#f2ede3"/>
+      <g transform="rotate(-8 90 90)" filter="url(#ink)">
+        <circle cx="90" cy="90" r="52" fill="none" stroke="#5a2ee5" stroke-width="20"/>
+        <circle cx="106" cy="84" r="17" fill="#5a2ee5"/>
+      </g>
+    </g>
+    <g transform="translate(66,200) scale(0.2667)"><g clip-path="url(#sq)"><rect width="180" height="180" fill="#f2ede3"/><g transform="rotate(-8 90 90)"><circle cx="90" cy="90" r="52" fill="none" stroke="#5a2ee5" stroke-width="22"/><circle cx="106" cy="84" r="19" fill="#5a2ee5"/></g></g></g>
+    <text x="0" y="280" font-size="15" font-weight="700" fill="#5a2ee5">2 · Stamp (recommended)</text>
+    <text x="0" y="298" font-size="12" fill="#5d5866">A door hand-stamp in UV ink:</text>
+    <text x="0" y="313" font-size="12" fill="#5d5866">"you're in". The dot glances.</text>
+  </g>
+
+  <!-- 3 PLUG mascot -->
+  <g transform="translate(500,110)">
+    <g clip-path="url(#sq)">
+      <rect width="180" height="180" fill="#20304a"/>
+      <rect x="58" y="34" width="64" height="122" rx="30" fill="#ff7a1a"/>
+      <path d="M62 70 q28 6 56 0 M62 104 q28 6 56 0" stroke="#e8650b" stroke-width="3" fill="none"/>
+      <ellipse cx="80" cy="86" rx="5" ry="7" fill="#20304a"/>
+      <ellipse cx="100" cy="86" rx="5" ry="7" fill="#20304a"/>
+      <path d="M84 100 q6 5 12 0" stroke="#20304a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(66,200) scale(0.2667)"><g clip-path="url(#sq)"><rect width="180" height="180" fill="#20304a"/><rect x="58" y="34" width="64" height="122" rx="30" fill="#ff7a1a"/><ellipse cx="80" cy="86" rx="7" ry="9" fill="#20304a"/><ellipse cx="100" cy="86" rx="7" ry="9" fill="#20304a"/></g></g>
+    <text x="0" y="280" font-size="15" font-weight="700" fill="#1a1820">3 · Plug</text>
+    <text x="0" y="298" font-size="12" fill="#5d5866">A foam earplug character:</text>
+    <text x="0" y="313" font-size="12" fill="#5d5866">squashes, then slowly recovers.</text>
+  </g>
+
+  <!-- 4 BODY LANGUAGE -->
+  <g transform="translate(730,110)">
+    <g clip-path="url(#sq)">
+      <rect width="180" height="180" fill="#ffe9dc"/>
+      <g transform="rotate(12 90 110)">
+        <rect x="66" y="92" width="48" height="80" rx="24" fill="#ff4f3d"/>
+        <circle cx="90" cy="62" r="22" fill="#ff4f3d"/>
+      </g>
+    </g>
+    <g transform="translate(66,200) scale(0.2667)"><g clip-path="url(#sq)"><rect width="180" height="180" fill="#ffe9dc"/><g transform="rotate(12 90 110)"><rect x="66" y="92" width="48" height="80" rx="24" fill="#ff4f3d"/><circle cx="90" cy="62" r="22" fill="#ff4f3d"/></g></g></g>
+    <text x="0" y="280" font-size="15" font-weight="700" fill="#1a1820">4 · Body Language</text>
+    <text x="0" y="298" font-size="12" fill="#5d5866">A faceless figure. Genre is</text>
+    <text x="0" y="313" font-size="12" fill="#5d5866">shown by how it moves, not by style.</text>
+  </g>
+
+  <!-- 5 RUNNING ORDER -->
+  <g transform="translate(960,110)">
+    <g clip-path="url(#sq)">
+      <rect width="180" height="180" fill="#ffffff"/>
+      <path d="M45 0V180M90 0V180M135 0V180" stroke="#e3e0da" stroke-width="2"/>
+      <rect x="22" y="44" width="92" height="24" rx="5" fill="#111"/>
+      <rect x="62" y="78" width="96" height="24" rx="5" fill="#2d6bff"/>
+      <rect x="38" y="112" width="70" height="24" rx="5" fill="#111"/>
+    </g>
+    <g transform="translate(66,200) scale(0.2667)"><g clip-path="url(#sq)"><rect width="180" height="180" fill="#fff"/><rect x="22" y="44" width="92" height="26" rx="5" fill="#111"/><rect x="62" y="78" width="96" height="26" rx="5" fill="#2d6bff"/><rect x="38" y="112" width="70" height="26" rx="5" fill="#111"/></g></g>
+    <text x="0" y="280" font-size="15" font-weight="700" fill="#1a1820">5 · Running Order</text>
+    <text x="0" y="298" font-size="12" fill="#5d5866">A festival timetable grid:</text>
+    <text x="0" y="313" font-size="12" fill="#5d5866">calm, credible, plannable.</text>
+  </g>
+
+  <!-- Stamp state system -->
+  <line x1="40" y1="450" x2="1160" y2="450" stroke="#d8d2c6"/>
+  <text x="40" y="488" font-size="18" font-weight="700" fill="#1a1820">Stamp direction: one mark, three states that follow the life of a show</text>
+
+  <g transform="translate(40,510)">
+    <rect width="340" height="210" rx="22" fill="#f2ede3" stroke="#d8d2c6"/>
+    <g transform="translate(170,96) rotate(-8)" filter="url(#ink)">
+      <circle r="52" fill="none" stroke="#5a2ee5" stroke-width="20"/><circle cx="16" cy="-6" r="17" fill="#5a2ee5"/>
+    </g>
+    <text x="22" y="186" font-size="13" font-weight="700" fill="#1a1820">UPCOMING: fresh ink</text>
+    <text x="200" y="186" font-size="12" fill="#5d5866">saved, still to come</text>
+  </g>
+
+  <g transform="translate(430,510)">
+    <rect width="340" height="210" rx="22" fill="#0e0c14"/>
+    <g transform="translate(170,96) rotate(-8)" filter="url(#glow)">
+      <circle r="52" fill="none" stroke="#b79bff" stroke-width="20"/><circle cx="16" cy="-6" r="17" fill="#d9ccff"/>
+    </g>
+    <text x="22" y="186" font-size="13" font-weight="700" fill="#e9e3ff">TONIGHT: UV glow</text>
+    <text x="200" y="186" font-size="12" fill="#9c95b4">dark mode, show day</text>
+  </g>
+
+  <g transform="translate(820,510)">
+    <rect width="340" height="210" rx="22" fill="#f2ede3" stroke="#d8d2c6"/>
+    <g transform="translate(170,96) rotate(-8)" filter="url(#faded)" opacity="0.55">
+      <circle r="52" fill="none" stroke="#7c6aa8" stroke-width="20"/><circle cx="16" cy="-6" r="17" fill="#7c6aa8"/>
+    </g>
+    <text x="22" y="186" font-size="13" font-weight="700" fill="#1a1820">ATTENDED: faded print</text>
+    <text x="200" y="186" font-size="12" fill="#5d5866">kept in the Archive</text>
+  </g>
+</svg>
