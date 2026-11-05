@@ -30,10 +30,7 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
   cache.venues[a.id]=r.entry;
   return [a.id,r.stats];
  }));
- // Venues whose listing was successfully read today: only for these may a
- // missing page mean "delisted".
- const refreshedToday=new Set(refresh.filter(([,s])=>s.access==='ok'&&s.listed>0).map(([id])=>id));
- const reconciled=reconcileVenueEvents(catalogue,adapters,cache,policy,{today,refreshedToday});
+ const reconciled=reconcileVenueEvents(catalogue,adapters,cache,policy,{today});
  const enriched=enrichCatalogue(reconciled.events,adapters,cache,policy,{today});
  const discovered=discoverFromVenues(enriched.events,adapters,cache,policy,{today,endDate:addDays(today,150)});
  const events=discovered.events.sort((a,b)=>a.date.localeCompare(b.date)||String(a.artist).localeCompare(String(b.artist)));

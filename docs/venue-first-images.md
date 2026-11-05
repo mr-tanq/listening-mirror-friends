@@ -85,7 +85,24 @@ scripts/update-venue-catalog.mjs (runs even if Podiuminfo failed)
 
 **Confidence.** 0.3 for date + venue, plus 0.6 for the headliner, plus 0.1 when support acts also agree. The threshold is 0.85, so the headliner is mandatory. Two different official pages matching the same concert are **ambiguous** and rejected. There is no fuzzy similarity anywhere.
 
-**Discovery duplicate guard.** An official event is not added when any catalogue concert at that venue on that day shares a performer word. A missed discovery is preferred over a duplicate card.
+**Show identity for discovery and reconciliation (`showIdentity`).** Every catalogue concert is compared with an official event and gets one of three verdicts:
+
+| Verdict | When | Discovery | Daily reconciliation |
+|---|---|---|---|
+| `same` | Same official URL, **or** strict identity (date + on-site venue + exact headliner) | Not added | Venue copy removed |
+| `possible` | Same night and venue, and one full headliner name extends the other at a word boundary (`De Jukebox` / `De Jukebox #17`) | Not added; listed for review | **Kept**: ambiguous cases are never deleted |
+| `different` | Anything else | Added | Kept |
+
+Sharing a single word is never evidence of the same show: `Black Midi` and `Black Country, New Road` on the same night are two concerts.
+
+**Removing a discovered concert needs positive evidence from its own official page:**
+- the page says cancelled or postponed;
+- the page now shows another date (the new date is discovered as a new event);
+- the page answers 404/410 on two checks on different days.
+
+Absence from an agenda or sitemap is never evidence, because listings are often partial (homepages, paginated agendas, the newest sitemap pages only). Pages that leave a listing are re-checked weekly instead. Denied access and network failures change nothing.
+
+Discovery being switched off for a venue (policy) also removes that venue's discoveries.
 
 ## 5. Image priority and permission
 

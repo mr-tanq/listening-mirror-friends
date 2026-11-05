@@ -64,7 +64,7 @@ test('when Podiuminfo later lists the same show, exactly one card remains',async
  assert.equal(day2.report.totals.venueEventsRemoved.duplicate,1);
 });
 
-test('cancelled or delisted shows and switched-off venues are removed; repeated runs never duplicate',async()=>{
+test('cancelled shows and switched-off venues are removed; repeated runs never duplicate',async()=>{
  const day1=await run({events:[]},{},site(pages));
  let feed={events:day1.events},cache=day1.cache;
  for(let i=0;i<3;i++){const r=await run(feed,cache,site(pages));feed={events:r.events};cache=r.cache;}
@@ -73,9 +73,6 @@ test('cancelled or delisted shows and switched-off venues are removed; repeated 
  const stale={...cache,venues:{paradiso:{...cache.venues.paradiso,pages:{}}}}; // force a re-fetch
  const c=await run(feed,stale,site(cancelled));
  assert.ok(!venueEvents(c).some(e=>e.url===NEW));
- const {[NEW]:_,...delisted}=pages;
- const d=await run(feed,stale,site(delisted));
- assert.ok(!venueEvents(d).some(e=>e.url===NEW));
  const off=await run(feed,cache,site(pages),{venues:{paradiso:{discovery:false,imageUse:'pending'}}});
  assert.equal(venueEvents(off).length,0);
 });
