@@ -78,6 +78,7 @@ export async function inspectNlVenueImages(events,{fetcher=fetch,maxEventPages=1
   const report={attempted:0,matches:[],unmatched:[],errors:[]};
   const current=new Date().toISOString().slice(0,10);
   for(const [id,venue] of Object.entries(VENUES)){
+    let venueAttempts=0;
     let links;
     try{
       const response=await fetcher(venue.agenda,{signal:AbortSignal.timeout(9000)});
@@ -85,10 +86,10 @@ export async function inspectNlVenueImages(events,{fetcher=fetch,maxEventPages=1
       links=agendaLinks(await response.text(),id);
     }catch(error){report.errors.push({venue:id,error:String(error)});continue;}
     for(const e of events.filter(e=>!e.image&&e.date>=current&&venueKey(e)===id)){
-      if(report.attempted>=maxEventPages)return report;
+      if(venueAttempts>=maxEventPages)break;
       const choices=links.filter(link=>titleMatch(e,link.title));
       if(choices.length!==1){report.unmatched.push(e.id);continue;}
-      report.attempted++;
+      report.attempted++;venueAttempts++;
       try{
         const res=await fetcher(choices[0].url,{signal:AbortSignal.timeout(9000)});
         if(!res.ok)throw Error('HTTP '+res.status);
