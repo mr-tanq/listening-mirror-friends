@@ -16,7 +16,7 @@ const goodName=name=>{
 export function selectArtistCandidates(events,artistCache,{today=new Date().toISOString().slice(0,10)}={}){
  const all=new Map();
  for(const event of events||[]){
-  if(!['NL','BE'].includes(event.country)||event.date<today)continue;
+  if(!['NL','BE','GR'].includes(event.country)||event.date<today)continue;
   const name=String(event.artist||'').trim(),key=artistKey(name);
   if(!goodName(name)||artistCache?.artists?.[key]?.image)continue;
   const row=all.get(key)||{name,key,count:0,nextDate:event.date};
