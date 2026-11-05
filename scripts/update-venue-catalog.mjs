@@ -12,6 +12,8 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {NL_VENUE_ADAPTERS} from './venue-sources/adapters.mjs';
 import {refreshVenue,enrichCatalogue,discoverFromVenues,officialEventsOf,reconcileVenueEvents} from './venue-sources/pipeline.mjs';
 import {bestOfficialMatch,venueMatches,scoreMatch} from './venue-sources/match.mjs';
+import {applyCachedVenueGenres} from './venue-sources/genre-tags.mjs';
+import {applyGenreMetadata} from './fetch-events.mjs';
 
 const root=new URL('../',import.meta.url);
 const read=async(file,fallback)=>{try{return JSON.parse(await readFile(new URL(file,root),'utf8'));}catch{return fallback;}};
@@ -19,7 +21,7 @@ const write=(file,data)=>writeFile(new URL(file,root),JSON.stringify(data,null,2
 const addDays=(day,n)=>{const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);};
 
 export async function runVenueStage({today=new Date().toISOString().slice(0,10),audit=false,only=null,fetcher=fetch,
- feed,cache,policy,maxDurationMs=Number(process.env.VENUE_TIME_MS||200000),delay}={}){
+ feed,cache,policy,genreTags={artists:{}},maxDurationMs=Number(process.env.VENUE_TIME_MS||200000),delay}={}){
  const adapters=NL_VENUE_ADAPTERS.filter(a=>!only||only.includes(a.id));
  cache={version:1,venues:{},...cache};cache.venues={...cache.venues};
  // Drop concerts that have passed, so the feed stays correct even when the
@@ -34,6 +36,7 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
  const enriched=enrichCatalogue(reconciled.events,adapters,cache,policy,{today});
  const discovered=discoverFromVenues(enriched.events,adapters,cache,policy,{today,endDate:addDays(today,150)});
  const events=discovered.events.sort((a,b)=>a.date.localeCompare(b.date)||String(a.artist).localeCompare(String(b.artist)));
+ const genresFromCache=applyCachedVenueGenres(events,genreTags);
  const report={generatedAt:new Date().toISOString(),today,mode:audit?'audit':'update',venues:{}};
  for(const [id,stats] of refresh){
   const adapter=adapters.find(a=>a.id===id);
@@ -60,7 +63,8 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
  report.totals={catalogueEvents:catalogue.length,officialMatches:enriched.candidates.length,
   imagesPublished:enriched.candidates.filter(c=>c.published).length,imageCandidatesPending:enriched.candidates.filter(c=>!c.published).length,
   discoveredEvents:discovered.added.length,venueEventsRemoved:reconciled.removed,
-  venueEventsPublished:events.filter(e=>e.source==='venue-official').length};
+  venueEventsPublished:events.filter(e=>e.source==='venue-official').length,
+  venueGenresFromCache:genresFromCache,venueGenresTagged:events.filter(e=>e.source==='venue-official'&&e.genre).length};
  return {events,cache,report,candidates:enriched.candidates};
 }
 
@@ -70,7 +74,8 @@ if(import.meta.url===`file://${process.argv[1]}`){
  const feed=await read('data/events.json',{events:[]});
  const cache=await read('data/venue-events.json',{version:1,venues:{}});
  const policy=await read('data/nl-venue-sources.json',{venues:{}});
- const result=await runVenueStage({audit,only,feed,cache,policy});
+ const genreTags=await read('data/artist-tags.json',{artists:{}});
+ const result=await runVenueStage({audit,only,feed,cache,policy,genreTags});
  // One line per venue keeps CI logs readable and machine-parsable.
  for(const [id,v] of Object.entries(result.report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
  for(const d of result.report.discovered)console.log('DISCOVERED '+JSON.stringify(d));
@@ -81,6 +86,18 @@ if(import.meta.url===`file://${process.argv[1]}`){
   // would replace ~1,600 concerts with venue discoveries only.
   if(before<100){console.error('Refusing to write events.json: input feed has only '+before+' events.');process.exitCode=1;}
   else {
+  // The venue stage runs after the regular 60-artist genre lookup pass.
+  // Enrich ONLY newly discovered, still-untagged venue artists and reuse the
+  // same cached iTunes/MusicBrainz metadata without making guessed tags.
+  const untagged=result.events.filter(e=>e.source==='venue-official'&&!e.genre);
+  const genreLimit=Math.max(0,Math.min(30,Number(process.env.VENUE_GENRE_LOOKUPS_PER_RUN||12)));
+  if(untagged.length&&genreLimit){
+   const status=await applyGenreMetadata(untagged,genreTags,{limit:genreLimit});
+   result.report.totals.venueGenreLookups=status.attempts;
+   applyCachedVenueGenres(result.events,genreTags);
+  }
+  result.report.totals.venueGenresTagged=result.events.filter(e=>e.source==='venue-official'&&e.genre).length;
+  await write('data/artist-tags.json',genreTags);
   await write('data/venue-events.json',result.cache);
   await write('data/venue-image-candidates.json',{generatedAt:result.report.generatedAt,
    note:'Official artwork matched to catalogue concerts. Only venues with imageUse "permitted" are published.',candidates:result.candidates});
