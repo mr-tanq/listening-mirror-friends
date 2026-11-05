@@ -93,7 +93,8 @@ export async function refreshVenue(adapter,cacheEntry,{catalogue,today,fetcher=f
   if(page.status!==200)continue;
   const event=parseEventPage(page.text,page.url,adapter);
   if(event){stats.parsed++;entry.pages[row.url]={checkedAt:today,event};}
-  else{stats.unparsed++;entry.pages[row.url]={checkedAt:today,event:null};}
+  else{stats.unparsed++;entry.pages[row.url]={checkedAt:today,event:null};
+   if((stats.unparsedHints||=[]).length<3)stats.unparsedHints.push(pageHint(page.text,row.url));}
  }
  // Forget past events and pages that vanished from the venue's listings.
  const listed=new Set(rows.map(r=>r.url));
@@ -106,6 +107,15 @@ export async function refreshVenue(adapter,cacheEntry,{catalogue,today,fetcher=f
  return {entry,stats,client:client.stats};
 }
 
+/** Diagnostics for pages we could not date: what does the page offer? */
+export function pageHint(html,url){
+ const text=String(html||'');
+ const title=(text.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)/i)||[])[1]||'';
+ const nlDates=[...new Set([...text.replace(/<[^>]+>/g,' ').matchAll(/\b(?:(?:ma|di|wo|do|vr|za|zo|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)\.?\s+)?\d{1,2}\s+(?:jan|feb|mrt|maart|apr|mei|jun|jul|aug|sep|okt|nov|dec)[a-z]*\.?(?:\s+\d{4})?/gi)].map(m=>m[0].trim()))].slice(0,6);
+ const isoDates=[...new Set([...text.matchAll(/\b(20\d{2}-\d{2}-\d{2})(?:[T ]\d{2}:\d{2})?/g)].map(m=>m[0]))].slice(0,6);
+ const attrs=[...new Set([...text.matchAll(/(?:data-[\w-]*date[\w-]*|itemprop=["']startDate["'][^>]*content)=["']([^"']{6,30})["']/gi)].map(m=>m[0].slice(0,60)))].slice(0,4);
+ return {url,title,nlDates,isoDates,attrs,ldTypes:[...new Set([...text.matchAll(/"@type"\s*:\s*"(\w+)"/g)].map(m=>m[1]))].slice(0,8)};
+}
 export const officialEventsOf=(entry,today)=>Object.values(entry?.pages||{}).map(p=>p.event).filter(e=>e&&e.date>=today);
 
 /** A. Attach official pages and (when permitted) official images. */
@@ -145,7 +155,8 @@ export function discoverFromVenues(events,adapters,cache,policy,{today,endDate})
    if(o.date>endDate)continue;
    s.official++;
    const offSite=o.venueName&&!adapter.onSite.test(o.venueName);
-   if(o.cancelled||offSite||NON_MUSIC.test(o.title)){s.skipped++;continue;}
+   const skip=o.cancelled?'cancelled':offSite?'off-site:'+o.venueName:NON_MUSIC.test(o.title)?'non-music':'';
+   if(skip){s.skipped++;(s.skipReasons||={})[skip]=(s.skipReasons[skip]||0)+1;continue;}
    const names=officialHeadliners(o);
    const derived=headlinerNames({artist:o.title});
    const headliner=o.performers?.[0]||derived[derived.length-1]||o.title;

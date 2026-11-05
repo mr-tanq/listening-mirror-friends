@@ -45,7 +45,10 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
     const why=!officials.length?'no-official-data':!sameDay.length?'no-official-event-that-day':
      bestOfficialMatch(e,officials,adapter).reason==='ambiguous'?'ambiguous':'headliner-differs';
     acc[why]=(acc[why]||0)+1;return acc;},{}),
-   sampleMatches:enriched.candidates.filter(c=>c.venue===id).slice(0,3)};
+   sampleMatches:enriched.candidates.filter(c=>c.venue===id).slice(0,3),
+   sampleOfficial:officials.slice(0,4).map(o=>({title:o.title,performers:o.performers.slice(0,3),venueName:o.venueName,date:o.date,via:o.via,cancelled:o.cancelled||undefined})),
+   sampleUnmatched:unmatched.slice(0,5).map(e=>({artist:e.artist,date:e.date,
+    sameDayOfficial:officials.filter(o=>o.date===e.date).slice(0,3).map(o=>o.title+(o.venueName?' @ '+o.venueName:''))}))};
  }
  report.totals={catalogueEvents:catalogue.length,officialMatches:enriched.candidates.length,
   imagesPublished:enriched.candidates.filter(c=>c.published).length,imageCandidatesPending:enriched.candidates.filter(c=>!c.published).length,
