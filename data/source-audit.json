@@ -1,5 +1,5 @@
 {
-  "catalogUpdatedAt": "2026-11-05T13:15:43.807Z",
+  "catalogUpdatedAt": "2026-11-05T13:22:52.623Z",
   "auditedFor": "2026-11-05",
   "totalPublished": 1650,
   "greekPublished": 394,
@@ -26,10 +26,10 @@
   },
   "sources": {
     "anclub-index": {
-      "events": 25,
-      "withImage": 23,
+      "events": 26,
+      "withImage": 24,
       "withoutImage": 2,
-      "greekEvents": 25
+      "greekEvents": 26
     },
     "festivalinfo": {
       "events": 16,
@@ -97,8 +97,8 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 25,
-      "withImage": 23,
+      "published": 26,
+      "withImage": 24,
       "warning": null
     }
   },

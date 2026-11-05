@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T13:15:43.807Z",
+  "updatedAt": "2026-11-05T13:22:52.623Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -3550,7 +3550,7 @@
       "venue": "Muziekgieterij",
       "city": "Maastricht",
       "country": "NL",
-      "genre": "",
+      "genre": "Blues / Rock",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/457446/Bombino/Muziekgieterij/",
       "image": "",
@@ -21542,8 +21542,9 @@
     },
     {
       "id": "more-4de159c1756f5b96",
-      "artist": "TNT - ''40 ΧΡΟΝΙΑ AN CLUB''",
+      "artist": "TNT - ''40 ΧΡΟΝΙΑ AN CLUB'' | On decks: DJ Gzas | Guests: Simadi & Troubles",
       "artists": [
+        "TNT - ''40 ΧΡΟΝΙΑ AN CLUB'' | On decks: DJ Gzas | Guests: Simadi & Troubles",
         "TNT - ''40 ΧΡΟΝΙΑ AN CLUB''"
       ],
       "date": "2026-12-24",
@@ -21552,10 +21553,10 @@
       "country": "GR",
       "genre": "",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/tnt-40-xronia-an-club/",
-      "image": "https://www.more.com/getattachment/B5D69DD7-E338-4BD2-94BF-852FC6B165DE/evg_tnt-40khroniaanclub_1440_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
+      "url": "https://www.anclub.gr/events/tnt---40-hronia-an-club-on-decks-dj-gzas-guests-simadi-troubles",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6aec806380cb1db76deb4b3e_TNT_AN_INSTA_POST.jpg",
+      "source": "anclub-index",
+      "verification": "venue-index"
     },
     {
       "id": "podiuminfo-484896",
@@ -28856,7 +28857,7 @@
     "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 49,
+    "sameVenueDuplicatesMerged": 50,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -28873,7 +28874,7 @@
       "artists": 153,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 1151,
+        "candidates": 1150,
         "requests": 70,
         "found": 22,
         "notFound": 48,
@@ -28891,13 +28892,13 @@
     "fuzzCalendarEvents": 5,
     "fuzzPosterEnriched": 1,
     "fuzzWarning": "",
-    "anClubIndexEvents": 25,
+    "anClubIndexEvents": 26,
     "anClubPosterEnriched": 0,
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 456,
-    "taggedArtists": 371,
+    "genreTaggedEvents": 454,
+    "taggedArtists": 369,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   }
 }
