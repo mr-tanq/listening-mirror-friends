@@ -117,7 +117,42 @@ Suggested request (Dutch venues are usually happy to be promoted):
 
 Venue discovery covers the active adapters only: Paradiso, 013, Doornroosje, Effenaar, Patronaat and Paard (~450 catalogue concerts today). Podiuminfo still covers the other ~80 Dutch venues. TivoliVredenburg and Melkweg need venue consent.
 
-## 7. Limits
+## 7. Measured results (live read-only audits, 2026-11-05)
+
+Four audit runs on GitHub Actions against the real venue sites:
+[42040425586](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42040425586), [42041164480](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42041164480), [42042093191](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42042093191), [42043016450](https://github.com/mr-tanq/listening-mirror-friends/actions/runs/42043016450).
+
+Every audit starts with an empty cache and limited page budgets. The daily job keeps its cache, so coverage grows run over run.
+
+| Venue | Catalogue concerts | Official match (best run) | Notes |
+|---|---:|---:|---|
+| Paradiso | 138 | 74 | 102 of 325 listed pages in one run; the remainder are later dates |
+| 013 | 51 | 46 | 26 extra official concerts discovered |
+| Doornroosje | 69 | 63 | |
+| Effenaar | 41 | 31 | Needed room names as on-site locations |
+| Paard | 74 | 42 | Needed room names, `&eacute;` decoding and `/en/` URL folding |
+| Patronaat | 79 | 12 | Crawl-delay 10 s, so 14 pages per run; full coverage after about 6 daily runs |
+| Bibelot | 35 | 19 | First dated text (enrichment only) |
+| Vera | 43 | 0 | No machine-readable date yet |
+| Tivoli / Melkweg / dB's | 358 | 0 | Blocked or excluded by the venue |
+| **Total** | | **~250** (pilot: 0) | **~50–60 new concerts** discovered |
+
+**Fixes made from the audits:**
+- Room names (`Kleine Zaal`, `GR8`, `Café Wilhelmina`) count as on-site locations.
+- Named HTML entities are decoded.
+- An Effenaar "image" that was the page URL itself is rejected.
+- Language duplicates of one Paard event collapse into one event.
+- Spacing-only name variants match (`Witchfingers` / `Witch Fingers`).
+- A single network timeout no longer ends a venue's run.
+
+**Correctly refused, as designed:**
+- `Knoll` billed as support of `Imperial Triumphant`.
+- Off-site Paradiso shows (Tolhuistuin, Bitterzoet).
+- Off-site 013 shows (Hall of Fame, Little Devil).
+- Cancelled shows (`Afgelast:` / `EventCancelled`).
+- Name variants that add words (`Eddie Jobson U.K. Revisited` vs `Eddie Jobson`).
+
+## 8. Limits
 
 - First runs fetch at most 14–70 pages per venue. Full coverage builds over a few daily runs; pages are re-checked weekly.
 - Effenaar pages carry no performers, so only title-derived headliners match. Patronaat, Bibelot and Vera have no JSON-LD event, so title + URL/`<time>` date are used. Bibelot, Vera and Baroeg stay experimental (discovery off) until audits show clean results.

@@ -64,7 +64,8 @@ export function createVenueClient(origin,{fetcher=fetch,state={},today=new Date(
   stats,state,
   get blocked(){return Boolean(state.deniedUntil&&state.deniedUntil>today);},
   async robots(){return ensureRobots();},
-  /** Returns {status,url,text} or null when not allowed / budget spent / denied. */
+  /** Returns {status,url,text} (status 0 = network error), or null when not
+   *  allowed by robots.txt, the budget is spent, or the site denied access. */
   async get(url,{accept='text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.5'}={}){
    if(new URL(url).origin!==origin)throw new Error('Cross-origin request refused: '+url);
    if(state.deniedUntil&&state.deniedUntil>today)return null;
@@ -81,7 +82,7 @@ export function createVenueClient(origin,{fetcher=fetch,state={},today=new Date(
      stats.denied++;state.deniedUntil=deniedUntil(7);return {status:403,url:r.url,text:''};
     }
     return {status:r.status,url:r.url||url,text};
-   }catch(e){stats.errors++;return null;}
+   }catch(e){stats.errors++;return {status:0,url,text:'',error:String(e?.message||e).slice(0,80)};}
   }
  };
 }

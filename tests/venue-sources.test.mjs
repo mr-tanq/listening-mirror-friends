@@ -237,3 +237,14 @@ test('language variants of one Paard event are one event, not ambiguous; spacing
  assert.equal(scoreMatch(cat('Frankie And The Witchfingers','2026-11-11','Doornroosje'),o,d).verdict,'match');
  assert.equal(scoreMatch(cat('Knoll','2026-11-24','Doornroosje'),{...o,title:'Imperial Triumphant + Knoll',performers:['Imperial Triumphant','Knoll'],date:'2026-11-24'},d).reasons.at(-1),'catalogue-headliner-is-support');
 });
+test('one network error does not end a venue run; three in a row do',async()=>{
+ let n=0;
+ const site=paradisoSite();
+ const flaky=async(url,opts)=>{if(url.includes('/programma/mono/')&&n++===0)throw new Error('timeout');return site(url,opts);};
+ const r=await refreshVenue(paradiso,{},{catalogue:[cat('MONO','2026-12-01','Paradiso')],today:'2026-11-05',fetcher:flaky,delay:async()=>{}});
+ assert.equal(r.stats.errors,1);
+ assert.ok(r.stats.parsed>=2);
+ const dead=await refreshVenue(paradiso,{},{catalogue:[],today:'2026-11-05',delay:async()=>{},
+  fetcher:async(url,opts)=>url.includes('/programma/')?Promise.reject(new Error('down')):site(url,opts)});
+ assert.equal(dead.stats.errors,3);assert.equal(dead.stats.fetched,0);
+});

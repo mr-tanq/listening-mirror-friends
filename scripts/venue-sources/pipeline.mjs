@@ -88,6 +88,12 @@ export async function refreshVenue(adapter,cacheEntry,{catalogue,today,fetcher=f
   if(stats.fetched>=(adapter.maxPages||40)||clock()-start>=maxDurationMs||client.blocked)break;
   const page=await client.get(row.url);
   if(!page)break; // budget, robots or denial: stop for this venue
+  if(page.status===0){ // transient network error: skip this page, stop after 3 in a row
+   stats.errors=(stats.errors||0)+1;
+   if((stats.consecutiveErrors=(stats.consecutiveErrors||0)+1)>=3)break;
+   continue;
+  }
+  stats.consecutiveErrors=0;
   stats.fetched++;
   if(page.status===404||page.status===410){entry.pages[row.url]={checkedAt:today,gone:true};continue;}
   if(page.status!==200)continue;
