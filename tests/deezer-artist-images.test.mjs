@@ -12,6 +12,11 @@ test('skip festivals and existing band images',()=>{
  const candidates=selectArtistCandidates([event('MONO'),event('MONO'),event('Into Battle Festival'),event('Mogwai')],{artists:{mogwai:{image:picture}}},{today:'2026-11-05'});
  assert.deepEqual(candidates.map(x=>x.key),['mono']);
 });
+test('includes Greek concerts in artist-image discovery',()=>{
+ const greek={...event('Moonspell'),country:'GR'};
+ const candidates=selectArtistCandidates([greek,event('MONO')],{artists:{}},{today:'2026-11-05'});
+ assert.deepEqual(candidates.map(x=>x.key).sort(),['mono','moonspell']);
+});
 test('bounded Deezer lookup writes photo into shared cache',async()=>{
  const response={ok:true,json:async()=>({data:[{id:7,name:'MONO',picture_xl:picture}]})};
  const r=await enrichDeezerArtistImages([event('MONO')],{artists:{}},{today:'2026-11-05',maxRequests:1,fetcher:async()=>response,delay:async()=>{}});
