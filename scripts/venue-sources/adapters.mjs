@@ -47,7 +47,7 @@ export const NL_VENUE_ADAPTERS=[
  {id:'paard',name:'Paard',city:'Den Haag',origin:'https://www.paard.nl',
   aliases:['Paard','Paard Den Haag','Het Paard'],onSite:/paard|^caf[eé]$|^gr8$|^grolsch zaal$|^(?:grote|kleine) zaal$/i,floatingTime:true,
   listings:[{type:'sitemap',url:'https://www.paard.nl/sitemap_index.xml',children:/\/event-sitemap\d*\.xml$/,pick:'last',max:2,recentDays:200}],
-  eventUrl:/^https:\/\/www\.paard\.nl\/event\/[^/?#]+\/?$/,titleSuffix:/\s*-\s*PAARD\s*$/i,maxPages:50},
+  eventUrl:/^https:\/\/www\.paard\.nl\/event\/[^/?#]+\/?$/,normalizeUrl:u=>u.replace('/en/event/','/event/'),titleSuffix:/\s*-\s*PAARD\s*$/i,maxPages:90},
  {id:'bibelot',name:'Bibelot',city:'Dordrecht',origin:'https://bibelot.net',
   aliases:['Bibelot'],onSite:/bibelot/i,textDate:'first-with-year',experimental:true,
   listings:[{type:'html-links',url:'https://bibelot.net/programma/'}],

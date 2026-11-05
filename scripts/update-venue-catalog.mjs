@@ -11,7 +11,7 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {NL_VENUE_ADAPTERS} from './venue-sources/adapters.mjs';
 import {refreshVenue,enrichCatalogue,discoverFromVenues,officialEventsOf} from './venue-sources/pipeline.mjs';
-import {bestOfficialMatch,venueMatches} from './venue-sources/match.mjs';
+import {bestOfficialMatch,venueMatches,scoreMatch} from './venue-sources/match.mjs';
 
 const root=new URL('../',import.meta.url);
 const read=async(file,fallback)=>{try{return JSON.parse(await readFile(new URL(file,root),'utf8'));}catch{return fallback;}};
@@ -42,8 +42,10 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
    enrichment:enriched.stats[id]||{catalogue:0},discovery:discovered.stats[id]||null,
    unmatchedReasons:unmatched.reduce((acc,e)=>{
     const sameDay=officials.filter(o=>o.date===e.date);
+    const reasons=sameDay.map(o=>scoreMatch(e,o,adapter).reasons.at(-1));
+    const pick=['cancelled','catalogue-headliner-is-support'].find(r=>reasons.includes(r))||reasons.find(r=>/^off-site/.test(r));
     const why=!officials.length?'no-official-data':!sameDay.length?'no-official-event-that-day':
-     bestOfficialMatch(e,officials,adapter).reason==='ambiguous'?'ambiguous':'headliner-differs';
+     bestOfficialMatch(e,officials,adapter).reason==='ambiguous'?'ambiguous':pick?pick.replace(/:.*/,''):'headliner-differs';
     acc[why]=(acc[why]||0)+1;return acc;},{}),
    sampleMatches:enriched.candidates.filter(c=>c.venue===id).slice(0,3),
    sampleOfficial:officials.slice(0,4).map(o=>({title:o.title,performers:o.performers.slice(0,3),venueName:o.venueName,date:o.date,via:o.via,cancelled:o.cancelled||undefined})),

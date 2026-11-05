@@ -34,8 +34,12 @@ export function scoreMatch(event,official,adapter){
  const ours=keys(headlinerNames(event));
  const theirs=officialHeadliners(official);
  const supports=keys((official.performers||[]).slice(1));
- const headliner=ours.some(k=>theirs.includes(k));
- if(!headliner&&ours.some(k=>supports.includes(k)))return {score:0,verdict:'reject',reasons:[...reasons,'catalogue-headliner-is-support']};
+ // Exact after normalisation; spacing-only variants ("Witchfingers" vs
+ // "Witch Fingers") count too, for names of 6+ letters.
+ const squash=k=>k.replace(/ /g,'');
+ const same=(a,b)=>a===b||(squash(a).length>=6&&squash(a)===squash(b));
+ const headliner=ours.some(k=>theirs.some(t=>same(k,t)));
+ if(!headliner&&ours.some(k=>supports.some(t=>same(k,t))))return {score:0,verdict:'reject',reasons:[...reasons,'catalogue-headliner-is-support']};
  if(!headliner)return {score,verdict:'reject',reasons:[...reasons,'headliner-differs']};
  score+=0.6;reasons.push('headliner');
  const ourSupport=keys((event.artists||[]).slice(1));
@@ -49,9 +53,14 @@ export function scoreMatch(event,official,adapter){
  */
 export function bestOfficialMatch(event,officials,adapter){
  const hits=officials.map(o=>({o,m:scoreMatch(event,o,adapter)})).filter(x=>x.m.verdict==='match');
- const urls=new Set(hits.map(x=>x.o.url));
- if(urls.size!==1)return {match:null,reason:hits.length?'ambiguous':'no-match',candidates:hits.length};
- const best=hits.sort((a,b)=>b.m.score-a.m.score)[0];
+ // The same show published twice (language variants, duplicate posts) is
+ // one event: collapse identical date + title before judging ambiguity.
+ const seen=new Map();
+ for(const h of hits){const key=h.o.date+'|'+artistKey(h.o.title);if(!seen.has(key))seen.set(key,h);}
+ const unique=[...seen.values()];
+ const urls=new Set(unique.map(x=>x.o.url));
+ if(urls.size!==1)return {match:null,reason:unique.length?'ambiguous':'no-match',candidates:unique.length};
+ const best=unique.sort((a,b)=>b.m.score-a.m.score)[0];
  return {match:best.o,confidence:best.m.score,reasons:best.m.reasons};
 }
 /** Slug of a name as venues write it in URLs ("O.R.k." -> "o-r-k"). */

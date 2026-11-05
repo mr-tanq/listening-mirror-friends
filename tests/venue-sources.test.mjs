@@ -87,7 +87,8 @@ test('pages with conflicting dates, logos and cancelled shows are refused',()=>{
 
 test('two different official pages that both match are ambiguous',()=>{
  const a={url:'https://www.paradiso.nl/programma/xyz/1',title:'XYZ',performers:['XYZ'],date:'2026-12-01',venueName:''};
- const b={...a,url:'https://www.paradiso.nl/programma/xyz/2'};
+ // two different shows that day (e.g. matinee with another bill) stay ambiguous
+ const b={...a,url:'https://www.paradiso.nl/programma/xyz-matinee/2',title:'XYZ + Other Band',performers:['XYZ','Other Band']};
  assert.equal(bestOfficialMatch(cat('XYZ','2026-12-01','Paradiso'),[a,b],paradiso).reason,'ambiguous');
  assert.equal(bestOfficialMatch(cat('XYZ','2026-12-01','Paradiso'),[a],paradiso).match.url,a.url);
 });
@@ -216,4 +217,23 @@ test('imageUse "denied" stores no image candidates',()=>{
  const cache={venues:{paradiso:{pages:{a:{checkedAt:'2026-11-05',event:{url:'https://www.paradiso.nl/programma/mono/1',title:'MONO',performers:['MONO'],date:'2026-12-01',venueName:'',image:'https://assets.paradiso.nl/x.jpg'}}}}}};
  const r=enrichCatalogue([cat('MONO','2026-12-01','Paradiso')],[paradiso],cache,{venues:{paradiso:{imageUse:'denied'}}},{today:'2026-11-05'});
  assert.equal(r.candidates.length,0);assert.equal(r.events[0].officialUrl,'https://www.paradiso.nl/programma/mono/1');
+});
+test('an "image" that is the page itself or not an image file is dropped',async()=>{
+ const {imageUrl}=await import('../scripts/venue-sources/parse.mjs');
+ const page='https://www.effenaar.nl/agenda/fatal-flowers';
+ assert.equal(imageUrl(page,page),'');
+ assert.equal(imageUrl('https://d12y285rxlbnxt.cloudfront.net/2026-10/gallus.png',page),'https://d12y285rxlbnxt.cloudfront.net/2026-10/gallus.png');
+ const o=parseEventPage(ld({'@type':'Event','@id':page,name:'The Fatal Flowers',startDate:'2026-11-05T20:00:00+01:00',image:{'@id':page},location:{name:'Grote zaal'}}),page,adapterById('effenaar'));
+ assert.equal(o.image,'');
+});
+test('language variants of one Paard event are one event, not ambiguous; spacing variants match',()=>{
+ const paard=adapterById('paard');
+ const a={url:'https://www.paard.nl/event/teach/',title:'Paardcafé: TEACH',performers:[],date:'2026-11-21',venueName:'Café'};
+ const b={...a,url:'https://www.paard.nl/event/teach-2/'};
+ assert.equal(bestOfficialMatch(cat('TEACH','2026-11-21','Paard'),[a,b],paard).match.url,a.url);
+ assert.equal(paard.normalizeUrl('https://www.paard.nl/en/event/x/'),'https://www.paard.nl/event/x/');
+ const d=adapterById('doornroosje');
+ const o={url:'https://www.doornroosje.nl/event/f/',title:'Frankie and the Witch Fingers',performers:['Frankie and the Witch Fingers'],date:'2026-11-11',venueName:'Doornroosje - Paarse zaal'};
+ assert.equal(scoreMatch(cat('Frankie And The Witchfingers','2026-11-11','Doornroosje'),o,d).verdict,'match');
+ assert.equal(scoreMatch(cat('Knoll','2026-11-24','Doornroosje'),{...o,title:'Imperial Triumphant + Knoll',performers:['Imperial Triumphant','Knoll'],date:'2026-11-24'},d).reasons.at(-1),'catalogue-headliner-is-support');
 });

@@ -25,10 +25,17 @@ export function firstDatedText(html){
  }
  return '';
 }
+/** An image URL must point at an image file, never back at the page. */
+export function imageUrl(candidate,page){
+ try{const u=new URL(candidate);
+  return u.protocol==='https:'&&/\.(?:jpe?g|png|webp|avif|gif)$/i.test(u.pathname)&&u.href.split('?')[0]!==String(page).split('?')[0]?u.href:'';}
+ catch{return '';}
+}
 export function parseEventPage(html,pageUrl,adapter){
- const page=canonicalUrl(html,pageUrl)||pageUrl;
+ const norm=adapter.normalizeUrl||(u=>u);
+ const page=norm(canonicalUrl(html,pageUrl)||pageUrl);
  const ogTitle=cleanText(metaContent(html,['og:title'])).replace(adapter.titleSuffix||/$^/,'').trim();
- const ogImage=openGraphImage(html,pageUrl);
+ const ogImage=imageUrl(openGraphImage(html,pageUrl),page);
  const ld=jsonLdEvents(html,pageUrl).filter(e=>e.startDate);
  // Several JSON-LD blocks can describe the same page (013 publishes an Event
  // and a MusicEvent). Prefer the record for this URL with performers.
@@ -40,7 +47,7 @@ export function parseEventPage(html,pageUrl,adapter){
   const date=adapter.floatingTime?e.startDate.slice(0,10):e.date;
   if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return null;
   return {url:page,title:e.title||ogTitle,performers:e.performers,date,startDate:e.startDate,venueName:e.venueName,
-   image:ogImage||e.image,cancelled:/Cancelled|Postponed|Rescheduled/i.test(e.status),via:'json-ld'};
+   image:ogImage||imageUrl(e.image,page),cancelled:/Cancelled|Postponed|Rescheduled/i.test(e.status),via:'json-ld'};
  }
  if(ranked.length&&dates.size>1)return null; // a multi-date page cannot prove one concert
  const date=(adapter.slugDate&&adapter.slugDate(pageUrl))||(adapter.timeTagDate&&timeTagDate(html))||
