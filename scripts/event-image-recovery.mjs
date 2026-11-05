@@ -35,7 +35,10 @@ export function recoverCatalogImages(events){
   if(same){e.image=same.image;reused++;continue;}
   // Same exact band on an adjacent date within the same verified tour.
   // Never recycle an artist photo/poster across different tours or years.
-  const tour=out.find(x=>x!==e&&imageOK(x.image)&&fold(x.artist)===fold(e.artist)&&
+  // Festival days can have different posters and lineups even for the
+  // same title. Reuse a neighbouring-day image only for a named artist.
+  const isFestival=/(?:^|\s)(?:festival|fest)(?:\s|$)/i.test(fold(e.artist))||e.isFestival===true;
+  const tour=!isFestival&&out.find(x=>x!==e&&!x.isFestival&&imageOK(x.image)&&fold(x.artist)===fold(e.artist)&&
     Math.abs(Date.parse(x.date+'T12:00:00Z')-Date.parse(e.date+'T12:00:00Z'))<=2*86400000);
   if(tour){e.image=tour.image;reused++;}
  }
