@@ -14,6 +14,8 @@ on:
       - 'scripts/venue-dedupe.mjs'
       - 'scripts/event-image-recovery.mjs'
       - 'scripts/podiuminfo-images.mjs'
+      - 'js/artist-images.js'
+      - 'data/artist-images.json'
       - 'scripts/verified-posters.mjs'
       - 'data/verified-event-images.json'
       - 'data/editorial-supplements.json'
@@ -70,7 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json
+          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json data/artist-images.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh concert feed and artist genre metadata"
             for attempt in 1 2 3 4 5 6 7 8; do
