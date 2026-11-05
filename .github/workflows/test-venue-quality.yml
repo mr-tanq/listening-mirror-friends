@@ -1,0 +1,24 @@
+name: Test venue event quality
+on:
+  pull_request:
+    paths:
+      - 'scripts/venue-sources/**'
+      - 'scripts/update-venue-catalog.mjs'
+      - 'tests/venue-*.test.mjs'
+      - '.github/workflows/test-venue-quality.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run offline tests without fetching venue pages
+        run: npm test
