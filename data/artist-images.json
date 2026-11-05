@@ -1,5 +1,5 @@
 {
   "version": 1,
   "artists": {},
-  "note": "Verified photos of artists. The daily catalog refresh populates this file incrementally from Podiuminfo artist portraits; no concert posters are entered here."
+  "note": "Public artist portraits only, exact-name matching. Seeded from the existing Listening Mirror artist photo library; no personal listening data was copied. New public bands added by daily server-side enrichment."
 }
