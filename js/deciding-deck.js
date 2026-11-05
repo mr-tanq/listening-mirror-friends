@@ -74,19 +74,20 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
   card.setAttribute('role','group');
   card.setAttribute('aria-label','Concert decision: '+event.artist+'. Swipe right to mark Going or left to Pass.');
   const image=el('div','deck-image');
+  // Always keep the typographic artwork underneath. If a remote poster
+  // fails (404, blocked hotlink, etc), the deck still has a designed card.
+  const fallback=el('div','deck-typographic-poster');
+  fallback.append(el('span','deck-typographic-kicker','LIVE / '+(event.country||'')),
+    el('strong','deck-typographic-artist',event.artist||'Live concert'),
+    el('span','deck-typographic-venue',event.venue||event.city||'Concert'));
+  image.append(fallback);
   const url=safeUrl(event.image);
   if(url){
-    const img=el('img','deck-poster');img.src=url;img.alt=event.artist+' concert poster';
-    img.loading='eager';img.addEventListener('error',()=>{img.remove();image.classList.add('no-image');},{once:true});
+    const img=el('img','deck-poster');img.src=url;img.alt=event.artist+' artwork';
+    img.loading='eager';
+    img.addEventListener('error',()=>{img.remove();image.classList.add('no-image');},{once:true});
     image.append(img);
-  }else{
-    image.classList.add('no-image');
-    const fallback=el('div','deck-typographic-poster');
-    fallback.append(el('span','deck-typographic-kicker','LIVE / '+(event.country||'')),
-      el('strong','deck-typographic-artist',event.artist||'Live concert'),
-      el('span','deck-typographic-venue',event.venue||event.city||'Concert'));
-    image.append(fallback);
-  }
+  }else image.classList.add('no-image');
   image.append(el('span','deck-counter','01 / '+String(remaining).padStart(2,'0')));
   const indicators=el('div','deck-indicators');
   const reject=el('span','deck-verdict deck-reject','PASS');
