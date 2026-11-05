@@ -42,10 +42,11 @@ const namesOf=artist=>[artist?.name,artist?.['sort-name'],...(artist?.aliases||[
 /** Score MusicBrainz search hits for one name; only exact name/alias matches count. */
 export function scoreMusicBrainzCandidates(payload,name,context={}){
  const key=artistKey(name);
- const country=String(context.country||'').toUpperCase();
+ // Venue country is NOT artist origin; use only independently verified origin metadata.
+ const country=String(context.artistOriginCountry||'').toUpperCase();
  const genreWords=String([context.genre,context.subgenre].filter(Boolean).join(' ')).toLowerCase();
  const hints=new Set(Object.entries(GENRE_HINTS).filter(([g])=>genreWords.includes(g)).flatMap(([,v])=>v));
- if(country==='GR')GENRE_HINTS.greek.forEach(h=>hints.add(h));
+ // Do not infer a Greek artist merely because a show takes place in Greece.
  return (payload?.artists||[])
   .filter(a=>/^[0-9a-f-]{36}$/.test(a?.id||'')&&Number(a.score??100)>=90&&namesOf(a).includes(key))
   .map(a=>{
