@@ -95,6 +95,12 @@ scripts/update-venue-catalog.mjs (runs even if Podiuminfo failed)
 
 Sharing a single word is never evidence of the same show: `Black Midi` and `Black Country, New Road` on the same night are two concerts.
 
+**Guards against tiny or generic names.**
+- Matching is on whole words only.
+- Generic words (`the`, `de`, `band`, `presents`, `featuring`, `live`, …) don't count.
+- A prefix match needs a distinctive shorter name: two meaningful words, or one of 6+ letters (`jukebox`). So `Black` is not a possible duplicate of `Black Midi`, and `The Who` is not one of `The Who Tribute Night`.
+- A phrase inside a longer title needs two or more meaningful words (`Funk Legacy Allstars`).
+
 **Removing a discovered concert needs positive evidence from its own official page:**
 - the page says cancelled or postponed;
 - the page now shows another date (the new date is discovered as a new event);

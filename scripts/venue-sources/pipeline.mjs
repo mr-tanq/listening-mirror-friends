@@ -172,19 +172,28 @@ const canonicalUrlKey=u=>{try{const x=new URL(u);return x.host+x.pathname.replac
  *  'different' anything else. Sharing a single word ("Black Midi" /
  *              "Black Country, New Road") is NOT evidence of the same show.
  */
+// Words that say nothing about which act it is.
+const GENERIC_WORDS=new Set(['the','de','het','een','a','an','and','en','of','van','der','den','la','le','les','el','los','das','die',
+ 'x','ft','feat','featuring','presents','presenteert','met','with','live','band','dj','djs','night','nacht','show','tour','special','guests','guest','support']);
+const meaningful=key=>key.split(' ').filter(w=>w.length>=3&&!GENERIC_WORDS.has(w));
+/** Distinctive enough to anchor a prefix match: 2+ meaningful words, or one of 6+ letters. */
+const distinctive=key=>{const m=meaningful(key);return m.length>=2||(m.length===1&&m[0].length>=6);};
 export function showIdentity(event,official,adapter){
  if(!event||!official||event.date!==official.date||!venueMatches(adapter,event.venue))return 'different';
  const key=canonicalUrlKey(official.url);
  if(key&&[event.officialUrl,event.source==='venue-official'?event.url:''].some(u=>u&&canonicalUrlKey(u)===key))return 'same';
  if(scoreMatch(event,official,adapter).verdict==='match')return 'same';
- const ours=[...new Set(headlinerNames(event).map(artistKey))].filter(k=>k.length>=4);
- const theirs=officialHeadliners(official).filter(k=>k.length>=4);
- const extends_=(a,b)=>a.startsWith(b+' ');
+ const ours=[...new Set(headlinerNames(event).map(artistKey))];
+ const theirs=officialHeadliners(official);
+ // (a) Prefix: one complete name continues as the other ("De Jukebox" /
+ //     "De Jukebox #17"). The shorter name must be distinctive.
+ const extends_=(a,b)=>distinctive(b)&&a.startsWith(b+' ');
  if(ours.some(a=>theirs.some(b=>extends_(a,b)||extends_(b,a))))return 'possible';
- // A complete multi-word name inside the other side's full title, as a whole
- // phrase: "Funk Legacy Allstars" in "Candy Dulfer Presents FUNK LEGACY
- // ALLSTARS featuring ...". One shared word ("black") is never enough.
- const phraseIn=(name,title)=>name.split(' ').length>=2&&(' '+title+' ').includes(' '+name+' ');
+ // (b) Phrase: a complete name of 2+ meaningful words appears, at word
+ //     boundaries, inside the other side's full title ("Funk Legacy
+ //     Allstars" in "Candy Dulfer Presents FUNK LEGACY ALLSTARS featuring
+ //     ..."). A single shared word ("black") is never enough.
+ const phraseIn=(name,title)=>meaningful(name).length>=2&&(' '+title+' ').includes(' '+name+' ');
  const ourTitle=artistKey(event.artist),theirTitle=artistKey(official.title);
  if(ours.some(a=>phraseIn(a,theirTitle))||theirs.some(b=>phraseIn(b,ourTitle)))return 'possible';
  return 'different';

@@ -8,7 +8,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {runVenueStage} from '../scripts/update-venue-catalog.mjs';
-import {showIdentity,reconcileVenueEvents} from '../scripts/venue-sources/pipeline.mjs';
+import {showIdentity,reconcileVenueEvents,discoverFromVenues} from '../scripts/venue-sources/pipeline.mjs';
+import {parseEventPage} from '../scripts/venue-sources/parse.mjs';
 import {adapterById} from '../scripts/venue-sources/adapters.mjs';
 
 const paradiso=adapterById('paradiso');
@@ -135,4 +136,77 @@ test('denied access or network failure keeps everything',async()=>{
  assert.equal(venueEvents(blocked).length,1);
  const down=await run({events:d1.events},d1.cache,async()=>{throw new Error('ECONNRESET');},'2026-11-21');
  assert.equal(venueEvents(down).length,1);
+});
+
+// ---- PR #2 follow-up review: Patronaat / Funk Legacy Allstars ------------
+const patronaat=adapterById('patronaat');
+const FLA_URL='https://patronaat.nl/event/funk-legacy-allstars-featuring-candy-dulfer-x-nigel-hall-x-eric-benny-bloom-11-11-26/';
+const FLA_TITLE='Candy Dulfer Presents FUNK LEGACY ALLSTARS featuring Nigel Hall x Eric “Benny” Bloom';
+// The official event exactly as the Patronaat adapter parses the live page
+// (Open Graph title + date from the URL; Patronaat publishes no performers).
+const flaOfficial=()=>parseEventPage(`<meta property="og:title" content="${FLA_TITLE} - Patronaat"><meta property="og:image" content="https://patronaat.nl/app/uploads/2026/06/funk-legacy.jpg">`,FLA_URL,patronaat);
+const flaCatalogue={id:'podiuminfo-fla',artist:'Funk Legacy Allstars',artists:['Funk Legacy Allstars'],date:'2026-11-11',venue:'Patronaat',city:'Haarlem',country:'NL',image:'',source:'podiuminfo-agenda'};
+
+test('showIdentity: Patronaat "Funk Legacy Allstars" vs "Candy Dulfer Presents FUNK LEGACY ALLSTARS featuring ..." is possible',()=>{
+ const o=flaOfficial();
+ assert.deepEqual([o.title,o.date,o.performers],[FLA_TITLE,'2026-11-11',[]]);
+ assert.equal(showIdentity(flaCatalogue,o,patronaat),'possible');
+ // also with a performer list naming the presenter first
+ const withPerformers={...o,performers:['Candy Dulfer','Funk Legacy Allstars','Nigel Hall','Eric “Benny” Bloom']};
+ assert.equal(showIdentity(flaCatalogue,withPerformers,patronaat),'possible');
+ // and in the other direction (catalogue holds the long title, venue the short one)
+ const shortOfficial={...o,url:'https://patronaat.nl/event/funk-legacy-allstars-11-11-26/',title:'Funk Legacy Allstars',performers:[]};
+ assert.equal(showIdentity({...flaCatalogue,artist:FLA_TITLE,artists:[FLA_TITLE]},shortOfficial,patronaat),'possible');
+ // other night / other venue: different
+ assert.equal(showIdentity({...flaCatalogue,date:'2026-11-12'},o,patronaat),'different');
+ assert.equal(showIdentity({...flaCatalogue,venue:'Paard'},o,patronaat),'different');
+});
+
+test('tiny or generic names never make a possible duplicate; word boundaries are required',()=>{
+ const o=flaOfficial();
+ const as=(artist)=>({...flaCatalogue,artist,artists:[artist]});
+ assert.equal(showIdentity(as('Funk'),o,patronaat),'different');             // one word
+ assert.equal(showIdentity(as('Legacy Allstar'),o,patronaat),'different');   // not a whole word ("allstars")
+ assert.equal(showIdentity(as('Unk Legacy'),o,patronaat),'different');       // not at a word boundary
+ assert.equal(showIdentity(as('The Funk'),o,patronaat),'different');         // one meaningful word
+ assert.equal(showIdentity(as('Candy'),o,patronaat),'different');            // presenter's first name only
+ assert.equal(showIdentity(as('Funk Legacy'),o,patronaat),'possible');       // two meaningful words, whole phrase
+ const tribute={url:'https://www.paradiso.nl/programma/the-who-tribute/1',title:'The Who Tribute Night',performers:[],date:'2026-12-03',venueName:'Paradiso'};
+ assert.equal(showIdentity(podium('The Who','2026-12-03','w'),tribute,paradiso),'different');
+ const bm={url:url('black-midi','3000002'),title:'Black Midi',performers:['Black Midi'],date:'2026-12-03',venueName:'Paradiso'};
+ assert.equal(showIdentity(podium('Black','2026-12-03','b'),bm,paradiso),'different');
+ // preserved: two real acts sharing a word stay different, De Jukebox stays possible
+ const bcnr={url:BCNR,title:'Black Country, New Road',performers:['Black Country, New Road'],date:'2026-12-03',venueName:'Paradiso'};
+ assert.equal(showIdentity(podium('Black Midi','2026-12-03','x'),bcnr,paradiso),'different');
+ assert.equal(showIdentity(podium('De Jukebox','2026-12-03','j'),{...bcnr,url:url('de-jukebox-17','1'),title:'De Jukebox #17',performers:[]},paradiso),'possible');
+});
+
+test('discoverFromVenues holds the Funk Legacy Allstars page back for review instead of adding it',()=>{
+ const o=flaOfficial();
+ const cache={venues:{patronaat:{pages:{[FLA_URL]:{checkedAt:'2026-11-05',event:o}}}}};
+ const pol={venues:{patronaat:{discovery:true,imageUse:'pending'}}};
+ const r=discoverFromVenues([flaCatalogue],[patronaat],cache,pol,{today:'2026-11-05',endDate:'2027-03-01'});
+ assert.equal(r.added.length,0);
+ assert.deepEqual(r.stats.patronaat.possibleDuplicates,[FLA_TITLE+' (2026-11-11)']);
+ assert.deepEqual(r.events.map(e=>e.id),['podiuminfo-fla']);               // the catalogue record is untouched
+ // without the catalogue record it is a normal discovery
+ const alone=discoverFromVenues([],[patronaat],cache,pol,{today:'2026-11-05',endDate:'2027-03-01'});
+ assert.equal(alone.added.length,1);
+});
+
+test('a previously published venue record is never deleted for a possible match (Funk Legacy Allstars)',()=>{
+ const o=flaOfficial();
+ const pol={venues:{patronaat:{discovery:true,imageUse:'pending'}}};
+ const cache={venues:{patronaat:{pages:{[FLA_URL]:{checkedAt:'2026-11-05',event:o}}}}};
+ // Day 1: Podiuminfo did not list it yet -> the venue concert was discovered and published.
+ const day1=discoverFromVenues([],[patronaat],cache,pol,{today:'2026-11-05',endDate:'2027-03-01'});
+ const published=day1.added[0];
+ assert.equal(published.source,'venue-official');
+ // Day 2: Podiuminfo lists "Funk Legacy Allstars". Only 'possible' -> nothing is deleted.
+ const r=reconcileVenueEvents([flaCatalogue,published],[patronaat],cache,pol,{today:'2026-11-06'});
+ assert.deepEqual(r.events.map(e=>e.id).sort(),[published.id,'podiuminfo-fla'].sort());
+ assert.equal(r.removed.duplicate,0);
+ // and discovery does not add a second venue copy on the following days
+ const again=discoverFromVenues(r.events,[patronaat],cache,pol,{today:'2026-11-06',endDate:'2027-03-01'});
+ assert.equal(again.added.length,0);
 });
