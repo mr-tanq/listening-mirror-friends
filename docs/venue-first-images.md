@@ -152,6 +152,8 @@ Every audit starts with an empty cache and limited page budgets. The daily job k
 - Cancelled shows (`Afgelast:` / `EventCancelled`).
 - Name variants that add words (`Eddie Jobson U.K. Revisited` vs `Eddie Jobson`).
 
+**Rate sensitivity:** after seven audit runs on one day (about 90 pages each), 013 started answering with a Cloudflare challenge. The client detected it and backed off for 7 days, as designed. Production runs once a day and refetches pages only weekly. Spacing is now 2.5 s per host, and the audit/probe workflows run only manually or on `main`.
+
 ## 8. Limits
 
 - First runs fetch at most 14–70 pages per venue. Full coverage builds over a few daily runs; pages are re-checked weekly.

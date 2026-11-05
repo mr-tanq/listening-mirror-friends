@@ -77,7 +77,7 @@ export async function refreshVenue(adapter,cacheEntry,{catalogue,today,fetcher=f
  const stats={listed:0,fetched:0,parsed:0,unparsed:0,access:'ok'};
  if(adapter.blockedBySite||adapter.research){stats.access=adapter.blockedBySite?'blocked-by-site':'research';return {entry,stats};}
  const client=createVenueClient(adapter.origin,{fetcher,state:entry.access,today,clock,delay,
-  minSpacingMs:adapter.minSpacingMs||1500,maxRequests:(adapter.maxPages||40)+6});
+  minSpacingMs:adapter.minSpacingMs||2500,maxRequests:(adapter.maxPages||40)+6});
  const start=clock();
  if(client.blocked){stats.access='denied-until-'+entry.access.deniedUntil;return {entry,stats};}
  const rows=await listEventUrls(adapter,client,{today});

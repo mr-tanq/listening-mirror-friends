@@ -1,11 +1,7 @@
 name: Probe official NL venue sources (read-only research)
+# Manual research only: each run sends ~100 requests to venue sites.
 on:
   workflow_dispatch:
-  push:
-    branches: ['claude/**']
-    paths:
-      - 'scripts/probe-venue-sources.mjs'
-      - '.github/workflows/probe-venue-sources.yml'
 permissions:
   contents: read
 jobs:

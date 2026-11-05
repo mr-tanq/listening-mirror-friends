@@ -2,7 +2,7 @@
   "note": "Usage policy per Dutch venue. 'discovery': true adds concerts found on the venue's own site (facts plus a link to the official page). 'imageUse' controls official event artwork: 'pending' stores matched images as candidates only; set it to 'permitted' ONLY with written permission or published terms that allow it, recorded in 'imageUseEvidence' (who, when, scope). 'denied' never stores candidates. Access findings come from the read-only probe of 2026-11-05 (docs/venue-first-images.md).",
   "venues": {
     "paradiso": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "sitemap event_N.xml + JSON-LD Event (performers, timezone date)", "termsReviewed": false},
-    "013": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "/programma agenda + JSON-LD MusicEvent", "termsReviewed": false},
+    "013": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok until 2026-11-05 15:55 UTC; then a Cloudflare challenge after 7 audit runs that day (client backs off 7 days)", "source": "/programma agenda + JSON-LD MusicEvent", "termsReviewed": false},
     "doornroosje": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "homepage agenda + JSON-LD Event (local time labelled UTC)", "termsReviewed": false},
     "effenaar": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "/agenda + JSON-LD Event (no performers)", "termsReviewed": false},
     "patronaat": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok (crawl-delay 10s)", "source": "/programma + date in event URL + Open Graph title", "termsReviewed": false},
