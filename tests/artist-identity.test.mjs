@@ -14,7 +14,7 @@ const noWait={delay:async()=>{}};
 
 test('headliner names strip tour titles, presenters and guests but keep real band names',()=>{
  assert.deepEqual(headlinerNames(ev('Caro - Returning to Innocence')),['Caro - Returning to Innocence','Caro']);
- assert.ok(headlinerNames(ev('Tales From The Punx: Wolfbrigade')).includes('Wolfbrigade'));
+ assert.equal(headlinerNames(ev('Tales From The Punx: Wolfbrigade'))[0],'Wolfbrigade');
  assert.ok(headlinerNames(ev('Baroeg Tribute Night: BEATALLICA')).includes('BEATALLICA'));
  assert.ok(headlinerNames(ev('Disco Inferno met Discophonic Orchestra – 5 YEARS MAASTRICHT')).includes('Disco Inferno'));
  assert.ok(headlinerNames(ev('Extince - 30 JAAR SPRAAKWATER')).includes('Extince'));
@@ -87,8 +87,11 @@ test('MusicBrainz picks unique names and resolves same-name bands only with clea
  const a=(id,extra)=>({id:id.padEnd(36,'0').replace(/^(.{8})(.{4})(.{4})(.{4})(.{12}).*/,'$1-$2-$3-$4-$5'),score:100,name:'Distant',type:'Group',...extra});
  const uniq=pickMusicBrainzArtist({artists:[a('aaaa',{country:'NL'})]},'Distant',{country:'NL'});
  assert.equal(uniq.artist.matchedBy,'unique-name');
- const ctx=pickMusicBrainzArtist({artists:[a('aaaa',{country:'NL',tags:[{name:'deathcore'}]}),a('bbbb',{country:'US',tags:[{name:'jazz'}]})]},'Distant',{country:'NL',genre:'Metal'});
+ const ctx=pickMusicBrainzArtist({artists:[a('aaaa',{country:'NL',tags:[{name:'deathcore'}]}),a('bbbb',{country:'US',tags:[{name:'jazz'}]})]},'Distant',{artistOriginCountry:'NL',genre:'Metal'});
  assert.match(ctx.artist.matchedBy,/country/);assert.ok(ctx.artist.id.startsWith('aaaa'));
+ // A show in NL must not imply an NL artist with the same name.
+ const venueOnly=pickMusicBrainzArtist({artists:[a('aaaa',{country:'NL'}),a('bbbb',{country:'US'})]},'Distant',{country:'NL'});
+ assert.equal(venueOnly.artist,null);
  const amb=pickMusicBrainzArtist({artists:[a('aaaa',{country:'US'}),a('bbbb',{country:'GB'})]},'Distant',{country:'NL'});
  assert.equal(amb.artist,null);assert.equal(amb.reason,'ambiguous');
  assert.equal(pickMusicBrainzArtist({artists:[{...a('cccc'),name:'Distant Lights'}]},'Distant').artist,null);
