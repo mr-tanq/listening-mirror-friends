@@ -2,6 +2,7 @@ import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENR
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=nl-artwork-v7';
+import {resolveConcertImage} from './artist-images.js?v=band-photos-v8';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -10,6 +11,12 @@ const importFile = document.querySelector('#import-file');
 let state = loadState();
 let catalog = { events: [], updatedAt: null, coverage: null, source: 'podiuminfo+festivalinfo', error: '' };
 let artistTags = {artists:{}};
+let artistImages = {version:1,artists:{}};
+function withArtwork(event){
+  if(!event)return event;
+  const chosen=resolveConcertImage(event,artistImages);
+  return chosen.url&&!event.image?{...event,image:chosen.url,imageKind:chosen.kind}:event;
+}
 let page = 'tonight';
 let collection = 'deciding';
 let cityScope = 'local'; // City-only by default; 'away' explicitly includes other cities.
@@ -80,7 +87,7 @@ function cityMatches(event,scope=cityScope){
 }
 function visibleDeciding(){return savedItems('deciding').filter(x=>cityMatches(x.event));}
 function allShows(){return catalog.events.filter(e=>e.date>=dateToday()&&e.country===state.profile?.country&&cityMatches(e)).sort((a,b)=>a.date.localeCompare(b.date)||a.artist.localeCompare(b.artist));}
-function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
+function savedItems(status){return Object.values(state.saved).map(fixSavedItem).filter(x=>x&&x.status===status).map(x=>({...x,event:withArtwork(x.event)})).sort((a,b)=>a.event.date.localeCompare(b.event.date));}
 function refreshSavedArtwork(events){
   const byId=new Map(events.map(e=>[e.id,e]));
   let changed=false;
@@ -429,6 +436,13 @@ async function fetchCatalog(){
       }
     }catch(error){console.warn('Curated artist styles temporarily unavailable',error);}
     artistTags=mergeTasteTags(tags);
+    try{
+      const artistResponse=await fetch('./data/artist-images.json',{cache:'no-store'});
+      if(artistResponse.ok){
+        const images=await artistResponse.json();
+        artistImages=images&&typeof images.artists==='object'&&images.artists?images:{version:1,artists:{}};
+      }
+    }catch(error){console.warn('Band photos unavailable; original concert images remain',error);}
     let allEvents=data.events.map(normalizeEvent).filter(x=>x&&validDate(x.date));
     try{
       const resp=await fetch('./data/verified-events.json',{cache:'no-store'});
@@ -449,7 +463,7 @@ async function fetchCatalog(){
         }
       }
     }catch(error){console.warn('Venue-confirmed event fallback temporarily unavailable',error);}
-    catalog={events:allEvents,updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
+    catalog={events:allEvents.map(withArtwork),updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
     refreshSavedArtwork(catalog.events);
     fillInitialDeciding();
   }catch(e){catalog.error=e.message||'Could not load';}render();
