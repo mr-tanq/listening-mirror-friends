@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:36:04.764Z",
+  "generatedAt": "2026-11-05T20:55:15.264Z",
   "note": "Official artwork matched to catalogue concerts. Only venues with imageUse \"permitted\" are published.",
   "candidates": [
     {
@@ -35,6 +35,14 @@
       "published": false
     },
     {
+      "eventId": "venue-effenaar-2026-11-05-moreish-idols",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/moreish-idols",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%E2%80%93%201920x1080%20Website.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-447110",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/o-r-k-05-11-26/",
@@ -55,6 +63,14 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/fatal-flowers",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-09/%20%E2%80%93%20Square%20afbeelding%20onlyTFF.png?itok=GMSxCY75",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-474029",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/the-howlers-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/05/PRDps_Mailheader-THE-HOWLERS.png",
       "confidence": 0.9,
       "published": false
     },
@@ -163,6 +179,22 @@
       "published": false
     },
     {
+      "eventId": "venue-effenaar-2026-11-06-vals-alarm",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/vals-alarm",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-07/%20%E2%80%93%20Square%20afbeelding%20only%20vals%20alarm.png?itok=GoAWqmrl",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-11-06-zer00-s-heroes",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/131304/zer00s-heroes",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Facebook-Banner_2026-05-07-132522_uzuq.png?mtime=1778160329",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-462744",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/bartofso-le-tour-de-masque/2885263",
@@ -175,6 +207,14 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/benjamin-herman-trio-featuring-bigyuki/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEB-foto-2.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-07-convicts-invite",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/convicts-invite",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20onlyconvicts.png?itok=hjFZAn1N",
       "confidence": 0.9,
       "published": false
     },
@@ -223,6 +263,22 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/ploegendienst/2771941",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Ploegendienst-6_By-Eva-Roefs-1785937200.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-11-07-unfold-by-patroon",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/146851/unfold-by-patroon",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/unfold-website-013.jpg?mtime=1784192672",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-07-wilt",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/wilt",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-06/%20%E2%80%93%20Square%20afbeelding%20only.png?itok=s9DQuT4v",
       "confidence": 0.9,
       "published": false
     },
@@ -283,10 +339,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-494198",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/namesbliss/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/09/NAMESBLISS-600x600.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-483148",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/oi-va-voi",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/Oi%20Va%20Voi%20%E2%80%93%201920x1080%20Website.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-08-queen-s-pleasure",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/queens-pleasure",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Website%20queens%20plea.png",
       "confidence": 0.9,
       "published": false
     },
@@ -323,6 +395,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-492324",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/takuya-kuroda-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-TAKUYA-KURODA.png?t=1788271449&t=1788271449",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-455505",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/127397/the-fray",
@@ -351,6 +431,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/oh-voyage-3/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/Artist-Photo-for-Album-Tour-600x600.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-12-early-james",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/early-james",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20WebsiteEarly.png",
       "confidence": 0.9,
       "published": false
     },
@@ -443,6 +531,46 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-459206",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/pitou-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-PITOU-.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-450704",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/snelle-8/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/01/SNELLE_CLUBTOUR_2026_event.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-11-13-the-soulful-sessions",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/128999/the-soulful-sessions",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Untitled-1.png?mtime=1777620093",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-13-tusky",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/tusky-13nov",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-05/%20%E2%80%93%201920x1080%20Website%20tusky.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-13-vroegzat",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitevreogzat.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-460772",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/elmer-2/",
@@ -483,10 +611,26 @@
       "published": false
     },
     {
+      "eventId": "venue-013-2026-11-14-nems",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/155379/nems",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/NEMS-Header-2.png?mtime=1788769775",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-478263",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/139683/peacock-in-concert",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/DRPEACOCK-TOU_EVENT-LINE-UP_16x9.jpg?mtime=1784131796",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-14-pina",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/pina-14nov",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Website%20pina%20nov.png",
       "confidence": 0.9,
       "published": false
     },
@@ -515,6 +659,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-451716",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/amistat/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_MailheaderAMISTAT.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-464778",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/ash",
@@ -527,6 +679,30 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/bartofso-2/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-BARTOFSO.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-489548",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/blof-19/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/07/WEB-foto-4-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-456923",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/fred-wesley-generations-15-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/03/Schermafbeelding-2026-03-19-132956.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-474162",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/froukje-support-15-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/05/Tourbeeld-Froukje-fotograaf-Pasqual-Dominic-scaled-e1779973724516.png",
       "confidence": 0.9,
       "published": false
     },
@@ -547,6 +723,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-489754",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/blof-20/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/07/WEB-foto-4-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-456497",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/daoud/",
@@ -555,10 +739,34 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-464991",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/immersion/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-IMMERSION.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-458100",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/electric-six-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/03/PRDps_Mailheader-ELECTRIC-SIX.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-491233",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/152830/kneecap",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/260817-Kneecap-2026-persfoto.jpg?mtime=1786975931",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-486474",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/blair-davie-18-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/07/Original-photo-scaled.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -575,6 +783,22 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/daoud/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/03/PRDps_Mailheader-DAOUD-.jpg?t=1791471510&t=1791471510",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-11-18-de-jukebox",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/152166/de-jukebox",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Club-Goud-JukeBox-XL-2025-Henny-van-Roomen-Fotografie-042web-2.jpg?mtime=1786455279",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-458188",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/electric-six-support-18-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/03/Electric-Six-Group-Photo-2023.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -599,6 +823,22 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/anneke-van-giersbergen",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-05/%20%E2%80%93%20Square%20afbeelding%20only%20avg.png?itok=-wyTculx",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-459629",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/bettie-serveert-19-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/04/Bettie-Serveert-promofoto-2026-photo-by-Philip-Harder-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-464851",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/dave-mccredie-support-19-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/05/Photo-17-4-2026-6-00-33-pm-scaled.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -647,6 +887,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/paardcafe-lfrqx-2/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/LFrQx-Low-Frequencies-Ruben-Verheul-3.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-459229",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/pitou-support-19-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/04/Press-Picture-Pitou-C-Michiel-Venmans-Pitou-Nicolaes-scaled-1.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -739,10 +987,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-452242",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/gruppo-sportivo-5/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-Gruppo-Sportivo.jpg?t=1789052238&t=1789052238",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-476444",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/iron-jinn-temple-fang/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/06/PRDps_-DOUBLE-BILL-Mailheader-IRON-JINN-TEMPLE-FANG-kopie.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2026-11-21-mama-africa",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/mama-africa-21nov",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/WWLarVqg.png?itok=KjsoITXL",
       "confidence": 0.9,
       "published": false
     },
@@ -763,6 +1027,30 @@
       "published": false
     },
     {
+      "eventId": "venue-effenaar-2026-11-21-we-all-love-90-s-00-s-10-s",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/wal-21nov",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Websitewealllov.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-462530",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/wies-21-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/04/WIES-Miksfiles-Staand-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-449535",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/jembaa-groove-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/12/PRDps_Mailheader-JEMBAA-GROOVE.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-495360",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/morbidfest-i-am-morbid-us-atheist-us-cancer-uk-narcotic-wasteland-us/",
@@ -779,10 +1067,50 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-495697",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/platina-22-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Platina_tour_poster_Amsterdam-e1790086061917.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-457934",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/imperial-triumphant/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/03/Imperial-Triumphant-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-491947",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/diana-arbenina-25-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/48f3d889-3738-4329-87f8-19f7585e4174.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-492326",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/the-bug-club/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/08/THEBUGCLUB_PRDps_Mailheader.png?t=1789040952&t=1789040952",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-469751",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/wesghost-25-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/05/0F0A3889-2-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-452924",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/davina-michelle-support-26-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/02/Davina-Michelle-persfoto_s-202533789-scaled-e1771921027793.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -795,10 +1123,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-449444",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/laura-cox-support-26-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2025/12/LAURA-COX24008-copie2_LiRodaGil-scaled-e1765802140689.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-476729",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/naft/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/06/persfoto-naft-web-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-448474",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/shantel-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/11/Shantel-WEB-1200x630.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -827,6 +1171,22 @@
       "published": false
     },
     {
+      "eventId": "venue-013-2026-11-27-brandalarm-16",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/156684/brandalarm",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Brandalarm-Tilburg-013-27-Nov-Main-Feed-Image-v1_2026-09-15-140424_zyoj.png?mtime=1789481065",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-11-27-crush-xl",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/128467/crush-xl-presents",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Event-Banner.jpg?mtime=1790159803",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-462643",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/dordrecht-blues-night-ian-siegal-uk-minko/",
@@ -839,6 +1199,22 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/hiigo/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/01/PRDps_MailheaderHIIGO.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-450016",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/jack-weatherman",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-01/%20%E2%80%93%201920x1080%20Website%20jatw.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-495698",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/ooes-27-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Ooes_tour_poster_Amsterdam-724x1024.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -883,6 +1259,14 @@
       "published": false
     },
     {
+      "eventId": "venue-013-2026-11-28-subquake",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/150057/013-years-subquake",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Lineup_FB_Banner-1.jpg?mtime=1789724376",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-452920",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/davina-michelle-3/",
@@ -911,6 +1295,14 @@
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/128241/sevendust",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Janus-Music-Mgmt-Sevendust13840-Edit.jpg?mtime=1775801932",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-490715",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/dakhabrakha-6/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/08/PRDps_Mailheader_DAKHABRAKHA-1.png",
       "confidence": 0.9,
       "published": false
     },
@@ -959,6 +1351,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/highguest-2/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/HIGHGUEST.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-480297",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/pearl-the-oysters-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/06/PRDps_Mailheader-pearl.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -1067,6 +1467,22 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-457215",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/bente/2853007",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Banner_compressed-1774365697.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-465001",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/jake-xerxes-fussell-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/05/Screenshot-2026-05-06-at-14.48.46.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-484045",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/145171/queensr%C3%BFche",
@@ -1087,6 +1503,14 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/the-skints-3/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/WEBfoto-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2026-12-08-the-tubs",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/the-tubs/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/04/WEB-foto-7-900x630.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -1147,6 +1571,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-465106",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/emm-warm-up-2026",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-05/emm%20warm%20up%20square.png?itok=hOqJ3bsF",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-474175",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/froukje/2896656",
@@ -1203,6 +1635,22 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-464563",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/customs/2889452",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Customs-Compressed-1772726348.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-452928",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/davina-michelle-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-DAVINA-MICHELLE-kopie.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-479821",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/frans-huxie-reunieshow/",
@@ -1243,6 +1691,14 @@
       "published": false
     },
     {
+      "eventId": "venue-013-2026-12-11-spanish-heat",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/162121/spanish-heat",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/03_SH-TIL-11.12-BANNER.jpg?mtime=1793276751",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-484895",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/tonique-man/2912968",
@@ -1251,10 +1707,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-474177",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/froukje/2896660",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/froukje_web_2026-1779809267.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-462547",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/gallowstreet-4/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/04/Website-foto-1.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-12-12-gezellige-clubtempo-xxl-2026",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Gezellige-Clubtempo-Banner-01.jpg?mtime=1790604693",
       "confidence": 0.9,
       "published": false
     },
@@ -1271,6 +1743,14 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/stuurbaard-bakkebaard",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20WebsiteSBBB.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-453495",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/davina-michelle-extra-show/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-DAVINA-MICHELLE-13-12-2026.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1379,6 +1859,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-474645",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/la-pegatina-11/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/05/PRDps_Mailheader-LA-PEGATINA-.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-464771",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/130610/my-baby",
@@ -1435,10 +1923,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-464772",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/my-baby-6/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-MYBABY-.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-479465",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/thijs-boontjes-5/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEB-foto-5-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2026-12-18-vroeg-pieken",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/161435/vroeg-pieken",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/FBeventbanner-06.png?mtime=1791182916",
       "confidence": 0.9,
       "published": false
     },
@@ -1451,10 +1955,34 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-449575",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/clean-petes-kerstshow-5/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/foto-clean-pete-web-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-462721",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/jett-rebel-19dec",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-04/%20%E2%80%93%201920x1080%20Website.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-463396",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/michelle-david-the-true-tones-festival/2887286",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Michelle-David-and-the-True-tones-XL-Line-up.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-480356",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/state-power/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/06/PRDps_MailheaderSP.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1471,6 +1999,14 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/christmas-a-gogo/2950970",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/image002.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-449577",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/clean-petes-kerstshow/2790680",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Clean-Pete-web-nieuw-1.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -1495,6 +2031,14 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/my-baby/2888830",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/MY-BABY_juni-2025-3-1777910589.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2026-12-23-de-jukebox-18",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-18/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-1200x630.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1619,6 +2163,22 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-450959",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/dirty-daddies-8jan27",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-01/%20%E2%80%93%201920x1080%20WebsiteDirty%20Daddie.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-449782",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/van-dik-hout/2793300",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/VanDikHout_2025_kleur-kopie-1766574337.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-474545",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/de-kift-10/",
@@ -1627,10 +2187,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-473871",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/heinoos-xxl-proosten-op-het-oosten/2892768",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/web_heinoos-1779356209.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-495136",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/the-bird-experience/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/PRDps_Mailheader-THE-BIRD-EXPERIENCE.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-450898",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/dirty-daddies-9jan27",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-01/%20%E2%80%93%201920x1080%20WebsiteDirty%20Daddie.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1739,10 +2315,26 @@
       "published": false
     },
     {
+      "eventId": "venue-paradiso-2027-01-17-paradiso-korendagen-2027",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zondag/2807461",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/31-DSC07887-copy-banner-zondag-Large.jpeg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-479459",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/140392/black-veil-brides",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Black-Veil-Brides_2026-06-12-095549_jduv.jpg?mtime=1781258149",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-01-20-de-jukebox-19",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-19/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-scaled.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1755,6 +2347,22 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-468527",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/punch-brothers/2889009",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/1684-SHOT_03_0039_V1-1778501348.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-468526",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/tia-gordon/2891474",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/0017_8A1-1778249864.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-500656",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/t-hollandse-roosje-2/",
@@ -1763,10 +2371,26 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-474292",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/bywater-call-3/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/05/PRDps_Mailheader-BYWATER-CALL.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-497725",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/distant/2941885",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DISTANT-22-JAN-2027-COVER.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-450901",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/the-dirty-daddies-9/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/01/PRDps_MailheaderTDD.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1791,6 +2415,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/caleb-caudle-2/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-CALEB-CAUDLE-.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-450902",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/the-dirty-daddies-23-01-3/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/01/PRDps_MailheaderTDD-1.png",
       "confidence": 0.9,
       "published": false
     },
@@ -1891,6 +2523,22 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-492164",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/erwin-nyhoff-prodigal-sons",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-08/%20%E2%80%93%201920x1080%20WebsiteErwin.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-484797",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/het-goede-doel/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/07/PRDps_Mailheader-HET-GOEDE-DOEL.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-493438",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/the-mary-wallopers/2926208",
@@ -1919,6 +2567,14 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/the-mary-wallopers/2926204",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/credit-Tom-Beard-1788771469.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-452845",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/thesmithspresumably",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-02/%20%E2%80%93%20Square%20afbeelding%20only.jpg?itok=y9oOU20_",
       "confidence": 0.9,
       "published": false
     },
@@ -2091,6 +2747,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-490284",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/the-vernon-spring/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/08/Screenshot-2026-08-11-at-17.36.22-600x600.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-464785",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/129205/delain",
@@ -2163,10 +2827,90 @@
       "published": false
     },
     {
+      "eventId": "venue-doornroosje-2027-02-17-de-jukebox-20",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-20/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-scaled.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-02-18-tinlicker",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/tinlicker/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/10/Tinlicker_Studio_ShotByMeesterwerk_01_klein-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-02-25-the-skints",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/the-skints-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEBfoto-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-013-2027-02-26-wende",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/155823/wende",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Screenshot-2026-09-17-at-13.03.34.png?mtime=1789643183",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-02-27-fatoumata-diawara",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/fatoumata-diawara-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/11/Fatoumata-Diawara-WEB-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "official-tour-moonspell-20270307-eindhoven",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/moonspell",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/Moonspell%20header.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-03-12-wende",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/wende-14/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-03-24-de-jukebox-21",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-21/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-scaled.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2027-03-25-yves-berendse",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/yves-berendse",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-10/%20%E2%80%93%201920x1080%20Website%20yves%20berend.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2027-03-28-the-skatalites",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/skatalites",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20only%20skatalites.png?itok=ccCySttf",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-03-mistress-of-jersey",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/mistress-jersey-curtis-80s-anders",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20only.jpg?itok=gJucHYuU",
       "confidence": 0.9,
       "published": false
     }

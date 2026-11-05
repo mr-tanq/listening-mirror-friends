@@ -60,6 +60,53 @@
       "homepage": "https://macygrayofficial.com/",
       "wikidata": "Q232456",
       "checkedAt": "2026-11-05T20:30:47.845Z"
+    },
+    "yves berendse": {
+      "name": "Yves Berendse",
+      "mbid": "bbff9071-6c63-4865-9e88-80b4d973d165",
+      "mbName": "Yves Berendse",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "7wGBPJk6sHwRCozFfhU09F",
+      "deezerId": 7836108,
+      "wikidata": "Q127330179",
+      "checkedAt": "2026-11-05T20:49:15.604Z"
+    },
+    "queen s pleasure": {
+      "name": "Queen's Pleasure",
+      "mbid": "74b237f3-1ed6-4a49-bdd3-8346195ed326",
+      "mbName": "Queen's Pleasure",
+      "country": "NL",
+      "disambiguation": "Dutch garage rock band from Amsterdam",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://queenspleasure.bandcamp.com/",
+      "spotifyId": "6S0O3eQiVrw78LG1z2EE4h",
+      "deezerId": 77657742,
+      "checkedAt": "2026-11-05T20:49:33.666Z"
+    },
+    "leenalchi": {
+      "name": "LEENALCHI",
+      "mbid": "21822f52-470c-4241-8c54-aa92026ac0b8",
+      "mbName": "이날치",
+      "country": "KR",
+      "disambiguation": "Alternative pop band in South Korea",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://leenalchi.bandcamp.com/",
+      "spotifyId": "0kHgYUOcTac5RhkYx1thsq",
+      "wikidata": "Q108208363",
+      "checkedAt": "2026-11-05T20:49:37.547Z"
+    },
+    "nems": {
+      "name": "NEMS",
+      "mbid": "f76e0b8d-4fcf-49d6-8d23-1ae5ce047826",
+      "mbName": "Nems",
+      "country": "US",
+      "disambiguation": "New York rapper aka Gorilla Nems",
+      "matchedBy": "unique-name",
+      "spotifyId": "3d4xpwSTQVmxuvZ6w1vOK7",
+      "deezerId": 881675,
+      "wikidata": "Q6991350",
+      "checkedAt": "2026-11-05T20:49:40.236Z"
     }
   },
   "attempted": {
@@ -148,6 +195,58 @@
       "reason": "not-found"
     },
     "big sleep": {
+      "retryAfter": "2026-11-07",
+      "reason": "HTTP 503"
+    },
+    "ernst bobbie de rest": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "the soulful sessions": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "queen s pleasure": {
+      "retryAfter": "2026-12-20",
+      "reason": "identified-without-free-photo"
+    },
+    "jazz for lunch": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "leenalchi": {
+      "retryAfter": "2026-12-20",
+      "reason": "identified-without-free-photo"
+    },
+    "noor": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "nems": {
+      "retryAfter": "2026-12-20",
+      "reason": "identified-without-free-photo"
+    },
+    "utrechtse meezingerij": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "blanks": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "kneecap the fenian tour": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "de jukebox": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "hλιας φουντουλης": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "iron jinn temple fang": {
       "retryAfter": "2026-11-07",
       "reason": "HTTP 503"
     }

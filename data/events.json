@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T20:32:42.605Z",
+  "updatedAt": "2026-11-05T20:51:52.575Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -128,6 +128,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2026-11-05-fleetmac-wood",
+      "artist": "Fleetmac Wood",
+      "artists": [
+        "Fleetmac Wood"
+      ],
+      "date": "2026-11-05",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/fleetmac-wood/2929544",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/fleetmac-wood/2929544"
     },
     {
       "id": "podiuminfo-458524",
@@ -373,13 +391,19 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/moreish-idols",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/moreish-idols"
+      "officialUrl": "https://www.effenaar.nl/agenda/moreish-idols",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-447110",
@@ -551,7 +575,13 @@
       "url": "https://www.podiuminfo.nl/concert/474029/The-Howlers/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-howlers-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-452580",
@@ -736,7 +766,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9b5ef023d55cd886",
+      "id": "anclub-2026-11-06-2nd%20greek%20dungeon%20synth%20festival",
       "artist": "2nd Greek Dungeon Synth Festival",
       "artists": [
         "2nd Greek Dungeon Synth Festival"
@@ -1493,13 +1523,19 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Punk",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/vals-alarm",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/vals-alarm"
+      "officialUrl": "https://www.effenaar.nl/agenda/vals-alarm",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-474531",
@@ -1551,7 +1587,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/131304/zer00s-heroes"
+      "officialUrl": "https://www.013.nl/programma/131304/zer00s-heroes",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-7ec3594a83d94beb",
@@ -1890,7 +1931,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/convicts-invite"
+      "officialUrl": "https://www.effenaar.nl/agenda/convicts-invite",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-731e1ad927b40f74",
@@ -2010,6 +2056,24 @@
       }
     },
     {
+      "id": "venue-doornroosje-2026-11-07-froday",
+      "artist": "Froday",
+      "artists": [
+        "Froday"
+      ],
+      "date": "2026-11-07",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/froday-27/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/froday-27/"
+    },
+    {
       "id": "more-f1b021b98ae80f69",
       "artist": "GREEK RAP SATURDAY IN ATHENS",
       "artists": [
@@ -2125,6 +2189,26 @@
       "image": "",
       "source": "festivalinfo",
       "isFestival": true
+    },
+    {
+      "id": "venue-paradiso-2026-11-07-lisa-maffia",
+      "artist": "Lisa Maffia",
+      "artists": [
+        "Lisa Maffia",
+        "Romeo"
+      ],
+      "date": "2026-11-07",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "Electronic / R&B / Soul",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/garage-nation/2895453",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/garage-nation/2895453",
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-490094",
@@ -2530,7 +2614,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/146851/unfold-by-patroon"
+      "officialUrl": "https://www.013.nl/programma/146851/unfold-by-patroon",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261107-27307",
@@ -2582,7 +2671,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/wilt"
+      "officialUrl": "https://www.effenaar.nl/agenda/wilt",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-b117bd7faa25e33b",
@@ -2924,24 +3018,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "venue-013-2026-11-08-kunstscene-luistersessies",
-      "artist": "Kunstscene: Luistersessies",
-      "artists": [
-        "Kunstscene: Luistersessies"
-      ],
-      "date": "2026-11-08",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/161568/kunstscene-luistersessies",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/161568/kunstscene-luistersessies"
-    },
-    {
       "id": "podiuminfo-484847",
       "artist": "Le Guess Who? presents BLEAK SQUAD",
       "artists": [
@@ -3036,7 +3112,13 @@
       "url": "https://www.podiuminfo.nl/concert/494198/NAMESBLISS/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/namesbliss/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-483148",
@@ -3071,16 +3153,22 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/queens-pleasure",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/queens-pleasure"
+      "officialUrl": "https://www.effenaar.nl/agenda/queens-pleasure",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -3786,7 +3874,13 @@
       "url": "https://www.podiuminfo.nl/concert/492324/Takuya-Kuroda/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/takuya-kuroda-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455505",
@@ -4423,13 +4517,19 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/early-james",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/early-james"
+      "officialUrl": "https://www.effenaar.nl/agenda/early-james",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-460600",
@@ -5490,7 +5590,13 @@
       "url": "https://www.podiuminfo.nl/concert/459206/Pitou/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/pitou-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495898",
@@ -5541,7 +5647,13 @@
       "url": "https://www.podiuminfo.nl/concert/450704/Snelle/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/snelle-8/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261113-27496",
@@ -5611,7 +5723,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/128999/the-soulful-sessions"
+      "officialUrl": "https://www.013.nl/programma/128999/the-soulful-sessions",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-effenaar-2026-11-13-tusky",
@@ -5629,7 +5746,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/tusky-13nov"
+      "officialUrl": "https://www.effenaar.nl/agenda/tusky-13nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-effenaar-2026-11-13-vroegzat",
@@ -5647,7 +5769,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov"
+      "officialUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-14f8cb98ab01602e",
@@ -6077,6 +6204,24 @@
       }
     },
     {
+      "id": "venue-doornroosje-2026-11-14-fiesta-macumba",
+      "artist": "Fiesta Macumba",
+      "artists": [
+        "Fiesta Macumba"
+      ],
+      "date": "2026-11-14",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/fiesta-macumba-52/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/fiesta-macumba-52/"
+    },
+    {
       "id": "podiuminfo-472855",
       "artist": "Flemming",
       "artists": [
@@ -6404,7 +6549,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/155379/nems"
+      "officialUrl": "https://www.013.nl/programma/155379/nems",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-493137",
@@ -6496,7 +6646,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/pina-14nov"
+      "officialUrl": "https://www.effenaar.nl/agenda/pina-14nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459224",
@@ -6822,7 +6977,13 @@
       "url": "https://www.podiuminfo.nl/concert/451716/Amistat/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/amistat/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-1db1e2a948e7b385",
@@ -6920,7 +7081,13 @@
       "url": "https://www.podiuminfo.nl/concert/489548/BLOF/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/blof-19/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-481212",
@@ -7005,7 +7172,13 @@
       "url": "https://www.podiuminfo.nl/concert/456923/Fred-Wesley-Generations/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/fred-wesley-generations-15-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-474162",
@@ -7022,7 +7195,13 @@
       "url": "https://www.podiuminfo.nl/concert/474162/Froukje/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/froukje-support-15-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "rocking-20261115-27562",
@@ -7341,7 +7520,13 @@
       "url": "https://www.podiuminfo.nl/concert/489754/BLOF/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/blof-20/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495231",
@@ -7484,7 +7669,13 @@
       "url": "https://www.podiuminfo.nl/concert/464991/Immersion/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/immersion/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-6c986198c9b65436",
@@ -7790,7 +7981,13 @@
       "url": "https://www.podiuminfo.nl/concert/458100/Electric-Six/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/electric-six-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-488642",
@@ -8002,7 +8199,13 @@
       "url": "https://www.podiuminfo.nl/concert/486474/Blair-Davie/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/blair-davie-18-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-451344",
@@ -8117,7 +8320,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/152166/de-jukebox"
+      "officialUrl": "https://www.013.nl/programma/152166/de-jukebox",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458188",
@@ -8134,7 +8342,13 @@
       "url": "https://www.podiuminfo.nl/concert/458188/Electric-Six/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/electric-six-support-18-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-486422",
@@ -8564,7 +8778,13 @@
       "url": "https://www.podiuminfo.nl/concert/459629/Bettie-Serveert/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/bettie-serveert-19-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-823251137605a4db",
@@ -8633,7 +8853,13 @@
       "url": "https://www.podiuminfo.nl/concert/464851/Dave-Mccredie-Support/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/dave-mccredie-support-19-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-12647526080f025b",
@@ -8942,7 +9168,13 @@
       "url": "https://www.podiuminfo.nl/concert/459229/Pitou/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/pitou-support-19-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-498500",
@@ -9789,7 +10021,7 @@
       "venue": "Revolution Calling",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "Alternative / Metal / Rock",
+      "genre": "Alternative / Metal / Rock / Punk / Hip-Hop / Hardcore",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/36166/Revolution-Calling/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/e/f//Revolution_Calling_Festival_2021_logo.png",
@@ -9806,7 +10038,7 @@
       "venue": "Botanique",
       "city": "Brussels",
       "country": "BE",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/497586/Ridgeclub/Botanique/",
       "image": "",
@@ -9891,7 +10123,7 @@
       "venue": "Paard",
       "city": "Den Haag",
       "country": "NL",
-      "genre": "",
+      "genre": "Blues",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/448409/The-Zac-Schulze-Gang/Paard/",
       "image": "",
@@ -10275,6 +10507,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-doornroosje-2026-11-21-give-it-dub",
+      "artist": "Give it Dub",
+      "artists": [
+        "Give it Dub"
+      ],
+      "date": "2026-11-21",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/give-it-dub-10/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/give-it-dub-10/"
+    },
+    {
       "id": "podiuminfo-452242",
       "artist": "Gruppo Sportivo",
       "artists": [
@@ -10289,7 +10539,13 @@
       "url": "https://www.podiuminfo.nl/concert/452242/Gruppo-Sportivo/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/gruppo-sportivo-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-3466d78926496909",
@@ -10427,7 +10683,7 @@
       "venue": "AFAS Live",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/460850/Jessie-Ware-The-Superbloom-Tour-2026/AFAS-Live/",
       "image": "",
@@ -10570,7 +10826,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/mama-africa-21nov"
+      "officialUrl": "https://www.effenaar.nl/agenda/mama-africa-21nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-484665",
@@ -10645,6 +10906,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-11-21-smells-like-80s",
+      "artist": "Smells Like 80s",
+      "artists": [
+        "Smells Like 80s"
+      ],
+      "date": "2026-11-21",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/smells-like-80s-6/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/smells-like-80s-6/"
     },
     {
       "id": "podiuminfo-494886",
@@ -10736,7 +11015,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/wal-21nov"
+      "officialUrl": "https://www.effenaar.nl/agenda/wal-21nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462530",
@@ -10753,7 +11037,13 @@
       "url": "https://www.podiuminfo.nl/concert/462530/WIES/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/wies-21-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-458164",
@@ -10944,24 +11234,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "venue-013-2026-11-22-ernst-bobbie-de-rest",
-      "artist": "Ernst, Bobbie & de rest",
-      "artists": [
-        "Ernst, Bobbie & de rest"
-      ],
-      "date": "2026-11-22",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/159480/ernst-bobbie-de-rest",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/159480/ernst-bobbie-de-rest"
-    },
-    {
       "id": "rocking-20261122-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
       "artists": [
@@ -11010,7 +11282,13 @@
       "url": "https://www.podiuminfo.nl/concert/449535/Jembaa-Groove/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/jembaa-groove-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458798",
@@ -11192,7 +11470,13 @@
       "url": "https://www.podiuminfo.nl/concert/495697/Platina/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/platina-22-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-a64292dd7d4ecc01",
@@ -11244,6 +11528,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-11-22-the-link-up",
+      "artist": "The Link-up",
+      "artists": [
+        "The Link-up"
+      ],
+      "date": "2026-11-22",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-link-up/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-link-up/"
     },
     {
       "id": "more-e77565d7f6e04b36",
@@ -11313,24 +11615,6 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
-    },
-    {
-      "id": "venue-013-2026-11-23-ernst-bobbie-de-rest",
-      "artist": "Ernst, Bobbie & de rest",
-      "artists": [
-        "Ernst, Bobbie & de rest"
-      ],
-      "date": "2026-11-23",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/159485/ernst-bobbie-de-rest",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/159485/ernst-bobbie-de-rest"
     },
     {
       "id": "podiuminfo-482132",
@@ -11522,6 +11806,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-doornroosje-2026-11-24-actie-aletta",
+      "artist": "Actie Aletta",
+      "artists": [
+        "Actie Aletta"
+      ],
+      "date": "2026-11-24",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/actie-aletta/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/actie-aletta/"
+    },
+    {
       "id": "podiuminfo-475553",
       "artist": "Bryson Tiller",
       "artists": [
@@ -11554,24 +11856,6 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
-    },
-    {
-      "id": "venue-013-2026-11-24-ernst-bobbie-de-rest",
-      "artist": "Ernst, Bobbie & de rest",
-      "artists": [
-        "Ernst, Bobbie & de rest"
-      ],
-      "date": "2026-11-24",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/159486/ernst-bobbie-de-rest",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/159486/ernst-bobbie-de-rest"
     },
     {
       "id": "podiuminfo-457934",
@@ -11868,7 +12152,13 @@
       "url": "https://www.podiuminfo.nl/concert/491947/Diana-Arbenina/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/diana-arbenina-25-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-4492b222f6fc7c80",
@@ -11886,24 +12176,6 @@
       "image": "https://www.more.com/getattachment/A328EBA2-5707-4F01-B89F-7F05C57A7094/evg_dkalantzisquartet_1636_899.png",
       "source": "more",
       "verification": "source-catalog"
-    },
-    {
-      "id": "venue-013-2026-11-25-ernst-bobbie-de-rest",
-      "artist": "Ernst, Bobbie & de rest",
-      "artists": [
-        "Ernst, Bobbie & de rest"
-      ],
-      "date": "2026-11-25",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/159487/ernst-bobbie-de-rest",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/159487/ernst-bobbie-de-rest"
     },
     {
       "id": "podiuminfo-482073",
@@ -12041,7 +12313,13 @@
       "url": "https://www.podiuminfo.nl/concert/492326/The-Bug-Club/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-bug-club/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-454698",
@@ -12110,7 +12388,13 @@
       "url": "https://www.podiuminfo.nl/concert/469751/WesGhost/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/wesghost-25-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-d6520be517971351",
@@ -12247,7 +12531,13 @@
       "url": "https://www.podiuminfo.nl/concert/452924/Davina-Michelle/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/davina-michelle-support-26-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-500078",
@@ -12267,24 +12557,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "venue-013-2026-11-26-ernst-bobbie-de-rest",
-      "artist": "Ernst, Bobbie & de rest",
-      "artists": [
-        "Ernst, Bobbie & de rest"
-      ],
-      "date": "2026-11-26",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/159494/ernst-bobbie-de-rest",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/159494/ernst-bobbie-de-rest"
-    },
-    {
       "id": "podiuminfo-474167",
       "artist": "Froukje",
       "artists": [
@@ -12300,6 +12572,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-effenaar-2026-11-26-gone-country",
+      "artist": "Gone Country",
+      "artists": [
+        "Gone Country"
+      ],
+      "date": "2026-11-26",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/gone-country",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/gone-country"
     },
     {
       "id": "podiuminfo-473433",
@@ -12356,7 +12646,13 @@
       "url": "https://www.podiuminfo.nl/concert/449444/Laura-Cox/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/laura-cox-support-26-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-487310",
@@ -12501,7 +12797,13 @@
       "url": "https://www.podiuminfo.nl/concert/448474/Shantel-Bucovina-Club-Soundsystem/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/shantel-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-497380",
@@ -12848,7 +13150,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/156684/brandalarm"
+      "officialUrl": "https://www.013.nl/programma/156684/brandalarm",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-493613",
@@ -12883,7 +13190,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/128467/crush-xl-presents"
+      "officialUrl": "https://www.013.nl/programma/128467/crush-xl-presents",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462643",
@@ -13034,7 +13346,13 @@
       "url": "https://www.podiuminfo.nl/concert/450016/Jack-and-the-Weatherman/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/jack-weatherman",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-f59168f2480fc538",
@@ -13275,7 +13593,13 @@
       "url": "https://www.podiuminfo.nl/concert/495698/ooes/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/ooes-27-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "rocking-20261127-27384",
@@ -13579,6 +13903,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-doornroosje-2026-11-28-classified",
+      "artist": "Classified",
+      "artists": [
+        "Classified"
+      ],
+      "date": "2026-11-28",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/classified-6/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/classified-6/"
+    },
+    {
       "id": "podiuminfo-452909",
       "artist": "Dawn Brothers",
       "artists": [
@@ -13696,6 +14038,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-11-28-friction",
+      "artist": "Friction",
+      "artists": [
+        "Friction"
+      ],
+      "date": "2026-11-28",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/friction-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/friction-2/"
     },
     {
       "id": "podiuminfo-462544",
@@ -14055,7 +14415,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/150057/013-years-subquake"
+      "officialUrl": "https://www.013.nl/programma/150057/013-years-subquake",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-484175",
@@ -14300,6 +14665,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-effenaar-2026-11-29-bezerkus-bingo",
+      "artist": "Bezerkus Bingo",
+      "artists": [
+        "Bezerkus Bingo"
+      ],
+      "date": "2026-11-29",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/bezerkus-bingo-2",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/bezerkus-bingo-2"
+    },
+    {
       "id": "podiuminfo-496345",
       "artist": "Cora Kemperman & de Schuurmachines",
       "artists": [
@@ -14542,7 +14925,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -14957,7 +15340,13 @@
       "url": "https://www.podiuminfo.nl/concert/490715/DakhaBrakha-Ptakh/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/dakhabrakha-6/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453489",
@@ -15374,6 +15763,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-doornroosje-2026-12-01-the-blend",
+      "artist": "The Blend",
+      "artists": [
+        "The Blend"
+      ],
+      "date": "2026-12-01",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-blend-3/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-blend-3/"
+    },
+    {
       "id": "podiuminfo-460255",
       "artist": "The Chameleons",
       "artists": [
@@ -15663,7 +16070,13 @@
       "url": "https://www.podiuminfo.nl/concert/480297/Pearl-The-Oysters/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/pearl-the-oysters-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459817",
@@ -16722,24 +17135,6 @@
       "verification": "agenda-only"
     },
     {
-      "id": "venue-013-2026-12-04-jimmy-carr",
-      "artist": "Jimmy Carr",
-      "artists": [
-        "Jimmy Carr"
-      ],
-      "date": "2026-12-04",
-      "venue": "013",
-      "city": "Tilburg",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.013.nl/programma/108488/jimmy-carr",
-      "image": "",
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/108488/jimmy-carr"
-    },
-    {
       "id": "podiuminfo-458905",
       "artist": "Joël Domingos",
       "artists": [
@@ -16916,6 +17311,24 @@
       "image": "",
       "source": "rocking",
       "verification": "third-party-agenda"
+    },
+    {
+      "id": "venue-effenaar-2026-12-04-no-barrier",
+      "artist": "NO BARRIER",
+      "artists": [
+        "NO BARRIER"
+      ],
+      "date": "2026-12-04",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/no-barrier-4dec",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/no-barrier-4dec"
     },
     {
       "id": "podiuminfo-494605",
@@ -18113,7 +18526,13 @@
       "url": "https://www.podiuminfo.nl/concert/457215/Bente-avondshow/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/bente/2853007",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-473127",
@@ -18147,7 +18566,13 @@
       "url": "https://www.podiuminfo.nl/concert/465001/Jake-Xerxes-Fussell/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/jake-xerxes-fussell-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474718",
@@ -18292,6 +18717,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-12-08-belle-sebastian",
+      "artist": "Belle & Sebastian",
+      "artists": [
+        "Belle & Sebastian"
+      ],
+      "date": "2026-12-08",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/belle-sebastian/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/belle-sebastian/"
     },
     {
       "id": "podiuminfo-479464",
@@ -18491,7 +18934,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/the-tubs/"
+      "officialUrl": "https://www.doornroosje.nl/event/the-tubs/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-482282",
@@ -18976,7 +19424,13 @@
       "url": "https://www.podiuminfo.nl/concert/465106/Eindhoven-Metal-Meeting-Warm-Up-Evening-2026/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/emm-warm-up-2026",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474175",
@@ -19477,7 +19931,13 @@
       "url": "https://www.podiuminfo.nl/concert/464563/Customs/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/customs/2889452",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-452928",
@@ -19494,7 +19954,13 @@
       "url": "https://www.podiuminfo.nl/concert/452928/Davina-Michelle/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/davina-michelle-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-1fd9ac1a1369b010",
@@ -19559,6 +20025,24 @@
       "image": "https://www.festivalinfo.nl/img/upload/7/5//Eindhoven_Metal_Meeting_7953.jpg",
       "source": "festivalinfo",
       "isFestival": true
+    },
+    {
+      "id": "venue-effenaar-2026-12-11-eindhoven-metal-meeting-2026",
+      "artist": "Eindhoven Metal Meeting 2026",
+      "artists": [
+        "Eindhoven Metal Meeting 2026"
+      ],
+      "date": "2026-12-11",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/eindhoven-metal-meeting-2026-day-1",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/eindhoven-metal-meeting-2026-day-1"
     },
     {
       "id": "podiuminfo-479821",
@@ -19878,7 +20362,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/162121/spanish-heat"
+      "officialUrl": "https://www.013.nl/programma/162121/spanish-heat",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-460603",
@@ -20093,6 +20582,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-effenaar-2026-12-12-eindhoven-metal-meeting-2026",
+      "artist": "Eindhoven Metal Meeting 2026",
+      "artists": [
+        "Eindhoven Metal Meeting 2026"
+      ],
+      "date": "2026-12-12",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/eindhoven-metal-meeting-2026-day-2",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/eindhoven-metal-meeting-2026-day-2"
+    },
+    {
       "id": "podiuminfo-498525",
       "artist": "Elias Mazian b2b Tsepo",
       "artists": [
@@ -20141,7 +20648,13 @@
       "url": "https://www.podiuminfo.nl/concert/474177/Froukje/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/froukje/2896660",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462547",
@@ -20199,7 +20712,30 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026"
+      "officialUrl": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-doornroosje-2026-12-12-iconic",
+      "artist": "ICONIC",
+      "artists": [
+        "ICONIC"
+      ],
+      "date": "2026-12-12",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/iconic-3/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/iconic-3/"
     },
     {
       "id": "podiuminfo-450020",
@@ -20251,6 +20787,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2026-12-12-latin-district",
+      "artist": "Latin District",
+      "artists": [
+        "Latin District"
+      ],
+      "date": "2026-12-12",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/latin-district/2950393",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/latin-district/2950393"
     },
     {
       "id": "podiuminfo-451014",
@@ -20535,7 +21089,13 @@
       "url": "https://www.podiuminfo.nl/concert/453495/Davina-Michelle/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/davina-michelle-extra-show/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453329",
@@ -21159,6 +21719,43 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-paradiso-2026-12-15-live-la-epoca-all-stars-xl",
+      "artist": "LIVE: LA ÉPOCA ALL STARS XL",
+      "artists": [
+        "LIVE: LA ÉPOCA ALL STARS XL",
+        "VINYL: DJ BONGO"
+      ],
+      "date": "2026-12-15",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/la-epoca-asalto-navideno/2946315",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/la-epoca-asalto-navideno/2946315"
+    },
+    {
+      "id": "venue-013-2026-12-15-quiz-m-top-2000-editie",
+      "artist": "Quiz'm - Top 2000 Editie",
+      "artists": [
+        "Quiz'm - Top 2000 Editie"
+      ],
+      "date": "2026-12-15",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/156627/quizm-top-2000-editie",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/156627/quizm-top-2000-editie"
+    },
+    {
       "id": "podiuminfo-476515",
       "artist": "Rikas",
       "artists": [
@@ -21607,7 +22204,13 @@
       "url": "https://www.podiuminfo.nl/concert/474645/La-Pegatina/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/la-pegatina-11/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-464771",
@@ -21665,6 +22268,27 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2026-12-17-the-klittens",
+      "artist": "The Klittens",
+      "artists": [
+        "The Klittens",
+        "Modern Figure",
+        "Eggnostic Shellshock",
+        "DJ Steve"
+      ],
+      "date": "2026-12-17",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/the-klittens-klitfest/2914450",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/the-klittens-klitfest/2914450"
     },
     {
       "id": "podiuminfo-454066",
@@ -21832,6 +22456,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-doornroosje-2026-12-18-fiber",
+      "artist": "Fiber",
+      "artists": [
+        "Fiber"
+      ],
+      "date": "2026-12-18",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/fiber-21/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/fiber-21/"
+    },
+    {
       "id": "podiuminfo-496304",
       "artist": "Gerson Main",
       "artists": [
@@ -21870,6 +22512,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2026-12-18-house-of-liv",
+      "artist": "House of LIV",
+      "artists": [
+        "House of LIV"
+      ],
+      "date": "2026-12-18",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/liv/2947221",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/liv/2947221"
     },
     {
       "id": "podiuminfo-498364",
@@ -22061,7 +22721,13 @@
       "url": "https://www.podiuminfo.nl/concert/464772/MY-BABY/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/my-baby-6/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-465109",
@@ -22205,7 +22871,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/161435/vroeg-pieken"
+      "officialUrl": "https://www.013.nl/programma/161435/vroeg-pieken",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-482284",
@@ -22398,7 +23069,31 @@
       "url": "https://www.podiuminfo.nl/concert/449575/Clean-Petes-Kerstshow/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/clean-petes-kerstshow-5/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-013-2026-12-19-de-unie-2026",
+      "artist": "De Unie 2026",
+      "artists": [
+        "De Unie 2026"
+      ],
+      "date": "2026-12-19",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/125264/de-unie",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/125264/de-unie"
     },
     {
       "id": "podiuminfo-498458",
@@ -22416,6 +23111,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2026-12-19-disco-arabesquo",
+      "artist": "Disco Arabesquo",
+      "artists": [
+        "Disco Arabesquo"
+      ],
+      "date": "2026-12-19",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/disco-arabesquo/2944647",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/disco-arabesquo/2944647"
     },
     {
       "id": "podiuminfo-484047",
@@ -22575,7 +23288,13 @@
       "url": "https://www.podiuminfo.nl/concert/463396/Michelle-David-The-True-Tones-Festival/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/michelle-david-the-true-tones-festival/2887286",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500928",
@@ -22609,7 +23328,13 @@
       "url": "https://www.podiuminfo.nl/concert/480356/State-Power/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/state-power/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450894",
@@ -22811,6 +23536,24 @@
       }
     },
     {
+      "id": "venue-doornroosje-2026-12-20-clean-pete-s-kerstmatinee",
+      "artist": "Clean Pete's Kerstmatinee",
+      "artists": [
+        "Clean Pete's Kerstmatinee"
+      ],
+      "date": "2026-12-20",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/clean-petes-kerstmatinee-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/clean-petes-kerstmatinee-2/"
+    },
+    {
       "id": "podiuminfo-449576",
       "artist": "Clean Pete's Kerstshow",
       "artists": [
@@ -22995,7 +23738,13 @@
       "url": "https://www.podiuminfo.nl/concert/449577/Clean-Petes-Kerstshow/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/clean-petes-kerstshow/2790680",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-461117",
@@ -23150,7 +23899,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-18/"
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-18/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449763",
@@ -23336,6 +24090,24 @@
       "verification": "venue-index"
     },
     {
+      "id": "venue-013-2026-12-26-4am",
+      "artist": "4AM.",
+      "artists": [
+        "4AM."
+      ],
+      "date": "2026-12-26",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161869/4am",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161869/4am"
+    },
+    {
       "id": "podiuminfo-484896",
       "artist": "Hang Youth: Hardkoor Nachtmis",
       "artists": [
@@ -23357,6 +24129,24 @@
         "confidence": 0.9,
         "via": "json-ld"
       }
+    },
+    {
+      "id": "venue-effenaar-2026-12-26-legends-of-rock-tribute-festival-xl",
+      "artist": "Legends of Rock Tribute Festival XL",
+      "artists": [
+        "Legends of Rock Tribute Festival XL"
+      ],
+      "date": "2026-12-26",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/legends-rock-tribute-festival-xl-0",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/legends-rock-tribute-festival-xl-0"
     },
     {
       "id": "more-adcf9959bc3f2bd2",
@@ -23444,6 +24234,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-12-27-de-feestfabriek",
+      "artist": "De Feestfabriek",
+      "artists": [
+        "De Feestfabriek"
+      ],
+      "date": "2026-12-27",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161543/de-feestfabriek",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161543/de-feestfabriek"
     },
     {
       "id": "podiuminfo-483161",
@@ -23651,6 +24459,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-013-2026-12-29-40up-big-bang",
+      "artist": "40UP - Big Bang",
+      "artists": [
+        "40UP - Big Bang"
+      ],
+      "date": "2026-12-29",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161850/40up-big-bang",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161850/40up-big-bang"
+    },
+    {
       "id": "podiuminfo-479032",
       "artist": "Black Bottle Riot",
       "artists": [
@@ -23748,6 +24574,24 @@
       }
     },
     {
+      "id": "venue-doornroosje-2026-12-30-40up",
+      "artist": "40UP",
+      "artists": [
+        "40UP"
+      ],
+      "date": "2026-12-30",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/40up-15/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/40up-15/"
+    },
+    {
       "id": "podiuminfo-449756",
       "artist": "Classic Hits",
       "artists": [
@@ -23763,6 +24607,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-12-30-de-jukebox",
+      "artist": "De Jukebox",
+      "artists": [
+        "De Jukebox"
+      ],
+      "date": "2026-12-30",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/152168/de-jukebox",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/152168/de-jukebox"
     },
     {
       "id": "podiuminfo-493735",
@@ -23822,6 +24684,42 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-effenaar-2026-12-31-effenaar-oud-nieuw-2026",
+      "artist": "Effenaar Oud & Nieuw 2026",
+      "artists": [
+        "Effenaar Oud & Nieuw 2026"
+      ],
+      "date": "2026-12-31",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/effenaar-oud-nieuw-2026",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/effenaar-oud-nieuw-2026"
+    },
+    {
+      "id": "venue-013-2026-12-31-plan-de-champagne",
+      "artist": "Plan de Champagne",
+      "artists": [
+        "Plan de Champagne"
+      ],
+      "date": "2026-12-31",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161777/plandechampagne",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161777/plandechampagne"
+    },
+    {
       "id": "more-10bd823fff2b05a9",
       "artist": "Συνδρομές στο KET – σεζόν 2026-2027",
       "artists": [
@@ -23872,6 +24770,24 @@
       "image": "https://www.more.com/getattachment/4513C1C7-FF49-40B2-86A7-C9EC5B555445/evg_nightkill/secularupheaval_0818_5031.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-paradiso-2027-01-02-paradiso-s-studentendisco",
+      "artist": "Paradiso's Studentendisco",
+      "artists": [
+        "Paradiso's Studentendisco"
+      ],
+      "date": "2027-01-02",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/paradisos-studentendisco/2952660",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/paradisos-studentendisco/2952660"
     },
     {
       "id": "podiuminfo-449757",
@@ -24283,7 +25199,13 @@
       "url": "https://www.podiuminfo.nl/concert/450959/The-Dirty-Daddies/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/dirty-daddies-8jan27",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449782",
@@ -24300,7 +25222,13 @@
       "url": "https://www.podiuminfo.nl/concert/449782/Van-Dik-Hout/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/van-dik-hout/2793300",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450000",
@@ -24394,7 +25322,13 @@
       "url": "https://www.podiuminfo.nl/concert/473871/Heinoos-XXL-Proosten-op-het-Oosten/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/heinoos-xxl-proosten-op-het-oosten/2892768",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-482935",
@@ -24485,7 +25419,13 @@
       "url": "https://www.podiuminfo.nl/concert/450898/The-Dirty-Daddies/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/dirty-daddies-9jan27",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450255",
@@ -24537,6 +25477,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2027-01-09-vroegzat",
+      "artist": "VroegZat",
+      "artists": [
+        "VroegZat"
+      ],
+      "date": "2027-01-09",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/vroegzat-12/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/vroegzat-12/"
     },
     {
       "id": "podiuminfo-500671",
@@ -25618,7 +26576,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zondag/2807461"
+      "officialUrl": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zondag/2807461",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450996",
@@ -25670,6 +26633,25 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2027-01-18-follow-the-money",
+      "artist": "Follow the Money",
+      "artists": [
+        "Follow the Money",
+        "TBA"
+      ],
+      "date": "2027-01-18",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/follow-the-money-presenteert-de-avond-van-het-grote-geld-2027/2947749",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/follow-the-money-presenteert-de-avond-van-het-grote-geld-2027/2947749"
     },
     {
       "id": "podiuminfo-493459",
@@ -25782,6 +26764,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-paradiso-2027-01-19-girls-of-the-internet",
+      "artist": "Girls of the Internet",
+      "artists": [
+        "Girls of the Internet"
+      ],
+      "date": "2027-01-19",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/girls-of-the-internet/2951380",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/girls-of-the-internet/2951380"
+    },
+    {
       "id": "podiuminfo-496147",
       "artist": "Gwenifer Raymond",
       "artists": [
@@ -25814,6 +26814,25 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2027-01-19-katrien-van-beurden",
+      "artist": "Katrien van Beurden",
+      "artists": [
+        "Katrien van Beurden",
+        "Remy van Kesteren"
+      ],
+      "date": "2027-01-19",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396"
     },
     {
       "id": "podiuminfo-485188",
@@ -25882,7 +26901,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-19/"
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-19/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-478321",
@@ -26007,7 +27031,13 @@
       "url": "https://www.podiuminfo.nl/concert/468527/Punch-Brothers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/punch-brothers/2889009",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499516",
@@ -26041,7 +27071,13 @@
       "url": "https://www.podiuminfo.nl/concert/468526/Tia-Gordon/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/tia-gordon/2891474",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459939",
@@ -26115,7 +27151,13 @@
       "url": "https://www.podiuminfo.nl/concert/474292/Bywater-Call/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/bywater-call-3/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-497725",
@@ -26292,7 +27334,13 @@
       "url": "https://www.podiuminfo.nl/concert/450901/The-Dirty-Daddies/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-dirty-daddies-9/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-446878",
@@ -26498,6 +27546,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2027-01-23-de-swing-reunion-party",
+      "artist": "De Swing Reunion Party",
+      "artists": [
+        "De Swing Reunion Party"
+      ],
+      "date": "2027-01-23",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-swing-reunion-party/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-swing-reunion-party/"
     },
     {
       "id": "podiuminfo-495631",
@@ -26720,7 +27786,13 @@
       "url": "https://www.podiuminfo.nl/concert/450902/The-Dirty-Daddies/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-dirty-daddies-23-01-3/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498667",
@@ -27047,6 +28119,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2027-01-27-de-jukebox",
+      "artist": "De Jukebox",
+      "artists": [
+        "De Jukebox"
+      ],
+      "date": "2027-01-27",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/152175/de-jukebox",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/152175/de-jukebox"
     },
     {
       "id": "podiuminfo-463416",
@@ -27386,6 +28476,24 @@
       }
     },
     {
+      "id": "venue-013-2027-01-29-carnaval-countdown",
+      "artist": "Carnaval Countdown",
+      "artists": [
+        "Carnaval Countdown"
+      ],
+      "date": "2027-01-29",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159259/carnaval-countdown",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159259/carnaval-countdown"
+    },
+    {
       "id": "podiuminfo-483166",
       "artist": "Clan of Xymox",
       "artists": [
@@ -27457,7 +28565,13 @@
       "url": "https://www.podiuminfo.nl/concert/492164/Erwin-Nyhoff-The-Prodigal-Sons/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/erwin-nyhoff-prodigal-sons",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496312",
@@ -27492,7 +28606,13 @@
       "url": "https://www.podiuminfo.nl/concert/484797/Het-Goede-Doel-Belgie!/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/het-goede-doel/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474123",
@@ -27655,6 +28775,24 @@
       }
     },
     {
+      "id": "venue-effenaar-2027-01-29-we-all-love-90-s-00-s-10-s",
+      "artist": "We All Love 90's 00's 10's",
+      "artists": [
+        "We All Love 90's 00's 10's"
+      ],
+      "date": "2027-01-29",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/we-all-love-29jan",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/we-all-love-29jan"
+    },
+    {
       "id": "podiuminfo-500727",
       "artist": "Wilson A - Releaseshow",
       "artists": [
@@ -27711,6 +28849,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-effenaar-2027-01-30-80-s-anders",
+      "artist": "80's Anders",
+      "artists": [
+        "80's Anders"
+      ],
+      "date": "2027-01-30",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/80sanders-30jan",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/80sanders-30jan"
     },
     {
       "id": "more-9a04e6971b27de1d",
@@ -27816,6 +28972,42 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-effenaar-2027-01-30-mother-s-cake",
+      "artist": "Mother's Cake",
+      "artists": [
+        "Mother's Cake"
+      ],
+      "date": "2027-01-30",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/mothers-cake",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/mothers-cake"
+    },
+    {
+      "id": "venue-013-2027-01-30-reactivate-2027",
+      "artist": "REACTiVATE 2027",
+      "artists": [
+        "REACTiVATE 2027"
+      ],
+      "date": "2027-01-30",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/156988/reactivate-2027",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/156988/reactivate-2027"
     },
     {
       "id": "podiuminfo-500205",
@@ -27931,7 +29123,13 @@
       "url": "https://www.podiuminfo.nl/concert/452845/The-Smiths-Presumably/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/thesmithspresumably",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494381",
@@ -29053,6 +30251,24 @@
       "isFestival": true
     },
     {
+      "id": "venue-doornroosje-2027-02-06-emo-night-mainland",
+      "artist": "Emo Night Mainland",
+      "artists": [
+        "Emo Night Mainland"
+      ],
+      "date": "2027-02-06",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/emo-night-mainland-7/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/emo-night-mainland-7/"
+    },
+    {
       "id": "podiuminfo-494337",
       "artist": "Giles Corey",
       "artists": [
@@ -29820,7 +31036,13 @@
       "url": "https://www.podiuminfo.nl/concert/490284/The-Vernon-Spring-A-Plane-Over-Woods-5-Year-Anniversary-Tour/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-vernon-spring/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498572",
@@ -30606,6 +31828,60 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-013-2027-02-14-amorphis",
+      "artist": "Amorphis",
+      "artists": [
+        "Amorphis"
+      ],
+      "date": "2027-02-14",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/131462/amorphis",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/131462/amorphis"
+    },
+    {
+      "id": "venue-paradiso-2027-02-14-rnb-singalong-3-year-anniversary",
+      "artist": "Rnb Singalong 3 Year Anniversary",
+      "artists": [
+        "Rnb Singalong 3 Year Anniversary"
+      ],
+      "date": "2027-02-14",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/irwans-rnb-singalong/2945690",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/irwans-rnb-singalong/2945690"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-15-josh-ritter",
+      "artist": "Josh Ritter",
+      "artists": [
+        "Josh Ritter"
+      ],
+      "date": "2027-02-15",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/josh-ritter-3/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/josh-ritter-3/"
+    },
+    {
       "id": "venue-doornroosje-2027-02-17-de-jukebox-20",
       "artist": "De Jukebox #20",
       "artists": [
@@ -30621,7 +31897,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-20/"
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-20/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-doornroosje-2027-02-18-tinlicker",
@@ -30639,7 +31920,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/tinlicker/"
+      "officialUrl": "https://www.doornroosje.nl/event/tinlicker/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-46e3ab4427bb0606",
@@ -30659,6 +31945,43 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-doornroosje-2027-02-19-enslaved-solstafir-gaahls-wyrd",
+      "artist": "Enslaved + Sólstafir + Gaahls Wyrd",
+      "artists": [
+        "Enslaved + Sólstafir + Gaahls Wyrd"
+      ],
+      "date": "2027-02-19",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/enslaved-solstafir/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/enslaved-solstafir/"
+    },
+    {
+      "id": "venue-effenaar-2027-02-19-heideroosjes",
+      "artist": "Heideroosjes",
+      "artists": [
+        "Heideroosjes"
+      ],
+      "date": "2027-02-19",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "Alternative",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/heideroosjes-19feb",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/heideroosjes-19feb",
+      "genreEvidence": "metadata"
+    },
+    {
       "id": "more-3145472c8f503afb",
       "artist": "Jazz στο Μουσείο: Takis Paterelis & Costis Christodoulou Duet –",
       "artists": [
@@ -30674,6 +31997,24 @@
       "image": "https://www.more.com/getattachment/777638D6-3DC4-4494-8DDE-C8AD02268CB7/evg_jazzstomouseiopaterelis-c_2049_1743.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-effenaar-2027-02-19-jesper-lindell-the-brunnsvick-sounds",
+      "artist": "Jesper Lindell & The Brunnsvick Sounds",
+      "artists": [
+        "Jesper Lindell & The Brunnsvick Sounds"
+      ],
+      "date": "2027-02-19",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/jesper-lindell-brunnsvick-sounds",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/jesper-lindell-brunnsvick-sounds"
     },
     {
       "id": "more-086d446e3a521353",
@@ -30710,6 +32051,78 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-effenaar-2027-02-20-physical-graffiti",
+      "artist": "Physical Graffiti",
+      "artists": [
+        "Physical Graffiti"
+      ],
+      "date": "2027-02-20",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/physical-graffiti-2027",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/physical-graffiti-2027"
+    },
+    {
+      "id": "venue-013-2027-02-20-reset-2027",
+      "artist": "RESET 2027",
+      "artists": [
+        "RESET 2027"
+      ],
+      "date": "2027-02-20",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161754/reset-2027",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161754/reset-2027"
+    },
+    {
+      "id": "venue-effenaar-2027-02-20-rudeboy-x-boskat",
+      "artist": "Rudeboy X BOSKAT",
+      "artists": [
+        "Rudeboy X BOSKAT"
+      ],
+      "date": "2027-02-20",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/rudeboy-boskat",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/rudeboy-boskat"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-20-the-reytons",
+      "artist": "The Reytons",
+      "artists": [
+        "The Reytons"
+      ],
+      "date": "2027-02-20",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-reytons/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-reytons/"
+    },
+    {
       "id": "more-19d301f7c69219c9",
       "artist": "ΣΟΦΙΑ ΜΑΝΟΥΣΑΚΗ - ΣΕΡΡΕΣ",
       "artists": [
@@ -30725,6 +32138,78 @@
       "image": "https://www.more.com/getattachment/989C4AA1-7BCC-436B-97D2-6FCFC0F7E937/evg_sophiamanousake-serres_0900_5567.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-21-master-peace",
+      "artist": "Master Peace",
+      "artists": [
+        "Master Peace"
+      ],
+      "date": "2027-02-21",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/master-peace/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/master-peace/"
+    },
+    {
+      "id": "venue-013-2027-02-21-the-halo-effect",
+      "artist": "The Halo Effect",
+      "artists": [
+        "The Halo Effect"
+      ],
+      "date": "2027-02-21",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/128444/the-halo-effect",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/128444/the-halo-effect"
+    },
+    {
+      "id": "venue-013-2027-02-22-the-australian-pink-floyd-show",
+      "artist": "The Australian Pink Floyd Show",
+      "artists": [
+        "The Australian Pink Floyd Show"
+      ],
+      "date": "2027-02-22",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/137219/the-australian-pink-floyd-show",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/137219/the-australian-pink-floyd-show"
+    },
+    {
+      "id": "venue-paradiso-2027-02-23-charlotte-adigery-bolis-pupul",
+      "artist": "Charlotte Adigéry & Bolis Pupul",
+      "artists": [
+        "Charlotte Adigéry & Bolis Pupul"
+      ],
+      "date": "2027-02-23",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/charlotte-adigery-bolis-pupul-mainland-madinina/2950344",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/charlotte-adigery-bolis-pupul-mainland-madinina/2950344"
     },
     {
       "id": "more-797297a4464cecfa",
@@ -30744,6 +32229,96 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-doornroosje-2027-02-23-the-rasmus",
+      "artist": "The Rasmus",
+      "artists": [
+        "The Rasmus"
+      ],
+      "date": "2027-02-23",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-rasmus/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-rasmus/"
+    },
+    {
+      "id": "venue-paradiso-2027-02-23-young-eman",
+      "artist": "Young Eman",
+      "artists": [
+        "Young Eman"
+      ],
+      "date": "2027-02-23",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/young-eman/2949650",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/young-eman/2949650"
+    },
+    {
+      "id": "venue-013-2027-02-24-de-jukebox",
+      "artist": "De Jukebox",
+      "artists": [
+        "De Jukebox"
+      ],
+      "date": "2027-02-24",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/152183/de-jukebox",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/152183/de-jukebox"
+    },
+    {
+      "id": "venue-effenaar-2027-02-24-midge-ure",
+      "artist": "Midge Ure",
+      "artists": [
+        "Midge Ure"
+      ],
+      "date": "2027-02-24",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/midge-ure",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/midge-ure"
+    },
+    {
+      "id": "venue-effenaar-2027-02-25-bazart",
+      "artist": "Bazart",
+      "artists": [
+        "Bazart"
+      ],
+      "date": "2027-02-25",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/bazart",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/bazart"
+    },
+    {
       "id": "venue-doornroosje-2027-02-25-the-skints",
       "artist": "The Skints",
       "artists": [
@@ -30753,13 +32328,74 @@
       "venue": "Doornroosje",
       "city": "Nijmegen",
       "country": "NL",
-      "genre": "",
+      "genre": "Reggae",
       "subgenre": "",
       "url": "https://www.doornroosje.nl/event/the-skints-2/",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/the-skints-2/"
+      "officialUrl": "https://www.doornroosje.nl/event/the-skints-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-26-heideroosjes",
+      "artist": "Heideroosjes",
+      "artists": [
+        "Heideroosjes"
+      ],
+      "date": "2027-02-26",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "Alternative",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/heideroosjes-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/heideroosjes-2/",
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-26-kakkmaddafakka",
+      "artist": "KAKKMADDAFAKKA",
+      "artists": [
+        "KAKKMADDAFAKKA"
+      ],
+      "date": "2027-02-26",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/kakkmaddafakka-3/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/kakkmaddafakka-3/"
+    },
+    {
+      "id": "venue-effenaar-2027-02-26-ruben-hillen",
+      "artist": "Ruben Hillen",
+      "artists": [
+        "Ruben Hillen"
+      ],
+      "date": "2027-02-26",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/ruben-hillen",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/ruben-hillen"
     },
     {
       "id": "more-e924b190b4ba85a6",
@@ -30794,7 +32430,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/155823/wende"
+      "officialUrl": "https://www.013.nl/programma/155823/wende",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-doornroosje-2027-02-27-fatoumata-diawara",
@@ -30812,7 +32453,122 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/fatoumata-diawara-2/"
+      "officialUrl": "https://www.doornroosje.nl/event/fatoumata-diawara-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-effenaar-2027-02-27-vrij-gezellig",
+      "artist": "Vrij-gezellig",
+      "artists": [
+        "Vrij-gezellig"
+      ],
+      "date": "2027-02-27",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/vrij-gezellig",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/vrij-gezellig"
+    },
+    {
+      "id": "venue-013-2027-02-28-peelingflesh",
+      "artist": "PeelingFlesh",
+      "artists": [
+        "PeelingFlesh"
+      ],
+      "date": "2027-02-28",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/160999/peelingflesh",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/160999/peelingflesh"
+    },
+    {
+      "id": "venue-013-2027-02-28-sleeping-with-sirens",
+      "artist": "Sleeping With Sirens",
+      "artists": [
+        "Sleeping With Sirens"
+      ],
+      "date": "2027-02-28",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/135855/sleeping-with-sirens",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/135855/sleeping-with-sirens"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-03-de-staat",
+      "artist": "De Staat",
+      "artists": [
+        "De Staat"
+      ],
+      "date": "2027-03-03",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "Alternative",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-staat-16/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-staat-16/",
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-03-rezn-coltaine",
+      "artist": "REZN + Coltaine",
+      "artists": [
+        "REZN + Coltaine"
+      ],
+      "date": "2027-03-03",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/rezn-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/rezn-2/"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-04-de-staat",
+      "artist": "De Staat",
+      "artists": [
+        "De Staat"
+      ],
+      "date": "2027-03-04",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "Alternative",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-staat-13/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-staat-13/",
+      "genreEvidence": "metadata"
     },
     {
       "id": "gagarin-2027-03-04-up%20the%20hammers%20xxi",
@@ -30830,6 +32586,60 @@
       "image": "https://gagarin205.gr/wp-content/uploads/2026/09/UP-THE-HAMMERS-XXI.jpg",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
+    },
+    {
+      "id": "venue-013-2027-03-05-clouseau",
+      "artist": "Clouseau",
+      "artists": [
+        "Clouseau"
+      ],
+      "date": "2027-03-05",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/158995/clouseau",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/158995/clouseau"
+    },
+    {
+      "id": "venue-paradiso-2027-03-05-nao-yoshioka",
+      "artist": "Nao Yoshioka",
+      "artists": [
+        "Nao Yoshioka"
+      ],
+      "date": "2027-03-05",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/nao-yoshioka/2949769",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/nao-yoshioka/2949769"
+    },
+    {
+      "id": "venue-effenaar-2027-03-05-the-dead-daisies",
+      "artist": "The Dead Daisies",
+      "artists": [
+        "The Dead Daisies"
+      ],
+      "date": "2027-03-05",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/dead-daisies-featuring-kelly-hansen",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/dead-daisies-featuring-kelly-hansen"
     },
     {
       "id": "more-df1d5ce4388bc8a7",
@@ -30894,6 +32704,24 @@
       "isFestival": true
     },
     {
+      "id": "venue-013-2027-03-06-one-vision-of-queen-ft-marc-martel",
+      "artist": "One Vision of Queen ft Marc Martel",
+      "artists": [
+        "One Vision of Queen ft Marc Martel"
+      ],
+      "date": "2027-03-06",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel"
+    },
+    {
       "id": "more-a9315863f15b1b3e",
       "artist": "Planet of Zeus",
       "artists": [
@@ -30937,6 +32765,114 @@
       }
     },
     {
+      "id": "venue-paradiso-2027-03-07-saint-etienne",
+      "artist": "Saint Etienne",
+      "artists": [
+        "Saint Etienne"
+      ],
+      "date": "2027-03-07",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/saint-etienne/2948998",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/saint-etienne/2948998"
+    },
+    {
+      "id": "venue-effenaar-2027-03-10-the-haunted-youth",
+      "artist": "The Haunted Youth",
+      "artists": [
+        "The Haunted Youth"
+      ],
+      "date": "2027-03-10",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/thehauntedyouth",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/thehauntedyouth"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-10-wende",
+      "artist": "Wende",
+      "artists": [
+        "Wende"
+      ],
+      "date": "2027-03-10",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/wende-12/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/wende-12/"
+    },
+    {
+      "id": "venue-effenaar-2027-03-11-meltheads",
+      "artist": "Meltheads",
+      "artists": [
+        "Meltheads"
+      ],
+      "date": "2027-03-11",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/meltheads-11mrt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/meltheads-11mrt"
+    },
+    {
+      "id": "venue-013-2027-03-11-turnover",
+      "artist": "Turnover",
+      "artists": [
+        "Turnover"
+      ],
+      "date": "2027-03-11",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/142310/turnover",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/142310/turnover"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-11-wende",
+      "artist": "Wende",
+      "artists": [
+        "Wende"
+      ],
+      "date": "2027-03-11",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/wende-13/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/wende-13/"
+    },
+    {
       "id": "more-ebcfdb2972636e36",
       "artist": "ANDRE RIEU 2027",
       "artists": [
@@ -30954,6 +32890,42 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-effenaar-2027-03-12-politie-warnsveld",
+      "artist": "Politie Warnsveld",
+      "artists": [
+        "Politie Warnsveld"
+      ],
+      "date": "2027-03-12",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/politie-warnsveld",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/politie-warnsveld"
+    },
+    {
+      "id": "venue-013-2027-03-12-the-dirty-daddies",
+      "artist": "The Dirty Daddies",
+      "artists": [
+        "The Dirty Daddies"
+      ],
+      "date": "2027-03-12",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/125058/the-dirtt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/125058/the-dirtt"
+    },
+    {
       "id": "venue-doornroosje-2027-03-12-wende",
       "artist": "Wende",
       "artists": [
@@ -30969,7 +32941,122 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/wende-14/"
+      "officialUrl": "https://www.doornroosje.nl/event/wende-14/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-effenaar-2027-03-13-personal-trainer",
+      "artist": "Personal Trainer",
+      "artists": [
+        "Personal Trainer"
+      ],
+      "date": "2027-03-13",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/personal-trainer-13mrt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/personal-trainer-13mrt"
+    },
+    {
+      "id": "venue-effenaar-2027-03-13-the-horse-company",
+      "artist": "The Horse Company",
+      "artists": [
+        "The Horse Company"
+      ],
+      "date": "2027-03-13",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/horse-company",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/horse-company",
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-013-2027-03-13-van-dik-hout",
+      "artist": "Van Dik Hout",
+      "artists": [
+        "Van Dik Hout"
+      ],
+      "date": "2027-03-13",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/135844/van-dik-hout",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/135844/van-dik-hout",
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-013-2027-03-13-white-noise",
+      "artist": "WHITE NOISE",
+      "artists": [
+        "WHITE NOISE"
+      ],
+      "date": "2027-03-13",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/162433/white-noise",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/162433/white-noise"
+    },
+    {
+      "id": "venue-effenaar-2027-03-16-kmfdm",
+      "artist": "KMFDM",
+      "artists": [
+        "KMFDM"
+      ],
+      "date": "2027-03-16",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/kmfdm-1",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/kmfdm-1"
+    },
+    {
+      "id": "venue-paradiso-2027-03-17-lael-neale",
+      "artist": "Lael Neale",
+      "artists": [
+        "Lael Neale"
+      ],
+      "date": "2027-03-17",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/lael-neale/2931775",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/lael-neale/2931775"
     },
     {
       "id": "more-8b5ef11dcfa7d3c5",
@@ -30988,6 +33075,42 @@
       "image": "https://www.more.com/getattachment/8881DB3D-E58D-4DCE-BA6E-2421A4B330FF/evg_deltagoodrem/pureworldto_1204_854.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
+    },
+    {
+      "id": "venue-013-2027-03-18-edwin-evers-band",
+      "artist": "Edwin Evers Band",
+      "artists": [
+        "Edwin Evers Band"
+      ],
+      "date": "2027-03-18",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/162032/edwin-evers-band",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/162032/edwin-evers-band"
+    },
+    {
+      "id": "venue-effenaar-2027-03-18-the-dutch-queen",
+      "artist": "The Dutch Queen",
+      "artists": [
+        "The Dutch Queen"
+      ],
+      "date": "2027-03-18",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/dutch-queen-18mrt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/dutch-queen-18mrt"
     },
     {
       "id": "more-c9a166992fd48e2d",
@@ -31024,6 +33147,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-effenaar-2027-03-19-fiep",
+      "artist": "FIEP",
+      "artists": [
+        "FIEP"
+      ],
+      "date": "2027-03-19",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/fiep",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/fiep"
+    },
+    {
       "id": "more-5eb1a6a9c23ab405",
       "artist": "Jazz στο Μουσείο: Irina Valentinova-Karpouchina & Kimon Karoutzos –",
       "artists": [
@@ -31058,8 +33199,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -31071,11 +33212,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -31095,7 +33236,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -31110,6 +33251,24 @@
       "image": "https://www.more.com/getattachment/0EBD5BC2-70B5-402C-A23E-FB8CAF88E8D2/evg_uksubsliveinathens_1859_5209.png",
       "source": "anclub-index",
       "verification": "venue-index"
+    },
+    {
+      "id": "venue-013-2027-03-21-alcest-agriculture",
+      "artist": "Alcest + Agriculture",
+      "artists": [
+        "Alcest + Agriculture"
+      ],
+      "date": "2027-03-21",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/153847/alcest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/153847/alcest"
     },
     {
       "id": "official-tour-igorrr-20270321-thessaloniki",
@@ -31131,6 +33290,24 @@
       "verification": "ticket-provider"
     },
     {
+      "id": "venue-effenaar-2027-03-21-pop-up-koor-xl",
+      "artist": "Pop-Up Koor XL",
+      "artists": [
+        "Pop-Up Koor XL"
+      ],
+      "date": "2027-03-21",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/pop-koor-xl-21mrt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/pop-koor-xl-21mrt"
+    },
+    {
       "id": "venue-doornroosje-2027-03-24-de-jukebox-21",
       "artist": "De Jukebox #21",
       "artists": [
@@ -31146,7 +33323,49 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-21/"
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-21/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-paradiso-2027-03-24-getdown-services",
+      "artist": "Getdown Services",
+      "artists": [
+        "Getdown Services",
+        "Classic Trucks"
+      ],
+      "date": "2027-03-24",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/getdown-services/2919733",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/getdown-services/2919733"
+    },
+    {
+      "id": "venue-013-2027-03-24-saxon",
+      "artist": "Saxon",
+      "artists": [
+        "Saxon"
+      ],
+      "date": "2027-03-24",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161931/saxon",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161931/saxon"
     },
     {
       "id": "more-03f20a56f46e2498",
@@ -31166,6 +33385,24 @@
       "verification": "venue-calendar"
     },
     {
+      "id": "venue-013-2027-03-25-the-warning",
+      "artist": "The Warning",
+      "artists": [
+        "The Warning"
+      ],
+      "date": "2027-03-25",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/156333/the-warning",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/156333/the-warning"
+    },
+    {
       "id": "venue-effenaar-2027-03-25-yves-berendse",
       "artist": "Yves Berendse",
       "artists": [
@@ -31181,7 +33418,67 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/yves-berendse"
+      "officialUrl": "https://www.effenaar.nl/agenda/yves-berendse",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-paradiso-2027-03-26-the-horse-company",
+      "artist": "The Horse Company",
+      "artists": [
+        "The Horse Company"
+      ],
+      "date": "2027-03-26",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/the-horse-company/2949980",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/the-horse-company/2949980",
+      "genreEvidence": "metadata"
+    },
+    {
+      "id": "venue-013-2027-03-27-sama-sama-maluku-live-in-concert",
+      "artist": "Sama Sama Maluku Live In Concert",
+      "artists": [
+        "Sama Sama Maluku Live In Concert"
+      ],
+      "date": "2027-03-27",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159292/sama-sama-maluku",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159292/sama-sama-maluku"
+    },
+    {
+      "id": "venue-effenaar-2027-03-28-the-orb",
+      "artist": "The Orb",
+      "artists": [
+        "The Orb"
+      ],
+      "date": "2027-03-28",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/the-orb",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/the-orb"
     },
     {
       "id": "venue-effenaar-2027-03-28-the-skatalites",
@@ -31199,7 +33496,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/skatalites"
+      "officialUrl": "https://www.effenaar.nl/agenda/skatalites",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "official-tour-moonspell-20270330-thessaloniki",
@@ -31219,6 +33521,24 @@
       "image": "https://www.moonspell.com/galeria/images/MoonspellVampire_Tour_Poster_A3_Web-1.jpg",
       "source": "official",
       "verification": "artist-tour"
+    },
+    {
+      "id": "venue-013-2027-03-31-de-jukebox",
+      "artist": "De Jukebox",
+      "artists": [
+        "De Jukebox"
+      ],
+      "date": "2027-03-31",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/152185/de-jukebox",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/152185/de-jukebox"
     },
     {
       "id": "official-tour-moonspell-20270331-athens",
@@ -31257,6 +33577,60 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-013-2027-04-02-chef-special",
+      "artist": "Chef'Special",
+      "artists": [
+        "Chef'Special"
+      ],
+      "date": "2027-04-02",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/158979/chefspecial",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/158979/chefspecial"
+    },
+    {
+      "id": "venue-effenaar-2027-04-03-80-s-anders",
+      "artist": "80's Anders",
+      "artists": [
+        "80's Anders"
+      ],
+      "date": "2027-04-03",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/80s-anders-11",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/80s-anders-11"
+    },
+    {
+      "id": "venue-013-2027-04-03-ilse-delange",
+      "artist": "Ilse DeLange",
+      "artists": [
+        "Ilse DeLange"
+      ],
+      "date": "2027-04-03",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/132836/ilse-delange",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/132836/ilse-delange"
+    },
+    {
       "id": "venue-effenaar-2027-04-03-mistress-of-jersey",
       "artist": "Mistress of Jersey",
       "artists": [
@@ -31272,7 +33646,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/mistress-jersey-curtis-80s-anders"
+      "officialUrl": "https://www.effenaar.nl/agenda/mistress-jersey-curtis-80s-anders",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-36482",
@@ -31293,7 +33672,7 @@
       "isFestival": true
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -31407,10 +33786,10 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1245,
     "festivalEvents": 16,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 50,
+    "sameVenueDuplicatesMerged": 45,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -31419,38 +33798,38 @@
       "requests": 45,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 225,
+      "skippedBlocked": 270,
       "eligible": 1245,
       "remainingWithoutImage": 1245
     },
     "artistPhotoCache": {
-      "artists": 470,
+      "artists": 482,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 812,
-        "requests": 450,
-        "found": 98,
-        "notFound": 163,
-        "ambiguous": 57,
-        "coverRejected": 34,
+        "candidates": 699,
+        "requests": 69,
+        "found": 11,
+        "notFound": 32,
+        "ambiguous": 9,
+        "coverRejected": 6,
         "errors": 0,
-        "skipped": 468,
-        "photos": 467
+        "skipped": 647,
+        "photos": 481
       },
       "identity": {
-        "candidates": 674,
-        "processed": 19,
+        "candidates": 677,
+        "processed": 14,
         "identified": 4,
         "ambiguous": 0,
-        "notFound": 11,
+        "notFound": 9,
         "commons": 0,
-        "deezerLinked": 3,
-        "errors": 4
+        "deezerLinked": 1,
+        "errors": 1
       }
     },
-    "gagarinCalendarEvents": 21,
+    "gagarinCalendarEvents": 22,
     "gagarinPosterEnriched": 6,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -31464,24 +33843,28 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 507,
-    "taggedArtists": 481,
+    "genreTaggedEvents": 515,
+    "taggedArtists": 498,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-05T20:36:04.764Z",
-    "catalogueEvents": 1659,
-    "officialMatches": 271,
+    "updatedAt": "2026-11-05T20:55:15.264Z",
+    "catalogueEvents": 1702,
+    "officialMatches": 364,
     "imagesPublished": 0,
-    "imageCandidatesPending": 271,
-    "discoveredEvents": 43,
+    "imageCandidatesPending": 364,
+    "discoveredEvents": 109,
     "venueEventsRemoved": {
       "duplicate": 0,
       "policy": 0,
       "cancelled": 0,
       "rescheduled": 0,
-      "gone": 0
+      "gone": 0,
+      "nonConcert": 7
     },
-    "venueEventsPublished": 43
+    "venueEventsPublished": 145,
+    "venueGenresFromCache": 1,
+    "venueGenresTagged": 13,
+    "venueGenreLookups": 12
   }
 }
