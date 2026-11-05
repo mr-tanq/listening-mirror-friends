@@ -50,6 +50,18 @@ test('shared words are not identity: Black Midi vs Black Country, New Road',()=>
  assert.equal(showIdentity(podium('Black Country, New Road','2026-12-04','p6'),o,paradiso),'different');
 });
 
+test('a complete multi-word name inside a longer official title is a possible duplicate (live audit case)',()=>{
+ const patronaat=adapterById('patronaat');
+ const o={url:'https://patronaat.nl/event/funk-legacy-allstars-featuring-candy-dulfer-x-nigel-hall-x-eric-benny-bloom-11-11-26/',
+  title:'Candy Dulfer Presents FUNK LEGACY ALLSTARS featuring Nigel Hall x Eric “Benny” Bloom',performers:[],date:'2026-11-11',venueName:''};
+ const cat={...podium('Funk Legacy Allstars','2026-11-11','p'),venue:'Patronaat'};
+ assert.equal(showIdentity(cat,o,patronaat),'possible');
+ // still: one shared word is not enough, and a one-word name inside a title is not enough
+ assert.equal(showIdentity({...cat,artist:'Funk',artists:['Funk']},o,patronaat),'different');
+ const bcnr={url:BCNR,title:'Black Country, New Road',performers:['Black Country, New Road'],date:'2026-12-03',venueName:'Paradiso'};
+ assert.equal(showIdentity(podium('Black Midi','2026-12-03','x'),bcnr,paradiso),'different');
+});
+
 test('both same-night shows survive discovery and every later daily reconciliation',async()=>{
  const feed={events:[podium('Black Midi','2026-12-03','podiuminfo-bm')]};
  const d1=await run(feed,{},site(twoShows));

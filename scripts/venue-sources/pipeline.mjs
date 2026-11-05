@@ -165,7 +165,10 @@ const canonicalUrlKey=u=>{try{const x=new URL(u);return x.host+x.pathname.replac
  *  'same'      verified: identical official URL, or strict identity
  *              (same date, on-site venue, exact headliner; see scoreMatch)
  *  'possible'  same night and venue, and one full headliner name extends the
- *              other at a word boundary ("De Jukebox" / "De Jukebox #17")
+ *              other at a word boundary ("De Jukebox" / "De Jukebox #17"), or
+ *              a complete multi-word name appears as a phrase in the other
+ *              title ("Funk Legacy Allstars" / "Candy Dulfer Presents FUNK
+ *              LEGACY ALLSTARS featuring ...")
  *  'different' anything else. Sharing a single word ("Black Midi" /
  *              "Black Country, New Road") is NOT evidence of the same show.
  */
@@ -177,7 +180,14 @@ export function showIdentity(event,official,adapter){
  const ours=[...new Set(headlinerNames(event).map(artistKey))].filter(k=>k.length>=4);
  const theirs=officialHeadliners(official).filter(k=>k.length>=4);
  const extends_=(a,b)=>a.startsWith(b+' ');
- return ours.some(a=>theirs.some(b=>extends_(a,b)||extends_(b,a)))?'possible':'different';
+ if(ours.some(a=>theirs.some(b=>extends_(a,b)||extends_(b,a))))return 'possible';
+ // A complete multi-word name inside the other side's full title, as a whole
+ // phrase: "Funk Legacy Allstars" in "Candy Dulfer Presents FUNK LEGACY
+ // ALLSTARS featuring ...". One shared word ("black") is never enough.
+ const phraseIn=(name,title)=>name.split(' ').length>=2&&(' '+title+' ').includes(' '+name+' ');
+ const ourTitle=artistKey(event.artist),theirTitle=artistKey(official.title);
+ if(ours.some(a=>phraseIn(a,theirTitle))||theirs.some(b=>phraseIn(b,ourTitle)))return 'possible';
+ return 'different';
 }
 
 /**

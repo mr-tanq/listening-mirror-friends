@@ -90,7 +90,7 @@ scripts/update-venue-catalog.mjs (runs even if Podiuminfo failed)
 | Verdict | When | Discovery | Daily reconciliation |
 |---|---|---|---|
 | `same` | Same official URL, **or** strict identity (date + on-site venue + exact headliner) | Not added | Venue copy removed |
-| `possible` | Same night and venue, and one full headliner name extends the other at a word boundary (`De Jukebox` / `De Jukebox #17`) | Not added; listed for review | **Kept**: ambiguous cases are never deleted |
+| `possible` | Same night and venue, and either one full headliner name extends the other at a word boundary (`De Jukebox` / `De Jukebox #17`), or a complete multi-word name appears as a phrase in the other title (`Funk Legacy Allstars` / `Candy Dulfer Presents FUNK LEGACY ALLSTARS featuring …`) | Not added; listed for review | **Kept**: ambiguous cases are never deleted |
 | `different` | Anything else | Added | Kept |
 
 Sharing a single word is never evidence of the same show: `Black Midi` and `Black Country, New Road` on the same night are two concerts.
