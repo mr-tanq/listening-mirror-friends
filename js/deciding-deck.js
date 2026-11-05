@@ -27,6 +27,16 @@ export function explainConcert(event={},reason=''){
   if(reason)entries.push(['Why this show',reason]);
   return entries;
 }
+// Licensed photos (e.g. Wikimedia Commons CC BY-SA) must show their credit.
+function imageCredit(event){
+  const credit=event?.imageCredit;
+  if(!credit||typeof credit.text!=='string'||!credit.text.trim())return null;
+  const url=safeUrl(credit.url);
+  const node=url?el('a','deck-credit',credit.text):el('span','deck-credit',credit.text);
+  if(url){node.href=url;node.target='_blank';node.rel='noopener noreferrer';}
+  node.addEventListener('pointerdown',e=>e.stopPropagation());
+  return node;
+}
 export function openConcertDetail(event={},reason=''){
   const dialog=el('dialog','deciding-details');
   const inner=el('section','deciding-details-inner');
@@ -35,7 +45,8 @@ export function openConcertDetail(event={},reason=''){
     actionButton('×','deciding-close',()=>dialog.close()));
   inner.append(top,el('h2','deciding-detail-name',event.artist||'Concert'));
   const poster=safeUrl(event.image);
-  if(poster){const img=el('img','deciding-detail-image');img.src=poster;img.alt='Event artwork';img.loading='lazy';inner.append(img);}
+  if(poster){const img=el('img','deciding-detail-image');img.src=poster;img.alt='Event artwork';img.loading='lazy';inner.append(img);
+    const credit=imageCredit(event);if(credit)inner.append(credit);}
   const facts=el('dl','deciding-facts');
   for(const [title,value] of explainConcert(event,reason)){
     const item=el('div','deciding-fact');item.append(el('dt','',title),el('dd','',value));facts.append(item);
@@ -87,6 +98,8 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
     img.loading='eager';
     img.addEventListener('error',()=>{img.remove();image.classList.add('no-image');},{once:true});
     image.append(img);
+    const credit=imageCredit(event);
+    if(credit){img.addEventListener('error',()=>credit.remove(),{once:true});image.append(credit);}
   }else image.classList.add('no-image');
   image.append(el('span','deck-counter','01 / '+String(remaining).padStart(2,'0')));
   const indicators=el('div','deck-indicators');

@@ -1,0 +1,5 @@
+{
+  "note": "Human review of automatic band photos. 'block' removes a wrong photo and stops future lookups for that name. 'pin' sets a reviewed photo: {\"artist\":\"Name\",\"image\":\"https://...\",\"sourceUrl\":\"https://...\",\"credit\":{\"text\":\"Photo: ...\",\"url\":\"https://...\"}}. Only Deezer artist images, Podiuminfo artist images and Wikimedia Commons files are accepted.",
+  "block": [],
+  "pin": []
+}

@@ -1,8 +1,8 @@
 import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=discovery-v5';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=band-photos-v9';
-import {resolveConcertImage} from './artist-images.js?v=band-photos-v8';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=identity-v1';
+import {resolveConcertImage} from './artist-images.js?v=identity-v1';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -15,7 +15,7 @@ let artistImages = {version:1,artists:{}};
 function withArtwork(event){
   if(!event)return event;
   const chosen=resolveConcertImage(event,artistImages);
-  return chosen.url&&!event.image?{...event,image:chosen.url,imageKind:chosen.kind}:event;
+  return chosen.url&&!event.image?{...event,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})}:event;
 }
 let page = 'tonight';
 let collection = 'deciding';
@@ -145,7 +145,9 @@ function card(raw,scoreInfo=null,mode='discover') {
   const e=normalizeEvent(raw);if(!e)return null;
   const card=el('article','show'+(scoreInfo?.score>=100?' featured':''));
   const pic=safeUrl(e.image);
-  if(pic){const img=el('img','show-image');img.src=pic;img.loading='lazy';img.alt=`${e.artist} live event artwork`;img.addEventListener('error',()=>{img.replaceWith(el('div','show-art','♪'));},{once:true});card.append(img);}
+  if(pic){const img=el('img','show-image');img.src=pic;img.loading='lazy';img.alt=`${e.artist} live event artwork`;img.addEventListener('error',()=>{img.replaceWith(el('div','show-art','♪'));},{once:true});card.append(img);
+    const credit=raw?.imageCredit,creditUrl=safeUrl(credit?.url);
+    if(typeof credit?.text==='string'&&credit.text.trim()){const c=el(creditUrl?'a':'span','show-credit',credit.text.slice(0,160));if(creditUrl){c.href=creditUrl;c.target='_blank';c.rel='noopener noreferrer';}card.append(c);}}
   else card.append(el('div','show-art','♪'));
   const body=el('div','show-body');
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));

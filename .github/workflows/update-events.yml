@@ -15,6 +15,10 @@ on:
       - 'scripts/event-image-recovery.mjs'
       - 'scripts/podiuminfo-images.mjs'
       - 'scripts/deezer-artist-images.mjs'
+      - 'scripts/musicbrainz-identity.mjs'
+      - 'scripts/rate-limit.mjs'
+      - 'scripts/artist-image-overrides.mjs'
+      - 'data/artist-image-overrides.json'
       - 'js/artist-images.js'
       - 'data/artist-images.json'
       - 'scripts/verified-posters.mjs'
@@ -40,7 +44,7 @@ concurrency:
 jobs:
   catalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - name: Checkout Friends Edition
         uses: actions/checkout@v4
@@ -68,14 +72,16 @@ jobs:
           NEW_GENRE_LOOKUPS_PER_RUN: '60'
           PODIUMINFO_IMAGE_REQUESTS: '45'
           PODIUMINFO_IMAGE_TIME_MS: '150000'
-          DEEZER_ARTIST_IMAGE_REQUESTS: '70'
-          DEEZER_ARTIST_IMAGE_TIME_MS: '105000'
+          DEEZER_ARTIST_IMAGE_REQUESTS: '450'
+          DEEZER_ARTIST_IMAGE_TIME_MS: '240000'
+          IDENTITY_LOOKUPS_PER_RUN: '120'
+          IDENTITY_TIME_MS: '240000'
         run: node scripts/fetch-events.mjs
       - name: Commit public catalog and scraper cache
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json data/artist-images.json
+          git add data/events.json data/discovery-cache.json data/artist-tags.json data/source-audit.json data/podiuminfo-image-cache.json data/artist-images.json data/artist-identities.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh concert feed and artist genre metadata"
             for attempt in 1 2 3 4 5 6 7 8; do
