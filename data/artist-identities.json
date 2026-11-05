@@ -13,6 +13,53 @@
       "homepage": "https://kovacsmusic.com/",
       "wikidata": "Q18015205",
       "checkedAt": "2026-11-05T13:36:15.868Z"
+    },
+    "pitou": {
+      "name": "Pitou",
+      "mbid": "3431a94f-2514-4c4d-b4ed-4e02a5974bd5",
+      "mbName": "Pitou",
+      "country": "NL",
+      "disambiguation": "Belgium-based Dutch indie pop artist",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://pitoumusic.bandcamp.com/",
+      "spotifyId": "27aUOc2h4pz72oZen497Va",
+      "deezerId": 9817268,
+      "wikidata": "Q109041540",
+      "checkedAt": "2026-11-05T20:30:18.440Z"
+    },
+    "fischer z": {
+      "name": "Fischer-Z",
+      "mbid": "51b13c47-bb31-4eda-aaef-7c9bf84c5d9a",
+      "mbName": "Fischer‐Z",
+      "country": "GB",
+      "matchedBy": "unique-name",
+      "spotifyId": "3fRV5Jo7lNKhRSx4C3sLMZ",
+      "deezerId": 243743,
+      "wikidata": "Q487947",
+      "checkedAt": "2026-11-05T20:30:41.521Z"
+    },
+    "solex": {
+      "name": "Solex",
+      "mbid": "42bf28fe-d2c4-41ec-a1b6-d2038eb5330a",
+      "mbName": "Solex",
+      "country": "",
+      "disambiguation": "Madrid, Spain",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-05T20:30:45.547Z"
+    },
+    "macy gray": {
+      "name": "Macy Gray",
+      "mbid": "48772747-4cda-4ba8-b470-cfd5a32e05f7",
+      "mbName": "Macy Gray",
+      "country": "US",
+      "disambiguation": "American singer and actor",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://macygray.bandcamp.com/",
+      "spotifyId": "4ylR3zwA0zaapAu94fktwa",
+      "deezerId": 135,
+      "homepage": "https://macygrayofficial.com/",
+      "wikidata": "Q232456",
+      "checkedAt": "2026-11-05T20:30:47.845Z"
     }
   },
   "attempted": {
@@ -37,6 +84,70 @@
       "reason": "HTTP 503"
     },
     "the james brown experience": {
+      "retryAfter": "2026-11-07",
+      "reason": "HTTP 503"
+    },
+    "henge": {
+      "retryAfter": "2026-11-07",
+      "reason": "fetch failed"
+    },
+    "lois lane 40 jaar live": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "daoud": {
+      "retryAfter": "2026-11-07",
+      "reason": "fetch failed"
+    },
+    "shantel bucovina club soundsystem": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "maite hontele la novia": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "muziekfeest van het jaar": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "la pegatina": {
+      "retryAfter": "2026-11-07",
+      "reason": "fetch failed"
+    },
+    "benjamin herman trio": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "de rolf sanchez club": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "disco inferno met discophonic orchestra": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "distant": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "nems unleashed": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "swae lee same difference tour europe": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "solex": {
+      "retryAfter": "2026-12-20",
+      "reason": "identified-without-free-photo"
+    },
+    "ares": {
+      "retryAfter": "2026-12-05",
+      "reason": "not-found"
+    },
+    "big sleep": {
       "retryAfter": "2026-11-07",
       "reason": "HTTP 503"
     }

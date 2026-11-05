@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T13:48:31.352Z",
+  "updatedAt": "2026-11-05T20:32:42.605Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -52,7 +52,13 @@
       "url": "https://www.podiuminfo.nl/concert/494600/Benjamin-Herman-trio-Tomoaki-Baba/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/benjamin-herman-trio-tomoaki-baba/2931969",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 1,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459631",
@@ -138,7 +144,13 @@
       "url": "https://www.podiuminfo.nl/concert/458524/Frank-Boeijen/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/frank-boeijen-05-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-2936c40bf9a926f4",
@@ -172,7 +184,13 @@
       "url": "https://www.podiuminfo.nl/concert/476948/Julia-Adriana/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/julia-adriana/2895784",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-35545",
@@ -337,7 +355,31 @@
       "url": "https://www.podiuminfo.nl/concert/451450/Merol/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/merol-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-effenaar-2026-11-05-moreish-idols",
+      "artist": "Moreish Idols",
+      "artists": [
+        "Moreish Idols"
+      ],
+      "date": "2026-11-05",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/moreish-idols",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/moreish-idols"
     },
     {
       "id": "podiuminfo-447110",
@@ -354,7 +396,13 @@
       "url": "https://www.podiuminfo.nl/concert/447110/O-R-k/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/o-r-k-05-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-47120dbc53a8b734",
@@ -406,7 +454,13 @@
       "url": "https://www.podiuminfo.nl/concert/490554/Reggae-Central-Mark-Wonder-The-Rude-Cut-Band/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/reggae-central-mark-wonder-the-rude-cut-band-ja-sista-souljah/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-59a9c347e8927cdd",
@@ -474,7 +528,13 @@
       "url": "https://www.podiuminfo.nl/concert/492402/The-Fatal-Flowers/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/fatal-flowers",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474029",
@@ -542,7 +602,13 @@
       "url": "https://www.podiuminfo.nl/concert/493387/The-Soulful-Sessions-David-Michael-Wyatt-Josh-Barry/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-soulful-sessions---david-michael-wyatt-us-josh-barry-uk/2930688",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489333",
@@ -576,7 +642,13 @@
       "url": "https://www.podiuminfo.nl/concert/477390/Wende/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/130623/wende",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-488899",
@@ -664,7 +736,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2026-11-06-2nd%20greek%20dungeon%20synth%20festival",
+      "id": "more-9b5ef023d55cd886",
       "artist": "2nd Greek Dungeon Synth Festival",
       "artists": [
         "2nd Greek Dungeon Synth Festival"
@@ -759,7 +831,13 @@
       "url": "https://www.podiuminfo.nl/concert/463355/Chasing-Abbey/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/chasing-abbey-06-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-495955",
@@ -811,7 +889,13 @@
       "url": "https://www.podiuminfo.nl/concert/473781/Disco-Inferno-met-Discophonic-Orchestra/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/disco-inferno-met-discophonic-orchestra-2",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489055",
@@ -866,7 +950,13 @@
       "url": "https://www.podiuminfo.nl/concert/455586/Fink/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/fink-angela-autumn/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-472849",
@@ -883,7 +973,13 @@
       "url": "https://www.podiuminfo.nl/concert/472849/Flemming/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/131408/flemming",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-b9d81b8c33d3c257",
@@ -917,7 +1013,13 @@
       "url": "https://www.podiuminfo.nl/concert/447717/Frank-Nick-Reunie/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/frank-nick-reunie-06-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-473992",
@@ -1002,7 +1104,13 @@
       "url": "https://www.podiuminfo.nl/concert/468913/Josiah-and-the-Bonnevilles/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/josiah-and-the-bonnevilles/2892085",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-37321",
@@ -1052,7 +1160,13 @@
       "url": "https://www.podiuminfo.nl/concert/456526/Lois-Lane-40-jaar!/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/lois-lane/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-adf283d0f75649a4",
@@ -1121,7 +1235,13 @@
       "url": "https://www.podiuminfo.nl/concert/470533/Nieuwe-Oogst-Kaya-Maartje/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/nieuwe-oogst-kaya-maartje-06-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 1,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-30f4946194403f78",
@@ -1206,7 +1326,13 @@
       "url": "https://www.podiuminfo.nl/concert/457604/Ron-Pope/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/ron-pope/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-797d7c91b7605f4b",
@@ -1292,7 +1418,13 @@
       "url": "https://www.podiuminfo.nl/concert/490590/TAXITAXI/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/taxitaxi/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-460747",
@@ -1326,7 +1458,13 @@
       "url": "https://www.podiuminfo.nl/concert/492403/The-Fatal-Flowers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-fatal-flowers/2925409",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-463540",
@@ -1344,6 +1482,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-effenaar-2026-11-06-vals-alarm",
+      "artist": "VALS ALARM",
+      "artists": [
+        "VALS ALARM"
+      ],
+      "date": "2026-11-06",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/vals-alarm",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/vals-alarm"
     },
     {
       "id": "podiuminfo-474531",
@@ -1378,6 +1534,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-06-zer00-s-heroes",
+      "artist": "Zer00's Heroes",
+      "artists": [
+        "Zer00's Heroes"
+      ],
+      "date": "2026-11-06",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/131304/zer00s-heroes",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/131304/zer00s-heroes"
     },
     {
       "id": "more-7ec3594a83d94beb",
@@ -1564,7 +1738,13 @@
       "url": "https://www.podiuminfo.nl/concert/462744/Bartofso/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/bartofso-le-tour-de-masque/2885263",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-483145",
@@ -1581,7 +1761,13 @@
       "url": "https://www.podiuminfo.nl/concert/483145/Benjamin-Herman-Trio-featuring-Tomoaki-Baba/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/benjamin-herman-trio-featuring-bigyuki/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-889ef1005fa8d56e",
@@ -1689,6 +1875,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-effenaar-2026-11-07-convicts-invite",
+      "artist": "Convicts Invite",
+      "artists": [
+        "Convicts Invite"
+      ],
+      "date": "2026-11-07",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/convicts-invite",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/convicts-invite"
+    },
+    {
       "id": "more-731e1ad927b40f74",
       "artist": "DELINES FEST",
       "artists": [
@@ -1774,7 +1978,13 @@
       "url": "https://www.podiuminfo.nl/concert/452089/Fischer-Z/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/fischer-z-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-472850",
@@ -1791,7 +2001,13 @@
       "url": "https://www.podiuminfo.nl/concert/472850/Flemming/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/flemming-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-f1b021b98ae80f69",
@@ -1825,7 +2041,13 @@
       "url": "https://www.podiuminfo.nl/concert/483502/Gruppo-Sportivo/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/gruppo-sportivo-afscheidsshow/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-483795",
@@ -1842,7 +2064,13 @@
       "url": "https://www.podiuminfo.nl/concert/483795/Kay-Slice/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/kay-slice/2910744",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-961f8faee415b582",
@@ -2016,7 +2244,13 @@
       "url": "https://www.podiuminfo.nl/concert/500356/Paardcafe-Ginger-ILL/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/paardcafe-ginger-ill-58/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459732",
@@ -2067,7 +2301,13 @@
       "url": "https://www.podiuminfo.nl/concert/448328/Ploegendienst/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/ploegendienst/2771941",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-446597",
@@ -2275,6 +2515,24 @@
       "verification": "venue-calendar"
     },
     {
+      "id": "venue-013-2026-11-07-unfold-by-patroon",
+      "artist": "Unfold by Patroon",
+      "artists": [
+        "Unfold by Patroon"
+      ],
+      "date": "2026-11-07",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/146851/unfold-by-patroon",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/146851/unfold-by-patroon"
+    },
+    {
       "id": "rocking-20261107-27307",
       "artist": "Uriah Heep",
       "artists": [
@@ -2307,6 +2565,24 @@
       "image": "https://images.rocking.gr/posters/2026/500/Vigljos26.jpg",
       "source": "rocking",
       "verification": "third-party-agenda"
+    },
+    {
+      "id": "venue-effenaar-2026-11-07-wilt",
+      "artist": "wilt",
+      "artists": [
+        "wilt"
+      ],
+      "date": "2026-11-07",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/wilt",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/wilt"
     },
     {
       "id": "more-b117bd7faa25e33b",
@@ -2442,7 +2718,13 @@
       "url": "https://www.podiuminfo.nl/concert/480757/Brian-Fallon-The-Painkillers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/brian-fallon-the-painkillers/2905094",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459733",
@@ -2476,7 +2758,13 @@
       "url": "https://www.podiuminfo.nl/concert/487326/Chali-2na-band/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/chali-2na-band-support-08-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-493073",
@@ -2510,7 +2798,13 @@
       "url": "https://www.podiuminfo.nl/concert/497845/Desinteresse/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/desinteresse/2943553",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-452084",
@@ -2527,7 +2821,13 @@
       "url": "https://www.podiuminfo.nl/concert/452084/Fischer-Z/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/fischer-z/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-479901",
@@ -2598,7 +2898,13 @@
       "url": "https://www.podiuminfo.nl/concert/457899/Jeremy-Pinnell/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/jeremy-pinnell",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455457",
@@ -2616,6 +2922,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-08-kunstscene-luistersessies",
+      "artist": "Kunstscene: Luistersessies",
+      "artists": [
+        "Kunstscene: Luistersessies"
+      ],
+      "date": "2026-11-08",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161568/kunstscene-luistersessies",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161568/kunstscene-luistersessies"
     },
     {
       "id": "podiuminfo-484847",
@@ -2666,7 +2990,13 @@
       "url": "https://www.podiuminfo.nl/concert/463815/Little-Big/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/little-big-08-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-449301",
@@ -2683,7 +3013,13 @@
       "url": "https://www.podiuminfo.nl/concert/449301/M-Kids/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/123995/m-kids",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494198",
@@ -2717,10 +3053,34 @@
       "url": "https://www.podiuminfo.nl/concert/483148/Oi-Va-Voi/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/oi-va-voi",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
-      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
+      "id": "venue-effenaar-2026-11-08-queen-s-pleasure",
+      "artist": "Queen's Pleasure",
+      "artists": [
+        "Queen's Pleasure"
+      ],
+      "date": "2026-11-08",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/queens-pleasure",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/queens-pleasure"
+    },
+    {
+      "id": "more-de5fbba78a1374bb",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -2905,7 +3265,13 @@
       "url": "https://www.podiuminfo.nl/concert/480259/Boo-Seeka/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/boo-seeka/2906005",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-484746",
@@ -2991,7 +3357,13 @@
       "url": "https://www.podiuminfo.nl/concert/452710/Messa-Eu-Uk-Tour-Fall-2026/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/126189/messa",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-70283ef3f6c67bd6",
@@ -3299,7 +3671,13 @@
       "url": "https://www.podiuminfo.nl/concert/447809/Picture-This/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/picture-this/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-492489",
@@ -3385,7 +3763,13 @@
       "url": "https://www.podiuminfo.nl/concert/495734/Sharp-Pins/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/sharp-pins/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-492324",
@@ -3419,7 +3803,13 @@
       "url": "https://www.podiuminfo.nl/concert/455505/The-Fray/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/127397/the-fray",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-441996",
@@ -3606,7 +3996,13 @@
       "url": "https://www.podiuminfo.nl/concert/451009/Enter-Shikari/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/125158/enter-shikari",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453323",
@@ -3623,7 +4019,13 @@
       "url": "https://www.podiuminfo.nl/concert/453323/Frankie-And-The-Witchfingers/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/frankie-and-the-witchfingers-3/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-488701",
@@ -3744,7 +4146,13 @@
       "url": "https://www.podiuminfo.nl/concert/494686/Oh-Voyage/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/oh-voyage-3/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-1ee0d038646e85e2",
@@ -4006,6 +4414,24 @@
       "verification": "venue-calendar"
     },
     {
+      "id": "venue-effenaar-2026-11-12-early-james",
+      "artist": "Early James",
+      "artists": [
+        "Early James"
+      ],
+      "date": "2026-11-12",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/early-james",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/early-james"
+    },
+    {
       "id": "podiuminfo-460600",
       "artist": "Eek-a-Mouse",
       "artists": [
@@ -4021,7 +4447,13 @@
       "url": "https://www.podiuminfo.nl/concert/460600/Eek-a-Mouse-Jahvolution-Rude-Boy-Jamaican/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/eek-a-mouse-jahvolution-rude-boy-jamaican-12-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 1,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-486419",
@@ -4055,7 +4487,13 @@
       "url": "https://www.podiuminfo.nl/concert/474159/Froukje/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/froukje-11/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-d87ac8720ee416bf",
@@ -4089,7 +4527,13 @@
       "url": "https://www.podiuminfo.nl/concert/498792/INI-Movement-Jam-Sessions/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/ini-movement-jam-sessions-12-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-481983",
@@ -4209,7 +4653,13 @@
       "url": "https://www.podiuminfo.nl/concert/487632/Macy-Gray-The-Trouble-With-The-Truth-Tour/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/macy-gray-6/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458778",
@@ -4277,7 +4727,13 @@
       "url": "https://www.podiuminfo.nl/concert/474198/Prins-S-en-De-Geit/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/prins-s-geit-12nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-481299",
@@ -4311,7 +4767,13 @@
       "url": "https://www.podiuminfo.nl/concert/475125/Rijck/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/rijck/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-2275bcd4a05614e0",
@@ -4381,7 +4843,13 @@
       "url": "https://www.podiuminfo.nl/concert/457239/The-Next-Movement-Love-It-or-Leave-It-Alone-Tour/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/the-next-movement-love-it-or-leave-it-alone-tour-12-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-468780",
@@ -4637,7 +5105,13 @@
       "url": "https://www.podiuminfo.nl/concert/465385/Clobber/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/clobber-uk/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-b43275f9e013bdd1",
@@ -4774,7 +5248,13 @@
       "url": "https://www.podiuminfo.nl/concert/474160/Froukje/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/froukje-12/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462542",
@@ -4791,7 +5271,13 @@
       "url": "https://www.podiuminfo.nl/concert/462542/Gallowstreet/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/gallowstreet-13nov",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-92ecfc4f170f5b90",
@@ -4842,7 +5328,13 @@
       "url": "https://www.podiuminfo.nl/concert/451312/Hiigo/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/hiigo-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-c69d7921b2accb58",
@@ -5102,6 +5594,60 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-13-the-soulful-sessions",
+      "artist": "The Soulful Sessions",
+      "artists": [
+        "The Soulful Sessions"
+      ],
+      "date": "2026-11-13",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/128999/the-soulful-sessions",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/128999/the-soulful-sessions"
+    },
+    {
+      "id": "venue-effenaar-2026-11-13-tusky",
+      "artist": "Tusky",
+      "artists": [
+        "Tusky"
+      ],
+      "date": "2026-11-13",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/tusky-13nov",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/tusky-13nov"
+    },
+    {
+      "id": "venue-effenaar-2026-11-13-vroegzat",
+      "artist": "VroegZat",
+      "artists": [
+        "VroegZat"
+      ],
+      "date": "2026-11-13",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/vroegzat-13nov",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov"
     },
     {
       "id": "more-14f8cb98ab01602e",
@@ -5497,7 +6043,13 @@
       "url": "https://www.podiuminfo.nl/concert/460772/Elmer/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/elmer-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-487309",
@@ -5516,7 +6068,13 @@
       "url": "https://www.podiuminfo.nl/concert/487309/Employed-To-Serve-CABAL-Cold-Culture/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/employed-to-serve-uk-cabal-dk-cold-culture-dk/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-472855",
@@ -5533,7 +6091,13 @@
       "url": "https://www.podiuminfo.nl/concert/472855/Flemming/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/flemming-6/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474161",
@@ -5550,7 +6114,13 @@
       "url": "https://www.podiuminfo.nl/concert/474161/Froukje/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/froukje-support-14-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-477150",
@@ -5640,7 +6210,13 @@
       "url": "https://www.podiuminfo.nl/concert/465916/Immersion-Colin-Newman-Wire-Malka-Spigel-Minimal-Compact-/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/immersion-colin-newman-wire-malka-spigel-minimal-compact-14-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 1,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "rocking-20261114-27436",
@@ -5813,6 +6389,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-013-2026-11-14-nems",
+      "artist": "NEMS",
+      "artists": [
+        "NEMS"
+      ],
+      "date": "2026-11-14",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/155379/nems",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/155379/nems"
+    },
+    {
       "id": "podiuminfo-493137",
       "artist": "NEMS Unleashed",
       "artists": [
@@ -5847,6 +6441,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "podiuminfo-501605",
+      "artist": "Parel",
+      "artists": [
+        "Parel"
+      ],
+      "date": "2026-11-14",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501605/Parel/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-478263",
       "artist": "Peacock",
       "artists": [
@@ -5861,7 +6472,31 @@
       "url": "https://www.podiuminfo.nl/concert/478263/Peacock-In-Concert-The-Orchestrated-Universe/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/139683/peacock-in-concert",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-effenaar-2026-11-14-pina",
+      "artist": "PIÑA",
+      "artists": [
+        "PIÑA"
+      ],
+      "date": "2026-11-14",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/pina-14nov",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/pina-14nov"
     },
     {
       "id": "podiuminfo-459224",
@@ -5963,7 +6598,13 @@
       "url": "https://www.podiuminfo.nl/concert/474891/Rijck/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/128741/rijck",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-487303",
@@ -6032,7 +6673,13 @@
       "url": "https://www.podiuminfo.nl/concert/466239/Subterranean-Street-Society-Out-of-Skin-Into-Bloom-Tour/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/subterranean-street-society-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-486503",
@@ -6050,7 +6697,13 @@
       "url": "https://www.podiuminfo.nl/concert/486503/The-Elvis-Concert-Special-70th-Anniversary-Heartbreak-Hotel-/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/the-elvis-concert-us/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-cd6cb4fb72e36038",
@@ -6203,7 +6856,13 @@
       "url": "https://www.podiuminfo.nl/concert/464778/Ash/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/ash",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495636",
@@ -6221,7 +6880,13 @@
       "url": "https://www.podiuminfo.nl/concert/495636/Bartofso-Tour-Le-Masque/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/bartofso-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451345",
@@ -6425,7 +7090,13 @@
       "url": "https://www.podiuminfo.nl/concert/464806/Immersion/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/immersion/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-cc4b2db7e0317710",
@@ -6494,7 +7165,13 @@
       "url": "https://www.podiuminfo.nl/concert/484148/PRESIDENT-The-Blood-of-Your-Empire/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/145006/president",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-461145",
@@ -6699,7 +7376,13 @@
       "url": "https://www.podiuminfo.nl/concert/456497/daoud/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/daoud/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-478766",
@@ -7159,7 +7842,13 @@
       "url": "https://www.podiuminfo.nl/concert/491233/Kneecap-The-FENIAN-Tour/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/152830/kneecap",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499254",
@@ -7330,7 +8019,13 @@
       "url": "https://www.podiuminfo.nl/concert/451344/Blanks/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/blanks-5/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459709",
@@ -7364,7 +8059,13 @@
       "url": "https://www.podiuminfo.nl/concert/457582/Daoud/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/daoud/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-467809",
@@ -7399,6 +8100,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-18-de-jukebox",
+      "artist": "De Jukebox",
+      "artists": [
+        "De Jukebox"
+      ],
+      "date": "2026-11-18",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/152166/de-jukebox",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/152166/de-jukebox"
     },
     {
       "id": "podiuminfo-458188",
@@ -7466,7 +8185,13 @@
       "url": "https://www.podiuminfo.nl/concert/474163/Froukje/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/froukje-7/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498836",
@@ -7535,7 +8260,13 @@
       "url": "https://www.podiuminfo.nl/concert/482777/Kokoroko/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/143169/kokoroko",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-468691",
@@ -7759,7 +8490,13 @@
       "url": "https://www.podiuminfo.nl/concert/468692/Anneke-van-Giersbergen/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/anneke-van-giersbergen",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-490711",
@@ -7899,6 +8636,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-12647526080f025b",
+      "artist": "DIEVERSPARTY PATRA MODS CLUB",
+      "artists": [
+        "DIEVERSPARTY PATRA MODS CLUB"
+      ],
+      "date": "2026-11-19",
+      "venue": "Mod's Club",
+      "city": "Ptra",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/dieversparty-patra-mods-club/",
+      "image": "https://www.more.com/getattachment/9340E2B0-2BA0-4F91-ADDB-9545BE57770C/evg_dieverspartypatramodsclub_1633_5240.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-459006",
       "artist": "Dune Sessions",
       "artists": [
@@ -7913,7 +8667,13 @@
       "url": "https://www.podiuminfo.nl/concert/459006/Dune-Sessions/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/dune-sessions-19-11/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474164",
@@ -7930,7 +8690,13 @@
       "url": "https://www.podiuminfo.nl/concert/474164/Froukje/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/froukje-9/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-492152",
@@ -7948,7 +8714,13 @@
       "url": "https://www.podiuminfo.nl/concert/492152/Hatebreed-Life-of-Agony/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/hatebreed/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-b33f0432a415f421",
@@ -8016,7 +8788,13 @@
       "url": "https://www.podiuminfo.nl/concert/492548/Krav-Boca/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/krav-boca/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-491385",
@@ -8067,7 +8845,13 @@
       "url": "https://www.podiuminfo.nl/concert/456481/Master-Boot-Record/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/master-boot-record-3/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451453",
@@ -8135,7 +8919,13 @@
       "url": "https://www.podiuminfo.nl/concert/498092/Paardcafe-LFrQx/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/paardcafe-lfrqx-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459229",
@@ -8187,7 +8977,13 @@
       "url": "https://www.podiuminfo.nl/concert/491384/Revolution-Calling-Pre-show/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/revolution-calling-pre-show",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453553",
@@ -8408,7 +9204,13 @@
       "url": "https://www.podiuminfo.nl/concert/456240/Call-It-Off/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/call-it-off-era-tour-goes-poppunk/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-457800",
@@ -8459,7 +9261,13 @@
       "url": "https://www.podiuminfo.nl/concert/453875/De-Hardheid/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/de-hardheid/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-474755",
@@ -8544,7 +9352,13 @@
       "url": "https://www.podiuminfo.nl/concert/458531/Frank-Boeijen/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/frank-boeijen-20/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451313",
@@ -8561,7 +9375,13 @@
       "url": "https://www.podiuminfo.nl/concert/451313/Hiigo/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/hiigo",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-446318",
@@ -8578,7 +9398,13 @@
       "url": "https://www.podiuminfo.nl/concert/446318/Hilight-Tribe/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/121319/hilight-tribe",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-665dbf4c690cacbc",
@@ -8629,7 +9455,13 @@
       "url": "https://www.podiuminfo.nl/concert/460823/Joshua-Idehen/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/joshua-idehen/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-481185",
@@ -8714,7 +9546,13 @@
       "url": "https://www.podiuminfo.nl/concert/451454/Merol/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/merol",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-476677",
@@ -8862,7 +9700,7 @@
       "venue": "November Music",
       "city": "Den Bosch",
       "country": "NL",
-      "genre": "Pop / Jazz / Electronic / Folk / Classical / Alternative",
+      "genre": "Pop / Jazz / Electronic / Folk / Classical / Alternative / Rock",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/36610/November-Music/2026/",
       "image": "",
@@ -8951,7 +9789,7 @@
       "venue": "Revolution Calling",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative / Metal / Rock",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/36166/Revolution-Calling/2026/",
       "image": "https://www.festivalinfo.nl/img/upload/e/f//Revolution_Calling_Festival_2021_logo.png",
@@ -9058,7 +9896,13 @@
       "url": "https://www.podiuminfo.nl/concert/448409/The-Zac-Schulze-Gang/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-zac-schulze-gang-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-464992",
@@ -9075,7 +9919,13 @@
       "url": "https://www.podiuminfo.nl/concert/464992/Triggerfinger/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/triggerfinger-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-42d82ed482d4c400",
@@ -9176,6 +10026,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/eterotopia-tiledini-ep01-newman/",
       "image": "https://www.more.com/getattachment/7FDB8846-F184-4509-85D0-0F613CBED23B/evg_eterotopia-teledineep01ne_1124_661.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-dcfd46ea8250737b",
+      "artist": "Κώστας Χατζής & Daniela",
+      "artists": [
+        "Κώστας Χατζής & Daniela"
+      ],
+      "date": "2026-11-20",
+      "venue": "Misirlou Live Stage",
+      "city": "Xanthi",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/kostas-xatzis-daniela-live-stin-ksanthi/",
+      "image": "https://www.more.com/getattachment/42123E5C-3562-4315-BF79-F692DA6F426F/evg_kostaskhatzesdanielalives_1742_3806.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -9382,7 +10249,13 @@
       "url": "https://www.podiuminfo.nl/concert/451353/Fun-n-Folk-Met-O-a-Ferocious-Dog/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/122573/fun-n-folk",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-f64fba96058bc86c",
@@ -9518,7 +10391,13 @@
       "url": "https://www.podiuminfo.nl/concert/476444/Iron-Jinn-Temple-Fang/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/iron-jinn-temple-fang/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-461049",
@@ -9676,6 +10555,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-effenaar-2026-11-21-mama-africa",
+      "artist": "Mama Africa",
+      "artists": [
+        "Mama Africa"
+      ],
+      "date": "2026-11-21",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/mama-africa-21nov",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/mama-africa-21nov"
+    },
+    {
       "id": "podiuminfo-484665",
       "artist": "Nazan Öncel",
       "artists": [
@@ -9707,7 +10604,13 @@
       "url": "https://www.podiuminfo.nl/concert/500359/Paardcafe-TEACH/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/paardcafe-teach-16/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-33b9a903390627ec",
@@ -9792,7 +10695,13 @@
       "url": "https://www.podiuminfo.nl/concert/464777/Triggerfinger/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/129939/triggerfinger",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499425",
@@ -9810,6 +10719,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-effenaar-2026-11-21-we-all-love-90-s-00-s-10-s",
+      "artist": "We All Love 90's 00's 10's",
+      "artists": [
+        "We All Love 90's 00's 10's"
+      ],
+      "date": "2026-11-21",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/wal-21nov",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/wal-21nov"
     },
     {
       "id": "podiuminfo-462530",
@@ -10017,6 +10944,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-11-22-ernst-bobbie-de-rest",
+      "artist": "Ernst, Bobbie & de rest",
+      "artists": [
+        "Ernst, Bobbie & de rest"
+      ],
+      "date": "2026-11-22",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159480/ernst-bobbie-de-rest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159480/ernst-bobbie-de-rest"
+    },
+    {
       "id": "rocking-20261122-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
       "artists": [
@@ -10150,7 +11095,13 @@
       "url": "https://www.podiuminfo.nl/concert/495360/Morbidfest-I-Am-Morbid-Atheist-Cancer-Narcotic-Wasteland/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/morbidfest-i-am-morbid-us-atheist-us-cancer-uk-narcotic-wasteland-us/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-492470",
@@ -10218,7 +11169,13 @@
       "url": "https://www.podiuminfo.nl/concert/453807/Noor/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/noor/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495697",
@@ -10356,6 +11313,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-23-ernst-bobbie-de-rest",
+      "artist": "Ernst, Bobbie & de rest",
+      "artists": [
+        "Ernst, Bobbie & de rest"
+      ],
+      "date": "2026-11-23",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159485/ernst-bobbie-de-rest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159485/ernst-bobbie-de-rest"
     },
     {
       "id": "podiuminfo-482132",
@@ -10581,6 +11556,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-11-24-ernst-bobbie-de-rest",
+      "artist": "Ernst, Bobbie & de rest",
+      "artists": [
+        "Ernst, Bobbie & de rest"
+      ],
+      "date": "2026-11-24",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159486/ernst-bobbie-de-rest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159486/ernst-bobbie-de-rest"
+    },
+    {
       "id": "podiuminfo-457934",
       "artist": "Imperial Triumphant",
       "artists": [
@@ -10595,7 +11588,13 @@
       "url": "https://www.podiuminfo.nl/concert/457934/Imperial-Triumphant/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/imperial-triumphant/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-454763",
@@ -10887,6 +11886,24 @@
       "image": "https://www.more.com/getattachment/A328EBA2-5707-4F01-B89F-7F05C57A7094/evg_dkalantzisquartet_1636_899.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-013-2026-11-25-ernst-bobbie-de-rest",
+      "artist": "Ernst, Bobbie & de rest",
+      "artists": [
+        "Ernst, Bobbie & de rest"
+      ],
+      "date": "2026-11-25",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159487/ernst-bobbie-de-rest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159487/ernst-bobbie-de-rest"
     },
     {
       "id": "podiuminfo-482073",
@@ -11250,6 +12267,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-11-26-ernst-bobbie-de-rest",
+      "artist": "Ernst, Bobbie & de rest",
+      "artists": [
+        "Ernst, Bobbie & de rest"
+      ],
+      "date": "2026-11-26",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/159494/ernst-bobbie-de-rest",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/159494/ernst-bobbie-de-rest"
+    },
+    {
       "id": "podiuminfo-474167",
       "artist": "Froukje",
       "artists": [
@@ -11298,7 +12333,13 @@
       "url": "https://www.podiuminfo.nl/concert/456168/Kaat-Van-Stralen/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/kaat-van-stralen",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449444",
@@ -11383,7 +12424,13 @@
       "url": "https://www.podiuminfo.nl/concert/476729/Naft/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/naft/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261126-27339",
@@ -11471,7 +12518,13 @@
       "url": "https://www.podiuminfo.nl/concert/497380/SNACKBAR-THE-AMBASSADOR/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/snackbar-the-ambassador-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453796",
@@ -11488,7 +12541,13 @@
       "url": "https://www.podiuminfo.nl/concert/453796/SONS/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/sons-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-493641",
@@ -11711,7 +12770,13 @@
       "url": "https://www.podiuminfo.nl/concert/482778/Allt-Ataraxia-European-Tour-2026/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/143470/allt",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462644",
@@ -11768,6 +12833,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-11-27-brandalarm-16",
+      "artist": "Brandalarm 16+",
+      "artists": [
+        "Brandalarm 16+"
+      ],
+      "date": "2026-11-27",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/156684/brandalarm",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/156684/brandalarm"
+    },
+    {
       "id": "podiuminfo-493613",
       "artist": "COBRAH Autumn",
       "artists": [
@@ -11785,6 +12868,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-11-27-crush-xl",
+      "artist": "Crush XL",
+      "artists": [
+        "Crush XL"
+      ],
+      "date": "2026-11-27",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/128467/crush-xl-presents",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/128467/crush-xl-presents"
+    },
+    {
       "id": "podiuminfo-462643",
       "artist": "Dordrecht Blues Night: Ian Siegal",
       "artists": [
@@ -11800,7 +12901,13 @@
       "url": "https://www.podiuminfo.nl/concert/462643/Dordrecht-Blues-Night-Ian-Siegal-Minko/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/dordrecht-blues-night-ian-siegal-uk-minko/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 1,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-30f761f0a532b59d",
@@ -11885,7 +12992,13 @@
       "url": "https://www.podiuminfo.nl/concert/451314/Hiigo/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/hiigo/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261127-27513",
@@ -12332,7 +13445,13 @@
       "url": "https://www.podiuminfo.nl/concert/452954/The-Veils/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-veils-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474534",
@@ -12400,7 +13519,13 @@
       "url": "https://www.podiuminfo.nl/concert/451964/Ao/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/ao",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-f7b8413656eb5d23",
@@ -12673,7 +13798,13 @@
       "url": "https://www.podiuminfo.nl/concert/485615/Kaz-Balagane/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/kaz-balagane/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-474713",
@@ -12690,7 +13821,13 @@
       "url": "https://www.podiuminfo.nl/concert/474713/Kingfishr/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/kingfishr",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-7f59d6e082e8ba18",
@@ -12860,7 +13997,13 @@
       "url": "https://www.podiuminfo.nl/concert/448563/Shantel-Bucovina-Club-Orkestar-de-/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/shantel-bucovina-club-orkestar-de/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-463374",
@@ -12895,6 +14038,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-11-28-subquake",
+      "artist": "Subquake",
+      "artists": [
+        "Subquake"
+      ],
+      "date": "2026-11-28",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/150057/013-years-subquake",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/150057/013-years-subquake"
     },
     {
       "id": "podiuminfo-484175",
@@ -13170,7 +14331,13 @@
       "url": "https://www.podiuminfo.nl/concert/452920/Davina-Michelle/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/davina-michelle-3/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500079",
@@ -13221,7 +14388,13 @@
       "url": "https://www.podiuminfo.nl/concert/462545/Gallowstreet/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/gallowstreet-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-490882",
@@ -13325,7 +14498,13 @@
       "url": "https://www.podiuminfo.nl/concert/473434/Mental-Cruelty/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/mental-cruelty/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-484042",
@@ -13363,7 +14542,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "fuzzclub-2026-11-29-nile",
+      "id": "more-0d87290e89a45107",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -13463,7 +14642,13 @@
       "url": "https://www.podiuminfo.nl/concert/460282/Sevendust/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/128241/sevendust",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-448302",
@@ -13789,7 +14974,13 @@
       "url": "https://www.podiuminfo.nl/concert/453489/Davina-Michelle/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/davina-michelle-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "fuzzclub-2026-11-30-eagle%20eye%20cherry%20live%20in%20greece",
@@ -14013,7 +15204,13 @@
       "url": "https://www.podiuminfo.nl/concert/496642/APOLLO-BROWN-SKYZOO/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/apollo-brown-skyzoo/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474127",
@@ -14115,7 +15312,13 @@
       "url": "https://www.podiuminfo.nl/concert/477387/Matt-Nash/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/matt-nash/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-460063",
@@ -14254,7 +15457,13 @@
       "url": "https://www.podiuminfo.nl/concert/453490/Davina-Michelle/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/davina-michelle-extra-show",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455397",
@@ -14288,7 +15497,13 @@
       "url": "https://www.podiuminfo.nl/concert/491504/Etana/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/153640/etana",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-487687",
@@ -14339,7 +15554,13 @@
       "url": "https://www.podiuminfo.nl/concert/494965/Highguest/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/highguest-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-470049",
@@ -14459,7 +15680,13 @@
       "url": "https://www.podiuminfo.nl/concert/459817/Portland/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/portland-2dec",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-452876",
@@ -14710,7 +15937,13 @@
       "url": "https://www.podiuminfo.nl/concert/453845/Davina-Michelle-Afterparty-Tour-2026/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/davina-michelle",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455055",
@@ -14847,7 +16080,13 @@
       "url": "https://www.podiuminfo.nl/concert/450017/Jack-and-the-Weatherman/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/jack-and-the-weatherman-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458534",
@@ -14932,7 +16171,13 @@
       "url": "https://www.podiuminfo.nl/concert/453653/Kids-With-Buns/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/kids-with-buns-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-483306",
@@ -15153,7 +16398,13 @@
       "url": "https://www.podiuminfo.nl/concert/454132/Treasure-Bruno-Mars-Tribute-/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/treasure-bruno-mars-tribute-2/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-495640",
@@ -15343,7 +16594,13 @@
       "url": "https://www.podiuminfo.nl/concert/493691/Donnas-Hot-Stuff-Could-It-Be-Magic-Tour/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/donnas-hot-stuff/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-482281",
@@ -15465,6 +16722,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-12-04-jimmy-carr",
+      "artist": "Jimmy Carr",
+      "artists": [
+        "Jimmy Carr"
+      ],
+      "date": "2026-12-04",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/108488/jimmy-carr",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/108488/jimmy-carr"
+    },
+    {
       "id": "podiuminfo-458905",
       "artist": "Joël Domingos",
       "artists": [
@@ -15581,7 +16856,13 @@
       "url": "https://www.podiuminfo.nl/concert/476731/Naft/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/naft-0",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261204-27266",
@@ -15753,7 +17034,13 @@
       "url": "https://www.podiuminfo.nl/concert/477900/Zwangere-Guy/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/137896/zwangere-guy",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-e4cbc8e8af11e80b",
@@ -15906,7 +17193,13 @@
       "url": "https://www.podiuminfo.nl/concert/474174/Froukje/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/134133/froukje",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-5543ab2fa971b68c",
@@ -16267,7 +17560,13 @@
       "url": "https://www.podiuminfo.nl/concert/450892/The-Dirty-Daddies/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/the-dirty-daddies-2/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "more-46d9a84859b1446c",
@@ -16454,7 +17753,13 @@
       "url": "https://www.podiuminfo.nl/concert/479103/Froukje-Kijk-Je-Naar-Mij-Albumtour/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/140186/froukje-extra-show",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261206-27562",
@@ -16539,7 +17844,13 @@
       "url": "https://www.podiuminfo.nl/concert/497817/Ledbyher/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/ledbyher/2941187",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496137",
@@ -16573,7 +17884,13 @@
       "url": "https://www.podiuminfo.nl/concert/463829/Maite-Hontele-LA-NOVIA/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/maite-hontele-la-novia",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-465514",
@@ -16916,7 +18233,13 @@
       "url": "https://www.podiuminfo.nl/concert/484045/Queensryche/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/145171/queensr%C3%BFche",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-24f5413a40a7cedc",
@@ -17002,7 +18325,13 @@
       "url": "https://www.podiuminfo.nl/concert/472596/Benny-Sings/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/benny-sings/2892760",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458211",
@@ -17138,7 +18467,31 @@
       "url": "https://www.podiuminfo.nl/concert/476637/The-Skints/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-skints-3/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-doornroosje-2026-12-08-the-tubs",
+      "artist": "The Tubs",
+      "artists": [
+        "The Tubs"
+      ],
+      "date": "2026-12-08",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-tubs/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-tubs/"
     },
     {
       "id": "podiuminfo-482282",
@@ -17156,7 +18509,13 @@
       "url": "https://www.podiuminfo.nl/concert/482282/thrown-Counterparts/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/138782/thrown-counterparts",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-e8b6c6e0264d36b9",
@@ -17190,7 +18549,13 @@
       "url": "https://www.podiuminfo.nl/concert/473050/Gurriers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/gurriers/2888304",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-484861",
@@ -17309,7 +18674,13 @@
       "url": "https://www.podiuminfo.nl/concert/458901/Opus-Kink/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/opus-kink/2876931",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-458535",
@@ -17326,7 +18697,13 @@
       "url": "https://www.podiuminfo.nl/concert/458535/Opus-Kink-The-Sweet-Goodbye/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/opus-kink/2876931",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-490587",
@@ -17343,7 +18720,13 @@
       "url": "https://www.podiuminfo.nl/concert/490587/Rianne/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/rianne/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-476588",
@@ -17428,7 +18811,13 @@
       "url": "https://www.podiuminfo.nl/concert/498466/Thor-Kissing/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/thor-kissing-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456345",
@@ -17445,7 +18834,13 @@
       "url": "https://www.podiuminfo.nl/concert/456345/Tim-Akkerman-The-Ivy-League/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/tim-akkerman-the-ivy-league-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499764",
@@ -17598,7 +18993,13 @@
       "url": "https://www.podiuminfo.nl/concert/474175/Froukje/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/froukje/2896656",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449489",
@@ -17615,7 +19016,13 @@
       "url": "https://www.podiuminfo.nl/concert/449489/frytz/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/frytz-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474140",
@@ -17632,7 +19039,13 @@
       "url": "https://www.podiuminfo.nl/concert/474140/Gotu-Jim/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/gotu-jim-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-479028",
@@ -17785,7 +19198,13 @@
       "url": "https://www.podiuminfo.nl/concert/451096/Paceshifters-play-Nirvana/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/paceshifters-play-nirvana/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-465732",
@@ -17802,7 +19221,13 @@
       "url": "https://www.podiuminfo.nl/concert/465732/Peter-The-Test-Tube-Babies/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/peter-the-test-tube-babies-uk-de-badslippers/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-474203",
@@ -17836,7 +19261,13 @@
       "url": "https://www.podiuminfo.nl/concert/492472/Saam-Sultan/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/saam-sultan/2925704",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-1466c4704bbc0f19",
@@ -17887,7 +19318,13 @@
       "url": "https://www.podiuminfo.nl/concert/500390/Standing-on-the-Corner/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/standing-on-the-corner/2949479",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-70165f1ee210a785",
@@ -18138,7 +19575,13 @@
       "url": "https://www.podiuminfo.nl/concert/479821/Frans-Huxie-Reunieshow/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/frans-huxie-reunieshow/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-474176",
@@ -18155,7 +19598,13 @@
       "url": "https://www.podiuminfo.nl/concert/474176/Froukje/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/froukje/2896664",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474144",
@@ -18172,7 +19621,13 @@
       "url": "https://www.podiuminfo.nl/concert/474144/Gotu-Jim/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/132489/gotu-jim",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500591",
@@ -18206,7 +19661,13 @@
       "url": "https://www.podiuminfo.nl/concert/479029/J-Bernardt/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/j-bernardt-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450019",
@@ -18223,7 +19684,13 @@
       "url": "https://www.podiuminfo.nl/concert/450019/Jack-and-the-Weatherman/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/jack-and-the-weatherman-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-8bc22f52f0f3a2b2",
@@ -18396,6 +19863,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-013-2026-12-11-spanish-heat",
+      "artist": "Spanish Heat",
+      "artists": [
+        "Spanish Heat"
+      ],
+      "date": "2026-12-11",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/162121/spanish-heat",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/162121/spanish-heat"
+    },
+    {
       "id": "podiuminfo-460603",
       "artist": "The Scratch",
       "artists": [
@@ -18427,7 +19912,13 @@
       "url": "https://www.podiuminfo.nl/concert/484895/Tonique-Man/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/tonique-man/2912968",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261211-27482",
@@ -18667,7 +20158,13 @@
       "url": "https://www.podiuminfo.nl/concert/462547/Gallowstreet/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/gallowstreet-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-09fa61b313729a4f",
@@ -18685,6 +20182,24 @@
       "image": "https://www.more.com/getattachment/3118F0AC-606A-46C0-8B24-E598DC04457F/evg_gemmaliveatpiraeusclubaca_0026_1623.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-013-2026-12-12-gezellige-clubtempo-xxl-2026",
+      "artist": "Gezellige Clubtempo XXL 2026",
+      "artists": [
+        "Gezellige Clubtempo XXL 2026"
+      ],
+      "date": "2026-12-12",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026"
     },
     {
       "id": "podiuminfo-450020",
@@ -18769,7 +20284,13 @@
       "url": "https://www.podiuminfo.nl/concert/495642/Marou-Massin/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/marou-massin/2934667",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498444",
@@ -18854,7 +20375,13 @@
       "url": "https://www.podiuminfo.nl/concert/481471/Stuurbaard-Bakkebaard/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/stuurbaard-bakkebaard",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498678",
@@ -18941,6 +20468,23 @@
       "image": "https://www.more.com/getattachment/A4A4EB20-9C23-4797-803F-E49CCB021050/evg_turboflow3000thenoodlesoy_1025_3524.png",
       "source": "anclub-index",
       "verification": "venue-index"
+    },
+    {
+      "id": "podiuminfo-501648",
+      "artist": "Utrechtse Meezingerij met Dickens Kerstkoor Mizzelto",
+      "artists": [
+        "Utrechtse Meezingerij met Dickens Kerstkoor Mizzelto"
+      ],
+      "date": "2026-12-12",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501648/Utrechtse-Meezingerij-met-Dickens-Kerstkoor-Mizzelto/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "more-b8f82a9e47c77110",
@@ -19093,7 +20637,13 @@
       "url": "https://www.podiuminfo.nl/concert/471862/Green-Lung/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/132513/green-lung",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-476695",
@@ -19110,7 +20660,13 @@
       "url": "https://www.podiuminfo.nl/concert/476695/Hermanos-Gutierrez/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/hermanos-gutierrez/2896806",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459609",
@@ -19180,7 +20736,13 @@
       "url": "https://www.podiuminfo.nl/concert/455959/Moving-Pictures-Celebrating-50th-anniversary-of-2112/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/125403/moving-pictures",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451111",
@@ -19285,7 +20847,13 @@
       "url": "https://www.podiuminfo.nl/concert/476362/Rikas/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/rikas/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-483527",
@@ -19370,7 +20938,13 @@
       "url": "https://www.podiuminfo.nl/concert/496107/Tomo-Katsurada-x-Jonny-Nash/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/tomo-katsurada-x-jonny-nash/2939050",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-460753",
@@ -19456,7 +21030,13 @@
       "url": "https://www.podiuminfo.nl/concert/476697/Hermanos-Gutierrez/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/hermanos-gutierrez/2896810",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-e50a2511217e70e2",
@@ -19644,7 +21224,13 @@
       "url": "https://www.podiuminfo.nl/concert/452746/Accept/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/126408/accept",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451715",
@@ -19678,7 +21264,13 @@
       "url": "https://www.podiuminfo.nl/concert/449574/Clean-Petes-Kerstshow/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/124497/clean-petes-kerstshow",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-493011",
@@ -19730,7 +21322,13 @@
       "url": "https://www.podiuminfo.nl/concert/462554/IDA/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/ida/2886959",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459801",
@@ -19781,7 +21379,13 @@
       "url": "https://www.podiuminfo.nl/concert/478989/Jungle-by-Night/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/jungle-by-night/2905454",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499437",
@@ -19849,7 +21453,13 @@
       "url": "https://www.podiuminfo.nl/concert/482144/City-of-the-Sun/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/city-of-the-sun/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500080",
@@ -19900,7 +21510,13 @@
       "url": "https://www.podiuminfo.nl/concert/474137/Gotu-Jim/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/gotu-jim/2892814",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-478274",
@@ -19934,7 +21550,13 @@
       "url": "https://www.podiuminfo.nl/concert/479105/Isabel-Usher/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/isabel-usher-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459742",
@@ -20002,7 +21624,13 @@
       "url": "https://www.podiuminfo.nl/concert/464771/MY-BABY/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/130610/my-baby",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-490588",
@@ -20070,7 +21698,13 @@
       "url": "https://www.podiuminfo.nl/concert/479467/Thijs-Boontjes/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/141010/thijs-boontjes",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-467089",
@@ -20155,7 +21789,13 @@
       "url": "https://www.podiuminfo.nl/concert/488848/Bar-Hollandia-Mart-Hoogkamer-Django-Wagner-e-a-/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/bar-hollandia",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494473",
@@ -20206,7 +21846,13 @@
       "url": "https://www.podiuminfo.nl/concert/496304/Gerson-Main/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/gerson-main/2939679",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-476754",
@@ -20259,7 +21905,13 @@
       "url": "https://www.podiuminfo.nl/concert/479287/Isabel-Usher/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/isabel-usher-18dec",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489641",
@@ -20327,7 +21979,13 @@
       "url": "https://www.podiuminfo.nl/concert/474646/La-Pegatina/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/la-pegatina/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496981",
@@ -20363,7 +22021,13 @@
       "url": "https://www.podiuminfo.nl/concert/478991/MICH/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/mich/2902993",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-e5ed2b2059699664",
@@ -20483,7 +22147,13 @@
       "url": "https://www.podiuminfo.nl/concert/479465/Thijs-Boontjes/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/thijs-boontjes-5/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456895",
@@ -20518,6 +22188,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-013-2026-12-18-vroeg-pieken",
+      "artist": "Vroeg Pieken",
+      "artists": [
+        "Vroeg Pieken"
+      ],
+      "date": "2026-12-18",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/161435/vroeg-pieken",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/161435/vroeg-pieken"
     },
     {
       "id": "podiuminfo-482284",
@@ -20619,7 +22307,13 @@
       "url": "https://www.podiuminfo.nl/concert/456871/Bertolf-Bluefinger-Volume-2/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/bertolf-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "rocking-20261219-27253",
@@ -20807,7 +22501,13 @@
       "url": "https://www.podiuminfo.nl/concert/462721/Jett-Rebel/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/jett-rebel-19dec",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-486952",
@@ -21028,7 +22728,13 @@
       "url": "https://www.podiuminfo.nl/concert/480633/ABBA-Gold-The-Christmas-Special-Show/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/abba-gold-christmas-special-show-2026",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-01f9a9cd665bce9a",
@@ -21080,6 +22786,29 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-501611",
+      "artist": "Christmas a Gogo",
+      "artists": [
+        "Christmas a Gogo"
+      ],
+      "date": "2026-12-20",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501611/Christmas-a-Gogo/Paradiso/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/christmas-a-gogo/2950970",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449576",
@@ -21300,7 +23029,13 @@
       "url": "https://www.podiuminfo.nl/concert/499375/Mo-The-Habibs/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/mo-the-habibs/2943710",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-480117",
@@ -21351,7 +23086,13 @@
       "url": "https://www.podiuminfo.nl/concert/479030/Jungle-By-Night/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/jungle-by-night-6/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-480353",
@@ -21368,7 +23109,13 @@
       "url": "https://www.podiuminfo.nl/concert/480353/MY-BABY/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/my-baby/2888830",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449578",
@@ -21386,6 +23133,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-12-23-de-jukebox-18",
+      "artist": "De Jukebox #18",
+      "artists": [
+        "De Jukebox #18"
+      ],
+      "date": "2026-12-23",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-jukebox-18/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-18/"
     },
     {
       "id": "podiuminfo-449763",
@@ -21453,7 +23218,13 @@
       "url": "https://www.podiuminfo.nl/concert/464773/MY-BABY/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/my-baby/2888834",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500401",
@@ -21504,7 +23275,13 @@
       "url": "https://www.podiuminfo.nl/concert/498429/De-Grote-Zeppos-Kerstshow/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/de-grote-zeppos-kerstshow/2943141",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-477386",
@@ -21573,7 +23350,13 @@
       "url": "https://www.podiuminfo.nl/concert/484896/Hang-Youth-Hardkoor-Nachtmis/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/hang-youth-hardkoor-nachtmis/2913084",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-adcf9959bc3f2bd2",
@@ -21677,7 +23460,13 @@
       "url": "https://www.podiuminfo.nl/concert/483161/Funky-Times/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/funky-times",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-f98b0f99c7d03517",
@@ -21745,7 +23534,13 @@
       "url": "https://www.podiuminfo.nl/concert/496985/Up-Close-with-D-Block-S-te-Fan/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/160973/up-close-with-d-block-s-te-fan",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-5af257877c39460b",
@@ -21830,7 +23625,13 @@
       "url": "https://www.podiuminfo.nl/concert/461633/Morrissey/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/128536/morrissey",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-5c7ad02ac74b6c9a",
@@ -21864,7 +23665,13 @@
       "url": "https://www.podiuminfo.nl/concert/479032/Black-Bottle-Riot/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/black-bottle-riot-11/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449755",
@@ -21932,7 +23739,13 @@
       "url": "https://www.podiuminfo.nl/concert/479875/Maria-Iskariot/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/maria-iskariot-kaat-van-stralen-en-anderen/2905984",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-449756",
@@ -21966,7 +23779,13 @@
       "url": "https://www.podiuminfo.nl/concert/493735/Extince-30-JAAR-SPRAAKWATER/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/155786/extince",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496957",
@@ -22154,7 +23973,13 @@
       "url": "https://www.podiuminfo.nl/concert/477571/Raymond-van-het-Groenewoud/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/raymond-van-het-groenewoud/2896797",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-4bb104d94418746b",
@@ -22188,7 +24013,13 @@
       "url": "https://www.podiuminfo.nl/concert/499902/Holly-Humberstone/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/holly-humberstone/2948173",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-fae8313ca80dc086",
@@ -22222,7 +24053,13 @@
       "url": "https://www.podiuminfo.nl/concert/462723/Jett-Rebel/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/jett-rebel/2885165",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496051",
@@ -22239,7 +24076,13 @@
       "url": "https://www.podiuminfo.nl/concert/496051/Joost-Oomen-Kruidkoek/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/joost-oomen-kruidkoek/2932084",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499439",
@@ -22359,7 +24202,13 @@
       "url": "https://www.podiuminfo.nl/concert/500084/Johnny-the-Dinosaurs/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/johnny-the-dinosaurs/2949035",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-481190",
@@ -22411,7 +24260,13 @@
       "url": "https://www.podiuminfo.nl/concert/468821/Rhapsody-of-Fire-Serious-Black/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/131570/rhapsody-of-fire-serious-black",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450959",
@@ -22497,7 +24352,13 @@
       "url": "https://www.podiuminfo.nl/concert/474545/De-Kift/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/de-kift-10/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494633",
@@ -22601,7 +24462,13 @@
       "url": "https://www.podiuminfo.nl/concert/495136/THE-BIRD-EXPERIENCE/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-bird-experience/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450898",
@@ -22704,7 +24571,13 @@
       "url": "https://www.podiuminfo.nl/concert/482329/Imminence/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/143444/imminence",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489583",
@@ -22738,7 +24611,13 @@
       "url": "https://www.podiuminfo.nl/concert/496470/The-Gathering-Mandylion-Nighttime-Birds-Try-Out-Show/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-gathering-try-out-show/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450992",
@@ -22755,7 +24634,13 @@
       "url": "https://www.podiuminfo.nl/concert/450992/The-James-Brown-Experience/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/125097/the-james-brown-experience",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-487689",
@@ -22806,7 +24691,13 @@
       "url": "https://www.podiuminfo.nl/concert/478993/LudoWic/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/ludowic/2905314",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-35760",
@@ -23037,7 +24928,13 @@
       "url": "https://www.podiuminfo.nl/concert/477086/Nickless/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/nickless/2903047",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-496023",
@@ -23073,7 +24970,13 @@
       "url": "https://www.podiuminfo.nl/concert/453690/Zuco-103/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/zuco-103/2837590",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-479413",
@@ -23108,6 +25011,29 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-501687",
+      "artist": "Qlas",
+      "artists": [
+        "Qlas"
+      ],
+      "date": "2027-01-14",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501687/Qlas/Paradiso/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/qlas/2950868",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453878",
@@ -23175,7 +25101,13 @@
       "url": "https://www.podiuminfo.nl/concert/478221/Fleddy-Melculy/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/fleddy-melculy",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456896",
@@ -23294,7 +25226,13 @@
       "url": "https://www.podiuminfo.nl/concert/462729/The-Notwist/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-notwist-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-457879",
@@ -23345,7 +25283,13 @@
       "url": "https://www.podiuminfo.nl/concert/493286/Julian-Sas/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/julian-sas-10/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-36965",
@@ -23383,7 +25327,13 @@
       "url": "https://www.podiuminfo.nl/concert/481221/New-Cool-Collective/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/new-cool-collective-9/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474112",
@@ -23434,7 +25384,13 @@
       "url": "https://www.podiuminfo.nl/concert/451020/Paradiso-Korendagen-2027-Zaterdag/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zaterdag/2807453",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455736",
@@ -23638,7 +25594,31 @@
       "url": "https://www.podiuminfo.nl/concert/452844/Mike-Masse/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/mike-masse",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-paradiso-2027-01-17-paradiso-korendagen-2027",
+      "artist": "Paradiso Korendagen 2027",
+      "artists": [
+        "Paradiso Korendagen 2027"
+      ],
+      "date": "2027-01-17",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zondag/2807461",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/paradiso-korendagen-2027---zondag/2807461"
     },
     {
       "id": "podiuminfo-450996",
@@ -23667,7 +25647,7 @@
       "venue": "Muziekgieterij",
       "city": "Maastricht",
       "country": "NL",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/498434/Band-Night/Muziekgieterij/",
       "image": "",
@@ -23758,7 +25738,13 @@
       "url": "https://www.podiuminfo.nl/concert/479459/Black-Veil-Brides/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/140392/black-veil-brides",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494333",
@@ -23881,6 +25867,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-doornroosje-2027-01-20-de-jukebox-19",
+      "artist": "De Jukebox #19",
+      "artists": [
+        "De Jukebox #19"
+      ],
+      "date": "2027-01-20",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-jukebox-19/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-19/"
+    },
+    {
       "id": "podiuminfo-478321",
       "artist": "John Illsley - Playing the Classics from Dire Straits",
       "artists": [
@@ -23929,7 +25933,13 @@
       "url": "https://www.podiuminfo.nl/concert/492026/Comeback-Kid-Chosen-Hell/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/comeback-kid/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474512",
@@ -24065,7 +26075,13 @@
       "url": "https://www.podiuminfo.nl/concert/500656/t-Hollandse-Roosje/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/t-hollandse-roosje-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459668",
@@ -24116,7 +26132,13 @@
       "url": "https://www.podiuminfo.nl/concert/497725/Distant/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/distant/2941885",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495131",
@@ -24338,7 +26360,13 @@
       "url": "https://www.podiuminfo.nl/concert/492153/Yong-Yello/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/yong-yello/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-453535",
@@ -24389,7 +26417,13 @@
       "url": "https://www.podiuminfo.nl/concert/495246/Black-Box-Revelation/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/black-box-revelation",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456897",
@@ -24440,7 +26474,13 @@
       "url": "https://www.podiuminfo.nl/concert/498554/CALEB-CAUDLE/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/caleb-caudle-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450175",
@@ -24734,6 +26774,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-501784",
+      "artist": "Hamid Motebassem & Ensemble",
+      "artists": [
+        "Hamid Motebassem & Ensemble"
+      ],
+      "date": "2027-01-24",
+      "venue": "Muziekgieterij",
+      "city": "Maastricht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501784/Hamid-Motebassem-Ensemble/Muziekgieterij/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-496230",
       "artist": "JOB Dutchtuber & Billy The Kit - Echte Vrienden de Tour",
       "artists": [
@@ -24749,7 +26806,13 @@
       "url": "https://www.podiuminfo.nl/concert/496230/JOB-Dutchtuber-Billy-The-Kit-Echte-Vrienden-de-Tour/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/159540/job-dutchtuber-billy-the-kit",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489797",
@@ -24903,7 +26966,13 @@
       "url": "https://www.podiuminfo.nl/concert/501494/BALTHVS/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/balthvs/2948141",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456841",
@@ -24937,7 +27006,13 @@
       "url": "https://www.podiuminfo.nl/concert/495525/Too-Many-Zooz/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/too-many-zooz/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495248",
@@ -25005,7 +27080,13 @@
       "url": "https://www.podiuminfo.nl/concert/497336/Hollywood-Undead/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/161480/hollywood-undead",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-491606",
@@ -25022,7 +27103,13 @@
       "url": "https://www.podiuminfo.nl/concert/491606/Milolaathetlukken/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/milolaathetlukken/2923988",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-497730",
@@ -25039,7 +27126,13 @@
       "url": "https://www.podiuminfo.nl/concert/497730/The-Ocean-Solaris/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-ocean-3/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451342",
@@ -25141,7 +27234,13 @@
       "url": "https://www.podiuminfo.nl/concert/494423/Frozen-Soul-No-Place-Of-Warmth/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/155569/frozen-soul",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500598",
@@ -25158,7 +27257,13 @@
       "url": "https://www.podiuminfo.nl/concert/500598/Gallus/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/gallus",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-463737",
@@ -25192,7 +27297,13 @@
       "url": "https://www.podiuminfo.nl/concert/474122/Kovacs/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/kovacs-5/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-491879",
@@ -25209,7 +27320,13 @@
       "url": "https://www.podiuminfo.nl/concert/491879/Milolaathetlukken/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/milolaathetlukken/2926585",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-456898",
@@ -25260,7 +27377,13 @@
       "url": "https://www.podiuminfo.nl/concert/495857/Another-Taste/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/another-taste/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-483166",
@@ -25277,7 +27400,13 @@
       "url": "https://www.podiuminfo.nl/concert/483166/Clan-of-Xymox/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/clan-of-xymox-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-473138",
@@ -25517,7 +27646,13 @@
       "url": "https://www.podiuminfo.nl/concert/493438/The-Mary-Wallopers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-mary-wallopers/2926208",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500727",
@@ -25551,7 +27686,13 @@
       "url": "https://www.podiuminfo.nl/concert/496311/Zeno/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/zeno/2938624",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-497266",
@@ -25727,7 +27868,13 @@
       "url": "https://www.podiuminfo.nl/concert/495251/Sven-Cilliers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/sven-cilliers/2927438",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498558",
@@ -25761,7 +27908,13 @@
       "url": "https://www.podiuminfo.nl/concert/493439/The-Mary-Wallopers/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-mary-wallopers/2926204",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-452845",
@@ -25833,6 +27986,29 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-501590",
+      "artist": "Jan Akkerman 80",
+      "artists": [
+        "Jan Akkerman 80"
+      ],
+      "date": "2027-01-31",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501590/Jan-Akkerman-80/Paard/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/jan-akkerman-80/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
       "id": "podiuminfo-496111",
       "artist": "JOB Dutchtuber & Billy The Kit - Echte Vrienden de Tour",
       "artists": [
@@ -25848,7 +28024,13 @@
       "url": "https://www.podiuminfo.nl/concert/496111/JOB-Dutchtuber-Billy-The-Kit-Echte-Vrienden-de-Tour/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/job-dutchtuber-billy-the-kit/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-478351",
@@ -25899,7 +28081,13 @@
       "url": "https://www.podiuminfo.nl/concert/484902/Radie-Peat/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/radie-peat/2910945",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "anclub-2027-01-31-sepia%20fade%20widersin%20infected%20minds",
@@ -25984,7 +28172,13 @@
       "url": "https://www.podiuminfo.nl/concert/493440/The-Mary-Wallopers/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/the-mary-wallopers-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-461618",
@@ -25999,6 +28193,29 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/461618/Two-Door-Cinema-Club/013/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/128068/two-door-cinema-club",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "podiuminfo-501785",
+      "artist": "Band Night",
+      "artists": [
+        "Band Night"
+      ],
+      "date": "2027-02-01",
+      "venue": "Muziekgieterij",
+      "city": "Maastricht",
+      "country": "NL",
+      "genre": "Electronic",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501785/Band-Night/Muziekgieterij/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -26018,7 +28235,13 @@
       "url": "https://www.podiuminfo.nl/concert/491262/Sheherazaad/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/sheherazaad/2924096",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474182",
@@ -26036,7 +28259,13 @@
       "url": "https://www.podiuminfo.nl/concert/474182/Spite-Emmure-New-World-Killer-Tour/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/135188/spite-emmure",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-498560",
@@ -26053,7 +28282,13 @@
       "url": "https://www.podiuminfo.nl/concert/498560/Sylvan-Esso/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/sylvan-esso/2944597",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-491359",
@@ -26087,7 +28322,13 @@
       "url": "https://www.podiuminfo.nl/concert/492959/Heather-Nova/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/heather-nova/2927142",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-479906",
@@ -26223,7 +28464,13 @@
       "url": "https://www.podiuminfo.nl/concert/494501/Pain-of-Truth/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/pain-of-truth/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-457877",
@@ -26274,7 +28521,13 @@
       "url": "https://www.podiuminfo.nl/concert/490962/The-Buoys/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-buoys/2923712",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-480120",
@@ -26580,7 +28833,13 @@
       "url": "https://www.podiuminfo.nl/concert/454732/Feuerengel/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/127140/feuerengel",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-459669",
@@ -26614,7 +28873,13 @@
       "url": "https://www.podiuminfo.nl/concert/474443/Henge/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/henge-4/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474124",
@@ -26699,7 +28964,13 @@
       "url": "https://www.podiuminfo.nl/concert/483167/The-Black-Dahlia-Murder-Two-decades-of-Nocturnal/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/144498/the-black-dahlia-murder",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-476438",
@@ -26716,7 +28987,13 @@
       "url": "https://www.podiuminfo.nl/concert/476438/Tramhaus/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/tramhaus-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450605",
@@ -26909,7 +29186,13 @@
       "url": "https://www.podiuminfo.nl/concert/493142/Robin-Scherpen/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/robin-scherpen-2/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-c71718d4f71a41ff",
@@ -26978,7 +29261,13 @@
       "url": "https://www.podiuminfo.nl/concert/498378/THEE-MARLOES/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/thee-marloes/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500799",
@@ -27233,7 +29522,13 @@
       "url": "https://www.podiuminfo.nl/concert/495369/Spanish-Love-Songs/Doornroosje/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.doornroosje.nl/event/spanish-love-songs/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-489729",
@@ -27284,7 +29579,13 @@
       "url": "https://www.podiuminfo.nl/concert/499374/Oscar-Lindsey/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/oscar-lindsey/2944460",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-481366",
@@ -27404,7 +29705,13 @@
       "url": "https://www.podiuminfo.nl/concert/500076/Joshua-Radin/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/joshua-radin/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-492379",
@@ -27455,7 +29762,13 @@
       "url": "https://www.podiuminfo.nl/concert/484051/NEW-COOL-COLLECTIVE/Paard/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/new-cool-collective-14/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494419",
@@ -27559,7 +29872,13 @@
       "url": "https://www.podiuminfo.nl/concert/464785/Delain-Album-Release-Show/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/129205/delain",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-455470",
@@ -27644,7 +29963,13 @@
       "url": "https://www.podiuminfo.nl/concert/494047/Samuel-Welten/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/samuel-welten/2926541",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-497106",
@@ -27729,7 +30054,13 @@
       "url": "https://www.podiuminfo.nl/concert/499122/BINA-/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/bina/2944377",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-493288",
@@ -27746,7 +30077,13 @@
       "url": "https://www.podiuminfo.nl/concert/493288/Chat-Pile/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/chat-pile/2916053",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-500159",
@@ -27899,7 +30236,13 @@
       "url": "https://www.podiuminfo.nl/concert/476439/Tramhaus/Effenaar/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.effenaar.nl/agenda/tramhaus-12feb",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-482786",
@@ -27916,7 +30259,13 @@
       "url": "https://www.podiuminfo.nl/concert/482786/Floor-Jansen-Hytress-Tour/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/143462/floor-jansen",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-37265",
@@ -27997,7 +30346,13 @@
       "url": "https://www.podiuminfo.nl/concert/493290/Karate-Boogaloo/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/karate-boogaloo/2928539",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474126",
@@ -28031,7 +30386,13 @@
       "url": "https://www.podiuminfo.nl/concert/493461/Lee-Fields/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/lee-fields/2927121",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-499719",
@@ -28185,7 +30546,13 @@
       "url": "https://www.podiuminfo.nl/concert/492475/Uncle-Acid-And-the-Deadbeats/013/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.013.nl/programma/153886/uncle-acid-and-the-deadbeats",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-501020",
@@ -28237,6 +30604,42 @@
       "image": "https://www.more.com/getattachment/B856CB68-5CF7-489B-B4D3-59BE85CF3E09/evg_sophiamanousake-khios_0919_5567.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-17-de-jukebox-20",
+      "artist": "De Jukebox #20",
+      "artists": [
+        "De Jukebox #20"
+      ],
+      "date": "2027-02-17",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-jukebox-20/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-20/"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-18-tinlicker",
+      "artist": "Tinlicker",
+      "artists": [
+        "Tinlicker"
+      ],
+      "date": "2027-02-18",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/tinlicker/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/tinlicker/"
     },
     {
       "id": "more-46e3ab4427bb0606",
@@ -28341,6 +30744,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-doornroosje-2027-02-25-the-skints",
+      "artist": "The Skints",
+      "artists": [
+        "The Skints"
+      ],
+      "date": "2027-02-25",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/the-skints-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/the-skints-2/"
+    },
+    {
       "id": "more-e924b190b4ba85a6",
       "artist": "Tygers of Pan Tang - Tidal Dreams - Παρασκευή 26 Φεβρουαρίου 2027, Piraeus Club Academy",
       "artists": [
@@ -28356,6 +30777,42 @@
       "image": "https://www.more.com/getattachment/117B9F9B-4303-48BB-BBF6-C10E1FCB61B5/evg_tygersofpantang_1152_1571.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-013-2027-02-26-wende",
+      "artist": "Wende",
+      "artists": [
+        "Wende"
+      ],
+      "date": "2027-02-26",
+      "venue": "013",
+      "city": "Tilburg",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.013.nl/programma/155823/wende",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.013.nl/programma/155823/wende"
+    },
+    {
+      "id": "venue-doornroosje-2027-02-27-fatoumata-diawara",
+      "artist": "Fatoumata Diawara",
+      "artists": [
+        "Fatoumata Diawara"
+      ],
+      "date": "2027-02-27",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/fatoumata-diawara-2/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/fatoumata-diawara-2/"
     },
     {
       "id": "gagarin-2027-03-04-up%20the%20hammers%20xxi",
@@ -28471,7 +30928,13 @@
       "url": "https://www.moonspell.com/tours/-/god-is-a-vampire-tour-2027-93/",
       "image": "https://www.moonspell.com/galeria/images/MoonspellVampire_Tour_Poster_A3_Web-1.jpg",
       "source": "official",
-      "verification": "artist-tour"
+      "verification": "artist-tour",
+      "officialUrl": "https://www.effenaar.nl/agenda/moonspell",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-ebcfdb2972636e36",
@@ -28489,6 +30952,24 @@
       "image": "https://www.more.com/getattachment/77F8BC0F-C20C-4F30-B6F0-40BF7F0F6F8E/evg_andrerieu2026_1851_3288.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-doornroosje-2027-03-12-wende",
+      "artist": "Wende",
+      "artists": [
+        "Wende"
+      ],
+      "date": "2027-03-12",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/wende-14/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/wende-14/"
     },
     {
       "id": "more-8b5ef11dcfa7d3c5",
@@ -28577,8 +31058,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
-      "artist": "IGORRR",
+      "id": "more-20a9413358deac99",
+      "artist": "Igorrr",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -28590,11 +31071,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "",
+      "subgenre": "Avant-Garde Metal",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "more-d48e7894463ba403",
@@ -28614,7 +31095,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-03-20-u%20k%20subs",
+      "id": "more-9256f6cbb9511c7d",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -28650,6 +31131,24 @@
       "verification": "ticket-provider"
     },
     {
+      "id": "venue-doornroosje-2027-03-24-de-jukebox-21",
+      "artist": "De Jukebox #21",
+      "artists": [
+        "De Jukebox #21"
+      ],
+      "date": "2027-03-24",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/de-jukebox-21/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/de-jukebox-21/"
+    },
+    {
       "id": "more-03f20a56f46e2498",
       "artist": "SOEN",
       "artists": [
@@ -28665,6 +31164,42 @@
       "image": "https://www.more.com/getattachment/29FB6AC3-1A08-4826-86E6-662784FB6520/evg_soen_1232_750.png",
       "source": "floyd-calendar",
       "verification": "venue-calendar"
+    },
+    {
+      "id": "venue-effenaar-2027-03-25-yves-berendse",
+      "artist": "Yves Berendse",
+      "artists": [
+        "Yves Berendse"
+      ],
+      "date": "2027-03-25",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/yves-berendse",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/yves-berendse"
+    },
+    {
+      "id": "venue-effenaar-2027-03-28-the-skatalites",
+      "artist": "The Skatalites",
+      "artists": [
+        "The Skatalites"
+      ],
+      "date": "2027-03-28",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/skatalites",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/skatalites"
     },
     {
       "id": "official-tour-moonspell-20270330-thessaloniki",
@@ -28722,6 +31257,24 @@
       "verification": "source-catalog"
     },
     {
+      "id": "venue-effenaar-2027-04-03-mistress-of-jersey",
+      "artist": "Mistress of Jersey",
+      "artists": [
+        "Mistress of Jersey"
+      ],
+      "date": "2027-04-03",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/mistress-jersey-curtis-80s-anders",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/mistress-jersey-curtis-80s-anders"
+    },
+    {
       "id": "festivalinfo-36482",
       "artist": "Samhain festival",
       "artists": [
@@ -28740,7 +31293,7 @@
       "isFestival": true
     },
     {
-      "id": "anclub-2027-04-10-oh%20hiroshima",
+      "id": "more-98f8e3f69d11b04a",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -28847,17 +31400,17 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 394,
+    "greeceEvents": 396,
     "greeceFeedError": "",
     "rockingEvents": 37,
     "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
-    "agendaOnlyPodiuminfoEvents": 1238,
+    "agendaOnlyPodiuminfoEvents": 1245,
     "festivalEvents": 16,
-    "officialVenueEvents": 6,
+    "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 45,
+    "sameVenueDuplicatesMerged": 50,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -28866,38 +31419,38 @@
       "requests": 45,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 180,
-      "eligible": 1238,
-      "remainingWithoutImage": 1238
+      "skippedBlocked": 225,
+      "eligible": 1245,
+      "remainingWithoutImage": 1245
     },
     "artistPhotoCache": {
-      "artists": 369,
+      "artists": 470,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 898,
+        "candidates": 812,
         "requests": 450,
-        "found": 91,
-        "notFound": 174,
-        "ambiguous": 60,
+        "found": 98,
+        "notFound": 163,
+        "ambiguous": 57,
         "coverRejected": 34,
         "errors": 0,
-        "skipped": 231,
-        "photos": 369
+        "skipped": 468,
+        "photos": 467
       },
       "identity": {
-        "candidates": 806,
-        "processed": 1,
-        "identified": 0,
+        "candidates": 674,
+        "processed": 19,
+        "identified": 4,
         "ambiguous": 0,
-        "notFound": 0,
+        "notFound": 11,
         "commons": 0,
-        "deezerLinked": 0,
-        "errors": 1
+        "deezerLinked": 3,
+        "errors": 4
       }
     },
-    "gagarinCalendarEvents": 22,
+    "gagarinCalendarEvents": 21,
     "gagarinPosterEnriched": 6,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -28911,8 +31464,24 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 504,
-    "taggedArtists": 457,
+    "genreTaggedEvents": 507,
+    "taggedArtists": 481,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
+  },
+  "venueSources": {
+    "updatedAt": "2026-11-05T20:36:04.764Z",
+    "catalogueEvents": 1659,
+    "officialMatches": 271,
+    "imagesPublished": 0,
+    "imageCandidatesPending": 271,
+    "discoveredEvents": 43,
+    "venueEventsRemoved": {
+      "duplicate": 0,
+      "policy": 0,
+      "cancelled": 0,
+      "rescheduled": 0,
+      "gone": 0
+    },
+    "venueEventsPublished": 43
   }
 }

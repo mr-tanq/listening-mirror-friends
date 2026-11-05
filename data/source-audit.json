@@ -1,21 +1,21 @@
 {
-  "catalogUpdatedAt": "2026-11-05T13:48:31.352Z",
+  "catalogUpdatedAt": "2026-11-05T20:32:42.605Z",
   "auditedFor": "2026-11-05",
-  "totalPublished": 1650,
-  "greekPublished": 394,
+  "totalPublished": 1659,
+  "greekPublished": 396,
   "imageCoverage": {
-    "withImage": 381,
-    "withoutImage": 1269
+    "withImage": 383,
+    "withoutImage": 1276
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1141,
+      "events": 1148,
       "withImage": 8,
-      "withoutImage": 1133
+      "withoutImage": 1140
     },
     "GR": {
-      "events": 394,
-      "withImage": 373,
+      "events": 396,
+      "withImage": 375,
       "withoutImage": 21
     },
     "BE": {
@@ -50,27 +50,27 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 21
     },
     "more": {
-      "events": 286,
-      "withImage": 286,
+      "events": 288,
+      "withImage": 288,
       "withoutImage": 0,
-      "greekEvents": 286
+      "greekEvents": 288
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1238,
+      "events": 1245,
       "withImage": 0,
-      "withoutImage": 1238,
+      "withoutImage": 1245,
       "greekEvents": 0
     },
     "rocking": {
@@ -82,8 +82,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -367,6 +367,14 @@
       ]
     },
     {
+      "name": "Misirlou Live Stage",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Θεατρο Μεταξουργειο",
       "events": 3,
       "withImage": 3,
@@ -412,14 +420,6 @@
       "withImage": 3,
       "sources": [
         "rocking"
-      ]
-    },
-    {
-      "name": "Misirlou Live Stage",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
       ]
     },
     {
