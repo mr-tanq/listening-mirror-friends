@@ -10,9 +10,14 @@ export const artistKey=name=>String(name||'').normalize('NFKD')
 export function verifiedArtistPhoto(raw){
  try{
   const u=new URL(raw);
-  return u.protocol==='https:'&&!u.username&&!u.password&&
-   ['www.podiuminfo.nl','podiuminfo.nl'].includes(u.hostname)&&
-   u.pathname.startsWith('/img/artist/')&&/\.(?:jpe?g|png|webp)$/i.test(u.pathname)?u.href:'';
+  if(u.protocol!=='https:'||u.username||u.password)return '';
+  if(['www.podiuminfo.nl','podiuminfo.nl'].includes(u.hostname))
+   return u.pathname.startsWith('/img/artist/')&&/\.(?:jpe?g|png|webp)$/i.test(u.pathname)?u.href:'';
+  // The same high-resolution public Deezer artist images used by the
+  // personal Listening Mirror. Never accept track/album covers as portraits.
+  if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
+   return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
+  return '';
  }catch{return '';}
 }
 export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toISOString()}={}){
@@ -22,7 +27,11 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
   const image=verifiedArtistPhoto(record?.image);
   if(!key||key.length<3||!image)continue;
   if(artists[key]?.image===image)continue;
-  artists[key]={image,kind:'artist-photo',source:'podiuminfo',sourceUrl:record.sourceUrl||'',checkedAt};
+  // A 1000px curated portrait should never be replaced by Podiuminfo's
+  // roughly 100px thumbnail.
+  if(artists[key]?.source==='deezer'&&record.source!=='deezer')continue;
+  artists[key]={image,kind:'artist-photo',source:record.source||'podiuminfo',
+    sourceUrl:record.sourceUrl||'',deezerId:record.deezerId||undefined,checkedAt};
   added++;
  }
  return {cache:{version:1,artists},added};
