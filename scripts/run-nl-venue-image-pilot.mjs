@@ -1,10 +1,14 @@
 /**
- * Manual research only:
- * node scripts/run-nl-venue-image-pilot.mjs
- * Does not publish or rehost any images; outputs an audit for human review.
+ * Read-only audit of the venue-first pipeline (no files written):
+ *   node scripts/run-nl-venue-image-pilot.mjs
+ * Equivalent to: node scripts/update-venue-catalog.mjs --audit
  */
 import {readFile} from 'node:fs/promises';
-import {inspectNlVenueImages} from './nl-venue-image-pilot.mjs';
-const feed=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
-const report=await inspectNlVenueImages(feed.events||[],{maxEventPages:12});
-console.log(JSON.stringify({generatedAt:new Date().toISOString(),...report},null,2));
+import {runVenueStage} from './update-venue-catalog.mjs';
+const load=async f=>JSON.parse(await readFile(new URL('../'+f,import.meta.url),'utf8'));
+const feed=await load('data/events.json');
+const policy=await load('data/nl-venue-sources.json').catch(()=>({venues:{}}));
+const cache=await load('data/venue-events.json').catch(()=>({venues:{}}));
+const only=process.env.VENUES?process.env.VENUES.split(','):null;
+const {report}=await runVenueStage({audit:true,feed,policy,cache,only});
+console.log(JSON.stringify(report,null,1));
