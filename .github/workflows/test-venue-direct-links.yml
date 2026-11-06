@@ -1,0 +1,25 @@
+name: Test official event direct-link images
+on:
+  pull_request:
+    paths:
+      - 'scripts/venue-sources/pipeline.mjs'
+      - 'scripts/update-venue-catalog.mjs'
+      - 'data/nl-venue-sources.json'
+      - 'tests/venue-direct-link-images.test.mjs'
+      - '.github/workflows/test-venue-direct-links.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Full offline test suite
+        run: npm test
+      - name: Read-only image coverage baseline
+        run: node scripts/audit-deciding-images.mjs
