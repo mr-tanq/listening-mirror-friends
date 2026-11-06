@@ -1,0 +1,29 @@
+name: Test reviewed official concert images
+on:
+  pull_request:
+    paths:
+      - 'js/verified-official-artwork.js'
+      - 'js/app.js'
+      - 'scripts/update-venue-catalog.mjs'
+      - 'data/verified-official-artwork.json'
+      - 'tests/verified-official-artwork.test.mjs'
+      - '.github/workflows/test-reviewed-official-artwork.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline regression tests
+        run: npm test
+      - name: Check syntax of updated frontend and catalog
+        run: |
+          node --check js/app.js
+          node --check scripts/update-venue-catalog.mjs
+          node --check js/verified-official-artwork.js
