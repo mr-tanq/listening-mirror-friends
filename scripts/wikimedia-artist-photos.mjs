@@ -143,7 +143,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
     delete result.wikimediaAttempted[item.key];stats.found++;
     continue;
    }
-   if(confirmed)verdict={reason:'no-licensed-commons-photo'};
+   if(confirmed)verdict={reason:verdict.file?'photo-license-or-size-rejected':'no-licensed-commons-photo'};
 
    if(verdict.reason==='ambiguous-musical-identity')stats.ambiguous++;
    else if(verdict.reason==='photo-license-or-size-rejected')stats.licenceRejected++;
