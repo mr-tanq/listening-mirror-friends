@@ -532,6 +532,30 @@
       "disambiguation": "Dutch DJ collective",
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-06T13:20:52.879Z"
+    },
+    "exxul": {
+      "name": "Exxûl",
+      "mbid": "a59d1fe3-ecd5-4e08-9303-ca8530d19f40",
+      "mbName": "Exxûl",
+      "country": "CA",
+      "disambiguation": "Canadian heavy/power/doom metal",
+      "matchedBy": "unique-name",
+      "spotifyId": "7xrqbir4PChBRXNBVbvkwS",
+      "deezerId": 365905452,
+      "homepage": "https://www.exxul.ca/",
+      "checkedAt": "2026-11-06T15:23:08.853Z"
+    },
+    "otis gibbs": {
+      "name": "Otis Gibbs",
+      "mbid": "92f47e74-2148-4801-a91c-ca762371f161",
+      "mbName": "Otis Gibbs",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://otisgibbs.bandcamp.com/",
+      "spotifyId": "28ArvZS9yIxIPnPCDD5IXD",
+      "deezerId": 419736,
+      "wikidata": "Q5758291",
+      "checkedAt": "2026-11-06T15:23:11.017Z"
     }
   },
   "attempted": {
@@ -555,19 +579,7 @@
       "retryAfter": "2026-11-07",
       "reason": "HTTP 503"
     },
-    "henge": {
-      "retryAfter": "2026-11-07",
-      "reason": "fetch failed"
-    },
     "lois lane 40 jaar live": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "daoud": {
-      "retryAfter": "2026-11-07",
-      "reason": "fetch failed"
-    },
-    "shantel bucovina club soundsystem": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -576,14 +588,6 @@
       "reason": "not-found"
     },
     "muziekfeest van het jaar": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "la pegatina": {
-      "retryAfter": "2026-11-07",
-      "reason": "fetch failed"
-    },
-    "benjamin herman trio": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -615,10 +619,6 @@
       "retryAfter": "2026-11-07",
       "reason": "HTTP 503"
     },
-    "the soulful sessions": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "queen s pleasure": {
       "retryAfter": "2026-12-20",
       "reason": "identified-without-free-photo"
@@ -647,17 +647,9 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "de jukebox": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "hλιας φουντουλης": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "iron jinn temple fang": {
-      "retryAfter": "2026-11-07",
-      "reason": "HTTP 503"
     },
     "glitter grotesque": {
       "retryAfter": "2026-12-06",
@@ -667,29 +659,13 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "vroegzat": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "we all love 90 s 00 s 10 s": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "def brittneysgat": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     },
-    "eindhoven metal meeting 2026": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "the hillbilly moonshiners": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "40up": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
     },
     "the dutch queen": {
       "retryAfter": "2026-12-06",
@@ -699,29 +675,13 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "paradiso korendagen 2027": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "tribute to the cats band": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     },
-    "job dutchtuber billy the kit": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "80 s anders": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "elder": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
-    },
-    "oscar lindsey": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
     },
     "schoolconcert vo": {
       "retryAfter": "2026-12-06",
@@ -739,22 +699,6 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "rudeboy x boskat": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "personal trainer": {
-      "retryAfter": "2026-12-21",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "2e84443c-dc23-4b65-922a-f96b8a73d602",
-        "f14448b3-4c5f-4193-9691-8881fc6935e5"
-      ]
-    },
-    "the horse company": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "back alley ritual": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
@@ -763,34 +707,9 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "frank nick reunie": {
-      "retryAfter": "2026-11-08",
-      "reason": "HTTP 503"
-    },
     "sophie straat": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "de smartlappen karaoke live show": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "kaya": {
-      "retryAfter": "2026-12-21",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "ac2cdba9-dff6-4b52-9e3a-13cb78e3241d",
-        "940cf467-8605-4a13-95b1-32ace0318d24",
-        "42bbbf4e-5892-47ef-a555-449417f5e6cf"
-      ]
-    },
-    "zer00 s heroes": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "benjamin herman trio featuring tomoaki baba": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
     },
     "boze wolven ode aan gorky": {
       "retryAfter": "2026-12-06",
@@ -800,29 +719,9 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "convicts invite": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "froday": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "ginger ill": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "kay slice": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "marsh": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "mic drop": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
     },
     "nagusame": {
       "retryAfter": "2026-12-21",
@@ -832,51 +731,31 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "unfold by patroon": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "wilt": {
-      "retryAfter": "2026-12-21",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "05ac0d9e-79f3-4d10-9222-e849f9214b6e",
-        "5a7e57cf-0e36-4d57-bd51-6f65eacef4eb"
-      ]
-    },
-    "brian fallon the painkillers": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "celestial season": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
-    },
-    "no barrier": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
-    "kaleidoscoop geannuleerd": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "sonische reis": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "the dire straits experience phil": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "chali 2na band": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
     },
     "deer park touching ice the healing power of horses": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
     "le guess who presents bleak squad": {
+      "retryAfter": "2026-11-08",
+      "reason": "HTTP 503"
+    },
+    "exxul": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "otis gibbs": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "radar machine": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "rymden": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }

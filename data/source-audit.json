@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-06T13:24:08.285Z",
+  "catalogUpdatedAt": "2026-11-06T15:25:54.239Z",
   "auditedFor": "2026-11-06",
-  "totalPublished": 1893,
-  "greekPublished": 392,
+  "totalPublished": 1940,
+  "greekPublished": 422,
   "imageCoverage": {
-    "withImage": 378,
-    "withoutImage": 1515
+    "withImage": 1043,
+    "withoutImage": 897
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 393,
-      "withImage": 372,
-      "withoutImage": 21
+      "events": 422,
+      "withImage": 375,
+      "withoutImage": 47
     },
     "NL": {
-      "events": 1388,
-      "withImage": 7,
-      "withoutImage": 1381
+      "events": 1403,
+      "withImage": 662,
+      "withoutImage": 741
     },
     "BE": {
-      "events": 113,
-      "withImage": 0,
-      "withoutImage": 113
+      "events": 115,
+      "withImage": 6,
+      "withoutImage": 109
     }
   },
   "sources": {
@@ -50,10 +50,10 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 21,
-      "withImage": 21,
+      "events": 22,
+      "withImage": 22,
       "withoutImage": 0,
-      "greekEvents": 21
+      "greekEvents": 22
     },
     "more": {
       "events": 285,
@@ -62,34 +62,34 @@
       "greekEvents": 285
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
-      "events": 1231,
-      "withImage": 0,
-      "withoutImage": 1231,
+      "events": 1237,
+      "withImage": 399,
+      "withoutImage": 838,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 37,
-      "withImage": 18,
-      "withoutImage": 19,
-      "greekEvents": 37
+      "events": 66,
+      "withImage": 21,
+      "withoutImage": 45,
+      "greekEvents": 66
     },
     "venue-official": {
-      "events": 253,
-      "withImage": 0,
-      "withoutImage": 253,
+      "events": 264,
+      "withImage": 262,
+      "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 21,
-      "withImage": 21,
+      "published": 22,
+      "withImage": 22,
       "warning": null
     },
     "floyd-calendar": {
@@ -130,6 +130,14 @@
       ]
     },
     {
+      "name": "Το Τρένο Στο Ρουφ",
+      "events": 22,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "ΙΛΙΟΝ Plus",
       "events": 18,
       "withImage": 18,
@@ -164,6 +172,15 @@
       ]
     },
     {
+      "name": "Piraeus Club Academy",
+      "events": 15,
+      "withImage": 13,
+      "sources": [
+        "more",
+        "rocking"
+      ]
+    },
+    {
       "name": "Floyd Live Music Venue",
       "events": 14,
       "withImage": 14,
@@ -172,18 +189,17 @@
       ]
     },
     {
-      "name": "Piraeus Club Academy",
-      "events": 14,
-      "withImage": 13,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
       "name": "Death Disco",
       "events": 13,
       "withImage": 13,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 10,
+      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -205,14 +221,6 @@
       ]
     },
     {
-      "name": "ARCH",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Circus Entertainment Hub",
       "events": 9,
       "withImage": 9,
@@ -226,6 +234,14 @@
       "withImage": 8,
       "sources": [
         "more"
+      ]
+    },
+    {
+      "name": "Eightball",
+      "events": 8,
+      "withImage": 3,
+      "sources": [
+        "rocking"
       ]
     },
     {
@@ -253,9 +269,9 @@
       ]
     },
     {
-      "name": "Το Τρένο Στο Ρουφ",
+      "name": "Temple Athens",
       "events": 6,
-      "withImage": 0,
+      "withImage": 2,
       "sources": [
         "rocking"
       ]
@@ -309,14 +325,6 @@
       ]
     },
     {
-      "name": "Eightball",
-      "events": 5,
-      "withImage": 2,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "Γυαλινο Μουσικο Θεατρο",
       "events": 4,
       "withImage": 4,
@@ -325,7 +333,7 @@
       ]
     },
     {
-      "name": "Temple Athens",
+      "name": "Principal Club Theater: Mylos Area",
       "events": 4,
       "withImage": 2,
       "sources": [
@@ -422,14 +430,6 @@
     },
     {
       "name": "Doors Live Art Athens",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "UNDERFLOW RECORD STORE",
       "events": 2,
       "withImage": 2,
       "sources": [
