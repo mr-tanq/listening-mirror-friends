@@ -11,8 +11,9 @@
  * cache parsed pages, then match with scoreMatch().
  *
  * Publication rules (data/nl-venue-sources.json):
- *  - imageUse:'permitted' is required before an official image is shown.
- *    Otherwise it is stored as a candidate only.
+ *  - imageUse:'permitted' allows licensed assets; 'direct-link' embeds
+ *    a validated image from a publicly accessible official event page
+ *    without copying it. Pending images remain candidates; denied stay out.
  *  - discovery:true is required before a venue's events are added.
  *  - an existing event image is never replaced.
  */
@@ -133,7 +134,24 @@ export function pageHint(html,url){
 }
 export const officialEventsOf=(entry,today)=>Object.values(entry?.pages||{}).filter(p=>(p.goneChecks||0)<2).map(p=>p.event).filter(e=>e&&e.date>=today);
 
-/** A. Attach official pages and (when permitted) official images. */
+/** Source-linked official images are displayed from the original URL, never
+ *  copied. This mode is NOT an assertion that a copyright licence exists.
+ */
+export function officialImageMode(adapter,match,policy){
+ const use=policy?.venues?.[adapter?.id]?.imageUse||'pending';
+ if(use==='permitted')return 'permitted';
+ if(use!=='direct-link'||adapter?.blockedBySite||!match?.url||!match?.image)return '';
+ try{
+  const page=new URL(match.url),pic=new URL(match.image);
+  if(page.protocol!=='https:'||pic.protocol!=='https:'||page.username||pic.username||page.password||pic.password)return '';
+  if(!adapter.eventUrl?.test(page.href))return '';
+  if(!/\.(?:jpe?g|png|webp|avif|gif)$/i.test(pic.pathname))return '';
+  return 'direct-link';
+ }catch{return '';}
+}
+const removeOfficialArtwork=event=>event.imageSource?.startsWith('venue-official')?
+ {...event,image:'',imageKind:'',imageSource:'',imageCredit:undefined}:event;
+/** A. Attach official pages and (when linked/allowed) official images. */
 export function enrichCatalogue(events,adapters,cache,policy,{today}){
  const stats={};const candidates=[];
  const out=events.map(event=>{
@@ -142,17 +160,26 @@ export function enrichCatalogue(events,adapters,cache,policy,{today}){
   if(!adapter)return event;
   const s=stats[adapter.id]||={catalogue:0,matched:0,imagesPublished:0,imagesPending:0,ambiguous:0};
   s.catalogue++;
-  const {match,confidence,reason}=bestOfficialMatch(event,officialEventsOf(cache.venues?.[adapter.id],today),adapter);
-  if(!match){if(reason==='ambiguous')s.ambiguous++;return event;}
+  const imageUse=policy?.venues?.[adapter.id]?.imageUse||'pending';
+  // Revoking an image mode also removes previously published official art.
+  // Recheck every source-linked photo against the official show each run:
+  // never preserve an old URL when the page or match disappears.
+  const clean=event.imageSource==='venue-official-direct-link'||
+   !['permitted','direct-link'].includes(imageUse)?removeOfficialArtwork(event):event;
+  const {match,confidence,reason}=bestOfficialMatch(clean,officialEventsOf(cache.venues?.[adapter.id],today),adapter);
+  if(!match){if(reason==='ambiguous')s.ambiguous++;return clean;}
   s.matched++;
-  const next={...event,officialUrl:match.url,officialMatch:{venue:adapter.id,confidence,via:match.via}};
+  const next={...clean,officialUrl:match.url,officialMatch:{venue:adapter.id,confidence,via:match.via}};
   if(match.image&&policy?.venues?.[adapter.id]?.imageUse!=='denied'){
-   const permitted=policy?.venues?.[adapter.id]?.imageUse==='permitted';
-   candidates.push({eventId:event.id,venue:adapter.id,eventUrl:match.url,image:match.image,confidence,published:permitted&&!event.image});
-   if(permitted&&!event.image){
-    next.image=match.image;next.imageKind='event-poster';next.imageSource='venue-official';
+   const mode=officialImageMode(adapter,match,policy);
+   const publish=Boolean(mode&&!next.image);
+   candidates.push({eventId:event.id,venue:adapter.id,eventUrl:match.url,image:match.image,
+    confidence,published:publish,...(mode==='direct-link'?{displayMode:'direct-link'}:{})});
+   if(publish){
+    next.image=match.image;next.imageKind='event-poster';
+    next.imageSource=mode==='direct-link'?'venue-official-direct-link':'venue-official';
     next.imageCredit={text:'Image: '+adapter.name,url:match.url};s.imagesPublished++;
-   }else if(!event.image)s.imagesPending++;
+   }else if(!next.image)s.imagesPending++;
   }
   return next;
  });
@@ -255,11 +282,12 @@ export function discoverFromVenues(events,adapters,cache,policy,{today,endDate})
    if(verdicts.includes('same')){s.known++;continue;}
    if(verdicts.includes('possible')){s.possibleDuplicates=(s.possibleDuplicates||[]);
     if(s.possibleDuplicates.length<10)s.possibleDuplicates.push(o.title+' ('+o.date+')');s.skipped++;continue;}
-   const permitted=policy?.venues?.[adapter.id]?.imageUse==='permitted';
+   const mode=officialImageMode(adapter,o,policy);
    const event={id:'venue-'+adapter.id+'-'+o.date+'-'+slugOf(headliner).slice(0,60),artist:headliner,
     artists:[...new Set([headliner,...(o.performers||[]).slice(1)])].slice(0,15),date:o.date,venue:adapter.name,city:adapter.city,
-    country:'NL',genre:'',subgenre:'',url:o.url,image:permitted&&o.image?o.image:'',
-    ...(permitted&&o.image?{imageKind:'event-poster',imageSource:'venue-official',imageCredit:{text:'Image: '+adapter.name,url:o.url}}:{}),
+    country:'NL',genre:'',subgenre:'',url:o.url,image:mode&&o.image?o.image:'',
+    ...(mode&&o.image?{imageKind:'event-poster',imageSource:mode==='direct-link'?'venue-official-direct-link':'venue-official',
+     imageCredit:{text:'Image: '+adapter.name,url:o.url}}:{}),
     source:'venue-official',verification:'official-venue-page',officialUrl:o.url};
    if(all.some(e=>e.id===event.id)){s.known++;continue;}
    all.push(event);added.push(event);s.added++;

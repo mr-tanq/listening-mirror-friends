@@ -1,18 +1,105 @@
 {
-  "note": "Usage policy per Dutch venue. 'discovery': true adds concerts found on the venue's own site (facts plus a link to the official page). 'imageUse' controls official event artwork: 'pending' stores matched images as candidates only; set it to 'permitted' ONLY with written permission or published terms that allow it, recorded in 'imageUseEvidence' (who, when, scope). 'denied' never stores candidates. Access findings come from the read-only probe of 2026-11-05 (docs/venue-first-images.md).",
+  "note": "Per-venue official artwork controls. 'permitted' means explicit documented reuse permission; 'direct-link' displays original, freely accessible event-page image URLs without copying/rehosting them, subject to applicable EU embedding rules, technical restrictions and takedown requests. This is NOT a copyright licence. 'pending' stores candidates only. 'denied' never publishes. Revert a venue to pending to stop linking. No access blocks or anti-embedding measures may be circumvented.",
   "venues": {
-    "paradiso": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "sitemap event_N.xml + JSON-LD Event (performers, timezone date)", "termsReviewed": false},
-    "013": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok until 2026-11-05 15:55 UTC; then a Cloudflare challenge after 7 audit runs that day (client backs off 7 days)", "source": "/programma agenda + JSON-LD MusicEvent", "termsReviewed": false},
-    "doornroosje": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "homepage agenda + JSON-LD Event (local time labelled UTC)", "termsReviewed": false},
-    "effenaar": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "/agenda + JSON-LD Event (no performers)", "termsReviewed": false},
-    "patronaat": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok (crawl-delay 10s)", "source": "/programma + date in event URL + Open Graph title", "termsReviewed": false},
-    "paard": {"discovery": true, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "event-sitemap + JSON-LD Event (floating local time)", "termsReviewed": false},
-    "bibelot": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "experimental (enrichment only): /programma + first dated text + Open Graph", "termsReviewed": false},
-    "vera": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "experimental: events-sitemap + <time> date + Open Graph", "termsReviewed": false},
-    "baroeg": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "ok", "source": "research: theatre-plugin event URLs carry no title or date", "termsReviewed": false},
-    "tivoli": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "blocked: Cloudflare HTTP 403 for automated clients; ask the venue for a feed", "termsReviewed": false},
-    "melkweg": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "blocked: AWS WAF challenge on every URL; ask the venue for a feed", "termsReviewed": false},
-    "dbs": {"discovery": false, "imageUse": "denied", "imageUseEvidence": "", "access": "excluded: robots.txt disallows all crawling", "termsReviewed": false},
-    "grenswerk": {"discovery": false, "imageUse": "pending", "imageUseEvidence": "", "access": "research: no machine-readable events found", "termsReviewed": false}
+    "paradiso": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok",
+      "source": "sitemap event_N.xml + JSON-LD Event (performers, timezone date)",
+      "termsReviewed": false
+    },
+    "013": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok until 2026-11-05 15:55 UTC; then a Cloudflare challenge after 7 audit runs that day (client backs off 7 days)",
+      "source": "/programma agenda + JSON-LD MusicEvent",
+      "termsReviewed": false
+    },
+    "doornroosje": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok",
+      "source": "homepage agenda + JSON-LD Event (local time labelled UTC)",
+      "termsReviewed": false
+    },
+    "effenaar": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok",
+      "source": "/agenda + JSON-LD Event (no performers)",
+      "termsReviewed": false
+    },
+    "patronaat": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok (crawl-delay 10s)",
+      "source": "/programma + date in event URL + Open Graph title",
+      "termsReviewed": false
+    },
+    "paard": {
+      "discovery": true,
+      "imageUse": "direct-link",
+      "imageUseEvidence": "Original official event-page HTTPS image links only; no copying. No separate licence claimed. Respect source restrictions and removal requests.",
+      "access": "ok",
+      "source": "event-sitemap + JSON-LD Event (floating local time)",
+      "termsReviewed": false
+    },
+    "bibelot": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "ok",
+      "source": "experimental (enrichment only): /programma + first dated text + Open Graph",
+      "termsReviewed": false
+    },
+    "vera": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "ok",
+      "source": "experimental: events-sitemap + <time> date + Open Graph",
+      "termsReviewed": false
+    },
+    "baroeg": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "ok",
+      "source": "research: theatre-plugin event URLs carry no title or date",
+      "termsReviewed": false
+    },
+    "tivoli": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "blocked: Cloudflare HTTP 403 for automated clients; ask the venue for a feed",
+      "termsReviewed": false
+    },
+    "melkweg": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "blocked: AWS WAF challenge on every URL; ask the venue for a feed",
+      "termsReviewed": false
+    },
+    "dbs": {
+      "discovery": false,
+      "imageUse": "denied",
+      "imageUseEvidence": "",
+      "access": "excluded: robots.txt disallows all crawling",
+      "termsReviewed": false
+    },
+    "grenswerk": {
+      "discovery": false,
+      "imageUse": "pending",
+      "imageUseEvidence": "",
+      "access": "research: no machine-readable events found",
+      "termsReviewed": false
+    }
   }
 }
