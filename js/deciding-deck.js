@@ -1,4 +1,4 @@
-import {safeUrl,norm} from './model.js?v=venue-v1';
+import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
 
 const el=(tag,cls,text)=>{
   const n=document.createElement(tag);if(cls)n.className=cls;
