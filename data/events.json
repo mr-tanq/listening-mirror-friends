@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T15:25:54.239Z",
+  "updatedAt": "2026-11-06T15:34:54.766Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -41368,7 +41368,7 @@
       "venue": "Eightball",
       "city": "Thessaloniki",
       "country": "GR",
-      "genre": "Stoner / Doom / Metal",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2027/4/16/27571",
       "image": "",
@@ -41402,7 +41402,7 @@
       "venue": "Piraeus Club Academy",
       "city": "Athens",
       "country": "GR",
-      "genre": "Stoner / Doom / Metal",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2027/4/18/27573",
       "image": "",
@@ -41535,10 +41535,10 @@
       },
       "identity": {
         "candidates": 460,
-        "processed": 4,
-        "identified": 2,
+        "processed": 7,
+        "identified": 3,
         "ambiguous": 0,
-        "notFound": 1,
+        "notFound": 3,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
@@ -41573,12 +41573,12 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 656,
-    "taggedArtists": 663,
+    "genreTaggedEvents": 653,
+    "taggedArtists": 661,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-06T15:29:15.028Z",
+    "updatedAt": "2026-11-06T15:38:15.554Z",
     "catalogueEvents": 1940,
     "officialMatches": 632,
     "imagesPublished": 610,

@@ -533,18 +533,6 @@
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-06T13:20:52.879Z"
     },
-    "exxul": {
-      "name": "Exxûl",
-      "mbid": "a59d1fe3-ecd5-4e08-9303-ca8530d19f40",
-      "mbName": "Exxûl",
-      "country": "CA",
-      "disambiguation": "Canadian heavy/power/doom metal",
-      "matchedBy": "unique-name",
-      "spotifyId": "7xrqbir4PChBRXNBVbvkwS",
-      "deezerId": 365905452,
-      "homepage": "https://www.exxul.ca/",
-      "checkedAt": "2026-11-06T15:23:08.853Z"
-    },
     "otis gibbs": {
       "name": "Otis Gibbs",
       "mbid": "92f47e74-2148-4801-a91c-ca762371f161",
@@ -555,7 +543,28 @@
       "spotifyId": "28ArvZS9yIxIPnPCDD5IXD",
       "deezerId": 419736,
       "wikidata": "Q5758291",
-      "checkedAt": "2026-11-06T15:23:11.017Z"
+      "checkedAt": "2026-11-06T15:32:17.199Z"
+    },
+    "rymden": {
+      "name": "Rymden",
+      "mbid": "c72df4a3-fadf-42fd-8634-fb9f579d2589",
+      "mbName": "Rymden",
+      "country": "NO",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://rymden3.bandcamp.com/",
+      "homepage": "https://www.rymden-music.com/",
+      "wikidata": "Q65244584",
+      "checkedAt": "2026-11-06T15:32:20.677Z"
+    },
+    "dav id": {
+      "name": "Dav ID",
+      "mbid": "9606c7c7-01f3-4b62-a414-6e7a2992e20c",
+      "mbName": "Dav ID",
+      "country": "BE",
+      "matchedBy": "unique-name",
+      "spotifyId": "5PqfCUO0VkJBLGE7BYccva",
+      "deezerId": 114525972,
+      "checkedAt": "2026-11-06T15:32:25.118Z"
     }
   },
   "attempted": {
@@ -743,10 +752,6 @@
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     },
-    "exxul": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "otis gibbs": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
@@ -756,6 +761,22 @@
       "reason": "not-found"
     },
     "rymden": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "any kind loma shearwater": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "azc de vlampijp x musicaz x db s viering": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "dav id": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "funk legacy allstars": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }
