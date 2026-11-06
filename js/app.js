@@ -1,8 +1,8 @@
 import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=venue-v1';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v2';
-import {resolveConcertImage} from './artist-images.js?v=identity-v1';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
+import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=identity-v2';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -15,7 +15,9 @@ let artistImages = {version:1,artists:{}};
 function withArtwork(event){
   if(!event)return event;
   const chosen=resolveConcertImage(event,artistImages);
-  return chosen.url&&!event.image?{...event,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})}:event;
+  if(chosen.url&&!event.image)return {...event,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})};
+  const backup=resolveConcertImageBackup(event,artistImages);
+  return backup?{...event,imageFallback:backup.url,imageFallbackKind:backup.kind,...(backup.credit?{imageFallbackCredit:backup.credit}:{})}:event;
 }
 let page = 'tonight';
 let collection = 'deciding';
@@ -145,10 +147,28 @@ function card(raw,scoreInfo=null,mode='discover') {
   const e=normalizeEvent(raw);if(!e)return null;
   const card=el('article','show'+(scoreInfo?.score>=100?' featured':''));
   const pic=safeUrl(e.image);
-  if(pic){const img=el('img','show-image');img.src=pic;img.loading='lazy';img.alt=`${e.artist} live event artwork`;img.addEventListener('error',()=>{img.replaceWith(el('div','show-art','♪'));},{once:true});card.append(img);
-    const credit=raw?.imageCredit,creditUrl=safeUrl(credit?.url);
-    if(typeof credit?.text==='string'&&credit.text.trim()){const c=el(creditUrl?'a':'span','show-credit',credit.text.slice(0,160));if(creditUrl){c.href=creditUrl;c.target='_blank';c.rel='noopener noreferrer';}card.append(c);}}
-  else card.append(el('div','show-art','♪'));
+  if(pic){
+    const img=el('img','show-image');img.src=pic;img.loading='lazy';img.alt=`${e.artist} artwork`;
+    let creditNode=null,usingFallback=false;
+    const setCredit=credit=>{
+      if(creditNode){creditNode.remove();creditNode=null;}
+      const url=safeUrl(credit?.url);
+      if(typeof credit?.text!=='string'||!credit.text.trim())return;
+      creditNode=el(url?'a':'span','show-credit',credit.text.slice(0,160));
+      if(url){creditNode.href=url;creditNode.target='_blank';creditNode.rel='noopener noreferrer';}
+      card.append(creditNode);
+    };
+    img.addEventListener('error',()=>{
+      const fallback=safeUrl(e.imageFallback);
+      if(!usingFallback&&fallback&&fallback!==pic){
+        usingFallback=true;img.src=fallback;img.alt=`${e.artist} artist photo`;
+        setCredit(e.imageFallbackCredit);return;
+      }
+      if(creditNode)creditNode.remove();
+      img.replaceWith(el('div','show-art','♪'));
+    });
+    card.append(img);setCredit(e.imageCredit);
+  }else card.append(el('div','show-art','♪'));
   const body=el('div','show-body');
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));
   if(scoreInfo?.reason)body.append(el('p','show-reason',scoreInfo.reason));
