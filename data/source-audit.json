@@ -1,39 +1,39 @@
 {
-  "catalogUpdatedAt": "2026-11-05T20:51:52.575Z",
-  "auditedFor": "2026-11-05",
-  "totalPublished": 1702,
-  "greekPublished": 396,
+  "catalogUpdatedAt": "2026-11-06T05:33:44.420Z",
+  "auditedFor": "2026-11-06",
+  "totalPublished": 1780,
+  "greekPublished": 389,
   "imageCoverage": {
-    "withImage": 383,
-    "withoutImage": 1319
+    "withImage": 375,
+    "withoutImage": 1405
   },
   "imageCoverageByCountry": {
-    "NL": {
-      "events": 1191,
-      "withImage": 8,
-      "withoutImage": 1183
-    },
     "GR": {
-      "events": 396,
-      "withImage": 375,
+      "events": 389,
+      "withImage": 368,
       "withoutImage": 21
     },
+    "NL": {
+      "events": 1278,
+      "withImage": 7,
+      "withoutImage": 1271
+    },
     "BE": {
-      "events": 115,
+      "events": 113,
       "withImage": 0,
-      "withoutImage": 115
+      "withoutImage": 113
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 26,
-      "withImage": 24,
+      "events": 25,
+      "withImage": 23,
       "withoutImage": 2,
-      "greekEvents": 26
+      "greekEvents": 25
     },
     "festivalinfo": {
-      "events": 16,
-      "withImage": 6,
+      "events": 15,
+      "withImage": 5,
       "withoutImage": 10,
       "greekEvents": 0
     },
@@ -50,27 +50,27 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 21
     },
     "more": {
-      "events": 288,
-      "withImage": 288,
+      "events": 282,
+      "withImage": 282,
       "withoutImage": 0,
-      "greekEvents": 288
+      "greekEvents": 282
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1245,
+      "events": 1231,
       "withImage": 0,
-      "withoutImage": 1245,
+      "withoutImage": 1231,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 37
     },
     "venue-official": {
-      "events": 43,
+      "events": 143,
       "withImage": 0,
-      "withoutImage": 43,
+      "withoutImage": 143,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 26,
-      "withImage": 24,
+      "published": 25,
+      "withImage": 23,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 30,
-      "withImage": 28,
+      "events": 29,
+      "withImage": 27,
       "sources": [
         "anclub-index",
         "more",
@@ -173,8 +173,8 @@
     },
     {
       "name": "Piraeus Club Academy",
-      "events": 13,
-      "withImage": 12,
+      "events": 14,
+      "withImage": 13,
       "sources": [
         "more",
         "rocking"
@@ -190,8 +190,8 @@
     },
     {
       "name": "Half Note Jazz Club",
-      "events": 11,
-      "withImage": 11,
+      "events": 10,
+      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -221,14 +221,6 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 7,
-      "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "gazarte roof stage",
       "events": 7,
       "withImage": 7,
@@ -240,14 +232,6 @@
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
       "events": 7,
       "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 6,
-      "withImage": 6,
       "sources": [
         "more"
       ]
@@ -269,6 +253,14 @@
       ]
     },
     {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "CHRISTMAS THEATER",
       "events": 6,
       "withImage": 6,
@@ -285,7 +277,7 @@
       ]
     },
     {
-      "name": "Stage7",
+      "name": "MIKRI SKINI - Mikri Skini",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -293,7 +285,7 @@
       ]
     },
     {
-      "name": "MIKRI SKINI - Mikri Skini",
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -317,7 +309,7 @@
       ]
     },
     {
-      "name": "Klakaz",
+      "name": "Γυαλινο Μουσικο Θεατρο",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -325,7 +317,7 @@
       ]
     },
     {
-      "name": "Γυαλινο Μουσικο Θεατρο",
+      "name": "Stage7",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -357,23 +349,15 @@
       ]
     },
     {
-      "name": "UNDERFLOW RECORD STORE",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κυτταρο Live",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Misirlou Live Stage",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -430,6 +414,22 @@
     },
     {
       "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Doors Live Art Athens",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "UNDERFLOW RECORD STORE",
       "events": 2,
       "withImage": 2,
       "sources": [
