@@ -16,6 +16,7 @@ on:
       - 'scripts/podiuminfo-images.mjs'
       - 'scripts/deezer-artist-images.mjs'
       - 'scripts/musicbrainz-identity.mjs'
+      - 'scripts/wikimedia-artist-photos.mjs'
       - 'scripts/rate-limit.mjs'
       - 'scripts/artist-image-overrides.mjs'
       - 'scripts/venue-sources/**'
@@ -79,6 +80,8 @@ jobs:
           DEEZER_ARTIST_IMAGE_TIME_MS: '240000'
           IDENTITY_LOOKUPS_PER_RUN: '120'
           IDENTITY_TIME_MS: '240000'
+          WIKIMEDIA_ARTISTS_PER_RUN: '25'
+          WIKIMEDIA_TIME_MS: '150000'
         id: catalog
         run: node scripts/fetch-events.mjs
       # Venue-first stage: official artwork + independent discovery. Runs even

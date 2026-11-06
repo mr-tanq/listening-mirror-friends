@@ -1,0 +1,25 @@
+name: Test licensed artist photos
+on:
+  pull_request:
+    paths:
+      - 'scripts/wikimedia-artist-photos.mjs'
+      - 'scripts/fetch-events.mjs'
+      - 'scripts/musicbrainz-identity.mjs'
+      - 'tests/wikimedia-artist-photos.test.mjs'
+      - '.github/workflows/test-wikimedia-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run all regression tests without contacting external sites
+        run: npm test
+      - name: Measure image coverage from cached data only
+        run: node scripts/audit-deciding-images.mjs
