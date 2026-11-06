@@ -329,6 +329,95 @@
       "deezerId": 5515551,
       "wikidata": "Q16199520",
       "checkedAt": "2026-11-06T07:34:21.517Z"
+    },
+    "black box revelation": {
+      "name": "Black Box Revelation",
+      "mbid": "45994334-1e7e-4fc2-a814-e069f28f59b3",
+      "mbName": "Black Box Revelation",
+      "country": "BE",
+      "disambiguation": "Belgian rock duo",
+      "matchedBy": "unique-name",
+      "spotifyId": "3wFP2UY6scUTvqgucLALQq",
+      "deezerId": 259138,
+      "wikidata": "Q1141537",
+      "checkedAt": "2026-11-06T09:13:10.958Z"
+    },
+    "happy mondays": {
+      "name": "Happy Mondays",
+      "mbid": "01f4fb92-6bf0-4de5-83dc-3fe194e763bf",
+      "mbName": "Happy Mondays",
+      "country": "GB",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://happymondays.bandcamp.com/",
+      "spotifyId": "339DNkQkuhHKEcHw6oK8f0",
+      "deezerId": 1310,
+      "homepage": "https://web.archive.org/web/20070502182433/http://www.happymondaysonline.com/",
+      "wikidata": "Q1141495",
+      "checkedAt": "2026-11-06T09:13:16.226Z"
+    },
+    "oscar lindsey": {
+      "name": "Oscar Lindsey",
+      "mbid": "6198dafd-9515-49a5-925c-1cb056d92ae4",
+      "mbName": "Oscar Lindsey",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-06T09:13:21.889Z"
+    },
+    "floor jansen": {
+      "name": "Floor Jansen",
+      "mbid": "1dc9f1ab-3748-46c5-ac64-4a1311680da5",
+      "mbName": "Floor Jansen",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "2ZNTJ9Bu9QMJwBboMSpQgJ",
+      "deezerId": 4966005,
+      "homepage": "https://www.floorjansen.com/",
+      "wikidata": "Q253259",
+      "checkedAt": "2026-11-06T09:13:25.828Z"
+    },
+    "mercy girl": {
+      "name": "Mercy Girl",
+      "mbid": "37e33566-9253-4be9-af04-07dfb64c43a9",
+      "mbName": "Mercy Girl",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://mercygirlband.bandcamp.com/",
+      "spotifyId": "1lwbviKaSPeuUgIqAgNpdn",
+      "deezerId": 294745001,
+      "homepage": "https://mercygirl.com/",
+      "checkedAt": "2026-11-06T09:13:28.083Z"
+    },
+    "the horse company": {
+      "name": "The Horse Company",
+      "mbid": "28ca3aae-f2d0-44cf-b943-aadcd1417d5c",
+      "mbName": "The Horse Company",
+      "country": "NL",
+      "disambiguation": "Dutch rock band",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://thehorsecompany.bandcamp.com/",
+      "checkedAt": "2026-11-06T09:13:33.380Z"
+    },
+    "dan english": {
+      "name": "Dan English",
+      "mbid": "5a265234-adf7-432e-8ca4-fa564fea2b0e",
+      "mbName": "Dan English",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://danenglish.bandcamp.com/",
+      "spotifyId": "055lipaCR86EoOxi2CsSBh",
+      "checkedAt": "2026-11-06T09:13:38.398Z"
+    },
+    "faithless": {
+      "name": "Faithless",
+      "mbid": "23d9d74d-c95e-46a6-be26-a6075c49747a",
+      "mbName": "Faithless",
+      "country": "GB",
+      "matchedBy": "unique-name",
+      "spotifyId": "5T4UKHhr4HGIC0VzdZQtAE",
+      "deezerId": 10,
+      "homepage": "https://www.faithless.co.uk/",
+      "wikidata": "Q542071",
+      "checkedAt": "2026-11-06T09:13:40.901Z"
     }
   },
   "attempted": {
@@ -501,6 +590,66 @@
       "reason": "not-found"
     },
     "tribute to the cats band": {
+      "retryAfter": "2026-11-08",
+      "reason": "HTTP 503"
+    },
+    "job dutchtuber billy the kit": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "80 s anders": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "elder": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "oscar lindsey": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "schoolconcert vo": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "lovelace": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "mercy girl": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "frankie stew harvey gunn": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "rudeboy x boskat": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "personal trainer": {
+      "retryAfter": "2026-12-21",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "2e84443c-dc23-4b65-922a-f96b8a73d602",
+        "f14448b3-4c5f-4193-9691-8881fc6935e5"
+      ]
+    },
+    "the horse company": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "back alley ritual": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "dan english": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "frank nick reunie": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }

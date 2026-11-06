@@ -1,11 +1,11 @@
 {
-  "catalogUpdatedAt": "2026-11-06T07:37:02.631Z",
+  "catalogUpdatedAt": "2026-11-06T09:16:32.753Z",
   "auditedFor": "2026-11-06",
-  "totalPublished": 1828,
+  "totalPublished": 1855,
   "greekPublished": 389,
   "imageCoverage": {
     "withImage": 375,
-    "withoutImage": 1453
+    "withoutImage": 1480
   },
   "imageCoverageByCountry": {
     "GR": {
@@ -14,9 +14,9 @@
       "withoutImage": 21
     },
     "NL": {
-      "events": 1326,
+      "events": 1353,
       "withImage": 7,
-      "withoutImage": 1319
+      "withoutImage": 1346
     },
     "BE": {
       "events": 113,
@@ -38,10 +38,10 @@
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 14,
-      "withImage": 14,
+      "events": 1,
+      "withImage": 1,
       "withoutImage": 0,
-      "greekEvents": 14
+      "greekEvents": 1
     },
     "fuzzclub-calendar": {
       "events": 5,
@@ -50,22 +50,22 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 21
     },
     "more": {
-      "events": 282,
-      "withImage": 282,
+      "events": 296,
+      "withImage": 296,
       "withoutImage": 0,
-      "greekEvents": 282
+      "greekEvents": 296
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
       "events": 1231,
@@ -74,27 +74,27 @@
       "greekEvents": 0
     },
     "rocking": {
-      "events": 37,
-      "withImage": 18,
+      "events": 36,
+      "withImage": 17,
       "withoutImage": 19,
-      "greekEvents": 37
+      "greekEvents": 36
     },
     "venue-official": {
-      "events": 191,
+      "events": 218,
       "withImage": 0,
-      "withoutImage": 191,
+      "withoutImage": 218,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 14,
-      "withImage": 14,
+      "published": 1,
+      "withImage": 1,
       "warning": null
     },
     "fuzzclub-calendar": {
@@ -164,20 +164,20 @@
       ]
     },
     {
-      "name": "Floyd Live Music Venue",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "floyd-calendar"
-      ]
-    },
-    {
       "name": "Piraeus Club Academy",
       "events": 14,
       "withImage": 13,
       "sources": [
         "more",
         "rocking"
+      ]
+    },
+    {
+      "name": "FLOYD",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -439,7 +439,7 @@
   ],
   "venueWarnings": {
     "gagarin": "",
-    "floyd": "",
+    "floyd": "The operation was aborted due to timeout",
     "fuzz": "",
     "anclub": ""
   },
