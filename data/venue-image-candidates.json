@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:14:14.275Z",
+  "generatedAt": "2026-11-06T13:14:15.154Z",
   "note": "Official artwork matched to catalogue concerts. Only venues with imageUse \"permitted\" are published.",
   "candidates": [
     {
@@ -47,6 +47,14 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/josiah-and-the-bonnevilles/2892085",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Josiah_Bonnevilles_Lead_Photo_by_Dan_Winters-1778536530.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-paard-2026-11-06-kaleidoscoop-geannuleerd",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/kaleidoscoop-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/Afbeelding-Met-Zwarte-Rand-Verwijderenheader.png?t=1793957767&t=1793957767",
       "confidence": 0.9,
       "published": false
     },
@@ -207,6 +215,22 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/ploegendienst/2771941",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Ploegendienst-6_By-Eva-Roefs-1785937200.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-07-sonische-reis",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/yoga-en-gong-07-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/5V7A1414kopie-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-07-the-dire-straits-experience-phil",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/05/1DSE-picture-by-Steven-Hendrix-scaled.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -387,6 +411,14 @@
       "published": false
     },
     {
+      "eventId": "podiuminfo-479840",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/amina/2904253",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Amina-website-1781554022.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-451009",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/125158/enter-shikari",
@@ -475,10 +507,26 @@
       "published": false
     },
     {
+      "eventId": "venue-patronaat-2026-11-13-90-s-now",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/90s-now-13-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Banner-Blauw--37.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-465385",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/clobber-uk/",
       "image": "https://bibelot.net/wp-content/uploads/2026/05/Clobber-Banner-9b0b.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-13-diggy-dex-phil",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/diggy-dex-phil-13-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/03/Persfoto-Diggy-Dex-%C2%A9Roger-Neve-scaled.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -515,10 +563,26 @@
       "published": false
     },
     {
+      "eventId": "venue-patronaat-2026-11-13-rift",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/rift-13-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/RIFT-Aftershock-Poster-FINAL-724x1024.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-450704",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/snelle-8/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/01/SNELLE_CLUBTOUR_2026_event.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-13-the-disko-club-night",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/vonk-13-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/Bazaart_20261016_053234_002.jpeg",
       "confidence": 0.9,
       "published": false
     },
@@ -615,6 +679,14 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/pina-14nov",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Website%20pina%20nov.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-14-popronde-2026",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/popronde-2027-14-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/20241103_Popronde_Zutphen_136_StatePower_Sfeer_JessieKamp_Socials-scaled.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -955,6 +1027,22 @@
       "published": false
     },
     {
+      "eventId": "venue-patronaat-2026-11-20-no-barrier",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/no-barrier-20-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2025/11/NBPubliekTotal-3.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-20-qmusic-the-party",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/qmusic-the-party-fout-20-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/20262027_FF_Square_Haarlem.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-448409",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/the-zac-schulze-gang-4/",
@@ -991,6 +1079,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/gruppo-sportivo-5/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-Gruppo-Sportivo.jpg?t=1789052238&t=1789052238",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-21-house-of-eden",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/house-of-eden-21-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/HOUSE-OF-EDEN-VERSIE-3-9x16-STILL.jpg.jpeg",
       "confidence": 0.9,
       "published": false
     },
@@ -1047,6 +1143,22 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/wies-21-11-26/",
       "image": "https://patronaat.nl/app/uploads/2026/04/WIES-Miksfiles-Staand-scaled.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-21-zer00s-heroes",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/zer00s-heroes-21-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/1080x1080-Zer00s-Patronaat-2111.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "podiuminfo-498088",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/artin-muziek-22-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/Artin-Muziek.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -1955,6 +2067,14 @@
       "published": false
     },
     {
+      "eventId": "venue-doornroosje-2026-12-12-freq",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/freq/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/FREQ-website-banner-black-1.png",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "podiuminfo-474177",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/froukje/2896660",
@@ -2135,6 +2255,14 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/city-of-the-sun/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/06/PRDps_Mailheader-CITY-OF-THE-SUN-.jpg?t=1791471544&t=1791471544",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-paradiso-2026-12-17-club-kids",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/vitreum-banner-verkleind.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -2599,6 +2727,14 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/effenaar-oud-nieuw-2026",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-09/Effenaar%20O%26N%20%E2%80%93%204-5%20met%20programma%20copy.jpg?itok=LBOHt6lw",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2026-12-31-parasol-nye",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/parasol-nye-5/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/teaser-banner-1920x1080-1.jpg",
       "confidence": 0.9,
       "published": false
     },
@@ -3807,6 +3943,14 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/tramhaus/2893793",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/R1-04116-0013.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
+      "eventId": "venue-doornroosje-2027-02-20-tribe",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/tribe-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/Web-foto-TRIBE-2-1088x630.jpg",
       "confidence": 0.9,
       "published": false
     },

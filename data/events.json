@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-06T12:10:52.727Z",
+  "updatedAt": "2026-11-06T13:10:54.356Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
-      "id": "anclub-2026-11-06-2nd%20greek%20dungeon%20synth%20festival",
+      "id": "more-9b5ef023d55cd886",
       "artist": "2nd Greek Dungeon Synth Festival",
       "artists": [
         "2nd Greek Dungeon Synth Festival"
@@ -395,7 +395,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paard.nl/event/kaleidoscoop-4/"
+      "officialUrl": "https://www.paard.nl/event/kaleidoscoop-4/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "festivalinfo-37321",
@@ -1822,7 +1827,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/yoga-en-gong-07-11-26/"
+      "officialUrl": "https://patronaat.nl/event/yoga-en-gong-07-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-453795",
@@ -1874,7 +1884,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/"
+      "officialUrl": "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-480517",
@@ -2498,7 +2513,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
+      "id": "more-de5fbba78a1374bb",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -3342,7 +3357,13 @@
       "url": "https://www.podiuminfo.nl/concert/479840/Amina/Paradiso/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/amina/2904253",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474207",
@@ -4474,7 +4495,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/90s-now-13-11-26/"
+      "officialUrl": "https://patronaat.nl/event/90s-now-13-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-39b48f7b132e5733",
@@ -4652,7 +4678,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/diggy-dex-phil-13-11-26/"
+      "officialUrl": "https://patronaat.nl/event/diggy-dex-phil-13-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "floyd-2026-11-13-dire%20straits%20legacy",
@@ -5021,7 +5052,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/rift-13-11-26/"
+      "officialUrl": "https://patronaat.nl/event/rift-13-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-495898",
@@ -5148,7 +5184,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/vonk-13-11-26/"
+      "officialUrl": "https://patronaat.nl/event/vonk-13-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "venue-013-2026-11-13-the-soulful-sessions",
@@ -6151,7 +6192,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/popronde-2027-14-11-26/"
+      "officialUrl": "https://patronaat.nl/event/popronde-2027-14-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-498858",
@@ -9326,7 +9372,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/no-barrier-20-11-26/"
+      "officialUrl": "https://patronaat.nl/event/no-barrier-20-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "festivalinfo-36610",
@@ -9496,7 +9547,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/qmusic-the-party-fout-20-11-26/"
+      "officialUrl": "https://patronaat.nl/event/qmusic-the-party-fout-20-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "festivalinfo-36166",
@@ -10162,7 +10218,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://patronaat.nl/event/house-of-eden-21-11-26/",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "more-5305721fc130d6e7",
@@ -10621,7 +10682,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/zer00s-heroes-21-11-26/"
+      "officialUrl": "https://patronaat.nl/event/zer00s-heroes-21-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-458164",
@@ -10775,7 +10841,13 @@
       "url": "https://www.podiuminfo.nl/concert/498088/Artin-Muziek-Friends/Patronaat/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://patronaat.nl/event/artin-muziek-22-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-467620",
@@ -12868,6 +12940,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-patronaat-2026-11-27-fuck-the-cistem",
+      "artist": "FUCK THE CISTEM",
+      "artists": [
+        "FUCK THE CISTEM"
+      ],
+      "date": "2026-11-27",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/fuck-the-cistem-27-11-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/fuck-the-cistem-27-11-26/"
+    },
+    {
       "id": "podiuminfo-496465",
       "artist": "GPLR 2026: voorronde #3",
       "artists": [
@@ -14555,7 +14645,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "fuzzclub-2026-11-29-nile",
+      "id": "more-0d87290e89a45107",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -17856,7 +17946,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/451341/Eluveitie/TivoliVredenburg/",
       "image": "",
@@ -17930,7 +18020,7 @@
       "venue": "Ziggo Dome",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "R&B / Soul",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/474719/Kehlani/Ziggo-Dome/",
       "image": "",
@@ -17947,7 +18037,7 @@
       "venue": "Botanique",
       "city": "Brussels",
       "country": "BE",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/479902/Kevin-Atwater/Botanique/",
       "image": "",
@@ -17981,7 +18071,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/497817/Ledbyher/Paradiso/",
       "image": "",
@@ -18004,7 +18094,7 @@
       "venue": "dB's",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Country",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/496137/Lovesick-Duo/dBs/",
       "image": "",
@@ -18160,7 +18250,7 @@
       "venue": "Hall Of Fame",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Folk",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/460602/The-Scratch-DUG/Hall-Of-Fame/",
       "image": "",
@@ -18194,7 +18284,7 @@
       "venue": "Botanique",
       "city": "Brussels",
       "country": "BE",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/486855/White-Corbeau/Botanique/",
       "image": "",
@@ -18377,7 +18467,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/494427/Lelo/Paradiso/",
       "image": "",
@@ -18394,7 +18484,7 @@
       "venue": "Ziggo Dome",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/477203/Phoebe-Bridgers/Ziggo-Dome/",
       "image": "",
@@ -18411,7 +18501,7 @@
       "venue": "013",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/484045/Queensryche/013/",
       "image": "",
@@ -18509,7 +18599,7 @@
       "venue": "Doornroosje",
       "city": "Nijmegen",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/479464/Belle-and-Sebastian/Doornroosje/",
       "image": "",
@@ -18589,7 +18679,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Folk / Country",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/472453/Goodnight-Texas/TivoliVredenburg/",
       "image": "",
@@ -18640,7 +18730,7 @@
       "venue": "AFAS Live",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/479878/Polyphia/AFAS-Live/",
       "image": "",
@@ -19007,7 +19097,7 @@
       "venue": "Botanique",
       "city": "Brussels",
       "country": "BE",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/489501/Sofie-Royer/Botanique/",
       "image": "",
@@ -19041,7 +19131,7 @@
       "venue": "Paard",
       "city": "Den Haag",
       "country": "NL",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/498466/Thor-Kissing/Paard/",
       "image": "",
@@ -19417,7 +19507,7 @@
       "venue": "Melkweg",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/464790/Letz-Zep/Melkweg/",
       "image": "",
@@ -19474,7 +19564,7 @@
       "venue": "Bibelot",
       "city": "Dordrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/465732/Peter-The-Test-Tube-Babies/Bibelot/",
       "image": "",
@@ -19514,7 +19604,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/492472/Saam-Sultan/Paradiso/",
       "image": "",
@@ -19571,7 +19661,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/500390/Standing-on-the-Corner/Paradiso/",
       "image": "",
@@ -20105,6 +20195,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-patronaat-2026-12-11-only10s",
+      "artist": "Only10s",
+      "artists": [
+        "Only10s"
+      ],
+      "date": "2026-12-11",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/only10s-11-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/only10s-11-12-26/"
+    },
+    {
       "id": "podiuminfo-474197",
       "artist": "Prins S. en De Geit",
       "artists": [
@@ -20492,7 +20600,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/freq/"
+      "officialUrl": "https://www.doornroosje.nl/event/freq/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-474177",
@@ -20950,6 +21063,24 @@
       "image": "https://www.more.com/getattachment/9D283C3E-9EF2-4A68-A747-B4C53D32BB7C/evg_vodkajuniorsliveinathensf_1234_2006.png",
       "source": "gagarin-calendar",
       "verification": "venue-calendar"
+    },
+    {
+      "id": "venue-patronaat-2026-12-12-yuna-xl",
+      "artist": "YUNA XL",
+      "artists": [
+        "YUNA XL"
+      ],
+      "date": "2026-12-12",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/yuna-xl-12-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/yuna-xl-12-12-26/"
     },
     {
       "id": "more-dd02443a875e6650",
@@ -21978,13 +22109,19 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721",
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721"
+      "officialUrl": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-500080",
@@ -22320,6 +22457,24 @@
       "image": "https://www.more.com/getattachment/A5CDB5C2-7FF4-4E2B-9C29-98DD91163124/evg_12ospithekoslivestoerakle_2049_4594.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-patronaat-2026-12-18-80-s-verantwoord",
+      "artist": "80's Verantwoord",
+      "artists": [
+        "80's Verantwoord"
+      ],
+      "date": "2026-12-18",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/80s-verantwoord-kersteditie-18-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/80s-verantwoord-kersteditie-18-12-26/"
     },
     {
       "id": "podiuminfo-451717",
@@ -23148,6 +23303,24 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-patronaat-2026-12-19-housequake",
+      "artist": "Housequake",
+      "artists": [
+        "Housequake"
+      ],
+      "date": "2026-12-19",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/housequake-19-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/housequake-19-12-26/"
+    },
+    {
       "id": "more-59c33c1dd5f58bc7",
       "artist": "JAMESON CONNECTS \\ GOD IS AN ASTRONAUT",
       "artists": [
@@ -23879,6 +24052,23 @@
       }
     },
     {
+      "id": "more-8c00e131131bab77",
+      "artist": "ΣΟΦΙΑ ΜΑΝΟΥΣΑΚΗ - GAZARTE",
+      "artists": [
+        "ΣΟΦΙΑ ΜΑΝΟΥΣΑΚΗ - GAZARTE"
+      ],
+      "date": "2026-12-22",
+      "venue": "gazarte roof stage",
+      "city": "Gazi",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/sofia-manousaki-gazarte-christmas/",
+      "image": "https://www.more.com/getattachment/42DCC97F-A275-4CF7-BCEF-AB02697FC298/evg_sophiamanousake-gazarte_1246_5567.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-449578",
       "artist": "Clean Pete's Kerstshow",
       "artists": [
@@ -24296,7 +24486,7 @@
       "venue": "013",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.013.nl/programma/161543/de-feestfabriek",
       "image": "",
@@ -24307,7 +24497,8 @@
         "venue": "013",
         "confidence": 0.9,
         "via": "json-ld"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-483161",
@@ -24394,6 +24585,24 @@
         "confidence": 0.9,
         "via": "url-date+opengraph"
       }
+    },
+    {
+      "id": "venue-patronaat-2026-12-27-patro-quiz-eindejaarseditie",
+      "artist": "Patro Quiz Eindejaarseditie",
+      "artists": [
+        "Patro Quiz Eindejaarseditie"
+      ],
+      "date": "2026-12-27",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/patro-quiz-kersteditie-27-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/patro-quiz-kersteditie-27-12-26/"
     },
     {
       "id": "podiuminfo-450988",
@@ -24868,7 +25077,30 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/parasol-nye-5/"
+      "officialUrl": "https://www.doornroosje.nl/event/parasol-nye-5/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-patronaat-2026-12-31-patronaatje-tot-t-gaatje",
+      "artist": "Patronaatje tot t' Gaatje",
+      "artists": [
+        "Patronaatje tot t' Gaatje"
+      ],
+      "date": "2026-12-31",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/patronaatje-tot-t-gaatje-31-12-26/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/patronaatje-tot-t-gaatje-31-12-26/"
     },
     {
       "id": "venue-013-2026-12-31-plan-de-champagne",
@@ -24956,6 +25188,24 @@
       "image": "https://www.more.com/getattachment/36F1EB5E-2AD5-47A6-A0D8-BBF72E9CE1C8/evg_sundromessezon2026-2027_1644_2340.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-patronaat-2027-01-01-nieuwjaarsgala",
+      "artist": "Nieuwjaarsgala",
+      "artists": [
+        "Nieuwjaarsgala"
+      ],
+      "date": "2027-01-01",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/nieuwjaarsgala-01-01-27/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/nieuwjaarsgala-01-01-27/"
     },
     {
       "id": "more-775b1b2318ea2468",
@@ -26178,6 +26428,24 @@
       }
     },
     {
+      "id": "venue-patronaat-2027-01-13-rob-lamberti-presents-a-celebration-of-george-michael-phil",
+      "artist": "Rob Lamberti presents A Celebration of George Michael • PHIL",
+      "artists": [
+        "Rob Lamberti presents A Celebration of George Michael • PHIL"
+      ],
+      "date": "2027-01-13",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/rob-lamberti-presents-a-celebration-of-george-michael-13-01-27/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/rob-lamberti-presents-a-celebration-of-george-michael-13-01-27/"
+    },
+    {
       "id": "podiuminfo-496023",
       "artist": "W1 Cafe: Music by Rosa",
       "artists": [
@@ -26700,6 +26968,24 @@
       "image": "https://www.more.com/getattachment/843302ED-A7A9-482F-B398-ACA1E032AC4B/evg_tunnel2manydjschloerobins_1716_3092.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-patronaat-2027-01-16-vroegzat",
+      "artist": "VroegZat",
+      "artists": [
+        "VroegZat"
+      ],
+      "date": "2027-01-16",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/vroegzat-16-01-27/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/vroegzat-16-01-27/"
     },
     {
       "id": "podiuminfo-501538",
@@ -27405,6 +27691,24 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-patronaat-2027-01-21-stonergrungefest",
+      "artist": "StonerGrungeFest",
+      "artists": [
+        "StonerGrungeFest"
+      ],
+      "date": "2027-01-21",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/stonergrungefest-met-22ad-baardvader-sustain-21-01-27/",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/stonergrungefest-met-22ad-baardvader-sustain-21-01-27/"
     },
     {
       "id": "podiuminfo-468526",
@@ -33121,7 +33425,12 @@
       "image": "",
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/tribe-2/"
+      "officialUrl": "https://www.doornroosje.nl/event/tribe-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-19d301f7c69219c9",
@@ -35345,8 +35654,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
-      "artist": "IGORRR",
+      "id": "more-20a9413358deac99",
+      "artist": "Igorrr",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -35358,11 +35667,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "",
+      "subgenre": "Avant-Garde Metal",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -35406,7 +35715,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-03-20-u%20k%20subs",
+      "id": "more-9256f6cbb9511c7d",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -36460,7 +36769,7 @@
       }
     },
     {
-      "id": "anclub-2027-04-10-oh%20hiroshima",
+      "id": "more-98f8e3f69d11b04a",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -36573,17 +36882,17 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 392,
+    "greeceEvents": 393,
     "greeceFeedError": "",
     "rockingEvents": 37,
     "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1231,
     "festivalEvents": 16,
-    "officialVenueEvents": 6,
+    "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 46,
+    "sameVenueDuplicatesMerged": 51,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -36592,53 +36901,53 @@
       "requests": 45,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 427,
+      "skippedBlocked": 472,
       "eligible": 1231,
       "remainingWithoutImage": 1231
     },
     "artistPhotoCache": {
-      "artists": 575,
+      "artists": 586,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 746,
-        "requests": 23,
-        "found": 5,
-        "notFound": 5,
-        "ambiguous": 5,
-        "coverRejected": 3,
+        "candidates": 743,
+        "requests": 15,
+        "found": 0,
+        "notFound": 11,
+        "ambiguous": 3,
+        "coverRejected": 1,
         "errors": 0,
-        "skipped": 731,
-        "photos": 565
+        "skipped": 729,
+        "photos": 575
       },
       "identity": {
-        "candidates": 741,
-        "processed": 23,
-        "identified": 9,
-        "ambiguous": 2,
-        "notFound": 11,
+        "candidates": 743,
+        "processed": 1,
+        "identified": 0,
+        "ambiguous": 0,
+        "notFound": 0,
         "commons": 0,
-        "deezerLinked": 4,
+        "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 735,
+        "candidates": 724,
         "attempted": 25,
-        "found": 6,
-        "noMatch": 18,
+        "found": 11,
+        "noMatch": 9,
         "ambiguous": 0,
-        "licenceRejected": 1,
+        "licenceRejected": 5,
         "errors": 0,
-        "depictsQueries": 11,
+        "depictsQueries": 18,
         "depictsFound": 0,
-        "categoryQueries": 7,
+        "categoryQueries": 12,
         "categoryFound": 0,
-        "linkedDeezerChecks": 11,
-        "linkedDeezerFound": 6
+        "linkedDeezerChecks": 18,
+        "linkedDeezerFound": 11
       }
     },
-    "gagarinCalendarEvents": 22,
+    "gagarinCalendarEvents": 21,
     "gagarinPosterEnriched": 6,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -36652,17 +36961,17 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 619,
-    "taggedArtists": 611,
+    "genreTaggedEvents": 639,
+    "taggedArtists": 632,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-06T12:14:14.275Z",
-    "catalogueEvents": 1877,
-    "officialMatches": 603,
+    "updatedAt": "2026-11-06T13:14:15.154Z",
+    "catalogueEvents": 1894,
+    "officialMatches": 621,
     "imagesPublished": 0,
-    "imageCandidatesPending": 603,
-    "discoveredEvents": 16,
+    "imageCandidatesPending": 621,
+    "discoveredEvents": 11,
     "venueEventsRemoved": {
       "duplicate": 0,
       "policy": 0,
@@ -36671,9 +36980,9 @@
       "gone": 0,
       "nonConcert": 0
     },
-    "venueEventsPublished": 253,
+    "venueEventsPublished": 264,
     "venueGenresFromCache": 0,
-    "venueGenresTagged": 33,
+    "venueGenresTagged": 35,
     "venueGenreLookups": 12
   }
 }

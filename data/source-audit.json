@@ -1,22 +1,22 @@
 {
-  "catalogUpdatedAt": "2026-11-06T12:10:52.727Z",
+  "catalogUpdatedAt": "2026-11-06T13:10:54.356Z",
   "auditedFor": "2026-11-06",
-  "totalPublished": 1877,
-  "greekPublished": 392,
+  "totalPublished": 1894,
+  "greekPublished": 393,
   "imageCoverage": {
-    "withImage": 378,
-    "withoutImage": 1499
+    "withImage": 379,
+    "withoutImage": 1515
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 392,
-      "withImage": 371,
+      "events": 393,
+      "withImage": 372,
       "withoutImage": 21
     },
     "NL": {
-      "events": 1372,
+      "events": 1388,
       "withImage": 7,
-      "withoutImage": 1365
+      "withoutImage": 1381
     },
     "BE": {
       "events": 113,
@@ -50,22 +50,22 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 21
     },
     "more": {
-      "events": 284,
-      "withImage": 284,
+      "events": 285,
+      "withImage": 285,
       "withoutImage": 0,
-      "greekEvents": 284
+      "greekEvents": 285
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
       "events": 1231,
@@ -80,16 +80,16 @@
       "greekEvents": 37
     },
     "venue-official": {
-      "events": 237,
+      "events": 253,
       "withImage": 0,
-      "withoutImage": 237,
+      "withoutImage": 253,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -222,8 +222,8 @@
     },
     {
       "name": "gazarte roof stage",
-      "events": 7,
-      "withImage": 7,
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]

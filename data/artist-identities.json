@@ -842,6 +842,10 @@
     "celestial season": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
+    },
+    "no barrier": {
+      "retryAfter": "2026-11-08",
+      "reason": "HTTP 503"
     }
   }
 }
