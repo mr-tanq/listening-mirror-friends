@@ -1,4 +1,4 @@
-import {safeUrl,norm} from './model.js?v=venue-v1';
+import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
 
 const el=(tag,cls,text)=>{
   const n=document.createElement(tag);if(cls)n.className=cls;
@@ -45,8 +45,25 @@ export function openConcertDetail(event={},reason=''){
     actionButton('×','deciding-close',()=>dialog.close()));
   inner.append(top,el('h2','deciding-detail-name',event.artist||'Concert'));
   const poster=safeUrl(event.image);
-  if(poster){const img=el('img','deciding-detail-image');img.src=poster;img.alt='Event artwork';img.loading='lazy';inner.append(img);
-    const credit=imageCredit(event);if(credit)inner.append(credit);}
+  if(poster){
+    const img=el('img','deciding-detail-image');img.src=poster;img.alt='Event artwork';img.loading='lazy';inner.append(img);
+    let credit=null,usingFallback=false;
+    const setCredit=value=>{
+      if(credit)credit.remove();
+      credit=imageCredit({imageCredit:value});
+      if(credit)img.after(credit);
+    };
+    img.addEventListener('error',()=>{
+      const backup=safeUrl(event.imageFallback);
+      if(!usingFallback&&backup&&backup!==poster){
+        usingFallback=true;img.src=backup;img.alt=event.artist+' artist photo';
+        setCredit(event.imageFallbackCredit);return;
+      }
+      if(credit)credit.remove();
+      img.remove();
+    });
+    setCredit(event.imageCredit);
+  }
   const facts=el('dl','deciding-facts');
   for(const [title,value] of explainConcert(event,reason)){
     const item=el('div','deciding-fact');item.append(el('dt','',title),el('dd','',value));facts.append(item);
@@ -102,10 +119,23 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
   if(url){
     const img=el('img','deck-poster');img.src=url;img.alt=event.artist+' artwork';
     img.loading='eager';
-    img.addEventListener('error',()=>{img.remove();image.classList.add('no-image');},{once:true});
     image.append(img);
-    const credit=imageCredit(event);
-    if(credit){img.addEventListener('error',()=>credit.remove(),{once:true});image.append(credit);}
+    let credit=null,usingFallback=false;
+    const setCredit=value=>{
+      if(credit)credit.remove();
+      credit=imageCredit({imageCredit:value});
+      if(credit)image.append(credit);
+    };
+    img.addEventListener('error',()=>{
+      const backup=safeUrl(event.imageFallback);
+      if(!usingFallback&&backup&&backup!==url){
+        usingFallback=true;img.src=backup;img.alt=event.artist+' artist photo';
+        setCredit(event.imageFallbackCredit);return;
+      }
+      if(credit)credit.remove();
+      img.remove();image.classList.add('no-image');
+    });
+    setCredit(event.imageCredit);
   }else image.classList.add('no-image');
   image.append(el('span','deck-counter','01 / '+String(remaining).padStart(2,'0')));
   const indicators=el('div','deck-indicators');

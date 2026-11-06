@@ -31,10 +31,21 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
  for(const event of events||[]){
   if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today||event.image)continue;
   if(artistImageFor(event,artistCache))continue;
-  headlinerNames(event).filter(goodName).forEach((name,rank)=>{
+  const variants=headlinerNames(event).filter(goodName);
+  // Prefer an already-derived, clean headliner over a composite event title
+  // ("Artist - tour", "Artist: album"). Keep full names as fallbacks.
+  // A short generic fragment such as "Fun" is not trustworthy enough.
+  const hasSubtitle=/(?:\s[-–—|]\s|:\s)/.test(String(event.artist||''));
+  const originalKey=artistKey((event.artists||[])[0]||event.artist);
+  const derived=hasSubtitle?variants.find(name=>{
    const key=artistKey(name);
-   const row=all.get(key)||{name,key,count:0,rank,nextDate:event.date,country:event.country,genre:event.genre||''};
-   row.count++;row.rank=Math.min(row.rank,rank);
+   return key!==originalKey&&key.length>=4&&!/^(?:live|band|fun|music|night|show|concert|tour)$/.test(key);
+  }):null;
+  variants.forEach((name,rank)=>{
+   const key=artistKey(name);
+   const priority=derived?(name===derived?0:rank+1):rank;
+   const row=all.get(key)||{name,key,count:0,rank:priority,nextDate:event.date,country:event.country,genre:event.genre||''};
+   row.count++;row.rank=Math.min(row.rank,priority);
    if(event.date<row.nextDate)row.nextDate=event.date;
    all.set(key,row);
   });

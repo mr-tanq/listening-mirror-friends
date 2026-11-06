@@ -79,6 +79,8 @@ export function normalizeEvent(input){
   const genreEvidence=genreFromFeed?'metadata':titleHints.length?'title-cue':'';
   return {id,artist,artists,date,endDate:String(input.endDate||'').slice(0,10),time:String(input.time||input.startTime||'').slice(0,25),venue:String(input.venue||'').slice(0,150),city:String(input.city||'').slice(0,120),country:String(input.country||'').toUpperCase().slice(0,2),genre,genreEvidence:input.genreEvidence||genreEvidence,subgenre:String(input.subgenre||'').slice(0,100),url:safeUrl(input.url)||'',ticketUrl:safeUrl(input.ticketUrl)||'',image:safeUrl(input.image)||'',source:String(input.source||'manual').slice(0,60),verification:String(input.verification||'').slice(0,50),
     officialUrl:safeUrl(input.officialUrl)||'',imageKind:String(input.imageKind||'').slice(0,20),imageSource:String(input.imageSource||'').slice(0,40),
+     imageFallback:safeUrl(input.imageFallback)||'',imageFallbackKind:String(input.imageFallbackKind||'').slice(0,20),
+     imageFallbackCredit:input.imageFallbackCredit&&typeof input.imageFallbackCredit.text==='string'?{text:input.imageFallbackCredit.text.slice(0,160),url:safeUrl(input.imageFallbackCredit.url)||''}:undefined,
     imageCredit:input.imageCredit&&typeof input.imageCredit.text==='string'?{text:input.imageCredit.text.slice(0,160),url:safeUrl(input.imageCredit.url)||''}:undefined};
 }
 function artistMatch(event,wanted) {
