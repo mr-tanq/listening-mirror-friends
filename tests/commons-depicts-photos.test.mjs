@@ -76,7 +76,7 @@ test('uses Commons depicts photo when the Wikidata P18 is non-free',async()=>{
  assert.ok(seen.some(x=>x.includes('generator=search')));
 });
 
-test('previously rejected P18 records get one new chance, not repeated every run',async()=>{
+test('previously rejected P18 records get one new P180/category chance, not repeated every run',async()=>{
  const old={artists:{},wikimediaAttempted:{'moreish idols':{retryAfter:'2027-01-01',reason:'photo-license-or-size-rejected'}}};
  let calls=0;
  const fetcher=async url=>{
@@ -89,7 +89,7 @@ test('previously rejected P18 records get one new chance, not repeated every run
  const r=await enrichWikimediaArtistPhotos([event],old,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(r.stats.attempted,1);
  assert.equal(r.stats.depictsQueries,1);
- assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,2);
+ assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,3);
  const previously=calls;
  const retry=await enrichWikimediaArtistPhotos([event],r.cache,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(retry.stats.attempted,0);
