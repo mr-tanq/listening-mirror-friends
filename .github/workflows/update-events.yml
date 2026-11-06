@@ -17,6 +17,7 @@ on:
       - 'scripts/deezer-artist-images.mjs'
       - 'scripts/musicbrainz-identity.mjs'
       - 'scripts/wikimedia-artist-photos.mjs'
+      - 'scripts/commons-depicts-photos.mjs'
       - 'scripts/rate-limit.mjs'
       - 'scripts/artist-image-overrides.mjs'
       - 'scripts/venue-sources/**'
