@@ -162,7 +162,10 @@ export function enrichCatalogue(events,adapters,cache,policy,{today}){
   s.catalogue++;
   const imageUse=policy?.venues?.[adapter.id]?.imageUse||'pending';
   // Revoking an image mode also removes previously published official art.
-  const clean=(imageUse==='permitted'||imageUse==='direct-link')?event:removeOfficialArtwork(event);
+  // Recheck every source-linked photo against the official show each run:
+  // never preserve an old URL when the page or match disappears.
+  const clean=event.imageSource==='venue-official-direct-link'||
+   !['permitted','direct-link'].includes(imageUse)?removeOfficialArtwork(event):event;
   const {match,confidence,reason}=bestOfficialMatch(clean,officialEventsOf(cache.venues?.[adapter.id],today),adapter);
   if(!match){if(reason==='ambiguous')s.ambiguous++;return clean;}
   s.matched++;
