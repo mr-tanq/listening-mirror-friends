@@ -14,10 +14,13 @@ let artistTags = {artists:{}};
 let artistImages = {version:1,artists:{}};
 function withArtwork(event){
   if(!event)return event;
-  const chosen=resolveConcertImage(event,artistImages);
-  if(chosen.url&&!event.image)return {...event,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})};
-  const backup=resolveConcertImageBackup(event,artistImages);
-  return backup?{...event,imageFallback:backup.url,imageFallbackKind:backup.kind,...(backup.credit?{imageFallbackCredit:backup.credit}:{})}:event;
+  // Recompute the backup from the current verified cache. Never keep a stale
+  // photo in a previously saved card after it has been blocked by review.
+  const {imageFallback:_oldFallback,imageFallbackKind:_oldKind,imageFallbackCredit:_oldCredit,...base}=event;
+  const chosen=resolveConcertImage(base,artistImages);
+  if(chosen.url&&!base.image)return {...base,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})};
+  const backup=resolveConcertImageBackup(base,artistImages);
+  return backup?{...base,imageFallback:backup.url,imageFallbackKind:backup.kind,...(backup.credit?{imageFallbackCredit:backup.credit}:{})}:base;
 }
 let page = 'tonight';
 let collection = 'deciding';
