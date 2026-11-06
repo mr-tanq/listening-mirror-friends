@@ -1,4 +1,4 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=venue-v1';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=photo-recovery-v1';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
