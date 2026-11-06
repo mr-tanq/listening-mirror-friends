@@ -18,7 +18,7 @@ import {imageFileFromWikidata,commonsPhotoFromImageInfo,THUMB_WIDTH,USER_AGENT} 
 import {isoDays} from './rate-limit.mjs';
 
 const MUSIC_CLASSES=new Set(['Q215380','Q2088357','Q5741069']);
-const MUSIC_JOBS=new Set(['Q177220','Q639669','Q36834','Q488205','Q49757','Q2405480']);
+const MUSIC_JOBS=new Set(['Q177220','Q639669','Q36834','Q488205','Q753110']);
 const MUSIC_DESC=/\b(?:singer|songwriter|musician|rapper|disc jockey|dj|composer|vocalist|guitarist|bassist|pianist|drummer|violinist|saxophonist|band|orchestra|music group|musical group|musical ensemble|recording artist|singer songwriter|music producer|music duo|choir)\b/i;
 const claimStrings=(entity,property)=>[...(entity?.claims?.[property]||[])]
  .filter(claim=>claim?.rank!=='deprecated')
