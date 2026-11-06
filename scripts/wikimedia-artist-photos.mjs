@@ -17,6 +17,7 @@ import {selectArtistCandidates} from './deezer-artist-images.mjs';
 import {imageFileFromWikidata,commonsPhotoFromImageInfo,THUMB_WIDTH,USER_AGENT} from './musicbrainz-identity.mjs';
 import {isoDays} from './rate-limit.mjs';
 import {commonsDepictsUrl,selectLicensedDepictsPhoto} from './commons-depicts-photos.mjs';
+import {linkedArtistCategory,commonsArtistCategoryUrl,selectLicensedCategoryPhoto} from './commons-category-photos.mjs';
 
 const MUSIC_CLASSES=new Set(['Q215380','Q2088357','Q5741069']);
 const MUSIC_JOBS=new Set(['Q177220','Q639669','Q36834','Q488205','Q753110']);
@@ -72,7 +73,7 @@ async function getJson(fetcher,url){
 const WIKIDATA='https://www.wikidata.org/w/api.php';
 const COMMONS='https://commons.wikimedia.org/w/api.php';
 const searchUrl=name=>WIKIDATA+'?action=wbsearchentities&format=json&type=item&language=en&limit=15&search='+encodeURIComponent(name);
-const entityUrl=ids=>WIKIDATA+'?action=wbgetentities&format=json&props=claims|labels|aliases|descriptions&languages=en&ids='+encodeURIComponent(ids.join('|'));
+const entityUrl=ids=>WIKIDATA+'?action=wbgetentities&format=json&props=claims|labels|aliases|descriptions|sitelinks&sitefilter=commonswiki&languages=en&ids='+encodeURIComponent(ids.join('|'));
 const commonsUrl=file=>COMMONS+'?action=query&format=json&prop=imageinfo&iiprop=url|size|mime|extmetadata'+
  '&iiextmetadatafilter=LicenseShortName|LicenseUrl|Artist|AttributionRequired&iiurlwidth='+THUMB_WIDTH+
  '&titles='+encodeURIComponent('File:'+file);
@@ -84,7 +85,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -95,7 +96,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
  const candidates=selectArtistCandidates(events,result,{today})
   // Older attempts used only Wikidata P18. Retry them once with the
   // new verified P180 route, then respect the normal persistent backoff.
-  .filter(item=>!(result.wikimediaAttempted[item.key]?.strategyVersion===2&&result.wikimediaAttempted[item.key]?.retryAfter>today))
+  .filter(item=>!(result.wikimediaAttempted[item.key]?.strategyVersion===3&&result.wikimediaAttempted[item.key]?.retryAfter>today))
   .sort((a,b)=>{
    const evidence=item=>Array.isArray(artistTags?.artists?.[item.key]?.genres)&&artistTags.artists[item.key].genres.length?1:0;
    const byEvidence=evidence(b)-evidence(a);
@@ -132,6 +133,15 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
     photo=selectLicensedDepictsPhoto(matches,confirmed.id);
     if(photo){method='wikidata-exact-commons-depicts';stats.depictsFound++;}
    }
+   if(!photo&&confirmed){
+    const category=linkedArtistCategory(confirmed);
+    if(category){
+     stats.categoryQueries++;
+     const matches=await fetchSlow(commonsArtistCategoryUrl(category),950);
+     photo=selectLicensedCategoryPhoto(matches,item.name,confirmed.id);
+     if(photo){method='wikidata-linked-artist-category';stats.categoryFound++;}
+    }
+   }
    if(photo&&confirmed){
     result.artists[item.key]={
      name:item.name,image:photo.image,source:'wikimedia-commons',kind:'artist-photo',
@@ -148,7 +158,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    if(verdict.reason==='ambiguous-musical-identity')stats.ambiguous++;
    else if(verdict.reason==='photo-license-or-size-rejected')stats.licenceRejected++;
    else stats.noMatch++;
-   result.wikimediaAttempted[item.key]={strategyVersion:2,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
+   result.wikimediaAttempted[item.key]={strategyVersion:3,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
   }catch(error){
    stats.errors++;
    result.wikimediaAttempted[item.key]={strategyVersion:2,retryAfter:isoDays(today,error.code==='RATE_LIMIT'?2:5),

@@ -18,6 +18,7 @@ on:
       - 'scripts/musicbrainz-identity.mjs'
       - 'scripts/wikimedia-artist-photos.mjs'
       - 'scripts/commons-depicts-photos.mjs'
+      - 'scripts/commons-category-photos.mjs'
       - 'scripts/rate-limit.mjs'
       - 'scripts/artist-image-overrides.mjs'
       - 'scripts/venue-sources/**'

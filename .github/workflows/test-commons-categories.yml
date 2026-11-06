@@ -1,0 +1,24 @@
+name: Test artist category photo matching
+on:
+  pull_request:
+    paths:
+      - 'scripts/commons-category-photos.mjs'
+      - 'scripts/wikimedia-artist-photos.mjs'
+      - 'tests/commons-category-photos.test.mjs'
+      - '.github/workflows/test-commons-categories.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Full offline regression suite
+        run: npm test
+      - name: Verify baseline image counts offline
+        run: node scripts/audit-deciding-images.mjs
