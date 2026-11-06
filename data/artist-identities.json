@@ -117,7 +117,7 @@
       "spotifyId": "7evlWm7RyagYqxSQN5E6UN",
       "deezerId": 891740,
       "wikidata": "Q2306183",
-      "checkedAt": "2026-11-06T05:31:18.619Z"
+      "checkedAt": "2026-11-06T05:42:33.192Z"
     },
     "swae lee": {
       "name": "Swae Lee",
@@ -128,7 +128,7 @@
       "spotifyId": "1zNqQNIdeOUZHb8zbZRFMX",
       "deezerId": 7627172,
       "wikidata": "Q30103025",
-      "checkedAt": "2026-11-06T05:31:22.133Z"
+      "checkedAt": "2026-11-06T05:42:36.723Z"
     },
     "kneecap": {
       "name": "Kneecap",
@@ -142,7 +142,7 @@
       "deezerId": 13860855,
       "homepage": "https://www.kneecap.ie/",
       "wikidata": "Q65327538",
-      "checkedAt": "2026-11-06T05:31:25.539Z"
+      "checkedAt": "2026-11-06T05:42:40.721Z"
     },
     "greek": {
       "name": "greek",
@@ -153,7 +153,7 @@
       "matchedBy": "unique-name",
       "spotifyId": "23FgP9gxRT6QMcRhsV71kY",
       "deezerId": 1113999,
-      "checkedAt": "2026-11-06T05:31:29.108Z"
+      "checkedAt": "2026-11-06T05:42:44.496Z"
     },
     "kodaline": {
       "name": "Kodaline",
@@ -164,7 +164,7 @@
       "spotifyId": "4BxCuXFJrSWGi1KHcVqaU4",
       "deezerId": 3803881,
       "wikidata": "Q2482563",
-      "checkedAt": "2026-11-06T05:31:31.351Z"
+      "checkedAt": "2026-11-06T05:42:47.049Z"
     },
     "raymond van het groenewoud": {
       "name": "Raymond Van Het Groenewoud",
@@ -176,67 +176,7 @@
       "spotifyId": "535vUcywQfuPaygBIDziaY",
       "deezerId": 240955,
       "wikidata": "Q1986848",
-      "checkedAt": "2026-11-06T05:31:34.719Z"
-    },
-    "the script": {
-      "name": "The Script",
-      "mbid": "4c98aa1b-34eb-4336-987f-5e50aa059c00",
-      "mbName": "The Script",
-      "country": "IE",
-      "matchedBy": "unique-name",
-      "spotifyId": "3AQRLZ9PuTAozP28Skbq8V",
-      "deezerId": 71569,
-      "wikidata": "Q459585",
-      "checkedAt": "2026-11-06T05:31:37.959Z"
-    },
-    "fatoumata diawara": {
-      "name": "Fatoumata Diawara",
-      "mbid": "6f5064bb-7dbb-4a44-bac5-04c467394817",
-      "mbName": "Fatoumata Diawara",
-      "country": "ML",
-      "matchedBy": "unique-name",
-      "bandcamp": "https://fatou.bandcamp.com/",
-      "spotifyId": "4G5ZJny3HvX6Il7eHVfnNC",
-      "deezerId": 390174,
-      "wikidata": "Q707255",
-      "checkedAt": "2026-11-06T05:31:40.235Z"
-    },
-    "muse": {
-      "name": "Muse",
-      "mbid": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
-      "mbName": "Muse",
-      "country": "GB",
-      "disambiguation": "UK rock band",
-      "matchedBy": "unique-name",
-      "spotifyId": "12Chz98pHFMPJEknJQMWvI",
-      "deezerId": 705,
-      "homepage": "https://muse.mu/",
-      "wikidata": "Q22151",
-      "checkedAt": "2026-11-06T05:31:42.587Z"
-    },
-    "beth hart": {
-      "name": "Beth Hart",
-      "mbid": "3fe817fc-966e-4ece-b00a-76be43e7e73c",
-      "mbName": "Beth Hart",
-      "country": "US",
-      "disambiguation": "US singer-songwriter",
-      "matchedBy": "unique-name",
-      "spotifyId": "30TrHDLNCKQVTYWOn9QqOC",
-      "deezerId": 16052,
-      "homepage": "https://bethhart.com/",
-      "wikidata": "Q204804",
-      "checkedAt": "2026-11-06T05:31:46.826Z"
-    },
-    "noah kahan": {
-      "name": "Noah Kahan",
-      "mbid": "a2a3f910-b188-43e7-81d0-f1ac2a2f3e12",
-      "mbName": "Noah Kahan",
-      "country": "US",
-      "matchedBy": "unique-name",
-      "spotifyId": "2RQXRUsr4IW1f3mKyKsy4B",
-      "deezerId": 11819131,
-      "wikidata": "Q53832755",
-      "checkedAt": "2026-11-06T05:31:50.081Z"
+      "checkedAt": "2026-11-06T05:42:49.185Z"
     }
   },
   "attempted": {
@@ -393,10 +333,6 @@
       "reason": "not-found"
     },
     "def brittneysgat": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "beabadoobee": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }

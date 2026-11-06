@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T05:33:44.420Z",
+  "updatedAt": "2026-11-06T05:45:18.983Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -1180,9 +1180,7 @@
       "artist": "DELINES FEST",
       "artists": [
         "DELINES FEST",
-        "Delines Fest",
-        "Delines Fest: Τάκι Τσαν & DJ ALX",
-        "Χατ Τρικ κ.α."
+        "Delines Fest"
       ],
       "date": "2026-11-07",
       "venue": "Gagarin 205",
@@ -1832,14 +1830,13 @@
       "id": "more-af7c2dd16be45cdf",
       "artist": "THE VEILS (NZ)",
       "artists": [
-        "THE VEILS (NZ)",
-        "The Veils"
+        "THE VEILS (NZ)"
       ],
       "date": "2026-11-07",
       "venue": "ARCH",
       "city": "Athens",
       "country": "GR",
-      "genre": "Alternative",
+      "genre": "",
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/the-veils-nz-live-in-athens/",
       "image": "https://www.more.com/getattachment/611F71C6-E605-42C5-999F-E72C52357665/evg_theveilsnzliveinathens_1156_2659.png",
@@ -2224,23 +2221,20 @@
     },
     {
       "id": "more-ebe5db5b8301c24f",
-      "artist": "Jam Pedals: Villagers of Ioannina City",
+      "artist": "JAM PEDALS",
       "artists": [
-        "JAM PEDALS",
-        "Jam Pedals: Villagers of Ioannina City",
-        "Raining Pleasure",
-        "Υπόγεια Ρεύματα κ.α."
+        "JAM PEDALS"
       ],
       "date": "2026-11-08",
       "venue": "Gazarte",
-      "city": "Athens",
+      "city": "Gazi",
       "country": "GR",
-      "genre": "Pop",
+      "genre": "",
       "subgenre": "",
-      "url": "https://www.rocking.gr/agenda/2026/11/8/27578",
+      "url": "https://www.more.com/gr-en/tickets/music/jam-pedals-20years-anniversary-festival/",
       "image": "https://www.more.com/getattachment/AB8EBB58-1D34-424E-8C73-91D8824D44BA/evg_jampedals-20yearsannivers_1539_1881.png",
-      "source": "rocking",
-      "verification": "third-party-agenda"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-457899",
@@ -31893,6 +31887,24 @@
       }
     },
     {
+      "id": "venue-paradiso-2027-02-17-omasta",
+      "artist": "Omasta",
+      "artists": [
+        "Omasta"
+      ],
+      "date": "2027-02-17",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/omasta/2944653",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/omasta/2944653"
+    },
+    {
       "id": "venue-doornroosje-2027-02-18-tinlicker",
       "artist": "Tinlicker",
       "artists": [
@@ -33432,6 +33444,24 @@
       }
     },
     {
+      "id": "venue-paradiso-2027-03-13-marianne-beaulieu",
+      "artist": "Marianne Beaulieu",
+      "artists": [
+        "Marianne Beaulieu"
+      ],
+      "date": "2027-03-13",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/marianne-beaulieu/2930613",
+      "image": "",
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/marianne-beaulieu/2930613"
+    },
+    {
       "id": "venue-effenaar-2027-03-13-personal-trainer",
       "artist": "Personal Trainer",
       "artists": [
@@ -34679,15 +34709,15 @@
     "festivalDaysAhead": 170,
     "greeceEvents": 389,
     "greeceFeedError": "",
-    "rockingEvents": 37,
-    "rockingWarning": "athens 2027-01: HTTP 500; thessaloniki 2027-01: HTTP 500",
+    "rockingEvents": 36,
+    "rockingWarning": "athens 2026-11: HTTP 500; thessaloniki 2026-11: HTTP 500",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1231,
     "festivalEvents": 16,
     "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 50,
+    "sameVenueDuplicatesMerged": 47,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -34701,7 +34731,7 @@
       "remainingWithoutImage": 1231
     },
     "artistPhotoCache": {
-      "artists": 523,
+      "artists": 518,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
@@ -34718,13 +34748,22 @@
       },
       "identity": {
         "candidates": 730,
-        "processed": 17,
-        "identified": 11,
+        "processed": 11,
+        "identified": 6,
         "ambiguous": 0,
-        "notFound": 5,
+        "notFound": 4,
         "commons": 0,
-        "deezerLinked": 11,
+        "deezerLinked": 6,
         "errors": 1
+      },
+      "wikimedia": {
+        "candidates": 719,
+        "attempted": 25,
+        "found": 0,
+        "noMatch": 15,
+        "ambiguous": 0,
+        "licenceRejected": 10,
+        "errors": 0
       }
     },
     "gagarinCalendarEvents": 21,
@@ -34741,17 +34780,17 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 537,
+    "genreTaggedEvents": 535,
     "taggedArtists": 527,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-06T05:37:10.261Z",
+    "updatedAt": "2026-11-06T05:48:41.095Z",
     "catalogueEvents": 1780,
     "officialMatches": 477,
     "imagesPublished": 0,
     "imageCandidatesPending": 477,
-    "discoveredEvents": 47,
+    "discoveredEvents": 49,
     "venueEventsRemoved": {
       "duplicate": 1,
       "policy": 0,
@@ -34760,7 +34799,7 @@
       "gone": 0,
       "nonConcert": 0
     },
-    "venueEventsPublished": 189,
+    "venueEventsPublished": 191,
     "venueGenresFromCache": 3,
     "venueGenresTagged": 25,
     "venueGenreLookups": 12
