@@ -17,6 +17,7 @@ import {selectArtistCandidates} from './deezer-artist-images.mjs';
 import {imageFileFromWikidata,commonsPhotoFromImageInfo,THUMB_WIDTH,USER_AGENT} from './musicbrainz-identity.mjs';
 import {isoDays} from './rate-limit.mjs';
 import {commonsDepictsUrl,selectLicensedDepictsPhoto} from './commons-depicts-photos.mjs';
+import {verifiedWikidataDeezerPhoto} from './wikidata-deezer-link.mjs';
 import {linkedArtistCategory,commonsArtistCategoryUrl,selectLicensedCategoryPhoto} from './commons-category-photos.mjs';
 
 const MUSIC_CLASSES=new Set(['Q215380','Q2088357','Q5741069']);
@@ -81,11 +82,11 @@ const commonsUrl=file=>COMMONS+'?action=query&format=json&prop=imageinfo&iiprop=
 export async function enrichWikimediaArtistPhotos(events,imageCache,{
  today=new Date().toISOString().slice(0,10),fetcher=fetch,
  maxArtists=25,maxDurationMs=150000,clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),
- artistTags={artists:{}}
+ artistTags={artists:{}},deezerClient=null
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,linkedDeezerChecks:0,linkedDeezerFound:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -96,7 +97,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
  const candidates=selectArtistCandidates(events,result,{today})
   // Older attempts used only Wikidata P18. Retry them once with the
   // new verified P180 route, then respect the normal persistent backoff.
-  .filter(item=>!(result.wikimediaAttempted[item.key]?.strategyVersion===3&&result.wikimediaAttempted[item.key]?.retryAfter>today))
+  .filter(item=>!(result.wikimediaAttempted[item.key]?.strategyVersion===4&&result.wikimediaAttempted[item.key]?.retryAfter>today))
   .sort((a,b)=>{
    const evidence=item=>Array.isArray(artistTags?.artists?.[item.key]?.genres)&&artistTags.artists[item.key].genres.length?1:0;
    const byEvidence=evidence(b)-evidence(a);
@@ -142,6 +143,19 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
      if(photo){method='wikidata-linked-artist-category';stats.categoryFound++;}
     }
    }
+   if(!photo&&confirmed&&deezerClient){
+    // Direct Wikidata P2722 identity bypasses ambiguous Deezer name search.
+    // Deezer name must still match a Wikidata label/alias, and the
+    // picture must not reuse an album-cover image.
+    stats.linkedDeezerChecks++;
+    const linked=await verifiedWikidataDeezerPhoto(confirmed,item.name,deezerClient);
+    if(linked.photo){
+     result.artists[item.key]={...linked.photo,checkedAt:new Date(clock()).toISOString()};
+     delete result.wikimediaAttempted[item.key];
+     stats.linkedDeezerFound++;stats.found++;
+     continue;
+    }
+   }
    if(photo&&confirmed){
     result.artists[item.key]={
      name:item.name,image:photo.image,source:'wikimedia-commons',kind:'artist-photo',
@@ -158,10 +172,10 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    if(verdict.reason==='ambiguous-musical-identity')stats.ambiguous++;
    else if(verdict.reason==='photo-license-or-size-rejected')stats.licenceRejected++;
    else stats.noMatch++;
-   result.wikimediaAttempted[item.key]={strategyVersion:3,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
+   result.wikimediaAttempted[item.key]={strategyVersion:4,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
   }catch(error){
    stats.errors++;
-   result.wikimediaAttempted[item.key]={strategyVersion:2,retryAfter:isoDays(today,error.code==='RATE_LIMIT'?2:5),
+   result.wikimediaAttempted[item.key]={strategyVersion:4,retryAfter:isoDays(today,error.code==='RATE_LIMIT'?2:5),
     reason:String(error.message||error).slice(0,90)};
    if(error.code==='RATE_LIMIT')break;
   }
