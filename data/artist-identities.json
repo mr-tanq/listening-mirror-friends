@@ -523,6 +523,15 @@
       "deezerId": 61146,
       "wikidata": "Q2150733",
       "checkedAt": "2026-11-06T12:07:58.782Z"
+    },
+    "no barrier": {
+      "name": "NO BARRIER",
+      "mbid": "00b0a44e-0811-4628-bda1-afc136e2f7d2",
+      "mbName": "No Barrier",
+      "country": "NL",
+      "disambiguation": "Dutch DJ collective",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-06T13:20:52.879Z"
     }
   },
   "attempted": {
@@ -844,6 +853,30 @@
       "reason": "HTTP 503"
     },
     "no barrier": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "kaleidoscoop geannuleerd": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "sonische reis": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "the dire straits experience phil": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "chali 2na band": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "deer park touching ice the healing power of horses": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "le guess who presents bleak squad": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }
