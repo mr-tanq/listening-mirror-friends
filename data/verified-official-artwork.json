@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "note": "Reviewed exact-event official artwork URLs. Never match by artist name alone. Original image remains hosted by the official venue. This file is not a redistribution licence.",
+  "records": [
+    {
+      "id": "venue-patronaat-2026-11-13-90-s-now",
+      "artist": "90's NOW",
+      "date": "2026-11-13",
+      "venue": "Patronaat",
+      "country": "NL",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Banner-Blauw-%7F-37-720x720.png",
+      "sourceUrl": "https://patronaat.nl/event/90s-now-13-11-26/",
+      "note": "Correct image clicked directly from official Patronaat event page; earlier cached OG image URL omits encoded character."
+    },
+    {
+      "id": "podiuminfo-472061",
+      "artist": "Big Sleep",
+      "date": "2026-11-13",
+      "venue": "Paradiso",
+      "country": "NL",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/5-1-1.jpg",
+      "sourceUrl": "https://www.paradiso.nl/programma/big-sleep/2895340",
+      "note": "Verified official Paradiso Big Sleep image and 13-Nov-2026 show; live venue cache missed this page."
+    }
+  ]
+}
