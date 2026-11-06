@@ -418,6 +418,111 @@
       "homepage": "https://www.faithless.co.uk/",
       "wikidata": "Q542071",
       "checkedAt": "2026-11-06T09:13:40.901Z"
+    },
+    "sophie straat": {
+      "name": "Sophie Straat",
+      "mbid": "36831bc8-5449-48a8-8f49-52a421195ab8",
+      "mbName": "Sophie Straat",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://sophiestraat.bandcamp.com/",
+      "spotifyId": "6SU1jFBqw4tZJQDT8iQ6Nw",
+      "deezerId": 97656052,
+      "homepage": "https://www.sophiestraat.com/",
+      "wikidata": "Q106076021",
+      "checkedAt": "2026-11-06T12:07:13.680Z"
+    },
+    "ron pope": {
+      "name": "Ron Pope",
+      "mbid": "a7208ea4-2c6f-4cf8-b321-599c901073d8",
+      "mbName": "Ron Pope",
+      "country": "US",
+      "matchedBy": "unique-name",
+      "spotifyId": "6CmXhyslohOFRJMtPpRm4O",
+      "deezerId": 298609,
+      "wikidata": "Q1338295",
+      "checkedAt": "2026-11-06T12:07:20.460Z"
+    },
+    "sirenia": {
+      "name": "Sirenia",
+      "mbid": "5fcd6db8-979c-42e3-99a6-fd8302f82a9d",
+      "mbName": "Sirenia",
+      "country": "NO",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://sirenia.bandcamp.com/",
+      "spotifyId": "5FXMcILCOMjljRTV6cLoiE",
+      "deezerId": 8524,
+      "wikidata": "Q659555",
+      "checkedAt": "2026-11-06T12:07:22.767Z"
+    },
+    "underscores": {
+      "name": "underscores",
+      "mbid": "ab1a3f85-e0ea-470a-af5c-175447ae774c",
+      "mbName": "underscores",
+      "country": "",
+      "disambiguation": "glitch hop/pop artist",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://underscores.bandcamp.com/",
+      "spotifyId": "7HfUJxeVTgrvhk0eWHFzV7",
+      "deezerId": 11926479,
+      "homepage": "https://underscores.plus/",
+      "wikidata": "Q121745420",
+      "checkedAt": "2026-11-06T12:07:29.291Z"
+    },
+    "caedere": {
+      "name": "Caedere",
+      "mbid": "9482518a-104d-464d-9ff3-57dd52e545c0",
+      "mbName": "Caedere",
+      "country": "",
+      "disambiguation": "Dutch death metal",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://caedere.bandcamp.com/",
+      "spotifyId": "19InY0VWvPujLCsEeYOxub",
+      "deezerId": 295479,
+      "checkedAt": "2026-11-06T12:07:39.008Z"
+    },
+    "kay slice": {
+      "name": "Kay Slice",
+      "mbid": "41430d72-1483-4c61-bcd6-6fd28f44182b",
+      "mbName": "Kay Slice",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "1mPNT5YwLcCKfjdTwOfSC8",
+      "checkedAt": "2026-11-06T12:07:46.373Z"
+    },
+    "marsh": {
+      "name": "Marsh",
+      "mbid": "b2239077-6b5d-445c-9bbe-75bbb1276614",
+      "mbName": "John Marsh",
+      "country": "GB",
+      "disambiguation": "English composer, 1752-1828",
+      "matchedBy": "unique-name",
+      "spotifyId": "2XzmapOdG0v6RgTk6pD0QG",
+      "wikidata": "Q6246830",
+      "checkedAt": "2026-11-06T12:07:47.991Z"
+    },
+    "nagusame": {
+      "name": "Nagusame",
+      "mbid": "e2e57720-cde1-414d-a84c-57c0fa89e536",
+      "mbName": "Nagusame",
+      "country": "",
+      "disambiguation": "hardcore from Netherlands",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://nagusame.bandcamp.com/",
+      "checkedAt": "2026-11-06T12:07:52.794Z"
+    },
+    "the bug": {
+      "name": "The Bug",
+      "mbid": "eddd6562-ab2a-4a26-a53a-2141854a57df",
+      "mbName": "The Bug",
+      "country": "GB",
+      "disambiguation": "UK illbient/electronic producer Kevin Martin",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://thebugmusic.bandcamp.com/",
+      "spotifyId": "213i4NKah1DX9q0FNiKsuw",
+      "deezerId": 61146,
+      "wikidata": "Q2150733",
+      "checkedAt": "2026-11-06T12:07:58.782Z"
     }
   },
   "attempted": {
@@ -650,6 +755,91 @@
       "reason": "identified-without-free-photo"
     },
     "frank nick reunie": {
+      "retryAfter": "2026-11-08",
+      "reason": "HTTP 503"
+    },
+    "sophie straat": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "de smartlappen karaoke live show": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "kaya": {
+      "retryAfter": "2026-12-21",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "ac2cdba9-dff6-4b52-9e3a-13cb78e3241d",
+        "940cf467-8605-4a13-95b1-32ace0318d24",
+        "42bbbf4e-5892-47ef-a555-449417f5e6cf"
+      ]
+    },
+    "zer00 s heroes": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "benjamin herman trio featuring tomoaki baba": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "boze wolven ode aan gorky": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "caedere": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "convicts invite": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "froday": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "ginger ill": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "kay slice": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "marsh": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "mic drop": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "nagusame": {
+      "retryAfter": "2026-12-21",
+      "reason": "identified-without-free-photo"
+    },
+    "slixx extended set": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "unfold by patroon": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "wilt": {
+      "retryAfter": "2026-12-21",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "05ac0d9e-79f3-4d10-9222-e849f9214b6e",
+        "5a7e57cf-0e36-4d57-bd51-6f65eacef4eb"
+      ]
+    },
+    "brian fallon the painkillers": {
+      "retryAfter": "2026-12-06",
+      "reason": "not-found"
+    },
+    "celestial season": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     }
