@@ -3,6 +3,7 @@ import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=d
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
 import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=identity-v2';
+import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -488,6 +489,15 @@ async function fetchCatalog(){
         }
       }
     }catch(error){console.warn('Venue-confirmed event fallback temporarily unavailable',error);}
+    // Exact reviewed links correct rare broken official event art as soon
+    // as the new frontend deploys, without waiting for the next crawler run.
+    try{
+      const fixesResponse=await fetch('./data/verified-official-artwork.json',{cache:'no-store'});
+      if(fixesResponse.ok){
+        const fixes=await fixesResponse.json();
+        allEvents=applyVerifiedOfficialArtwork(allEvents,fixes).events;
+      }
+    }catch(error){console.warn('Reviewed official event artwork unavailable',error);}
     catalog={events:allEvents.map(withArtwork),updatedAt:data.updatedAt||null,source:data.source||'unknown',coverage:data.coverage||null,error:''};
     refreshSavedArtwork(catalog.events);
     fillInitialDeciding();

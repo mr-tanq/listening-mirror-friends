@@ -27,6 +27,8 @@ on:
       - 'data/nl-venue-sources.json'
       - 'data/artist-image-overrides.json'
       - 'js/artist-images.js'
+      - 'js/verified-official-artwork.js'
+      - 'data/verified-official-artwork.json'
       - 'data/artist-images.json'
       - 'scripts/verified-posters.mjs'
       - 'data/verified-event-images.json'

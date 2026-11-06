@@ -14,6 +14,7 @@ import {refreshVenue,enrichCatalogue,discoverFromVenues,officialEventsOf,reconci
 import {bestOfficialMatch,venueMatches,scoreMatch} from './venue-sources/match.mjs';
 import {applyCachedVenueGenres} from './venue-sources/genre-tags.mjs';
 import {applyGenreMetadata} from './fetch-events.mjs';
+import {applyVerifiedOfficialArtwork} from '../js/verified-official-artwork.js';
 
 const root=new URL('../',import.meta.url);
 const read=async(file,fallback)=>{try{return JSON.parse(await readFile(new URL(file,root),'utf8'));}catch{return fallback;}};
@@ -77,6 +78,17 @@ if(import.meta.url===`file://${process.argv[1]}`){
  const policy=await read('data/nl-venue-sources.json',{venues:{}});
  const genreTags=await read('data/artist-tags.json',{artists:{}});
  const result=await runVenueStage({audit,only,feed,cache,policy,genreTags});
+ const reviewed=await read('data/verified-official-artwork.json',{version:1,records:[]});
+ const fixed=applyVerifiedOfficialArtwork(result.events,reviewed);
+ result.events=fixed.events;
+ // Keep candidate audit aligned with the exact final displayed official URL.
+ const fixedById=new Map(fixed.events.filter(e=>e.imageSource==='venue-official-direct-link').map(e=>[e.id,e]));
+ result.candidates=result.candidates.map(c=>{
+  const e=fixedById.get(c.eventId);
+  return e&&c.published&&e.officialUrl===c.eventUrl?{...c,image:e.image}:c;
+ });
+ result.report.totals.reviewedOfficialArtworkApplied=fixed.applied;
+ result.report.totals.imagesDirectLinked=result.events.filter(e=>e.imageSource==='venue-official-direct-link').length;
  // One line per venue keeps CI logs readable and machine-parsable.
  for(const [id,v] of Object.entries(result.report.venues))console.log('VENUE '+id+' '+JSON.stringify(v));
  for(const d of result.report.discovered)console.log('DISCOVERED '+JSON.stringify(d));
