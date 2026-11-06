@@ -30,3 +30,23 @@ test('provider failure backs off without breaking the catalog',async()=>{
  const again=await enrichDeezerArtistImages([event('MONO')],first.cache,{today:'2026-11-05',fetcher:fail,delay:async()=>{}});
  assert.equal(again.stats.requests,0);
 });
+
+test('prioritizes imminent missing photos over distant shows without relaxing exact matching',()=>{
+ const events=[
+  event('Far Away Artist','2027-02-01'),
+  event('Next Week Artist','2026-11-12'),
+  event('After Two Weeks','2026-11-24'),
+  event('Tomorrow Artist','2026-11-07')
+ ];
+ const candidates=selectArtistCandidates(events,{artists:{}},{today:'2026-11-06'});
+ assert.deepEqual(candidates.map(x=>x.key),[
+  'tomorrow artist','next week artist','after two weeks','far away artist'
+ ]);
+});
+test('existing verified artist image is never queued again, including urgent shows',()=>{
+ const cache={artists:{'tomorrow artist':{image:picture}}};
+ const candidates=selectArtistCandidates([
+  event('Tomorrow Artist','2026-11-07'),event('Other Artist','2026-11-08')
+ ],cache,{today:'2026-11-06'});
+ assert.deepEqual(candidates.map(x=>x.key),['other artist']);
+});
