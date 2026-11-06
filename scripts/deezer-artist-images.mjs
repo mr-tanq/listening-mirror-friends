@@ -50,7 +50,15 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
    all.set(key,row);
   });
  }
- return [...all.values()].sort((a,b)=>a.rank-b.rank||b.count-a.count||a.nextDate.localeCompare(b.nextDate)||a.key.localeCompare(b.key));
+ // Fill the shows people can attend soon before spending the daily API budget
+ // on shows months away. Do not loosen exact-name/album-art verification.
+ const urgentUntil=new Date(today+'T12:00:00Z');
+ urgentUntil.setUTCDate(urgentUntil.getUTCDate()+14);
+ const cutoff=urgentUntil.toISOString().slice(0,10);
+ return [...all.values()].sort((a,b)=>
+  Number(b.nextDate<=cutoff)-Number(a.nextDate<=cutoff) ||
+  a.rank-b.rank || b.count-a.count ||
+  a.nextDate.localeCompare(b.nextDate) || a.key.localeCompare(b.key));
 }
 
 /** Pick one unambiguous exact-name artist from a Deezer /search/artist payload. */
