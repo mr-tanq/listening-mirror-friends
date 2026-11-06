@@ -90,9 +90,21 @@ test('pending images are never published, and Deezer/Commons fallbacks still app
  assert.equal(resolveConcertImage(nb,{artists:{'new band':{image:commons,source:'wikimedia-commons',credit:{text:'Photo: X · CC BY 2.0',url:'https://commons.wikimedia.org/wiki/File:New_Band.jpg'}}}}).credit.text,'Photo: X · CC BY 2.0');
 });
 
-test('repository policy: every venue image permission is still pending (or denied)',()=>{
+test('repository policy: source-linked images are scoped, denied and blocked sources remain off',()=>{
  const p=JSON.parse(readFileSync(new URL('../data/nl-venue-sources.json',import.meta.url),'utf8'));
- for(const [id,v] of Object.entries(p.venues))assert.ok(['pending','denied'].includes(v.imageUse),id);
+ const enabled=new Set(['paradiso','013','doornroosje','effenaar','patronaat','paard']);
+ for(const [id,v] of Object.entries(p.venues)){
+  assert.ok(['direct-link','pending','denied'].includes(v.imageUse),id);
+  if(enabled.has(id)){
+   assert.equal(v.imageUse,'direct-link',id);
+   assert.equal(v.termsReviewed,false);
+   assert.match(v.imageUseEvidence,/no copying/i);
+  }else{
+   assert.ok(['pending','denied'].includes(v.imageUse),id);
+  }
+ }
+ assert.equal(p.venues.dbs.imageUse,'denied');
+ for(const id of ['melkweg','tivoli'])assert.equal(p.venues[id].imageUse,'pending');
 });
 
 test('daily workflow runs the venue stage and commits even when the Podiuminfo step fails',()=>{
