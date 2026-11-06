@@ -124,3 +124,16 @@ export function resolveConcertImage(event,artistImages){
  const credit=safeCredit(found.entry.credit);
  return credit?{url:found.url,kind:'artist-photo',credit}:{url:found.url,kind:'artist-photo'};
 }
+
+/**
+ * If an event poster cannot be loaded in the browser, the only automatic
+ * backup is a verified photograph of THIS event's headliner. Never use
+ * official venue candidates whose image-use permission is still pending.
+ */
+export function resolveConcertImageBackup(event,artistImages){
+ if(!event?.image||event?.imageKind==='artist-photo')return null;
+ const found=artistImageFor(event,artistImages);
+ if(!found||found.url===event.image)return null;
+ const credit=safeCredit(found.entry.credit);
+ return credit?{url:found.url,kind:'artist-photo',credit}:{url:found.url,kind:'artist-photo'};
+}
