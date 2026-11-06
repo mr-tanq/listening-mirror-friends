@@ -1,0 +1,28 @@
+name: Test Deciding image recovery
+on:
+  pull_request:
+    paths:
+      - 'js/artist-images.js'
+      - 'js/app.js'
+      - 'js/deciding-deck.js'
+      - 'js/model.js'
+      - 'scripts/deezer-artist-images.mjs'
+      - 'scripts/audit-deciding-images.mjs'
+      - 'tests/deciding-image-recovery.test.mjs'
+      - '.github/workflows/test-deciding-images.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run all offline tests
+        run: npm test
+      - name: Report image coverage without network access
+        run: node scripts/audit-deciding-images.mjs
