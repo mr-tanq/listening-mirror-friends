@@ -62,6 +62,7 @@ export async function runVenueStage({today=new Date().toISOString().slice(0,10),
   sameNightCatalogue:enriched.events.filter(x=>x.date===e.date&&x.venue===e.venue).map(x=>x.artist).slice(0,6)}));
  report.totals={catalogueEvents:catalogue.length,officialMatches:enriched.candidates.length,
   imagesPublished:enriched.candidates.filter(c=>c.published).length,imageCandidatesPending:enriched.candidates.filter(c=>!c.published).length,
+  imagesDirectLinked:events.filter(e=>e.imageSource==='venue-official-direct-link').length,
   discoveredEvents:discovered.added.length,venueEventsRemoved:reconciled.removed,
   venueEventsPublished:events.filter(e=>e.source==='venue-official').length,
   venueGenresFromCache:genresFromCache,venueGenresTagged:events.filter(e=>e.source==='venue-official'&&e.genre).length};
@@ -100,7 +101,7 @@ if(import.meta.url===`file://${process.argv[1]}`){
   await write('data/artist-tags.json',genreTags);
   await write('data/venue-events.json',result.cache);
   await write('data/venue-image-candidates.json',{generatedAt:result.report.generatedAt,
-   note:'Official artwork matched to catalogue concerts. Only venues with imageUse "permitted" are published.',candidates:result.candidates});
+   note:'Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.',candidates:result.candidates});
   await write('data/events.json',{...feed,events:result.events,venueSources:{updatedAt:result.report.generatedAt,...result.report.totals}});
   console.log(`Venue stage: ${before} -> ${result.events.length} events; ${result.report.totals.officialMatches} official matches; ${result.report.totals.discoveredEvents} discovered.`);
   }
