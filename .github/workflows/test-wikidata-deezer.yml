@@ -1,0 +1,26 @@
+name: Test Wikidata Deezer artist IDs
+on:
+  pull_request:
+    paths:
+      - 'scripts/wikidata-deezer-link.mjs'
+      - 'scripts/wikimedia-artist-photos.mjs'
+      - 'scripts/fetch-events.mjs'
+      - 'tests/wikidata-deezer-link.test.mjs'
+      - 'tests/commons-*.test.mjs'
+      - '.github/workflows/test-wikidata-deezer.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline full regression suite
+        run: npm test
+      - name: Read-only coverage baseline
+        run: node scripts/audit-deciding-images.mjs

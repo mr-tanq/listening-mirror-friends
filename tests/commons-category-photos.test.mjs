@@ -81,7 +81,7 @@ test('old P180 failure is rechecked only once under strategy v3',async()=>{
  };
  const r=await enrichWikimediaArtistPhotos([event],original,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(r.stats.attempted,1);
- assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,3);
+ assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,4);
  const count=calls;
  const again=await enrichWikimediaArtistPhotos([event],r.cache,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(again.stats.attempted,0);assert.equal(calls,count);
