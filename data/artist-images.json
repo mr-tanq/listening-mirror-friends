@@ -1,6 +1,21 @@
 {
   "version": 1,
   "artists": {
+    "1914": {
+      "name": "1914",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c5797f74c7c61b54d3450174694408da/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9706814,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/9706814",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9706814"
+      },
+      "wikidata": "Q56367467",
+      "checkedAt": "2026-11-07T22:21:24.052Z"
+    },
     "fink": {
       "image": "https://cdn-images.dzcdn.net/images/artist/022c398e8ca51eab67c613f594f6a196/1000x1000-000000-80-0-0.jpg",
       "name": "Fink",
@@ -7919,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-07T15:43:17.796Z"
+      "checkedAt": "2026-11-07T22:21:36.696Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7931,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-07T15:43:17.796Z"
+      "checkedAt": "2026-11-07T22:21:36.696Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7951,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-07T15:43:17.796Z"
+      "checkedAt": "2026-11-07T22:21:36.696Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7963,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-07T15:43:17.796Z"
+      "checkedAt": "2026-11-07T22:21:36.696Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8069,6 +8084,80 @@
       },
       "wikidata": "Q6456303",
       "checkedAt": "2026-11-07T15:42:57.709Z"
+    },
+    "kasba": {
+      "name": "KASBA",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2de64fb1890d3888bbfb9c7d19a1075b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 359318,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/359318",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/359318"
+      },
+      "checkedAt": "2026-11-07T22:20:48.710Z"
+    },
+    "anne clark": {
+      "name": "Anne Clark",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b3d8564a33495e7b4b64fde497918bb4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2012,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/2012",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2012"
+      },
+      "wikidata": "Q462566",
+      "checkedAt": "2026-11-07T22:21:02.592Z"
+    },
+    "goksel": {
+      "name": "Göksel",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/912798007062f424c7ea2bf585aeeb46/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 69574,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/69574",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/69574"
+      },
+      "wikidata": "Q182948",
+      "checkedAt": "2026-11-07T22:21:11.683Z"
+    },
+    "bilal": {
+      "name": "Bilal",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f926d3f769ffc484f2d0109b46c879a0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4988,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/4988",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4988"
+      },
+      "wikidata": "Q860283",
+      "checkedAt": "2026-11-07T22:21:28.606Z"
+    },
+    "maelle": {
+      "name": "Maëlle",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/0b4db5eb9a46f41cad8ace39e4479294/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 62725382,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/62725382",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/62725382"
+      },
+      "wikidata": "Q72326804",
+      "checkedAt": "2026-11-07T22:21:33.736Z"
     }
   },
   "attempted": {
@@ -8080,10 +8169,6 @@
         204050577
       ]
     },
-    "glitter grotesque let s swing in new orleans": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "clean pete s kerstshow": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
@@ -8093,10 +8178,6 @@
       "reason": "No unambiguous exact artist"
     },
     "the james brown experience": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "lois lane 40 jaar live": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -8132,18 +8213,9 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "stand up με τις μπαντες hλιας φουντουλης": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "the hillbilly moonshiners": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
-    },
-    "lois lane 40 jaar": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "disco inferno met discophonic orchestra": {
       "retryAfter": "2026-12-05",
@@ -8216,11 +8288,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "slixx extended set": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "celestial season": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8230,24 +8297,9 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "le guess who presents bleak squad": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "radar machine": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "any kind loma shearwater": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "azc de vlampijp x musicaz x db s viering": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "dav id": {
       "retryAfter": "2026-12-05",
@@ -8258,19 +8310,9 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "lp all is not lost tour": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "architrackz": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "ares andere man tour": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "koala disco": {
       "retryAfter": "2026-12-05",
@@ -8296,17 +8338,7 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "talent meets talent marou massin": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "ultrajazz": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "caro returning to innocence": {
       "retryAfter": "2026-12-07",
       "reason": "not-found",
       "urgentRetried": true
@@ -8343,11 +8375,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "kreukelzone madame perdu": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "nes": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -8379,11 +8406,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "donker dansen darker levels": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "iron beast": {
       "retryAfter": "2026-12-05",
       "reason": "no-photo",
@@ -8402,11 +8424,6 @@
     "prophets of thwaites": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "the elvis concert special 70th anniversary heartbreak hotel": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "utrechtse meezingerij": {
       "retryAfter": "2026-12-07",
@@ -8502,16 +8519,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "iris hond kamerata zuid spelen einaudi": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "master boot record fulci": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "orsini": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8539,16 +8546,6 @@
         418682372
       ]
     },
-    "michael jackson project ft jared grant off the wall": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "mustbejohn chimer only tears": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "prison religion": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8569,28 +8566,13 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "kreukelzone mannen met baarden": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "mietze conte": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "muna gets so hot tour": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "omar doom": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "one block society eden demise kaijuju dogma vile": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "samba roots x lucas santana": {
       "retryAfter": "2026-12-07",
@@ -8600,11 +8582,6 @@
     "seyda perincek": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "alex agnew the moonlovers the doors": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "bizkit park": {
       "retryAfter": "2026-12-07",
@@ -8640,11 +8617,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "soul birds the new chapter": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "vrlcht": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8663,10 +8635,6 @@
       "reason": "not-found"
     },
     "lords of altamont": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "morbidfest i am morbid atheist cancer narcotic wasteland": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -8697,10 +8665,6 @@
     "chris eckman": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "judith kiddo melissa weikart": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "lost": {
       "retryAfter": "2027-01-04",
@@ -8739,10 +8703,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "the ruins of beverast tempelschlaf tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "zelie": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -8752,19 +8712,11 @@
         243188321
       ]
     },
-    "bartofso le tour de masque": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "blood and sun": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
     "cobrah autumn": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "gplr 2026 voorronde 3": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -8785,10 +8737,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "luca kinderspel": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "lucky done gone": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8800,10 +8748,6 @@
     "munly the lupercalians": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "nems unleashed tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "nothhingspecial": {
       "retryAfter": "2026-12-05",
@@ -8834,14 +8778,6 @@
       "reason": "not-found"
     },
     "cora kemperman de schuurmachines": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "def brittneysgat extra show": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "metal core sunday matinee mosaic xii thorns serve": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -8877,10 +8813,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "q marsden do you see me tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "raquel rodriguez": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -8909,14 +8841,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "donna s hot stuff could it be magic tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "fortunate sons creedence clearwater revival tribute": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "hohnen ford": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8942,19 +8866,7 @@
         422363902
       ]
     },
-    "reggae fire a tribute to gregory isaacs": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "syntherklaas revenge of the synth": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "vieze asbak b2b kruelty all day long": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "erkan ogur ismail hakkı demircioglu masters of anatolia": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -8965,10 +8877,6 @@
     "lovesick duo": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "nu art orchestra feat anna webber juno": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "spk": {
       "retryAfter": "2026-12-05",
@@ -8989,14 +8897,6 @@
         418329472,
         418329502
       ]
-    },
-    "1914 the war that never ends tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "bilal celebrating 25 years of 1st born second": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "guy verlinde the artisans of solace": {
       "retryAfter": "2026-12-05",
@@ -9045,10 +8945,6 @@
         262362861
       ]
     },
-    "waste scream until it s beautiful": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "30 jaar rob acda awards": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -9060,14 +8956,6 @@
         5874614,
         119871642
       ]
-    },
-    "kevin richard martin presents sub zero": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "la novia maite hontele": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "paceshifters play nirvana": {
       "retryAfter": "2026-12-05",
@@ -9103,10 +8991,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "kreukelzone de zingende dokters": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "memorials": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9122,10 +9006,6 @@
     "sophie straat": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "disco inferno met discophonic orchestra 5 years maastricht": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "elias mazian b2b tsepo": {
       "retryAfter": "2026-12-05",
@@ -9152,10 +9032,6 @@
         354465152
       ]
     },
-    "music lab meervaart studio x melkweg": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "dominum": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9163,10 +9039,6 @@
         239560521,
         142722952
       ]
-    },
-    "filmconcert hitchcock the lodger": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "jen": {
       "retryAfter": "2027-01-04",
@@ -9193,10 +9065,6 @@
       "reason": "not-found"
     },
     "surf punk massacre iv": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "tineke postma group theo bleckmann": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9237,10 +9105,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "mosa jazz christmas edition": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "def": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9260,19 +9124,11 @@
         5419465
       ]
     },
-    "top 2000 live listen to the music": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "club le bon": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
     "hidden xmas deluxe 2026": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "hutcafe org 24 all male videoshop": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9292,14 +9148,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "nationaal jeugd jazz orkest opus kaleidoskopus": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "a fever the ultimate abba tribute": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "beach boys best": {
       "retryAfter": "2026-12-05",
       "reason": "no-photo",
@@ -9315,25 +9163,13 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "grote prijs van dordt 2026 finale": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "marmoucha orchestra s ode to the icons": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "ritual the dutch ghost experience": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
     "five dollar shake": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "yuri honing acoustic quartet this is not david bowie": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "dennis van aarssen kerstshow": {
       "retryAfter": "2026-12-05",
@@ -9347,15 +9183,7 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "the dutch queen 50 jaar somebody to love": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "the timeless orchestra": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "martin fondse ft femi dawkins woodcraft wild card": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9363,29 +9191,13 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "h natural steve hogarth": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "het tribunaal": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "pim muda en sabine krol laat me": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
     "hackberry": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "rufus wainwright metropole orkest wainwright does weill": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "the dutch queen tribute 50 jaar somebody to love": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "the spunyboys": {
       "retryAfter": "2026-12-05",
@@ -9394,19 +9206,7 @@
         1180562
       ]
     },
-    "afterhours quello che non c e": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "music by rosa": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "het nederlands filmorkest maestro del cinema": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "isabel pronk friends dansen op een vulkaan": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9436,17 +9236,9 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "wanderwelle a page of madness": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "alexandr misko": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "jelle roozenburg s bonsai orchestra dis connect": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "john illsley of dire straits": {
       "retryAfter": "2026-12-05",
@@ -9464,10 +9256,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "bee gees by maincourse fame family tragedy": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "body horror": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9477,10 +9265,6 @@
       ]
     },
     "rock central showcase": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "vanwyck thin places theatertour": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9497,14 +9281,6 @@
       "reason": "album-cover-as-portrait"
     },
     "breder dan klassiek": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "daredevils zing nederlands met me": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "gathering bizarro met paindemonium": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9542,19 +9318,7 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "rembrandt trio a tribute to chick corea": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "eddie jobson u k revisited": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "adela the red bottoms tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "julien clerc une vie": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9597,15 +9361,7 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "mico the in between tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "oet de waeg mit de jocus hofkepel": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "ro krom let love rule": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9617,15 +9373,7 @@
         187917587
       ]
     },
-    "dordtje pop klinkt goed": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "infloyd": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "kika sprangers quintet river river": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9638,10 +9386,6 @@
       ]
     },
     "sha la lees": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "basement wired": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -9718,14 +9462,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "schoolconcert vo walk the line middagshow": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "schoolconcert vo walk the line ochtendshow": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "lewis ofman": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9747,10 +9483,6 @@
         385923821,
         385923811
       ]
-    },
-    "niels van der gulik simon garfunkel on tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "primitive ring": {
       "retryAfter": "2026-12-05",
@@ -9785,31 +9517,9 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "disco inferno": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        152368592,
-        408782,
-        358072352
-      ]
-    },
     "schoolconcert vo": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "lp": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        277886191,
-        425059231,
-        136963352,
-        10718297,
-        105911282,
-        10645309,
-        112259
-      ]
     },
     "talent meets talent": {
       "retryAfter": "2026-12-07",
@@ -9824,11 +9534,6 @@
         298478771,
         88294372
       ]
-    },
-    "paardcafe sea foam grey": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "donker dansen": {
       "retryAfter": "2026-12-07",
@@ -9979,10 +9684,6 @@
         13663881
       ]
     },
-    "kevin richard martin presents": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "arra scum": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -9996,10 +9697,6 @@
       ]
     },
     "filmconcert hitchcock": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "rabo open stage jen": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -10055,10 +9752,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "w1 cafe wij steunen 3fm serious request": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "αγριο μελι": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -10098,10 +9791,6 @@
         423237172,
         396826341
       ]
-    },
-    "w1 cafe music by rosa": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "het nederlands filmorkest": {
       "retryAfter": "2026-12-05",
@@ -10210,40 +9899,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "the elvis concert": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "michael jackson project": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "nu art orchestra": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "top 2000": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "martin fondse": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "the dutch queen tribute": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "mico": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        334988,
-        302832331
-      ]
-    },
     "smells like 80s": {
       "retryAfter": "2026-12-07",
       "reason": "not-found",
@@ -10321,10 +9976,6 @@
         414427232
       ]
     },
-    "seafret tell me it s real": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "dylan dunnink": {
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
@@ -10346,7 +9997,37 @@
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
     },
-    "dinsdagochtend concert daniel juberias": {
+    "24 hour dub": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "slixx": {
+      "retryAfter": "2026-12-07",
+      "reason": "album-cover-as-portrait"
+    },
+    "bleak squad": {
+      "retryAfter": "2026-12-07",
+      "reason": "album-cover-as-portrait"
+    },
+    "beylerband": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "luar na lubre lubre": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "sub zero": {
+      "retryAfter": "2027-01-06",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        838746,
+        1084751,
+        53714822,
+        223442935
+      ]
+    },
+    "aespa live tour synk": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     }
@@ -10557,27 +10238,12 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "glitter grotesque let s swing in new orleans": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "kreukelzone": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "lois lane 40 jaar live": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "muziekfeest van het jaar": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "lois lane 40 jaar": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -10642,11 +10308,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "stand up με τις μπαντες hλιας φουντουλης": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "boze wolven ode aan gorky": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
@@ -10657,27 +10318,7 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "slixx extended set": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "deer park touching ice the healing power of horses": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "le guess who presents bleak squad": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "any kind loma shearwater": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "azc de vlampijp x musicaz x db s viering": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -10857,11 +10498,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "master boot record fulci": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "orsini": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
@@ -10907,11 +10543,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "mustbejohn chimer only tears": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "muna": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
@@ -10921,11 +10552,6 @@
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-licensed-commons-photo"
-    },
-    "one block society eden demise kaijuju dogma vile": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
     },
     "samba roots x lucas santana": {
       "strategyVersion": 4,
@@ -11212,87 +10838,112 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "ares andere man tour": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "talent meets talent marou massin": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "caro returning to innocence": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "kreukelzone madame perdu": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "donker dansen darker levels": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "the elvis concert special 70th anniversary heartbreak hotel": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "iris hond kamerata zuid spelen einaudi": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "michael jackson project ft jared grant off the wall": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "kreukelzone mannen met baarden": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "muna gets so hot tour": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "alex agnew the moonlovers the doors": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "soul birds the new chapter": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "paardcafe sea foam grey": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "the elvis concert": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "michael jackson project": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "the fortunate sons": {
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
     "olive": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "24 hour dub": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "slixx": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "bleak squad": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "beylerband": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "throne of katarsis": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the sha la lee s": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "dikke": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "judy vendredi": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "55asky": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "luar na lubre lubre": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "reggae fire": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "syntherklaas": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "vieze asbak b2b kruelty all day long": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "erkan ogur ismail hakkı demircioglu": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nu art orchestra feat anna webber": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "spk": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "guy verlinde the artisans of solace": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nayte": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "sekou": {
+      "strategyVersion": 5,
+      "retryAfter": "2027-02-05",
+      "reason": "ambiguous-musical-identity"
+    },
+    "turner williams jr": {
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

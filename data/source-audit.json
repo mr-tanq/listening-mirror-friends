@@ -1,16 +1,16 @@
 {
-  "catalogUpdatedAt": "2026-11-07T15:44:57.733Z",
+  "catalogUpdatedAt": "2026-11-07T22:23:33.786Z",
   "auditedFor": "2026-11-07",
-  "totalPublished": 1942,
-  "greekPublished": 410,
+  "totalPublished": 1945,
+  "greekPublished": 413,
   "imageCoverage": {
-    "withImage": 1057,
+    "withImage": 1060,
     "withoutImage": 885
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 410,
-      "withImage": 363,
+      "events": 413,
+      "withImage": 366,
       "withoutImage": 47
     },
     "NL": {
@@ -56,16 +56,16 @@
       "greekEvents": 20
     },
     "more": {
-      "events": 274,
-      "withImage": 274,
+      "events": 277,
+      "withImage": 277,
       "withoutImage": 0,
-      "greekEvents": 274
+      "greekEvents": 277
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1226,
@@ -74,10 +74,10 @@
       "greekEvents": 0
     },
     "rocking": {
-      "events": 66,
-      "withImage": 21,
+      "events": 67,
+      "withImage": 22,
       "withoutImage": 45,
-      "greekEvents": 66
+      "greekEvents": 67
     },
     "venue-official": {
       "events": 291,
@@ -124,8 +124,8 @@
       "events": 23,
       "withImage": 23,
       "sources": [
-        "gagarin-calendar",
         "rocking",
+        "gagarin-calendar",
         "official"
       ]
     },
@@ -381,6 +381,14 @@
       ]
     },
     {
+      "name": "Χωρος Τεχνης Ιδιομελο",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "We",
       "events": 3,
       "withImage": 1,
@@ -422,14 +430,6 @@
     },
     {
       "name": "Μεγαρο Μουσικης Κομοτηνης",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Doors Live Art Athens",
       "events": 2,
       "withImage": 2,
       "sources": [

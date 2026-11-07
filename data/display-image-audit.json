@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T15:48:43.741Z",
-  "catalogUpdatedAt": "2026-11-07T15:44:57.733Z",
+  "generatedAt": "2026-11-07T22:27:31.709Z",
+  "catalogUpdatedAt": "2026-11-07T22:23:33.786Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1942,
-    "eventPoster": 1057,
-    "artistPhoto": 506,
-    "noImage": 379,
-    "posterWithPhotoBackup": 399
+    "total": 1945,
+    "eventPoster": 1060,
+    "artistPhoto": 512,
+    "noImage": 373,
+    "posterWithPhotoBackup": 397
   },
   "byCountry": {
     "GR": {
-      "total": 410,
-      "eventPoster": 363,
+      "total": 413,
+      "eventPoster": 366,
       "artistPhoto": 14,
       "noImage": 33,
       "posterWithPhotoBackup": 38
@@ -24,27 +24,28 @@
     "NL": {
       "total": 1422,
       "eventPoster": 688,
-      "artistPhoto": 426,
-      "noImage": 308,
-      "posterWithPhotoBackup": 357
+      "artistPhoto": 431,
+      "noImage": 303,
+      "posterWithPhotoBackup": 355
     },
     "BE": {
       "total": 110,
       "eventPoster": 6,
-      "artistPhoto": 66,
-      "noImage": 38,
+      "artistPhoto": 67,
+      "noImage": 37,
       "posterWithPhotoBackup": 4
     }
   },
   "missingReasons": {
-    "artist-not-found": 178,
-    "album-cover-rejected": 70,
-    "ambiguous-artist": 71,
-    "other-lookup-cooldown": 46,
-    "not-in-artist-cache": 10,
-    "artist-has-no-photo": 4
+    "artist-not-found": 142,
+    "album-cover-rejected": 105,
+    "invalid-cached-photo": 1,
+    "ambiguous-artist": 80,
+    "not-in-artist-cache": 18,
+    "other-lookup-cooldown": 22,
+    "artist-has-no-photo": 5
   },
-  "missingNext14Days": 97,
+  "missingNext14Days": 95,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -61,6 +62,14 @@
       "country": "NL",
       "venue": "Willemeen",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "festivalinfo-36974",
+      "artist": "Le Guess Who? presents 24 HOUR DUB",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Le Guess Who? presents 24 HOUR DUB",
+      "reason": "invalid-cached-photo"
     },
     {
       "id": "podiuminfo-490094",
@@ -84,7 +93,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Grenswerk",
-      "reason": "artist-not-found"
+      "reason": "not-in-artist-cache"
     },
     {
       "id": "podiuminfo-459733",
@@ -108,7 +117,7 @@
       "date": "2026-11-08",
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "other-lookup-cooldown"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-484847",
@@ -116,7 +125,7 @@
       "date": "2026-11-08",
       "country": "NL",
       "venue": "dB's",
-      "reason": "artist-not-found"
+      "reason": "not-in-artist-cache"
     },
     {
       "id": "podiuminfo-490786",
@@ -140,15 +149,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "Vera",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-498215",
-      "artist": "AZC De Vlampijp x Musicaz x dB’s Viering met optreden van KASBA",
-      "date": "2026-11-11",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "artist-not-found"
+      "reason": "not-in-artist-cache"
     },
     {
       "id": "podiuminfo-501470",
@@ -180,7 +181,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Hall Of Fame",
-      "reason": "artist-not-found"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-496059",
@@ -252,7 +253,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-465385",
@@ -382,7 +383,7 @@
       "date": "2026-11-22",
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "other-lookup-cooldown"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-458798",
@@ -462,7 +463,7 @@
       "date": "2026-11-25",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "artist-not-found"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-480071",
@@ -542,7 +543,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-456106",
@@ -558,7 +559,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Hall Of Fame",
-      "reason": "artist-not-found"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-479406",
@@ -614,7 +615,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-479471",
@@ -646,7 +647,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-489717",

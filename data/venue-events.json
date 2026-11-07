@@ -7371,6 +7371,34 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paard.nl/event/fiesta-macumba-46/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://www.paard.nl/event/fiesta-macumba-46/",
+            "title": "FIESTA MACUMBA",
+            "performers": [],
+            "date": "2026-11-07",
+            "startDate": "2026-11-07T23:30",
+            "venueName": "Grolsch Zaal + Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/FM_0711_Paard_BANNER.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/fiesta-macumba-45/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://www.paard.nl/event/fiesta-macumba-45/",
+            "title": "FIESTA MACUMBA",
+            "performers": [],
+            "date": "2026-11-07",
+            "startDate": "2026-11-07T23:30",
+            "venueName": "Grolsch Zaal + Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/FM_0711_Paard_BANNER.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
       "listedAt": "2026-11-07"

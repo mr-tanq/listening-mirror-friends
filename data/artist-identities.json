@@ -788,10 +788,6 @@
     }
   },
   "attempted": {
-    "glitter grotesque let s swing in new orleans": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "clean pete s kerstshow": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -807,10 +803,6 @@
     "the james brown experience": {
       "retryAfter": "2026-11-07",
       "reason": "HTTP 503"
-    },
-    "lois lane 40 jaar live": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "maite hontele la novia": {
       "retryAfter": "2026-12-05",
@@ -924,10 +916,6 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "slixx extended set": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
     "celestial season": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
@@ -936,19 +924,7 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "le guess who presents bleak squad": {
-      "retryAfter": "2026-11-08",
-      "reason": "HTTP 503"
-    },
     "radar machine": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "any kind loma shearwater": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "azc de vlampijp x musicaz x db s viering": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
@@ -959,10 +935,6 @@
     "funk legacy allstars": {
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
-    },
-    "lp all is not lost tour": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
     },
     "architrackz": {
       "retryAfter": "2026-12-22",
@@ -1141,10 +1113,6 @@
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     },
-    "master boot record fulci": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "orsini": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
@@ -1169,10 +1137,6 @@
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     },
-    "mustbejohn chimer only tears": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "prison religion": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
@@ -1186,6 +1150,10 @@
       "reason": "identified-without-free-photo"
     },
     "fondip": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "24 hour dub": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }
