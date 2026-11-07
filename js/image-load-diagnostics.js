@@ -31,7 +31,8 @@ export function watchConcertImage(img,event,primary,backup){
  const main=String(primary||'');
  const alternate=String(backup||'');
  const report=outcome=>{
-  const current=img.currentSrc||img.src||'';
+  // src is the active requested candidate even if currentSrc remains on a failed prior image.
+  const current=img.src||img.currentSrc||'';
   const stage=alternate&&current===alternate&&alternate!==main?'backup':'primary';
   record(event,current,stage,outcome);
  };
