@@ -112,7 +112,10 @@ test('daily workflow runs the venue stage and commits even when the Podiuminfo s
  const catalog=yml.indexOf('id: catalog'),venue=yml.indexOf('node scripts/update-venue-catalog.mjs'),commit=yml.indexOf('Commit public catalog');
  assert.ok(catalog>0&&venue>catalog&&commit>venue);
  const cond="if: ${{ !cancelled() && steps.catalog.conclusion != 'skipped' }}";
- assert.equal(yml.split(cond).length-1,2);
+ // The catalog, venue and display-image audit stages must all run even if the catalog fetch fails.
+ assert.equal(yml.split(cond).length-1,3);
+ assert.ok(yml.includes('node scripts/display-image-audit.mjs'));
+ assert.ok(yml.includes('data/display-image-audit.json'));
  for(const f of ['data/venue-events.json','data/venue-image-candidates.json'])assert.ok(yml.includes(f),f);
  assert.match(yml,/timeout-minutes: 35/);
 });
