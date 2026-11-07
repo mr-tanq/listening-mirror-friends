@@ -4,6 +4,7 @@ import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
 import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=identity-v2';
 import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
+import {watchConcertImage,imageLoadReport} from './image-load-diagnostics.js?v=diagnostics-v1';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -163,7 +164,8 @@ function card(raw,scoreInfo=null,mode='discover') {
   const card=el('article','show'+(scoreInfo?.score>=100?' featured':''));
   const pic=safeUrl(e.image);
   if(pic){
-    const img=el('img','show-image');img.src=pic;img.loading='lazy';img.alt=`${e.artist} artwork`;
+    const img=el('img','show-image');img.loading='lazy';img.alt=`${e.artist} artwork`;
+    watchConcertImage(img,e,pic,safeUrl(e.imageFallback));img.src=pic;
     let creditNode=null,usingFallback=false;
     const setCredit=credit=>{
       if(creditNode){creditNode.remove();creditNode=null;}
@@ -409,7 +411,24 @@ function openProfileDialog(firstTime=false){
   const add=()=>{const names=input.value.split(/[,\n;]/).map(x=>x.trim()).filter(Boolean);for(const n of names){if(!artists.some(x=>norm(x)===norm(n)))artists.push(n.slice(0,110));}artists=artists.slice(0,100);input.value='';redraw();};
   input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();add();}});entry.append(input,button('Add','button small',add));artistsField.append(entry,tags);content.append(artistsField);redraw();
   const status=el('p','status');status.setAttribute('role','status');content.append(status);
-  const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Guided setup ↗','button small',()=>{dlg.close();startGuidedSetup();}),button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));}
+  const controls=el('div','dialog-actions');if(!firstTime){controls.append(button('Guided setup ↗','button small',()=>{dlg.close();startGuidedSetup();}),button('Export backup','button small ghost',exportBackup),button('Import backup','button small ghost',()=>{dlg.close();importFile.click();}));
+    controls.append(button('Copy image diagnostics','button small ghost',async()=>{
+      const report=JSON.stringify(imageLoadReport(),null,2);
+      try{
+        if(!navigator.clipboard?.writeText)throw Error('Clipboard not available');
+        await navigator.clipboard.writeText(report);
+        status.textContent='Image load report copied. Paste it into our chat for diagnosis.';
+      }catch{
+        // Browser permission denial: still make the report easy to share.
+        const blob=new Blob([report],{type:'application/json'});
+        const url=URL.createObjectURL(blob);
+        const link=el('a');link.href=url;link.download='listening-mirror-image-diagnostics.json';
+        document.body.append(link);link.click();link.remove();
+        setTimeout(()=>URL.revokeObjectURL(url),1000);
+        status.textContent='Image diagnostics JSON downloaded. Share it for diagnosis.';
+      }
+    }));
+  }
   controls.append(button(firstTime?'Start exploring →':'Save taste','button primary',()=>{
     if(input.value.trim())add();if(!selected.size&&!artists.length){status.textContent='Choose at least one genre or add a favorite band.';return;}
     state.profile={...state.profile,name:name.input.value.trim().slice(0,80),country:country.input.value,city:city.input.value.trim().slice(0,100),genres:[...selected],subgenres:[...selectedStyles],artists};
