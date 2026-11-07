@@ -115,6 +115,10 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 export function artistImageFor(event,artistImages){
  for(const name of headlinerNames(event)){
   const entry=artistImages?.artists?.[artistKey(name)];
+  // Human-reviewed same-name artist photographs can be bound to one exact
+  // concert. Never leak a scoped Whitechapel photo to an unrelated act.
+  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
+   scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))continue;
   const url=verifiedArtistPhoto(entry?.image);
   if(url)return {url,entry,name};
  }
