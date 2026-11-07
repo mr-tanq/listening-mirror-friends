@@ -20,6 +20,49 @@ const TRAILING_WORDS=/\s+(?:\+\s*supports?|\+\s*special guests?|\+\s*guests?|sup
 // a single comma are NOT split: "Earth, Wind & Fire" must stay one act.
 const GUEST_SPLIT=/\s+(?:met|with|feat\.?|ft\.?|featuring|w\/|\+)\s+/i;
 
+// These are grammatical event-title boundaries, NOT a list of selected artists
+// or venues. In particular, we never assume a famous name mentioned in a
+// tribute, tour title or mixed lineup is the performing headliner.
+const PERFORMER_CUE=/(?:\boptreden\s+van|\bperformance\s+by)\s+(.+)$/iu;
+const PRESENTER_CUE=/^(.{3,100}?)\s+(?:presents?|presenteert|presenteren)\s*:?\s+(.{2,100})$/iu;
+const SERIES_DASH=/^(?:band\s+night|open[\s-]+mic(?:\s+night)?|club\s+night|artist\s+showcase|music\s+showcase|tribute\s+night)\s+[-–—|]\s+(.+)$/iu;
+const EVENT_SUFFIX=/\b(?:album|tour|anniversary|special guests?|line[\s-]?up|tickets?|afterparty|new\s+record|presents?)\b/iu;
+function cleanExplicitAct(raw){
+ const name=String(raw||'').replace(/\s+/g,' ').trim();
+ if(!name||name.length>180)return '';
+ const performer=name.match(PERFORMER_CUE);
+ const presenter=name.match(PRESENTER_CUE);
+ const night=name.match(SERIES_DASH);
+ const candidate=(performer?.[1]||presenter?.[2]||night?.[1]||'').trim()
+  .replace(/^[-–—:\s]+|[-–—:\s]+$/g,'');
+ if(candidate.length<2||candidate.length>90||candidate.split(/\s+/).length>9||
+  EVENT_SUFFIX.test(candidate)||/\s+\/\s+/.test(candidate))return '';
+ return candidate;
+}
+
+/** Names eligible for NEW external artist photo searches.
+ * The browser's existing headlinerNames remains the photo resolver; this
+ * shortlist suppresses speculative lookups for composite event titles.
+ */
+export function headlinerSearchNames(event){
+ const title=String(event?.artist||'').trim();
+ const first=String(event?.artists?.[0]||'').trim();
+ const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
+ if(explicit)return [explicit];
+ // A separately structured first artist is stronger than a display title.
+ if(first&&artistKey(first)!==artistKey(title)&&
+  !/[\s][-–—|][\s]|:\s|\s+\/\s+/.test(first))return [first];
+ const raw=first||title;
+ if(/\s+\/\s+/.test(raw))return []; // Multi-act bill, not one band's photo.
+ const all=headlinerNames(event);
+ if(/(?:\s+[-–—|]\s+|:\s)/.test(raw)){
+  const derived=all.find(n=>artistKey(n)!==artistKey(raw));
+  if(derived)return [derived]; // "Artist - Tour" => search Artist only.
+ }
+ return all;
+}
+
+
 /**
  * Ordered, de-duplicated names under which the HEADLINER may be known.
  * The full source name always comes first; derived names follow from the
@@ -27,6 +70,8 @@ const GUEST_SPLIT=/\s+(?:met|with|feat\.?|ft\.?|featuring|w\/|\+)\s+/i;
  * returned, so a card never shows a support act's face.
  */
 export function headlinerNames(event){
+ const explicit=cleanExplicitAct(event?.artist)||cleanExplicitAct(event?.artists?.[0]);
+ if(explicit)return [explicit];
  const out=[];
  const add=value=>{
   const name=String(value||'').replace(/\s+/g,' ').trim().replace(/^[-–—:|\s]+|[-–—:|\s]+$/g,'');
