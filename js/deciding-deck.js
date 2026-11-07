@@ -1,3 +1,4 @@
+import {watchConcertImage} from './image-load-diagnostics.js?v=diagnostics-v1';
 import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
 
 const el=(tag,cls,text)=>{
@@ -46,7 +47,8 @@ export function openConcertDetail(event={},reason=''){
   inner.append(top,el('h2','deciding-detail-name',event.artist||'Concert'));
   const poster=safeUrl(event.image);
   if(poster){
-    const img=el('img','deciding-detail-image');img.src=poster;img.alt='Event artwork';img.loading='lazy';inner.append(img);
+    const img=el('img','deciding-detail-image');img.alt='Event artwork';img.loading='lazy';
+    watchConcertImage(img,event,poster,safeUrl(event.imageFallback));img.src=poster;inner.append(img);
     let credit=null,usingFallback=false;
     const setCredit=value=>{
       if(credit)credit.remove();
@@ -117,8 +119,8 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
   image.append(fallback);
   const url=safeUrl(event.image);
   if(url){
-    const img=el('img','deck-poster');img.src=url;img.alt=event.artist+' artwork';
-    img.loading='eager';
+    const img=el('img','deck-poster');img.alt=event.artist+' artwork';
+    img.loading='eager';watchConcertImage(img,event,url,safeUrl(event.imageFallback));img.src=url;
     image.append(img);
     let credit=null,usingFallback=false;
     const setCredit=value=>{
