@@ -67,7 +67,23 @@ export function selectLicensedCategoryPhoto(payload,artistName,qid){
  const key=artistKey(artistName);
  const meaningful=key.split(' ').filter(w=>w.length>=3&&!NAMELESS.test(w));
  if(!(meaningful.length>=2||(meaningful.length===1&&meaningful[0].length>=6)))return null;
- const exactPhrase=value=>(' '+artistKey(value)+' ').includes(' '+key+' ');
+ // A band called "Northern" must not match "Northern Lanterns". The
+ // full artist token sequence must finish the caption/name or be followed
+ // by a clear photographic context word, not another unexplained name word.
+ const CONTEXT_WORDS=new Set(['live','perform','performs','performing','performance',
+  'at','in','on','during','from','with','playing','pictured','photographed',
+  'photograph','photo','concert','gig','show','stage','band','group',
+  'artist','musician','singer','singing','rehearsing','tour','festival']);
+ const tokens=key.split(' ');
+ const exactPhrase=value=>{
+  const words=artistKey(value).split(' ').filter(Boolean);
+  for(let i=0;i+tokens.length<=words.length;i++){
+   if(!tokens.every((token,j)=>words[i+j]===token))continue;
+   const following=words[i+tokens.length];
+   if(!following||CONTEXT_WORDS.has(following))return true;
+  }
+  return false;
+ };
  const titleMatches={},descriptionMatches={};
  for(const [id,page] of Object.entries(payload?.query?.pages||{})){
   if(page?.ns!==6||!/^File:/i.test(String(page.title||'')))continue;
