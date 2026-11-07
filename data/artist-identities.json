@@ -1156,6 +1156,14 @@
     "24 hour dub": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
+    },
+    "slixx": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "bleak squad": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
     }
   }
 }
