@@ -776,6 +776,15 @@
       "spotifyId": "33U9I7yBy34UXqKYObItne",
       "wikidata": "Q131990582",
       "checkedAt": "2026-11-07T14:48:02.917Z"
+    },
+    "de hardheid": {
+      "name": "De Hardheid",
+      "mbid": "68e1ae2e-cf7b-4d67-9db9-ef7e7d5f6582",
+      "mbName": "De Hardheid",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "wikidata": "Q2673965",
+      "checkedAt": "2026-11-07T15:42:41.089Z"
     }
   },
   "attempted": {
@@ -1169,6 +1178,14 @@
       "reason": "HTTP 503"
     },
     "this is michael": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "de hardheid": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "fondip": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }

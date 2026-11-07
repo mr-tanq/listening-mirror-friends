@@ -7919,7 +7919,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-07T15:31:07.948Z"
+      "checkedAt": "2026-11-07T15:43:17.796Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7931,7 +7931,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-07T15:31:07.948Z"
+      "checkedAt": "2026-11-07T15:43:17.796Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7951,7 +7951,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-07T15:31:07.948Z"
+      "checkedAt": "2026-11-07T15:43:17.796Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7963,7 +7963,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-07T15:31:07.948Z"
+      "checkedAt": "2026-11-07T15:43:17.796Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8054,6 +8054,21 @@
       },
       "wikidata": "Q99672261",
       "checkedAt": "2026-11-07T15:30:58.921Z"
+    },
+    "lp": {
+      "name": "LP",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/42a2ef16887e2cd54b07b848fdfd9619/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 112259,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/112259",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/112259"
+      },
+      "wikidata": "Q6456303",
+      "checkedAt": "2026-11-07T15:42:57.709Z"
     }
   },
   "attempted": {
@@ -8834,14 +8849,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "self deception": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        313376,
-        9897400
-      ]
-    },
     "haunt me": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8870,14 +8877,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "nia archives": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        96293712,
-        417915262
-      ]
-    },
     "q marsden do you see me tour": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -8901,26 +8900,6 @@
     "morbid": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "pongo": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        58491,
-        14587581,
-        121303102,
-        217661075,
-        141580922,
-        217661065
-      ]
-    },
-    "romare": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        2938511,
-        389412731
-      ]
     },
     "treasure bruno mars tribute": {
       "retryAfter": "2026-12-05",
@@ -9495,22 +9474,6 @@
       "deezerCandidates": [
         216058885,
         6373364
-      ]
-    },
-    "ayra starr": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        110616822,
-        413790741
-      ]
-    },
-    "gilla band": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        152385282,
-        417789012
       ]
     },
     "rock central showcase": {
@@ -10435,8 +10398,8 @@
       "reason": "no-confirmed-musician"
     },
     "architrackz": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
       "reason": "no-licensed-commons-photo"
     },
     "koala disco": {
@@ -10445,8 +10408,8 @@
       "reason": "no-confirmed-musician"
     },
     "sophie straat": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
       "reason": "photo-license-or-size-rejected"
     },
     "prophets of thwaites": {
@@ -10475,8 +10438,8 @@
       "reason": "no-confirmed-musician"
     },
     "de hardheid": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
       "reason": "no-licensed-commons-photo"
     },
     "fondip": {
@@ -10630,7 +10593,7 @@
       "reason": "no-confirmed-musician"
     },
     "leenalchi": {
-      "strategyVersion": 4,
+      "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "photo-license-or-size-rejected"
     },
@@ -10690,7 +10653,7 @@
       "reason": "no-confirmed-musician"
     },
     "marsh": {
-      "strategyVersion": 4,
+      "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
@@ -10720,11 +10683,6 @@
       "reason": "no-confirmed-musician"
     },
     "funk legacy allstars": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "lp all is not lost tour": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -10910,7 +10868,7 @@
       "reason": "no-confirmed-musician"
     },
     "aupinard": {
-      "strategyVersion": 4,
+      "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-licensed-commons-photo"
     },
@@ -11140,7 +11098,7 @@
       "reason": "no-confirmed-musician"
     },
     "nems": {
-      "strategyVersion": 4,
+      "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-licensed-commons-photo"
     },
@@ -11251,6 +11209,91 @@
     },
     "bltnm": {
       "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "ares andere man tour": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "talent meets talent marou massin": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "caro returning to innocence": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "kreukelzone madame perdu": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "donker dansen darker levels": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the elvis concert special 70th anniversary heartbreak hotel": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "iris hond kamerata zuid spelen einaudi": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "michael jackson project ft jared grant off the wall": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "kreukelzone mannen met baarden": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "muna gets so hot tour": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "alex agnew the moonlovers the doors": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "soul birds the new chapter": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "paardcafe sea foam grey": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the elvis concert": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "michael jackson project": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the fortunate sons": {
+      "strategyVersion": 5,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "olive": {
+      "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     }

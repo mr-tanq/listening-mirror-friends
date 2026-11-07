@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T15:36:47.381Z",
-  "catalogUpdatedAt": "2026-11-07T15:32:54.738Z",
+  "generatedAt": "2026-11-07T15:48:43.741Z",
+  "catalogUpdatedAt": "2026-11-07T15:44:57.733Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,8 +9,8 @@
   "totals": {
     "total": 1942,
     "eventPoster": 1057,
-    "artistPhoto": 505,
-    "noImage": 380,
+    "artistPhoto": 506,
+    "noImage": 379,
     "posterWithPhotoBackup": 399
   },
   "byCountry": {
@@ -24,8 +24,8 @@
     "NL": {
       "total": 1422,
       "eventPoster": 688,
-      "artistPhoto": 425,
-      "noImage": 309,
+      "artistPhoto": 426,
+      "noImage": 308,
       "posterWithPhotoBackup": 357
     },
     "BE": {
@@ -37,14 +37,14 @@
     }
   },
   "missingReasons": {
-    "artist-not-found": 179,
+    "artist-not-found": 178,
     "album-cover-rejected": 70,
     "ambiguous-artist": 71,
     "other-lookup-cooldown": 46,
     "not-in-artist-cache": 10,
     "artist-has-no-photo": 4
   },
-  "missingNext14Days": 98,
+  "missingNext14Days": 97,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -164,14 +164,6 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "Patronaat",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-463414",
-      "artist": "LP - All Is Not Lost Tour",
-      "date": "2026-11-11",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
     },
     {
@@ -365,6 +357,14 @@
       "country": "NL",
       "venue": "dB's",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "rocking-20261114-27436",
+      "artist": "Iron Beast: Caught Somewhere in Greece - 40 Years of Somewhere in Time",
+      "date": "2026-11-14",
+      "country": "GR",
+      "venue": "We",
+      "reason": "artist-has-no-photo"
     }
   ],
   "missingOtherSamples": [
