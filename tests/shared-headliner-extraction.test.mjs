@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {headlinerNames,headlinerSearchNames,resolveConcertImage} from '../js/artist-images.js';
+import {artistKey,headlinerNames,headlinerSearchNames,resolveConcertImage} from '../js/artist-images.js';
 import {selectArtistCandidates,enrichDeezerArtistImages} from '../scripts/deezer-artist-images.mjs';
 
 const photo='https://cdn-images.dzcdn.net/images/artist/3780a546a18503f1ca1e67358750847e/1000x1000-000000-80-0-0.jpg';
@@ -23,8 +23,16 @@ test('recognizes acts behind common presenter, show, and tour grammar, not speci
  for(const [title,act] of cases){
   const names=headlinerSearchNames(event(title));
   assert.deepEqual(names,[act],title);
-  assert.ok(headlinerNames(event(title)).some(n=>n===act),title);
+  // The identity-dedup parser remains unchanged; the photo resolver uses
+  // the new strict shortlist.
+  const result=resolveConcertImage(event(title),{artists:{[artistKey(act)]:{image:photo}}});
+  assert.equal(result.url,photo,title);
  }
+});
+test('venue duplicate parser remains conservative for presenting artists',()=>{
+ const e=event('Candy Dulfer presents Funk Legacy Allstars');
+ assert.deepEqual(headlinerNames(e),['Candy Dulfer presents Funk Legacy Allstars']);
+ assert.deepEqual(headlinerSearchNames(e),['Funk Legacy Allstars']);
 });
 test('keeps distinctive band names intact and does not choose a random act from mixed bills',()=>{
  for(const name of ['Earth, Wind & Fire','Red Hot Chili Peppers','Thirty Seconds to Mars',
