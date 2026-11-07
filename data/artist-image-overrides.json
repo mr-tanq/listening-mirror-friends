@@ -33,7 +33,15 @@
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
       "license": "CC BY 3.0",
-      "reason": "Commons photo specifically describes deathcore band Whitechapel live in London 2008"
+      "reason": "Commons photo specifically describes deathcore band Whitechapel live in London 2008; scope checked against verified event and date to avoid other Whitechapel-name artists",
+      "scopes": [
+        {
+          "id": "podiuminfo-454067",
+          "date": "2027-02-14",
+          "country": "NL",
+          "venue": "TivoliVredenburg"
+        }
+      ]
     },
     {
       "artist": "The Bootleg Beatles",
