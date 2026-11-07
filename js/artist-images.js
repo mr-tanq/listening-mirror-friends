@@ -27,6 +27,9 @@ const PERFORMER_CUE=/(?:\boptreden\s+van|\bperformance\s+by)\s+(.+)$/iu;
 const PRESENTER_CUE=/^(.{3,100}?)\s+(?:presents?|presenteert|presenteren)\s*:?\s+(.{2,100})$/iu;
 const SERIES_DASH=/^(?:band\s+night|open[\s-]+mic(?:\s+night)?|club\s+night|artist\s+showcase|music\s+showcase|tribute\s+night)\s+[-–—|]\s+(.+)$/iu;
 const EVENT_SUFFIX=/\b(?:album|tour|anniversary|special guests?|line[\s-]?up|tickets?|afterparty|new\s+record|presents?)\b/iu;
+// Explicit show descriptors sometimes follow the act without punctuation.
+// Do not strip arbitrary two-word endings or numerals in actual band names.
+const SHOW_TRAILER=/\s+(?:\d{1,3}\s+(?:jaar|years?)\s+(?:live|tour|jubileum|anniversary)|extended\s+set)$/iu;
 function cleanExplicitAct(raw){
  const name=String(raw||'').replace(/\s+/g,' ').trim();
  if(!name||name.length>180)return '';
@@ -55,6 +58,8 @@ export function headlinerSearchNames(event){
  const raw=first||title;
  if(/\s+\/\s+/.test(raw))return []; // Multi-act bill, not one band's photo.
  const all=headlinerNames(event);
+ const trailer=raw.replace(SHOW_TRAILER,'').trim();
+ if(trailer!==raw&&trailer.length>=2)return [trailer];
  if(/(?:\s+[-–—|]\s+|:\s)/.test(raw)){
   const derived=all.find(n=>artistKey(n)!==artistKey(raw));
   if(derived)return [derived]; // "Artist - Tour" => search Artist only.
@@ -97,7 +102,7 @@ export function headlinerNames(event){
   if(quoted!==name&&quoted.length>=2){name=quoted;add(name);}
   const dash=name.split(/\s+[-–—|]\s+/)[0];
   if(dash!==name){name=dash;add(name);}
-  const trimmed=name.replace(TRAILING_QUALIFIER,'').replace(TRAILING_WORDS,'').trim();
+  const trimmed=name.replace(TRAILING_QUALIFIER,'').replace(TRAILING_WORDS,'').replace(SHOW_TRAILER,'').trim();
   if(trimmed!==name){name=trimmed;add(name);}
   const lead=name.split(GUEST_SPLIT)[0];
   if(lead!==name){name=lead;add(name);}
