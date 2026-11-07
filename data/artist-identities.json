@@ -640,6 +640,101 @@
       "matchedBy": "unique-name",
       "homepage": "https://www.niallmccabe.com/",
       "checkedAt": "2026-11-07T08:49:43.577Z"
+    },
+    "sea foam grey": {
+      "name": "Sea Foam Grey",
+      "mbid": "83f11a37-b7dc-4ecf-8949-f1255730f543",
+      "mbName": "Sea Foam Grey",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-07T09:09:58.416Z"
+    },
+    "suzan freek": {
+      "name": "Suzan & Freek",
+      "mbid": "c0f1c9e6-8b9a-4510-96c6-b8131d78aef9",
+      "mbName": "Suzan & Freek",
+      "country": "NL",
+      "disambiguation": "Dutch duo",
+      "matchedBy": "unique-name",
+      "spotifyId": "77IW5ZK1smDQYYKDCQugXh",
+      "deezerId": 7703592,
+      "wikidata": "Q60867032",
+      "checkedAt": "2026-11-07T09:10:00.567Z"
+    },
+    "ars musica": {
+      "name": "Ars Musica",
+      "mbid": "5a5d4cf5-9719-4fc8-8a46-ab40c1341c4d",
+      "mbName": "Ars musica",
+      "country": "",
+      "disambiguation": "Orchestrra",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-07T09:10:03.105Z"
+    },
+    "bill frisell": {
+      "name": "Bill Frisell",
+      "mbid": "a21318db-f228-4a4d-8bce-6947a62985a5",
+      "mbName": "Bill Frisell",
+      "country": "US",
+      "matchedBy": "unique-name",
+      "spotifyId": "3SONlwqLIP2GtaMh9pLYe5",
+      "deezerId": 5125,
+      "wikidata": "Q434968",
+      "checkedAt": "2026-11-07T09:10:05.372Z"
+    },
+    "kanine": {
+      "name": "Kanine",
+      "mbid": "cfe0e278-18ac-492f-956a-d8c419f53af1",
+      "mbName": "Kanine",
+      "country": "",
+      "disambiguation": "Drum and Bass DJ and Producer from London",
+      "matchedBy": "unique-name",
+      "spotifyId": "1KiNUGL3r0GgyLwqYCY1yV",
+      "deezerId": 1137396,
+      "homepage": "https://www.djkanine.com/",
+      "checkedAt": "2026-11-07T09:10:12.319Z"
+    },
+    "moon walker": {
+      "name": "Moon Walker",
+      "mbid": "5c4c2df9-63ba-4605-a965-5ea11db27cf5",
+      "mbName": "Moon Walker",
+      "country": "",
+      "disambiguation": "US rock",
+      "matchedBy": "unique-name",
+      "spotifyId": "4Qvflafuw7a0F2E3NonxsA",
+      "deezerId": 795437,
+      "homepage": "https://www.listentomoonwalker.com/meet-moon-walker",
+      "checkedAt": "2026-11-07T09:10:14.465Z"
+    },
+    "parel": {
+      "name": "Parel",
+      "mbid": "8524e55a-cb83-4924-bd93-bf2a04f3f7ed",
+      "mbName": "Parel",
+      "country": "BE",
+      "disambiguation": "Belgian 2010s (Dutch) folk pop trio",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-07T09:10:16.636Z"
+    },
+    "prophets of thwaites": {
+      "name": "Prophets of Thwaites",
+      "mbid": "98d80b9f-7d5f-4968-bef9-c6a5d897fda0",
+      "mbName": "Prophets of Thwaites",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://prophetsofthwaites.bandcamp.com/",
+      "checkedAt": "2026-11-07T09:10:18.829Z"
+    },
+    "hatsune miku": {
+      "name": "Hatsune Miku",
+      "mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+      "mbName": "初音ミク",
+      "country": "JP",
+      "disambiguation": "Vocaloid",
+      "matchedBy": "unique-name",
+      "spotifyId": "7nXIKAKJcyUIGGZNZzwBiR",
+      "deezerId": 5090269,
+      "homepage": "https://piapro.net/intl/en.html",
+      "wikidata": "Q552682",
+      "checkedAt": "2026-11-07T09:10:23.336Z"
     }
   },
   "attempted": {
@@ -876,10 +971,83 @@
       "reason": "HTTP 503"
     },
     "emmet cohen quintet": {
+      "retryAfter": "2026-11-09",
+      "reason": "fetch failed"
+    },
+    "flora": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "ca52af2c-a8a4-4771-9b83-b66ec974753b",
+        "c4192e5a-9d53-4e27-9e3f-80d748e0fd54"
+      ]
+    },
+    "jan o en de overige bandleden": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     },
-    "flora": {
+    "nes": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "1dbf9747-6ee3-4f43-b7af-89d7dc86f6ed",
+        "1f6a238e-0d3f-4469-9ff5-a136209e4a5c"
+      ]
+    },
+    "sea foam grey": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "ars musica": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "cassia": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "coos": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "donker dansen": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "iron beast": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "moon walker": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "parel": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "prophets of thwaites": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "the elvis concert special 70th anniversary": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "employed to serve cabal": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "napa": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "d76eeba7-d35c-4fe8-bffa-ce2885c97765",
+        "9f3423ee-debe-48ec-b78d-281438aaf626",
+        "8e3b7dac-7845-4f73-bfcb-e8344b68b950"
+      ]
+    },
+    "sam gendel sam wilkes": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }

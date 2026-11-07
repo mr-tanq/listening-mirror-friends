@@ -7701,6 +7701,66 @@
       "wikidata": "Q16834874",
       "checkedAt": "2026-11-07T08:50:09.382Z"
     },
+    "suzan freek": {
+      "name": "Suzan & Freek",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/611d9b6adaba5c52ce497229c09ae138/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7703592,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/7703592",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7703592"
+      },
+      "mbid": "c0f1c9e6-8b9a-4510-96c6-b8131d78aef9",
+      "checkedAt": "2026-11-07T09:10:01.816Z"
+    },
+    "bill frisell": {
+      "name": "Bill Frisell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6b403162d165a670bd43e4bb31240aca/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5125,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/5125",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5125"
+      },
+      "mbid": "a21318db-f228-4a4d-8bce-6947a62985a5",
+      "checkedAt": "2026-11-07T09:10:06.502Z"
+    },
+    "kanine": {
+      "name": "Kanine",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/60748e3e1a7884141921bf218e52f375/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1137396,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/1137396",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1137396"
+      },
+      "mbid": "cfe0e278-18ac-492f-956a-d8c419f53af1",
+      "checkedAt": "2026-11-07T09:10:13.029Z"
+    },
+    "hatsune miku": {
+      "name": "Hatsune Miku",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a8ae1f81a330ec74a710150f315134ce/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5090269,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/5090269",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5090269"
+      },
+      "mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+      "checkedAt": "2026-11-07T09:10:24.697Z"
+    },
     "noor": {
       "name": "Noor",
       "source": "deezer",
@@ -7714,22 +7774,7 @@
         "url": "https://www.deezer.com/artist/898173"
       },
       "wikidata": "Q124394543",
-      "checkedAt": "2026-11-07T09:01:54.039Z"
-    },
-    "bill frisell": {
-      "name": "Bill Frisell",
-      "source": "deezer",
-      "kind": "artist-photo",
-      "image": "https://cdn-images.dzcdn.net/images/artist/6b403162d165a670bd43e4bb31240aca/1000x1000-000000-80-0-0.jpg",
-      "deezerId": 5125,
-      "matchedBy": "wikidata-p2722",
-      "sourceUrl": "https://www.deezer.com/artist/5125",
-      "credit": {
-        "text": "Photo via Deezer",
-        "url": "https://www.deezer.com/artist/5125"
-      },
-      "wikidata": "Q434968",
-      "checkedAt": "2026-11-07T09:02:13.724Z"
+      "checkedAt": "2026-11-07T09:10:45.161Z"
     }
   },
   "attempted": {
@@ -8031,25 +8076,9 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "suzan freek": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        7703592,
-        415486652
-      ]
-    },
     "ars musica": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "bill frisell": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5125,
-        413915461
-      ]
     },
     "cassia": {
       "retryAfter": "2027-01-04",
@@ -8073,15 +8102,6 @@
       "reason": "no-photo",
       "deezerCandidates": [
         95519692
-      ]
-    },
-    "kanine": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        165487487,
-        1137396,
-        84049212
       ]
     },
     "moon walker": {
@@ -9618,22 +9638,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "hatsune miku": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        415215242,
-        415215272,
-        415215692,
-        415215552,
-        415215532,
-        5090269,
-        415215702,
-        412286272,
-        415215682,
-        415215642
-      ]
-    },
     "iris hond kamerata zuid": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -10194,11 +10198,6 @@
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
     },
-    "suzan freek": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
     "sophie straat": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
@@ -10575,6 +10574,11 @@
       "reason": "no-confirmed-musician"
     },
     "donker dansen": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "iron beast": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

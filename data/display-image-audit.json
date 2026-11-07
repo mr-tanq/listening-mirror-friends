@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T09:07:38.074Z",
-  "catalogUpdatedAt": "2026-11-07T09:03:46.636Z",
+  "generatedAt": "2026-11-07T09:16:48.359Z",
+  "catalogUpdatedAt": "2026-11-07T09:12:53.399Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,8 +9,8 @@
   "totals": {
     "total": 1934,
     "eventPoster": 1056,
-    "artistPhoto": 483,
-    "noImage": 395,
+    "artistPhoto": 486,
+    "noImage": 392,
     "posterWithPhotoBackup": 397
   },
   "byCountry": {
@@ -24,8 +24,8 @@
     "NL": {
       "total": 1415,
       "eventPoster": 688,
-      "artistPhoto": 405,
-      "noImage": 322,
+      "artistPhoto": 408,
+      "noImage": 319,
       "posterWithPhotoBackup": 355
     },
     "BE": {
@@ -37,14 +37,14 @@
     }
   },
   "missingReasons": {
-    "artist-not-found": 179,
+    "artist-not-found": 178,
     "album-cover-rejected": 70,
-    "ambiguous-artist": 85,
+    "ambiguous-artist": 83,
     "other-lookup-cooldown": 47,
     "not-in-artist-cache": 10,
     "artist-has-no-photo": 4
   },
-  "missingNext14Days": 103,
+  "missingNext14Days": 100,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -351,20 +351,20 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-497347",
-      "artist": "Suzan & Freek",
-      "date": "2026-11-13",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-480759",
       "artist": "Ars Musica: Night Lives - Kristine Tjøgersen",
       "date": "2026-11-14",
       "country": "BE",
       "venue": "Botanique",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-456929",
+      "artist": "Cassia",
+      "date": "2026-11-14",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
     }
   ],
   "missingOtherSamples": [

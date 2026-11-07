@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T09:03:46.636Z",
+  "updatedAt": "2026-11-07T09:12:53.399Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -24460,7 +24460,7 @@
       "venue": "Willemeen",
       "city": "Arnhem",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/497701/Volviers/Willemeen/",
       "image": "",
@@ -24683,7 +24683,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Blues",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/453066/Five-Dollar-Shake/TivoliVredenburg/",
       "image": "",
@@ -24775,7 +24775,7 @@
       "venue": "Melkweg",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/454279/New-Model-Army/Melkweg/",
       "image": "",
@@ -25455,7 +25455,7 @@
       "venue": "Willemeen",
       "city": "Arnhem",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/499755/Asagraum-Lucifers-Cold-Embrace-Antzaker/Willemeen/",
       "image": "",
@@ -41354,7 +41354,7 @@
       "remainingWithoutImage": 821
     },
     "artistPhotoCache": {
-      "artists": 607,
+      "artists": 610,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
@@ -41372,28 +41372,28 @@
       },
       "identity": {
         "candidates": 441,
-        "processed": 2,
-        "identified": 0,
-        "ambiguous": 0,
-        "notFound": 1,
+        "processed": 21,
+        "identified": 9,
+        "ambiguous": 3,
+        "notFound": 7,
         "commons": 0,
-        "deezerLinked": 0,
-        "errors": 1
+        "deezerLinked": 4,
+        "errors": 2
       },
       "wikimedia": {
-        "candidates": 375,
+        "candidates": 371,
         "attempted": 25,
-        "found": 2,
-        "noMatch": 20,
+        "found": 1,
+        "noMatch": 21,
         "ambiguous": 1,
         "licenceRejected": 2,
         "errors": 0,
-        "depictsQueries": 5,
+        "depictsQueries": 4,
         "depictsFound": 0,
-        "categoryQueries": 3,
+        "categoryQueries": 2,
         "categoryFound": 0,
-        "linkedDeezerChecks": 5,
-        "linkedDeezerFound": 2
+        "linkedDeezerChecks": 4,
+        "linkedDeezerFound": 1
       }
     },
     "gagarinCalendarEvents": 21,
@@ -41410,12 +41410,12 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 660,
-    "taggedArtists": 690,
+    "genreTaggedEvents": 664,
+    "taggedArtists": 694,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-07T09:07:07.282Z",
+    "updatedAt": "2026-11-07T09:16:14.135Z",
     "catalogueEvents": 1925,
     "officialMatches": 647,
     "imagesPublished": 623,
