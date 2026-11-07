@@ -35,7 +35,8 @@ test('fallback URL, kind and licence credit survive normalized and saved event r
 test('Deezer tries clean artist names before explicit event subtitles',()=>{
  const list=selectArtistCandidates([make('Caro - Returning to Innocence')],{artists:{}},{today:'2026-11-05'});
  assert.equal(list[0].key,'caro');
- assert.ok(list.some(x=>x.key==='caro returning to innocence'));
+ // An event-title string is not a separate artist: do not spend a lookup on it.
+ assert.deepEqual(list.map(x=>x.key),['caro']);
 });
 
 test('artist names without subtitles keep their original order and ambiguous names are never guessed',()=>{
