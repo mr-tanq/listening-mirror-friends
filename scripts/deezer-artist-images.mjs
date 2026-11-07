@@ -61,6 +61,22 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
   a.nextDate.localeCompare(b.nextDate) || a.key.localeCompare(b.key));
 }
 
+/**
+ * Earlier retry only for an exact-name Deezer 'not-found' result when its
+ * concert is within 14 days. Ambiguous identities, album covers, missing
+ * portraits and network failures KEEP their full retry/backoff restrictions.
+ * With legacy cache entries, derive the last search day from the 30-day
+ * retryAfter value. Never retry sooner than 7 calendar days.
+ */
+export function isUrgentRetryEligible(item,attempt,today){
+ if(!item||!attempt||attempt.reason!=='not-found'||!attempt.retryAfter||attempt.retryAfter<=today)return false;
+ const within=new Date(today+'T12:00:00Z');
+ within.setUTCDate(within.getUTCDate()+14);
+ if(item.nextDate<today||item.nextDate>within.toISOString().slice(0,10))return false;
+ const last=attempt.attemptedAt||isoDays(attempt.retryAfter,-30);
+ return /^20\\d{2}-\\d{2}-\\d{2}$/.test(last)&&last<=isoDays(today,-7);
+}
+
 /** Pick one unambiguous exact-name artist from a Deezer /search/artist payload. */
 export function artistFromDeezerSearch(payload,name){
  return deezerSearchVerdict(payload,name).artist;
@@ -119,11 +135,17 @@ export async function enrichDeezerArtistImages(events,cache,{
  const result={version:1,...cache,artists:{...(cache?.artists||{})},attempted:{...(cache?.attempted||{})}};
  const candidates=selectArtistCandidates(events,result,{today});
  const deezer=client||createDeezerClient({fetcher,clock,delay});
- const start=clock();let found=0,notFound=0,ambiguous=0,coverRejected=0,errors=0,skipped=0,consecutiveFailures=0;
+ const start=clock();let found=0,notFound=0,ambiguous=0,coverRejected=0,errors=0,skipped=0,consecutiveFailures=0,urgentRetries=0;
  const resolvedKeys=new Set();
  for(const item of candidates){
   if(deezer.requests>=maxRequests||clock()-start>=maxDurationMs||consecutiveFailures>=3)break;
-  if(result.artists[item.key]?.image||result.attempted[item.key]?.retryAfter>today){skipped++;continue;}
+  if(result.artists[item.key]?.image){skipped++;continue;}
+  const pending=result.attempted[item.key];
+  if(pending?.retryAfter>today){
+   // A narrow, bounded exception: at most 12 older not-found results per run.
+   if(urgentRetries>=12||!isUrgentRetryEligible(item,pending,today)){skipped++;continue;}
+   urgentRetries++;
+  }
   try{
    const data=await deezer.get('/search/artist?q='+encodeURIComponent(item.name)+'&limit=25');
    const verdict=deezerSearchVerdict(data,item.name);
@@ -138,12 +160,12 @@ export async function enrichDeezerArtistImages(events,cache,{
    }else{
     if(verdict.reason==='ambiguous-same-name')ambiguous++;else notFound++;
     result.attempted[item.key]={retryAfter:isoDays(today,verdict.reason==='ambiguous-same-name'?60:30),
-     reason:verdict.reason,...(verdict.candidates?.length?{deezerCandidates:verdict.candidates.slice(0,10)}:{})};
+     reason:verdict.reason,attemptedAt:today,...(verdict.candidates?.length?{deezerCandidates:verdict.candidates.slice(0,10)}:{})};
    }
    consecutiveFailures=0;
   }catch(error){
    errors++;consecutiveFailures++;
-   result.attempted[item.key]={retryAfter:isoDays(today,2),reason:String(error?.message||error).slice(0,75)};
+   result.attempted[item.key]={retryAfter:isoDays(today,2),reason:String(error?.message||error).slice(0,75),attemptedAt:today};
    if(error?.code==='RATE_LIMIT')break;
   }
  }
@@ -151,5 +173,5 @@ export async function enrichDeezerArtistImages(events,cache,{
  const active=new Set(candidates.map(c=>c.key));
  for(const key of Object.keys(result.attempted))if(!active.has(key))delete result.attempted[key];
  return {cache:result,stats:{candidates:candidates.length,requests:deezer.requests,found,notFound,ambiguous,coverRejected,
-  errors,skipped,photos:Object.keys(result.artists).length}};
+  errors,skipped,urgentRetries,photos:Object.keys(result.artists).length}};
 }
