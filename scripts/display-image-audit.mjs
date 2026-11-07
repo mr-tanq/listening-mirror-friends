@@ -4,7 +4,7 @@
  * No HTTP requests, visitor data, or new image rights are involved.
  */
 import {readFile,writeFile} from 'node:fs/promises';
-import {headlinerNames,artistKey,resolveConcertImage,resolveConcertImageBackup} from '../js/artist-images.js';
+import {headlinerSearchNames,artistKey,resolveConcertImage,resolveConcertImageBackup} from '../js/artist-images.js';
 import {applyVerifiedOfficialArtwork} from '../js/verified-official-artwork.js';
 
 const validImage=url=>{
@@ -37,7 +37,7 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
    continue;
   }
   increment(row,'noImage');increment(totals,'noImage');
-  const names=headlinerNames(event);
+  const names=headlinerSearchNames(event);
   let reason='not-in-artist-cache';
   if(!names.length)reason='no-headliner';
   else{
