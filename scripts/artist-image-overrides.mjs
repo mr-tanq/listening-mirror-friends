@@ -18,7 +18,19 @@ export function applyArtistImageOverrides(cache,overrides,{checkedAt=new Date().
  for(const pin of overrides?.pin||[]){
   const key=artistKey(pin?.artist),image=verifiedArtistPhoto(pin?.image);
   if(!key||!image)continue;
+  // Optional concert identity scope for ambiguous names. If present but
+  // invalid, refuse the pin rather than accidentally making it global.
+  let scopes;
+  if('scopes' in pin){
+   if(!Array.isArray(pin.scopes)||!pin.scopes.length)continue;
+   scopes=pin.scopes.filter(s=>typeof s?.id==='string'&&s.id&&
+    /^20\d{2}-\d{2}-\d{2}$/.test(s.date)&&
+    ['NL','BE','GR'].includes(s.country)&&typeof s.venue==='string'&&s.venue).slice(0,15)
+    .map(s=>({id:s.id,date:s.date,country:s.country,venue:s.venue}));
+   if(!scopes.length)continue;
+  }
   artists[key]={name:pin.artist,image,kind:'artist-photo',source:'manual-pin',sourceUrl:pin.sourceUrl||'',
+   ...(scopes?{scopes}:{}),
    ...(pin.credit?.text?{credit:{text:String(pin.credit.text),url:String(pin.credit.url||'')}}:{}),checkedAt};
   delete attempted[key];pinned++;
  }

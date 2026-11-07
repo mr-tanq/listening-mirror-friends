@@ -81,7 +81,10 @@ export function verifiedArtistPhoto(raw){
   if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
    return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
   // Freely licensed Wikimedia Commons photographs (licence checked at ingest).
-  if(u.hostname==='upload.wikimedia.org')return WIKIMEDIA_PATH.test(u.pathname)&&!u.search?u.href:'';
+  // Commons distributes resized files via thumb.wikimedia.org; only the same
+  // strict /wikipedia/commons/thumb/... photo path is accepted.
+  if(u.hostname==='upload.wikimedia.org'||u.hostname==='thumb.wikimedia.org')
+   return WIKIMEDIA_PATH.test(u.pathname)&&!u.search?u.href:'';
   return '';
  }catch{return '';}
 }
@@ -112,6 +115,10 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 export function artistImageFor(event,artistImages){
  for(const name of headlinerNames(event)){
   const entry=artistImages?.artists?.[artistKey(name)];
+  // Human-reviewed same-name artist photographs can be bound to one exact
+  // concert. Never leak a scoped Whitechapel photo to an unrelated act.
+  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
+   scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))continue;
   const url=verifiedArtistPhoto(entry?.image);
   if(url)return {url,entry,name};
  }
