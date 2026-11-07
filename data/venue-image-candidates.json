@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T09:16:14.135Z",
+  "generatedAt": "2026-11-07T10:42:17.437Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -5395,6 +5395,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-18-personal-trainer",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/personal-trainer-support-18-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Persfoto-PT-2026.jpeg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-effenaar-2027-03-18-the-dutch-queen",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/dutch-queen-18mrt",
@@ -5409,6 +5418,24 @@
       "eventUrl": "https://www.effenaar.nl/agenda/fiep",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-10/%20%E2%80%93%201920x1080%20Website%20fiep.png",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-19-jet-van-der-steen",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/jet-van-der-steen-19-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/Jet-van-der-Steen-@miksfiles-press-17-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-19-luicidal",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/luicidal-19-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Luicidal2-scaled-e1617295731995-1.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -5548,6 +5575,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-25-roosbeef",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/roosbeef-support-25-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Roosbeef-%C2%A9-Felix-Baumsteiger-1-scaled.jpg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paard-2027-03-25-rudeboy-x-boskat",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/rudeboy-x-boskat/",
@@ -5589,6 +5625,15 @@
       "eventUrl": "https://www.doornroosje.nl/event/eddie-9v/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/260105_Eddie9V_AG_099-1200x630.jpg",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-26-honahlei",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/honahlei-support-26-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/photo.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -5665,6 +5710,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-27-tributeconcert-riplive-remembering-2026",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/tributeconcert-riplive-remembering-2026-27-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2024/03/Publiciteitsfoto-RipLive-2024-fotografie-Franklin-van-der-Erf-klein.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-effenaar-2027-03-28-the-orb",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/the-orb",
@@ -5701,10 +5755,28 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-31-nordjevel",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/nordjevel-svarttjern-malphas-unviar-31-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/nordjevel.jpeg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-doornroosje-2027-03-31-shaemless",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/shaemless-3/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/PRESS-1-V_square-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-31-yves-berendse",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/yves-berendse-31-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/Yves-Berendse-persfoto.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5742,6 +5814,15 @@
       "eventUrl": "https://www.effenaar.nl/agenda/80s-anders-11",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-03/80s%20anders%E2%80%93%20Square%20afbeelding%20only.png?itok=qYsx7lXa",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-03-buster-shuffle",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/buster-shuffle-03-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/BUSTER-SHUFFLE-PRESS-SHOT-2025-NO-EFFECTS-copy-scaled.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },

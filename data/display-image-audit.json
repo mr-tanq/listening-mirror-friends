@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T09:16:48.359Z",
-  "catalogUpdatedAt": "2026-11-07T09:12:53.399Z",
+  "generatedAt": "2026-11-07T10:42:49.982Z",
+  "catalogUpdatedAt": "2026-11-07T10:38:56.371Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,9 +9,9 @@
   "totals": {
     "total": 1934,
     "eventPoster": 1056,
-    "artistPhoto": 486,
-    "noImage": 392,
-    "posterWithPhotoBackup": 397
+    "artistPhoto": 489,
+    "noImage": 389,
+    "posterWithPhotoBackup": 398
   },
   "byCountry": {
     "GR": {
@@ -24,9 +24,9 @@
     "NL": {
       "total": 1415,
       "eventPoster": 688,
-      "artistPhoto": 408,
-      "noImage": 319,
-      "posterWithPhotoBackup": 355
+      "artistPhoto": 411,
+      "noImage": 316,
+      "posterWithPhotoBackup": 356
     },
     "BE": {
       "total": 110,
@@ -39,12 +39,12 @@
   "missingReasons": {
     "artist-not-found": 178,
     "album-cover-rejected": 70,
-    "ambiguous-artist": 83,
-    "other-lookup-cooldown": 47,
+    "ambiguous-artist": 81,
+    "other-lookup-cooldown": 46,
     "not-in-artist-cache": 10,
     "artist-has-no-photo": 4
   },
-  "missingNext14Days": 100,
+  "missingNext14Days": 99,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",

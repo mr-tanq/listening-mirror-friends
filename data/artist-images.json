@@ -7775,6 +7775,51 @@
       },
       "wikidata": "Q124394543",
       "checkedAt": "2026-11-07T09:10:45.161Z"
+    },
+    "kraak smaak": {
+      "name": "Kraak & Smaak",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d39aff5a61b4cf7d2d32bbc0c0f17e6d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4540,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/4540",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4540"
+      },
+      "wikidata": "Q6435752",
+      "checkedAt": "2026-11-07T10:36:37.095Z"
+    },
+    "new model army": {
+      "name": "New Model Army",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e1ff05b277081b373a14b45318881ab8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 3651,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/3651",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/3651"
+      },
+      "wikidata": "Q1501951",
+      "checkedAt": "2026-11-07T10:36:42.798Z"
+    },
+    "blanks": {
+      "name": "Blanks",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/07f26da3cb41a88abd9578fc6a811edc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 8146508,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/8146508",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/8146508"
+      },
+      "wikidata": "Q102358549",
+      "checkedAt": "2026-11-07T10:36:51.406Z"
     }
   },
   "attempted": {
@@ -7835,10 +7880,6 @@
       "reason": "No unambiguous exact artist"
     },
     "leenalchi": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "noor": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -8021,8 +8062,9 @@
       "reason": "not-found"
     },
     "ultrajazz": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "caro returning to innocence": {
       "retryAfter": "2026-12-05",
@@ -8038,8 +8080,9 @@
       ]
     },
     "emmet cohen quintet": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "flora": {
       "retryAfter": "2027-01-04",
@@ -8055,8 +8098,9 @@
       ]
     },
     "jan o en de overige bandleden": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "kreukelzone madame perdu": {
       "retryAfter": "2026-12-05",
@@ -8126,12 +8170,9 @@
       "urgentRetried": true
     },
     "employed to serve cabal": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "hatsune miku miku expo 2026": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "napa": {
       "retryAfter": "2027-01-04",
@@ -8147,8 +8188,9 @@
       ]
     },
     "sam gendel sam wilkes": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "carsick": {
       "retryAfter": "2027-01-04",
@@ -8179,8 +8221,9 @@
       ]
     },
     "bloc party interpol": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "fly anakin": {
       "retryAfter": "2027-01-04",
@@ -8200,8 +8243,9 @@
       ]
     },
     "ablaye cissoko cyrille brotto": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "eloise": {
       "retryAfter": "2027-01-04",
@@ -8218,16 +8262,18 @@
       ]
     },
     "geel changeover en tray": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "iris hond kamerata zuid spelen einaudi": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
     "master boot record fulci": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "orsini": {
       "retryAfter": "2026-12-05",
@@ -9631,16 +9677,19 @@
       "reason": "not-found"
     },
     "donker dansen": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "the elvis concert special 70th anniversary": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "iris hond kamerata zuid": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "michael jackson project ft jared grant": {
       "retryAfter": "2026-12-05",
@@ -10579,6 +10628,116 @@
       "reason": "no-confirmed-musician"
     },
     "iron beast": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "five dollar shake": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "moon walker": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nems unleashed": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "parel": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the elvis concert special 70th anniversary": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "employed to serve cabal": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "napa": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "sam gendel sam wilkes": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "carsick": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "faux real": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "sofy": {
+      "strategyVersion": 4,
+      "retryAfter": "2027-02-05",
+      "reason": "ambiguous-musical-identity"
+    },
+    "bloc party interpol": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "man": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "ablaye cissoko cyrille brotto": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "eloise": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "geel changeover en tray": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "iris hond kamerata zuid": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "master boot record fulci": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "orsini": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "aupinard": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "kolsch the machine": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lawn": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

@@ -735,6 +735,17 @@
       "homepage": "https://piapro.net/intl/en.html",
       "wikidata": "Q552682",
       "checkedAt": "2026-11-07T09:10:23.336Z"
+    },
+    "flower face": {
+      "name": "Flower Face",
+      "mbid": "24db1f15-509d-48a4-a410-b33fe131878b",
+      "mbName": "Flower Face",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://flowerface.bandcamp.com/",
+      "spotifyId": "0sYlth2PW1zWJMEU2vCukz",
+      "deezerId": 12129726,
+      "checkedAt": "2026-11-07T10:36:29.559Z"
     }
   },
   "attempted": {
@@ -797,10 +808,6 @@
     "leenalchi": {
       "retryAfter": "2026-12-20",
       "reason": "identified-without-free-photo"
-    },
-    "noor": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "nems": {
       "retryAfter": "2026-12-20",
@@ -1048,6 +1055,42 @@
       ]
     },
     "sam gendel sam wilkes": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "carsick": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "242940bb-0600-4bfe-a1c0-efb1ab583fec",
+        "fa014bb6-56b7-462c-b882-1ee866461f0b"
+      ]
+    },
+    "faux real": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "80a154ea-28d7-42e8-8409-ca7017780e00",
+        "d48936cc-c76b-47d2-a16c-694cec5dec9b"
+      ]
+    },
+    "flower face": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "sofy": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "b1df162b-7876-41d3-920f-548c0c78cbb2",
+        "0b4982d1-be56-4f08-8515-f2ea6926452e"
+      ]
+    },
+    "bloc party interpol": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "conway the machine": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }
