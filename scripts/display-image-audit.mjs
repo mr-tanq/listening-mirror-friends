@@ -23,7 +23,9 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
   const country=String(event.country||'UNKNOWN').toUpperCase();
   const row=byCountry[country]||=blankCounters();
   row.total++;totals.total++;
-  // Mirror normalizeEvent(): unsafe source URLs cannot be displayed.\n  const displayEvent=validImage(event.image)?event:{...event,image:''};\n  const chosen=resolveConcertImage(displayEvent,cache);
+  // Mirror normalizeEvent(): unsafe source URLs cannot be displayed.
+  const displayEvent=validImage(event.image)?event:{...event,image:''};
+  const chosen=resolveConcertImage(displayEvent,cache);
   const url=validImage(chosen.url)?chosen.url:'';
   if(url){
    const type=chosen.kind==='artist-photo'?'artistPhoto':'eventPoster';
