@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {watchConcertImage,imageLoadReport,resetImageLoadReport} from '../js/image-load-diagnostics.js';
+import {watchConcertImage,imageLoadReport,resetImageLoadReport,recordRenderedConcert} from '../js/image-load-diagnostics.js';
 
 class FakeImage{
  constructor(){this.src='';this.currentSrc='';this.listeners={};}
@@ -41,4 +41,32 @@ test('counts failed backup separately and bounds saved errors',()=>{
  assert.equal(report.samples.length,40);
  resetImageLoadReport();
  assert.equal(imageLoadReport().failed,0);
+});
+
+test('counts unique catalogue cards without a URL rather than image events',()=>{
+ resetImageLoadReport();
+ const missing={id:'podiuminfo-777',artist:'Otis Gibbs',date:'2026-11-10',
+  venue:'TivoliVredenburg',country:'NL',source:'podiuminfo-agenda'};
+ const available={...missing,id:'podiuminfo-778',artist:'Another Artist'};
+ recordRenderedConcert(missing,'');
+ recordRenderedConcert(missing,''); // rerenders and detail views are one show
+ recordRenderedConcert(available,main);
+ recordRenderedConcert({...missing,id:'manual-1',source:'manual'},'');
+ const report=imageLoadReport();
+ assert.deepEqual(report.renderedShows,{total:2,withImageUrl:1,withoutImageUrl:1,limit:2000});
+ assert.equal(report.withoutImageUrlSamples.length,1);
+ assert.equal(report.withoutImageUrlSamples[0].artist,'Otis Gibbs');
+ assert.equal(report.failed,0);
+ assert.doesNotMatch(JSON.stringify(report),/photo\\.jpg|PRIVATE/);
+});
+test('a later verified image updates the same event instead of double counting',()=>{
+ resetImageLoadReport();
+ const show={id:'podiuminfo-779',artist:'Radar Machine',date:'2026-11-11',
+  country:'NL',source:'venue-official'};
+ recordRenderedConcert(show,null);
+ recordRenderedConcert(show,main);
+ const report=imageLoadReport();
+ assert.equal(report.renderedShows.total,1);
+ assert.equal(report.renderedShows.withImageUrl,1);
+ assert.equal(report.renderedShows.withoutImageUrl,0);
 });
