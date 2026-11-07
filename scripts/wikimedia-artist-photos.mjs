@@ -120,9 +120,15 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   .filter(item=>{
    const attempt=result.wikimediaAttempted[item.key];
    if(!attempt?.retryAfter||attempt.retryAfter<=today)return true;
-   // Never bypass provider failures, rate-limits, identity ambiguity or an
-   // existing v5 cooldown. One bounded revisit for old identity misses only.
-   return Boolean(knownQid(item))&&Number(attempt.strategyVersion||0)<strategyVersion&&
+   // Retain the previous once-only upgrade for older P18/P180 strategies.
+   // Old provider errors and rate-limit cooldowns are NEVER bypassed.
+   const version=Number(attempt.strategyVersion||0);
+   const oldPhotoMiss=['no-commons-image','no-licensed-commons-photo',
+    'photo-license-or-size-rejected'].includes(attempt.reason);
+   if(version<4&&oldPhotoMiss)return true;
+   // Revisit a previous v4 identity miss once when a trusted MusicBrainz QID
+   // is now known. Never bypass errors, rate limits or an existing v5 cooldown.
+   return Boolean(knownQid(item))&&version<strategyVersion&&
     ['no-confirmed-musician','no-commons-image','no-licensed-commons-photo',
      'photo-license-or-size-rejected','ambiguous-musical-identity'].includes(attempt.reason);
   })
