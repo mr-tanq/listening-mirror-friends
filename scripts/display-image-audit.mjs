@@ -4,7 +4,7 @@
  * No HTTP requests, visitor data, or new image rights are involved.
  */
 import {readFile,writeFile} from 'node:fs/promises';
-import {headlinerNames,artistKey,artistImageFor,resolveConcertImage,resolveConcertImageBackup} from '../js/artist-images.js';
+import {headlinerNames,artistKey,resolveConcertImage,resolveConcertImageBackup} from '../js/artist-images.js';
 import {applyVerifiedOfficialArtwork} from '../js/verified-official-artwork.js';
 
 const validImage=url=>{
@@ -23,13 +23,13 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
   const country=String(event.country||'UNKNOWN').toUpperCase();
   const row=byCountry[country]||=blankCounters();
   row.total++;totals.total++;
-  const chosen=resolveConcertImage(event,cache);
+  // Mirror normalizeEvent(): unsafe source URLs cannot be displayed.\n  const displayEvent=validImage(event.image)?event:{...event,image:''};\n  const chosen=resolveConcertImage(displayEvent,cache);
   const url=validImage(chosen.url)?chosen.url:'';
   if(url){
    const type=chosen.kind==='artist-photo'?'artistPhoto':'eventPoster';
    increment(row,type);increment(totals,type);
    if(type==='eventPoster'){
-    const backup=resolveConcertImageBackup(event,cache);
+    const backup=resolveConcertImageBackup(displayEvent,cache);
     if(validImage(backup?.url)){increment(row,'posterWithPhotoBackup');increment(totals,'posterWithPhotoBackup');}
    }
    continue;
