@@ -24,7 +24,7 @@ export function applyArtistImageOverrides(cache,overrides,{checkedAt=new Date().
   if('scopes' in pin){
    if(!Array.isArray(pin.scopes)||!pin.scopes.length)continue;
    scopes=pin.scopes.filter(s=>typeof s?.id==='string'&&s.id&&
-    /^20\\d{2}-\\d{2}-\\d{2}$/.test(s.date)&&
+    /^20\d{2}-\d{2}-\d{2}$/.test(s.date)&&
     ['NL','BE','GR'].includes(s.country)&&typeof s.venue==='string'&&s.venue).slice(0,15)
     .map(s=>({id:s.id,date:s.date,country:s.country,venue:s.venue}));
    if(!scopes.length)continue;
