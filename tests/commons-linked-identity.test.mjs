@@ -53,22 +53,22 @@ test('a mismatched or non-musical linked entity is never trusted as a portrait',
  assert.equal(chooseLinkedWikidataArtist({entities:{Q42:entity('Q42','Test Band')}},'Qabc','Test Band').entity,null);
 });
 test('a verified MusicBrainz link with no P18 enables exact depicts and category fallback',async()=>{
- const linked={artists:{'local band':{wikidata:'Q4455'}}};
- const musician=entity('Q4455','Local Band',{image:''});
- musician.claims.P373=[textClaim('Local Band')];
+ const linked={artists:{'northern lanterns':{wikidata:'Q4455'}}};
+ const musician=entity('Q4455','Northern Lanterns',{image:''});
+ musician.claims.P373=[textClaim('Northern Lanterns')];
  const urls=[];
  const fetcher=async url=>{
   urls.push(url);
   if(url.includes('wbgetentities'))return response({entities:{Q4455:musician}});
   if(url.includes('generator=categorymembers'))return response({query:{pages:{
-   8:{pageid:8,ns:6,title:'File:Local Band performing live.jpg',imageinfo:[{
+   8:{pageid:8,ns:6,title:'File:Northern Lanterns performing live.jpg',imageinfo:[{
     ...imageInfo.query.pages[7].imageinfo[0],
-    descriptionurl:'https://commons.wikimedia.org/wiki/File:Local_Band_performing_live.jpg'}]}
+    descriptionurl:'https://commons.wikimedia.org/wiki/File:Northern_Lanterns_performing_live.jpg'}]}
   }}});
   if(url.includes('haswbstatement'))return response({query:{pages:{}}});
   throw Error('Unexpected URL '+url);
  };
- const result=await enrichWikimediaArtistPhotos([event('Local Band')],{artists:{}},{
+ const result=await enrichWikimediaArtistPhotos([event('Northern Lanterns')],{artists:{}},{
   today:'2026-11-07',identityCache:linked,fetcher,delay:async()=>{},maxArtists:1
  });
  assert.equal(result.stats.found,1);
