@@ -7820,6 +7820,21 @@
       },
       "wikidata": "Q102358549",
       "checkedAt": "2026-11-07T10:36:51.406Z"
+    },
+    "fly anakin": {
+      "name": "Fly Anakin",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bb3fb2ce89ede8afddb934319276e25c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9936576,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/9936576",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9936576"
+      },
+      "mbid": "5f8fd2d5-407b-4f38-bef0-35278078a7f2",
+      "checkedAt": "2026-11-07T11:51:28.406Z"
     }
   },
   "attempted": {
@@ -7883,10 +7898,6 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "blanks": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "stand up με τις μπαντες hλιας φουντουλης": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
@@ -7896,8 +7907,9 @@
       "reason": "No unambiguous exact artist"
     },
     "lois lane 40 jaar": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "disco inferno met discophonic orchestra": {
       "retryAfter": "2026-12-05",
@@ -8030,8 +8042,9 @@
       "reason": "album-cover-as-portrait"
     },
     "ares andere man tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "koala disco": {
       "retryAfter": "2026-12-05",
@@ -8225,14 +8238,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "fly anakin": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        9936576,
-        416944552
-      ]
-    },
     "man": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -8288,8 +8293,9 @@
       ]
     },
     "kolsch the machine": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "lawn": {
       "retryAfter": "2027-01-04",
@@ -8306,8 +8312,9 @@
       "reason": "not-found"
     },
     "mustbejohn chimer only tears": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "prison religion": {
       "retryAfter": "2026-12-05",
@@ -8346,12 +8353,14 @@
       "reason": "album-cover-as-portrait"
     },
     "one block society eden demise kaijuju dogma vile": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "samba roots x lucas santana": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "seyda perincek": {
       "retryAfter": "2026-12-05",
@@ -8362,8 +8371,9 @@
       "reason": "not-found"
     },
     "bizkit park": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "fay": {
       "retryAfter": "2027-01-04",
@@ -8374,8 +8384,9 @@
       ]
     },
     "finale amsterdamse popprijs 2026": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "jim gardner": {
       "retryAfter": "2027-01-04",
@@ -9099,14 +9110,6 @@
         110390212
       ]
     },
-    "kraak smaak": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        4540,
-        389563861
-      ]
-    },
     "march": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -9149,14 +9152,6 @@
     "five dollar shake": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "new model army": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        3651,
-        414451032
-      ]
     },
     "yuri honing acoustic quartet this is not david bowie": {
       "retryAfter": "2026-12-05",
@@ -9692,8 +9687,9 @@
       "urgentRetried": true
     },
     "michael jackson project ft jared grant": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "muna": {
       "retryAfter": "2027-01-04",
@@ -9712,12 +9708,14 @@
       ]
     },
     "alex agnew the moonlovers": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "soul birds": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "morbidfest": {
       "retryAfter": "2026-12-05",
@@ -10096,8 +10094,9 @@
       ]
     },
     "smells like 80s": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "actie aletta": {
       "retryAfter": "2026-12-06",
@@ -10263,11 +10262,6 @@
       "reason": "no-licensed-commons-photo"
     },
     "conway the machine": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "photo-license-or-size-rejected"
-    },
-    "fly anakin": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "photo-license-or-size-rejected"
@@ -10738,6 +10732,131 @@
       "reason": "no-confirmed-musician"
     },
     "lawn": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the timeless orchestra": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "doodswens": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "hackberry": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the spunyboys": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "michael jackson project ft jared grant": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "mustbejohn chimer only tears": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "muna": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "omar doom": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "one block society eden demise kaijuju dogma vile": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "samba roots x lucas santana": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "seyda perincek": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "alex agnew the moonlovers": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "bizkit park": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "fay": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "finale amsterdamse popprijs 2026": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "jim gardner": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "kurashi": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "smells like 80s": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "soul birds": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "vrlcht": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "delany": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "jeremy pelt quintet": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "morbidfest": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nightfreak usa cafe de wacht": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "demo club bandnight auks": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T10:38:56.371Z",
+  "updatedAt": "2026-11-07T11:54:08.895Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -1715,7 +1715,7 @@
       }
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -14745,7 +14745,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -25093,7 +25093,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -25510,7 +25510,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -27684,7 +27684,7 @@
       "venue": "Eurosonic Noorderslag (ESNS)",
       "city": "Groningen",
       "country": "NL",
-      "genre": "Alternative / Metal / Rock / Pop / Punk / Jazz / Hip-Hop / Reggae",
+      "genre": "Alternative / Metal / Rock / Pop / Punk / Jazz / Electronic / Hip-Hop",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/35760/Eurosonic-Noorderslag-ESNS-/2027/",
       "image": "https://www.festivalinfo.nl/img/upload/4/5//ESNS_2026_logo.jpg",
@@ -27701,7 +27701,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "Jazz",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/481191/Jef-Neve/TivoliVredenburg/",
       "image": "",
@@ -35813,7 +35813,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "",
+      "genre": "Hip-Hop",
       "subgenre": "",
       "url": "https://patronaat.nl/event/obie-trice-support-19-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/10/obietrice3.jpg",
@@ -35830,7 +35830,8 @@
         "venue": "patronaat",
         "confidence": 1,
         "via": "url-date+opengraph"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-paradiso-2027-02-19-wende",
@@ -35992,7 +35993,7 @@
       "venue": "Doornroosje",
       "city": "Nijmegen",
       "country": "NL",
-      "genre": "",
+      "genre": "Indie",
       "subgenre": "",
       "url": "https://www.doornroosje.nl/event/the-reytons/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/04/WEB-foto-3.jpg",
@@ -36009,7 +36010,8 @@
       "imageCredit": {
         "text": "Image: Doornroosje",
         "url": "https://www.doornroosje.nl/event/the-reytons/"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-paradiso-2027-02-20-tramhaus",
@@ -36081,7 +36083,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "",
+      "genre": "Funk / Disco / Psychedelic / Pop / Alternative",
       "subgenre": "",
       "url": "https://patronaat.nl/event/yin-yin-20-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/c-Philine-van-den-Hul10-scaled.jpg",
@@ -36098,7 +36100,8 @@
         "venue": "patronaat",
         "confidence": 1,
         "via": "url-date+opengraph"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "more-19d301f7c69219c9",
@@ -36191,7 +36194,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/oskar-med-k/2947245",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/oskar-med-k.jpg",
@@ -36208,7 +36211,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/oskar-med-k/2947245"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-013-2027-02-21-the-halo-effect",
@@ -36278,7 +36282,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/the-velveteers/2930750",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/velveteers-web2026.jpg",
@@ -36295,7 +36299,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/the-velveteers/2930750"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-paradiso-2027-02-22-protomartyr",
@@ -36307,7 +36312,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/protomartyr/2911672",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Protomartyr_Hyatt-Hill-1_Credit_Trevor-Naud_300dpi-1783515429.jpg",
@@ -36324,7 +36329,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/protomartyr/2911672"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-013-2027-02-22-the-australian-pink-floyd-show",
@@ -39535,8 +39541,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -39548,11 +39554,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -39636,7 +39642,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -41180,7 +41186,7 @@
       }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -41385,10 +41391,10 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1218,
     "festivalEvents": 16,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 53,
+    "sameVenueDuplicatesMerged": 49,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -41397,54 +41403,54 @@
       "requests": 45,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 478,
+      "skippedBlocked": 523,
       "eligible": 821,
       "remainingWithoutImage": 821
     },
     "artistPhotoCache": {
-      "artists": 613,
+      "artists": 614,
       "reviewBlocked": 0,
       "reviewPinned": 0,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 435,
+        "candidates": 432,
         "requests": 12,
         "found": 0,
         "notFound": 12,
         "ambiguous": 0,
         "coverRejected": 0,
         "errors": 0,
-        "skipped": 423,
+        "skipped": 420,
         "urgentRetriesUsed": 12,
-        "photos": 610
+        "photos": 613
       },
       "identity": {
-        "candidates": 435,
-        "processed": 6,
-        "identified": 1,
-        "ambiguous": 3,
-        "notFound": 1,
+        "candidates": 432,
+        "processed": 8,
+        "identified": 2,
+        "ambiguous": 0,
+        "notFound": 5,
         "commons": 0,
-        "deezerLinked": 0,
+        "deezerLinked": 1,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 346,
+        "candidates": 321,
         "attempted": 25,
-        "found": 3,
-        "noMatch": 20,
-        "ambiguous": 1,
-        "licenceRejected": 1,
+        "found": 0,
+        "noMatch": 23,
+        "ambiguous": 0,
+        "licenceRejected": 2,
         "errors": 0,
-        "depictsQueries": 6,
+        "depictsQueries": 4,
         "depictsFound": 0,
-        "categoryQueries": 3,
+        "categoryQueries": 2,
         "categoryFound": 0,
-        "linkedDeezerChecks": 6,
-        "linkedDeezerFound": 3
+        "linkedDeezerChecks": 4,
+        "linkedDeezerFound": 0
       }
     },
-    "gagarinCalendarEvents": 20,
+    "gagarinCalendarEvents": 21,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -41458,12 +41464,12 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 683,
-    "taggedArtists": 720,
+    "genreTaggedEvents": 687,
+    "taggedArtists": 751,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-07T10:42:17.437Z",
+    "updatedAt": "2026-11-07T11:57:29.651Z",
     "catalogueEvents": 1934,
     "officialMatches": 656,
     "imagesPublished": 632,
@@ -41480,7 +41486,7 @@
     },
     "venueEventsPublished": 292,
     "venueGenresFromCache": 0,
-    "venueGenresTagged": 52,
+    "venueGenresTagged": 58,
     "reviewedOfficialArtworkApplied": 2,
     "venueGenreLookups": 12
   }
