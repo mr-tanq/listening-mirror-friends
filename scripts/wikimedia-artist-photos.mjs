@@ -113,7 +113,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
  };
  const knownQid=item=>{
   const id=identityCache?.artists?.[item.key]?.wikidata;
-  return /^Q[1-9]\\d*$/.test(id||'')?id:'';
+  return /^Q[1-9]\d*$/.test(id||'')?id:'';
  };
  const strategyVersion=5; // Reuse a verified MusicBrainz→Wikidata link.
  const candidates=selectArtistCandidates(events,result,{today})
