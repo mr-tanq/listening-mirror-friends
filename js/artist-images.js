@@ -43,6 +43,24 @@ function cleanExplicitAct(raw){
  return candidate;
 }
 
+/**
+ * Explicit multi-act billings only: "Act A / Act B / Act C".
+ * Whitespace on both sides is required so AC/DC, artist aliases, titles
+ * containing ordinary slashes, and event descriptions are not split.
+ * This is a *performer roster*, not a claim about who is headlining.
+ */
+export function explicitlyBilledArtists(event){
+ const title=String(event?.artist||'').replace(/\s+/g,' ').trim();
+ if(!/\s+\/\s+/.test(title)||/\b(?:tribute|cover\s*band|covers\s+of|homage|ode\s+aan)\b/iu.test(title))return [];
+ const parts=title.split(/\s+\/\s+/).map(x=>x.trim());
+ if(parts.length<2||parts.length>5)return [];
+ const blocked=/^(?:live|tour|concert|festival|night|doors|tickets?|afterparty|support|tba|tbc|unknown|various artists)$/iu;
+ if(parts.some(x=>artistKey(x).length<3||x.length>75||x.split(/\s+/).length>8||
+    blocked.test(x)||/[|:]/.test(x)))return [];
+ if(new Set(parts.map(artistKey)).size!==parts.length)return [];
+ return parts;
+}
+
 /** Names eligible for NEW external artist photo searches.
  * The browser photo resolver and all Node enrichers share this shortlist.
  * Venue duplicate matching deliberately retains the older headlinerNames.
@@ -53,6 +71,11 @@ export function headlinerSearchNames(event){
  const first=String(event?.artists?.[0]||'').trim();
  const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
  if(explicit)return [explicit];
+ const billed=explicitlyBilledArtists(event);
+ // A formatted slash bill is an explicit roster of performers. Keep all
+ // names available to the photo resolver, clearly identifying the pictured act.
+ if(billed.length&&(!first||artistKey(first)===artistKey(title)||
+  billed.some(name=>artistKey(name)===artistKey(first))))return billed;
  // A separately structured first artist is stronger than a display title.
  if(first&&artistKey(first)!==artistKey(title)&&
   !/[\s][-–—|][\s]|:\s|\s+\/\s+/.test(first))return [first];
@@ -171,15 +194,23 @@ export function artistImageFor(event,artistImages){
   if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
    scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))continue;
   const url=verifiedArtistPhoto(entry?.image);
-  if(url)return {url,entry,name};
+  if(url)return {url,entry,name,lineup:explicitlyBilledArtists(event).length>1};
  }
  return null;
+}
+function photoCreditFor(found){
+ const existing=safeCredit(found.entry.credit);
+ if(!found.lineup)return existing;
+ // Never present one performer as the full show's headliner. Preserve the
+ // original photographer's attribution and link, including Commons CC terms.
+ return safeCredit({text:'Photo of '+found.name+' (billed act) · '+
+  (existing?.text||'Artist photo'),url:existing?.url||found.entry.sourceUrl||''});
 }
 export function resolveConcertImage(event,artistImages){
  if(event?.image)return {url:event.image,kind:event.imageKind==='artist-photo'?'artist-photo':'event-poster'};
  const found=artistImageFor(event,artistImages);
  if(!found)return {url:'',kind:'fallback'};
- const credit=safeCredit(found.entry.credit);
+ const credit=photoCreditFor(found);
  return credit?{url:found.url,kind:'artist-photo',credit}:{url:found.url,kind:'artist-photo'};
 }
 
@@ -192,6 +223,6 @@ export function resolveConcertImageBackup(event,artistImages){
  if(!event?.image||event?.imageKind==='artist-photo')return null;
  const found=artistImageFor(event,artistImages);
  if(!found||found.url===event.image)return null;
- const credit=safeCredit(found.entry.credit);
+ const credit=photoCreditFor(found);
  return credit?{url:found.url,kind:'artist-photo',credit}:{url:found.url,kind:'artist-photo'};
 }

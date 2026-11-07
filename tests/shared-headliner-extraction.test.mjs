@@ -34,13 +34,13 @@ test('venue duplicate parser remains conservative for presenting artists',()=>{
  assert.deepEqual(headlinerNames(e),['Candy Dulfer presents Funk Legacy Allstars']);
  assert.deepEqual(headlinerSearchNames(e),['Funk Legacy Allstars']);
 });
-test('keeps distinctive band names intact and does not choose a random act from mixed bills',()=>{
+test('keeps band names and extracts only expressly listed multi-act performers',()=>{
  for(const name of ['Earth, Wind & Fire','Red Hot Chili Peppers','Thirty Seconds to Mars',
   'Godspeed You! Black Emperor','A Place to Bury Strangers','Night Beats','LP']){
   assert.deepEqual(headlinerSearchNames(event(name)),[name],name);
  }
- assert.deepEqual(headlinerSearchNames(event('Any Kind / LOMA / Shearwater')),[]);
- assert.deepEqual(headlinerSearchNames(event('Deer Park / Touching Ice / Healing Power of Horses')),[]);
+ assert.deepEqual(headlinerSearchNames(event('Any Kind / LOMA / Shearwater')),['Any Kind','LOMA','Shearwater']);
+ assert.deepEqual(headlinerSearchNames(event('Deer Park / Touching Ice / Healing Power of Horses')),['Deer Park','Touching Ice','Healing Power of Horses']);
  // Tribute subjects are not automatically performers.
  assert.ok(!headlinerSearchNames(event('Boze Wolven Ode aan Gorky')).includes('Gorky'));
  assert.deepEqual(headlinerSearchNames(event('New Group presents The New Album')),['New Group presents The New Album']);
@@ -54,7 +54,7 @@ test('one source title produces one qualified Deezer candidate rather than a fal
  const titles=['Le Guess Who? presents BLEAK SQUAD','Band Night - BeylerBand',
  'Caro - Returning to Innocence','Loïs Lane 40 jaar Live','Any Kind / LOMA / Shearwater'];
  const list=selectArtistCandidates(titles.map(t=>event(t)),{artists:{}},{today:'2026-11-07'});
- assert.deepEqual(list.map(x=>x.key).sort(),['bleak squad','beylerband','caro','lois lane'].sort());
+ assert.deepEqual(list.map(x=>x.key).sort(),['bleak squad','beylerband','caro','lois lane','any kind','loma','shearwater'].sort());
  assert.ok(!list.some(x=>x.key.includes('presents')||x.key.includes('returning to')));
 });
 test('new shared headliner key is also the browser photo resolution key',()=>{
