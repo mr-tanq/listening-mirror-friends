@@ -20,6 +20,55 @@ const TRAILING_WORDS=/\s+(?:\+\s*supports?|\+\s*special guests?|\+\s*guests?|sup
 // a single comma are NOT split: "Earth, Wind & Fire" must stay one act.
 const GUEST_SPLIT=/\s+(?:met|with|feat\.?|ft\.?|featuring|w\/|\+)\s+/i;
 
+// These are grammatical event-title boundaries, NOT a list of selected artists
+// or venues. In particular, we never assume a famous name mentioned in a
+// tribute, tour title or mixed lineup is the performing headliner.
+const PERFORMER_CUE=/(?:\boptreden\s+van|\bperformance\s+by)\s+(.+)$/iu;
+const PRESENTER_CUE=/^(.{3,100}?)\s+(?:presents?|presenteert|presenteren)\s*:?\s+(.{2,100})$/iu;
+const SERIES_DASH=/^(?:band\s+night|open[\s-]+mic(?:\s+night)?|club\s+night|artist\s+showcase|music\s+showcase|tribute\s+night)\s+[-–—|]\s+(.+)$/iu;
+const EVENT_SUFFIX=/\b(?:album|tour|anniversary|special guests?|line[\s-]?up|tickets?|afterparty|new\s+record|presents?)\b/iu;
+// Explicit show descriptors sometimes follow the act without punctuation.
+// Do not strip arbitrary two-word endings or numerals in actual band names.
+const SHOW_TRAILER=/\s+(?:\d{1,3}\s+(?:jaar|years?)\s+(?:live|tour|jubileum|anniversary)|extended\s+set)$/iu;
+function cleanExplicitAct(raw){
+ const name=String(raw||'').replace(/\s+/g,' ').trim();
+ if(!name||name.length>180)return '';
+ const performer=name.match(PERFORMER_CUE);
+ const presenter=name.match(PRESENTER_CUE);
+ const night=name.match(SERIES_DASH);
+ const candidate=(performer?.[1]||presenter?.[2]||night?.[1]||'').trim()
+  .replace(/^[-–—:\s]+|[-–—:\s]+$/g,'');
+ if(candidate.length<2||candidate.length>90||candidate.split(/\s+/).length>9||
+  EVENT_SUFFIX.test(candidate)||/\s+\/\s+/.test(candidate))return '';
+ return candidate;
+}
+
+/** Names eligible for NEW external artist photo searches.
+ * The browser photo resolver and all Node enrichers share this shortlist.
+ * Venue duplicate matching deliberately retains the older headlinerNames.
+ * Suppresses speculative lookups for composite event titles.
+ */
+export function headlinerSearchNames(event){
+ const title=String(event?.artist||'').trim();
+ const first=String(event?.artists?.[0]||'').trim();
+ const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
+ if(explicit)return [explicit];
+ // A separately structured first artist is stronger than a display title.
+ if(first&&artistKey(first)!==artistKey(title)&&
+  !/[\s][-–—|][\s]|:\s|\s+\/\s+/.test(first))return [first];
+ const raw=first||title;
+ if(/\s+\/\s+/.test(raw))return []; // Multi-act bill, not one band's photo.
+ const all=headlinerNames(event);
+ const trailer=raw.replace(SHOW_TRAILER,'').trim();
+ if(trailer!==raw&&trailer.length>=2)return [trailer];
+ if(/(?:\s+[-–—|]\s+|:\s)/.test(raw)){
+  const derived=all.find(n=>artistKey(n)!==artistKey(raw));
+  if(derived)return [derived]; // "Artist - Tour" => search Artist only.
+ }
+ return all;
+}
+
+
 /**
  * Ordered, de-duplicated names under which the HEADLINER may be known.
  * The full source name always comes first; derived names follow from the
@@ -113,7 +162,9 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 }
 /** The cached artist entry for an event's headliner, if any. */
 export function artistImageFor(event,artistImages){
- for(const name of headlinerNames(event)){
+ // Strict photo headliner selection must not alter the older concert-identity
+ // matching grammar used by venue de-duplication.
+ for(const name of headlinerSearchNames(event)){
   const entry=artistImages?.artists?.[artistKey(name)];
   // Human-reviewed same-name artist photographs can be bound to one exact
   // concert. Never leak a scoped Whitechapel photo to an unrelated act.
