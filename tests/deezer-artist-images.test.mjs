@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {artistFromDeezerSearch,selectArtistCandidates,enrichDeezerArtistImages} from '../scripts/deezer-artist-images.mjs';
+import {artistFromDeezerSearch,selectArtistCandidates,enrichDeezerArtistImages,isUrgentRetryEligible} from '../scripts/deezer-artist-images.mjs';
 const picture='https://cdn-images.dzcdn.net/images/artist/3780a546a18503f1ca1e67358750847e/1000x1000-000000-80-0-0.jpg';
 const event=(artist,date='2026-12-01')=>({artist,country:'NL',date,image:'',source:'podiuminfo-agenda'});
 test('only exact artist names are accepted, never fuzzy matches',()=>{
@@ -49,4 +49,32 @@ test('existing verified artist image is never queued again, including urgent sho
   event('Tomorrow Artist','2026-11-07'),event('Other Artist','2026-11-08')
  ],cache,{today:'2026-11-06'});
  assert.deepEqual(candidates.map(x=>x.key),['other artist']);
+});
+
+test('urgent retry is narrowly limited to old exact not-found results',()=>{
+ const item={nextDate:'2026-11-12'};
+ assert.equal(isUrgentRetryEligible(item,{reason:'not-found',retryAfter:'2026-11-29'},'2026-11-07'),true);
+ assert.equal(isUrgentRetryEligible(item,{reason:'not-found',retryAfter:'2026-12-05'},'2026-11-07'),false);
+ assert.equal(isUrgentRetryEligible(item,{reason:'ambiguous-same-name',retryAfter:'2026-12-30'},'2026-11-07'),false);
+ assert.equal(isUrgentRetryEligible(item,{reason:'album-cover-as-portrait',retryAfter:'2026-11-29'},'2026-11-07'),false);
+ assert.equal(isUrgentRetryEligible({nextDate:'2027-01-02'},{reason:'not-found',retryAfter:'2026-11-29'},'2026-11-07'),false);
+ assert.equal(isUrgentRetryEligible(item,{reason:'not-found',retryAfter:'2026-11-29',attemptedAt:'2026-11-06'},'2026-11-07'),false);
+});
+test('daily urgent retries are capped, still exact and preserve protected backoffs',async()=>{
+ const names=Array.from({length:16},(_,i)=>'Unique Act '+String(i).padStart(2,'0'));
+ const attempts=Object.fromEntries(names.map(name=>[name.toLowerCase(),{reason:'not-found',retryAfter:'2026-11-29'}]));
+ attempts['unique act 00']={reason:'ambiguous-same-name',retryAfter:'2027-01-01'};
+ const requested=[];
+ const fetcher=async url=>{
+  requested.push(url);
+  return {ok:true,status:200,json:async()=>({data:[]})};
+ };
+ const out=await enrichDeezerArtistImages(names.map(name=>event(name,'2026-11-12')),
+  {artists:{},attempted:attempts},
+  {today:'2026-11-07',fetcher,maxRequests:30,checkAlbumCovers:false,delay:async()=>{}});
+ assert.equal(out.stats.urgentRetries,12);
+ assert.equal(out.stats.requests,12);
+ assert.equal(out.cache.attempted['unique act 00'].reason,'ambiguous-same-name');
+ assert.equal(out.cache.attempted['unique act 01'].attemptedAt,'2026-11-07');
+ assert.ok(requested.every(url=>url.includes('/search/artist?q=')));
 });
