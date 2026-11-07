@@ -766,6 +766,16 @@
       "country": "",
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-07T11:51:30.777Z"
+    },
+    "aupinard": {
+      "name": "aupinard",
+      "mbid": "12aa25fe-995e-405d-87ad-bf699a99d304",
+      "mbName": "aupinard",
+      "country": "FR",
+      "matchedBy": "unique-name",
+      "spotifyId": "33U9I7yBy34UXqKYObItne",
+      "wikidata": "Q131990582",
+      "checkedAt": "2026-11-07T14:48:02.917Z"
     }
   },
   "attempted": {
@@ -1135,6 +1145,34 @@
       "reason": "not-found"
     },
     "orsini": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "dylan dunnink": {
+      "retryAfter": "2026-11-09",
+      "reason": "fetch failed"
+    },
+    "aupinard": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "kolsch the machine": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "lawn": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "michael jackson project ft jared grant": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "mustbejohn chimer only tears": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "prison religion": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }

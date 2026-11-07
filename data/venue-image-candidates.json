@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T11:57:29.651Z",
+  "generatedAt": "2026-11-07T14:54:00.220Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -3973,12 +3973,12 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-04-the-bootleg-beatles",
+      "eventId": "podiuminfo-502025",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/the-bootleg-beatles-04-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/11/e38a135c_Unknown-1.png",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {

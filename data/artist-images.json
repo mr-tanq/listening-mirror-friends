@@ -7835,6 +7835,79 @@
       },
       "mbid": "5f8fd2d5-407b-4f38-bef0-35278078a7f2",
       "checkedAt": "2026-11-07T11:51:28.406Z"
+    },
+    "landhuis caravan": {
+      "name": "Landhuis & Caravan",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e865d6944b998bb3d91e6b49c95797a0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 247844642,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/247844642",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/247844642"
+      },
+      "checkedAt": "2026-11-07T14:47:54.745Z"
+    },
+    "phantom wizard": {
+      "name": "Phantom Wizard",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7eda2f2e9fa1d760006317856d40e8bd/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 118544612,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/118544612",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/118544612"
+      },
+      "checkedAt": "2026-11-07T14:47:58.822Z"
+    },
+    "edis": {
+      "name": "Edis",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f506aa24a14dabc72c980f2c41bdce24/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1171997,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/1171997",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1171997"
+      },
+      "wikidata": "Q19611078",
+      "checkedAt": "2026-11-07T14:48:14.866Z"
+    },
+    "trobi": {
+      "name": "Trobi",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/48329d881598e970d988ce7faa7af0ab/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11600867,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/11600867",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11600867"
+      },
+      "wikidata": "Q116815123",
+      "checkedAt": "2026-11-07T14:48:32.201Z"
+    },
+    "alain clark": {
+      "name": "Alain Clark",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9987d89c93c80ebbc9a3b22d319963f8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 182589,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/182589",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/182589"
+      },
+      "wikidata": "Q1390029",
+      "checkedAt": "2026-11-07T14:48:47.936Z"
     }
   },
   "attempted": {
@@ -8071,8 +8144,9 @@
       "reason": "album-cover-as-portrait"
     },
     "talent meets talent marou massin": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ultrajazz": {
       "retryAfter": "2026-12-07",
@@ -8080,8 +8154,9 @@
       "urgentRetried": true
     },
     "caro returning to innocence": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "clobber": {
       "retryAfter": "2027-01-04",
@@ -8116,8 +8191,9 @@
       "urgentRetried": true
     },
     "kreukelzone madame perdu": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "nes": {
       "retryAfter": "2027-01-04",
@@ -8151,8 +8227,9 @@
       "reason": "album-cover-as-portrait"
     },
     "donker dansen darker levels": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "iron beast": {
       "retryAfter": "2026-12-05",
@@ -8174,8 +8251,9 @@
       "reason": "album-cover-as-portrait"
     },
     "the elvis concert special 70th anniversary heartbreak hotel": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "utrechtse meezingerij": {
       "retryAfter": "2026-12-07",
@@ -8272,8 +8350,9 @@
       "urgentRetried": true
     },
     "iris hond kamerata zuid spelen einaudi": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "master boot record fulci": {
       "retryAfter": "2026-12-07",
@@ -8308,8 +8387,9 @@
       ]
     },
     "michael jackson project ft jared grant off the wall": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "mustbejohn chimer only tears": {
       "retryAfter": "2026-12-07",
@@ -8337,16 +8417,18 @@
       "reason": "album-cover-as-portrait"
     },
     "kreukelzone mannen met baarden": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "mietze conte": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
     "muna gets so hot tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "omar doom": {
       "retryAfter": "2026-12-05",
@@ -8367,8 +8449,9 @@
       "reason": "album-cover-as-portrait"
     },
     "alex agnew the moonlovers the doors": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "bizkit park": {
       "retryAfter": "2026-12-07",
@@ -8405,8 +8488,9 @@
       "reason": "album-cover-as-portrait"
     },
     "soul birds the new chapter": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "vrlcht": {
       "retryAfter": "2026-12-05",
@@ -9668,8 +9752,9 @@
       ]
     },
     "paardcafe sea foam grey": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "donker dansen": {
       "retryAfter": "2026-12-07",
@@ -10181,6 +10266,34 @@
       ]
     },
     "seafret tell me it s real": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "dylan dunnink": {
+      "retryAfter": "2026-12-07",
+      "reason": "album-cover-as-portrait"
+    },
+    "hku large ensemble": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "rabo open stage landhuis caravan": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "systematic show case": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "dinsdagochtend concert": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "the sha la lee s": {
+      "retryAfter": "2026-12-07",
+      "reason": "album-cover-as-portrait"
+    },
+    "dinsdagochtend concert daniel juberias": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     }
@@ -10857,6 +10970,116 @@
       "reason": "no-confirmed-musician"
     },
     "demo club bandnight auks": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "dylan dunnink": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "hku large ensemble": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "actie aletta": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "knoll": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "taemin": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "chris eckman": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "judith kiddo": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lost": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "we all sing abba": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "club 3voor12 utrecht": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "hania derej trio": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "zelie": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "cobrah autumn": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "gplr 2026": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "leap": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lil peep 30th birthday celebration": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "luca": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "meatallica the art of pantera": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nems": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "dub hub": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nos ku nos": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "shantel bucovina club orkestar de": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

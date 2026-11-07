@@ -1,31 +1,31 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T11:58:03.546Z",
-  "catalogUpdatedAt": "2026-11-07T11:54:08.895Z",
+  "generatedAt": "2026-11-07T14:54:33.474Z",
+  "catalogUpdatedAt": "2026-11-07T14:50:39.284Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1934,
-    "eventPoster": 1056,
-    "artistPhoto": 490,
-    "noImage": 388,
+    "total": 1942,
+    "eventPoster": 1057,
+    "artistPhoto": 495,
+    "noImage": 390,
     "posterWithPhotoBackup": 398
   },
   "byCountry": {
     "GR": {
-      "total": 409,
-      "eventPoster": 362,
+      "total": 410,
+      "eventPoster": 363,
       "artistPhoto": 14,
       "noImage": 33,
       "posterWithPhotoBackup": 38
     },
     "NL": {
-      "total": 1415,
+      "total": 1422,
       "eventPoster": 688,
-      "artistPhoto": 412,
-      "noImage": 315,
+      "artistPhoto": 417,
+      "noImage": 317,
       "posterWithPhotoBackup": 356
     },
     "BE": {
@@ -37,14 +37,14 @@
     }
   },
   "missingReasons": {
-    "artist-not-found": 178,
-    "album-cover-rejected": 70,
-    "ambiguous-artist": 80,
+    "artist-not-found": 180,
+    "album-cover-rejected": 72,
+    "ambiguous-artist": 78,
     "other-lookup-cooldown": 46,
     "not-in-artist-cache": 10,
     "artist-has-no-photo": 4
   },
-  "missingNext14Days": 98,
+  "missingNext14Days": 100,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -433,14 +433,6 @@
       "reason": "artist-not-found"
     },
     {
-      "id": "podiuminfo-468697",
-      "artist": "Edis",
-      "date": "2026-11-24",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-454763",
       "artist": "Knoll",
       "date": "2026-11-24",
@@ -550,14 +542,6 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-483594",
-      "artist": "Trobi - Kameleon",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Melkweg",
       "reason": "artist-not-found"
     },
     {
@@ -673,20 +657,36 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-462646",
-      "artist": "Alain Clark - Date Night",
-      "date": "2026-11-28",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-457726",
       "artist": "Dub Hub",
       "date": "2026-11-28",
       "country": "NL",
       "venue": "Muziekgieterij",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-500195",
+      "artist": "Nos Ku Nos",
+      "date": "2026-11-28",
+      "country": "NL",
+      "venue": "Annabel",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-448563",
+      "artist": "Shantel & Bucovina Club Orkestar (de)",
+      "date": "2026-11-28",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-463374",
+      "artist": "Stay Away From Dante!",
+      "date": "2026-11-28",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
     }
   ]
 }

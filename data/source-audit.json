@@ -1,22 +1,22 @@
 {
-  "catalogUpdatedAt": "2026-11-07T11:54:08.895Z",
+  "catalogUpdatedAt": "2026-11-07T14:50:39.284Z",
   "auditedFor": "2026-11-07",
-  "totalPublished": 1934,
-  "greekPublished": 409,
+  "totalPublished": 1943,
+  "greekPublished": 410,
   "imageCoverage": {
-    "withImage": 1056,
-    "withoutImage": 878
+    "withImage": 1058,
+    "withoutImage": 885
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 409,
-      "withImage": 362,
+      "events": 410,
+      "withImage": 363,
       "withoutImage": 47
     },
     "NL": {
-      "events": 1415,
-      "withImage": 688,
-      "withoutImage": 727
+      "events": 1423,
+      "withImage": 689,
+      "withoutImage": 734
     },
     "BE": {
       "events": 110,
@@ -50,27 +50,27 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 21,
-      "withImage": 21,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 21
+      "greekEvents": 20
     },
     "more": {
-      "events": 273,
-      "withImage": 273,
+      "events": 274,
+      "withImage": 274,
       "withoutImage": 0,
-      "greekEvents": 273
+      "greekEvents": 274
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1218,
-      "withImage": 397,
-      "withoutImage": 821,
+      "events": 1226,
+      "withImage": 398,
+      "withoutImage": 828,
       "greekEvents": 0
     },
     "rocking": {
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 21,
-      "withImage": 21,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -413,6 +413,14 @@
       ]
     },
     {
+      "name": "Royal Theater",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Μεγαρο Μουσικης Κομοτηνης",
       "events": 2,
       "withImage": 2,
@@ -422,14 +430,6 @@
     },
     {
       "name": "Doors Live Art Athens",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "UNDERFLOW RECORD STORE",
       "events": 2,
       "withImage": 2,
       "sources": [
