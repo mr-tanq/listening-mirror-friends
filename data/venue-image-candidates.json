@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T08:55:11.776Z",
+  "generatedAt": "2026-11-07T09:07:07.282Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -366,6 +366,15 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/oh-voyage-3/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/Artist-Photo-for-Album-Tour-600x600.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2026-11-11-touching-ice",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/touching-ice/2944055",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ab6761610000e5eb743a6340db706cb77c3ef00b.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4864,6 +4873,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-03-mike-lindup-trio",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/mike-lindup-trio-03-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/1c4e4c45-e51a-460c-b63b-cffbf322c587-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-03-03-moyka",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/moyka/2925300",
@@ -4896,6 +4914,24 @@
       "eventUrl": "https://www.paradiso.nl/programma/keshavara/2942229",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Keshavara_tunnel_highres_%C2%A9_niclasweber-1791285585.jpg",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-04-king-buffalo",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/king-buffalo-04-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/BG0A3222-2-scaled.jpg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-04-rezn",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/rezn-04-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/07/REZN-_-SocialTemplates_REZN-CITID-Main-Press-Vertical-Portrait-819x1024.png",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -4963,6 +4999,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-05-the-dirty-daddies",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/the-dirty-daddies-05-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/01/thedirtydaddies_letthegoodtimesroll_liggend-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-doornroosje-2027-03-06-come-as-you-are",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/come-as-you-are-3/",
@@ -4990,11 +5035,29 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-06-made-in-purple",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/made-in-purple-55-years-of-made-in-japan-06-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/941134a2-1463-408e-ac34-39bbca3af015.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-013-2027-03-06-one-vision-of-queen-ft-marc-martel",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Marc-Martel.jpg?mtime=1774851871",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-06-wende",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/wende-support-06-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -5013,6 +5076,24 @@
       "eventUrl": "https://www.paradiso.nl/programma/saint-etienne/2948998",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/saint-etienne-persfoto.jpg",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-07-shantel",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/shantel-07-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/08/Shantel_BCO_HaraldHSchroeder-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-07-wende",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/wende-support-07-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -5125,6 +5206,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-12-rudeboy-x-boskat",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/rudeboy-x-boskat-12-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/CRED-JO-POLLEUNIS-DSC04203-Enhanced-NR-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-013-2027-03-12-the-dirty-daddies",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/125058/the-dirtt",
@@ -5138,6 +5228,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/wende-14/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-13-de-kift",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/de-kift-13-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/04/IMG_4499-e1779352666861.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5233,6 +5332,24 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-patronaat-2027-03-16-mamas-gun",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/mamas-gun-16-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/Declan-Haughian_20250903-DM_01006-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-17-clouseau-phil",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/clouseau-17-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Clouseau-2026-Beeld.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-03-17-lael-neale",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/lael-neale/2931775",
@@ -5265,6 +5382,15 @@
       "eventUrl": "https://www.013.nl/programma/162032/edwin-evers-band",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Persfoto-Edwin-Evers-Band-1-2.jpg?mtime=1793096404",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-18-hugo-barriol",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/hugo-barriol-support-18-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/09/Credit-Mathieu-Spadaro-46AD9559-A385-458E-9705-58ECB32F7472-scaled.jpeg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },

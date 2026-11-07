@@ -1,22 +1,22 @@
 {
-  "catalogUpdatedAt": "2026-11-07T08:51:50.132Z",
+  "catalogUpdatedAt": "2026-11-07T09:03:46.636Z",
   "auditedFor": "2026-11-07",
-  "totalPublished": 1913,
-  "greekPublished": 408,
+  "totalPublished": 1925,
+  "greekPublished": 409,
   "imageCoverage": {
-    "withImage": 1034,
-    "withoutImage": 879
+    "withImage": 1047,
+    "withoutImage": 878
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 408,
-      "withImage": 361,
+      "events": 409,
+      "withImage": 362,
       "withoutImage": 47
     },
     "NL": {
-      "events": 1395,
-      "withImage": 667,
-      "withoutImage": 728
+      "events": 1406,
+      "withImage": 679,
+      "withoutImage": 727
     },
     "BE": {
       "events": 110,
@@ -26,10 +26,10 @@
   },
   "sources": {
     "anclub-index": {
-      "events": 25,
-      "withImage": 23,
+      "events": 26,
+      "withImage": 24,
       "withoutImage": 2,
-      "greekEvents": 25
+      "greekEvents": 26
     },
     "festivalinfo": {
       "events": 13,
@@ -50,10 +50,10 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
+      "events": 21,
+      "withImage": 21,
       "withoutImage": 0,
-      "greekEvents": 20
+      "greekEvents": 21
     },
     "more": {
       "events": 273,
@@ -62,15 +62,15 @@
       "greekEvents": 273
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1218,
-      "withImage": 396,
-      "withoutImage": 822,
+      "withImage": 397,
+      "withoutImage": 821,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 66
     },
     "venue-official": {
-      "events": 272,
-      "withImage": 270,
+      "events": 283,
+      "withImage": 281,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 25,
-      "withImage": 23,
+      "published": 26,
+      "withImage": 24,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 28,
-      "withImage": 26,
+      "events": 29,
+      "withImage": 27,
       "sources": [
         "anclub-index",
         "more",

@@ -7700,6 +7700,36 @@
       },
       "wikidata": "Q16834874",
       "checkedAt": "2026-11-07T08:50:09.382Z"
+    },
+    "noor": {
+      "name": "Noor",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d4753cf8db5b3665c1537511a814d7a7/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 898173,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/898173",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/898173"
+      },
+      "wikidata": "Q124394543",
+      "checkedAt": "2026-11-07T09:01:54.039Z"
+    },
+    "bill frisell": {
+      "name": "Bill Frisell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6b403162d165a670bd43e4bb31240aca/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5125,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/5125",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5125"
+      },
+      "wikidata": "Q434968",
+      "checkedAt": "2026-11-07T09:02:13.724Z"
     }
   },
   "attempted": {
@@ -7787,15 +7817,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "solex": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5907,
-        415255322,
-        411791632
-      ]
-    },
     "ares": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -7813,8 +7834,9 @@
       ]
     },
     "hλιας φουντουλης": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "def brittneysgat": {
       "retryAfter": "2026-12-05",
@@ -7827,17 +7849,6 @@
     "tribute to the cats band": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "elder": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        13024615,
-        77307982,
-        365198,
-        191013467,
-        77307972
-      ]
     },
     "lovelace": {
       "retryAfter": "2027-01-04",
@@ -7852,8 +7863,9 @@
       "reason": "album-cover-as-portrait"
     },
     "boze wolven ode aan gorky": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "caedere": {
       "retryAfter": "2026-12-05",
@@ -7873,20 +7885,23 @@
       "reason": "album-cover-as-portrait"
     },
     "slixx extended set": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "celestial season": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
     "deer park touching ice the healing power of horses": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "le guess who presents bleak squad": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "otis gibbs": {
       "retryAfter": "2026-12-05",
@@ -7901,28 +7916,28 @@
       "reason": "album-cover-as-portrait"
     },
     "any kind loma shearwater": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "azc de vlampijp x musicaz x db s viering": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "dav id": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
     "funk legacy allstars": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "lp all is not lost tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "trio bier": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "architrackz": {
       "retryAfter": "2026-12-05",
@@ -8086,8 +8101,9 @@
       "reason": "not-found"
     },
     "utrechtse meezingerij": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "employed to serve cabal": {
       "retryAfter": "2026-12-05",
@@ -9415,10 +9431,6 @@
         172717097
       ]
     },
-    "solex jean d l": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "50 years of rumours": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -9426,10 +9438,6 @@
     "dikke": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "elder temple fang": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "sunflower ft wolfert brederode tim langedijk": {
       "retryAfter": "2026-12-05",
@@ -9554,8 +9562,9 @@
       "reason": "album-cover-as-portrait"
     },
     "kreukelzone": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "disco inferno": {
       "retryAfter": "2027-01-04",
@@ -9584,8 +9593,9 @@
       ]
     },
     "talent meets talent": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "caro": {
       "retryAfter": "2027-01-04",
@@ -10174,11 +10184,6 @@
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
     },
-    "trio bier": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-licensed-commons-photo"
-    },
     "architrackz": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
@@ -10455,6 +10460,121 @@
       "reason": "no-confirmed-musician"
     },
     "deer park touching ice the healing power of horses": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the bootleg beatles": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "le guess who presents bleak squad": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "otis gibbs": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "any kind loma shearwater": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "azc de vlampijp x musicaz x db s viering": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "funk legacy allstars": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lp all is not lost tour": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nate smith": {
+      "strategyVersion": 4,
+      "retryAfter": "2027-02-05",
+      "reason": "ambiguous-musical-identity"
+    },
+    "niall mccabe": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "talent meets talent": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "ultrajazz": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "caro": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "clobber": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "de rolf sanchez club": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "emmet cohen quintet": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "flora": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "jan o en de overige bandleden": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "nes": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "sea foam grey": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "ars musica": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "cassia": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "coos": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "donker dansen": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

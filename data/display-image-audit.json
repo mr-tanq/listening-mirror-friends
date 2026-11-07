@@ -1,32 +1,32 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T08:55:44.764Z",
-  "catalogUpdatedAt": "2026-11-07T08:51:50.132Z",
+  "generatedAt": "2026-11-07T09:07:38.074Z",
+  "catalogUpdatedAt": "2026-11-07T09:03:46.636Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1924,
-    "eventPoster": 1046,
-    "artistPhoto": 481,
-    "noImage": 397,
-    "posterWithPhotoBackup": 393
+    "total": 1934,
+    "eventPoster": 1056,
+    "artistPhoto": 483,
+    "noImage": 395,
+    "posterWithPhotoBackup": 397
   },
   "byCountry": {
     "GR": {
-      "total": 408,
-      "eventPoster": 361,
+      "total": 409,
+      "eventPoster": 362,
       "artistPhoto": 14,
       "noImage": 33,
       "posterWithPhotoBackup": 38
     },
     "NL": {
-      "total": 1406,
-      "eventPoster": 679,
-      "artistPhoto": 403,
-      "noImage": 324,
-      "posterWithPhotoBackup": 351
+      "total": 1415,
+      "eventPoster": 688,
+      "artistPhoto": 405,
+      "noImage": 322,
+      "posterWithPhotoBackup": 355
     },
     "BE": {
       "total": 110,
@@ -37,10 +37,14 @@
     }
   },
   "missingReasons": {
-    "provider-backoff": 387,
-    "not-in-artist-cache": 10
+    "artist-not-found": 179,
+    "album-cover-rejected": 70,
+    "ambiguous-artist": 85,
+    "other-lookup-cooldown": 47,
+    "not-in-artist-cache": 10,
+    "artist-has-no-photo": 4
   },
-  "missingNext14Days": 105,
+  "missingNext14Days": 103,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -48,7 +52,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-493890",
@@ -56,7 +60,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Willemeen",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-490094",
@@ -64,7 +68,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Melkweg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-499242",
@@ -72,7 +76,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Vera",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-500098",
@@ -80,7 +84,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Grenswerk",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-459733",
@@ -88,7 +92,7 @@
       "date": "2026-11-08",
       "country": "NL",
       "venue": "Baroeg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-493073",
@@ -96,7 +100,7 @@
       "date": "2026-11-08",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "rocking-20261108-27562",
@@ -104,7 +108,7 @@
       "date": "2026-11-08",
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-484847",
@@ -112,7 +116,7 @@
       "date": "2026-11-08",
       "country": "NL",
       "venue": "dB's",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-490786",
@@ -128,7 +132,7 @@
       "date": "2026-11-10",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-499977",
@@ -136,7 +140,7 @@
       "date": "2026-11-10",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-451605",
@@ -144,7 +148,7 @@
       "date": "2026-11-10",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-474207",
@@ -152,7 +156,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "Vera",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-498215",
@@ -160,7 +164,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "dB's",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-501470",
@@ -168,7 +172,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-488701",
@@ -176,7 +180,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "Patronaat",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-463414",
@@ -184,7 +188,7 @@
       "date": "2026-11-11",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-472059",
@@ -192,7 +196,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-474498",
@@ -200,7 +204,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Hall Of Fame",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-496059",
@@ -208,7 +212,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-487978",
@@ -216,7 +220,7 @@
       "date": "2026-11-12",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-462145",
@@ -224,7 +228,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-458778",
@@ -232,7 +236,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-460280",
@@ -240,15 +244,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
-    },
-    {
-      "id": "podiuminfo-453806",
-      "artist": "Noor",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-481299",
@@ -256,7 +252,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Paard",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-493398",
@@ -264,7 +260,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "Hall Of Fame",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-499978",
@@ -272,7 +268,7 @@
       "date": "2026-11-12",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-453129",
@@ -280,7 +276,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-465385",
@@ -288,7 +284,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "Bibelot",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-459705",
@@ -296,7 +292,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-453093",
@@ -304,7 +300,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-479508",
@@ -312,7 +308,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-447995",
@@ -328,7 +324,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "Grenswerk",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-481184",
@@ -336,7 +332,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-455870",
@@ -344,7 +340,7 @@
       "date": "2026-11-13",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-497849",
@@ -352,7 +348,7 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "Paard",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-497347",
@@ -360,7 +356,15 @@
       "date": "2026-11-13",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-480759",
+      "artist": "Ars Musica: Night Lives - Kristine Tjøgersen",
+      "date": "2026-11-14",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "album-cover-rejected"
     }
   ],
   "missingOtherSamples": [
@@ -370,7 +374,7 @@
       "date": "2026-11-22",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "rocking-20261122-27562",
@@ -378,7 +382,7 @@
       "date": "2026-11-22",
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-458798",
@@ -386,7 +390,7 @@
       "date": "2026-11-22",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-490074",
@@ -394,7 +398,7 @@
       "date": "2026-11-22",
       "country": "NL",
       "venue": "dB's",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-495360",
@@ -402,7 +406,7 @@
       "date": "2026-11-22",
       "country": "NL",
       "venue": "Bibelot",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-496906",
@@ -410,7 +414,7 @@
       "date": "2026-11-22",
       "country": "NL",
       "venue": "Willemeen",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-496060",
@@ -418,7 +422,7 @@
       "date": "2026-11-23",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "venue-doornroosje-2026-11-24-actie-aletta",
@@ -426,7 +430,7 @@
       "date": "2026-11-24",
       "country": "NL",
       "venue": "Doornroosje",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-468697",
@@ -434,7 +438,7 @@
       "date": "2026-11-24",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-454763",
@@ -442,7 +446,7 @@
       "date": "2026-11-24",
       "country": "NL",
       "venue": "Doornroosje",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-490800",
@@ -450,7 +454,7 @@
       "date": "2026-11-24",
       "country": "NL",
       "venue": "AFAS Live",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-477377",
@@ -458,7 +462,7 @@
       "date": "2026-11-25",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-494889",
@@ -466,7 +470,7 @@
       "date": "2026-11-25",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-480071",
@@ -474,7 +478,7 @@
       "date": "2026-11-25",
       "country": "NL",
       "venue": "Vera",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-498837",
@@ -482,7 +486,7 @@
       "date": "2026-11-25",
       "country": "NL",
       "venue": "Willemeen",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-479014",
@@ -490,7 +494,7 @@
       "date": "2026-11-25",
       "country": "NL",
       "venue": "AFAS Live",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-462642",
@@ -498,7 +502,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Paard",
-      "reason": "provider-backoff"
+      "reason": "other-lookup-cooldown"
     },
     {
       "id": "podiuminfo-500902",
@@ -506,7 +510,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "dB's",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-500078",
@@ -514,7 +518,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Melkweg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-473433",
@@ -522,7 +526,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-497688",
@@ -530,7 +534,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-457842",
@@ -538,7 +542,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Paard",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-463824",
@@ -546,7 +550,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-483594",
@@ -554,7 +558,7 @@
       "date": "2026-11-26",
       "country": "NL",
       "venue": "Melkweg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-456106",
@@ -562,7 +566,7 @@
       "date": "2026-11-26",
       "country": "BE",
       "venue": "Botanique",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-462644",
@@ -570,7 +574,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Hall Of Fame",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-479406",
@@ -578,7 +582,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Willemeen",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-493613",
@@ -586,7 +590,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Annabel",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-495638",
@@ -602,7 +606,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "dB's",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-471884",
@@ -610,7 +614,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Melkweg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-490814",
@@ -618,7 +622,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-481186",
@@ -626,7 +630,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-479471",
@@ -634,7 +638,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-487102",
@@ -642,7 +646,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Grenswerk",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "rocking-20261127-27442",
@@ -650,7 +654,7 @@
       "date": "2026-11-27",
       "country": "GR",
       "venue": "Temple Athens",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-493139",
@@ -658,7 +662,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-489717",
@@ -666,7 +670,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Paradiso",
-      "reason": "provider-backoff"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-462646",
@@ -674,7 +678,7 @@
       "date": "2026-11-28",
       "country": "NL",
       "venue": "TivoliVredenburg",
-      "reason": "provider-backoff"
+      "reason": "ambiguous-artist"
     },
     {
       "id": "podiuminfo-457726",
@@ -682,7 +686,7 @@
       "date": "2026-11-28",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "provider-backoff"
+      "reason": "artist-not-found"
     }
   ]
 }
