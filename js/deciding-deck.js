@@ -1,4 +1,4 @@
-import {watchConcertImage} from './image-load-diagnostics.js?v=diagnostics-v1';
+import {watchConcertImage,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
 import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
 
 const el=(tag,cls,text)=>{
@@ -46,6 +46,7 @@ export function openConcertDetail(event={},reason=''){
     actionButton('×','deciding-close',()=>dialog.close()));
   inner.append(top,el('h2','deciding-detail-name',event.artist||'Concert'));
   const poster=safeUrl(event.image);
+  recordRenderedConcert(event,poster);
   if(poster){
     const img=el('img','deciding-detail-image');img.alt='Event artwork';img.loading='lazy';
     watchConcertImage(img,event,poster,safeUrl(event.imageFallback));img.src=poster;inner.append(img);
@@ -118,6 +119,7 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
     el('span','deck-typographic-venue',event.venue||event.city||'Concert'));
   image.append(fallback);
   const url=safeUrl(event.image);
+  recordRenderedConcert(event,url);
   if(url){
     const img=el('img','deck-poster');img.alt=event.artist+' artwork';
     img.loading='eager';watchConcertImage(img,event,url,safeUrl(event.imageFallback));img.src=url;
