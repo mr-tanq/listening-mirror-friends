@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import {commonsArtistCategoryUrl,selectLicensedCategoryPhoto} from '../scripts/commons-category-photos.mjs';
 import {enrichWikimediaArtistPhotos} from '../scripts/wikimedia-artist-photos.mjs';
 
-const URL='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/IMG_0123.jpg/960px-IMG_0123.jpg';
+const IMAGE_URL='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/IMG_0123.jpg/960px-IMG_0123.jpg';
 const response=data=>({ok:true,status:200,json:async()=>data});
 const image=(name,{description='',license='CC BY-SA 4.0',width=1800}={})=>({
  pageid:12,ns:6,title:'File:'+name,imageinfo:[{
-  thumburl:URL,width,height:1200,mime:'image/jpeg',
+  thumburl:IMAGE_URL,width,height:1200,mime:'image/jpeg',
   descriptionurl:'https://commons.wikimedia.org/wiki/File:IMG_0123.jpg',
   extmetadata:{
    Artist:{value:'Verified venue photographer'},
@@ -38,7 +38,7 @@ test('a generic filename is accepted only when the licensed Commons image metada
  const photo=image('IMG_0123.jpg',{
   description:'<p>Photograph of Northern Lanterns performing live in Utrecht.</p>'});
  const selected=selectLicensedCategoryPhoto(gallery(photo),'Northern Lanterns','Q8888');
- assert.equal(selected.image,URL);
+ assert.equal(selected.image,IMAGE_URL);
  assert.equal(selected.categoryEvidence,'artist-in-image-description');
  assert.match(selected.credit.text,/Verified venue photographer/);
  assert.equal(selectLicensedCategoryPhoto(gallery(image('IMG_0123.jpg',{
@@ -84,7 +84,7 @@ test('generic Wikimedia job recovers from previously negative photo lookup using
  });
  assert.equal(r.stats.found,1);
  assert.equal(r.stats.categoryDescriptionFound,1);
- assert.equal(r.cache.artists['northern lanterns'].image,URL);
+ assert.equal(r.cache.artists['northern lanterns'].image,IMAGE_URL);
  assert.equal(r.cache.artists['northern lanterns'].matchedBy,'wikidata-linked-artist-category-description');
  assert.equal(r.cache.wikimediaAttempted['northern lanterns'],undefined);
  assert.ok(requests.some(u=>u.includes('ImageDescription')));
