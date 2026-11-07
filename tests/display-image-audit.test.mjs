@@ -36,3 +36,20 @@ test('rejects non-HTTPS event images in audit and uses verified cache if availab
  assert.equal(report.totals.eventPoster,0);
  assert.equal(report.totals.artistPhoto,1);
 });
+
+test('backoff audit distinguishes exact not-found, ambiguity and rejected album art',()=>{
+ const feed={events:[
+  show('a','Act One'),show('b','Act Two'),show('c','Act Three')
+ ]};
+ const cache={artists:{},attempted:{
+  'act one':{reason:'not-found',retryAfter:'2026-12-01'},
+  'act two':{reason:'ambiguous-same-name',retryAfter:'2027-01-01'},
+  'act three':{reason:'album-cover-as-portrait',retryAfter:'2026-12-01'}
+ }};
+ const report=buildDisplayImageAudit(feed,cache,null,{today:'2026-11-07'});
+ assert.equal(report.totals.noImage,3);
+ assert.equal(report.missingReasons['provider-backoff'],3);
+ assert.deepEqual(report.backoffReasons,{
+  'not-found':1,'ambiguous-same-name':1,'album-cover-as-portrait':1
+ });
+});
