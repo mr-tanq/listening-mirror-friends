@@ -85,6 +85,8 @@ export function selectLicensedCategoryPhoto(payload,artistName,qid){
  }
  // Established title matches take precedence over lower-confidence
  // description matches, but unsupported licences can still fall through.
- return selectLicensedDepictsPhoto({query:{pages:titleMatches}},qid)||
-  selectLicensedDepictsPhoto({query:{pages:descriptionMatches}},qid);
+ const named=selectLicensedDepictsPhoto({query:{pages:titleMatches}},qid);
+ if(named)return {...named,categoryEvidence:'artist-in-file-title'};
+ const described=selectLicensedDepictsPhoto({query:{pages:descriptionMatches}},qid);
+ return described?{...described,categoryEvidence:'artist-in-image-description'}:null;
 }
