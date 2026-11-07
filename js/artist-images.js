@@ -44,8 +44,9 @@ function cleanExplicitAct(raw){
 }
 
 /** Names eligible for NEW external artist photo searches.
- * The browser's existing headlinerNames remains the photo resolver; this
- * shortlist suppresses speculative lookups for composite event titles.
+ * The browser photo resolver and all Node enrichers share this shortlist.
+ * Venue duplicate matching deliberately retains the older headlinerNames.
+ * Suppresses speculative lookups for composite event titles.
  */
 export function headlinerSearchNames(event){
  const title=String(event?.artist||'').trim();
@@ -75,8 +76,6 @@ export function headlinerSearchNames(event){
  * returned, so a card never shows a support act's face.
  */
 export function headlinerNames(event){
- const explicit=cleanExplicitAct(event?.artist)||cleanExplicitAct(event?.artists?.[0]);
- if(explicit)return [explicit];
  const out=[];
  const add=value=>{
   const name=String(value||'').replace(/\s+/g,' ').trim().replace(/^[-–—:|\s]+|[-–—:|\s]+$/g,'');
@@ -102,7 +101,7 @@ export function headlinerNames(event){
   if(quoted!==name&&quoted.length>=2){name=quoted;add(name);}
   const dash=name.split(/\s+[-–—|]\s+/)[0];
   if(dash!==name){name=dash;add(name);}
-  const trimmed=name.replace(TRAILING_QUALIFIER,'').replace(TRAILING_WORDS,'').replace(SHOW_TRAILER,'').trim();
+  const trimmed=name.replace(TRAILING_QUALIFIER,'').replace(TRAILING_WORDS,'').trim();
   if(trimmed!==name){name=trimmed;add(name);}
   const lead=name.split(GUEST_SPLIT)[0];
   if(lead!==name){name=lead;add(name);}
@@ -163,7 +162,9 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 }
 /** The cached artist entry for an event's headliner, if any. */
 export function artistImageFor(event,artistImages){
- for(const name of headlinerNames(event)){
+ // Strict photo headliner selection must not alter the older concert-identity
+ // matching grammar used by venue de-duplication.
+ for(const name of headlinerSearchNames(event)){
   const entry=artistImages?.artists?.[artistKey(name)];
   // Human-reviewed same-name artist photographs can be bound to one exact
   // concert. Never leak a scoped Whitechapel photo to an unrelated act.
