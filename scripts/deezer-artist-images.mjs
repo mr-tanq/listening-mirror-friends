@@ -74,7 +74,7 @@ export function isUrgentRetryEligible(item,attempt,today){
  within.setUTCDate(within.getUTCDate()+14);
  if(item.nextDate<today||item.nextDate>within.toISOString().slice(0,10))return false;
  const last=attempt.attemptedAt||isoDays(attempt.retryAfter,-30);
- return /^20\\d{2}-\\d{2}-\\d{2}$/.test(last)&&last<=isoDays(today,-7);
+ return /^20\d{2}-\d{2}-\d{2}$/.test(last)&&last<=isoDays(today,-7);
 }
 
 /** Pick one unambiguous exact-name artist from a Deezer /search/artist payload. */
