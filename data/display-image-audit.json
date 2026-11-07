@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-07T08:55:44.764Z",
+  "catalogUpdatedAt": "2026-11-07T08:51:50.132Z",
+  "auditedFor": "2026-11-07",
+  "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
+  "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
+  "reviewedOfficialArtworkApplied": 0,
+  "totals": {
+    "total": 1924,
+    "eventPoster": 1046,
+    "artistPhoto": 481,
+    "noImage": 397,
+    "posterWithPhotoBackup": 393
+  },
+  "byCountry": {
+    "GR": {
+      "total": 408,
+      "eventPoster": 361,
+      "artistPhoto": 14,
+      "noImage": 33,
+      "posterWithPhotoBackup": 38
+    },
+    "NL": {
+      "total": 1406,
+      "eventPoster": 679,
+      "artistPhoto": 403,
+      "noImage": 324,
+      "posterWithPhotoBackup": 351
+    },
+    "BE": {
+      "total": 110,
+      "eventPoster": 6,
+      "artistPhoto": 64,
+      "noImage": 40,
+      "posterWithPhotoBackup": 4
+    }
+  },
+  "missingReasons": {
+    "provider-backoff": 387,
+    "not-in-artist-cache": 10
+  },
+  "missingNext14Days": 105,
+  "missingNext14DaysSamples": [
+    {
+      "id": "podiuminfo-460749",
+      "artist": "Boze Wolven Ode aan Gorky",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-493890",
+      "artist": "Caedere",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-490094",
+      "artist": "Marsh",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-499242",
+      "artist": "Nagusame",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-500098",
+      "artist": "Slixx Extended Set",
+      "date": "2026-11-07",
+      "country": "NL",
+      "venue": "Grenswerk",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-459733",
+      "artist": "Celestial Season",
+      "date": "2026-11-08",
+      "country": "NL",
+      "venue": "Baroeg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-493073",
+      "artist": "Deer Park, Touching Ice & The Healing Power Of Horses",
+      "date": "2026-11-08",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "rocking-20261108-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "date": "2026-11-08",
+      "country": "GR",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-484847",
+      "artist": "Le Guess Who? presents BLEAK SQUAD",
+      "date": "2026-11-08",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-490786",
+      "artist": "Band Night - BeylerBand",
+      "date": "2026-11-09",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "not-in-artist-cache"
+    },
+    {
+      "id": "podiuminfo-459802",
+      "artist": "Otis Gibbs",
+      "date": "2026-11-10",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-499977",
+      "artist": "Radar Machine",
+      "date": "2026-11-10",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-451605",
+      "artist": "Rymden",
+      "date": "2026-11-10",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-474207",
+      "artist": "Any Kind / LOMA / Shearwater",
+      "date": "2026-11-11",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-498215",
+      "artist": "AZC De Vlampijp x Musicaz x dB’s Viering met optreden van KASBA",
+      "date": "2026-11-11",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-501470",
+      "artist": "Dav ID",
+      "date": "2026-11-11",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-488701",
+      "artist": "Funk Legacy Allstars",
+      "date": "2026-11-11",
+      "country": "NL",
+      "venue": "Patronaat",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-463414",
+      "artist": "LP - All Is Not Lost Tour",
+      "date": "2026-11-11",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-472059",
+      "artist": "Architrackz",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-474498",
+      "artist": "Ares - Andere Man Tour",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Hall Of Fame",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-496059",
+      "artist": "Jazz For Lunch",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-487978",
+      "artist": "Koala Disco",
+      "date": "2026-11-12",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-462145",
+      "artist": "LEENALCHI",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-458778",
+      "artist": "Nate Smith",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-460280",
+      "artist": "Niall McCabe",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-453806",
+      "artist": "Noor",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-481299",
+      "artist": "QUEEN’S PLEASURE",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-493398",
+      "artist": "Talent Meets Talent: MAROU & MASSIN",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "Hall Of Fame",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-499978",
+      "artist": "ULTRAJAZZ",
+      "date": "2026-11-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-453129",
+      "artist": "Caro - Returning to Innocence",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-465385",
+      "artist": "Clobber",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-459705",
+      "artist": "De Rolf Sanchez Club",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-453093",
+      "artist": "Emmet Cohen Quintet",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-479508",
+      "artist": "FLORA",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-447995",
+      "artist": "Het Grote Songfestivalfeest",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Ziggo Dome",
+      "reason": "not-in-artist-cache"
+    },
+    {
+      "id": "podiuminfo-491088",
+      "artist": "Jan.O en de Overige Bandleden",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Grenswerk",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-481184",
+      "artist": "Kreukelzone: Madame Perdu",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-455870",
+      "artist": "NeS",
+      "date": "2026-11-13",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-497849",
+      "artist": "Paardcafé: Sea Foam Grey",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-497347",
+      "artist": "Suzan & Freek",
+      "date": "2026-11-13",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    }
+  ],
+  "missingOtherSamples": [
+    {
+      "id": "podiuminfo-492492",
+      "artist": "Delany",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "rocking-20261122-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "date": "2026-11-22",
+      "country": "GR",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-458798",
+      "artist": "Jeremy Pelt Quintet",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-490074",
+      "artist": "LORDS OF ALTAMONT",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-495360",
+      "artist": "Morbidfest: I Am Morbid, Atheist, Cancer, Narcotic Wasteland",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-496906",
+      "artist": "Nightfreak (USA) @ Cafe De Wacht",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-496060",
+      "artist": "Demo Club Bandnight Auks",
+      "date": "2026-11-23",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "venue-doornroosje-2026-11-24-actie-aletta",
+      "artist": "Actie Aletta",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "Doornroosje",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-468697",
+      "artist": "Edis",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-454763",
+      "artist": "Knoll",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "Doornroosje",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-490800",
+      "artist": "TAEMIN",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-477377",
+      "artist": "Chris Eckman",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-494889",
+      "artist": "Judith Kiddo - Melissa Weikart",
+      "date": "2026-11-25",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-480071",
+      "artist": "Lost",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-498837",
+      "artist": "Van Asseldonk Cartel",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-479014",
+      "artist": "We All Sing ABBA",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-462642",
+      "artist": "Bartofso",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-500902",
+      "artist": "Club 3voor12 Utrecht",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-500078",
+      "artist": "Def & BrittneySGAT",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-473433",
+      "artist": "Hania Derej Trio",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-497688",
+      "artist": "Luca St",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-457842",
+      "artist": "Mobilhome",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-463824",
+      "artist": "The Ruins Of Beverast - Tempelschlaf Tour",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-483594",
+      "artist": "Trobi - Kameleon",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-456106",
+      "artist": "Zélie",
+      "date": "2026-11-26",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-462644",
+      "artist": "Bartofso - Le Tour de Masque",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Hall Of Fame",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-479406",
+      "artist": "Blood and Sun",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-493613",
+      "artist": "COBRAH Autumn",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Annabel",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-495638",
+      "artist": "Exproz All Night Long",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "not-in-artist-cache"
+    },
+    {
+      "id": "podiuminfo-496465",
+      "artist": "GPLR 2026: voorronde #3",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-471884",
+      "artist": "LEAP",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-490814",
+      "artist": "Lil Peep 30th Birthday Celebration",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-481186",
+      "artist": "LUCA - Kinderspel",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-479471",
+      "artist": "Lucky Done Gone",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-487102",
+      "artist": "Meatallica & The Art of Pantera",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Grenswerk",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "rocking-20261127-27442",
+      "artist": "Munly & The Lupercalians",
+      "date": "2026-11-27",
+      "country": "GR",
+      "venue": "Temple Athens",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-493139",
+      "artist": "NEMS – Unleashed Tour",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-489717",
+      "artist": "nothhingspecial",
+      "date": "2026-11-27",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-462646",
+      "artist": "Alain Clark - Date Night",
+      "date": "2026-11-28",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "provider-backoff"
+    },
+    {
+      "id": "podiuminfo-457726",
+      "artist": "Dub Hub",
+      "date": "2026-11-28",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "provider-backoff"
+    }
+  ]
+}

@@ -565,6 +565,81 @@
       "spotifyId": "5PqfCUO0VkJBLGE7BYccva",
       "deezerId": 114525972,
       "checkedAt": "2026-11-06T15:32:25.118Z"
+    },
+    "roufaida": {
+      "name": "Roufaida",
+      "mbid": "3a293d95-db7f-45f6-8800-e76592fb3e10",
+      "mbName": "Roufaida",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "6Pvn7lx3CHZLtiYcxqateL",
+      "deezerId": 1483733,
+      "checkedAt": "2026-11-07T08:49:28.290Z"
+    },
+    "trio bier": {
+      "name": "Trio Bier",
+      "mbid": "1c643ca3-65eb-4755-a93c-bcd14561d981",
+      "mbName": "Trio Bier",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "wikidata": "Q2571285",
+      "checkedAt": "2026-11-07T08:49:30.391Z"
+    },
+    "against the current": {
+      "name": "Against The Current",
+      "mbid": "c40a79e9-3b9e-492e-9469-0e5b952ad3e1",
+      "mbName": "Against the Current",
+      "country": "US",
+      "disambiguation": "American pop rock band",
+      "matchedBy": "unique-name",
+      "spotifyId": "74ZHOTPP0eWWe9kLt8jHbP",
+      "deezerId": 5506820,
+      "wikidata": "Q12580731",
+      "checkedAt": "2026-11-07T08:49:32.706Z"
+    },
+    "architrackz": {
+      "name": "Architrackz",
+      "mbid": "a83860aa-372b-4d8f-ae37-704d95e1a1ba",
+      "mbName": "Architrackz",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "5YqXgMhzkUnyjYQGgoIvoq",
+      "deezerId": 9871134,
+      "wikidata": "Q131430327",
+      "checkedAt": "2026-11-07T08:49:35.380Z"
+    },
+    "elgrandetoto": {
+      "name": "ElGrandeToto",
+      "mbid": "49487c06-ec80-470d-9f97-e80649a05b90",
+      "mbName": "ElGrandeToto",
+      "country": "MA",
+      "disambiguation": "Moroccan rapper",
+      "matchedBy": "unique-name",
+      "spotifyId": "4BFLElxtBEdsdwGA1kHTsx",
+      "deezerId": 52463032,
+      "wikidata": "Q107453223",
+      "checkedAt": "2026-11-07T08:49:37.663Z"
+    },
+    "koala disco": {
+      "name": "Koala Disco",
+      "mbid": "fc012a5a-2a30-4765-9057-32b18bb81a9e",
+      "mbName": "Koala Disco",
+      "country": "BE",
+      "disambiguation": "Belgian lo-fi psychedelic indie band",
+      "matchedBy": "unique-name",
+      "spotifyId": "50TZYI27MF1fTQWgonBIPh",
+      "deezerId": 9276488,
+      "checkedAt": "2026-11-07T08:49:40.256Z"
+    },
+    "niall mccabe": {
+      "name": "Niall McCabe",
+      "mbid": "53f91349-cd07-48c3-926d-35890cf0b95f",
+      "mbName": "Niall McCabe",
+      "country": "",
+      "disambiguation": "Irish Singer/songwriter",
+      "matchedBy": "unique-name",
+      "homepage": "https://www.niallmccabe.com/",
+      "checkedAt": "2026-11-07T08:49:43.577Z"
     }
   },
   "attempted": {
@@ -608,10 +683,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "distant": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "nems unleashed": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -623,10 +694,6 @@
     "ares": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "big sleep": {
-      "retryAfter": "2026-11-07",
-      "reason": "HTTP 503"
     },
     "queen s pleasure": {
       "retryAfter": "2026-12-20",
@@ -708,14 +775,6 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "back alley ritual": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "dan english": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "sophie straat": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
@@ -778,6 +837,54 @@
     },
     "funk legacy allstars": {
       "retryAfter": "2026-11-08",
+      "reason": "HTTP 503"
+    },
+    "lp all is not lost tour": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "trio bier": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "architrackz": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "koala disco": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "nate smith": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "a1652aa0-8fae-4f6b-b914-6ab6a1291fdd",
+        "eed37141-af0b-45b1-ab26-f018f3962b67"
+      ]
+    },
+    "niall mccabe": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "talent meets talent": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "ultrajazz": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "caro": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "66281e64-c672-450f-bb93-1403654c7fe5",
+        "38bbbd07-9d89-4ff1-9a4e-28e48f57d63a"
+      ]
+    },
+    "clobber": {
+      "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }
   }

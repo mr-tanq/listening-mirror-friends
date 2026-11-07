@@ -1,40 +1,40 @@
 {
-  "catalogUpdatedAt": "2026-11-06T15:34:54.766Z",
-  "auditedFor": "2026-11-06",
-  "totalPublished": 1940,
-  "greekPublished": 422,
+  "catalogUpdatedAt": "2026-11-07T08:51:50.132Z",
+  "auditedFor": "2026-11-07",
+  "totalPublished": 1913,
+  "greekPublished": 408,
   "imageCoverage": {
-    "withImage": 1043,
-    "withoutImage": 897
+    "withImage": 1034,
+    "withoutImage": 879
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 422,
-      "withImage": 375,
+      "events": 408,
+      "withImage": 361,
       "withoutImage": 47
     },
     "NL": {
-      "events": 1403,
-      "withImage": 662,
-      "withoutImage": 741
+      "events": 1395,
+      "withImage": 667,
+      "withoutImage": 728
     },
     "BE": {
-      "events": 115,
+      "events": 110,
       "withImage": 6,
-      "withoutImage": 109
+      "withoutImage": 104
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 26,
-      "withImage": 24,
+      "events": 25,
+      "withImage": 23,
       "withoutImage": 2,
-      "greekEvents": 26
+      "greekEvents": 25
     },
     "festivalinfo": {
-      "events": 15,
+      "events": 13,
       "withImage": 5,
-      "withoutImage": 10,
+      "withoutImage": 8,
       "greekEvents": 0
     },
     "floyd-calendar": {
@@ -50,27 +50,27 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 20
     },
     "more": {
-      "events": 285,
-      "withImage": 285,
+      "events": 273,
+      "withImage": 273,
       "withoutImage": 0,
-      "greekEvents": 285
+      "greekEvents": 273
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1237,
-      "withImage": 399,
-      "withoutImage": 838,
+      "events": 1218,
+      "withImage": 396,
+      "withoutImage": 822,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 66
     },
     "venue-official": {
-      "events": 264,
-      "withImage": 262,
+      "events": 272,
+      "withImage": 270,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 26,
-      "withImage": 24,
+      "published": 25,
+      "withImage": 23,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 29,
-      "withImage": 27,
+      "events": 28,
+      "withImage": 26,
       "sources": [
         "anclub-index",
         "more",
@@ -121,8 +121,8 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 24,
-      "withImage": 24,
+      "events": 23,
+      "withImage": 23,
       "sources": [
         "gagarin-calendar",
         "rocking",
@@ -139,24 +139,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 18,
-      "withImage": 18,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "gazarte",
-      "events": 15,
-      "withImage": 15,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Kyttaro Live",
-      "events": 15,
-      "withImage": 15,
+      "events": 17,
+      "withImage": 17,
       "sources": [
         "more"
       ]
@@ -189,17 +173,25 @@
       ]
     },
     {
-      "name": "Death Disco",
-      "events": 13,
-      "withImage": 13,
+      "name": "Kyttaro Live",
+      "events": 14,
+      "withImage": 14,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "ARCH",
-      "events": 10,
-      "withImage": 10,
+      "name": "gazarte",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Death Disco",
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "more"
       ]
@@ -213,23 +205,23 @@
       ]
     },
     {
-      "name": "AUX CLUB",
+      "name": "ARCH",
       "events": 9,
       "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "AUX CLUB",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
       "name": "Circus Entertainment Hub",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "gazarte roof stage",
       "events": 8,
       "withImage": 8,
       "sources": [
@@ -245,6 +237,22 @@
       ]
     },
     {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "gazarte roof stage",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "B. & M. THEOCHARAKI FOUNDATION",
       "events": 7,
       "withImage": 7,
@@ -256,14 +264,6 @@
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
       "events": 7,
       "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
-      "events": 6,
-      "withImage": 6,
       "sources": [
         "more"
       ]
@@ -293,30 +293,6 @@
       ]
     },
     {
-      "name": "MIKRI SKINI - Mikri Skini",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Stage7",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 5,
       "withImage": 5,
@@ -325,9 +301,9 @@
       ]
     },
     {
-      "name": "Γυαλινο Μουσικο Θεατρο",
-      "events": 4,
-      "withImage": 4,
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "events": 5,
+      "withImage": 5,
       "sources": [
         "more"
       ]
@@ -338,6 +314,22 @@
       "withImage": 2,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "MIKRI SKINI - Mikri Skini",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Stage7",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -352,14 +344,6 @@
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
       "events": 4,
       "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Misirlou Live Stage",
-      "events": 3,
-      "withImage": 3,
       "sources": [
         "more"
       ]
@@ -382,6 +366,14 @@
     },
     {
       "name": "Universe - Multivenue",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Γυαλινο Μουσικο Θεατρο",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -430,6 +422,14 @@
     },
     {
       "name": "Doors Live Art Athens",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "UNDERFLOW RECORD STORE",
       "events": 2,
       "withImage": 2,
       "sources": [

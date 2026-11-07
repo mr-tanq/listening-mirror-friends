@@ -7597,6 +7597,109 @@
       },
       "wikidata": "Q660835",
       "checkedAt": "2026-11-06T15:33:27.275Z"
+    },
+    "dylan gossett": {
+      "name": "Dylan Gossett",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/36e71f7e4be40301ab7b7cee6c5f11c0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 219242275,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/219242275",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/219242275"
+      },
+      "checkedAt": "2026-11-07T08:49:24.336Z"
+    },
+    "quadeca": {
+      "name": "Quadeca",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4faad223e633d04975c9966a4d7afadf/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9925092,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/9925092",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9925092"
+      },
+      "checkedAt": "2026-11-07T08:49:25.225Z"
+    },
+    "roufaida": {
+      "name": "Roufaida",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9f7350040050aedd9db363ca4a745ded/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1483733,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/1483733",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1483733"
+      },
+      "mbid": "3a293d95-db7f-45f6-8800-e76592fb3e10",
+      "checkedAt": "2026-11-07T08:49:28.650Z"
+    },
+    "against the current": {
+      "name": "Against The Current",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/39621dce16e1afbbb3bd7198392ffd20/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5506820,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/5506820",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5506820"
+      },
+      "mbid": "c40a79e9-3b9e-492e-9469-0e5b952ad3e1",
+      "checkedAt": "2026-11-07T08:49:33.992Z"
+    },
+    "elgrandetoto": {
+      "name": "ElGrandeToto",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/dae5e8616f907599e3d0be7b04131ac1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 52463032,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/52463032",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/52463032"
+      },
+      "mbid": "49487c06-ec80-470d-9f97-e80649a05b90",
+      "checkedAt": "2026-11-07T08:49:38.813Z"
+    },
+    "solex": {
+      "name": "Solex",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1fecff61b191427ec4d2760a77527bf5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5907,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/5907",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5907"
+      },
+      "wikidata": "Q2067959",
+      "checkedAt": "2026-11-07T08:49:55.414Z"
+    },
+    "elder": {
+      "name": "Elder",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/fa0204dfbd771e2aad818b57d9e14ca5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 365198,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/365198",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/365198"
+      },
+      "wikidata": "Q16834874",
+      "checkedAt": "2026-11-07T08:50:09.382Z"
     }
   },
   "attempted": {
@@ -7640,19 +7743,11 @@
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
-    "distant": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
     "nems unleashed": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
     "bartofso": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "big sleep": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -7677,14 +7772,6 @@
       "reason": "No unambiguous exact artist"
     },
     "stand up με τις μπαντες hλιας φουντουλης": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "napalm death": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "nile": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -7764,14 +7851,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "back alley ritual cutthroat": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "dan english": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
     "boze wolven ode aan gorky": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -7841,25 +7920,9 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "roufaida": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1483733,
-        71224592
-      ]
-    },
     "trio bier": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "against the current": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5506820,
-        398218341
-      ]
     },
     "architrackz": {
       "retryAfter": "2026-12-05",
@@ -7868,15 +7931,6 @@
     "ares andere man tour": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "elgrandetoto": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        265267202,
-        52463032,
-        66439462
-      ]
     },
     "koala disco": {
       "retryAfter": "2026-12-05",
@@ -8341,14 +8395,6 @@
         80516022
       ]
     },
-    "the pogues": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1435,
-        412930551
-      ]
-    },
     "van asseldonk cartel": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8460,14 +8506,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "kaz bałagane": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        10045900,
-        418842682
-      ]
-    },
     "nos ku nos": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -8495,14 +8533,6 @@
     "def brittneysgat extra show": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "gang of youths": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5494427,
-        413543781
-      ]
     },
     "metal core sunday matinee mosaic xii thorns serve": {
       "retryAfter": "2026-12-05",
@@ -8555,10 +8585,6 @@
         96293712,
         417915262
       ]
-    },
-    "portugal the man the denali tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "q marsden do you see me tour": {
       "retryAfter": "2026-12-05",
@@ -8661,14 +8687,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "kehlani": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5603027,
-        413001151
-      ]
-    },
     "kevin atwater": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8676,10 +8694,6 @@
     "lovesick duo": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "napalm death campaign for musical destruction tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "nu art orchestra feat anna webber juno": {
       "retryAfter": "2026-12-05",
@@ -8703,14 +8717,6 @@
         161323832,
         418329472,
         418329502
-      ]
-    },
-    "phoebe bridgers": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1058631,
-        412394331
       ]
     },
     "1914 the war that never ends tour": {
@@ -9564,10 +9570,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "back alley ritual": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "lp": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9710,16 +9712,6 @@
     "metal core sunday matinee": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "portugal the man": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        181878,
-        422139352,
-        414808672,
-        66722
-      ]
     },
     "q marsden": {
       "retryAfter": "2026-12-05",
@@ -10099,6 +10091,36 @@
         369162422,
         211126
       ]
+    },
+    "cage the elephant": {
+      "retryAfter": "2027-01-06",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        214810,
+        413916751
+      ]
+    },
+    "knox": {
+      "retryAfter": "2027-01-06",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        299259231,
+        122229682,
+        454874,
+        415964492
+      ]
+    },
+    "seafret": {
+      "retryAfter": "2027-01-06",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        6533751,
+        414427232
+      ]
+    },
+    "seafret tell me it s real": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -10148,11 +10170,6 @@
       "reason": "photo-license-or-size-rejected"
     },
     "dav id": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "roufaida": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
@@ -10325,6 +10342,121 @@
     "memorials": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
+      "reason": "no-confirmed-musician"
+    },
+    "glitter grotesque": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "glitter grotesque let s swing in new orleans": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "kreukelzone": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lois lane 40 jaar live": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "muziekfeest van het jaar": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lois lane 40 jaar": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "ares": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "jazz for lunch": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "leenalchi": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "utrechtse meezingerij": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "hλιας φουντουλης": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "def brittneysgat": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the james brown experience": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "acindc": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "schoolconcert vo": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "lovelace": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "frankie stew harvey gunn": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "exxul": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "stand up με τις μπαντες hλιας φουντουλης": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "boze wolven ode aan gorky": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "marsh": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "slixx extended set": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "deer park touching ice the healing power of horses": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     }
   }

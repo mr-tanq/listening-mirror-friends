@@ -26,37 +26,6 @@
         "lastStatus": 200
       },
       "pages": {
-        "https://bibelot.net/programma/lois-lane/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://bibelot.net/programma/lois-lane/",
-            "title": "Loïs Lane",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06",
-            "venueName": "",
-            "image": "https://bibelot.net/wp-content/uploads/2026/03/lois-lane-web-90ea.jpg",
-            "cancelled": false,
-            "via": "text-date+opengraph"
-          }
-        },
-        "https://bibelot.net/programma/taxitaxi/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://bibelot.net/programma/taxitaxi/",
-            "title": "TAXITAXI + Vera & The Sleepover Club",
-            "performers": [
-              "TAXITAXI",
-              "Vera & The Sleepover Club"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06",
-            "venueName": "",
-            "image": "https://bibelot.net/wp-content/uploads/2026/08/TAXITAXI-banner-4207.jpg",
-            "cancelled": false,
-            "via": "text-date+opengraph"
-          }
-        },
         "https://bibelot.net/programma/gruppo-sportivo-afscheidsshow/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -489,9 +458,37 @@
             "cancelled": false,
             "via": "text-date+opengraph"
           }
+        },
+        "https://bibelot.net/programma/the-dirty-daddies-3/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://bibelot.net/programma/the-dirty-daddies-3/",
+            "title": "The Dirty Daddies",
+            "performers": [],
+            "date": "2026-12-18",
+            "startDate": "2026-12-18",
+            "venueName": "",
+            "image": "https://bibelot.net/wp-content/uploads/2026/01/The-Dirty-Daddies-1920x1080-bf1f.jpg",
+            "cancelled": false,
+            "via": "text-date+opengraph"
+          }
+        },
+        "https://bibelot.net/programma/40up-big-bang/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://bibelot.net/programma/40up-big-bang/",
+            "title": "40UP Big Bang",
+            "performers": [],
+            "date": "2026-12-12",
+            "startDate": "2026-12-12",
+            "venueName": "",
+            "image": "https://bibelot.net/wp-content/uploads/2026/07/2-d5df.jpg",
+            "cancelled": false,
+            "via": "text-date+opengraph"
+          }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "vera": {
       "access": {
@@ -1259,7 +1256,7 @@
           "event": null
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "effenaar": {
       "access": {
@@ -1276,34 +1273,6 @@
             "startDate": "2027-01-28T20:30:00+01:00",
             "venueName": "Altstadt",
             "image": "https://d12y285rxlbnxt.cloudfront.net/2026-10/%20%E2%80%93%201920x1080%20Website%20gallus.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/durum-night-sababa-5-zajal-trackvogels": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/durum-night-sababa-5-zajal-trackvogels",
-            "title": "Durum Night: Sababa 5 + Zajal + Trackvogels",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T00:00:00+01:00",
-            "venueName": "Kleine Zaal",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/2026-08/Durum%20Records_Durum%20nights_Digitale%20middelen_1920x1080.png",
-            "cancelled": true,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/disco-inferno-met-discophonic-orchestra-2": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/disco-inferno-met-discophonic-orchestra-2",
-            "title": "Disco Inferno met Discophonic Orchestra",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T21:00:00+01:00",
-            "venueName": "Grote zaal",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-05/Discophonic.png?itok=xo9k6dwi",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -1766,34 +1735,6 @@
             "startDate": "2027-04-25T19:00:00+01:00",
             "venueName": "Grote zaal",
             "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/Suicide%20Silence%20%E2%80%93%20Square%20afbeelding%20only.png?itok=xr82sJWI",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/vals-alarm": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/vals-alarm",
-            "title": "VALS ALARM",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T20:30:00+01:00",
-            "venueName": "Altstadt",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-07/%20%E2%80%93%20Square%20afbeelding%20only%20vals%20alarm.png?itok=GoAWqmrl",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/electric-eel-shock": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/electric-eel-shock",
-            "title": "Electric Eel Shock",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T20:30:00+01:00",
-            "venueName": "Café The Jack",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/2026-03/%20%E2%80%93%201920x1080%20Website%20electric%20ee.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -2835,61 +2776,13 @@
           }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "patronaat": {
       "access": {
         "lastStatus": 200
       },
       "pages": {
-        "https://patronaat.nl/event/chasing-abbey-06-11-26/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://patronaat.nl/event/chasing-abbey-06-11-26/",
-            "title": "Chasing Abbey + Miranda Faul",
-            "performers": [
-              "Chasing Abbey",
-              "Miranda Faul"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/04/Portrait-Chasing-Abbey--scaled.jpg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/nieuwe-oogst-kaya-maartje-06-11-26/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://patronaat.nl/event/nieuwe-oogst-kaya-maartje-06-11-26/",
-            "title": "Nieuwe Oogst: Kaya + Maartje",
-            "performers": [
-              "Nieuwe Oogst: Kaya",
-              "Maartje"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/05/nieuwe-oogst-nov-819x1024.png",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/frank-nick-reunie-06-11-26/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://patronaat.nl/event/frank-nick-reunie-06-11-26/",
-            "title": "Frank & Nick Reunie",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2025/11/FN2025-2-scaled.jpg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
         "https://patronaat.nl/event/little-big-08-11-26/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -4484,9 +4377,220 @@
             "cancelled": false,
             "via": "url-date+opengraph"
           }
+        },
+        "https://patronaat.nl/event/mike-lindup-trio-03-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/mike-lindup-trio-03-03-27/",
+            "title": "Mike Lindup Trio",
+            "performers": [],
+            "date": "2027-03-03",
+            "startDate": "2027-03-03",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/1c4e4c45-e51a-460c-b63b-cffbf322c587-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/rezn-04-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/rezn-04-03-27/",
+            "title": "REZN + Coltaine",
+            "performers": [
+              "REZN",
+              "Coltaine"
+            ],
+            "date": "2027-03-04",
+            "startDate": "2027-03-04",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/07/REZN-_-SocialTemplates_REZN-CITID-Main-Press-Vertical-Portrait-819x1024.png",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/king-buffalo-04-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/king-buffalo-04-03-27/",
+            "title": "King Buffalo + Spirit Mother",
+            "performers": [
+              "King Buffalo",
+              "Spirit Mother"
+            ],
+            "date": "2027-03-04",
+            "startDate": "2027-03-04",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/BG0A3222-2-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/the-dirty-daddies-05-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/the-dirty-daddies-05-03-27/",
+            "title": "The Dirty Daddies – Let The Good Times Roll",
+            "performers": [],
+            "date": "2027-03-05",
+            "startDate": "2027-03-05",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/01/thedirtydaddies_letthegoodtimesroll_liggend-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/made-in-purple-55-years-of-made-in-japan-06-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/made-in-purple-55-years-of-made-in-japan-06-03-27/",
+            "title": "Made in Purple - 55 Years of Made in Japan",
+            "performers": [],
+            "date": "2027-03-06",
+            "startDate": "2027-03-06",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/10/941134a2-1463-408e-ac34-39bbca3af015.png",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/wende-support-06-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/wende-support-06-03-27/",
+            "title": "Wende + support",
+            "performers": [
+              "Wende",
+              "support"
+            ],
+            "date": "2027-03-06",
+            "startDate": "2027-03-06",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/shantel-07-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/shantel-07-03-27/",
+            "title": "Shantel",
+            "performers": [],
+            "date": "2027-03-07",
+            "startDate": "2027-03-07",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/08/Shantel_BCO_HaraldHSchroeder-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/wende-support-07-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/wende-support-07-03-27/",
+            "title": "Wende + support",
+            "performers": [
+              "Wende",
+              "support"
+            ],
+            "date": "2027-03-07",
+            "startDate": "2027-03-07",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/rudeboy-x-boskat-12-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/rudeboy-x-boskat-12-03-27/",
+            "title": "Rudeboy x Boskat",
+            "performers": [],
+            "date": "2027-03-12",
+            "startDate": "2027-03-12",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/10/CRED-JO-POLLEUNIS-DSC04203-Enhanced-NR-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/de-kift-13-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/de-kift-13-03-27/",
+            "title": "De Kift",
+            "performers": [],
+            "date": "2027-03-13",
+            "startDate": "2027-03-13",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/04/IMG_4499-e1779352666861.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/kmfdm-14-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/kmfdm-14-03-27/",
+            "title": "Geannuleerd: KMFDM",
+            "performers": [],
+            "date": "2027-03-14",
+            "startDate": "2027-03-14",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/02/KMFDM-2026-Pressimage-scaled-e1770296734173.jpg",
+            "cancelled": true,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/mamas-gun-16-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/mamas-gun-16-03-27/",
+            "title": "Mamas Gun",
+            "performers": [],
+            "date": "2027-03-16",
+            "startDate": "2027-03-16",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/10/Declan-Haughian_20250903-DM_01006-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/clouseau-17-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/clouseau-17-03-27/",
+            "title": "Clouseau • PHIL",
+            "performers": [],
+            "date": "2027-03-17",
+            "startDate": "2027-03-17",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/Clouseau-2026-Beeld.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
+        },
+        "https://patronaat.nl/event/hugo-barriol-support-18-03-27/": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://patronaat.nl/event/hugo-barriol-support-18-03-27/",
+            "title": "Hugo Barriol + support",
+            "performers": [
+              "Hugo Barriol",
+              "support"
+            ],
+            "date": "2027-03-18",
+            "startDate": "2027-03-18",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/09/Credit-Mathieu-Spadaro-46AD9559-A385-458E-9705-58ECB32F7472-scaled.jpeg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "paard": {
       "access": {
@@ -6691,20 +6795,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/kaleidoscoop-4/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/kaleidoscoop-4/",
-            "title": "KALEIDOSCOOP [geannuleerd]",
-            "performers": [],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T21:00",
-            "venueName": "Kleine Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/10/Afbeelding-Met-Zwarte-Rand-Verwijderenheader.png?t=1793957767&t=1793957767",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/roo-panes-2/": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -6734,7 +6824,7 @@
           }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "013": {
       "access": {
@@ -8971,41 +9061,9 @@
     },
     "paradiso": {
       "access": {
-        "lastStatus": 404
+        "lastStatus": 200
       },
       "pages": {
-        "https://www.paradiso.nl/programma/the-fatal-flowers/2925409": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/the-fatal-flowers/2925409",
-            "title": "The Fatal Flowers + DJ Anne-Marie",
-            "performers": [
-              "The Fatal Flowers"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T18:00:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/fatalflowers-2.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/josiah-and-the-bonnevilles/2892085": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/josiah-and-the-bonnevilles/2892085",
-            "title": "Josiah and the Bonnevilles + Dylan Flynn & The Dead Poets",
-            "performers": [
-              "Josiah and the Bonnevilles"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Josiah_Bonnevilles_Lead_Photo_by_Dan_Winters-1778536530.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/ploegendienst/2771941": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -10229,22 +10287,6 @@
             "startDate": "2026-12-20T15:00:00+01:00",
             "venueName": "Paradiso",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Banner_compressed-1774365697.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/kelsey-lu/2897403": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/kelsey-lu/2897403",
-            "title": "Kelsey Lu",
-            "performers": [
-              "Kelsey Lu"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T19:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/spotify-playlist_luEdit-1780675166.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -14343,9 +14385,41 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/trio-bier/2941617": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/trio-bier/2941617",
+            "title": "Trio Bier",
+            "performers": [
+              "Trio Bier"
+            ],
+            "date": "2026-11-11",
+            "startDate": "2026-11-11T19:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/trio-bier-2-1.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/touching-ice/2944055": {
+          "checkedAt": "2026-11-07",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/touching-ice/2944055",
+            "title": "Touching Ice",
+            "performers": [
+              "Touching Ice"
+            ],
+            "date": "2026-11-11",
+            "startDate": "2026-11-11T19:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ab6761610000e5eb743a6340db706cb77c3ef00b.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     },
     "doornroosje": {
       "access": {
@@ -14364,38 +14438,6 @@
             "startDate": "2026-12-03T20:00:00+00:00",
             "venueName": "Doornroosje - Paarse zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/03/20261203-kids-With-Buns-WEB2-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/fink-angela-autumn/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/fink-angela-autumn/",
-            "title": "Fink",
-            "performers": [
-              "Fink"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T19:45:00+00:00",
-            "venueName": "Doornroosje - Rode zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/03/FINK-WEB-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/ron-pope/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/ron-pope/",
-            "title": "Ron Pope",
-            "performers": [
-              "Ron Pope"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T20:00:00+00:00",
-            "venueName": "Doornroosje - Paarse zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/03/ron-pope-persfoto-web-1200x630.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -15612,22 +15654,6 @@
             "startDate": "2027-03-11T19:45:00+00:00",
             "venueName": "Doornroosje - Rode zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/ao/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/ao/",
-            "title": "Ão",
-            "performers": [
-              "Ão"
-            ],
-            "date": "2026-11-06",
-            "startDate": "2026-11-06T22:00:00+00:00",
-            "venueName": "Merleyn",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/02/Ao-band-2025_4799_square_LR_sRGB_%C2%A9AlexanderPopelier-e1770651140584-1200x630.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -17581,7 +17607,7 @@
           }
         }
       },
-      "listedAt": "2026-11-06"
+      "listedAt": "2026-11-07"
     }
   }
 }
