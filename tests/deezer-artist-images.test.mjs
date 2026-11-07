@@ -50,3 +50,39 @@ test('existing verified artist image is never queued again, including urgent sho
  ],cache,{today:'2026-11-06'});
  assert.deepEqual(candidates.map(x=>x.key),['other artist']);
 });
+
+test('one imminent not-found gets an early retry, then obeys new cooldown',async()=>{
+ const events=[event('Rymden','2026-11-10')];
+ const cache={artists:{},attempted:{rymden:{reason:'not-found',retryAfter:'2026-12-05'}}};
+ const calls=[];
+ const mock=async url=>{calls.push(url);return {ok:true,json:async()=>({data:[]})};};
+ const first=await enrichDeezerArtistImages(events,cache,{today:'2026-11-07',maxUrgentRetries:1,fetcher:mock,delay:async()=>{}});
+ assert.equal(first.stats.urgentRetriesUsed,1);
+ assert.equal(calls.length,1);
+ assert.equal(first.cache.attempted.rymden.urgentRetried,true);
+ const second=await enrichDeezerArtistImages(events,first.cache,{today:'2026-11-08',fetcher:mock,delay:async()=>{}});
+ assert.equal(second.stats.requests,0);
+});
+test('urgent retries do not bypass ambiguous identity, album-cover or provider failure cooldowns',async()=>{
+ const names=['Ambiguous Name','Cover Name','Provider Failure'];
+ const cache={artists:{},attempted:{
+  'ambiguous name':{reason:'ambiguous-same-name',retryAfter:'2027-01-04'},
+  'cover name':{reason:'album-cover-as-portrait',retryAfter:'2026-12-05'},
+  'provider failure':{reason:'Deezer quota exceeded',retryAfter:'2026-11-09'}
+ }};
+ const fail=async()=>{throw Error('Provider must not be contacted');};
+ const result=await enrichDeezerArtistImages(names.map(x=>event(x,'2026-11-08')),cache,{
+  today:'2026-11-07',maxUrgentRetries:12,fetcher:fail,delay:async()=>{}
+ });
+ assert.equal(result.stats.requests,0);
+ assert.equal(result.stats.urgentRetriesUsed,0);
+});
+test('urgent rescue is limited per run, even across many near-term artists',async()=>{
+ const names=['A Artist','B Artist','C Artist'];
+ const attempted=Object.fromEntries(names.map(n=>[n.toLowerCase(),{reason:'not-found',retryAfter:'2026-12-05'}]));
+ const result=await enrichDeezerArtistImages(names.map(n=>event(n,'2026-11-09')),
+  {artists:{},attempted},{today:'2026-11-07',maxUrgentRetries:1,
+   fetcher:async()=>({ok:true,json:async()=>({data:[]})}),delay:async()=>{}});
+ assert.equal(result.stats.urgentRetriesUsed,1);
+ assert.equal(result.stats.requests,1);
+});

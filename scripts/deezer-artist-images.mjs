@@ -114,16 +114,29 @@ export function createDeezerClient({fetcher=fetch,clock=()=>Date.now(),delay=ms=
 
 export async function enrichDeezerArtistImages(events,cache,{
  today=new Date().toISOString().slice(0,10),fetcher=fetch,maxRequests=450,maxDurationMs=240000,
- clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),checkAlbumCovers=true,client
+ clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),checkAlbumCovers=true,client,
+ maxUrgentRetries=12
 }={}){
  const result={version:1,...cache,artists:{...(cache?.artists||{})},attempted:{...(cache?.attempted||{})}};
  const candidates=selectArtistCandidates(events,result,{today});
  const deezer=client||createDeezerClient({fetcher,clock,delay});
  const start=clock();let found=0,notFound=0,ambiguous=0,coverRejected=0,errors=0,skipped=0,consecutiveFailures=0;
  const resolvedKeys=new Set();
+ const urgentDay=new Date(today+'T12:00:00Z');
+ urgentDay.setUTCDate(urgentDay.getUTCDate()+14);
+ const urgentCutoff=urgentDay.toISOString().slice(0,10);
+ let urgentRetriesUsed=0;
  for(const item of candidates){
   if(deezer.requests>=maxRequests||clock()-start>=maxDurationMs||consecutiveFailures>=3)break;
-  if(result.artists[item.key]?.image||result.attempted[item.key]?.retryAfter>today){skipped++;continue;}
+  const previous=result.attempted[item.key];
+  const blocked=previous?.retryAfter>today;
+  // One early retry for imminent events that Deezer previously did not find.
+  // Never override provider errors/quota backoff, ambiguous identities,
+  // rejected album covers or the global request/time limits.
+  const urgentRetry=blocked&&previous.reason==='not-found'&&!previous.urgentRetried&&
+   item.nextDate<=urgentCutoff&&urgentRetriesUsed<maxUrgentRetries;
+  if(result.artists[item.key]?.image||(blocked&&!urgentRetry)){skipped++;continue;}
+  if(urgentRetry)urgentRetriesUsed++;
   try{
    const data=await deezer.get('/search/artist?q='+encodeURIComponent(item.name)+'&limit=25');
    const verdict=deezerSearchVerdict(data,item.name);
@@ -138,12 +151,14 @@ export async function enrichDeezerArtistImages(events,cache,{
    }else{
     if(verdict.reason==='ambiguous-same-name')ambiguous++;else notFound++;
     result.attempted[item.key]={retryAfter:isoDays(today,verdict.reason==='ambiguous-same-name'?60:30),
-     reason:verdict.reason,...(verdict.candidates?.length?{deezerCandidates:verdict.candidates.slice(0,10)}:{})};
+     reason:verdict.reason,...((urgentRetry||previous?.urgentRetried)?{urgentRetried:true}:{}),
+     ...(verdict.candidates?.length?{deezerCandidates:verdict.candidates.slice(0,10)}:{})};
    }
    consecutiveFailures=0;
   }catch(error){
    errors++;consecutiveFailures++;
-   result.attempted[item.key]={retryAfter:isoDays(today,2),reason:String(error?.message||error).slice(0,75)};
+   result.attempted[item.key]={retryAfter:isoDays(today,2),reason:String(error?.message||error).slice(0,75),
+     ...((urgentRetry||previous?.urgentRetried)?{urgentRetried:true}:{})};
    if(error?.code==='RATE_LIMIT')break;
   }
  }
@@ -151,5 +166,5 @@ export async function enrichDeezerArtistImages(events,cache,{
  const active=new Set(candidates.map(c=>c.key));
  for(const key of Object.keys(result.attempted))if(!active.has(key))delete result.attempted[key];
  return {cache:result,stats:{candidates:candidates.length,requests:deezer.requests,found,notFound,ambiguous,coverRejected,
-  errors,skipped,photos:Object.keys(result.artists).length}};
+  errors,skipped,urgentRetriesUsed,photos:Object.keys(result.artists).length}};
 }

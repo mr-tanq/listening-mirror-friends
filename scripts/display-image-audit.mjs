@@ -40,9 +40,21 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
   const names=headlinerNames(event);
   let reason='not-in-artist-cache';
   if(!names.length)reason='no-headliner';
-  else if(names.some(name=>cache?.attempted?.[artistKey(name)]?.retryAfter>today))reason='provider-backoff';
-  else if(names.some(name=>cache?.attempted?.[artistKey(name)]))reason='lookup-no-result-or-expired';
-  else if(names.some(name=>cache?.artists?.[artistKey(name)]))reason='invalid-cached-photo';
+  else{
+   const active=names.map(name=>cache?.attempted?.[artistKey(name)])
+    .find(attempt=>attempt?.retryAfter>today);
+   const expired=names.some(name=>cache?.attempted?.[artistKey(name)]);
+   if(active){
+    const why=String(active.reason||'');
+    if(why==='not-found')reason='artist-not-found';
+    else if(why==='ambiguous-same-name')reason='ambiguous-artist';
+    else if(why==='album-cover-as-portrait')reason='album-cover-rejected';
+    else if(why==='no-photo')reason='artist-has-no-photo';
+    else if(/quota|rate|http|block|timeout|fetch|network/i.test(why))reason='provider-error-backoff';
+    else reason='other-lookup-cooldown';
+   }else if(expired)reason='lookup-expired';
+   else if(names.some(name=>cache?.artists?.[artistKey(name)]))reason='invalid-cached-photo';
+  }
   increment(missingReasons,reason);
   missing.push({id:String(event.id||'').slice(0,180),artist:String(event.artist||'').slice(0,150),
    date:event.date,country,venue:String(event.venue||'').slice(0,100),reason});

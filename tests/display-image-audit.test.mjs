@@ -23,7 +23,7 @@ test('identifies attempted lookup backoff and avoids storing unbounded examples'
  const feed={events:[show('a','No Photo'),show('b','Absent')]};
  const cache={artists:{},attempted:{'no photo':{retryAfter:'2026-12-01',reason:'not-found'}}};
  const report=buildDisplayImageAudit(feed,cache,null,{today:'2026-11-07',sampleLimit:1});
- assert.equal(report.missingReasons['provider-backoff'],1);
+ assert.equal(report.missingReasons['artist-not-found'],1);
  assert.equal(report.totals.noImage,2);
  assert.equal(report.missingNext14Days,2);
  assert.equal(report.missingNext14DaysSamples.length,1);
@@ -35,4 +35,19 @@ test('rejects non-HTTPS event images in audit and uses verified cache if availab
  // An unsafe event URL must not be reported as a successful image.
  assert.equal(report.totals.eventPoster,0);
  assert.equal(report.totals.artistPhoto,1);
+});
+
+test('reports distinct reasons for ambiguous artists, rejected covers and provider errors',()=>{
+ const events=[show('a','Ambiguous'),show('b','Cover'),show('c','Quota'),show('d','No Art')];
+ const attempted={
+  ambiguous:{reason:'ambiguous-same-name',retryAfter:'2027-01-04'},
+  cover:{reason:'album-cover-as-portrait',retryAfter:'2026-12-05'},
+  quota:{reason:'Deezer quota exceeded',retryAfter:'2026-11-09'},
+  'no art':{reason:'no-photo',retryAfter:'2026-12-01'}
+ };
+ const report=buildDisplayImageAudit({events},{artists:{},attempted},null,{today:'2026-11-07'});
+ assert.equal(report.missingReasons['ambiguous-artist'],1);
+ assert.equal(report.missingReasons['album-cover-rejected'],1);
+ assert.equal(report.missingReasons['provider-error-backoff'],1);
+ assert.equal(report.missingReasons['artist-has-no-photo'],1);
 });
