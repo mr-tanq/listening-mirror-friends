@@ -81,7 +81,10 @@ export function verifiedArtistPhoto(raw){
   if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
    return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
   // Freely licensed Wikimedia Commons photographs (licence checked at ingest).
-  if(u.hostname==='upload.wikimedia.org')return WIKIMEDIA_PATH.test(u.pathname)&&!u.search?u.href:'';
+  // Commons distributes resized files via thumb.wikimedia.org; only the same
+  // strict /wikipedia/commons/thumb/... photo path is accepted.
+  if(u.hostname==='upload.wikimedia.org'||u.hostname==='thumb.wikimedia.org')
+   return WIKIMEDIA_PATH.test(u.pathname)&&!u.search?u.href:'';
   return '';
  }catch{return '';}
 }
