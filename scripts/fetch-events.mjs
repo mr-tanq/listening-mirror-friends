@@ -877,7 +877,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   // licensed Commons files. This never touches blocked venue image candidates.
   const existingGenreTags=await read('data/artist-tags.json',{artists:{}});
   const wikimediaUpdate=await enrichWikimediaArtistPhotos(events,identityUpdate.images,{
-    today,artistTags:existingGenreTags,deezerClient,
+    today,artistTags:existingGenreTags,deezerClient,identityCache:identityUpdate.identities,
     maxArtists:Number(process.env.WIKIMEDIA_ARTISTS_PER_RUN||25),
     maxDurationMs:Number(process.env.WIKIMEDIA_TIME_MS||150000)
   });

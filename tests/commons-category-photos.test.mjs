@@ -70,7 +70,7 @@ test('uses verified artist category after P18 missing and P180 empty',async()=>{
  assert.ok(urls.some(x=>x.includes('generator=categorymembers')));
 });
 
-test('old P180 failure is rechecked only once under strategy v3',async()=>{
+test('older Wikimedia failure is rechecked only once with the newer linked identity strategy',async()=>{
  const original={artists:{},wikimediaAttempted:{'moreish idols':{strategyVersion:2,retryAfter:'2027-02-01',reason:'no-licensed-commons-photo'}}};
  let calls=0;
  const fetcher=async u=>{
@@ -81,7 +81,7 @@ test('old P180 failure is rechecked only once under strategy v3',async()=>{
  };
  const r=await enrichWikimediaArtistPhotos([event],original,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(r.stats.attempted,1);
- assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,4);
+ assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,5);
  const count=calls;
  const again=await enrichWikimediaArtistPhotos([event],r.cache,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(again.stats.attempted,0);assert.equal(calls,count);
