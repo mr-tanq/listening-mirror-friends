@@ -18,7 +18,7 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
  const input=Array.isArray(feed?.events)?feed.events:[];
  const exact=applyVerifiedOfficialArtwork(input,reviewed||{records:[]});
  const eligible=exact.events.filter(e=>e&&typeof e.date==='string'&&e.date>=today);
- const totals=blankCounters(),byCountry={},missing=[],missingReasons={};
+ const totals=blankCounters(),byCountry={},missing=[],missingReasons={},backoffReasons={};
  for(const event of eligible){
   const country=String(event.country||'UNKNOWN').toUpperCase();
   const row=byCountry[country]||=blankCounters();
@@ -40,7 +40,14 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
   const names=headlinerNames(event);
   let reason='not-in-artist-cache';
   if(!names.length)reason='no-headliner';
-  else if(names.some(name=>cache?.attempted?.[artistKey(name)]?.retryAfter>today))reason='provider-backoff';
+  else if(names.some(name=>cache?.attempted?.[artistKey(name)]?.retryAfter>today)){
+   reason='provider-backoff';
+   // Keep the high-level reason for compatibility while reporting WHY the
+   // search was rejected, e.g. ambiguous identity vs. exact not-found.
+   const attempt=names.map(name=>cache?.attempted?.[artistKey(name)])
+    .find(a=>a?.retryAfter>today);
+   increment(backoffReasons,String(attempt?.reason||'unknown').slice(0,70));
+  }
   else if(names.some(name=>cache?.attempted?.[artistKey(name)]))reason='lookup-no-result-or-expired';
   else if(names.some(name=>cache?.artists?.[artistKey(name)]))reason='invalid-cached-photo';
   increment(missingReasons,reason);
@@ -53,7 +60,7 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
  return {version:1,generatedAt:new Date().toISOString(),catalogUpdatedAt:feed?.updatedAt||null,auditedFor:today,
   definition:'Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.',
   caveat:'Browser network errors, blocked hotlinks and expired source images may still fall back to typography.',
-  reviewedOfficialArtworkApplied:exact.applied,totals,byCountry,missingReasons,
+  reviewedOfficialArtworkApplied:exact.applied,totals,byCountry,missingReasons,backoffReasons,
   missingNext14Days:soon.length,
   missingNext14DaysSamples:soon.slice(0,sampleLimit),
   missingOtherSamples:missing.filter(e=>e.date>nearCutoff).slice(0,sampleLimit)};
@@ -67,7 +74,7 @@ async function main(){
  const cache=await read('data/artist-images.json',{artists:{}});
  const reviewed=await read('data/verified-official-artwork.json',{records:[]});
  const report=buildDisplayImageAudit(feed,cache,reviewed);
- console.log('DISPLAY_IMAGE_COVERAGE '+JSON.stringify({totals:report.totals,byCountry:report.byCountry,missingNext14Days:report.missingNext14Days,reasons:report.missingReasons}));
+ console.log('DISPLAY_IMAGE_COVERAGE '+JSON.stringify({totals:report.totals,byCountry:report.byCountry,missingNext14Days:report.missingNext14Days,reasons:report.missingReasons,backoffReasons:report.backoffReasons}));
  if(!process.argv.includes('--audit'))await writeFile(new URL('data/display-image-audit.json',root),JSON.stringify(report,null,2)+'\n');
 }
 if(import.meta.url===`file://${process.argv[1]}`)await main();
