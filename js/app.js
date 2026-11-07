@@ -147,6 +147,17 @@ function archiveEvent(e){
   if(!state.archive.some(a=>a.id===event.id||[a.artist,a.date,a.venue].join('|')===[event.artist,event.date,event.venue].join('|'))){state.archive.unshift(event);}
   delete state.saved[event.id];persist();render();
 }
+function fallbackShowArtwork(event){
+  // Editorial artwork is deliberately text-only, not an unrelated photograph.
+  const art=el('div','show-art show-art-editorial');
+  art.setAttribute('role','img');
+  art.setAttribute('aria-label','No verified concert image; typographic event artwork');
+  const kicker=el('span','show-art-kicker','LIVE / '+(event.country||''));
+  const artist=el('strong','show-art-artist',event.artist||'Live concert');
+  const venue=el('span','show-art-venue',event.venue||event.city||'Concert');
+  art.append(kicker,artist,venue);
+  return art;
+}
 function card(raw,scoreInfo=null,mode='discover') {
   const e=normalizeEvent(raw);if(!e)return null;
   const card=el('article','show'+(scoreInfo?.score>=100?' featured':''));
@@ -169,10 +180,10 @@ function card(raw,scoreInfo=null,mode='discover') {
         setCredit(e.imageFallbackCredit);return;
       }
       if(creditNode)creditNode.remove();
-      img.replaceWith(el('div','show-art','♪'));
+      img.replaceWith(fallbackShowArtwork(e));
     });
     card.append(img);setCredit(e.imageCredit);
-  }else card.append(el('div','show-art','♪'));
+  }else card.append(fallbackShowArtwork(e));
   const body=el('div','show-body');
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));
   if(scoreInfo?.reason)body.append(el('p','show-reason',scoreInfo.reason));
