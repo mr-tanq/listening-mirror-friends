@@ -61,6 +61,23 @@ export function chooseWikidataArtist(searchPayload,entitiesPayload,name){
  return {entity,file};
 }
 
+
+/**
+ * Prefer the exact Wikidata QID already linked to a uniquely identified
+ * MusicBrainz artist. Verify this Wikidata entity still names the same
+ * musician/group; never trust a QID alone to pick an image.
+ * A verified entity with no P18 still enables exact depicts/category routes.
+ */
+export function chooseLinkedWikidataArtist(payload,qid,name){
+ if(!/^Q[1-9]\d*$/.test(qid||''))return {entity:null,reason:'invalid-linked-id'};
+ const entity=payload?.entities?.[qid],key=artistKey(name);
+ if(!entity||entity.missing||!key||!musical(entity)||
+  !names(entity).some(n=>artistKey(n)===key))
+  return {entity:null,reason:'linked-identity-mismatch'};
+ const file=imageFileFromWikidata({entities:{[qid]:entity}},qid);
+ return file?{entity,file,linked:true}:{entity:null,verifiedEntity:entity,reason:'no-commons-image',linked:true};
+}
+
 async function getJson(fetcher,url){
  const r=await fetcher(url,{headers:{Accept:'application/json','User-Agent':USER_AGENT},
   signal:AbortSignal.timeout(10000)});
@@ -82,11 +99,11 @@ const commonsUrl=file=>COMMONS+'?action=query&format=json&prop=imageinfo&iiprop=
 export async function enrichWikimediaArtistPhotos(events,imageCache,{
  today=new Date().toISOString().slice(0,10),fetcher=fetch,
  maxArtists=25,maxDurationMs=150000,clock=()=>Date.now(),delay=ms=>new Promise(r=>setTimeout(r,ms)),
- artistTags={artists:{}},deezerClient=null
+ artistTags={artists:{}},deezerClient=null,identityCache={artists:{}}
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,linkedDeezerChecks:0,linkedDeezerFound:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -94,14 +111,29 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   lastRequest=clock();
   return getJson(fetcher,url);
  };
+ const knownQid=item=>{
+  const id=identityCache?.artists?.[item.key]?.wikidata;
+  return /^Q[1-9]\\d*$/.test(id||'')?id:'';
+ };
+ const strategyVersion=5; // Reuse a verified MusicBrainz→Wikidata link.
  const candidates=selectArtistCandidates(events,result,{today})
-  // Older attempts used only Wikidata P18. Retry them once with the
-  // new verified P180 route, then respect the normal persistent backoff.
-  .filter(item=>!(result.wikimediaAttempted[item.key]?.strategyVersion===4&&result.wikimediaAttempted[item.key]?.retryAfter>today))
+  .filter(item=>{
+   const attempt=result.wikimediaAttempted[item.key];
+   if(!attempt?.retryAfter||attempt.retryAfter<=today)return true;
+   // Never bypass provider failures, rate-limits, identity ambiguity or an
+   // existing v5 cooldown. One bounded revisit for old identity misses only.
+   return Boolean(knownQid(item))&&Number(attempt.strategyVersion||0)<strategyVersion&&
+    ['no-confirmed-musician','no-commons-image','no-licensed-commons-photo',
+     'photo-license-or-size-rejected','ambiguous-musical-identity'].includes(attempt.reason);
+  })
   .sort((a,b)=>{
+   const urgentDay=new Date(today+'T12:00:00Z');
+   urgentDay.setUTCDate(urgentDay.getUTCDate()+14);
+   const cutoff=urgentDay.toISOString().slice(0,10);
+   const soon=x=>x.nextDate<=cutoff?1:0;
    const evidence=item=>Array.isArray(artistTags?.artists?.[item.key]?.genres)&&artistTags.artists[item.key].genres.length?1:0;
-   const byEvidence=evidence(b)-evidence(a);
-   return byEvidence||b.count-a.count||a.rank-b.rank||a.nextDate.localeCompare(b.nextDate);
+   return soon(b)-soon(a)||Number(Boolean(knownQid(b)))-Number(Boolean(knownQid(a)))||
+    evidence(b)-evidence(a)||b.count-a.count||a.rank-b.rank||a.nextDate.localeCompare(b.nextDate);
   });
  stats.candidates=candidates.length;
  for(const item of candidates){
@@ -109,12 +141,23 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   if(result.artists[item.key]?.image)continue;
   stats.attempted++;
   try{
-   const found=await fetchSlow(searchUrl(item.name));
-   const exact=[...new Set((found?.search||[]).filter(x=>artistKey(x.label)===item.key&&/^Q\d+$/.test(x.id||'')).map(x=>x.id))];
    let verdict={entity:null,reason:'no-confirmed-musician'};
-   if(exact.length){
-    const payload=await fetchSlow(entityUrl(exact));
-    verdict=chooseWikidataArtist(found,payload,item.name);
+   const linkedQid=knownQid(item);
+   if(linkedQid){
+    const payload=await fetchSlow(entityUrl([linkedQid]));
+    verdict=chooseLinkedWikidataArtist(payload,linkedQid,item.name);
+    if(verdict.linked)stats.linkedIdentityUsed++;
+    else stats.linkedIdentityRejected++;
+   }
+   // Only use a name-based lookup if a previously linked Wikidata entity
+   // failed strict artist-name/type checks, or if no verified link exists.
+   if(!verdict.entity&&!verdict.verifiedEntity){
+    const found=await fetchSlow(searchUrl(item.name));
+    const exact=[...new Set((found?.search||[]).filter(x=>artistKey(x.label)===item.key&&/^Q\d+$/.test(x.id||'')).map(x=>x.id))];
+    if(exact.length){
+     const payload=await fetchSlow(entityUrl(exact));
+     verdict=chooseWikidataArtist(found,payload,item.name);
+    }
    }
    const confirmed=verdict.entity||verdict.verifiedEntity;
    let photo=null,method='';
@@ -172,10 +215,10 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    if(verdict.reason==='ambiguous-musical-identity')stats.ambiguous++;
    else if(verdict.reason==='photo-license-or-size-rejected')stats.licenceRejected++;
    else stats.noMatch++;
-   result.wikimediaAttempted[item.key]={strategyVersion:4,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
+   result.wikimediaAttempted[item.key]={strategyVersion,retryAfter:isoDays(today,verdict.reason==='ambiguous-musical-identity'?90:45),reason:verdict.reason};
   }catch(error){
    stats.errors++;
-   result.wikimediaAttempted[item.key]={strategyVersion:4,retryAfter:isoDays(today,error.code==='RATE_LIMIT'?2:5),
+   result.wikimediaAttempted[item.key]={strategyVersion,retryAfter:isoDays(today,error.code==='RATE_LIMIT'?2:5),
     reason:String(error.message||error).slice(0,90)};
    if(error.code==='RATE_LIMIT')break;
   }
