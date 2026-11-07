@@ -931,17 +931,9 @@
       "retryAfter": "2026-11-08",
       "reason": "HTTP 503"
     },
-    "otis gibbs": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "radar machine": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
-    },
-    "rymden": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
     },
     "any kind loma shearwater": {
       "retryAfter": "2026-12-06",
@@ -1173,6 +1165,10 @@
       "reason": "not-found"
     },
     "prison religion": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "this is michael": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }

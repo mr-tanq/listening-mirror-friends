@@ -7908,6 +7908,152 @@
       },
       "wikidata": "Q1390029",
       "checkedAt": "2026-11-07T14:48:47.936Z"
+    },
+    "otis gibbs": {
+      "name": "Otis Gibbs",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Otis_Gibbs_2009_%28cropped%29.jpg",
+      "kind": "artist-photo",
+      "source": "manual-pin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg",
+      "credit": {
+        "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
+      },
+      "checkedAt": "2026-11-07T15:31:07.948Z"
+    },
+    "rymden": {
+      "name": "Rymden",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Rymden_Oslo_Jazzfestival_2024_%28181721%29.jpg/960px-Rymden_Oslo_Jazzfestival_2024_%28181721%29.jpg",
+      "kind": "artist-photo",
+      "source": "manual-pin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg",
+      "credit": {
+        "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
+      },
+      "checkedAt": "2026-11-07T15:31:07.948Z"
+    },
+    "whitechapel": {
+      "name": "Whitechapel",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Whitechapel_%28c%29abbilondon.jpg",
+      "kind": "artist-photo",
+      "source": "manual-pin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg",
+      "scopes": [
+        {
+          "id": "podiuminfo-454067",
+          "date": "2027-02-14",
+          "country": "NL",
+          "venue": "TivoliVredenburg"
+        }
+      ],
+      "credit": {
+        "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
+      },
+      "checkedAt": "2026-11-07T15:31:07.948Z"
+    },
+    "the bootleg beatles": {
+      "name": "The Bootleg Beatles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/The_Bootleg_Beatles.jpg",
+      "kind": "artist-photo",
+      "source": "manual-pin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg",
+      "credit": {
+        "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
+      },
+      "checkedAt": "2026-11-07T15:31:07.948Z"
+    },
+    "ayra starr": {
+      "name": "Ayra Starr",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/dbbf92fde4a28452a455f885b065008e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 110616822,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/110616822",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/110616822"
+      },
+      "wikidata": "Q106462586",
+      "checkedAt": "2026-11-07T15:30:27.429Z"
+    },
+    "gilla band": {
+      "name": "Gilla Band",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9adf57165c884ce78baa2c69766d449a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 152385282,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/152385282",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/152385282"
+      },
+      "wikidata": "Q28453446",
+      "checkedAt": "2026-11-07T15:30:30.810Z"
+    },
+    "self deception": {
+      "name": "Self Deception",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e255ed23279435783ff7d985d343de3d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 313376,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/313376",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/313376"
+      },
+      "wikidata": "Q10665378",
+      "checkedAt": "2026-11-07T15:30:38.893Z"
+    },
+    "nia archives": {
+      "name": "Nia Archives",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2849ee9699cad1cb64a53f017b67a164/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 96293712,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/96293712",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/96293712"
+      },
+      "wikidata": "Q115955868",
+      "checkedAt": "2026-11-07T15:30:47.638Z"
+    },
+    "pongo": {
+      "name": "Pongo",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6509dbff305b943aa9d2a57f9c46e90e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14587581,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/14587581",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14587581"
+      },
+      "wikidata": "Q108479016",
+      "checkedAt": "2026-11-07T15:30:56.360Z"
+    },
+    "romare": {
+      "name": "Romare",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/36b380a672c5353569eb1fa4563ffb6e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2938511,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/2938511",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2938511"
+      },
+      "wikidata": "Q99672261",
+      "checkedAt": "2026-11-07T15:30:58.921Z"
     }
   },
   "attempted": {
@@ -8074,15 +8220,7 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "otis gibbs": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
     "radar machine": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "rymden": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
@@ -8525,16 +8663,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "edis": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1171997,
-        89736942,
-        122501842,
-        128654822
-      ]
-    },
     "knoll": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -8597,10 +8725,6 @@
       "reason": "album-cover-as-portrait"
     },
     "the ruins of beverast tempelschlaf tour": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
-    "trobi kameleon": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
@@ -8669,15 +8793,6 @@
     "nothhingspecial": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "alain clark": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        283593491,
-        351308642,
-        182589
-      ]
     },
     "dub hub": {
       "retryAfter": "2026-12-05",
@@ -9656,10 +9771,6 @@
         413855231
       ]
     },
-    "the bootleg beatles": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "ana lua caiano": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -9813,16 +9924,6 @@
     "the ruins of beverast": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "trobi": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        211064347,
-        11600867,
-        211063907,
-        211064397
-      ]
     },
     "gplr 2026": {
       "retryAfter": "2026-12-05",
@@ -10147,12 +10248,14 @@
       "reason": "not-found"
     },
     "the elvis concert": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "michael jackson project": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-07",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "nu art orchestra": {
       "retryAfter": "2026-12-05",
@@ -10202,16 +10305,6 @@
         127553702,
         6746869,
         328990731
-      ]
-    },
-    "whitechapel": {
-      "retryAfter": "2027-01-05",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        72899692,
-        88193312,
-        123972,
-        88193322
       ]
     },
     "exxul": {
@@ -10275,11 +10368,8 @@
     },
     "hku large ensemble": {
       "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "rabo open stage landhuis caravan": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "systematic show case": {
       "retryAfter": "2026-12-07",
@@ -10338,11 +10428,6 @@
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
-    },
-    "rymden": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "photo-license-or-size-rejected"
     },
     "dav id": {
       "strategyVersion": 4,
@@ -10619,20 +10704,10 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "the bootleg beatles": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "photo-license-or-size-rejected"
-    },
     "le guess who presents bleak squad": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
-    },
-    "otis gibbs": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "photo-license-or-size-rejected"
     },
     "any kind loma shearwater": {
       "strategyVersion": 4,
@@ -11080,6 +11155,101 @@
       "reason": "no-confirmed-musician"
     },
     "shantel bucovina club orkestar de": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "stay away from dante": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "the zouklovers": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "wrest 7ebra more t b a": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "cora kemperman de schuurmachines": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "metal core sunday matinee": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "paradox jazz orchestra james carter": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "chuck prophet the amsterdam string ensemble": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "frenetik": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "gambling": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "q marsden": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "raquel rodriguez": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "treasure bruno mars tribute": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "3voor12 song van het jaar": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "donna s hot stuff": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "fortunate sons": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "hohnen ford": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-licensed-commons-photo"
+    },
+    "juwls": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "sex pistols expose": {
+      "strategyVersion": 4,
+      "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "bltnm": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"

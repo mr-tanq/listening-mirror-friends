@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T14:54:33.474Z",
-  "catalogUpdatedAt": "2026-11-07T14:50:39.284Z",
+  "generatedAt": "2026-11-07T15:36:47.381Z",
+  "catalogUpdatedAt": "2026-11-07T15:32:54.738Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,9 +9,9 @@
   "totals": {
     "total": 1942,
     "eventPoster": 1057,
-    "artistPhoto": 495,
-    "noImage": 390,
-    "posterWithPhotoBackup": 398
+    "artistPhoto": 505,
+    "noImage": 380,
+    "posterWithPhotoBackup": 399
   },
   "byCountry": {
     "GR": {
@@ -24,27 +24,27 @@
     "NL": {
       "total": 1422,
       "eventPoster": 688,
-      "artistPhoto": 417,
-      "noImage": 317,
-      "posterWithPhotoBackup": 356
+      "artistPhoto": 425,
+      "noImage": 309,
+      "posterWithPhotoBackup": 357
     },
     "BE": {
       "total": 110,
       "eventPoster": 6,
-      "artistPhoto": 64,
-      "noImage": 40,
+      "artistPhoto": 66,
+      "noImage": 38,
       "posterWithPhotoBackup": 4
     }
   },
   "missingReasons": {
-    "artist-not-found": 180,
-    "album-cover-rejected": 72,
-    "ambiguous-artist": 78,
+    "artist-not-found": 179,
+    "album-cover-rejected": 70,
+    "ambiguous-artist": 71,
     "other-lookup-cooldown": 46,
     "not-in-artist-cache": 10,
     "artist-has-no-photo": 4
   },
-  "missingNext14Days": 100,
+  "missingNext14Days": 98,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -127,24 +127,8 @@
       "reason": "not-in-artist-cache"
     },
     {
-      "id": "podiuminfo-459802",
-      "artist": "Otis Gibbs",
-      "date": "2026-11-10",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
       "id": "podiuminfo-499977",
       "artist": "Radar Machine",
-      "date": "2026-11-10",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-451605",
-      "artist": "Rymden",
       "date": "2026-11-10",
       "country": "NL",
       "venue": "TivoliVredenburg",
@@ -365,6 +349,22 @@
       "country": "NL",
       "venue": "Melkweg",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-493825",
+      "artist": "Coos",
+      "date": "2026-11-14",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-496180",
+      "artist": "Donker Dansen – Darker Levels",
+      "date": "2026-11-14",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
