@@ -11,7 +11,7 @@
  *
  * Only URLs are stored: images are hot-linked from Deezer's CDN, never copied.
  */
-import {artistKey,verifiedArtistPhoto,headlinerNames,artistImageFor} from '../js/artist-images.js';
+import {artistKey,verifiedArtistPhoto,headlinerSearchNames,artistImageFor} from '../js/artist-images.js';
 import {createRateLimiter,isoDays} from './rate-limit.mjs';
 
 const GENERIC=/^(?:unknown|festival|various artists|special guests?|live music|concert|sold out|uitverkocht|tba|tbc|tbd|dj|djs|line ?up|open mic|jam session|karaoke|silent disco|quiz)$/i;
@@ -31,19 +31,12 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
  for(const event of events||[]){
   if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today||event.image)continue;
   if(artistImageFor(event,artistCache))continue;
-  const variants=headlinerNames(event).filter(goodName);
-  // Prefer an already-derived, clean headliner over a composite event title
-  // ("Artist - tour", "Artist: album"). Keep full names as fallbacks.
-  // A short generic fragment such as "Fun" is not trustworthy enough.
-  const hasSubtitle=/(?:\s[-–—|]\s|:\s)/.test(String(event.artist||''));
-  const originalKey=artistKey((event.artists||[])[0]||event.artist);
-  const derived=hasSubtitle?variants.find(name=>{
-   const key=artistKey(name);
-   return key!==originalKey&&key.length>=4&&!/^(?:live|band|fun|music|night|show|concert|tour)$/.test(key);
-  }):null;
+  const variants=headlinerSearchNames(event).filter(goodName);
+  // Shared headliner parsing avoids spending finite provider budget on
+  // "band night - act", presenter titles or multi-artist bill strings.
   variants.forEach((name,rank)=>{
    const key=artistKey(name);
-   const priority=derived?(name===derived?0:rank+1):rank;
+   const priority=rank;
    const row=all.get(key)||{name,key,count:0,rank:priority,nextDate:event.date,country:event.country,genre:event.genre||''};
    row.count++;row.rank=Math.min(row.rank,priority);
    if(event.date<row.nextDate)row.nextDate=event.date;
