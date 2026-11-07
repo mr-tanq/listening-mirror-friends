@@ -1,5 +1,50 @@
 {
   "note": "Human review of automatic band photos. 'block' removes a wrong photo and stops future lookups for that name. 'pin' sets a reviewed photo: {\"artist\":\"Name\",\"image\":\"https://...\",\"sourceUrl\":\"https://...\",\"credit\":{\"text\":\"Photo: ...\",\"url\":\"https://...\"}}. Only Deezer artist images, Podiuminfo artist images and Wikimedia Commons files are accepted.",
   "block": [],
-  "pin": []
+  "pin": [
+    {
+      "artist": "Otis Gibbs",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Otis_Gibbs_2009_%28cropped%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg",
+      "credit": {
+        "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
+      },
+      "license": "CC BY-SA 2.0",
+      "reason": "Commons depicts Otis Gibbs at SXSW 2009; confirmed identity and photo author"
+    },
+    {
+      "artist": "Rymden",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Rymden_Oslo_Jazzfestival_2024_%28181721%29.jpg/960px-Rymden_Oslo_Jazzfestival_2024_%28181721%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg",
+      "credit": {
+        "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
+      },
+      "license": "CC BY-SA 4.0",
+      "reason": "Commons image explicitly identifies all three Rymden musicians at Oslo Jazzfestival 2024"
+    },
+    {
+      "artist": "Whitechapel",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Whitechapel_%28c%29abbilondon.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg",
+      "credit": {
+        "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
+      },
+      "license": "CC BY 3.0",
+      "reason": "Commons photo specifically describes deathcore band Whitechapel live in London 2008"
+    },
+    {
+      "artist": "The Bootleg Beatles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/The_Bootleg_Beatles.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg",
+      "credit": {
+        "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
+      },
+      "license": "CC BY-SA 3.0 NL",
+      "reason": "Wikimedia file identifies the tribute group from a 1981 television appearance, not the original Beatles"
+    }
+  ]
 }
