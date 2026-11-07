@@ -17,6 +17,7 @@ import {THUMB_WIDTH} from './musicbrainz-identity.mjs';
 const NAMELESS=/^(?:the|a|an|de|het|dj|band|music)$/i;
 const BAD_CATEGORY=/\b(?:discography|album|albums|songs|recordings|logos?|posters?|festivals?|covers?|members|tribute|fanclubs?)\b/i;
 const BAD_FILE=/\b(?:tribute|cover|album|logo|merch|poster|flyer|sleeve|vinyl|ticket|artwork|drawing|painting|fanart)\b/i;
+const BAD_DESCRIPTION=/\b(?:album\s+cover|cover\s+art|fan\s*art|poster|flyer|logo|drawing|illustration|painting|tribute\s+(?:band|act|group|to))\b/i;
 
 const directValues=(entity,prop)=>(entity?.claims?.[prop]||[])
  .filter(c=>c?.rank!=='deprecated')
@@ -48,26 +49,60 @@ export function commonsArtistCategoryUrl(category){
  if(!validCategory(category))throw new Error('Invalid Commons artist category');
  const search=new URLSearchParams({
   action:'query',format:'json',generator:'categorymembers',
-  gcmtitle:'Category:'+category,gcmnamespace:'6',gcmlimit:'20',
+  gcmtitle:'Category:'+category,gcmnamespace:'6',gcmlimit:'40',
   prop:'imageinfo',iiprop:'url|size|mime|extmetadata',
-  iiextmetadatafilter:'LicenseShortName|LicenseUrl|Artist|AttributionRequired',
+  iiextmetadatafilter:'LicenseShortName|LicenseUrl|Artist|AttributionRequired|ImageDescription',
   iiurlwidth:String(THUMB_WIDTH)
  });
  return 'https://commons.wikimedia.org/w/api.php?'+search;
 }
 
+/** Only a category explicitly linked to the verified music identity is
+ * eligible. For files inside that category, require the COMPLETE performer
+ * name either in the file title or in its own file-description metadata.
+ * Prefer title matches; never accept a generic file merely for being in a
+ * category, and never relax licence/image/cover-art checks.
+ */
 export function selectLicensedCategoryPhoto(payload,artistName,qid){
  const key=artistKey(artistName);
  const meaningful=key.split(' ').filter(w=>w.length>=3&&!NAMELESS.test(w));
  if(!(meaningful.length>=2||(meaningful.length===1&&meaningful[0].length>=6)))return null;
- const filtered=Object.fromEntries(Object.entries(payload?.query?.pages||{})
-  .filter(([,page])=>{
-   const file=String(page?.title||'').replace(/^File:/i,'').replace(/_/g,' ');
-   if(BAD_FILE.test(file))return false;
-   const fileKey=artistKey(file);
-   // The FULL artist name, not a substring of another band's name.
-   return (' '+fileKey+' ').includes(' '+key+' ');
-  }));
- if(!Object.keys(filtered).length)return null;
- return selectLicensedDepictsPhoto({query:{pages:filtered}},qid);
+ // A band called "Northern" must not match "Northern Lanterns". The
+ // full artist token sequence must finish the caption/name or be followed
+ // by a clear photographic context word, not another unexplained name word.
+ const CONTEXT_WORDS=new Set(['live','perform','performs','performing','performance',
+  'at','in','on','during','from','with','playing','pictured','photographed',
+  'photograph','photo','concert','gig','show','stage','band','group',
+  'artist','musician','singer','singing','rehearsing','tour','festival']);
+ const tokens=key.split(' ');
+ const exactPhrase=value=>{
+  const words=artistKey(value).split(' ').filter(Boolean);
+  for(let i=0;i+tokens.length<=words.length;i++){
+   if(!tokens.every((token,j)=>words[i+j]===token))continue;
+   const following=words[i+tokens.length];
+   if(!following||CONTEXT_WORDS.has(following))return true;
+  }
+  return false;
+ };
+ const titleMatches={},descriptionMatches={};
+ for(const [id,page] of Object.entries(payload?.query?.pages||{})){
+  if(page?.ns!==6||!/^File:/i.test(String(page.title||'')))continue;
+  const file=String(page.title).replace(/^File:/i,'').replace(/_/g,' ');
+  if(BAD_FILE.test(file))continue;
+  const fileMatch=exactPhrase(file);
+  const raw=String(page.imageinfo?.[0]?.extmetadata?.ImageDescription?.value||'').slice(0,900);
+  // Commons ImageDescription is HTML; normalize only for matching, never
+  // render it or store it in the public photo cache.
+  const description=raw.replace(/<[^>]*>/g,' ').replace(/&(?:amp|nbsp);/g,' ')
+   .replace(/&#(?:39|x27);/gi,"'").replace(/&quot;/g,'"');
+  const descriptionMatch=!BAD_DESCRIPTION.test(description)&&exactPhrase(description);
+  if(fileMatch)titleMatches[id]=page;
+  else if(descriptionMatch)descriptionMatches[id]=page;
+ }
+ // Established title matches take precedence over lower-confidence
+ // description matches, but unsupported licences can still fall through.
+ const named=selectLicensedDepictsPhoto({query:{pages:titleMatches}},qid);
+ if(named)return {...named,categoryEvidence:'artist-in-file-title'};
+ const described=selectLicensedDepictsPhoto({query:{pages:descriptionMatches}},qid);
+ return described?{...described,categoryEvidence:'artist-in-image-description'}:null;
 }

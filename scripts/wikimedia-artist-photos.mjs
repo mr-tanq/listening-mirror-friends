@@ -103,7 +103,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,categoryDescriptionFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -115,7 +115,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   const id=identityCache?.artists?.[item.key]?.wikidata;
   return /^Q[1-9]\d*$/.test(id||'')?id:'';
  };
- const strategyVersion=5; // Reuse a verified MusicBrainz→Wikidata link.
+ const strategyVersion=6; // Check verified Commons category image descriptions.
  const candidates=selectArtistCandidates(events,result,{today})
   .filter(item=>{
    const attempt=result.wikimediaAttempted[item.key];
@@ -126,6 +126,10 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    const oldPhotoMiss=['no-commons-image','no-licensed-commons-photo',
     'photo-license-or-size-rejected'].includes(attempt.reason);
    if(version<4&&oldPhotoMiss)return true;
+   // One bounded revisit of previously photo-only misses to check the
+   // artist's own linked Commons category for description-backed images.
+   // Do not retry ambiguity, provider backoff or rate limit errors.
+   if(version<strategyVersion&&oldPhotoMiss)return true;
    // Revisit a previous v4 identity miss once when a trusted MusicBrainz QID
    // is now known. Never bypass errors, rate limits or an existing v5 cooldown.
    return Boolean(knownQid(item))&&version<strategyVersion&&
@@ -189,7 +193,12 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
      stats.categoryQueries++;
      const matches=await fetchSlow(commonsArtistCategoryUrl(category),950);
      photo=selectLicensedCategoryPhoto(matches,item.name,confirmed.id);
-     if(photo){method='wikidata-linked-artist-category';stats.categoryFound++;}
+     if(photo){
+       method=photo.categoryEvidence==='artist-in-image-description'?
+        'wikidata-linked-artist-category-description':'wikidata-linked-artist-category';
+       stats.categoryFound++;
+       if(photo.categoryEvidence==='artist-in-image-description')stats.categoryDescriptionFound++;
+      }
     }
    }
    if(!photo&&confirmed&&deezerClient){
