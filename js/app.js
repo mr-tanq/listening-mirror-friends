@@ -4,7 +4,7 @@ import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
 import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=identity-v2';
 import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
-import {watchConcertImage,imageLoadReport} from './image-load-diagnostics.js?v=diagnostics-v1';
+import {watchConcertImage,imageLoadReport,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -163,6 +163,7 @@ function card(raw,scoreInfo=null,mode='discover') {
   const e=normalizeEvent(raw);if(!e)return null;
   const card=el('article','show'+(scoreInfo?.score>=100?' featured':''));
   const pic=safeUrl(e.image);
+  recordRenderedConcert(e,pic);
   if(pic){
     const img=el('img','show-image');img.loading='lazy';img.alt=`${e.artist} artwork`;
     watchConcertImage(img,e,pic,safeUrl(e.imageFallback));img.src=pic;
