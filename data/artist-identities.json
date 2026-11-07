@@ -785,6 +785,17 @@
       "matchedBy": "unique-name",
       "wikidata": "Q2673965",
       "checkedAt": "2026-11-07T15:42:41.089Z"
+    },
+    "mietze conte": {
+      "name": "Mietze Conte",
+      "mbid": "f9d0095f-7bcc-4992-8cb8-232ec819c41b",
+      "mbName": "Mietze Conte",
+      "country": "AT",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://mietzeconte.bandcamp.com/",
+      "spotifyId": "3ETvRzzQK7ppB28GcAE8rN",
+      "deezerId": 182222667,
+      "checkedAt": "2026-11-07T23:40:53.243Z"
     }
   },
   "attempted": {
@@ -1162,6 +1173,31 @@
       "reason": "not-found"
     },
     "bleak squad": {
+      "retryAfter": "2026-11-09",
+      "reason": "HTTP 503"
+    },
+    "beylerband": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "hku large ensemble": {
+      "retryAfter": "2026-12-07",
+      "reason": "not-found"
+    },
+    "jim keller": {
+      "retryAfter": "2026-12-22",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "02212f96-0d16-4919-bed2-342d043a1b19",
+        "086171a9-e6f6-4e3b-926e-29921e36a6f0",
+        "3be10a6c-1086-4a14-a096-a67ddf205396"
+      ]
+    },
+    "mietze conte": {
+      "retryAfter": "2026-12-22",
+      "reason": "identified-without-free-photo"
+    },
+    "muna": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     }

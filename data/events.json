@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T22:57:58.501Z",
+  "updatedAt": "2026-11-07T23:43:08.760Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -1714,7 +1714,7 @@
       }
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -14863,7 +14863,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -25262,7 +25262,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -25679,7 +25679,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -39756,8 +39756,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -39769,11 +39769,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -39857,7 +39857,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -39912,7 +39912,7 @@
       "venue": "013",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.013.nl/programma/153847/alcest",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/ALCEST-2-credits-Andy-Julia.jpg?mtime=1787834485",
@@ -39929,7 +39929,8 @@
       "imageCredit": {
         "text": "Image: 013",
         "url": "https://www.013.nl/programma/153847/alcest"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "rocking-20270321-27562",
@@ -40307,7 +40308,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "Indie",
+      "genre": "Indie / Alternative",
       "subgenre": "",
       "url": "https://patronaat.nl/event/roosbeef-support-25-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/Roosbeef-%C2%A9-Felix-Baumsteiger-1-scaled.jpg",
@@ -40665,7 +40666,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Folk / Rock / Alternative / Pop / Indie / Post-Rock",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/kalandra/2924600",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kalandra-1787906269.jpg",
@@ -40682,7 +40683,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/kalandra/2924600"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-013-2027-03-27-sama-sama-maluku-live-in-concert",
@@ -40723,7 +40725,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Punk",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/the-meffs/2946675",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/1-1792856485.jpg",
@@ -40740,7 +40742,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/the-meffs/2946675"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-patronaat-2027-03-27-tributeconcert-riplive-remembering-2026",
@@ -40798,7 +40801,7 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/the-orb",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/The%20Orb%20%E2%80%93%20Square%20afbeelding%20only.png?itok=G3ydcNvm",
@@ -40815,7 +40818,8 @@
       "imageCredit": {
         "text": "Image: Effenaar",
         "url": "https://www.effenaar.nl/agenda/the-orb"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-effenaar-2027-03-28-the-skatalites",
@@ -40827,7 +40831,7 @@
       "venue": "Effenaar",
       "city": "Eindhoven",
       "country": "NL",
-      "genre": "",
+      "genre": "Reggae",
       "subgenre": "",
       "url": "https://www.effenaar.nl/agenda/skatalites",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20only%20skatalites.png?itok=ccCySttf",
@@ -40844,7 +40848,8 @@
       "imageCredit": {
         "text": "Image: Effenaar",
         "url": "https://www.effenaar.nl/agenda/skatalites"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "official-tour-moonspell-20270330-thessaloniki",
@@ -40956,7 +40961,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://patronaat.nl/event/nordjevel-svarttjern-malphas-unviar-31-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/08/nordjevel.jpeg",
@@ -40973,7 +40978,8 @@
         "venue": "patronaat",
         "confidence": 1,
         "via": "url-date+opengraph"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-doornroosje-2027-03-31-shaemless",
@@ -40985,7 +40991,7 @@
       "venue": "Doornroosje",
       "city": "Nijmegen",
       "country": "NL",
-      "genre": "",
+      "genre": "Punk",
       "subgenre": "",
       "url": "https://www.doornroosje.nl/event/shaemless-3/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/PRESS-1-V_square-1200x630.jpg",
@@ -41002,7 +41008,8 @@
       "imageCredit": {
         "text": "Image: Doornroosje",
         "url": "https://www.doornroosje.nl/event/shaemless-3/"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-patronaat-2027-03-31-yves-berendse",
@@ -41072,7 +41079,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Folk / Indie",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/ocie-elliott/2947626",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ocie-elliot-750x350.jpg",
@@ -41089,7 +41096,8 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/ocie-elliott/2947626"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "more-82702ea35e8c5859",
@@ -41178,7 +41186,7 @@
       "venue": "Patronaat",
       "city": "Haarlem",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock / Punk",
       "subgenre": "",
       "url": "https://patronaat.nl/event/buster-shuffle-03-04-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/BUSTER-SHUFFLE-PRESS-SHOT-2025-NO-EFFECTS-copy-scaled.jpg",
@@ -41195,7 +41203,8 @@
         "venue": "patronaat",
         "confidence": 1,
         "via": "url-date+opengraph"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-paradiso-2027-04-03-de-smartlappen-karaoke-live-show",
@@ -41236,7 +41245,7 @@
       "venue": "013",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Pop",
       "subgenre": "",
       "url": "https://www.013.nl/programma/132836/ilse-delange",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/FOTO-Ilse-DeLange-HR.jpg?mtime=1779787621",
@@ -41253,7 +41262,8 @@
       "imageCredit": {
         "text": "Image: 013",
         "url": "https://www.013.nl/programma/132836/ilse-delange"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-effenaar-2027-04-03-mistress-of-jersey",
@@ -41295,7 +41305,7 @@
       "venue": "Samhain festival",
       "city": "Antwerpen",
       "country": "BE",
-      "genre": "",
+      "genre": "Metal",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/36482/Samhain-festival/2027/",
       "image": "",
@@ -41387,7 +41397,7 @@
       "venue": "Paradiso",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "Folk",
       "subgenre": "",
       "url": "https://www.paradiso.nl/programma/buffalo-traffic-jam-across-the-pond-tour-27/2908586",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2ndtry-1782747597.jpg",
@@ -41404,10 +41414,11 @@
       "imageCredit": {
         "text": "Image: Paradiso",
         "url": "https://www.paradiso.nl/programma/buffalo-traffic-jam-across-the-pond-tour-27/2908586"
-      }
+      },
+      "genreEvidence": "metadata"
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -41462,7 +41473,7 @@
       "venue": "Roadburn",
       "city": "Tilburg",
       "country": "NL",
-      "genre": "",
+      "genre": "Rock / Alternative / Punk / Indie",
       "subgenre": "",
       "url": "https://www.festivalinfo.nl/festival/36695/Roadburn/2027/",
       "image": "https://www.festivalinfo.nl/img/upload/b/2/roadburn_2027.jpg",
@@ -41612,69 +41623,69 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1226,
     "festivalEvents": 16,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 51,
+    "sameVenueDuplicatesMerged": 46,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
     "editorialSupplemented": 0,
     "podiuminfoImages": {
-      "requests": 45,
+      "requests": 35,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 748,
+      "skippedBlocked": 793,
       "eligible": 828,
       "remainingWithoutImage": 828
     },
     "artistPhotoCache": {
-      "artists": 636,
+      "artists": 644,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 325,
-        "requests": 2,
-        "found": 0,
-        "notFound": 2,
-        "ambiguous": 0,
-        "coverRejected": 0,
+        "candidates": 332,
+        "requests": 12,
+        "found": 2,
+        "notFound": 4,
+        "ambiguous": 1,
+        "coverRejected": 3,
         "errors": 0,
-        "skipped": 323,
-        "urgentRetriesUsed": 2,
-        "photos": 636
+        "skipped": 325,
+        "urgentRetriesUsed": 0,
+        "photos": 638
       },
       "identity": {
-        "candidates": 325,
-        "processed": 2,
-        "identified": 0,
-        "ambiguous": 0,
-        "notFound": 1,
+        "candidates": 329,
+        "processed": 5,
+        "identified": 1,
+        "ambiguous": 1,
+        "notFound": 2,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 171,
+        "candidates": 150,
         "attempted": 25,
-        "found": 0,
+        "found": 6,
         "noMatch": 16,
         "ambiguous": 0,
-        "licenceRejected": 9,
+        "licenceRejected": 3,
         "errors": 0,
-        "depictsQueries": 24,
+        "depictsQueries": 13,
         "depictsFound": 0,
-        "categoryQueries": 7,
+        "categoryQueries": 6,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "linkedDeezerChecks": 24,
-        "linkedDeezerFound": 0,
-        "linkedIdentityUsed": 6,
-        "linkedIdentityRejected": 1
+        "linkedDeezerChecks": 13,
+        "linkedDeezerFound": 6,
+        "linkedIdentityUsed": 0,
+        "linkedIdentityRejected": 0
       }
     },
-    "gagarinCalendarEvents": 19,
+    "gagarinCalendarEvents": 20,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -41688,12 +41699,12 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 813,
-    "taggedArtists": 898,
+    "genreTaggedEvents": 831,
+    "taggedArtists": 927,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-07T23:01:19.620Z",
+    "updatedAt": "2026-11-07T23:46:29.599Z",
     "catalogueEvents": 1945,
     "officialMatches": 656,
     "imagesPublished": 631,
@@ -41709,9 +41720,9 @@
       "nonConcert": 0
     },
     "venueEventsPublished": 291,
-    "venueGenresFromCache": 0,
-    "venueGenresTagged": 100,
+    "venueGenresFromCache": 1,
+    "venueGenresTagged": 111,
     "reviewedOfficialArtworkApplied": 2,
-    "venueGenreLookups": 12
+    "venueGenreLookups": 0
   }
 }

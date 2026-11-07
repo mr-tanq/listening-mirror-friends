@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T23:02:01.633Z",
-  "catalogUpdatedAt": "2026-11-07T22:57:58.501Z",
+  "generatedAt": "2026-11-07T23:46:29.838Z",
+  "catalogUpdatedAt": "2026-11-07T23:43:08.760Z",
   "auditedFor": "2026-11-07",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,8 +9,8 @@
   "totals": {
     "total": 1945,
     "eventPoster": 1060,
-    "artistPhoto": 512,
-    "noImage": 373,
+    "artistPhoto": 522,
+    "noImage": 363,
     "posterWithPhotoBackup": 397
   },
   "byCountry": {
@@ -24,28 +24,27 @@
     "NL": {
       "total": 1422,
       "eventPoster": 688,
-      "artistPhoto": 431,
-      "noImage": 303,
+      "artistPhoto": 439,
+      "noImage": 295,
       "posterWithPhotoBackup": 355
     },
     "BE": {
       "total": 110,
       "eventPoster": 6,
-      "artistPhoto": 67,
-      "noImage": 37,
+      "artistPhoto": 69,
+      "noImage": 35,
       "posterWithPhotoBackup": 4
     }
   },
   "missingReasons": {
-    "artist-not-found": 142,
-    "album-cover-rejected": 105,
-    "invalid-cached-photo": 1,
-    "ambiguous-artist": 80,
-    "not-in-artist-cache": 18,
+    "artist-not-found": 144,
+    "album-cover-rejected": 107,
+    "ambiguous-artist": 75,
     "other-lookup-cooldown": 22,
-    "artist-has-no-photo": 5
+    "not-in-artist-cache": 9,
+    "artist-has-no-photo": 6
   },
-  "missingNext14Days": 95,
+  "missingNext14Days": 92,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-460749",
@@ -69,7 +68,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Le Guess Who? presents 24 HOUR DUB",
-      "reason": "invalid-cached-photo"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-490094",
@@ -93,7 +92,7 @@
       "date": "2026-11-07",
       "country": "NL",
       "venue": "Grenswerk",
-      "reason": "not-in-artist-cache"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-459733",
@@ -125,7 +124,7 @@
       "date": "2026-11-08",
       "country": "NL",
       "venue": "dB's",
-      "reason": "not-in-artist-cache"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-490786",
@@ -133,7 +132,7 @@
       "date": "2026-11-09",
       "country": "NL",
       "venue": "Muziekgieterij",
-      "reason": "not-in-artist-cache"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-499977",
@@ -142,14 +141,6 @@
       "country": "NL",
       "venue": "TivoliVredenburg",
       "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-474207",
-      "artist": "Any Kind / LOMA / Shearwater",
-      "date": "2026-11-11",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "not-in-artist-cache"
     },
     {
       "id": "podiuminfo-501470",
@@ -366,6 +357,14 @@
       "country": "GR",
       "venue": "We",
       "reason": "artist-has-no-photo"
+    },
+    {
+      "id": "podiuminfo-454969",
+      "artist": "Moon Walker",
+      "date": "2026-11-14",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
     }
   ],
   "missingOtherSamples": [
