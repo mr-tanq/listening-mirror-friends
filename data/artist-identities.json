@@ -823,6 +823,14 @@
       "disambiguation": "Diegol Marin",
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-08T20:33:38.934Z"
+    },
+    "eden demise": {
+      "name": "Eden Demise",
+      "mbid": "760960c0-0ed8-4e8c-b849-b07aeb241cef",
+      "mbName": "Eden Demise",
+      "country": "GR",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-08T22:49:51.136Z"
     }
   },
   "attempted": {
@@ -835,7 +843,7 @@
       "reason": "not-found"
     },
     "bartofso": {
-      "retryAfter": "2026-11-07",
+      "retryAfter": "2026-11-10",
       "reason": "HTTP 503"
     },
     "the james brown experience": {
@@ -985,10 +993,6 @@
     "clobber": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
-    },
-    "emmet cohen quintet": {
-      "retryAfter": "2026-11-09",
-      "reason": "fetch failed"
     },
     "flora": {
       "retryAfter": "2026-12-22",
@@ -1231,6 +1235,38 @@
     "the elvis concert": {
       "retryAfter": "2026-11-10",
       "reason": "HTTP 503"
+    },
+    "delany": {
+      "retryAfter": "2026-12-23",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "00f38fc2-355d-498d-9054-547d2b44ac86",
+        "d821ddf4-ff08-413c-b821-8b12eec14290"
+      ]
+    },
+    "lords of altamont": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "morbidfest": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "nightfreak usa cafe de wacht": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "eden demise": {
+      "retryAfter": "2026-12-23",
+      "reason": "identified-without-free-photo"
+    },
+    "kaijuju": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "dogma vile": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
     }
   }
 }

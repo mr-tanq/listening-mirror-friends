@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T20:47:01.156Z",
+  "updatedAt": "2026-11-08T22:50:06.429Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -433,7 +433,7 @@
       }
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -496,7 +496,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-b53b98b1752477a6",
+      "id": "floyd-2026-11-08-uriah%20heep",
       "artist": "Uriah Heep",
       "artists": [
         "Uriah Heep",
@@ -13628,7 +13628,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -22486,6 +22486,23 @@
       }
     },
     {
+      "id": "more-3701b4ff4e672152",
+      "artist": "LUNATICS",
+      "artists": [
+        "LUNATICS"
+      ],
+      "date": "2026-12-18",
+      "venue": "Kyttaro Live",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/lunatics-live-in-the-flesh-the-very-best-of-pink-floyd/",
+      "image": "https://www.more.com/getattachment/A7560B3B-A6E4-45F9-9D6B-451A6B33686A/evg_lunaticslivethepinkfloydt_0024_3608.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-496981",
       "artist": "MARCH",
       "artists": [
@@ -24060,7 +24077,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -24477,7 +24494,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -38704,8 +38721,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38717,11 +38734,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38805,7 +38822,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40513,7 +40530,7 @@
       }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -40711,17 +40728,17 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 390,
+    "greeceEvents": 391,
     "greeceFeedError": "",
     "rockingEvents": 63,
     "rockingWarning": "",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1212,
     "festivalEvents": 14,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 49,
+    "sameVenueDuplicatesMerged": 43,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -40738,70 +40755,70 @@
       "remainingWithoutImage": 818
     },
     "artistPhotoCache": {
-      "artists": 677,
+      "artists": 679,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 306,
-        "requests": 18,
+        "candidates": 301,
+        "requests": 7,
         "found": 2,
-        "notFound": 8,
-        "ambiguous": 2,
-        "coverRejected": 4,
+        "notFound": 2,
+        "ambiguous": 0,
+        "coverRejected": 1,
         "errors": 0,
-        "skipped": 294,
-        "urgentRetriesUsed": 0,
-        "photos": 673
+        "skipped": 297,
+        "urgentRetriesUsed": 1,
+        "photos": 679
       },
       "identity": {
-        "candidates": 302,
-        "processed": 1,
-        "identified": 0,
-        "ambiguous": 0,
-        "notFound": 0,
+        "candidates": 297,
+        "processed": 8,
+        "identified": 1,
+        "ambiguous": 1,
+        "notFound": 5,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 33,
-        "attempted": 25,
-        "found": 4,
-        "noMatch": 17,
-        "ambiguous": 2,
-        "licenceRejected": 2,
+        "candidates": 9,
+        "attempted": 9,
+        "found": 0,
+        "noMatch": 8,
+        "ambiguous": 1,
+        "licenceRejected": 0,
         "errors": 0,
-        "depictsQueries": 9,
+        "depictsQueries": 0,
         "depictsFound": 0,
-        "categoryQueries": 7,
+        "categoryQueries": 0,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 7,
+        "subcategoryQueries": 0,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 9,
-        "linkedDeezerFound": 4,
+        "linkedDeezerChecks": 0,
+        "linkedDeezerFound": 0,
         "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0,
         "linkedMbidVerified": 0,
         "linkedMbidConflicts": 0
       },
       "audioDb": {
-        "eligible": 23,
-        "attempted": 2,
+        "eligible": 24,
+        "attempted": 1,
         "found": 0,
-        "licenseMissing": 0,
+        "licenseMissing": 1,
         "identityRejected": 0,
-        "notInProvider": 2,
+        "notInProvider": 0,
         "ambiguousProvider": 0,
         "invalidPayload": 0,
         "missingPhoto": 0,
         "errors": 0,
         "rateLimited": 0,
-        "diagnosticRetried": 2
+        "diagnosticRetried": 0
       }
     },
-    "gagarinCalendarEvents": 19,
+    "gagarinCalendarEvents": 20,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 13,
@@ -40820,8 +40837,8 @@
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-08T20:50:22.346Z",
-    "catalogueEvents": 1901,
+    "updatedAt": "2026-11-08T22:53:27.387Z",
+    "catalogueEvents": 1902,
     "officialMatches": 647,
     "imagesPublished": 619,
     "imageCandidatesPending": 28,

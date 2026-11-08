@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T20:47:01.134Z"
+      "checkedAt": "2026-11-08T22:50:03.337Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T20:47:01.134Z"
+      "checkedAt": "2026-11-08T22:50:03.337Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T20:47:01.134Z"
+      "checkedAt": "2026-11-08T22:50:03.337Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T20:47:01.134Z"
+      "checkedAt": "2026-11-08T22:50:03.337Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8750,6 +8750,34 @@
       },
       "wikidata": "Q28109766",
       "checkedAt": "2026-11-08T20:46:55.045Z"
+    },
+    "emmet cohen": {
+      "name": "Emmet Cohen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c45a8d7370de53eaaacb991ee9960778/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5206981,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5206981",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5206981"
+      },
+      "checkedAt": "2026-11-08T22:49:44.351Z"
+    },
+    "jeremy pelt": {
+      "name": "Jeremy Pelt",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7c86563a38da7fd16c9200599b00a271/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1060182,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1060182",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1060182"
+      },
+      "checkedAt": "2026-11-08T22:49:44.893Z"
     }
   },
   "attempted": {
@@ -9877,28 +9905,9 @@
         12893803
       ]
     },
-    "keywest": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        408952,
-        12054416,
-        407300692
-      ]
-    },
     "ana lua caiano": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "fat dog": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        221188795,
-        385923801,
-        385923821,
-        385923811
-      ]
     },
     "primitive ring": {
       "retryAfter": "2026-12-05",
@@ -10196,10 +10205,6 @@
         377173461
       ]
     },
-    "pete roth trio": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
     "niels van der gulik": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -10238,15 +10243,6 @@
       "retryAfter": "2026-12-06",
       "reason": "album-cover-as-portrait"
     },
-    "dr feelgood": {
-      "retryAfter": "2027-01-05",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        10549,
-        369162422,
-        211126
-      ]
-    },
     "knox": {
       "retryAfter": "2027-01-06",
       "reason": "ambiguous-same-name",
@@ -10255,14 +10251,6 @@
         122229682,
         454874,
         415964492
-      ]
-    },
-    "seafret": {
-      "retryAfter": "2027-01-06",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        6533751,
-        414427232
       ]
     },
     "dylan dunnink": {
@@ -10406,13 +10394,10 @@
     },
     "the elvis concert": {
       "retryAfter": "2026-12-08",
-      "reason": "not-found"
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "taqbir": {
-      "retryAfter": "2026-12-08",
-      "reason": "album-cover-as-portrait"
-    },
-    "nu art orchestra": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
     },
@@ -10452,6 +10437,10 @@
     "angelika niescier suzan veneman": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
+    },
+    "hania derej": {
+      "retryAfter": "2026-12-08",
+      "reason": "album-cover-as-portrait"
     }
   },
   "wikimediaAttempted": {
@@ -10755,11 +10744,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "emmet cohen quintet": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "flora": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
@@ -10966,11 +10950,6 @@
       "reason": "no-confirmed-musician"
     },
     "delany": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "jeremy pelt quintet": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -11904,6 +11883,51 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
+    },
+    "hania derej": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "arra scum": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "jagged edge": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-06",
+      "reason": "ambiguous-musical-identity"
+    },
+    "αγριο μελι": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "femi dawkins woodcraft": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "friends dansen op een vulkaan": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "ondergang iii": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "wolfert brederode tim langedijk": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "angelika niescier suzan veneman": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
@@ -12012,6 +12036,10 @@
     "kurashi": {
       "retryAfter": "2027-02-06",
       "reason": "artist-not-in-provider"
+    },
+    "eden demise": {
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-not-confirmed"
     }
   }
 }

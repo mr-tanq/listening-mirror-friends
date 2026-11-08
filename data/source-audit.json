@@ -1,10 +1,10 @@
 {
-  "catalogUpdatedAt": "2026-11-08T20:47:01.156Z",
+  "catalogUpdatedAt": "2026-11-08T22:50:06.429Z",
   "auditedFor": "2026-11-08",
-  "totalPublished": 1901,
-  "greekPublished": 390,
+  "totalPublished": 1902,
+  "greekPublished": 391,
   "imageCoverage": {
-    "withImage": 1028,
+    "withImage": 1029,
     "withoutImage": 873
   },
   "imageCoverageByCountry": {
@@ -19,8 +19,8 @@
       "withoutImage": 103
     },
     "GR": {
-      "events": 390,
-      "withImage": 344,
+      "events": 391,
+      "withImage": 345,
       "withoutImage": 46
     }
   },
@@ -50,22 +50,22 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 20
     },
     "more": {
-      "events": 261,
-      "withImage": 261,
+      "events": 262,
+      "withImage": 262,
       "withoutImage": 0,
-      "greekEvents": 261
+      "greekEvents": 262
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1212,
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -146,8 +146,8 @@
     },
     {
       "name": "Kyttaro Live",
-      "events": 14,
-      "withImage": 14,
+      "events": 15,
+      "withImage": 15,
       "sources": [
         "more"
       ]

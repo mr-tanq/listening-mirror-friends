@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T20:50:22.609Z",
-  "catalogUpdatedAt": "2026-11-08T20:47:01.156Z",
+  "generatedAt": "2026-11-08T22:53:27.595Z",
+  "catalogUpdatedAt": "2026-11-08T22:50:06.429Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1901,
-    "eventPoster": 1028,
-    "artistPhoto": 541,
-    "noImage": 332,
+    "total": 1902,
+    "eventPoster": 1029,
+    "artistPhoto": 543,
+    "noImage": 330,
     "posterWithPhotoBackup": 393
   },
   "byCountry": {
     "NL": {
       "total": 1402,
       "eventPoster": 678,
-      "artistPhoto": 458,
-      "noImage": 266,
+      "artistPhoto": 460,
+      "noImage": 264,
       "posterWithPhotoBackup": 353
     },
     "BE": {
@@ -29,8 +29,8 @@
       "posterWithPhotoBackup": 4
     },
     "GR": {
-      "total": 390,
-      "eventPoster": 344,
+      "total": 391,
+      "eventPoster": 345,
       "artistPhoto": 14,
       "noImage": 32,
       "posterWithPhotoBackup": 36
@@ -38,7 +38,7 @@
   },
   "missingReasons": {
     "album-cover-rejected": 111,
-    "artist-not-found": 117,
+    "artist-not-found": 115,
     "ambiguous-artist": 68,
     "other-lookup-cooldown": 21,
     "not-in-artist-cache": 8,
@@ -46,19 +46,19 @@
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 673,
+      "deezer": 675,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 23,
+      "attempted": 24,
       "failuresByReason": {
         "artist-not-in-provider": 18,
-        "photo-license-not-confirmed": 1,
+        "photo-license-not-confirmed": 2,
         "missing-or-ambiguous-artist": 4
       }
     }
   },
-  "missingNext14Days": 85,
+  "missingNext14Days": 83,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-459733",
@@ -221,14 +221,6 @@
       "reason": "other-lookup-cooldown"
     },
     {
-      "id": "podiuminfo-453093",
-      "artist": "Emmet Cohen Quintet",
-      "date": "2026-11-13",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
-    {
       "id": "podiuminfo-479508",
       "artist": "FLORA",
       "date": "2026-11-13",
@@ -378,6 +370,14 @@
       "date": "2026-11-15",
       "country": "NL",
       "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-495231",
+      "artist": "CARSICK",
+      "date": "2026-11-16",
+      "country": "NL",
+      "venue": "Hall Of Fame",
       "reason": "ambiguous-artist"
     }
   ],
