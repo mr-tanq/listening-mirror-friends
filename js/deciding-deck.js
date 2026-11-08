@@ -1,5 +1,5 @@
-import {watchConcertImage,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
-import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
+import {watchConcertImage,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v3';
+import {safeUrl,norm} from './model.js?v=photo-recovery-v2';
 import {concertImageFallbacks} from './image-fallback-chain.js?v=multi-photo-fallback-v1';
 
 const el=(tag,cls,text)=>{
