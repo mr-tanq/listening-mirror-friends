@@ -18,7 +18,7 @@ import {imageFileFromWikidata,commonsPhotoFromImageInfo,THUMB_WIDTH,USER_AGENT} 
 import {isoDays} from './rate-limit.mjs';
 import {commonsDepictsUrl,selectLicensedDepictsPhoto} from './commons-depicts-photos.mjs';
 import {verifiedWikidataDeezerPhoto} from './wikidata-deezer-link.mjs';
-import {linkedArtistCategory,commonsArtistCategoryUrl,selectLicensedCategoryPhoto} from './commons-category-photos.mjs';
+import {linkedArtistCategory,commonsArtistCategoryUrl,selectLicensedCategoryPhoto,commonsArtistSubcategoriesUrl,verifiedArtistSubcategories} from './commons-category-photos.mjs';
 
 const MUSIC_CLASSES=new Set(['Q215380','Q2088357','Q5741069']);
 const MUSIC_JOBS=new Set(['Q177220','Q639669','Q36834','Q488205','Q753110']);
@@ -103,7 +103,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,categoryDescriptionFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,categoryDescriptionFound:0,subcategoryQueries:0,subcategoryPhotoFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -115,7 +115,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   const id=identityCache?.artists?.[item.key]?.wikidata;
   return /^Q[1-9]\d*$/.test(id||'')?id:'';
  };
- const strategyVersion=6; // Check verified Commons category image descriptions.
+ const strategyVersion=7; // Follow only first-level verified artist performance categories.
  const candidates=selectArtistCandidates(events,result,{today})
   .filter(item=>{
    const attempt=result.wikimediaAttempted[item.key];
@@ -198,6 +198,26 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
         'wikidata-linked-artist-category-description':'wikidata-linked-artist-category';
        stats.categoryFound++;
        if(photo.categoryEvidence==='artist-in-image-description')stats.categoryDescriptionFound++;
+      }else{
+       // This category is linked directly to the verified musician entity.
+       // Check only first-level child concert/year categories and only when
+       // no suitable direct file exists. Never follow broader category links.
+       stats.subcategoryQueries++;
+       const listing=await fetchSlow(commonsArtistSubcategoriesUrl(category),950);
+       const children=verifiedArtistSubcategories(listing,item.name);
+       for(const child of children){
+        if(clock()-start>=maxDurationMs)break;
+        stats.subcategoryQueries++;
+        const gallery=await fetchSlow(commonsArtistCategoryUrl(child),950);
+        photo=selectLicensedCategoryPhoto(gallery,item.name,confirmed.id);
+        if(photo){
+         method=photo.categoryEvidence==='artist-in-image-description'?
+          'wikidata-linked-artist-subcategory-description':'wikidata-linked-artist-subcategory-title';
+         stats.categoryFound++;stats.subcategoryPhotoFound++;
+         if(photo.categoryEvidence==='artist-in-image-description')stats.categoryDescriptionFound++;
+         break;
+        }
+       }
       }
     }
    }

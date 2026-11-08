@@ -5,7 +5,7 @@
  * must be directly connected to a uniquely verified musical Wikidata item
  * via Commons sitelink and/or P373, and it must be named for that artist.
  *
- * Direct file members only. Every file must mention the whole artist name,
+ * Direct files and at most two verified first-level performance subcategories. Every file must mention the full artist name,
  * not just one shared word, and pass independent Commons imageinfo licence,
  * attribution and minimum-size checks. These safeguards deliberately
  * sacrifice coverage rather than display another band's photo.
@@ -55,6 +55,44 @@ export function commonsArtistCategoryUrl(category){
   iiurlwidth:String(THUMB_WIDTH)
  });
  return 'https://commons.wikimedia.org/w/api.php?'+search;
+}
+
+
+/**
+ * One-level browse of a Wikidata-linked artist's *direct* Commons child
+ * categories. This never searches global categories or follows arbitrary
+ * category links: a child is eligible only if the exact artist's full name
+ * prefixes its title and it denotes performance/photos/time.
+ */
+export function commonsArtistSubcategoriesUrl(parent){
+ if(!validCategory(parent))throw new Error('Invalid Commons parent category');
+ const search=new URLSearchParams({
+  action:'query',format:'json',generator:'categorymembers',
+  gcmtitle:'Category:'+parent,gcmnamespace:'14',gcmlimit:'20',
+  prop:'info'
+ });
+ return 'https://commons.wikimedia.org/w/api.php?'+search;
+}
+export function verifiedArtistSubcategories(payload,artistName,{maxCategories=2}={}){
+ const key=artistKey(artistName);
+ if(key.length<4||NAMELESS.test(key)||!payload?.query?.pages)return [];
+ const temporal=/^(?:at|in|during|live|concerts?|performances?|shows?|photos?|photographs?|on|[12]\d{3})\b/i;
+ const eligible=[];
+ for(const page of Object.values(payload.query.pages)){
+  if(page?.ns!==14||!/^Category:/i.test(String(page.title||'')))continue;
+  const title=page.title.slice(9).replace(/_/g,' ').trim();
+  if(!validCategory(title)||BAD_CATEGORY.test(title))continue;
+  const folded=artistKey(title);
+  if(!folded.startsWith(key+' '))continue;
+  const suffix=folded.slice(key.length+1);
+  if(!temporal.test(suffix))continue;
+  eligible.push(title);
+ }
+ return [...new Set(eligible)].sort((a,b)=>{
+  // Performance categories before generic photo collections; stable order.
+  const score=v=>/\b(?:live|concerts?|performances?|at)\b/i.test(v)?1:0;
+  return score(b)-score(a)||a.localeCompare(b);
+ }).slice(0,Math.max(0,Math.min(3,maxCategories)));
 }
 
 /** Only a category explicitly linked to the verified music identity is
