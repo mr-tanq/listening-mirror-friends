@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T22:50:03.337Z"
+      "checkedAt": "2026-11-08T23:02:07.627Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T22:50:03.337Z"
+      "checkedAt": "2026-11-08T23:02:07.627Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T22:50:03.337Z"
+      "checkedAt": "2026-11-08T23:02:07.627Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T22:50:03.337Z"
+      "checkedAt": "2026-11-08T23:02:07.627Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8933,11 +8933,6 @@
         88915842
       ]
     },
-    "emmet cohen quintet": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "flora": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9195,11 +9190,6 @@
         83841662,
         123771932
       ]
-    },
-    "jeremy pelt quintet": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "lords of altamont": {
       "retryAfter": "2026-12-08",
@@ -12040,6 +12030,14 @@
     "eden demise": {
       "retryAfter": "2026-12-23",
       "reason": "photo-license-not-confirmed"
+    },
+    "frankie stew": {
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider"
+    },
+    "exxul": {
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider"
     }
   }
 }

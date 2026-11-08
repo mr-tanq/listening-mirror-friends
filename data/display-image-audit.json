@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T22:53:27.595Z",
-  "catalogUpdatedAt": "2026-11-08T22:50:06.429Z",
+  "generatedAt": "2026-11-08T23:05:28.361Z",
+  "catalogUpdatedAt": "2026-11-08T23:02:07.647Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -50,9 +50,9 @@
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 24,
+      "attempted": 26,
       "failuresByReason": {
-        "artist-not-in-provider": 18,
+        "artist-not-in-provider": 20,
         "photo-license-not-confirmed": 2,
         "missing-or-ambiguous-artist": 4
       }

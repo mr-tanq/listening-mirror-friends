@@ -831,6 +831,26 @@
       "country": "GR",
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-08T22:49:51.136Z"
+    },
+    "frankie stew": {
+      "name": "Frankie Stew",
+      "mbid": "9769840a-afb2-41ce-bd93-8d3905ef75ca",
+      "mbName": "Frankie Stew",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-08T23:02:02.067Z"
+    },
+    "exxul": {
+      "name": "Exxûl",
+      "mbid": "a59d1fe3-ecd5-4e08-9303-ca8530d19f40",
+      "mbName": "Exxûl",
+      "country": "CA",
+      "disambiguation": "Canadian heavy/power/doom metal",
+      "matchedBy": "unique-name",
+      "spotifyId": "7xrqbir4PChBRXNBVbvkwS",
+      "deezerId": 365905452,
+      "homepage": "https://www.exxul.ca/",
+      "checkedAt": "2026-11-08T23:02:04.409Z"
     }
   },
   "attempted": {
@@ -847,8 +867,8 @@
       "reason": "HTTP 503"
     },
     "the james brown experience": {
-      "retryAfter": "2026-11-07",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
     },
     "muziekfeest van het jaar": {
       "retryAfter": "2026-12-05",
@@ -903,8 +923,8 @@
       "reason": "not-found"
     },
     "def brittneysgat": {
-      "retryAfter": "2026-11-08",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
     },
     "the hillbilly moonshiners": {
       "retryAfter": "2026-12-21",
@@ -1267,6 +1287,18 @@
     "dogma vile": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
+    },
+    "frankie stew": {
+      "retryAfter": "2026-12-23",
+      "reason": "identified-without-free-photo"
+    },
+    "exxul": {
+      "retryAfter": "2026-12-23",
+      "reason": "identified-without-free-photo"
+    },
+    "demo club bandnight auks": {
+      "retryAfter": "2026-11-10",
+      "reason": "HTTP 503"
     }
   }
 }
