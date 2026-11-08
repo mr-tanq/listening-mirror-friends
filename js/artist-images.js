@@ -135,6 +135,27 @@ function explicitFeaturedPair(event){
  return [head,guest];
 }
 
+/**
+ * A precisely named soloist leading a conventional small jazz ensemble.
+ * The photo must still be independently verified for the SOLOIST: these
+ * suffixes alone never establish artist identity. Never guess the leader of
+ * a band from arbitrary title words or photos of a tribute subject.
+ */
+export function explicitlyNamedEnsembleLeader(event){
+ const title=String(event?.artist||'').replace(/\s+/g,' ').trim();
+ const m=title.match(/^(.+?)\s+(?:trio|quartet|quintet|sextet|septet|octet)$/iu);
+ if(!m||/\b(?:tribute|cover|festival|presents?|support|featuring|feat|tour|night)\b/iu.test(title))return '';
+ const leader=m[1].trim();
+ const parts=leader.split(' ');
+ if(parts.length<2||parts.length>4||leader.length>75||
+  /^(?:the|de|het|a|an|les|los|die|new|young|big|jazz|world|free|modern|classic|blue|royal|electric)$/iu.test(parts[0]))return '';
+ if(parts.some((word,i)=>!(i>0&&/^(?:van|von|de|der|den|da|di|del|du)$/iu.test(word))&&
+  !/^\p{Lu}[\p{L}’'.-]*$/u.test(word)))return '';
+ const first=String(event?.artists?.[0]||'').trim();
+ if(first&&artistKey(first)!==artistKey(title)&&artistKey(first)!==artistKey(leader))return '';
+ return leader;
+}
+
 /** Names eligible for NEW external artist photo searches.
  * The browser photo resolver and all Node enrichers share this shortlist.
  * Venue duplicate matching deliberately retains the older headlinerNames.
@@ -149,6 +170,8 @@ export function headlinerSearchNames(event){
  if(affiliated)return [affiliated];
  const featured=explicitFeaturedPair(event);
  if(featured.length)return featured;
+ const leader=explicitlyNamedEnsembleLeader(event);
+ if(leader)return first&&artistKey(first)===artistKey(leader)?[leader]:[title,leader];
  const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
  const billed=explicitlyBilledArtists(event);
  if(explicit)return [explicit];
@@ -273,6 +296,7 @@ export function artistImageFor(event,artistImages){
  // Strict photo selection must never alter event deduplication identity.
  const billed=explicitlyBilledArtists(event);
  const featured=explicitFeaturedPair(event);
+ const ensembleLeader=explicitlyNamedEnsembleLeader(event);
  const full=String(event?.artist||'').trim();
  const checked=(name,lineup)=>{
   const entry=artistImages?.artists?.[artistKey(name)];
@@ -285,10 +309,11 @@ export function artistImageFor(event,artistImages){
  // A verified photo of a complete group/bill always outranks its members.
  const candidates=billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
  for(const name of candidates){
+  const leaderPhoto=Boolean(ensembleLeader&&artistKey(name)===artistKey(ensembleLeader));
   const secondary=billed.length>1&&artistKey(name)!==artistKey(full)||
-    featured.length>1&&artistKey(name)===artistKey(featured[1]);
+    featured.length>1&&artistKey(name)===artistKey(featured[1])||leaderPhoto;
   const found=checked(name,secondary);
-  if(found)return found;
+  if(found)return leaderPhoto?{...found,creditRole:'ensemble leader'}:found;
  }
 
  return null;
@@ -298,7 +323,7 @@ function photoCreditFor(found){
  if(!found.lineup)return existing;
  // Never present one performer as the full show's headliner. Preserve the
  // original photographer's attribution and link, including Commons CC terms.
- return safeCredit({text:'Photo of '+found.name+' (billed act) · '+
+ return safeCredit({text:'Photo of '+found.name+' ('+(found.creditRole||'billed act')+') · '+
   (existing?.text||'Artist photo'),url:existing?.url||found.entry.sourceUrl||''});
 }
 export function resolveConcertImage(event,artistImages){
