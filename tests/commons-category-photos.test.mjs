@@ -81,7 +81,7 @@ test('older Wikimedia failure is rechecked only once with the newer linked ident
  };
  const r=await enrichWikimediaArtistPhotos([event],original,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(r.stats.attempted,1);
- assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,6);
+ assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,7);
  const count=calls;
  const again=await enrichWikimediaArtistPhotos([event],r.cache,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(again.stats.attempted,0);assert.equal(calls,count);
