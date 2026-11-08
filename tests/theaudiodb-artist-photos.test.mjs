@@ -119,3 +119,58 @@ test('unconfirmed rights are counted, cached as misses and never published as a 
  assert.equal(result.cache.artists['niall mccabe'],undefined);
  assert.equal(result.cache.audioDbAttempted['niall mccabe'].reason,'photo-license-not-confirmed');
 });
+
+
+test('real V1 null artist response means not covered, not an ambiguous name',()=>{
+ assert.equal(verifiedAudioDbArtist({artists:null},'Niall McCabe',MBID).reason,'artist-not-in-provider');
+ assert.equal(verifiedAudioDbArtist({artists:[]},'Niall McCabe',MBID).reason,'artist-not-in-provider');
+ assert.equal(verifiedAudioDbArtist({artists:[row(),row({idArtist:'998'})]},'Niall McCabe',MBID).reason,'ambiguous-provider-artist');
+ assert.equal(verifiedAudioDbArtist({artists:'bad response'},'Niall McCabe',MBID).reason,'invalid-provider-payload');
+ assert.equal(verifiedAudioDbArtist({artists:[row()]},'Niall McCabe','bad-id').reason,'invalid-musicbrainz-id');
+});
+test('legacy combined AudioDB failures are rechecked once for near shows, never retried indefinitely',async()=>{
+ let calls=0;
+ const base=photoCache();
+ base.audioDbAttempted={'niall mccabe':{
+  reason:'missing-or-ambiguous-artist',retryAfter:'2026-12-23'
+ }};
+ const options={today:'2026-11-08',maxArtists:10,delay:async()=>{},
+  fetcher:async()=>{calls++;return res({artists:null});}};
+ const one=await enrichAudioDbArtistPhotos([show()],base,identities(),options);
+ assert.equal(one.stats.diagnosticRetried,1);
+ assert.equal(one.stats.notInProvider,1);
+ assert.equal(one.stats.missingPhoto,0);
+ assert.equal(one.cache.audioDbAttempted['niall mccabe'].reason,'artist-not-in-provider');
+ assert.equal(one.cache.audioDbAttempted['niall mccabe'].diagnosticRetried,true);
+ assert.equal(calls,1);
+ const two=await enrichAudioDbArtistPhotos([show()],one.cache,identities(),options);
+ assert.equal(two.stats.attempted,0);
+ assert.equal(two.stats.diagnosticRetried,0);
+ assert.equal(calls,1);
+});
+test('diagnostic retry never bypasses known rights, identity or provider-rate failure',async()=>{
+ let calls=0;
+ const source={artists:{},audioDbAttempted:{
+  'niall mccabe':{retryAfter:'2026-12-23',reason:'photo-license-not-confirmed'}
+ }};
+ const options={today:'2026-11-08',maxArtists:10,
+  fetcher:async()=>{calls++;throw Error('no source request allowed')}};
+ const result=await enrichAudioDbArtistPhotos([show()],source,identities(),options);
+ assert.equal(result.stats.attempted,0);
+ assert.equal(calls,0);
+});
+test('new public coverage audit includes AudioDB failure type without inventing photo gains',async()=>{
+ const {buildDisplayImageAudit}=await import('../scripts/display-image-audit.mjs');
+ const feed={updatedAt:'2026-11-08T10:00:00Z',events:[show()]};
+ const cache={artists:{'known artist':{source:'deezer',image:thumb}},
+  audioDbAttempted:{
+   'niall mccabe':{reason:'artist-not-in-provider',retryAfter:'2027-01-01'},
+   'other artist':{reason:'photo-license-not-confirmed',retryAfter:'2027-01-01'}
+  }};
+ const audit=buildDisplayImageAudit(feed,cache,{records:[]},{today:'2026-11-08'});
+ assert.equal(audit.totals.noImage,1);
+ assert.equal(audit.providerDiagnostics.theAudioDB.attempted,2);
+ assert.equal(audit.providerDiagnostics.theAudioDB.failuresByReason['artist-not-in-provider'],1);
+ assert.equal(audit.providerDiagnostics.theAudioDB.failuresByReason['photo-license-not-confirmed'],1);
+ assert.equal(audit.providerDiagnostics.photosBySource.deezer,1);
+});
