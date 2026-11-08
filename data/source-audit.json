@@ -1,17 +1,17 @@
 {
-  "catalogUpdatedAt": "2026-11-08T16:06:30.699Z",
+  "catalogUpdatedAt": "2026-11-08T17:28:16.138Z",
   "auditedFor": "2026-11-08",
-  "totalPublished": 1902,
-  "greekPublished": 389,
+  "totalPublished": 1903,
+  "greekPublished": 390,
   "imageCoverage": {
-    "withImage": 1028,
-    "withoutImage": 874
+    "withImage": 1030,
+    "withoutImage": 873
   },
   "imageCoverageByCountry": {
     "NL": {
       "events": 1404,
-      "withImage": 679,
-      "withoutImage": 725
+      "withImage": 680,
+      "withoutImage": 724
     },
     "BE": {
       "events": 109,
@@ -19,8 +19,8 @@
       "withoutImage": 103
     },
     "GR": {
-      "events": 389,
-      "withImage": 343,
+      "events": 390,
+      "withImage": 344,
       "withoutImage": 46
     }
   },
@@ -50,27 +50,27 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 20
     },
     "more": {
-      "events": 260,
-      "withImage": 260,
+      "events": 261,
+      "withImage": 261,
       "withoutImage": 0,
-      "greekEvents": 260
+      "greekEvents": 261
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1212,
-      "withImage": 393,
-      "withoutImage": 819,
+      "withImage": 394,
+      "withoutImage": 818,
       "greekEvents": 0
     },
     "rocking": {
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {

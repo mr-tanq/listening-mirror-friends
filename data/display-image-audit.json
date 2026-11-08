@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T16:09:51.563Z",
-  "catalogUpdatedAt": "2026-11-08T16:06:30.699Z",
+  "generatedAt": "2026-11-08T17:31:36.992Z",
+  "catalogUpdatedAt": "2026-11-08T17:28:16.138Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1902,
-    "eventPoster": 1029,
+    "total": 1901,
+    "eventPoster": 1028,
     "artistPhoto": 514,
     "noImage": 359,
     "posterWithPhotoBackup": 390
   },
   "byCountry": {
     "NL": {
-      "total": 1404,
-      "eventPoster": 680,
+      "total": 1402,
+      "eventPoster": 678,
       "artistPhoto": 433,
       "noImage": 291,
       "posterWithPhotoBackup": 350
@@ -29,8 +29,8 @@
       "posterWithPhotoBackup": 4
     },
     "GR": {
-      "total": 389,
-      "eventPoster": 343,
+      "total": 390,
+      "eventPoster": 344,
       "artistPhoto": 13,
       "noImage": 33,
       "posterWithPhotoBackup": 36
@@ -43,6 +43,20 @@
     "other-lookup-cooldown": 22,
     "not-in-artist-cache": 9,
     "artist-has-no-photo": 6
+  },
+  "providerDiagnostics": {
+    "photosBySource": {
+      "deezer": 647,
+      "manual-pin": 4
+    },
+    "theAudioDB": {
+      "attempted": 22,
+      "failuresByReason": {
+        "artist-not-in-provider": 6,
+        "missing-or-ambiguous-artist": 15,
+        "photo-license-not-confirmed": 1
+      }
+    }
   },
   "missingNext14Days": 92,
   "missingNext14DaysSamples": [

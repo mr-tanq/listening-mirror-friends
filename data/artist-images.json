@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T16:06:07.558Z"
+      "checkedAt": "2026-11-08T17:28:12.930Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T16:06:07.558Z"
+      "checkedAt": "2026-11-08T17:28:12.930Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T16:06:07.558Z"
+      "checkedAt": "2026-11-08T17:28:12.930Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T16:06:07.558Z"
+      "checkedAt": "2026-11-08T17:28:12.930Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -10152,10 +10152,6 @@
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
-    "harlekino": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
     "torn from oblivion": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
@@ -10768,7 +10764,7 @@
       "reason": "no-confirmed-musician"
     },
     "chris eckman": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
@@ -10898,7 +10894,7 @@
       "reason": "no-confirmed-musician"
     },
     "q marsden": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
@@ -10928,7 +10924,7 @@
       "reason": "no-confirmed-musician"
     },
     "hohnen ford": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
@@ -11023,7 +11019,7 @@
       "reason": "no-confirmed-musician"
     },
     "spk": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
@@ -11078,7 +11074,7 @@
       "reason": "no-licensed-commons-photo"
     },
     "ana lua caiano": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
@@ -11088,7 +11084,7 @@
       "reason": "no-confirmed-musician"
     },
     "łydka grubasa": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
@@ -11238,12 +11234,12 @@
       "reason": "no-confirmed-musician"
     },
     "jakov jozinovic": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "theory of a deadman": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
@@ -11253,7 +11249,7 @@
       "reason": "no-confirmed-musician"
     },
     "fanny": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
@@ -11303,7 +11299,7 @@
       "reason": "no-confirmed-musician"
     },
     "jack": {
-      "strategyVersion": 7,
+      "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
@@ -11331,106 +11327,103 @@
       "strategyVersion": 7,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
+    },
+    "torn from oblivion": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "finale grote prijs van dordt": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "grote prijs van dordt 2026": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "marmoucha orchestra s ode to the icons": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "ritual": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-06",
+      "reason": "ambiguous-musical-identity"
+    },
+    "yuri honing acoustic quartet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "dennis van aarssen kerstshow": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "wij steunen 3fm serious request": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "αγριο μελι αφιερωμα στα διαφανα κρινα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "martin fondse ft femi dawkins woodcraft": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "h natural": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "het tribunaal": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "pim muda en sabine krol": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "rufus wainwright metropole orkest": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "the dutch queen tribute 50 jaar": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
     "leenalchi": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "dav id": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "architrackz": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "koala disco": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "niall mccabe": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "queen s pleasure": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "sea foam grey": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "ars musica": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "moon walker": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "parel": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "prophets of thwaites": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "flower face": {
-      "retryAfter": "2026-12-23",
-      "reason": "photo-license-not-confirmed"
-    },
-    "ablaye cissoko cyrille brotto": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "aupinard": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "de hardheid": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "mietze conte": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "seyda perincek": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "acindc": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "mercy girl": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "nems": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    }
-  },
-  "audioDbAttempted": {
-    "leenalchi": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "dav id": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "architrackz": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
-    },
-    "koala disco": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "niall mccabe": {
       "retryAfter": "2026-12-23",
@@ -11495,6 +11488,14 @@
     "sophie straat": {
       "retryAfter": "2026-12-23",
       "reason": "missing-or-ambiguous-artist"
+    },
+    "seyda perincek": {
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider"
+    },
+    "the hillbilly moonshiners": {
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider"
     }
   }
 }
