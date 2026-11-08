@@ -53,11 +53,12 @@ function record(event,url,stage,outcome){
 /** Attaches listeners before src assignment; does not alter fallback behavior. */
 export function watchConcertImage(img,event,primary,backup){
  const main=String(primary||'');
- const alternate=String(backup||'');
+ const alternates=new Set((Array.isArray(backup)?backup:[backup])
+  .map(x=>String(x||'')).filter(Boolean));
  const report=outcome=>{
   // src is the active requested candidate even if currentSrc remains on a failed prior image.
   const current=img.src||img.currentSrc||'';
-  const stage=alternate&&current===alternate&&alternate!==main?'backup':'primary';
+  const stage=current!==main&&alternates.has(current)?'backup':'primary';
   record(event,current,stage,outcome);
  };
  img.addEventListener('load',()=>report('loaded'));

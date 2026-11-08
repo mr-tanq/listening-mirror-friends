@@ -1,10 +1,11 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=photo-recovery-v1';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=photo-recovery-v2';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
-import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
-import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=credited-performers-v2';
+import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=multi-photo-fallback-v1';
+import {verifiedArtistPhoto,resolveConcertImage,resolveConcertImageBackups} from './artist-images.js?v=multi-photo-fallback-v1';
+import {concertImageFallbacks} from './image-fallback-chain.js?v=multi-photo-fallback-v1';
 import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
-import {watchConcertImage,imageLoadReport,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
+import {watchConcertImage,imageLoadReport,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v3';
 
 const STORAGE_KEY = 'lm_friends_v1';
 const app = document.querySelector('#app');
@@ -16,13 +17,25 @@ let artistTags = {artists:{}};
 let artistImages = {version:1,artists:{}};
 function withArtwork(event){
   if(!event)return event;
-  // Recompute the backup from the current verified cache. Never keep a stale
-  // photo in a previously saved card after it has been blocked by review.
-  const {imageFallback:_oldFallback,imageFallbackKind:_oldKind,imageFallbackCredit:_oldCredit,...base}=event;
-  const chosen=resolveConcertImage(base,artistImages);
-  if(chosen.url&&!base.image)return {...base,image:chosen.url,imageKind:chosen.kind,...(chosen.credit?{imageCredit:chosen.credit}:{})};
-  const backup=resolveConcertImageBackup(base,artistImages);
-  return backup?{...base,imageFallback:backup.url,imageFallbackKind:backup.kind,...(backup.credit?{imageFallbackCredit:backup.credit}:{})}:base;
+  // Recompute ALL alternatives from the current verified cache. In
+  // particular, stale auto-generated artist photos persisted by an older
+  // browser must not survive a subsequent human review/blocklist decision.
+  const {imageFallback:_oldFallback,imageFallbackKind:_oldKind,
+   imageFallbackCredit:_oldCredit,imageAlternates:_oldAlternates,...base}=event;
+  const autoPhoto=base.imageKind==='artist-photo'&&Boolean(verifiedArtistPhoto(base.image));
+  const source=autoPhoto?{...base,image:'',imageKind:'',imageCredit:undefined}:base;
+  const chosen=resolveConcertImage(source,artistImages);
+  const backups=resolveConcertImageBackups({...source,image:chosen.url},artistImages);
+  const first=backups[0];
+  const display=chosen.url&&!source.image?{
+   ...source,image:chosen.url,imageKind:chosen.kind,
+   ...(chosen.credit?{imageCredit:chosen.credit}:{})
+  }:source;
+  return {...display,
+   ...(first?{imageFallback:first.url,imageFallbackKind:first.kind,
+    ...(first.credit?{imageFallbackCredit:first.credit}:{})}:{}),
+   imageAlternates:backups.slice(1)
+  };
 }
 let page = 'tonight';
 let collection = 'deciding';
@@ -166,8 +179,9 @@ function card(raw,scoreInfo=null,mode='discover') {
   recordRenderedConcert(e,pic);
   if(pic){
     const img=el('img','show-image');img.loading='lazy';img.alt=`${e.artist} artwork`;
-    watchConcertImage(img,e,pic,safeUrl(e.imageFallback));img.src=pic;
-    let creditNode=null,usingFallback=false;
+    const backups=concertImageFallbacks(e,pic);
+    watchConcertImage(img,e,pic,backups.map(x=>x.url));
+    let creditNode=null,nextBackup=0;
     const setCredit=credit=>{
       if(creditNode){creditNode.remove();creditNode=null;}
       const url=safeUrl(credit?.url);
@@ -177,15 +191,15 @@ function card(raw,scoreInfo=null,mode='discover') {
       card.append(creditNode);
     };
     img.addEventListener('error',()=>{
-      const fallback=safeUrl(e.imageFallback);
-      if(!usingFallback&&fallback&&fallback!==pic){
-        usingFallback=true;img.src=fallback;img.alt=`${e.artist} artist photo`;
-        setCredit(e.imageFallbackCredit);return;
+      const next=backups[nextBackup++];
+      if(next){
+        img.alt=`${e.artist} verified artist photo`;
+        setCredit(next.credit);img.src=next.url;return;
       }
       if(creditNode)creditNode.remove();
       img.replaceWith(fallbackShowArtwork(e));
     });
-    card.append(img);setCredit(e.imageCredit);
+    card.append(img);setCredit(e.imageCredit);img.src=pic;
   }else card.append(fallbackShowArtwork(e));
   const body=el('div','show-body');
   body.append(el('div','show-date',showDate(e.date)),el('h3','',e.artist),el('p','show-location',[e.venue,e.city,formatCountry(e.country)].filter(Boolean).join(' · ')));

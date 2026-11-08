@@ -1,5 +1,6 @@
-import {watchConcertImage,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
-import {safeUrl,norm} from './model.js?v=photo-recovery-v1';
+import {watchConcertImage,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v3';
+import {safeUrl,norm} from './model.js?v=photo-recovery-v2';
+import {concertImageFallbacks} from './image-fallback-chain.js?v=multi-photo-fallback-v1';
 
 const el=(tag,cls,text)=>{
   const n=document.createElement(tag);if(cls)n.className=cls;
@@ -49,23 +50,24 @@ export function openConcertDetail(event={},reason=''){
   recordRenderedConcert(event,poster);
   if(poster){
     const img=el('img','deciding-detail-image');img.alt='Event artwork';img.loading='lazy';
-    watchConcertImage(img,event,poster,safeUrl(event.imageFallback));img.src=poster;inner.append(img);
-    let credit=null,usingFallback=false;
+    const backups=concertImageFallbacks(event,poster);
+    watchConcertImage(img,event,poster,backups.map(x=>x.url));inner.append(img);
+    let credit=null,nextBackup=0;
     const setCredit=value=>{
       if(credit)credit.remove();
       credit=imageCredit({imageCredit:value});
       if(credit)img.after(credit);
     };
     img.addEventListener('error',()=>{
-      const backup=safeUrl(event.imageFallback);
-      if(!usingFallback&&backup&&backup!==poster){
-        usingFallback=true;img.src=backup;img.alt=event.artist+' artist photo';
-        setCredit(event.imageFallbackCredit);return;
+      const next=backups[nextBackup++];
+      if(next){
+        img.alt=event.artist+' verified artist photo';
+        setCredit(next.credit);img.src=next.url;return;
       }
       if(credit)credit.remove();
       img.remove();
     });
-    setCredit(event.imageCredit);
+    setCredit(event.imageCredit);img.src=poster;
   }
   const facts=el('dl','deciding-facts');
   for(const [title,value] of explainConcert(event,reason)){
@@ -122,24 +124,25 @@ export function mountDecidingDeck(host,entry,{remaining=1,onDecide=()=>{},onLate
   recordRenderedConcert(event,url);
   if(url){
     const img=el('img','deck-poster');img.alt=event.artist+' artwork';
-    img.loading='eager';watchConcertImage(img,event,url,safeUrl(event.imageFallback));img.src=url;
+    const backups=concertImageFallbacks(event,url);
+    img.loading='eager';watchConcertImage(img,event,url,backups.map(x=>x.url));
     image.append(img);
-    let credit=null,usingFallback=false;
+    let credit=null,nextBackup=0;
     const setCredit=value=>{
       if(credit)credit.remove();
       credit=imageCredit({imageCredit:value});
       if(credit)image.append(credit);
     };
     img.addEventListener('error',()=>{
-      const backup=safeUrl(event.imageFallback);
-      if(!usingFallback&&backup&&backup!==url){
-        usingFallback=true;img.src=backup;img.alt=event.artist+' artist photo';
-        setCredit(event.imageFallbackCredit);return;
+      const next=backups[nextBackup++];
+      if(next){
+        img.alt=event.artist+' verified artist photo';
+        setCredit(next.credit);img.src=next.url;return;
       }
       if(credit)credit.remove();
       img.remove();image.classList.add('no-image');
     });
-    setCredit(event.imageCredit);
+    setCredit(event.imageCredit);img.src=url;
   }else image.classList.add('no-image');
   image.append(el('span','deck-counter','01 / '+String(remaining).padStart(2,'0')));
   const indicators=el('div','deck-indicators');
