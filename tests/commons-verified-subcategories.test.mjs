@@ -110,7 +110,7 @@ test('unverified source or an unlicensed child photo never becomes a published i
  });
  assert.equal(result.stats.found,0);
  assert.equal(result.cache.artists['velvet satellites'],undefined);
- assert.equal(result.cache.wikimediaAttempted['velvet satellites'].strategyVersion,7);
+ assert.equal(result.cache.wikimediaAttempted['velvet satellites'].strategyVersion,8);
  const withoutIdentity=await enrichWikimediaArtistPhotos([source],{artists:{}},{
   today:'2026-11-08',maxArtists:1,delay:async()=>{},
   fetcher:async url=>{
