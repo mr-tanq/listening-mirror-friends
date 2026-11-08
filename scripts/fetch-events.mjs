@@ -24,6 +24,7 @@ import {enrichPodiuminfoImages} from './podiuminfo-images.mjs';
 import {enrichDeezerArtistImages,createDeezerClient} from './deezer-artist-images.mjs';
 import {enrichMusicBrainzIdentities} from './musicbrainz-identity.mjs';
 import {enrichWikimediaArtistPhotos} from './wikimedia-artist-photos.mjs';
+import {enrichAudioDbArtistPhotos} from './theaudiodb-artist-photos.mjs';
 import {applyArtistImageOverrides} from './artist-image-overrides.mjs';
 import {addPodiuminfoArtists,verifiedArtistPhoto} from '../js/artist-images.js';
 
@@ -881,14 +882,22 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     maxArtists:Number(process.env.WIKIMEDIA_ARTISTS_PER_RUN||25),
     maxDurationMs:Number(process.env.WIKIMEDIA_TIME_MS||150000)
   });
+  // Independent third source: TheAudioDB's official free MBID endpoint.
+  // Unlike its fanart/artwork search, this stage accepts only photo records
+  // whose identity and explicit reusable Creative Commons licence are known.
+  // It runs in the GitHub Action, never in visitors' browsers.
+  const audioDbUpdate=await enrichAudioDbArtistPhotos(events,wikimediaUpdate.cache,identityUpdate.identities,{
+    today,maxArtists:Number(process.env.AUDIODB_ARTISTS_PER_RUN||20),
+    maxDurationMs:Number(process.env.AUDIODB_TIME_MS||100000)
+  });
   // Re-apply human review last so blocked names stay blocked.
-  const finalImages=applyArtistImageOverrides(wikimediaUpdate.cache,imageOverrides).cache;
+  const finalImages=applyArtistImageOverrides(audioDbUpdate.cache,imageOverrides).cache;
   await write('data/artist-images.json',finalImages);
   await write('data/artist-identities.json',identityUpdate.identities);
   console.log('Artist image cache: '+Object.keys(finalImages.artists).length+
     ' bands; Podiuminfo '+artistImageUpdate.added+', Deezer '+deezerImageUpdate.stats.found+
     ', Commons '+identityUpdate.stats.commons+', MusicBrainz-linked Deezer '+identityUpdate.stats.deezerLinked+
-    ', exact Wikidata Commons '+wikimediaUpdate.stats.found+' new; Deezer '+JSON.stringify(deezerImageUpdate.stats)+'; identity '+JSON.stringify(identityUpdate.stats)+'; wikimedia '+JSON.stringify(wikimediaUpdate.stats));
+    ', exact Wikidata Commons '+wikimediaUpdate.stats.found+', TheAudioDB '+audioDbUpdate.stats.found+' new; Deezer '+JSON.stringify(deezerImageUpdate.stats)+'; identity '+JSON.stringify(identityUpdate.stats)+'; wikimedia '+JSON.stringify(wikimediaUpdate.stats)+'; audiodb '+JSON.stringify(audioDbUpdate.stats));
   console.log('Art recovery: '+recovered.reused+' reused; Rocking event pages '+pagePosters.found+' images from '+pagePosters.attempts+' pages.');
   const reviewedImages=await read('data/verified-event-images.json',{records:[]});
   const reviewed=applyVerifiedPosters(events,reviewedImages);
@@ -917,7 +926,7 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
     coverage:{countries:[...new Set(events.map(e=>e.country))].sort(),daysAhead:windowDays,festivalDaysAhead:Math.min(210,windowDays+70),greeceEvents:events.filter(e=>e.country==='GR').length,greeceFeedError,rockingEvents:events.filter(e=>e.source==='rocking').length,rockingWarning,
       verifiedPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo').length,
       agendaOnlyPodiuminfoEvents:events.filter(x=>x.source==='podiuminfo-agenda').length,
-      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,artworkReused:recovered.reused,rockingPagePosters:pagePosters.found,reviewedPostersApplied:reviewed.applied,editorialSupplemented,podiuminfoImages:podiumPhotoResult.stats,artistPhotoCache:{artists:Object.keys(finalImages.artists).length,reviewBlocked:reviewedArtistImages.blocked,reviewPinned:reviewedArtistImages.pinned,podiuminfoUpdated:artistImageUpdate.added,deezer:deezerImageUpdate.stats,identity:identityUpdate.stats,wikimedia:wikimediaUpdate.stats},gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
+      festivalEvents:events.filter(x=>x.source==='festivalinfo').length,officialVenueEvents:events.filter(x=>x.source==='official').length,partnerImportedEvents:partnerMerged.added,partnerDuplicates:partnerMerged.duplicates,sameVenueDuplicatesMerged:deduped.duplicates,artworkReused:recovered.reused,rockingPagePosters:pagePosters.found,reviewedPostersApplied:reviewed.applied,editorialSupplemented,podiuminfoImages:podiumPhotoResult.stats,artistPhotoCache:{artists:Object.keys(finalImages.artists).length,reviewBlocked:reviewedArtistImages.blocked,reviewPinned:reviewedArtistImages.pinned,podiuminfoUpdated:artistImageUpdate.added,deezer:deezerImageUpdate.stats,identity:identityUpdate.stats,wikimedia:wikimediaUpdate.stats,audioDb:audioDbUpdate.stats},gagarinCalendarEvents:events.filter(x=>x.source==='gagarin-calendar').length,gagarinPosterEnriched:posterResult.found,gagarinWarning,floydCalendarEvents:events.filter(x=>x.source==='floyd-calendar').length,floydPosterEnriched:floydPoster.found,floydWarning,fuzzCalendarEvents:events.filter(x=>x.source==='fuzzclub-calendar').length,fuzzPosterEnriched:fuzzPoster.found,fuzzWarning,anClubIndexEvents:events.filter(x=>x.source==='anclub-index').length,anClubPosterEnriched:anPoster.found,anClubWarning,
       datesUnavailable:missing,festivalIncomplete,genreTaggedEvents:genreStatus.withGenres,taggedArtists:genreStatus.taggedArtists,
       notes:'NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing.'}};
   await write('data/discovery-cache.json',cache);
