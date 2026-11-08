@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T17:31:36.992Z",
-  "catalogUpdatedAt": "2026-11-08T17:28:16.138Z",
+  "generatedAt": "2026-11-08T17:40:22.714Z",
+  "catalogUpdatedAt": "2026-11-08T17:37:01.644Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,23 +9,23 @@
   "totals": {
     "total": 1901,
     "eventPoster": 1028,
-    "artistPhoto": 514,
-    "noImage": 359,
-    "posterWithPhotoBackup": 390
+    "artistPhoto": 527,
+    "noImage": 346,
+    "posterWithPhotoBackup": 392
   },
   "byCountry": {
     "NL": {
       "total": 1402,
       "eventPoster": 678,
-      "artistPhoto": 433,
-      "noImage": 291,
-      "posterWithPhotoBackup": 350
+      "artistPhoto": 445,
+      "noImage": 279,
+      "posterWithPhotoBackup": 352
     },
     "BE": {
       "total": 109,
       "eventPoster": 6,
-      "artistPhoto": 68,
-      "noImage": 35,
+      "artistPhoto": 69,
+      "noImage": 34,
       "posterWithPhotoBackup": 4
     },
     "GR": {
@@ -37,28 +37,28 @@
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 105,
-    "artist-not-found": 143,
+    "album-cover-rejected": 108,
+    "artist-not-found": 127,
     "ambiguous-artist": 74,
-    "other-lookup-cooldown": 22,
+    "other-lookup-cooldown": 21,
     "not-in-artist-cache": 9,
-    "artist-has-no-photo": 6
+    "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 647,
+      "deezer": 663,
       "manual-pin": 4
     },
     "theAudioDB": {
       "attempted": 22,
       "failuresByReason": {
-        "artist-not-in-provider": 6,
-        "missing-or-ambiguous-artist": 15,
+        "artist-not-in-provider": 11,
+        "missing-or-ambiguous-artist": 10,
         "photo-license-not-confirmed": 1
       }
     }
   },
-  "missingNext14Days": 92,
+  "missingNext14Days": 86,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-459733",
@@ -67,14 +67,6 @@
       "country": "NL",
       "venue": "Baroeg",
       "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-493073",
-      "artist": "Deer Park, Touching Ice & The Healing Power Of Horses",
-      "date": "2026-11-08",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "artist-not-found"
     },
     {
       "id": "rocking-20261108-27562",
@@ -373,12 +365,20 @@
       "reason": "artist-not-found"
     },
     {
-      "id": "podiuminfo-486914",
-      "artist": "Employed To Serve & CABAL",
+      "id": "rocking-20261115-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "date": "2026-11-15",
+      "country": "GR",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-461408",
+      "artist": "NAPA",
       "date": "2026-11-15",
       "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "artist-not-found"
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
     }
   ],
   "missingOtherSamples": [
