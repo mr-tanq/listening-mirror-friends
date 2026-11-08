@@ -152,6 +152,11 @@ export function verifiedArtistPhoto(raw){
   // Public high-resolution Deezer ARTIST images (never track/album covers).
   if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
    return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
+  // TheAudioDB only accepts *artist thumbnails* from their official CDN.
+  // The collector separately validates an identical MusicBrainz artist ID,
+  // an explicit compatible Creative Commons grant and source attribution.
+  if(['www.theaudiodb.com','theaudiodb.com','r2.theaudiodb.com'].includes(u.hostname))
+   return /^\/images\/media\/artist\/thumb\/[a-z0-9_-]{8,80}\.jpe?g$/i.test(u.pathname)&&!u.search?u.href:'';
   // Freely licensed Wikimedia Commons photographs (licence checked at ingest).
   // Commons distributes resized files via thumb.wikimedia.org; only the same
   // strict /wikipedia/commons/thumb/... photo path is accepted.
