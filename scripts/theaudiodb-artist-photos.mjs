@@ -21,7 +21,7 @@ const CREDIT_BASE='https://www.theaudiodb.com/artist/';
 
 export function audioDbLicense(raw){
  const text=String(raw||'').trim()
-  .replace(/^https?:\/\/creativecommons\.org\/licenses\//i,'')
+  .replace(/^https?:\/\/creativecommons\.org\/licenses\//i,'CC ')
   .replace(/\/$/,'').replace(/\//g,' ').replace(/[_-]/g,' ').replace(/\s+/g,' ').toUpperCase();
  // Explicit, compatible licence: no NC, ND, custom or vague "yes" tags.
  if(/^(?:CC0|CC 0)(?: 1(?:\.0)?)?$/.test(text)||/^PUBLIC DOMAIN$/.test(text))return 'CC0';
