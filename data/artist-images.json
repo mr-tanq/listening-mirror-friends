@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T12:03:28.359Z"
+      "checkedAt": "2026-11-08T12:47:18.663Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T12:03:28.359Z"
+      "checkedAt": "2026-11-08T12:47:18.663Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T12:03:28.359Z"
+      "checkedAt": "2026-11-08T12:47:18.663Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T12:03:28.359Z"
+      "checkedAt": "2026-11-08T12:47:18.663Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -9148,14 +9148,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "john coffey": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        400479,
-        391139161
-      ]
-    },
     "mammoth": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -9167,14 +9159,6 @@
         345919051,
         132729702,
         354465152
-      ]
-    },
-    "dominum": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        239560521,
-        142722952
       ]
     },
     "jen": {
@@ -10144,8 +10128,8 @@
       "reason": "no-confirmed-musician"
     },
     "bartofso": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "queen s pleasure": {
@@ -10159,8 +10143,8 @@
       "reason": "no-confirmed-musician"
     },
     "celestial season": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "radar machine": {
@@ -10174,8 +10158,8 @@
       "reason": "no-confirmed-musician"
     },
     "architrackz": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "koala disco": {
@@ -10184,8 +10168,8 @@
       "reason": "no-confirmed-musician"
     },
     "sophie straat": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "prophets of thwaites": {
@@ -10194,13 +10178,13 @@
       "reason": "no-confirmed-musician"
     },
     "flower face": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "conway the machine": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "prison religion": {
@@ -10214,8 +10198,8 @@
       "reason": "no-confirmed-musician"
     },
     "de hardheid": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "fondip": {
@@ -10224,8 +10208,8 @@
       "reason": "no-confirmed-musician"
     },
     "jim keller": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "mietze conte": {
@@ -10239,8 +10223,8 @@
       "reason": "no-confirmed-musician"
     },
     "lords of altamont": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "van asseldonk cartel": {
@@ -10259,8 +10243,8 @@
       "reason": "no-confirmed-musician"
     },
     "the ruins of beverast": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "blood and sun": {
@@ -10299,13 +10283,13 @@
       "reason": "no-confirmed-musician"
     },
     "morbid": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "kevin atwater": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "lovesick duo": {
@@ -10354,8 +10338,8 @@
       "reason": "no-confirmed-musician"
     },
     "leenalchi": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "utrechtse meezingerij": {
@@ -10434,8 +10418,8 @@
       "reason": "no-confirmed-musician"
     },
     "caro": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "clobber": {
@@ -10529,8 +10513,8 @@
       "reason": "no-confirmed-musician"
     },
     "napa": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "sam gendel sam wilkes": {
@@ -10559,8 +10543,8 @@
       "reason": "no-confirmed-musician"
     },
     "man": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "ablaye cissoko cyrille brotto": {
@@ -10589,8 +10573,8 @@
       "reason": "no-confirmed-musician"
     },
     "aupinard": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "kolsch the machine": {
@@ -10629,13 +10613,13 @@
       "reason": "no-confirmed-musician"
     },
     "muna": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "omar doom": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "samba roots x lucas santana": {
@@ -10644,8 +10628,8 @@
       "reason": "no-confirmed-musician"
     },
     "seyda perincek": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "alex agnew the moonlovers": {
@@ -10654,8 +10638,8 @@
       "reason": "no-confirmed-musician"
     },
     "bizkit park": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "fay": {
@@ -10809,8 +10793,8 @@
       "reason": "no-confirmed-musician"
     },
     "nems": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "dub hub": {
@@ -10934,8 +10918,8 @@
       "reason": "no-confirmed-musician"
     },
     "bleak squad": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "beylerband": {
@@ -10954,8 +10938,8 @@
       "reason": "no-confirmed-musician"
     },
     "dikke": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "judy vendredi": {
@@ -11049,8 +11033,8 @@
       "reason": "no-confirmed-musician"
     },
     "catch your breath": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "ana lua caiano": {

@@ -1176,6 +1176,18 @@
     "muna": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
+    },
+    "omar doom": {
+      "retryAfter": "2026-12-23",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "867747f1-62e9-4810-b3cf-e7f41027b6ba",
+        "9366bd69-061b-46c9-8824-0f59739930ee"
+      ]
+    },
+    "one block society": {
+      "retryAfter": "2026-11-10",
+      "reason": "HTTP 503"
     }
   }
 }

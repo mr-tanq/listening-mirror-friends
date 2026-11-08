@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T12:03:49.010Z",
+  "updatedAt": "2026-11-08T12:47:18.694Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -433,7 +433,7 @@
       }
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -13594,7 +13594,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -24016,7 +24016,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -24433,7 +24433,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -29051,7 +29051,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer/"
+      "officialUrl": "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462540",
@@ -38605,8 +38610,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38618,11 +38623,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38706,7 +38711,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40288,7 +40293,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.doornroosje.nl/event/ao-2/"
+      "officialUrl": "https://www.doornroosje.nl/event/ao-2/",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-doornroosje-2027-04-07-chef-special",
@@ -40313,7 +40323,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.doornroosje.nl/event/chefspecial-10/",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-paradiso-2027-04-07-modeselektor",
@@ -40338,7 +40353,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.paradiso.nl/programma/modeselektor/2950670",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-effenaar-2027-04-07-the-cureheads",
@@ -40362,7 +40382,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/the-cureheads"
+      "officialUrl": "https://www.effenaar.nl/agenda/the-cureheads",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-effenaar-2027-04-07-the-hindley-street-country-club",
@@ -40386,10 +40411,15 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/hscc-7apr"
+      "officialUrl": "https://www.effenaar.nl/agenda/hscc-7apr",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -40594,21 +40624,21 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1206,
     "festivalEvents": 14,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 49,
-    "artworkReused": 2,
+    "sameVenueDuplicatesMerged": 45,
+    "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
     "editorialSupplemented": 0,
     "podiuminfoImages": {
-      "requests": 5,
+      "requests": 0,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 810,
-      "eligible": 815,
-      "remainingWithoutImage": 815
+      "skippedBlocked": 814,
+      "eligible": 814,
+      "remainingWithoutImage": 814
     },
     "artistPhotoCache": {
       "artists": 649,
@@ -40616,47 +40646,49 @@
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 322,
-        "requests": 12,
-        "found": 3,
-        "notFound": 4,
-        "ambiguous": 2,
+        "candidates": 317,
+        "requests": 0,
+        "found": 0,
+        "notFound": 0,
+        "ambiguous": 0,
         "coverRejected": 0,
         "errors": 0,
-        "skipped": 313,
-        "urgentRetriesUsed": 4,
-        "photos": 647
+        "skipped": 317,
+        "urgentRetriesUsed": 0,
+        "photos": 649
       },
       "identity": {
-        "candidates": 319,
+        "candidates": 317,
         "processed": 2,
         "identified": 0,
-        "ambiguous": 0,
+        "ambiguous": 1,
         "notFound": 0,
         "commons": 0,
         "deezerLinked": 0,
-        "errors": 2
+        "errors": 1
       },
       "wikimedia": {
-        "candidates": 127,
+        "candidates": 133,
         "attempted": 25,
-        "found": 2,
-        "noMatch": 23,
+        "found": 0,
+        "noMatch": 16,
         "ambiguous": 0,
-        "licenceRejected": 0,
+        "licenceRejected": 9,
         "errors": 0,
-        "depictsQueries": 2,
+        "depictsQueries": 25,
         "depictsFound": 0,
-        "categoryQueries": 2,
+        "categoryQueries": 7,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "linkedDeezerChecks": 2,
-        "linkedDeezerFound": 2,
-        "linkedIdentityUsed": 0,
+        "subcategoryQueries": 7,
+        "subcategoryPhotoFound": 0,
+        "linkedDeezerChecks": 25,
+        "linkedDeezerFound": 0,
+        "linkedIdentityUsed": 6,
         "linkedIdentityRejected": 0
       }
     },
-    "gagarinCalendarEvents": 19,
+    "gagarinCalendarEvents": 20,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 13,
@@ -40671,19 +40703,19 @@
     "datesUnavailable": 0,
     "festivalIncomplete": false,
     "genreTaggedEvents": 811,
-    "taggedArtists": 931,
+    "taggedArtists": 932,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-08T12:07:10.446Z",
-    "catalogueEvents": 1891,
-    "officialMatches": 641,
-    "imagesPublished": 614,
+    "updatedAt": "2026-11-08T12:50:39.606Z",
+    "catalogueEvents": 1895,
+    "officialMatches": 647,
+    "imagesPublished": 620,
     "imageCandidatesPending": 27,
     "imagesDirectLinked": 621,
-    "discoveredEvents": 6,
+    "discoveredEvents": 0,
     "venueEventsRemoved": {
-      "duplicate": 2,
+      "duplicate": 0,
       "policy": 0,
       "cancelled": 0,
       "rescheduled": 0,
@@ -40691,9 +40723,9 @@
       "nonConcert": 0
     },
     "venueEventsPublished": 287,
-    "venueGenresFromCache": 1,
+    "venueGenresFromCache": 0,
     "venueGenresTagged": 110,
     "reviewedOfficialArtworkApplied": 2,
-    "venueGenreLookups": 4
+    "venueGenreLookups": 0
   }
 }

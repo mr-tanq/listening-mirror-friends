@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:07:10.446Z",
+  "generatedAt": "2026-11-08T12:50:39.606Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -3442,6 +3442,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2027-01-24-cesar",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-CESAR-ZUIDERWIJK.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-496230",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/159540/job-dutchtuber-billy-the-kit",
@@ -5741,6 +5750,51 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/buffalo-traffic-jam-across-the-pond-tour-27/2908586",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2ndtry-1782747597.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-04-07-ao",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/ao-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/09/AO_R0003013_RECHTHOEK_web-810x630.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-04-07-chef-special",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/chefspecial-10/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/09/2026-ChefSpecial-credits-Mikfiles-HiRes-Portrait-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-07-modeselektor",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/modeselektor/2950670",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Modeselektor-LR-1793721187.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-07-the-cureheads",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/the-cureheads",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-09/The%20Cureheads%20square.png?itok=y4mtC_SZ",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-07-the-hindley-street-country-club",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/hscc-7apr",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2025-11/%20%E2%80%93%20Square%20afbeelding%20only%20hindley%20str.png?itok=gihEOroY",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

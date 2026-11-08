@@ -7205,6 +7205,20 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer-2/": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer-2/",
+            "title": "CESAR: HET VERHAAL VAN EEN DRUMMER",
+            "performers": [],
+            "date": "2027-01-24",
+            "startDate": "2027-01-24T16:00",
+            "venueName": "Grolsch Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-CESAR-ZUIDERWIJK.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
       "listedAt": "2026-11-08"
