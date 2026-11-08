@@ -74,8 +74,12 @@ test('one scheduled successful probe clears historical 403 suppression and allow
  const opts={today:'2026-11-12',maxRequests:5,delay:async()=>{},
   parseConcertPageTitle:parse,fetcher};
  const r=await enrichPodiuminfoImages(ids,cache,opts);
- assert.equal(calls,3);
- assert.equal(r.stats.found,3);
+ // One recovered artist image is reusable for all matching future
+ // concerts, so we should not make three redundant provider requests.
+ assert.equal(calls,1);
+ assert.equal(r.stats.found,1);
+ assert.equal(r.stats.cacheHits,2);
+ assert.ok(r.events.every(e=>e.image===image));
  assert.equal(r.cache.hostAccess,undefined); // no active historic cooldown at expiry
  // If a previous denied hostAccess exists, it gets replaced with 'available'.
  const cache2={entries:{},hostAccess:{reason:'HTTP 403',retryAfter:'2026-11-08'}};
