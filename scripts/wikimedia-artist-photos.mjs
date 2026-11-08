@@ -68,14 +68,26 @@ export function chooseWikidataArtist(searchPayload,entitiesPayload,name){
  * musician/group; never trust a QID alone to pick an image.
  * A verified entity with no P18 still enables exact depicts/category routes.
  */
-export function chooseLinkedWikidataArtist(payload,qid,name){
+export function chooseLinkedWikidataArtist(payload,qid,name,mbid=''){
  if(!/^Q[1-9]\d*$/.test(qid||''))return {entity:null,reason:'invalid-linked-id'};
  const entity=payload?.entities?.[qid],key=artistKey(name);
- if(!entity||entity.missing||!key||!musical(entity)||
-  !names(entity).some(n=>artistKey(n)===key))
+ if(!entity||entity.missing||!key||!musical(entity))
+  return {entity:null,reason:'linked-identity-mismatch'};
+ // MusicBrainz P434 is an immutable performer identifier, stronger than an
+ // English label, which may differ from the actual stage name or spelling.
+ // If Wikidata lists P434 and it CONFLICTS with the already verified MBID,
+ // fail closed even when the English label happens to match.
+ const ids=claimStrings(entity,'P434').map(x=>x.toLowerCase());
+ const expected=/^[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}$/i.test(mbid)?mbid.toLowerCase():'';
+ if(expected&&ids.length&&!ids.includes(expected))
+  return {entity:null,reason:'linked-mbid-conflict'};
+ const nameMatches=names(entity).some(n=>artistKey(n)===key);
+ const mbidVerified=Boolean(expected&&ids.includes(expected));
+ if(!nameMatches&&!mbidVerified)
   return {entity:null,reason:'linked-identity-mismatch'};
  const file=imageFileFromWikidata({entities:{[qid]:entity}},qid);
- return file?{entity,file,linked:true}:{entity:null,verifiedEntity:entity,reason:'no-commons-image',linked:true};
+ return file?{entity,file,linked:true,mbidVerified}:
+  {entity:null,verifiedEntity:entity,reason:'no-commons-image',linked:true,mbidVerified};
 }
 
 async function getJson(fetcher,url){
@@ -103,7 +115,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
 }={}){
  const result={version:1,...imageCache,artists:{...(imageCache?.artists||{})},
   wikimediaAttempted:{...(imageCache?.wikimediaAttempted||{})}};
- const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,categoryDescriptionFound:0,subcategoryQueries:0,subcategoryPhotoFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0};
+ const stats={candidates:0,attempted:0,found:0,noMatch:0,ambiguous:0,licenceRejected:0,errors:0,depictsQueries:0,depictsFound:0,categoryQueries:0,categoryFound:0,categoryDescriptionFound:0,subcategoryQueries:0,subcategoryPhotoFound:0,linkedDeezerChecks:0,linkedDeezerFound:0,linkedIdentityUsed:0,linkedIdentityRejected:0,linkedMbidVerified:0,linkedMbidConflicts:0};
  const start=clock();let lastRequest=0;
  const fetchSlow=async(url,interval=850)=>{
   const wait=interval-(clock()-lastRequest);
@@ -115,7 +127,7 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
   const id=identityCache?.artists?.[item.key]?.wikidata;
   return /^Q[1-9]\d*$/.test(id||'')?id:'';
  };
- const strategyVersion=7; // Follow only first-level verified artist performance categories.
+ const strategyVersion=8; // Verify exact Wikidata P434 MusicBrainz ID when available.
  const candidates=selectArtistCandidates(events,result,{today})
   .filter(item=>{
    const attempt=result.wikimediaAttempted[item.key];
@@ -155,13 +167,18 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    const linkedQid=knownQid(item);
    if(linkedQid){
     const payload=await fetchSlow(entityUrl([linkedQid]));
-    verdict=chooseLinkedWikidataArtist(payload,linkedQid,item.name);
+    const verifiedMbid=identityCache?.artists?.[item.key]?.mbid||'';
+    verdict=chooseLinkedWikidataArtist(payload,linkedQid,item.name,verifiedMbid);
     if(verdict.linked)stats.linkedIdentityUsed++;
     else stats.linkedIdentityRejected++;
+    if(verdict.mbidVerified)stats.linkedMbidVerified++;
+    if(verdict.reason==='linked-mbid-conflict')stats.linkedMbidConflicts++;
    }
    // Only use a name-based lookup if a previously linked Wikidata entity
    // failed strict artist-name/type checks, or if no verified link exists.
-   if(!verdict.entity&&!verdict.verifiedEntity){
+   // A contradictory ID must never be bypassed by searching the same
+   // display name. Other invalid/no-name links retain the old safe fallback.
+   if(!verdict.entity&&!verdict.verifiedEntity&&verdict.reason!=='linked-mbid-conflict'){
     const found=await fetchSlow(searchUrl(item.name));
     const exact=[...new Set((found?.search||[]).filter(x=>artistKey(x.label)===item.key&&/^Q\d+$/.test(x.id||'')).map(x=>x.id))];
     if(exact.length){
