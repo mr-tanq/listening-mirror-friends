@@ -796,6 +796,14 @@
       "spotifyId": "3ETvRzzQK7ppB28GcAE8rN",
       "deezerId": 182222667,
       "checkedAt": "2026-11-07T23:40:53.243Z"
+    },
+    "seyda perincek": {
+      "name": "Şeyda Perinçek",
+      "mbid": "8616893a-0559-4d54-868f-95c5bb0278ad",
+      "mbName": "Seyda Perinçek",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-08T15:56:57.506Z"
     }
   },
   "attempted": {
@@ -1186,6 +1194,18 @@
       ]
     },
     "one block society": {
+      "retryAfter": "2026-11-10",
+      "reason": "HTTP 503"
+    },
+    "samba roots x lucas santana": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "seyda perincek": {
+      "retryAfter": "2026-12-23",
+      "reason": "identified-without-free-photo"
+    },
+    "alex agnew the moonlovers": {
       "retryAfter": "2026-11-10",
       "reason": "HTTP 503"
     }

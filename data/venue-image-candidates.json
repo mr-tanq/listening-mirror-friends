@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:50:39.606Z",
+  "generatedAt": "2026-11-08T16:02:14.141Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -2310,6 +2310,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-502103",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/vitreum-banner-verkleind.jpg",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-474137",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/gotu-jim/2892814",
@@ -3259,6 +3268,15 @@
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/000032960024.jpg",
       "confidence": 0.9,
       "published": false,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-502106",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Harlekino-campagnebeeld-Paradiso.jpg",
+      "confidence": 0.9,
+      "published": true,
       "displayMode": "direct-link"
     },
     {

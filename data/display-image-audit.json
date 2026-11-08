@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T12:50:39.866Z",
-  "catalogUpdatedAt": "2026-11-08T12:47:18.694Z",
+  "generatedAt": "2026-11-08T16:02:14.324Z",
+  "catalogUpdatedAt": "2026-11-08T15:58:53.213Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1895,
-    "eventPoster": 1026,
-    "artistPhoto": 512,
-    "noImage": 357,
+    "total": 1902,
+    "eventPoster": 1029,
+    "artistPhoto": 514,
+    "noImage": 359,
     "posterWithPhotoBackup": 390
   },
   "byCountry": {
     "NL": {
-      "total": 1398,
-      "eventPoster": 678,
-      "artistPhoto": 431,
-      "noImage": 289,
+      "total": 1404,
+      "eventPoster": 680,
+      "artistPhoto": 433,
+      "noImage": 291,
       "posterWithPhotoBackup": 350
     },
     "BE": {
@@ -29,16 +29,16 @@
       "posterWithPhotoBackup": 4
     },
     "GR": {
-      "total": 388,
-      "eventPoster": 342,
+      "total": 389,
+      "eventPoster": 343,
       "artistPhoto": 13,
       "noImage": 33,
       "posterWithPhotoBackup": 36
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 104,
-    "artist-not-found": 142,
+    "album-cover-rejected": 105,
+    "artist-not-found": 143,
     "ambiguous-artist": 74,
     "other-lookup-cooldown": 22,
     "not-in-artist-cache": 9,

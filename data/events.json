@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T12:47:18.694Z",
+  "updatedAt": "2026-11-08T15:58:53.213Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -433,7 +433,7 @@
       }
     },
     {
-      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
+      "id": "more-de5fbba78a1374bb",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -6060,6 +6060,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-502102",
+      "artist": "SAOS",
+      "artists": [
+        "SAOS"
+      ],
+      "date": "2026-11-17",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502102/SAOS/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-460569",
       "artist": "Soen",
       "artists": [
@@ -9426,6 +9443,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/dimitris-mystakidis-apo-tin-ypoga/",
       "image": "https://www.more.com/getattachment/EA42FBA3-0DF9-4FFF-95F2-B44826650EE3/evg_demetresmustakidesapotenu_1735_5053.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-a68fa861e3e96e37",
+      "artist": "Μιχάλης Σιαμμάς",
+      "artists": [
+        "Μιχάλης Σιαμμάς"
+      ],
+      "date": "2026-11-21",
+      "venue": "Κεντρο ελεγχου τηλεορασεων",
+      "city": "Kypseli",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/mixalis-siammas-fotissiotas/",
+      "image": "https://www.more.com/getattachment/FD33A062-A710-4B9F-B6C7-823C13C801C4/evg_mikhalessiammasphotessiot_1554_2340.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -13594,7 +13628,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "fuzzclub-2026-11-29-nile",
+      "id": "more-0d87290e89a45107",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -16119,6 +16153,23 @@
       "image": "https://www.more.com/getattachment/3D6FBEBB-F1DC-475C-9FC0-7AD078DB0FD7/evg_lostre-mobliveinathens_1504_1881.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "podiuminfo-502147",
+      "artist": "Lunchconcert Jazz - HOT Colors of Hendrix",
+      "artists": [
+        "Lunchconcert Jazz - HOT Colors of Hendrix"
+      ],
+      "date": "2026-12-04",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502147/Lunchconcert-Jazz-HOT-Colors-of-Hendrix/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "podiuminfo-461058",
@@ -21741,6 +21792,29 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-502103",
+      "artist": "DIP - CLUB KIDS Presents: Vitreum",
+      "artists": [
+        "DIP - CLUB KIDS Presents: Vitreum"
+      ],
+      "date": "2026-12-17",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502103/DIP-CLUB-KIDS-Presents-Vitreum/Paradiso/",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/vitreum-banner-verkleind.jpg",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/dip-club-kids-presents-vitreum/2952721",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
       "id": "podiuminfo-498133",
       "artist": "Frederik Daelemans",
       "artists": [
@@ -24016,7 +24090,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-4e6fa66eb79bcb54",
+      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -24433,7 +24507,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
+      "id": "more-e2a0c911d8965d4c",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -27745,6 +27819,35 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-502106",
+      "artist": "Harlekino - Troupe Courage (Remy van Kesteren Live)",
+      "artists": [
+        "Harlekino - Troupe Courage (Remy van Kesteren Live)"
+      ],
+      "date": "2027-01-19",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502106/Harlekino-Troupe-Courage-Remy-van-Kesteren-Live-/Paradiso/",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Harlekino-campagnebeeld-Paradiso.jpg",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paradiso",
+        "url": "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396"
+      }
+    },
+    {
       "id": "podiuminfo-478322",
       "artist": "John Illsley",
       "artists": [
@@ -28531,6 +28634,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/450998/The-James-Brown-Experience/Grenswerk/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-502142",
+      "artist": "TORN FROM OBLIVION",
+      "artists": [
+        "TORN FROM OBLIVION"
+      ],
+      "date": "2027-01-22",
+      "venue": "dB's",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502142/TORN-FROM-OBLIVION/dBs/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -33550,6 +33670,23 @@
       "genre": "",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/496477/Frankie-Stew-Harvey-Gunn/Botanique/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-502086",
+      "artist": "Ghost Cop",
+      "artists": [
+        "Ghost Cop"
+      ],
+      "date": "2027-02-13",
+      "venue": "Willemeen",
+      "city": "Arnhem",
+      "country": "NL",
+      "genre": "Electronic",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/502086/Ghost-Cop/Willemeen/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -38610,8 +38747,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
-      "artist": "IGORRR",
+      "id": "more-20a9413358deac99",
+      "artist": "Igorrr",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38623,11 +38760,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "",
+      "subgenre": "Avant-Garde Metal",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38711,7 +38848,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-03-20-u%20k%20subs",
+      "id": "more-9256f6cbb9511c7d",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40419,7 +40556,7 @@
       }
     },
     {
-      "id": "anclub-2027-04-10-oh%20hiroshima",
+      "id": "more-98f8e3f69d11b04a",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -40617,78 +40754,88 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 388,
+    "greeceEvents": 389,
     "greeceFeedError": "",
     "rockingEvents": 63,
     "rockingWarning": "",
     "verifiedPodiuminfoEvents": 0,
-    "agendaOnlyPodiuminfoEvents": 1206,
+    "agendaOnlyPodiuminfoEvents": 1212,
     "festivalEvents": 14,
-    "officialVenueEvents": 6,
+    "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 45,
-    "artworkReused": 0,
+    "sameVenueDuplicatesMerged": 49,
+    "artworkReused": 1,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
     "editorialSupplemented": 0,
     "podiuminfoImages": {
-      "requests": 0,
+      "requests": 5,
       "found": 0,
       "cacheHits": 0,
       "skippedBlocked": 814,
-      "eligible": 814,
-      "remainingWithoutImage": 814
+      "eligible": 819,
+      "remainingWithoutImage": 819
     },
     "artistPhotoCache": {
-      "artists": 649,
+      "artists": 651,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 317,
-        "requests": 0,
-        "found": 0,
-        "notFound": 0,
+        "candidates": 322,
+        "requests": 8,
+        "found": 2,
+        "notFound": 3,
         "ambiguous": 0,
-        "coverRejected": 0,
+        "coverRejected": 1,
         "errors": 0,
         "skipped": 317,
         "urgentRetriesUsed": 0,
-        "photos": 649
+        "photos": 651
       },
       "identity": {
-        "candidates": 317,
-        "processed": 2,
-        "identified": 0,
-        "ambiguous": 1,
-        "notFound": 0,
+        "candidates": 320,
+        "processed": 3,
+        "identified": 1,
+        "ambiguous": 0,
+        "notFound": 1,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 133,
+        "candidates": 111,
         "attempted": 25,
         "found": 0,
-        "noMatch": 16,
+        "noMatch": 20,
         "ambiguous": 0,
-        "licenceRejected": 9,
+        "licenceRejected": 5,
         "errors": 0,
-        "depictsQueries": 25,
+        "depictsQueries": 10,
         "depictsFound": 0,
-        "categoryQueries": 7,
+        "categoryQueries": 3,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 7,
+        "subcategoryQueries": 4,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 25,
+        "linkedDeezerChecks": 10,
         "linkedDeezerFound": 0,
-        "linkedIdentityUsed": 6,
+        "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0
+      },
+      "audioDb": {
+        "eligible": 22,
+        "attempted": 20,
+        "found": 0,
+        "licenseMissing": 1,
+        "identityRejected": 0,
+        "missingPhoto": 19,
+        "errors": 0,
+        "rateLimited": 0
       }
     },
-    "gagarinCalendarEvents": 20,
+    "gagarinCalendarEvents": 19,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 13,
@@ -40702,17 +40849,17 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 811,
-    "taggedArtists": 932,
+    "genreTaggedEvents": 813,
+    "taggedArtists": 934,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-08T12:50:39.606Z",
-    "catalogueEvents": 1895,
-    "officialMatches": 647,
-    "imagesPublished": 620,
-    "imageCandidatesPending": 27,
-    "imagesDirectLinked": 621,
+    "updatedAt": "2026-11-08T16:02:14.141Z",
+    "catalogueEvents": 1902,
+    "officialMatches": 649,
+    "imagesPublished": 621,
+    "imageCandidatesPending": 28,
+    "imagesDirectLinked": 622,
     "discoveredEvents": 0,
     "venueEventsRemoved": {
       "duplicate": 0,

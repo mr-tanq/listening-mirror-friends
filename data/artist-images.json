@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T12:47:18.663Z"
+      "checkedAt": "2026-11-08T15:58:34.418Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T12:47:18.663Z"
+      "checkedAt": "2026-11-08T15:58:34.418Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T12:47:18.663Z"
+      "checkedAt": "2026-11-08T15:58:34.418Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T12:47:18.663Z"
+      "checkedAt": "2026-11-08T15:58:34.418Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8348,6 +8348,34 @@
       },
       "wikidata": "Q131629535",
       "checkedAt": "2026-11-08T12:03:17.655Z"
+    },
+    "saos": {
+      "name": "SAOS",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e58e9a53bb3a8bea00b1c368455e69f8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 14702997,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/14702997",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/14702997"
+      },
+      "checkedAt": "2026-11-08T15:56:53.142Z"
+    },
+    "ghost cop": {
+      "name": "Ghost Cop",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c97d1d23b1adc9baaa732ce0f90bed77/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11623045,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/11623045",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11623045"
+      },
+      "checkedAt": "2026-11-08T15:56:54.691Z"
     }
   },
   "attempted": {
@@ -10119,6 +10147,18 @@
         351,
         414222192
       ]
+    },
+    "lunchconcert jazz": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "harlekino": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "torn from oblivion": {
+      "retryAfter": "2026-12-08",
+      "reason": "album-cover-as-portrait"
     }
   },
   "wikimediaAttempted": {
@@ -10728,8 +10768,8 @@
       "reason": "no-confirmed-musician"
     },
     "chris eckman": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "judith kiddo": {
@@ -10858,8 +10898,8 @@
       "reason": "no-confirmed-musician"
     },
     "q marsden": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "raquel rodriguez": {
@@ -10888,8 +10928,8 @@
       "reason": "no-confirmed-musician"
     },
     "hohnen ford": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "juwls": {
@@ -10983,8 +11023,8 @@
       "reason": "no-confirmed-musician"
     },
     "spk": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
     "guy verlinde the artisans of solace": {
@@ -11038,8 +11078,8 @@
       "reason": "no-licensed-commons-photo"
     },
     "ana lua caiano": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "primitive ring": {
@@ -11048,8 +11088,8 @@
       "reason": "no-confirmed-musician"
     },
     "łydka grubasa": {
-      "strategyVersion": 6,
-      "retryAfter": "2026-12-22",
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
     "siggy d1ns": {
@@ -11196,6 +11236,183 @@
       "strategyVersion": 6,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
+    },
+    "jakov jozinovic": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "theory of a deadman": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "lunchconcert jazz": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "fanny": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "jan van duikeren marcel veenendaal": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "mosa jazz": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "zuidas": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "def": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "salvia": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "top 2000 live": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "club le bon": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "hidden xmas deluxe 2026": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "hutcafe org 24": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "jack": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "march": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "nationaal jeugd jazz orkest": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "a fever": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "beach boys best": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "christmas sing a long band": {
+      "strategyVersion": 7,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    }
+  },
+  "audioDbAttempted": {
+    "leenalchi": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "dav id": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "architrackz": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "koala disco": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "niall mccabe": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "queen s pleasure": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "sea foam grey": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "ars musica": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "moon walker": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "parel": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "prophets of thwaites": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "flower face": {
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-not-confirmed"
+    },
+    "ablaye cissoko cyrille brotto": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "aupinard": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "de hardheid": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "mietze conte": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "seyda perincek": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "acindc": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "mercy girl": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
+    },
+    "nems": {
+      "retryAfter": "2026-12-23",
+      "reason": "missing-or-ambiguous-artist"
     }
   }
 }

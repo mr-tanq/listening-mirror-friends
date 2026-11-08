@@ -1,17 +1,17 @@
 {
-  "catalogUpdatedAt": "2026-11-08T12:47:18.694Z",
+  "catalogUpdatedAt": "2026-11-08T15:58:53.213Z",
   "auditedFor": "2026-11-08",
-  "totalPublished": 1895,
-  "greekPublished": 388,
+  "totalPublished": 1902,
+  "greekPublished": 389,
   "imageCoverage": {
-    "withImage": 1026,
-    "withoutImage": 869
+    "withImage": 1028,
+    "withoutImage": 874
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1398,
-      "withImage": 678,
-      "withoutImage": 720
+      "events": 1404,
+      "withImage": 679,
+      "withoutImage": 725
     },
     "BE": {
       "events": 109,
@@ -19,8 +19,8 @@
       "withoutImage": 103
     },
     "GR": {
-      "events": 388,
-      "withImage": 342,
+      "events": 389,
+      "withImage": 343,
       "withoutImage": 46
     }
   },
@@ -50,27 +50,27 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
+      "events": 19,
+      "withImage": 19,
       "withoutImage": 0,
-      "greekEvents": 20
+      "greekEvents": 19
     },
     "more": {
-      "events": 259,
-      "withImage": 259,
+      "events": 260,
+      "withImage": 260,
       "withoutImage": 0,
-      "greekEvents": 259
+      "greekEvents": 260
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1206,
-      "withImage": 392,
-      "withoutImage": 814,
+      "events": 1212,
+      "withImage": 393,
+      "withoutImage": 819,
       "greekEvents": 0
     },
     "rocking": {
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 19,
+      "withImage": 19,
       "warning": null
     },
     "floyd-calendar": {
@@ -228,6 +228,14 @@
       ]
     },
     {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "AUX CLUB",
       "events": 7,
       "withImage": 7,
@@ -269,14 +277,6 @@
     },
     {
       "name": "CHRISTMAS THEATER",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 6,
       "withImage": 6,
       "sources": [
