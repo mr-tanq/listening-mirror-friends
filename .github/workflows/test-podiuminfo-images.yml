@@ -1,0 +1,31 @@
+name: Test Podiuminfo image recovery
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/podiuminfo-images.mjs'
+      - 'tests/podiuminfo-images.test.mjs'
+      - 'tests/podiuminfo-host-circuit-breaker.test.mjs'
+      - '.github/workflows/test-podiuminfo-images.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/podiuminfo-images.mjs'
+      - 'tests/podiuminfo-images.test.mjs'
+      - 'tests/podiuminfo-host-circuit-breaker.test.mjs'
+      - '.github/workflows/test-podiuminfo-images.yml'
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check
+        run: node --check scripts/podiuminfo-images.mjs
+      - name: Run all offline regression tests
+        run: npm test
