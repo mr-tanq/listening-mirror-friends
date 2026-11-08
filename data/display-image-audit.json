@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T16:02:14.324Z",
-  "catalogUpdatedAt": "2026-11-08T15:58:53.213Z",
+  "generatedAt": "2026-11-08T16:09:51.563Z",
+  "catalogUpdatedAt": "2026-11-08T16:06:30.699Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",

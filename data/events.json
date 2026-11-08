@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T15:58:53.213Z",
+  "updatedAt": "2026-11-08T16:06:30.699Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -40796,16 +40796,16 @@
       },
       "identity": {
         "candidates": 320,
-        "processed": 3,
-        "identified": 1,
+        "processed": 1,
+        "identified": 0,
         "ambiguous": 0,
-        "notFound": 1,
+        "notFound": 0,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 111,
+        "candidates": 136,
         "attempted": 25,
         "found": 0,
         "noMatch": 20,
@@ -40821,11 +40821,13 @@
         "subcategoryPhotoFound": 0,
         "linkedDeezerChecks": 10,
         "linkedDeezerFound": 0,
-        "linkedIdentityUsed": 0,
-        "linkedIdentityRejected": 0
+        "linkedIdentityUsed": 6,
+        "linkedIdentityRejected": 0,
+        "linkedMbidVerified": 6,
+        "linkedMbidConflicts": 0
       },
       "audioDb": {
-        "eligible": 22,
+        "eligible": 21,
         "attempted": 20,
         "found": 0,
         "licenseMissing": 1,
@@ -40854,7 +40856,7 @@
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-08T16:02:14.141Z",
+    "updatedAt": "2026-11-08T16:09:51.361Z",
     "catalogueEvents": 1902,
     "officialMatches": 649,
     "imagesPublished": 621,
