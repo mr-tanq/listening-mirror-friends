@@ -49,16 +49,48 @@ function cleanExplicitAct(raw){
  * containing ordinary slashes, and event descriptions are not split.
  * This is a *performer roster*, not a claim about who is headlining.
  */
+/**
+ * A conservatively recognized bill: slash-separated acts as before, plus
+ * named pairings with "&" and comma+ampersand multi-act lineups.
+ * "Simon & Garfunkel", "Jack & Jack", "Earth, Wind & Fire" and
+ * similarly established compound names deliberately stay a SINGLE act.
+ * This parser never establishes artist identity: image providers still use
+ * exact matching and source/rights checks for every individual.
+ */
 export function explicitlyBilledArtists(event){
  const title=String(event?.artist||'').replace(/\s+/g,' ').trim();
- if(!/\s+\/\s+/.test(title)||/\b(?:tribute|cover\s*band|covers\s+of|homage|ode\s+aan)\b/iu.test(title))return [];
- const parts=title.split(/\s+\/\s+/).map(x=>x.trim());
- if(parts.length<2||parts.length>5)return [];
- const blocked=/^(?:live|tour|concert|festival|night|doors|tickets?|afterparty|support|tba|tbc|unknown|various artists)$/iu;
- if(parts.some(x=>artistKey(x).length<3||x.length>75||x.split(/\s+/).length>8||
-    blocked.test(x)||/[|:]/.test(x)))return [];
- if(new Set(parts.map(artistKey)).size!==parts.length)return [];
- return parts;
+ if(!title||/\b(?:tribute|cover\s*band|covers\s+of|homage|ode\s+aan|many more|special guests?)\b/iu.test(title))return [];
+ const valid=part=>{
+  const key=artistKey(part);
+  return key.length>=4&&part.length<=75&&part.split(/\s+/).length<=8&&
+   !/^(?:live|tour|concert|festival|night|doors|tickets?|afterparty|support|tba|tbc|unknown|various artists)$/iu.test(part)&&
+   !/[|:]/.test(part)&&
+   !/\b(?:tickets?|tour|album|festival|present(?:s|ing)?|feat(?:uring)?|support|covers?)\b/iu.test(part);
+ };
+ const distinct=parts=>parts.length>=2&&parts.length<=5&&parts.every(valid)&&
+  new Set(parts.map(artistKey)).size===parts.length;
+ // Slash billings require whitespace around the divider: AC/DC stays intact.
+ if(/\s+\/\s+/.test(title)){
+  const parts=title.split(/\s+\/\s+/).map(x=>x.trim());
+  return distinct(parts)?parts:[];
+ }
+ if(!/\s+&\s+/.test(title))return [];
+ const amp=title.split(/\s+&\s+/);
+ if(amp.length!==2)return [];
+ const parts=amp[0].includes(',')?
+  [...amp[0].split(/,\s*/).map(x=>x.trim()),amp[1].trim()]:
+  amp.map(x=>x.trim());
+ if(!distinct(parts))return [];
+ const multi=parts.filter(x=>x.split(/\s+/).length>=2).length;
+ if(parts.length>=3){
+  // A three-plus-act festival bill needs multiple distinctive full names.
+  // Do not split established comma-band names such as Earth, Wind & Fire.
+  return multi>=2?parts:[];
+ }
+ // Two named artists require two nontrivial performer names, or one
+ // compound act and a separately styled, unmistakable uppercase act.
+ const uppercaseAct=x=>/^[A-Z][A-Z0-9!'’.-]{3,}$/.test(x)&&/[A-Z]{4}/.test(x);
+ return multi===2||(multi===1&&parts.some(uppercaseAct))?parts:[];
 }
 
 /** Names eligible for NEW external artist photo searches.
@@ -70,8 +102,8 @@ export function headlinerSearchNames(event){
  const title=String(event?.artist||'').trim();
  const first=String(event?.artists?.[0]||'').trim();
  const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
- if(explicit)return [explicit];
  const billed=explicitlyBilledArtists(event);
+ if(explicit)return [explicit];
  // A formatted slash bill is an explicit roster of performers. Keep all
  // names available to the photo resolver, clearly identifying the pictured act.
  if(billed.length&&(!first||artistKey(first)===artistKey(title)||
@@ -192,14 +224,19 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 export function artistImageFor(event,artistImages){
  // Strict photo headliner selection must not alter the older concert-identity
  // matching grammar used by venue de-duplication.
- for(const name of headlinerSearchNames(event)){
+ const billed=explicitlyBilledArtists(event);
+ const full=String(event?.artist||'').trim();
+ // Keep a correctly verified full-band portrait above any member's photo.
+ // Do not SEARCH for the combined billing as a new independent artist.
+ const candidates=billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
+ for(const name of candidates){
   const entry=artistImages?.artists?.[artistKey(name)];
   // Human-reviewed same-name artist photographs can be bound to one exact
   // concert. Never leak a scoped Whitechapel photo to an unrelated act.
   if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
    scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))continue;
   const url=verifiedArtistPhoto(entry?.image);
-  if(url)return {url,entry,name,lineup:explicitlyBilledArtists(event).length>1};
+  if(url)return {url,entry,name,lineup:billed.length>1&&artistKey(name)!==artistKey(full)};
  }
  return null;
 }
