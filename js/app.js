@@ -2,7 +2,7 @@ import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENR
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=venue-v3';
-import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=credited-performers-v1';
+import {resolveConcertImage,resolveConcertImageBackup} from './artist-images.js?v=credited-performers-v2';
 import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
 import {watchConcertImage,imageLoadReport,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v2';
 
