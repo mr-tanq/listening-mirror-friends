@@ -81,6 +81,10 @@ export function normalizeEvent(input){
     officialUrl:safeUrl(input.officialUrl)||'',imageKind:String(input.imageKind||'').slice(0,20),imageSource:String(input.imageSource||'').slice(0,40),
      imageFallback:safeUrl(input.imageFallback)||'',imageFallbackKind:String(input.imageFallbackKind||'').slice(0,20),
      imageFallbackCredit:input.imageFallbackCredit&&typeof input.imageFallbackCredit.text==='string'?{text:input.imageFallbackCredit.text.slice(0,160),url:safeUrl(input.imageFallbackCredit.url)||''}:undefined,
+     imageAlternates:Array.isArray(input.imageAlternates)?input.imageAlternates.slice(0,3)
+      .filter(x=>x&&x.kind==='artist-photo'&&safeUrl(x.url))
+      .map(x=>({url:safeUrl(x.url),kind:'artist-photo',
+       ...(x.credit&&typeof x.credit.text==='string'?{credit:{text:x.credit.text.slice(0,160),url:safeUrl(x.credit.url)||''}}:{})})):[],
     imageCredit:input.imageCredit&&typeof input.imageCredit.text==='string'?{text:input.imageCredit.text.slice(0,160),url:safeUrl(input.imageCredit.url)||''}:undefined};
 }
 function artistMatch(event,wanted) {
