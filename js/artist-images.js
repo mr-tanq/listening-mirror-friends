@@ -290,21 +290,7 @@ export function artistImageFor(event,artistImages){
   const found=checked(name,secondary);
   if(found)return found;
  }
- // Curated provider lineups may independently name an opening act. If
- // the headline has no photo, reuse ONLY an existing verified photo of an
- // explicitly supplied performer, with an honest billed-act label. Never
- // search for random support names or use a tribute's subject as an act.
- if(Array.isArray(event?.artists)&&event.artists.length>1&&
-  artistKey(event.artists[0])===artistKey(full)&&
-  ['podiuminfo-agenda','podiuminfo','rocking','festivalinfo','official','venue-official'].includes(event?.source)){
-  for(const raw of event.artists.slice(1,12)){
-   const name=String(raw||'').trim();
-   if(artistKey(name).length<4||name.length>75||
-    /\b(?:tribute|cover|support|special guests?|unknown|tba|tbc|tickets?|festival)\b/iu.test(name))continue;
-   const found=checked(name,true);
-   if(found)return found;
-  }
- }
+
  return null;
 }
 function photoCreditFor(found){
