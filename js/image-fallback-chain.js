@@ -4,7 +4,7 @@
  * validates HTTPS URLs, deduplicates and preserves attribution per photo.
  * No HTTP calls, fuzzy lookup, random photography or generated images.
  */
-import {safeUrl} from './model.js?v=photo-recovery-v1';
+import {safeUrl} from './model.js?v=photo-recovery-v2';
 
 export function concertImageFallbacks(event,primary){
  const seen=new Set([safeUrl(primary)].filter(Boolean));
