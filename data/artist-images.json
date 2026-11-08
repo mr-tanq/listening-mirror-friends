@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-07T23:41:56.201Z"
+      "checkedAt": "2026-11-08T12:03:28.359Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-07T23:41:56.201Z"
+      "checkedAt": "2026-11-08T12:03:28.359Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-07T23:41:56.201Z"
+      "checkedAt": "2026-11-08T12:03:28.359Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-07T23:41:56.201Z"
+      "checkedAt": "2026-11-08T12:03:28.359Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8276,6 +8276,78 @@
       },
       "wikidata": "Q123415502",
       "checkedAt": "2026-11-07T23:41:54.859Z"
+    },
+    "charlie cunningham": {
+      "name": "Charlie Cunningham",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ba205d36cc31f1303ba936c1a89cbbb3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6937983,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/6937983",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6937983"
+      },
+      "checkedAt": "2026-11-08T12:02:54.341Z"
+    },
+    "get well soon": {
+      "name": "Get Well Soon",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9c30acdf0999640c8610379b48e96a4e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 78484,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/78484",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/78484"
+      },
+      "checkedAt": "2026-11-08T12:02:54.846Z"
+    },
+    "sam bettens": {
+      "name": "Sam Bettens",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/37dc822a08f2770d247964ea0d49977e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1707,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1707",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1707"
+      },
+      "checkedAt": "2026-11-08T12:02:55.339Z"
+    },
+    "john coffey": {
+      "name": "John Coffey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b97e1a519ce5eb7fc49591aee1487fd8/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 400479,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/400479",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/400479"
+      },
+      "wikidata": "Q4813526",
+      "checkedAt": "2026-11-08T12:03:09.949Z"
+    },
+    "dominum": {
+      "name": "Dominum",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4a60338f8cbc3f0d0ef22a615ca4db2d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 239560521,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/239560521",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/239560521"
+      },
+      "wikidata": "Q131629535",
+      "checkedAt": "2026-11-08T12:03:17.655Z"
     }
   },
   "attempted": {
@@ -8373,28 +8445,6 @@
       ]
     },
     "mercy girl": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "boze wolven ode aan gorky": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "caedere": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "marsh": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        175960,
-        92058962,
-        399241151
-      ]
-    },
-    "nagusame": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
@@ -8741,16 +8791,19 @@
       ]
     },
     "jeremy pelt quintet": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "lords of altamont": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "nightfreak usa cafe de wacht": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "demo club bandnight auks": {
       "retryAfter": "2026-12-05",
@@ -9040,14 +9093,6 @@
     "30 jaar rob acda awards": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "kalika": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5874614,
-        119871642
-      ]
     },
     "paceshifters play nirvana": {
       "retryAfter": "2026-12-05",
@@ -9534,25 +9579,9 @@
         407300692
       ]
     },
-    "lauren sanderson": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        413388611,
-        7947458
-      ]
-    },
     "undercurrent trio ft angelika niescier suzan veneman": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "lewis ofman": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        10504527,
-        413855231
-      ]
     },
     "ana lua caiano": {
       "retryAfter": "2026-12-05",
@@ -9575,14 +9604,6 @@
     "frankie stew harvey gunn": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "los bitchos": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        13354827,
-        421881492
-      ]
     },
     "łydka grubasa": {
       "retryAfter": "2026-12-05",
@@ -9666,8 +9687,9 @@
       "urgentRetried": true
     },
     "morbidfest": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-08",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "judith kiddo": {
       "retryAfter": "2026-12-05",
@@ -9979,14 +10001,6 @@
       "retryAfter": "2026-12-06",
       "reason": "not-found"
     },
-    "electric callboy": {
-      "retryAfter": "2027-01-05",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        163128877,
-        416416442
-      ]
-    },
     "mothica": {
       "retryAfter": "2027-01-05",
       "reason": "ambiguous-same-name",
@@ -10019,14 +10033,6 @@
         10549,
         369162422,
         211126
-      ]
-    },
-    "cage the elephant": {
-      "retryAfter": "2027-01-06",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        214810,
-        413916751
       ]
     },
     "knox": {
@@ -10068,15 +10074,6 @@
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
     },
-    "24 hour dub": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "slixx": {
-      "retryAfter": "2026-12-07",
-      "reason": "album-cover-as-portrait"
-    },
     "bleak squad": {
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
@@ -10104,14 +10101,6 @@
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     },
-    "mustbejohn": {
-      "retryAfter": "2027-01-06",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        125419722,
-        412707181
-      ]
-    },
     "one block society": {
       "retryAfter": "2026-12-07",
       "reason": "no-photo",
@@ -10130,6 +10119,22 @@
     "dogma vile": {
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
+    },
+    "jakov jozinovic": {
+      "retryAfter": "2027-01-07",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        353043062,
+        411048432
+      ]
+    },
+    "theory of a deadman": {
+      "retryAfter": "2027-01-07",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        351,
+        414222192
+      ]
     }
   },
   "wikimediaAttempted": {
@@ -10149,16 +10154,6 @@
       "reason": "no-confirmed-musician"
     },
     "mercy girl": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "caedere": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "nagusame": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
@@ -10405,16 +10400,6 @@
     },
     "exxul": {
       "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "boze wolven ode aan gorky": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "marsh": {
-      "strategyVersion": 6,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
@@ -10948,16 +10933,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "24 hour dub": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "slixx": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "bleak squad": {
       "strategyVersion": 6,
       "retryAfter": "2026-12-22",
@@ -11121,6 +11096,121 @@
     "paceshifters play nirvana": {
       "strategyVersion": 6,
       "retryAfter": "2026-12-22",
+      "reason": "no-confirmed-musician"
+    },
+    "sef": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "sub zero": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "arra scum w my minds mine": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "boogiefest": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "clean pete s kerstshow": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "concours circuit 2026": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "sons of the culture clash": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "systematic show case": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "disco inferno met discophonic orchestra": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "elias mazian b2b tsepo": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "mammoth": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "music lab": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "utrechtse meezingerij met dickens kerstkoor mizzelto": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "filmconcert hitchcock": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "jen": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "ladysmith black mambazo": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "rita antonopoulou revans": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "surf punk massacre iv": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "tineke postma group": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "armel": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "dinsdagochtend concert": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "jagged edge live": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "la epoca all stars asalto navideno": {
+      "strategyVersion": 6,
+      "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
     }
   }

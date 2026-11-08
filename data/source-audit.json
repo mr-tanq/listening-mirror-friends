@@ -1,132 +1,121 @@
 {
-  "catalogUpdatedAt": "2026-11-07T23:43:08.760Z",
-  "auditedFor": "2026-11-07",
-  "totalPublished": 1945,
-  "greekPublished": 413,
+  "catalogUpdatedAt": "2026-11-08T12:03:49.010Z",
+  "auditedFor": "2026-11-08",
+  "totalPublished": 1891,
+  "greekPublished": 388,
   "imageCoverage": {
-    "withImage": 1060,
-    "withoutImage": 885
+    "withImage": 1021,
+    "withoutImage": 870
   },
   "imageCoverageByCountry": {
-    "GR": {
-      "events": 413,
-      "withImage": 366,
-      "withoutImage": 47
-    },
     "NL": {
-      "events": 1422,
-      "withImage": 688,
-      "withoutImage": 734
+      "events": 1394,
+      "withImage": 673,
+      "withoutImage": 721
     },
     "BE": {
-      "events": 110,
+      "events": 109,
       "withImage": 6,
-      "withoutImage": 104
+      "withoutImage": 103
+    },
+    "GR": {
+      "events": 388,
+      "withImage": 342,
+      "withoutImage": 46
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 26,
-      "withImage": 24,
+      "events": 25,
+      "withImage": 23,
       "withoutImage": 2,
-      "greekEvents": 26
+      "greekEvents": 25
     },
     "festivalinfo": {
-      "events": 13,
+      "events": 12,
       "withImage": 5,
-      "withoutImage": 8,
+      "withoutImage": 7,
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 14,
-      "withImage": 14,
+      "events": 13,
+      "withImage": 13,
       "withoutImage": 0,
-      "greekEvents": 14
+      "greekEvents": 13
     },
     "fuzzclub-calendar": {
-      "events": 5,
-      "withImage": 5,
-      "withoutImage": 0,
-      "greekEvents": 5
-    },
-    "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
-      "withoutImage": 0,
-      "greekEvents": 20
-    },
-    "more": {
-      "events": 277,
-      "withImage": 277,
-      "withoutImage": 0,
-      "greekEvents": 277
-    },
-    "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
       "greekEvents": 4
     },
+    "gagarin-calendar": {
+      "events": 19,
+      "withImage": 19,
+      "withoutImage": 0,
+      "greekEvents": 19
+    },
+    "more": {
+      "events": 259,
+      "withImage": 259,
+      "withoutImage": 0,
+      "greekEvents": 259
+    },
+    "official": {
+      "events": 7,
+      "withImage": 7,
+      "withoutImage": 0,
+      "greekEvents": 5
+    },
     "podiuminfo-agenda": {
-      "events": 1226,
-      "withImage": 398,
-      "withoutImage": 828,
+      "events": 1206,
+      "withImage": 391,
+      "withoutImage": 815,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 67,
-      "withImage": 22,
-      "withoutImage": 45,
-      "greekEvents": 67
+      "events": 63,
+      "withImage": 19,
+      "withoutImage": 44,
+      "greekEvents": 63
     },
     "venue-official": {
-      "events": 291,
-      "withImage": 289,
+      "events": 283,
+      "withImage": 281,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 19,
+      "withImage": 19,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 14,
-      "withImage": 14,
+      "published": 13,
+      "withImage": 13,
       "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 5,
-      "withImage": 5,
+      "published": 4,
+      "withImage": 4,
       "warning": null
     },
     "anclub-index": {
-      "published": 26,
-      "withImage": 24,
+      "published": 25,
+      "withImage": 23,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 29,
-      "withImage": 27,
+      "events": 27,
+      "withImage": 25,
       "sources": [
         "anclub-index",
-        "more",
         "rocking"
-      ]
-    },
-    {
-      "name": "Gagarin 205",
-      "events": 23,
-      "withImage": 23,
-      "sources": [
-        "rocking",
-        "gagarin-calendar",
-        "official"
       ]
     },
     {
@@ -138,38 +127,21 @@
       ]
     },
     {
+      "name": "Gagarin 205",
+      "events": 22,
+      "withImage": 22,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
+      ]
+    },
+    {
       "name": "ΙΛΙΟΝ Plus",
       "events": 17,
       "withImage": 17,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Fuzz Club",
-      "events": 15,
-      "withImage": 15,
-      "sources": [
-        "fuzzclub-calendar",
-        "official",
-        "more"
-      ]
-    },
-    {
-      "name": "Piraeus Club Academy",
-      "events": 15,
-      "withImage": 13,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
-      "name": "Floyd Live Music Venue",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "floyd-calendar"
       ]
     },
     {
@@ -181,9 +153,36 @@
       ]
     },
     {
-      "name": "gazarte",
+      "name": "Fuzz Club",
       "events": 14,
       "withImage": 14,
+      "sources": [
+        "fuzzclub-calendar",
+        "official",
+        "more"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 14,
+      "withImage": 12,
+      "sources": [
+        "more",
+        "rocking"
+      ]
+    },
+    {
+      "name": "Floyd Live Music Venue",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "floyd-calendar"
+      ]
+    },
+    {
+      "name": "gazarte",
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "more"
       ]
@@ -205,30 +204,6 @@
       ]
     },
     {
-      "name": "ARCH",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "AUX CLUB",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Circus Entertainment Hub",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Eightball",
       "events": 8,
       "withImage": 3,
@@ -237,23 +212,23 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 7,
-      "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "gazarte roof stage",
-      "events": 7,
-      "withImage": 7,
+      "name": "ARCH",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
       "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "AUX CLUB",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -269,11 +244,11 @@
       ]
     },
     {
-      "name": "Temple Athens",
-      "events": 6,
-      "withImage": 2,
+      "name": "Circus Entertainment Hub",
+      "events": 7,
+      "withImage": 7,
       "sources": [
-        "rocking"
+        "more"
       ]
     },
     {
@@ -285,7 +260,23 @@
       ]
     },
     {
+      "name": "gazarte roof stage",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "CHRISTMAS THEATER",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -309,9 +300,9 @@
       ]
     },
     {
-      "name": "Principal Club Theater: Mylos Area",
-      "events": 4,
-      "withImage": 2,
+      "name": "Temple Athens",
+      "events": 5,
+      "withImage": 1,
       "sources": [
         "rocking"
       ]
@@ -344,30 +335,6 @@
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
       "events": 4,
       "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Klakaz",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Θεατρο Μεταξουργειο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Universe - Multivenue",
-      "events": 3,
-      "withImage": 3,
       "sources": [
         "more"
       ]
@@ -429,7 +396,39 @@
       ]
     },
     {
-      "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "name": "Principal Club Theater: Mylos Area",
+      "events": 3,
+      "withImage": 1,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "Gazarte",
+      "events": 2,
+      "withImage": 1,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "ROHAS ATHENS LIVE STAGE",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Ράδιο City",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "OAKA - Olympic Velodrome",
       "events": 2,
       "withImage": 2,
       "sources": [

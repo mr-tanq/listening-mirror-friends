@@ -26,20 +26,6 @@
         "lastStatus": 200
       },
       "pages": {
-        "https://bibelot.net/programma/gruppo-sportivo-afscheidsshow/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://bibelot.net/programma/gruppo-sportivo-afscheidsshow/",
-            "title": "Gruppo Sportivo",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07",
-            "venueName": "",
-            "image": "https://bibelot.net/wp-content/uploads/2025/12/Gruppo-Sportivo-Stop-Motion-kleur-28credits-Remco-van-Oosterom29-Large-2269.jpeg",
-            "cancelled": false,
-            "via": "text-date+opengraph"
-          }
-        },
         "https://bibelot.net/programma/clobber-uk/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -486,9 +472,23 @@
             "cancelled": false,
             "via": "text-date+opengraph"
           }
+        },
+        "https://bibelot.net/programma/finale-grote-prijs-van-dordt-3/": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://bibelot.net/programma/finale-grote-prijs-van-dordt-3/",
+            "title": "Finale Grote Prijs van Dordt",
+            "performers": [],
+            "date": "2026-12-19",
+            "startDate": "2026-12-19",
+            "venueName": "",
+            "image": "https://bibelot.net/wp-content/uploads/2025/11/finale-grote-prijs-van-dordt-1620x1080.jpg",
+            "cancelled": false,
+            "via": "text-date+opengraph"
+          }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "vera": {
       "access": {
@@ -1242,21 +1242,9 @@
         "https://www.vera-groningen.nl/events/downstage-shaking-hand/": {
           "checkedAt": "2026-11-06",
           "event": null
-        },
-        "https://www.vera-groningen.nl/events/zienema-the-adventures-of-buckaroo-banzai-across-the-8th-dimension/": {
-          "checkedAt": "2026-11-06",
-          "event": null
-        },
-        "https://www.vera-groningen.nl/events/klaske-oenema-irene-wiersma-2026/": {
-          "checkedAt": "2026-11-06",
-          "event": null
-        },
-        "https://www.vera-groningen.nl/events/glyders-2026/": {
-          "checkedAt": "2026-11-06",
-          "event": null
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "effenaar": {
       "access": {
@@ -1735,34 +1723,6 @@
             "startDate": "2027-04-25T19:00:00+01:00",
             "venueName": "Grote zaal",
             "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/Suicide%20Silence%20%E2%80%93%20Square%20afbeelding%20only.png?itok=xr82sJWI",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/convicts-invite": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/convicts-invite",
-            "title": "Convicts Invite",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:00:00+01:00",
-            "venueName": "Grote zaal",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20onlyconvicts.png?itok=hjFZAn1N",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/wilt": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/wilt",
-            "title": "wilt",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:30:00+01:00",
-            "venueName": "Altstadt",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-06/%20%E2%80%93%20Square%20afbeelding%20only.png?itok=s9DQuT4v",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -2776,7 +2736,7 @@
           }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "patronaat": {
       "access": {
@@ -3770,48 +3730,6 @@
             "startDate": "2026-12-03",
             "venueName": "",
             "image": "https://patronaat.nl/app/uploads/2026/03/IMG_9833-scaled.jpg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/",
-            "title": "The Dire Straits Experience • Phil",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/05/1DSE-picture-by-Steven-Hendrix-scaled.jpg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/etran-de-lair-07-11-26/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://patronaat.nl/event/etran-de-lair-07-11-26/",
-            "title": "Etran de L’Aïr",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/05/Etran-2023-b-photo-by-Larry-Hirshowitz-scaled.jpeg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/yoga-en-gong-07-11-26/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://patronaat.nl/event/yoga-en-gong-07-11-26/",
-            "title": "Sonische Reis - Een avond van Dans, Adem & Gong",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/09/5V7A1414kopie-scaled.jpg",
             "cancelled": false,
             "via": "url-date+opengraph"
           }
@@ -5139,7 +5057,7 @@
           }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "paard": {
       "access": {
@@ -5188,20 +5106,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/paardcafe-ginger-ill-58/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/paardcafe-ginger-ill-58/",
-            "title": "Paardcafé: Ginger ILL",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2024/04/GINGER-ILL-WEB.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/paardcafe-teach-16/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -5226,20 +5130,6 @@
             "startDate": "2026-11-21T23:30",
             "venueName": "Café",
             "image": "https://www.paard.nl/wp-content/uploads/2024/09/TEACH-BANNER.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/paardcafe-ginger-ill-59/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/paardcafe-ginger-ill-59/",
-            "title": "Paardcafé: Ginger ILL",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2024/04/GINGER-ILL-WEB.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -5814,34 +5704,6 @@
             "startDate": "2027-01-31T14:30",
             "venueName": "Grolsch Zaal",
             "image": "https://www.paard.nl/wp-content/uploads/2026/09/FACEBO1-600x600.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/fischer-z-2/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/fischer-z-2/",
-            "title": "FISCHER-Z",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:00",
-            "venueName": "Grolsch Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-fischer-z.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/fischer-z/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/fischer-z/",
-            "title": "FISCHER-Z",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:00",
-            "venueName": "Grolsch Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-fischer-z.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -7036,20 +6898,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/paardcafe-mic-drop-6/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/paardcafe-mic-drop-6/",
-            "title": "Paardcafé: Mic Drop!",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/04/MIC-DROP-BANNER-APRIL.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/80s-verantwoord-3/": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -7088,20 +6936,6 @@
             "startDate": "2027-11-12T19:30",
             "venueName": "Grolsch Zaal",
             "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Websiteheader-kopie-2.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/stone-wall/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/stone-wall/",
-            "title": "STONEWALL",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T18:00",
-            "venueName": "8 locaties in Popdistrict",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/06/Screenshot-2026-10-09-at-14.20.24.png?t=1793716449&t=1793716449",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -7162,20 +6996,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/stonewall-day-program/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/stonewall-day-program/",
-            "title": "STONEWALL – Free Day Program",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T14:00",
-            "venueName": "Festival",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/10/Screenshot-2026-10-30-at-10.03.35.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/mick-flannery/": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -7218,20 +7038,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/paardcafe-mic-drop-7/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/paardcafe-mic-drop-7/",
-            "title": "Paardcafé: Mic Drop",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/04/MIC-DROP-BANNER-APRIL.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/rudeboy-x-boskat/": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -7270,20 +7076,6 @@
             "startDate": "2026-11-21T23:30",
             "venueName": "Kleine Zaal",
             "image": "https://www.paard.nl/wp-content/uploads/2026/10/@-PAARD-DEN-HAAG-20-06-2026-2300-LATE-FREE-ENTRANCE-SPECIAL-GUESTS-2.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/stonewall-day-program-2/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/stonewall-day-program-2/",
-            "title": "STONEWALL – Day Program",
-            "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T14:00",
-            "venueName": "Festival",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/10/Screenshot-2026-10-30-at-10.03.35.png?t=1793351089&t=1793351089",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -7372,36 +7164,50 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/fiesta-macumba-46/": {
-          "checkedAt": "2026-11-07",
+        "https://www.paard.nl/event/miles-obrien-2/": {
+          "checkedAt": "2026-11-08",
           "event": {
-            "url": "https://www.paard.nl/event/fiesta-macumba-46/",
-            "title": "FIESTA MACUMBA",
+            "url": "https://www.paard.nl/event/miles-obrien-2/",
+            "title": "MILES O’BRIEN",
             "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:30",
-            "venueName": "Grolsch Zaal + Kleine Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/09/FM_0711_Paard_BANNER.png",
+            "date": "2027-03-13",
+            "startDate": "2027-03-13T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-Miles-OBrien.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/fiesta-macumba-45/": {
-          "checkedAt": "2026-11-07",
+        "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer/": {
+          "checkedAt": "2026-11-08",
           "event": {
-            "url": "https://www.paard.nl/event/fiesta-macumba-45/",
-            "title": "FIESTA MACUMBA",
+            "url": "https://www.paard.nl/event/cesar-het-verhaal-van-een-drummer/",
+            "title": "CESAR: HET VERHAAL VAN EEN DRUMMER",
             "performers": [],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:30",
-            "venueName": "Grolsch Zaal + Kleine Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/09/FM_0711_Paard_BANNER.png",
+            "date": "2027-01-24",
+            "startDate": "2027-01-24T16:00",
+            "venueName": "Grolsch Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-CESAR-ZUIDERWIJK.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/kim-churchill-4/": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paard.nl/event/kim-churchill-4/",
+            "title": "KIM CHURCHILL",
+            "performers": [],
+            "date": "2027-04-23",
+            "startDate": "2027-04-23T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-KIM-CHURCHILL.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "013": {
       "access": {
@@ -9641,56 +9447,6 @@
         "lastStatus": 200
       },
       "pages": {
-        "https://www.paradiso.nl/programma/ploegendienst/2771941": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/ploegendienst/2771941",
-            "title": "Ploegendienst + C’est Qui, GRGY",
-            "performers": [
-              "Ploegendienst",
-              "C’est Qui",
-              "GRGY"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T18:00:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Ploegendienst-6_By-Eva-Roefs-1785937200.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/kay-slice/2910744": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/kay-slice/2910744",
-            "title": "Kay Slice",
-            "performers": [
-              "Kay Slice"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kay-Slice-1782983869.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/bartofso-le-tour-de-masque/2885263": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/bartofso-le-tour-de-masque/2885263",
-            "title": "Bartofso 'Le Tour de Masque'",
-            "performers": [
-              "Bartofso"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T21:00:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bartofso-2026.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/brian-fallon-the-painkillers/2905094": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -10864,73 +10620,6 @@
             "startDate": "2026-12-20T15:00:00+01:00",
             "venueName": "Paradiso",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Banner_compressed-1774365697.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/subterranean-street-society/2890482": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/subterranean-street-society/2890482",
-            "title": "Subterranean Street Society",
-            "performers": [
-              "Subterranean Street Society"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T19:30:00+01:00",
-            "venueName": "Bitterzoet",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Website-banner_SSS-za-7-nov-Large.jpeg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/mark-ambor/2941083": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/mark-ambor/2941083",
-            "title": "Mark Ambor",
-            "performers": [
-              "Mark Ambor"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T19:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/website-banner-@-mark-ambor-Large.jpeg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/pornceptual/2914001": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/pornceptual/2914001",
-            "title": "Pornceptual",
-            "performers": [
-              "Spikey Lee",
-              "Tekna",
-              "Boris"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T21:00:00+01:00",
-            "venueName": "Parallel",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/nov-pc-1_11zon.jpg",
-            "cancelled": true,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/garage-nation/2895453": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/garage-nation/2895453",
-            "title": "Garage Nation",
-            "performers": [
-              "Lisa Maffia",
-              "Romeo"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T22:59:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Garage-Nation_web_2026-06-03-144041_lhrw.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -14994,9 +14683,122 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/dizzy-dros/2917619": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/dizzy-dros/2917619",
+            "title": "Dizzy DROS",
+            "performers": [
+              "Dizzy DROS"
+            ],
+            "date": "2026-11-11",
+            "startDate": "2026-11-11T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Dizzy-DROS-2026.jpeg",
+            "cancelled": true,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/kojey-radical/2898569": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/kojey-radical/2898569",
+            "title": "Kojey Radical",
+            "performers": [
+              "Kojey Radical"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/GQSTYLEAW2022_KOJEY_RADICAL_ONLINE_6-1780909939.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/architrackz/2892750": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/architrackz/2892750",
+            "title": "Architrackz",
+            "performers": [
+              "Architrackz"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T19:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Architrackz-website-1779120388.jpg",
+            "cancelled": true,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/adult-dvd/2885447": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/adult-dvd/2885447",
+            "title": "Adult DVD + Smudged",
+            "performers": [
+              "Adult DVD",
+              "Smudged"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T18:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/4e75e901_ADULT-DVD-PRESS-PHOTOS-NOV25-DEVONC-12-1.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/yard/2898503": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/yard/2898503",
+            "title": "YARD",
+            "performers": [
+              "YARD"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T18:30:00+01:00",
+            "venueName": "Toekomstmuziek",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/66-Yard-Photoshoot-DRAFT-Rev-3-Shot-by-Patricia-Rosingana-xbadbon.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/joan-as-police-woman/2782314": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/joan-as-police-woman/2782314",
+            "title": "Joan As Police Woman",
+            "performers": [
+              "Joan As Police Woman"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T19:30:00+01:00",
+            "venueName": "Zonnehuis",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Joan-As-Police-Woman-Real-Life-1765216730.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/alewya/2913064": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/alewya/2913064",
+            "title": "Alewya",
+            "performers": [
+              "Alewya"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T19:30:00+01:00",
+            "venueName": "Bitterzoet",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Alewya-website-1784108682.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     },
     "doornroosje": {
       "access": {
@@ -15015,38 +14817,6 @@
             "startDate": "2026-12-03T20:00:00+00:00",
             "venueName": "Doornroosje - Paarse zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/03/20261203-kids-With-Buns-WEB2-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/flemming-4/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/flemming-4/",
-            "title": "FLEMMING",
-            "performers": [
-              "FLEMMING"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:15:00+00:00",
-            "venueName": "Doornroosje - Rode zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/04/Website-foto-5-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/benjamin-herman-trio-featuring-bigyuki/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/benjamin-herman-trio-featuring-bigyuki/",
-            "title": "Benjamin Herman trio ft. Tomoaki Baba",
-            "performers": [
-              "Benjamin Herman trio ft. Tomoaki Baba"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T20:45:00+00:00",
-            "venueName": "Doornroosje - Paarse zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEB-foto-2.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -16231,38 +16001,6 @@
             "startDate": "2027-03-11T19:45:00+00:00",
             "venueName": "Doornroosje - Rode zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/poederdoos-10/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/poederdoos-10/",
-            "title": "Poederdoos",
-            "performers": [
-              "Poederdoos"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:00:00+00:00",
-            "venueName": "Merleyn",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/09/Poederdoos_banner_web.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/froday-27/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/froday-27/",
-            "title": "Froday",
-            "performers": [
-              "Froday"
-            ],
-            "date": "2026-11-07",
-            "startDate": "2026-11-07T23:59:00+00:00",
-            "venueName": "Doornroosje - Paarse zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/09/Froday_banner_web.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -18184,7 +17922,7 @@
           }
         }
       },
-      "listedAt": "2026-11-07"
+      "listedAt": "2026-11-08"
     }
   }
 }

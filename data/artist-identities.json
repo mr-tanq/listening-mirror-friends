@@ -911,25 +911,9 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "boze wolven ode aan gorky": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
-    },
-    "caedere": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
-    "marsh": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
-    "nagusame": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
     "celestial season": {
-      "retryAfter": "2026-11-08",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-11-10",
+      "reason": "fetch failed"
     },
     "deer park touching ice the healing power of horses": {
       "retryAfter": "2026-12-06",
@@ -944,7 +928,7 @@
       "reason": "identified-without-free-photo"
     },
     "funk legacy allstars": {
-      "retryAfter": "2026-11-08",
+      "retryAfter": "2026-11-10",
       "reason": "HTTP 503"
     },
     "architrackz": {
@@ -1163,14 +1147,6 @@
     "fondip": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
-    },
-    "24 hour dub": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
-    },
-    "slixx": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
     },
     "bleak squad": {
       "retryAfter": "2026-11-09",

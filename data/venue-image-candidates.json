@@ -1,159 +1,7 @@
 {
-  "generatedAt": "2026-11-07T23:46:29.599Z",
+  "generatedAt": "2026-11-08T12:07:10.446Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-462744",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/bartofso-le-tour-de-masque/2885263",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bartofso-2026.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-483145",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/benjamin-herman-trio-featuring-bigyuki/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEB-foto-2.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-effenaar-2026-11-07-convicts-invite",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/convicts-invite",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20onlyconvicts.png?itok=hjFZAn1N",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-474750",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/etran-de-lair-07-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/05/Etran-2023-b-photo-by-Larry-Hirshowitz-scaled.jpeg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-452089",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/fischer-z-2/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_Mailheader-fischer-z.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-472850",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/flemming-4/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/04/Website-foto-5-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-doornroosje-2026-11-07-froday",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/froday-27/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/09/Froday_banner_web.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-483502",
-      "venue": "bibelot",
-      "eventUrl": "https://bibelot.net/programma/gruppo-sportivo-afscheidsshow/",
-      "image": "https://bibelot.net/wp-content/uploads/2025/12/Gruppo-Sportivo-Stop-Motion-kleur-28credits-Remco-van-Oosterom29-Large-2269.jpeg",
-      "confidence": 0.9,
-      "published": false
-    },
-    {
-      "eventId": "podiuminfo-483795",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/kay-slice/2910744",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kay-Slice-1782983869.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2026-11-07-lisa-maffia",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/garage-nation/2895453",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Garage-Nation_web_2026-06-03-144041_lhrw.jpg",
-      "confidence": 1,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-500356",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/paardcafe-ginger-ill-58/",
-      "image": "https://www.paard.nl/wp-content/uploads/2024/04/GINGER-ILL-WEB.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paard-2026-11-07-paardcafe-mic-drop",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/paardcafe-mic-drop-6/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/04/MIC-DROP-BANNER-APRIL.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-448328",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/ploegendienst/2771941",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Ploegendienst-6_By-Eva-Roefs-1785937200.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-patronaat-2026-11-07-sonische-reis",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/yoga-en-gong-07-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/09/5V7A1414kopie-scaled.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-patronaat-2026-11-07-the-dire-straits-experience-phil",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/the-dire-straits-experience-07-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/05/1DSE-picture-by-Steven-Hendrix-scaled.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-013-2026-11-07-unfold-by-patroon",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/146851/unfold-by-patroon",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/unfold-website-013.jpg?mtime=1784192672",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-effenaar-2026-11-07-wilt",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/wilt",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-06/%20%E2%80%93%20Square%20afbeelding%20only.png?itok=s9DQuT4v",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-480757",
       "venue": "paradiso",
@@ -420,6 +268,15 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/ini-movement-jam-sessions-12-11-26/",
       "image": "https://patronaat.nl/app/uploads/2026/10/SQARE-MISS-MEREDITH-1024x1024.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-477345",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/kojey-radical/2898569",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/GQSTYLEAW2022_KOJEY_RADICAL_ONLINE_6-1780909939.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2668,6 +2525,14 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-484047",
+      "venue": "bibelot",
+      "eventUrl": "https://bibelot.net/programma/finale-grote-prijs-van-dordt-3/",
+      "image": "https://bibelot.net/wp-content/uploads/2025/11/finale-grote-prijs-van-dordt-1620x1080.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "venue-patronaat-2026-12-19-housequake",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/housequake-19-12-26/",
@@ -4297,21 +4162,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-16-madra-salach",
+      "eventId": "podiuminfo-498576",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/madra-salach/2944059",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Press-Shot_-Madra-Salach-c-Emily-Lipson-1791912582.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-16-thee-marloes",
+      "eventId": "podiuminfo-493462",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/thee-marloes/2930819",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Photo-3-Thee-Marloes-by-Raka-Syahreza-1788868887.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
