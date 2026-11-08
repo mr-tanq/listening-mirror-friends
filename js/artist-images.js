@@ -291,32 +291,38 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
  }
  return {cache:{...(existing||{}),version:1,artists},added};
 }
-/** The cached artist entry for an event's headliner, if any. */
-export function artistImageFor(event,artistImages){
- // Strict photo selection must never alter event deduplication identity.
+/**
+ * Ordered verified photos for this event, using exactly the same artist-name
+ * eligibility and human-scoped overrides as the normal photo resolver.
+ * Full group portraits precede its individually billed performers. Dedupe
+ * identical CDN URLs so browser fallback cannot loop on the same photo.
+ */
+export function artistImageOptionsFor(event,artistImages){
  const billed=explicitlyBilledArtists(event);
  const featured=explicitFeaturedPair(event);
  const ensembleLeader=explicitlyNamedEnsembleLeader(event);
  const full=String(event?.artist||'').trim();
- const checked=(name,lineup)=>{
-  const entry=artistImages?.artists?.[artistKey(name)];
-  // A human-reviewed scoped photo may only serve its exact concert.
-  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
-   scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))return null;
-  const url=verifiedArtistPhoto(entry?.image);
-  return url?{url,entry,name,lineup}:null;
- };
- // A verified photo of a complete group/bill always outranks its members.
  const candidates=billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
+ const out=[],seen=new Set();
  for(const name of candidates){
+  const entry=artistImages?.artists?.[artistKey(name)];
+  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
+   scope.date===event?.date&&scope.country===event?.country&&
+   artistKey(scope.venue)===artistKey(event?.venue)))continue;
+  const url=verifiedArtistPhoto(entry?.image);
+  if(!url||seen.has(url))continue;
   const leaderPhoto=Boolean(ensembleLeader&&artistKey(name)===artistKey(ensembleLeader));
-  const secondary=billed.length>1&&artistKey(name)!==artistKey(full)||
-    featured.length>1&&artistKey(name)===artistKey(featured[1])||leaderPhoto;
-  const found=checked(name,secondary);
-  if(found)return leaderPhoto?{...found,creditRole:'ensemble leader'}:found;
+  const lineup=billed.length>1&&artistKey(name)!==artistKey(full)||
+   featured.length>1&&artistKey(name)===artistKey(featured[1])||leaderPhoto;
+  out.push({url,entry,name,lineup,...(leaderPhoto?{creditRole:'ensemble leader'}:{})});
+  seen.add(url);
+  if(out.length>=5)break;
  }
-
- return null;
+ return out;
+}
+/** The first, best verified artist photo (compatibility with existing jobs). */
+export function artistImageFor(event,artistImages){
+ return artistImageOptionsFor(event,artistImages)[0]||null;
 }
 function photoCreditFor(found){
  const existing=safeCredit(found.entry.credit);
@@ -339,6 +345,23 @@ export function resolveConcertImage(event,artistImages){
  * backup is a verified photograph of THIS event's headliner. Never use
  * official venue candidates whose image-use permission is still pending.
  */
+/**
+ * Additional already-verified pictures if a poster or another cached
+ * portrait is blocked, expired or fails to load in the browser. Images come
+ * only from the event's independently verified billed performers: never
+ * generic event searches or photo URLs supplied by arbitrary third parties.
+ * The first item is also exposed through the legacy single-image fallback.
+ */
+export function resolveConcertImageBackups(event,artistImages){
+ const primary=String(event?.image||'');
+ return artistImageOptionsFor(event,artistImages)
+  .filter(x=>x.url!==primary)
+  .slice(0,4).map(found=>{
+   const credit=photoCreditFor(found);
+   return {url:found.url,kind:'artist-photo',...(credit?{credit}:{})};
+  });
+}
+
 export function resolveConcertImageBackup(event,artistImages){
  if(!event?.image||event?.imageKind==='artist-photo')return null;
  const found=artistImageFor(event,artistImages);
