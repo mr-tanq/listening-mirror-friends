@@ -144,9 +144,10 @@ export async function enrichWikimediaArtistPhotos(events,imageCache,{
    if(version<strategyVersion&&oldPhotoMiss)return true;
    // Revisit a previous v4 identity miss once when a trusted MusicBrainz QID
    // is now known. Never bypass errors, rate limits or an existing v5 cooldown.
-   return Boolean(knownQid(item))&&version<strategyVersion&&
+   return Boolean(knownQid(item)&&identityCache?.artists?.[item.key]?.mbid)&&
+    version<strategyVersion&&
     ['no-confirmed-musician','no-commons-image','no-licensed-commons-photo',
-     'photo-license-or-size-rejected','ambiguous-musical-identity'].includes(attempt.reason);
+     'photo-license-or-size-rejected'].includes(attempt.reason);
   })
   .sort((a,b)=>{
    const urgentDay=new Date(today+'T12:00:00Z');
