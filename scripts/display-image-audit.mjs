@@ -62,10 +62,28 @@ export function buildDisplayImageAudit(feed,cache,reviewed,{today=new Date().toI
  const nearEnd=new Date(today+'T12:00:00Z');nearEnd.setUTCDate(nearEnd.getUTCDate()+14);
  const nearCutoff=nearEnd.toISOString().slice(0,10);
  const soon=missing.filter(e=>e.date<=nearCutoff);
+ // Report WHY independent providers failed, separately from the appearance
+ // of individual cards. A verified artist may have a photo despite an old
+ // failure at another provider; these statistics are *not* card counts.
+ const countBy=(entries,pick)=>{
+  const result={};
+  for(const entry of entries){
+   const key=String(pick(entry)||'unknown').slice(0,80);
+   result[key]=(result[key]||0)+1;
+  }
+  return result;
+ };
+ const providerDiagnostics={
+  photosBySource:countBy(Object.values(cache?.artists||{}),x=>x?.source),
+  theAudioDB:{
+   attempted:Object.keys(cache?.audioDbAttempted||{}).length,
+   failuresByReason:countBy(Object.values(cache?.audioDbAttempted||{}),x=>x?.reason)
+  }
+ };
  return {version:1,generatedAt:new Date().toISOString(),catalogUpdatedAt:feed?.updatedAt||null,auditedFor:today,
   definition:'Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.',
   caveat:'Browser network errors, blocked hotlinks and expired source images may still fall back to typography.',
-  reviewedOfficialArtworkApplied:exact.applied,totals,byCountry,missingReasons,
+  reviewedOfficialArtworkApplied:exact.applied,totals,byCountry,missingReasons,providerDiagnostics,
   missingNext14Days:soon.length,
   missingNext14DaysSamples:soon.slice(0,sampleLimit),
   missingOtherSamples:missing.filter(e=>e.date>nearCutoff).slice(0,sampleLimit)};
