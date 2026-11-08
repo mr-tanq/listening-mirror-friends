@@ -89,7 +89,7 @@ test('previously rejected P18 records get one new P180/category chance, not repe
  const r=await enrichWikimediaArtistPhotos([event],old,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(r.stats.attempted,1);
  assert.equal(r.stats.depictsQueries,1);
- assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,7);
+ assert.equal(r.cache.wikimediaAttempted['moreish idols'].strategyVersion,8);
  const previously=calls;
  const retry=await enrichWikimediaArtistPhotos([event],r.cache,{today:'2026-11-06',fetcher,delay:async()=>{},maxArtists:1});
  assert.equal(retry.stats.attempted,0);
