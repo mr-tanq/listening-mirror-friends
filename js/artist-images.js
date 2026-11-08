@@ -93,6 +93,48 @@ export function explicitlyBilledArtists(event){
  return multi===2||(multi===1&&parts.some(uppercaseAct))?parts:[];
 }
 
+
+/**
+ * Only the actual event's curated artist array may confirm which name
+ * precedes a tour/album suffix. Never infer an unrelated name from a
+ * substring of the marketing title.
+ */
+function explicitSourceHeadliner(event){
+ const title=String(event?.artist||'').replace(/\s+/g,' ').trim();
+ const source=event?.artists;
+ if(!Array.isArray(source)||source.length<2||
+  artistKey(source[0])!==artistKey(title))return '';
+ for(const value of source.slice(1,6)){
+  const name=String(value||'').replace(/\s+/g,' ').trim();
+  if(name.length<4||name.length>75||name.split(/\s+/).length>9||
+   /\b(?:tribute|cover|festival|support|special guests?|tour)\b/iu.test(name))continue;
+  if([' - ',' – ',' — ',': '].some(separator=>title.startsWith(name+separator)))
+   return name;
+ }
+ return '';
+}
+
+/** A person '(of Band)' is the performer, not the cited parent band. */
+function affiliatedSoloist(raw){
+ const name=String(raw||'').trim();
+ const match=name.match(/^(.{4,75}?)\s+\((?:of|from|formerly\s+(?:of|in)|ex[-\s]+)\s+[^()]{3,75}\)$/iu);
+ const solo=match?.[1]?.trim()||'';
+ return solo.length>=4&&solo.split(/\s+/).length<=8?solo:'';
+}
+
+/** "Headliner ft. Guest - Show Title": two expressly credited performers. */
+function explicitFeaturedPair(event){
+ const title=String(event?.artist||'').trim().replace(/\s+/g,' ');
+ const found=title.match(/^(.{4,85}?)\s+(?:ft\.?|feat\.?|featuring)\s+(.{4,75}?)(?:\s+[-–—]\s+.+)?$/iu);
+ if(!found)return [];
+ const head=found[1].trim(),guest=found[2].trim();
+ const qualified=x=>x.length>=4&&x.length<=75&&
+  x.split(/\s+/).length<=8&&!/[/:|,]/.test(x)&&
+  !/\b(?:tribute|cover|tour|festival|support|tickets?|album)\b/iu.test(x);
+ if(!qualified(head)||!qualified(guest)||artistKey(head)===artistKey(guest))return [];
+ return [head,guest];
+}
+
 /** Names eligible for NEW external artist photo searches.
  * The browser photo resolver and all Node enrichers share this shortlist.
  * Venue duplicate matching deliberately retains the older headlinerNames.
@@ -101,6 +143,12 @@ export function explicitlyBilledArtists(event){
 export function headlinerSearchNames(event){
  const title=String(event?.artist||'').trim();
  const first=String(event?.artists?.[0]||'').trim();
+ const sourced=explicitSourceHeadliner(event);
+ if(sourced)return [sourced];
+ const affiliated=affiliatedSoloist(first||title);
+ if(affiliated)return [affiliated];
+ const featured=explicitFeaturedPair(event);
+ if(featured.length)return featured;
  const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
  const billed=explicitlyBilledArtists(event);
  if(explicit)return [explicit];
@@ -222,22 +270,27 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
 }
 /** The cached artist entry for an event's headliner, if any. */
 export function artistImageFor(event,artistImages){
- // Strict photo headliner selection must not alter the older concert-identity
- // matching grammar used by venue de-duplication.
+ // Strict photo selection must never alter event deduplication identity.
  const billed=explicitlyBilledArtists(event);
+ const featured=explicitFeaturedPair(event);
  const full=String(event?.artist||'').trim();
- // Keep a correctly verified full-band portrait above any member's photo.
- // Do not SEARCH for the combined billing as a new independent artist.
+ const checked=(name,lineup)=>{
+  const entry=artistImages?.artists?.[artistKey(name)];
+  // A human-reviewed scoped photo may only serve its exact concert.
+  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
+   scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))return null;
+  const url=verifiedArtistPhoto(entry?.image);
+  return url?{url,entry,name,lineup}:null;
+ };
+ // A verified photo of a complete group/bill always outranks its members.
  const candidates=billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
  for(const name of candidates){
-  const entry=artistImages?.artists?.[artistKey(name)];
-  // Human-reviewed same-name artist photographs can be bound to one exact
-  // concert. Never leak a scoped Whitechapel photo to an unrelated act.
-  if(Array.isArray(entry?.scopes)&&!entry.scopes.some(scope=>scope?.id===event?.id&&
-   scope.date===event?.date&&scope.country===event?.country&&artistKey(scope.venue)===artistKey(event?.venue)))continue;
-  const url=verifiedArtistPhoto(entry?.image);
-  if(url)return {url,entry,name,lineup:billed.length>1&&artistKey(name)!==artistKey(full)};
+  const secondary=billed.length>1&&artistKey(name)!==artistKey(full)||
+    featured.length>1&&artistKey(name)===artistKey(featured[1]);
+  const found=checked(name,secondary);
+  if(found)return found;
  }
+
  return null;
 }
 function photoCreditFor(found){
