@@ -4785,5 +4785,10 @@
       "retryAfter": "2026-11-15",
       "reason": "HTTP 403"
     }
+  },
+  "hostAccess": {
+    "reason": "HTTP 403",
+    "retryAfter": "2026-11-15",
+    "seededFromEntries": 957
   }
 }

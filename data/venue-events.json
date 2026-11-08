@@ -7219,6 +7219,20 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paard.nl/event/stonewall-movies-that-matter/": {
+          "checkedAt": "2026-11-08",
+          "event": {
+            "url": "https://www.paard.nl/event/stonewall-movies-that-matter/",
+            "title": "STONEWALL x MOVIES THAT MATTER",
+            "performers": [],
+            "date": "2026-11-08",
+            "startDate": "2026-11-08T14:30",
+            "venueName": "GR8",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_stonewall-Movies_2Websiteheader.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
       "listedAt": "2026-11-08"

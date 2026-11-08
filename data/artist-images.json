@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T17:37:01.622Z"
+      "checkedAt": "2026-11-08T20:34:40.182Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T17:37:01.622Z"
+      "checkedAt": "2026-11-08T20:34:40.182Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T17:37:01.622Z"
+      "checkedAt": "2026-11-08T20:34:40.182Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T17:37:01.622Z"
+      "checkedAt": "2026-11-08T20:34:40.182Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8602,6 +8602,66 @@
       },
       "wikidata": "Q634852",
       "checkedAt": "2026-11-08T17:36:30.946Z"
+    },
+    "adela": {
+      "name": "Adéla",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4101eb12e685a7ea1979071c71011ced/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 306607671,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/306607671",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/306607671"
+      },
+      "wikidata": "Q131629817",
+      "checkedAt": "2026-11-08T20:33:59.929Z"
+    },
+    "julien clerc": {
+      "name": "Julien Clerc",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4a8396713af5bc489301cd4227365d28/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 3520,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/3520",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/3520"
+      },
+      "wikidata": "Q1356701",
+      "checkedAt": "2026-11-08T20:34:05.437Z"
+    },
+    "dagny": {
+      "name": "Dagny",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6da1596bc36fbe93f5c87c13c25d9cde/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4086636,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/4086636",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4086636"
+      },
+      "wikidata": "Q23771730",
+      "checkedAt": "2026-11-08T20:34:19.496Z"
+    },
+    "zzz": {
+      "name": "zZz",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/16ff68e12226535f24bb638c7cc2f164/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 76532,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/76532",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/76532"
+      },
+      "wikidata": "Q2800111",
+      "checkedAt": "2026-11-08T20:34:29.840Z"
     }
   },
   "attempted": {
@@ -10029,18 +10089,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "afterhours": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        7571144,
-        368946882,
-        396825161,
-        396825251,
-        423237172,
-        396826341
-      ]
-    },
     "het nederlands filmorkest": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -10283,28 +10331,6 @@
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
     },
-    "deer park": {
-      "retryAfter": "2026-12-08",
-      "reason": "album-cover-as-portrait"
-    },
-    "sam gendel": {
-      "retryAfter": "2027-01-07",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        250210572,
-        6975217,
-        283841081,
-        250210562
-      ]
-    },
-    "kamerata zuid spelen einaudi": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "the moonlovers the doors": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
     "frankie stew": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
@@ -10328,15 +10354,6 @@
     "martin fondse ft femi dawkins": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
-    },
-    "rufus wainwright": {
-      "retryAfter": "2027-01-07",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        298389471,
-        344584061,
-        1515
-      ]
     },
     "isabel pronk": {
       "retryAfter": "2026-12-08",
@@ -10374,19 +10391,11 @@
         282721561
       ]
     },
-    "the amsterdam string ensemble": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
     "ismail hakkı demircioglu masters of anatolia": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
     "woodcraft wild card": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "metropole orkest wainwright does weill": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
@@ -11683,6 +11692,111 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
+    },
+    "lc h": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "breder dan klassiek": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "daredevils": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "gathering bizarro met": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "myra": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-06",
+      "reason": "ambiguous-musical-identity"
+    },
+    "sowulo": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "hamid motebassem ensemble": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "rembrandt trio": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "eddie jobson u k revisited": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "david ramirez": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "tribute to the cats band": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "nederlands vioolconcours finale jonge makers prijs": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "amadeus bastards": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "fantasm": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "mico the in": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "oet de waeg mit de jocus hofkepel": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "ro krom": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "the hillbilly moonshiners": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "dordtje pop": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "infloyd": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "kika sprangers quintet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
@@ -11727,24 +11841,28 @@
       "diagnosticRetried": true
     },
     "moon walker": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "parel": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "prophets of thwaites": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "flower face": {
       "retryAfter": "2026-12-23",
       "reason": "photo-license-not-confirmed"
     },
     "aupinard": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "de hardheid": {
       "retryAfter": "2026-12-23",
@@ -11779,6 +11897,10 @@
       "reason": "artist-not-in-provider"
     },
     "bizkit park": {
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider"
+    },
+    "kurashi": {
       "retryAfter": "2027-02-06",
       "reason": "artist-not-in-provider"
     }

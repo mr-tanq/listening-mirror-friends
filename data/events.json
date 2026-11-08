@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T17:37:01.644Z",
+  "updatedAt": "2026-11-08T20:34:40.197Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -433,7 +433,7 @@
       }
     },
     {
-      "id": "more-de5fbba78a1374bb",
+      "id": "anclub-2026-11-08-sacrificial%20death%20nekrolist%20standards%20of%20brutality",
       "artist": "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY",
       "artists": [
         "SACRIFICIAL DEATH • NEKROLIST • STANDARDS OF BRUTALITY"
@@ -13628,7 +13628,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -24060,7 +24060,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -24477,7 +24477,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -38704,8 +38704,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38717,11 +38717,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38805,7 +38805,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40513,7 +40513,7 @@
       }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -40718,10 +40718,10 @@
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1212,
     "festivalEvents": 14,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 49,
+    "sameVenueDuplicatesMerged": 45,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -40731,60 +40731,63 @@
       "found": 0,
       "cacheHits": 0,
       "skippedBlocked": 818,
+      "hostDeniedRequests": 0,
+      "hostAccess": "HTTP 403",
+      "hostRetryAfter": "2026-11-15",
       "eligible": 818,
       "remainingWithoutImage": 818
     },
     "artistPhotoCache": {
-      "artists": 667,
+      "artists": 671,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 334,
-        "requests": 56,
-        "found": 14,
-        "notFound": 19,
-        "ambiguous": 4,
-        "coverRejected": 5,
+        "candidates": 312,
+        "requests": 0,
+        "found": 0,
+        "notFound": 0,
+        "ambiguous": 0,
+        "coverRejected": 0,
         "errors": 0,
-        "skipped": 297,
+        "skipped": 312,
         "urgentRetriesUsed": 0,
-        "photos": 665
+        "photos": 667
       },
       "identity": {
-        "candidates": 315,
-        "processed": 3,
+        "candidates": 312,
+        "processed": 6,
         "identified": 1,
-        "ambiguous": 0,
-        "notFound": 1,
+        "ambiguous": 1,
+        "notFound": 3,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 82,
+        "candidates": 56,
         "attempted": 25,
-        "found": 2,
-        "noMatch": 20,
-        "ambiguous": 0,
-        "licenceRejected": 3,
+        "found": 4,
+        "noMatch": 19,
+        "ambiguous": 1,
+        "licenceRejected": 1,
         "errors": 0,
-        "depictsQueries": 5,
+        "depictsQueries": 7,
         "depictsFound": 0,
-        "categoryQueries": 2,
+        "categoryQueries": 3,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 2,
+        "subcategoryQueries": 4,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 5,
-        "linkedDeezerFound": 2,
+        "linkedDeezerChecks": 7,
+        "linkedDeezerFound": 4,
         "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0,
         "linkedMbidVerified": 0,
         "linkedMbidConflicts": 0
       },
       "audioDb": {
-        "eligible": 22,
+        "eligible": 23,
         "attempted": 5,
         "found": 0,
         "licenseMissing": 0,
@@ -40798,7 +40801,7 @@
         "diagnosticRetried": 4
       }
     },
-    "gagarinCalendarEvents": 19,
+    "gagarinCalendarEvents": 20,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 13,
@@ -40817,7 +40820,7 @@
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-08T17:40:22.446Z",
+    "updatedAt": "2026-11-08T20:38:01.321Z",
     "catalogueEvents": 1901,
     "officialMatches": 647,
     "imagesPublished": 619,
