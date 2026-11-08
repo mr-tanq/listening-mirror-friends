@@ -96,7 +96,7 @@ test('provider rate limits stop further calls and do not overwrite artist images
   'leenalchi':{mbid:MBID2},
   'nems':{mbid:'f76e0b8d-4fcf-49d6-8d23-1ae5ce047826'}
  }};
- const events=[show('Niall McCabe'),show('LEENALCHI'),show('NEMS')];
+ const events=[show('Niall McCabe','2026-11-09'),show('LEENALCHI','2026-11-12'),show('NEMS','2026-11-14')];
  const a=await enrichAudioDbArtistPhotos(events,photoCache(),ids,{
   today:'2026-11-08',maxArtists:3,maxDurationMs:120000,
   clock:()=>clockTime,delay:async ms=>{clockTime+=ms},
