@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T20:38:01.475Z",
-  "catalogUpdatedAt": "2026-11-08T20:34:40.197Z",
+  "generatedAt": "2026-11-08T20:50:22.609Z",
+  "catalogUpdatedAt": "2026-11-08T20:47:01.156Z",
   "auditedFor": "2026-11-08",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
@@ -9,17 +9,17 @@
   "totals": {
     "total": 1901,
     "eventPoster": 1028,
-    "artistPhoto": 531,
-    "noImage": 342,
-    "posterWithPhotoBackup": 392
+    "artistPhoto": 541,
+    "noImage": 332,
+    "posterWithPhotoBackup": 393
   },
   "byCountry": {
     "NL": {
       "total": 1402,
       "eventPoster": 678,
-      "artistPhoto": 449,
-      "noImage": 275,
-      "posterWithPhotoBackup": 352
+      "artistPhoto": 458,
+      "noImage": 266,
+      "posterWithPhotoBackup": 353
     },
     "BE": {
       "total": 109,
@@ -31,34 +31,34 @@
     "GR": {
       "total": 390,
       "eventPoster": 344,
-      "artistPhoto": 13,
-      "noImage": 33,
+      "artistPhoto": 14,
+      "noImage": 32,
       "posterWithPhotoBackup": 36
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 108,
-    "artist-not-found": 127,
-    "ambiguous-artist": 70,
+    "album-cover-rejected": 111,
+    "artist-not-found": 117,
+    "ambiguous-artist": 68,
     "other-lookup-cooldown": 21,
-    "not-in-artist-cache": 9,
+    "not-in-artist-cache": 8,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 667,
+      "deezer": 673,
       "manual-pin": 4
     },
     "theAudioDB": {
       "attempted": 23,
       "failuresByReason": {
-        "artist-not-in-provider": 16,
+        "artist-not-in-provider": 18,
         "photo-license-not-confirmed": 1,
-        "missing-or-ambiguous-artist": 6
+        "missing-or-ambiguous-artist": 4
       }
     }
   },
-  "missingNext14Days": 86,
+  "missingNext14Days": 85,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-459733",
@@ -676,7 +676,7 @@
       "date": "2026-11-28",
       "country": "NL",
       "venue": "dB's",
-      "reason": "not-in-artist-cache"
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-496345",

@@ -1046,10 +1046,6 @@
       "retryAfter": "2026-12-22",
       "reason": "identified-without-free-photo"
     },
-    "the elvis concert special 70th anniversary": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "napa": {
       "retryAfter": "2026-12-22",
       "reason": "ambiguous",
@@ -1124,10 +1120,6 @@
       "reason": "not-found"
     },
     "lawn": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "michael jackson project ft jared grant": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
     },
@@ -1233,6 +1225,10 @@
       "reason": "not-found"
     },
     "vrlcht": {
+      "retryAfter": "2026-11-10",
+      "reason": "HTTP 503"
+    },
+    "the elvis concert": {
       "retryAfter": "2026-11-10",
       "reason": "HTTP 503"
     }

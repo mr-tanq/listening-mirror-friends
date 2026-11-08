@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T20:34:40.182Z"
+      "checkedAt": "2026-11-08T20:47:01.134Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T20:34:40.182Z"
+      "checkedAt": "2026-11-08T20:47:01.134Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T20:34:40.182Z"
+      "checkedAt": "2026-11-08T20:47:01.134Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T20:34:40.182Z"
+      "checkedAt": "2026-11-08T20:47:01.134Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8662,6 +8662,94 @@
       },
       "wikidata": "Q2800111",
       "checkedAt": "2026-11-08T20:34:29.840Z"
+    },
+    "anna webber": {
+      "name": "Anna Webber",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/51eb627fb0d2e05a4ec470c6df5ca43b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4722011,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4722011",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4722011"
+      },
+      "checkedAt": "2026-11-08T20:45:56.335Z"
+    },
+    "bill bruford": {
+      "name": "Bill Bruford",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a2ac936de1429fe22507c9f4e2351adc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 211245,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/211245",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/211245"
+      },
+      "checkedAt": "2026-11-08T20:45:57.128Z"
+    },
+    "keywest": {
+      "name": "Keywest",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/87d1ba9c27366284b0d7d816860a8b21/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 408952,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/408952",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/408952"
+      },
+      "wikidata": "Q6398551",
+      "checkedAt": "2026-11-08T20:46:29.674Z"
+    },
+    "dr feelgood": {
+      "name": "Dr. Feelgood",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4501ad4596750e27aaada67746c09723/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 10549,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/10549",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/10549"
+      },
+      "wikidata": "Q1253897",
+      "checkedAt": "2026-11-08T20:46:36.195Z"
+    },
+    "fat dog": {
+      "name": "Fat Dog",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d3d552ae8f06d619ebb9e401652e97cc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 221188795,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/221188795",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/221188795"
+      },
+      "wikidata": "Q124785392",
+      "checkedAt": "2026-11-08T20:46:41.297Z"
+    },
+    "seafret": {
+      "name": "Seafret",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4697555683091d66d20459c592a7bf37/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6533751,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/6533751",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6533751"
+      },
+      "wikidata": "Q28109766",
+      "checkedAt": "2026-11-08T20:46:55.045Z"
     }
   },
   "attempted": {
@@ -9631,10 +9719,6 @@
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
-    "john illsley of dire straits": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "parel": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -9725,17 +9809,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "dagny": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        4086636,
-        114361562,
-        114361552,
-        232560721,
-        282961621
-      ]
-    },
     "fantasm": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -9743,14 +9816,6 @@
     "oet de waeg mit de jocus hofkepel": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "zzz": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        76532,
-        187917587
-      ]
     },
     "infloyd": {
       "retryAfter": "2026-12-05",
@@ -9804,10 +9869,6 @@
     "juan arenosa": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "pete roth trio featuring bill bruford": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "catch your breath": {
       "retryAfter": "2026-12-05",
@@ -9879,16 +9940,6 @@
       ]
     },
     "donker dansen": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "the elvis concert special 70th anniversary": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "michael jackson project ft jared grant": {
       "retryAfter": "2026-12-07",
       "reason": "not-found",
       "urgentRetried": true
@@ -9984,10 +10035,6 @@
     "syntherklaas": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "nu art orchestra feat anna webber": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
     },
     "waste": {
       "retryAfter": "2027-01-04",
@@ -10125,28 +10172,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "adela": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        332206911,
-        306607671,
-        478821,
-        133659122
-      ]
-    },
-    "julien clerc": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        3520,
-        54043942
-      ]
-    },
-    "mico the in": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "ro krom": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -10270,10 +10295,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "luar na lubre lubre": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "sub zero": {
       "retryAfter": "2027-01-06",
       "reason": "ambiguous-same-name",
@@ -10283,10 +10304,6 @@
         53714822,
         223442935
       ]
-    },
-    "aespa live tour synk": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
     },
     "one block society": {
       "retryAfter": "2026-12-07",
@@ -10351,24 +10368,12 @@
         412763861
       ]
     },
-    "martin fondse ft femi dawkins": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
     "isabel pronk": {
       "retryAfter": "2026-12-08",
       "reason": "no-photo",
       "deezerCandidates": [
         278111361
       ]
-    },
-    "sunflower ft wolfert brederode": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "undercurrent trio ft angelika niescier": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
     },
     "harvey gunn": {
       "retryAfter": "2026-12-08",
@@ -10395,21 +10400,58 @@
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
-    "woodcraft wild card": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
     "friends dansen op een vulkaan": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
-    "tim langedijk": {
+    "the elvis concert": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "taqbir": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
     },
-    "suzan veneman": {
+    "nu art orchestra": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
+    },
+    "martin fondse": {
+      "retryAfter": "2026-12-08",
+      "reason": "album-cover-as-portrait"
+    },
+    "mico": {
+      "retryAfter": "2027-01-07",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        334988,
+        302832331
+      ]
+    },
+    "sunflower": {
+      "retryAfter": "2027-01-07",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        662921,
+        389865831,
+        185801407
+      ]
+    },
+    "undercurrent trio": {
+      "retryAfter": "2026-12-08",
+      "reason": "album-cover-as-portrait"
+    },
+    "femi dawkins woodcraft": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "wolfert brederode tim langedijk": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
+    },
+    "angelika niescier suzan veneman": {
+      "retryAfter": "2026-12-08",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -10783,11 +10825,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "the elvis concert special 70th anniversary": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "napa": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
@@ -10864,11 +10901,6 @@
       "reason": "no-confirmed-musician"
     },
     "the spunyboys": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "michael jackson project ft jared grant": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -11193,11 +11225,6 @@
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
     },
-    "luar na lubre lubre": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
     "reggae fire": {
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
@@ -11209,11 +11236,6 @@
       "reason": "no-confirmed-musician"
     },
     "vieze asbak b2b kruelty all day long": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "nu art orchestra feat anna webber": {
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -11603,11 +11625,6 @@
       "retryAfter": "2026-12-23",
       "reason": "photo-license-or-size-rejected"
     },
-    "martin fondse ft femi dawkins": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-confirmed-musician"
-    },
     "music by rosa": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
@@ -11654,16 +11671,6 @@
       "reason": "photo-license-or-size-rejected"
     },
     "jelle roozenburg s bonsai orchestra": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-confirmed-musician"
-    },
-    "john illsley of dire straits": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-confirmed-musician"
-    },
-    "aespa live tour synk": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
@@ -11763,11 +11770,6 @@
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
-    "mico the in": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-confirmed-musician"
-    },
     "oet de waeg mit de jocus hofkepel": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
@@ -11794,6 +11796,111 @@
       "reason": "no-confirmed-musician"
     },
     "kika sprangers quintet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "the elvis concert": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "taqbir": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "martin fondse": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "mico": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "madou": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-06",
+      "reason": "ambiguous-musical-identity"
+    },
+    "sha la lees": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "basement": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "ugly": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "50 years of rumours": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "sunflower": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "broos": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "frank cools en florian de schepper spelen becaud": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "juan arenosa": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "undercurrent trio": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "niels van der gulik": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "mothica": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "knox": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-licensed-commons-photo"
+    },
+    "shantel bucovina club orkestar": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "de schuurmachines": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "james carter": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-06",
+      "reason": "ambiguous-musical-identity"
+    },
+    "ismail hakkı demircioglu masters of anatolia": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
@@ -11865,12 +11972,14 @@
       "diagnosticRetried": true
     },
     "de hardheid": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "mietze conte": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-06",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "acindc": {
       "retryAfter": "2026-12-23",
