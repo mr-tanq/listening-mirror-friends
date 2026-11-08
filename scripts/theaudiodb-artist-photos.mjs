@@ -29,8 +29,16 @@ export function audioDbLicense(raw){
  return m?text:'';
 }
 export function verifiedAudioDbArtist(payload,name,mbid){
- if(!MBID.test(mbid||'')||!Array.isArray(payload?.artists)||payload.artists.length!==1)
-  return {photo:null,reason:'missing-or-ambiguous-artist'};
+ if(!MBID.test(mbid||''))return {photo:null,reason:'invalid-musicbrainz-id'};
+ // V1 returns {artists:null} if this artist is not in TheAudioDB. That's
+ // fundamentally different from a name/MBID collision and must not be
+ // described as one. No fuzzy name-search fallback is permissible here.
+ if(payload?.artists==null||Array.isArray(payload.artists)&&payload.artists.length===0)
+  return {photo:null,reason:'artist-not-in-provider'};
+ if(!Array.isArray(payload.artists))
+  return {photo:null,reason:'invalid-provider-payload'};
+ if(payload.artists.length!==1)
+  return {photo:null,reason:'ambiguous-provider-artist'};
  const artist=payload.artists[0];
  if(artistKey(artist.strArtist)!==artistKey(name)||
   String(artist.strMusicBrainzID||'').toLowerCase()!==mbid.toLowerCase())
@@ -69,12 +77,22 @@ export async function enrichAudioDbArtistPhotos(events,imageCache,identities,{
  const candidates=selectArtistCandidates(events,result,{today})
   .filter(x=>MBID.test(identities?.artists?.[x.key]?.mbid||''));
  const stats={eligible:candidates.length,attempted:0,found:0,licenseMissing:0,
-  identityRejected:0,missingPhoto:0,errors:0,rateLimited:0};
+  identityRejected:0,notInProvider:0,ambiguousProvider:0,invalidPayload:0,
+  missingPhoto:0,errors:0,rateLimited:0,diagnosticRetried:0};
  const start=clock();let lastRequest=null;
+ let legacyChecks=0;
+ const urgentCutoff=isoDays(today,14);
  for(const item of candidates){
   if(stats.attempted>=maxArtists||clock()-start>=maxDurationMs)break;
   if(result.artists[item.key]?.image)continue;
-  if(result.audioDbAttempted[item.key]?.retryAfter>today)continue;
+  const previous=result.audioDbAttempted[item.key];
+  const diagnosticRetry=previous?.reason==='missing-or-ambiguous-artist'&&
+   previous?.retryAfter>today&&!previous?.diagnosticRetried&&
+   item.nextDate<=urgentCutoff&&legacyChecks<4;
+  // One bounded diagnostic-only revisit of the old combined failure state
+  // for imminent shows. Never override licence, identity, API or quota backoff.
+  if(previous?.retryAfter>today&&!diagnosticRetry)continue;
+  if(diagnosticRetry){legacyChecks++;stats.diagnosticRetried++;}
   const mbid=identities.artists[item.key].mbid.toLowerCase();
   // Never exceed 30 requests/minute, even with a fast mocked/system clock.
   if(lastRequest!==null){
@@ -104,13 +122,20 @@ export async function enrichAudioDbArtistPhotos(events,imageCache,identities,{
    }else{
     if(verdict.reason==='photo-license-not-confirmed'||verdict.reason==='missing-required-creator-credit')stats.licenseMissing++;
     else if(verdict.reason==='artist-mbid-or-name-mismatch')stats.identityRejected++;
+    else if(verdict.reason==='artist-not-in-provider')stats.notInProvider++;
+    else if(verdict.reason==='ambiguous-provider-artist')stats.ambiguousProvider++;
+    else if(verdict.reason==='invalid-provider-payload')stats.invalidPayload++;
     else stats.missingPhoto++;
-    result.audioDbAttempted[item.key]={retryAfter:isoDays(today,45),reason:verdict.reason};
+    result.audioDbAttempted[item.key]={
+     retryAfter:isoDays(today,verdict.reason==='artist-not-in-provider'?90:45),
+     reason:verdict.reason,...(diagnosticRetry?{diagnosticRetried:true}:{})
+    };
    }
   }catch(err){
    stats.errors++;
    result.audioDbAttempted[item.key]={retryAfter:isoDays(today,2),
-    reason:String(err?.message||err).slice(0,80)};
+    reason:String(err?.message||err).slice(0,80),
+    ...(diagnosticRetry?{diagnosticRetried:true}:{})};
    if(stats.errors>=3)break;
   }
  }
