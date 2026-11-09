@@ -1,17 +1,17 @@
 {
-  "catalogUpdatedAt": "2026-11-09T16:53:59.170Z",
+  "catalogUpdatedAt": "2026-11-09T17:03:22.359Z",
   "auditedFor": "2026-11-09",
   "totalPublished": 1910,
   "greekPublished": 399,
   "imageCoverage": {
-    "withImage": 1041,
-    "withoutImage": 869
+    "withImage": 1040,
+    "withoutImage": 870
   },
   "imageCoverageByCountry": {
     "GR": {
       "events": 399,
-      "withImage": 355,
-      "withoutImage": 44
+      "withImage": 354,
+      "withoutImage": 45
     },
     "NL": {
       "events": 1403,
@@ -50,16 +50,16 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 3,
-      "withImage": 3,
+      "events": 19,
+      "withImage": 19,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 19
     },
     "more": {
-      "events": 284,
-      "withImage": 284,
+      "events": 268,
+      "withImage": 268,
       "withoutImage": 0,
-      "greekEvents": 284
+      "greekEvents": 268
     },
     "official": {
       "events": 7,
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 3,
-      "withImage": 3,
+      "published": 19,
+      "withImage": 19,
       "warning": null
     },
     "floyd-calendar": {
@@ -142,14 +142,6 @@
       "sources": [
         "fuzzclub-calendar",
         "official",
-        "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205 Live Music Space",
-      "events": 16,
-      "withImage": 16,
-      "sources": [
         "more"
       ]
     },
@@ -280,16 +272,6 @@
       "withImage": 6,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "gagarin-calendar",
-        "rocking",
-        "official"
       ]
     },
     {
@@ -434,6 +416,14 @@
       "withImage": 2,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "OAKA - Olympic Velodrome",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
       ]
     }
   ],

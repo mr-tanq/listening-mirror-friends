@@ -1,32 +1,32 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T16:57:26.535Z",
-  "catalogUpdatedAt": "2026-11-09T16:53:59.170Z",
+  "generatedAt": "2026-11-09T17:06:48.857Z",
+  "catalogUpdatedAt": "2026-11-09T17:03:22.359Z",
   "auditedFor": "2026-11-09",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
     "total": 1912,
-    "eventPoster": 1043,
-    "artistPhoto": 541,
-    "noImage": 328,
-    "posterWithPhotoBackup": 393
+    "eventPoster": 1042,
+    "artistPhoto": 543,
+    "noImage": 327,
+    "posterWithPhotoBackup": 429
   },
   "byCountry": {
     "GR": {
       "total": 399,
-      "eventPoster": 355,
-      "artistPhoto": 13,
+      "eventPoster": 354,
+      "artistPhoto": 14,
       "noImage": 31,
-      "posterWithPhotoBackup": 37
+      "posterWithPhotoBackup": 70
     },
     "NL": {
       "total": 1405,
       "eventPoster": 680,
-      "artistPhoto": 462,
-      "noImage": 263,
-      "posterWithPhotoBackup": 350
+      "artistPhoto": 463,
+      "noImage": 262,
+      "posterWithPhotoBackup": 353
     },
     "BE": {
       "total": 108,
@@ -39,22 +39,22 @@
   "missingReasons": {
     "artist-not-found": 119,
     "album-cover-rejected": 109,
-    "ambiguous-artist": 69,
+    "ambiguous-artist": 68,
     "other-lookup-cooldown": 20,
     "not-in-artist-cache": 4,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 680,
+      "deezer": 716,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 26,
+      "attempted": 36,
       "failuresByReason": {
-        "artist-not-in-provider": 20,
-        "photo-license-not-confirmed": 2,
-        "missing-or-ambiguous-artist": 4
+        "artist-not-in-provider": 30,
+        "photo-license-not-confirmed": 3,
+        "missing-or-ambiguous-artist": 3
       }
     }
   },
@@ -399,14 +399,6 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-490800",
-      "artist": "TAEMIN",
-      "date": "2026-11-24",
-      "country": "NL",
-      "venue": "AFAS Live",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-477377",
       "artist": "Chris Eckman",
       "date": "2026-11-25",
@@ -701,6 +693,14 @@
       "country": "NL",
       "venue": "Muziekgieterij",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-474504",
+      "artist": "Paradox Jazz Orchestra & James Carter",
+      "date": "2026-11-29",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
     }
   ]
 }

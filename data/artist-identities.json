@@ -864,6 +864,78 @@
       "deezerId": 9749880,
       "wikidata": "Q32836087",
       "checkedAt": "2026-11-09T14:04:14.081Z"
+    },
+    "prison religion": {
+      "name": "Prison Religion",
+      "mbid": "fb205c42-c426-42ee-a1f4-97fb0ff5c27a",
+      "mbName": "PRISON RELIGION",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://prisonreligion.bandcamp.com/",
+      "checkedAt": "2026-11-09T17:01:30.439Z"
+    },
+    "this is michael": {
+      "name": "This Is Michael",
+      "mbid": "66ea2663-c8e4-4df2-8895-e75e64bfff50",
+      "mbName": "This is Michael",
+      "country": "BR",
+      "disambiguation": "Michael Jackson Tribute Show",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-09T17:01:32.642Z"
+    },
+    "muna": {
+      "name": "Muna",
+      "mbid": "e64149f4-f8f1-41d0-84b6-a126b1e22962",
+      "mbName": "MUNA",
+      "country": "AR",
+      "disambiguation": "Argentine singer-songwriter",
+      "matchedBy": "unique-name",
+      "spotifyId": "6gJSu5koFkl0heSN8FfF5P",
+      "checkedAt": "2026-11-09T17:01:40.274Z"
+    },
+    "tribute to the cats band": {
+      "name": "Tribute to the Cats Band",
+      "mbid": "c859e6ab-c22a-4fcd-a910-024da9d3db54",
+      "mbName": "Tribute to The Cats Band",
+      "country": "NL",
+      "disambiguation": "Dutch tribute band",
+      "matchedBy": "unique-name",
+      "wikidata": "Q2626212",
+      "checkedAt": "2026-11-09T17:01:42.430Z"
+    },
+    "taemin": {
+      "name": "TAEMIN",
+      "mbid": "48652da5-f54c-4f65-9c11-0fc05df18075",
+      "mbName": "TAEMIN",
+      "country": "KR",
+      "disambiguation": "South Korean singer; SHINee",
+      "matchedBy": "unique-name",
+      "spotifyId": "13rF01aOogvnkuQXOlgTW8",
+      "deezerId": 7988496,
+      "homepage": "https://taemin-official.com/",
+      "wikidata": "Q153597",
+      "checkedAt": "2026-11-09T17:01:47.006Z"
+    },
+    "chris eckman": {
+      "name": "Chris Eckman",
+      "mbid": "7d8c36d5-3743-49ee-acd3-770e3ab5baac",
+      "mbName": "Chris Eckman",
+      "country": "US",
+      "matchedBy": "unique-name",
+      "spotifyId": "2Lc049MATwWRm2VpfB74YW",
+      "checkedAt": "2026-11-09T17:01:49.397Z"
+    },
+    "judith kiddo": {
+      "name": "Judith Kiddo",
+      "mbid": "1b77f389-35bc-437f-b845-15ff6386628e",
+      "mbName": "Judith Kiddo",
+      "country": "BE",
+      "disambiguation": "Belgian actress & vocalist",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://judithkiddo.bandcamp.com/",
+      "spotifyId": "0zmgqS8lHVypUSBvUogMgz",
+      "deezerId": 63946712,
+      "checkedAt": "2026-11-09T17:01:51.466Z"
     }
   },
   "attempted": {
@@ -952,8 +1024,8 @@
       "reason": "identified-without-free-photo"
     },
     "tribute to the cats band": {
-      "retryAfter": "2026-11-08",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
     },
     "schoolconcert vo": {
       "retryAfter": "2026-12-06",
@@ -1157,20 +1229,20 @@
       "reason": "not-found"
     },
     "prison religion": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
     },
     "this is michael": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
     },
     "de hardheid": {
       "retryAfter": "2026-12-22",
       "reason": "identified-without-free-photo"
     },
     "fondip": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
     },
     "beylerband": {
       "retryAfter": "2026-12-07",
@@ -1194,8 +1266,8 @@
       "reason": "identified-without-free-photo"
     },
     "muna": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
     },
     "omar doom": {
       "retryAfter": "2026-12-23",
@@ -1306,6 +1378,38 @@
       "reason": "HTTP 503"
     },
     "songwriter night": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "actie aletta": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "knoll": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "chris eckman": {
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
+    },
+    "judith kiddo": {
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
+    },
+    "lost": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "van asseldonk cartel": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "we all sing abba": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "club 3voor12 utrecht": {
       "retryAfter": "2026-11-11",
       "reason": "HTTP 503"
     }
