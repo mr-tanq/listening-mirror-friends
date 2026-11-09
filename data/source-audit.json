@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-09T14:05:08.219Z",
+  "catalogUpdatedAt": "2026-11-09T16:53:59.170Z",
   "auditedFor": "2026-11-09",
-  "totalPublished": 1895,
-  "greekPublished": 392,
+  "totalPublished": 1910,
+  "greekPublished": 399,
   "imageCoverage": {
-    "withImage": 1022,
-    "withoutImage": 873
+    "withImage": 1041,
+    "withoutImage": 869
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 392,
-      "withImage": 347,
-      "withoutImage": 45
+      "events": 399,
+      "withImage": 355,
+      "withoutImage": 44
     },
     "NL": {
-      "events": 1395,
-      "withImage": 668,
-      "withoutImage": 727
+      "events": 1403,
+      "withImage": 678,
+      "withoutImage": 725
     },
     "BE": {
       "events": 108,
-      "withImage": 7,
-      "withoutImage": 101
+      "withImage": 8,
+      "withoutImage": 100
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 26,
-      "withImage": 24,
+      "events": 27,
+      "withImage": 25,
       "withoutImage": 2,
-      "greekEvents": 26
+      "greekEvents": 27
     },
     "festivalinfo": {
       "events": 12,
@@ -44,52 +44,52 @@
       "greekEvents": 14
     },
     "fuzzclub-calendar": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
+      "events": 3,
+      "withImage": 3,
       "withoutImage": 0,
-      "greekEvents": 20
+      "greekEvents": 3
     },
     "more": {
-      "events": 263,
-      "withImage": 263,
+      "events": 284,
+      "withImage": 284,
       "withoutImage": 0,
-      "greekEvents": 263
+      "greekEvents": 284
     },
     "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 7,
+      "withImage": 7,
       "withoutImage": 0,
-      "greekEvents": 4
+      "greekEvents": 5
     },
     "podiuminfo-agenda": {
-      "events": 1206,
-      "withImage": 387,
-      "withoutImage": 819,
+      "events": 1207,
+      "withImage": 391,
+      "withoutImage": 816,
       "greekEvents": 0
     },
     "rocking": {
       "events": 61,
-      "withImage": 18,
-      "withoutImage": 43,
+      "withImage": 19,
+      "withoutImage": 42,
       "greekEvents": 61
     },
     "venue-official": {
-      "events": 283,
-      "withImage": 281,
+      "events": 290,
+      "withImage": 288,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 3,
+      "withImage": 3,
       "warning": null
     },
     "floyd-calendar": {
@@ -98,35 +98,25 @@
       "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 4,
-      "withImage": 4,
+      "published": 5,
+      "withImage": 5,
       "warning": null
     },
     "anclub-index": {
-      "published": 26,
-      "withImage": 24,
+      "published": 27,
+      "withImage": 25,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 30,
-      "withImage": 28,
+      "events": 31,
+      "withImage": 29,
       "sources": [
         "anclub-index",
         "rocking",
         "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205",
-      "events": 22,
-      "withImage": 22,
-      "sources": [
-        "gagarin-calendar",
-        "rocking",
-        "official"
       ]
     },
     {
@@ -139,8 +129,26 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 17,
-      "withImage": 17,
+      "events": 18,
+      "withImage": 18,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Fuzz Club",
+      "events": 16,
+      "withImage": 16,
+      "sources": [
+        "fuzzclub-calendar",
+        "official",
+        "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205 Live Music Space",
+      "events": 16,
+      "withImage": 16,
       "sources": [
         "more"
       ]
@@ -158,16 +166,6 @@
       "events": 14,
       "withImage": 14,
       "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Fuzz Club",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "fuzzclub-calendar",
-        "official",
         "more"
       ]
     },
@@ -277,6 +275,24 @@
       ]
     },
     {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
+      ]
+    },
+    {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 5,
       "withImage": 5,
@@ -286,14 +302,6 @@
     },
     {
       "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -359,7 +367,7 @@
     {
       "name": "We",
       "events": 3,
-      "withImage": 1,
+      "withImage": 2,
       "sources": [
         "rocking"
       ]
@@ -370,6 +378,14 @@
       "withImage": 1,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "Klakaz",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -419,33 +435,17 @@
       "sources": [
         "rocking"
       ]
-    },
-    {
-      "name": "OAKA - Olympic Velodrome",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Θεατρο Μεταξουργειο",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
     }
   ],
   "venueWarnings": {
-    "gagarin": "",
+    "gagarin": "Official venue calendar is not iCalendar",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "empty",
-    "message": "Official music category has no announced events",
+    "status": "unrecognized",
+    "message": "Official page structure not recognized",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }

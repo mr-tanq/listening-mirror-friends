@@ -1,52 +1,52 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T14:08:55.894Z",
-  "catalogUpdatedAt": "2026-11-09T14:05:08.219Z",
+  "generatedAt": "2026-11-09T16:57:26.535Z",
+  "catalogUpdatedAt": "2026-11-09T16:53:59.170Z",
   "auditedFor": "2026-11-09",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1902,
-    "eventPoster": 1032,
-    "artistPhoto": 542,
+    "total": 1912,
+    "eventPoster": 1043,
+    "artistPhoto": 541,
     "noImage": 328,
-    "posterWithPhotoBackup": 391
+    "posterWithPhotoBackup": 393
   },
   "byCountry": {
     "GR": {
-      "total": 392,
-      "eventPoster": 347,
-      "artistPhoto": 14,
+      "total": 399,
+      "eventPoster": 355,
+      "artistPhoto": 13,
       "noImage": 31,
-      "posterWithPhotoBackup": 36
+      "posterWithPhotoBackup": 37
     },
     "NL": {
-      "total": 1402,
-      "eventPoster": 678,
+      "total": 1405,
+      "eventPoster": 680,
       "artistPhoto": 462,
-      "noImage": 262,
+      "noImage": 263,
       "posterWithPhotoBackup": 350
     },
     "BE": {
       "total": 108,
-      "eventPoster": 7,
+      "eventPoster": 8,
       "artistPhoto": 66,
-      "noImage": 35,
-      "posterWithPhotoBackup": 5
+      "noImage": 34,
+      "posterWithPhotoBackup": 6
     }
   },
   "missingReasons": {
-    "artist-not-found": 115,
-    "album-cover-rejected": 108,
+    "artist-not-found": 119,
+    "album-cover-rejected": 109,
     "ambiguous-artist": 69,
     "other-lookup-cooldown": 20,
-    "not-in-artist-cache": 9,
+    "not-in-artist-cache": 4,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 679,
+      "deezer": 680,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -540,7 +540,7 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Melkweg",
-      "reason": "not-in-artist-cache"
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-496465",

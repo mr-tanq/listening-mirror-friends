@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-09T14:04:26.819Z"
+      "checkedAt": "2026-11-09T16:53:36.335Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-09T14:04:26.819Z"
+      "checkedAt": "2026-11-09T16:53:36.335Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-09T14:04:26.819Z"
+      "checkedAt": "2026-11-09T16:53:36.335Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-09T14:04:26.819Z"
+      "checkedAt": "2026-11-09T16:53:36.335Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8836,6 +8836,20 @@
       },
       "wikidata": "Q27897897",
       "checkedAt": "2026-11-09T14:04:26.370Z"
+    },
+    "night lovell": {
+      "name": "Night Lovell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/37644fa1cbd2bbf1f491e4d39981be52/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7295394,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7295394",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7295394"
+      },
+      "checkedAt": "2026-11-09T16:53:33.038Z"
     }
   },
   "attempted": {
@@ -10479,18 +10493,6 @@
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
     },
-    "giant rooks": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        412679941,
-        11476350
-      ]
-    },
-    "grimner waylander vansind": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "mono": {
       "retryAfter": "2027-01-08",
       "reason": "ambiguous-same-name",
@@ -10505,9 +10507,21 @@
         9286774
       ]
     },
-    "the brunnsvik sounds": {
+    "songwriter night": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
+    },
+    "exproz all night long": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "sub rosa label night": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "nationaal jeugd fanfare orkest": {
+      "retryAfter": "2026-12-09",
+      "reason": "album-cover-as-portrait"
     }
   },
   "wikimediaAttempted": {
@@ -11986,7 +12000,22 @@
       "retryAfter": "2026-12-24",
       "reason": "photo-license-or-size-rejected"
     },
-    "grimner waylander vansind": {
+    "songwriter night": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-24",
+      "reason": "no-confirmed-musician"
+    },
+    "exproz all night long": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-24",
+      "reason": "no-confirmed-musician"
+    },
+    "sub rosa label night": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-24",
+      "reason": "no-confirmed-musician"
+    },
+    "nationaal jeugd fanfare orkest": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"

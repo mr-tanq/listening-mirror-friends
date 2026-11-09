@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:08:30.740Z",
+  "generatedAt": "2026-11-09T16:57:20.136Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -2632,6 +2632,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-doornroosje-2026-12-26-house-classix",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/house-classix-9/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/20261226_HouseClassix_Banner_kleinformaat.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-effenaar-2026-12-26-legends-of-rock-tribute-festival-xl",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/legends-rock-tribute-festival-xl-0",
@@ -3946,6 +3955,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paradiso-2027-02-12-mr-cutts",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/mr-cutts/2952988",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DSCF4713-1793981921.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-500003",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/prince-daddy-the-hyena-12-02-27/",
@@ -4972,6 +4990,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paradiso-2027-03-12-ely-oaks",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/ely-oaks/2950569",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ely.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-03-12-hazlett",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/hazlett/2929730",
@@ -5021,6 +5048,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/wende-14/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-03-13-basht",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/basht/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-basht-1200x630.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5665,6 +5701,24 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paradiso-2027-04-04-fata-morgana",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/fata-morgana/2953105",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/fata-morgana-persfoto.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-04-wednesday-campanella",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/wednesday-campella-04-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/WCampella-press.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-04-05-buffalo-traffic-jam",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/buffalo-traffic-jam-across-the-pond-tour-27/2908586",
@@ -5714,6 +5768,33 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/hscc-7apr",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2025-11/%20%E2%80%93%20Square%20afbeelding%20only%20hindley%20str.png?itok=gihEOroY",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-08-edwin-evers-band-classics-tour",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/edwin-evers-band-08-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/eeb-classicstour-part2-post-square.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-08-ruben-hillen",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/134481/ruben-hillen",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Landscape-1.jpg?mtime=1779195587",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-08-the-elvis-concert-2027",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/132848/the-elvis-concert-2027",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/The-Elvis-Concert-2027.jpg?mtime=1792398182",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
