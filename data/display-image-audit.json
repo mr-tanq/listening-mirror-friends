@@ -1,52 +1,52 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T23:05:28.361Z",
-  "catalogUpdatedAt": "2026-11-08T23:02:07.647Z",
-  "auditedFor": "2026-11-08",
+  "generatedAt": "2026-11-09T14:08:55.894Z",
+  "catalogUpdatedAt": "2026-11-09T14:05:08.219Z",
+  "auditedFor": "2026-11-09",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
     "total": 1902,
-    "eventPoster": 1029,
-    "artistPhoto": 543,
-    "noImage": 330,
-    "posterWithPhotoBackup": 393
+    "eventPoster": 1032,
+    "artistPhoto": 542,
+    "noImage": 328,
+    "posterWithPhotoBackup": 391
   },
   "byCountry": {
+    "GR": {
+      "total": 392,
+      "eventPoster": 347,
+      "artistPhoto": 14,
+      "noImage": 31,
+      "posterWithPhotoBackup": 36
+    },
     "NL": {
       "total": 1402,
       "eventPoster": 678,
-      "artistPhoto": 460,
-      "noImage": 264,
-      "posterWithPhotoBackup": 353
+      "artistPhoto": 462,
+      "noImage": 262,
+      "posterWithPhotoBackup": 350
     },
     "BE": {
-      "total": 109,
-      "eventPoster": 6,
-      "artistPhoto": 69,
-      "noImage": 34,
-      "posterWithPhotoBackup": 4
-    },
-    "GR": {
-      "total": 391,
-      "eventPoster": 345,
-      "artistPhoto": 14,
-      "noImage": 32,
-      "posterWithPhotoBackup": 36
+      "total": 108,
+      "eventPoster": 7,
+      "artistPhoto": 66,
+      "noImage": 35,
+      "posterWithPhotoBackup": 5
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 111,
     "artist-not-found": 115,
-    "ambiguous-artist": 68,
-    "other-lookup-cooldown": 21,
-    "not-in-artist-cache": 8,
+    "album-cover-rejected": 108,
+    "ambiguous-artist": 69,
+    "other-lookup-cooldown": 20,
+    "not-in-artist-cache": 9,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 675,
+      "deezer": 679,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,32 +58,8 @@
       }
     }
   },
-  "missingNext14Days": 83,
+  "missingNext14Days": 80,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-459733",
-      "artist": "Celestial Season",
-      "date": "2026-11-08",
-      "country": "NL",
-      "venue": "Baroeg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "rocking-20261108-27562",
-      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
-      "date": "2026-11-08",
-      "country": "GR",
-      "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-484847",
-      "artist": "Le Guess Who? presents BLEAK SQUAD",
-      "date": "2026-11-08",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-490786",
       "artist": "Band Night - BeylerBand",
@@ -379,17 +355,33 @@
       "country": "NL",
       "venue": "Hall Of Fame",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-502013",
+      "artist": "Dylan Dunnink",
+      "date": "2026-11-16",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-478766",
+      "artist": "Faux Real",
+      "date": "2026-11-16",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-473993",
+      "artist": "Flower Face",
+      "date": "2026-11-16",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "album-cover-rejected"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-496060",
-      "artist": "Demo Club Bandnight Auks",
-      "date": "2026-11-23",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
     {
       "id": "venue-doornroosje-2026-11-24-actie-aletta",
       "artist": "Actie Aletta",
@@ -701,6 +693,14 @@
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-484042",
+      "artist": "METAL/CORE SUNDAY MATINEE | Mosaic | XII Thorns | Serve",
+      "date": "2026-11-29",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
     }
   ]
 }

@@ -851,6 +851,19 @@
       "deezerId": 365905452,
       "homepage": "https://www.exxul.ca/",
       "checkedAt": "2026-11-08T23:02:04.409Z"
+    },
+    "conway the machine": {
+      "name": "Conway the Machine",
+      "mbid": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
+      "mbName": "Conway the Machine",
+      "country": "",
+      "disambiguation": "New York / US Rapper",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://conwaythemachine.bandcamp.com/",
+      "spotifyId": "67gqUXxHedeUGDTxwBzdjS",
+      "deezerId": 9749880,
+      "wikidata": "Q32836087",
+      "checkedAt": "2026-11-09T14:04:14.081Z"
     }
   },
   "attempted": {
@@ -958,10 +971,6 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "celestial season": {
-      "retryAfter": "2026-11-10",
-      "reason": "fetch failed"
-    },
     "radar machine": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
@@ -1011,8 +1020,12 @@
       ]
     },
     "clobber": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-24",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "1bd509fb-b068-4604-9a70-5f3d470c7915",
+        "54a12bbe-0bea-458f-a61b-5e4ee4a1404d"
+      ]
     },
     "flora": {
       "retryAfter": "2026-12-22",
@@ -1128,12 +1141,12 @@
       "reason": "not-found"
     },
     "orsini": {
-      "retryAfter": "2026-11-09",
+      "retryAfter": "2026-11-11",
       "reason": "HTTP 503"
     },
     "dylan dunnink": {
-      "retryAfter": "2026-11-09",
-      "reason": "fetch failed"
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
     },
     "aupinard": {
       "retryAfter": "2026-12-22",
@@ -1160,10 +1173,6 @@
       "reason": "identified-without-free-photo"
     },
     "fondip": {
-      "retryAfter": "2026-11-09",
-      "reason": "HTTP 503"
-    },
-    "bleak squad": {
       "retryAfter": "2026-11-09",
       "reason": "HTTP 503"
     },

@@ -1,106 +1,7 @@
 {
-  "generatedAt": "2026-11-08T23:05:28.200Z",
+  "generatedAt": "2026-11-09T14:08:30.740Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-480757",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/brian-fallon-the-painkillers/2905094",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Brian-Fallon-Main-Image-Credit_-Danny-Clinch-1-1.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-487326",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/chali-2na-band-support-08-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/07/chali-2na.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-497845",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/desinteresse/2943553",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Jules-van-Eijs_Photo6-PRESS.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-452084",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/fischer-z/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/02/persfoto-fischer-z-web-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-457899",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/jeremy-pinnell",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-03/_%E2%80%93%20Square%20afbeelding%20onlyJP.png?itok=_6cvQj6S",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-463815",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/little-big-08-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/04/1900x1900-000000-80-0-0.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-449301",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/123995/m-kids",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/M-Kids-website.jpg?mtime=1765793793",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-494198",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/namesbliss/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/09/NAMESBLISS-600x600.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-483148",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/oi-va-voi",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/Oi%20Va%20Voi%20%E2%80%93%201920x1080%20Website.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-effenaar-2026-11-08-queen-s-pleasure",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/queens-pleasure",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Website%20queens%20plea.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paard-2026-11-08-stonewall-x-movies-that-matter",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/stonewall-movies-that-matter-2/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_stonewall-Movies_2Websiteheader.png?t=1793369781&t=1793369781",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-480259",
       "venue": "paradiso",
@@ -429,6 +330,15 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/vroegzat-13nov",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Websitevreogzat.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-489493",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/yndling/2917627",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Yndling-Foto-Ole-Onstad-28-1785505895.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4198,16 +4108,25 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-17-omasta",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/omasta/2944653",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/01_Omasta_photo-by-J%C4%99drek-Maczugowski.jpg",
+      "eventId": "podiuminfo-497210",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/grimner-waylander-vansind-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/09/WEBSITEHEADER-GRIMNER.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-17-wende",
+      "eventId": "podiuminfo-498910",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/omasta/2944653",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/01_Omasta_photo-by-J%C4%99drek-Maczugowski.jpg",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-494793",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/wende/2931984",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Wende-2027_2026-09-23-085201_ajek.jpg",

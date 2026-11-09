@@ -7934,7 +7934,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-08T23:02:07.627Z"
+      "checkedAt": "2026-11-09T14:04:26.819Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7946,7 +7946,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-08T23:02:07.627Z"
+      "checkedAt": "2026-11-09T14:04:26.819Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7966,7 +7966,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-08T23:02:07.627Z"
+      "checkedAt": "2026-11-09T14:04:26.819Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7978,7 +7978,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-08T23:02:07.627Z"
+      "checkedAt": "2026-11-09T14:04:26.819Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -8778,6 +8778,64 @@
         "url": "https://www.deezer.com/artist/1060182"
       },
       "checkedAt": "2026-11-08T22:49:44.893Z"
+    },
+    "jesper lindell": {
+      "name": "Jesper Lindell",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e79bc2c123b936c7dd9299efa54a15ec/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11915667,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/11915667",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11915667"
+      },
+      "checkedAt": "2026-11-09T14:04:08.625Z"
+    },
+    "koki nakano": {
+      "name": "Koki Nakano",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/86baafa4f8113023e5c420021bcad6d5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 10629429,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/10629429",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/10629429"
+      },
+      "checkedAt": "2026-11-09T14:04:09.015Z"
+    },
+    "conway the machine": {
+      "name": "Conway the Machine",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8dff08ff2d5162f65d9b44343f63e548/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9749880,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/9749880",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9749880"
+      },
+      "mbid": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
+      "checkedAt": "2026-11-09T14:04:15.007Z"
+    },
+    "giant rooks": {
+      "name": "Giant Rooks",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cd0783e778d67330df5baab1589452bd/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11476350,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/11476350",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11476350"
+      },
+      "wikidata": "Q27897897",
+      "checkedAt": "2026-11-09T14:04:26.370Z"
     }
   },
   "attempted": {
@@ -8806,10 +8864,6 @@
       "reason": "No unambiguous exact artist"
     },
     "bartofso": {
-      "retryAfter": "2026-12-05",
-      "reason": "No unambiguous exact artist"
-    },
-    "conway the machine": {
       "retryAfter": "2026-12-05",
       "reason": "No unambiguous exact artist"
     },
@@ -8871,10 +8925,6 @@
       ]
     },
     "mercy girl": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "celestial season": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
@@ -9202,8 +9252,9 @@
       "urgentRetried": true
     },
     "demo club bandnight auks": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-09",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "knoll": {
       "retryAfter": "2026-12-05",
@@ -10264,10 +10315,6 @@
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
     },
-    "bleak squad": {
-      "retryAfter": "2026-12-07",
-      "reason": "album-cover-as-portrait"
-    },
     "beylerband": {
       "retryAfter": "2026-12-07",
       "reason": "not-found",
@@ -10431,6 +10478,36 @@
     "hania derej": {
       "retryAfter": "2026-12-08",
       "reason": "album-cover-as-portrait"
+    },
+    "giant rooks": {
+      "retryAfter": "2027-01-08",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        412679941,
+        11476350
+      ]
+    },
+    "grimner waylander vansind": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
+    },
+    "mono": {
+      "retryAfter": "2027-01-08",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        3075,
+        9286974,
+        194550787,
+        170509957,
+        362160582,
+        371830,
+        9286846,
+        9286774
+      ]
+    },
+    "the brunnsvik sounds": {
+      "retryAfter": "2026-12-09",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -10453,11 +10530,6 @@
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
-    },
-    "celestial season": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-licensed-commons-photo"
     },
     "radar machine": {
       "strategyVersion": 4,
@@ -10493,11 +10565,6 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
-    },
-    "conway the machine": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "photo-license-or-size-rejected"
     },
     "prison religion": {
       "strategyVersion": 4,
@@ -11158,11 +11225,6 @@
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
-    },
-    "bleak squad": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-licensed-commons-photo"
     },
     "beylerband": {
       "strategyVersion": 5,
@@ -11917,6 +11979,16 @@
     "angelika niescier suzan veneman": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
+      "reason": "no-confirmed-musician"
+    },
+    "mono": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-24",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "grimner waylander vansind": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
     }
   },

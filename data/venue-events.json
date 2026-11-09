@@ -488,7 +488,7 @@
           }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "vera": {
       "access": {
@@ -1239,12 +1239,12 @@
           "checkedAt": "2026-11-06",
           "event": null
         },
-        "https://www.vera-groningen.nl/events/downstage-shaking-hand/": {
-          "checkedAt": "2026-11-06",
+        "https://www.vera-groningen.nl/events/basht-2027/": {
+          "checkedAt": "2026-11-09",
           "event": null
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "effenaar": {
       "access": {
@@ -1261,34 +1261,6 @@
             "startDate": "2027-01-28T20:30:00+01:00",
             "venueName": "Altstadt",
             "image": "https://d12y285rxlbnxt.cloudfront.net/2026-10/%20%E2%80%93%201920x1080%20Website%20gallus.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/oi-va-voi": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/oi-va-voi",
-            "title": "Oi Va Voi",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T20:00:00+01:00",
-            "venueName": "Kleine Zaal",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/Oi%20Va%20Voi%20%E2%80%93%201920x1080%20Website.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/jeremy-pinnell": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/jeremy-pinnell",
-            "title": "Jeremy Pinnell",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T17:00:00+01:00",
-            "venueName": "Café Wilhelmina",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-03/_%E2%80%93%20Square%20afbeelding%20onlyJP.png?itok=_6cvQj6S",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -1723,20 +1695,6 @@
             "startDate": "2027-04-25T19:00:00+01:00",
             "venueName": "Grote zaal",
             "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/Suicide%20Silence%20%E2%80%93%20Square%20afbeelding%20only.png?itok=xr82sJWI",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.effenaar.nl/agenda/queens-pleasure": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.effenaar.nl/agenda/queens-pleasure",
-            "title": "Queen's Pleasure",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T20:30:00+01:00",
-            "venueName": "Altstadt",
-            "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Website%20queens%20plea.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -2736,44 +2694,13 @@
           }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "patronaat": {
       "access": {
         "lastStatus": 200
       },
       "pages": {
-        "https://patronaat.nl/event/little-big-08-11-26/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://patronaat.nl/event/little-big-08-11-26/",
-            "title": "Little Big",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/04/1900x1900-000000-80-0-0.jpg",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
-        "https://patronaat.nl/event/chali-2na-band-support-08-11-26/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://patronaat.nl/event/chali-2na-band-support-08-11-26/",
-            "title": "Chali 2na & band + DJ Recip",
-            "performers": [
-              "Chali 2na & band",
-              "DJ Recip"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08",
-            "venueName": "",
-            "image": "https://patronaat.nl/app/uploads/2026/07/chali-2na.png",
-            "cancelled": false,
-            "via": "url-date+opengraph"
-          }
-        },
         "https://patronaat.nl/event/funk-legacy-allstars-featuring-candy-dulfer-x-nigel-hall-x-eric-benny-bloom-11-11-26/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -5055,9 +4982,23 @@
             "cancelled": false,
             "via": "url-date+opengraph"
           }
+        },
+        "https://patronaat.nl/event/wednesday-campella-04-04-27/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://patronaat.nl/event/wednesday-campella-04-04-27/",
+            "title": "Wednesday Campanella",
+            "performers": [],
+            "date": "2027-04-04",
+            "startDate": "2027-04-04",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/11/WCampella-press.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "paard": {
       "access": {
@@ -6044,34 +5985,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/namesbliss/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/namesbliss/",
-            "title": "NAMESBLISS",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T20:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/09/NAMESBLISS-600x600.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/namesbliss-2/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/namesbliss-2/",
-            "title": "NAMESBLISS",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T20:30",
-            "venueName": "Café",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/09/NAMESBLISS-600x600.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/het-goede-doel/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -7010,20 +6923,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/stonewall-movies-that-matter-2/": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paard.nl/event/stonewall-movies-that-matter-2/",
-            "title": "STONEWALL x MOVIES THAT MATTER",
-            "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T14:30",
-            "venueName": "GR8",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_stonewall-Movies_2Websiteheader.png?t=1793369781&t=1793369781",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/mick-flannery-3/": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -7220,22 +7119,92 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/stonewall-movies-that-matter/": {
-          "checkedAt": "2026-11-08",
+        "https://www.paard.nl/event/grimner-waylander-vansind-2/": {
+          "checkedAt": "2026-11-09",
           "event": {
-            "url": "https://www.paard.nl/event/stonewall-movies-that-matter/",
-            "title": "STONEWALL x MOVIES THAT MATTER",
+            "url": "https://www.paard.nl/event/grimner-waylander-vansind-2/",
+            "title": "GRIMNER, WAYLANDER & VANSIND",
             "performers": [],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T14:30",
-            "venueName": "GR8",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_stonewall-Movies_2Websiteheader.png",
+            "date": "2027-02-17",
+            "startDate": "2027-02-17T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/WEBSITEHEADER-GRIMNER.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/grimner-waylander-vansind/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paard.nl/event/grimner-waylander-vansind/",
+            "title": "GRIMNER, WAYLANDER & VANSIND",
+            "performers": [],
+            "date": "2027-02-17",
+            "startDate": "2027-02-17T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/WEBSITEHEADER-GRIMNER.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/the-bluesbones/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paard.nl/event/the-bluesbones/",
+            "title": "THE BLUESBONES",
+            "performers": [],
+            "date": "2027-09-09",
+            "startDate": "2027-09-09T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/The-bluesBones-e1793694546861.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/fiesta-macumba-48/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paard.nl/event/fiesta-macumba-48/",
+            "title": "FIESTA MACUMBA",
+            "performers": [],
+            "date": "2026-12-12",
+            "startDate": "2026-12-12T23:59",
+            "venueName": "Grolsch Zaal + Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/Websiteheader.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/fiesta-macumba-47/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paard.nl/event/fiesta-macumba-47/",
+            "title": "FIESTA MACUMBA",
+            "performers": [],
+            "date": "2026-12-12",
+            "startDate": "2026-12-12T23:59",
+            "venueName": "Grolsch Zaal + Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/Websiteheader.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/the-bluesbones-2/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paard.nl/event/the-bluesbones-2/",
+            "title": "THE BLUESBONES",
+            "performers": [],
+            "date": "2027-09-09",
+            "startDate": "2027-09-09T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/The-bluesBones-e1793694546861.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "013": {
       "access": {
@@ -9475,41 +9444,6 @@
         "lastStatus": 200
       },
       "pages": {
-        "https://www.paradiso.nl/programma/brian-fallon-the-painkillers/2905094": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/brian-fallon-the-painkillers/2905094",
-            "title": "Brian Fallon & The Painkillers + Chris Farren",
-            "performers": [
-              "Brian Fallon",
-              "Chris Farren"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Brian-Fallon-Main-Image-Credit_-Danny-Clinch-1-1.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/desinteresse/2943553": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/desinteresse/2943553",
-            "title": "Desinteresse + Crush Of Souls, De Vergissing",
-            "performers": [
-              "Desinteresse",
-              "De Vergissing",
-              "Crush Of Souls"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Jules-van-Eijs_Photo6-PRESS.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/boo-seeka/2906005": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -10648,38 +10582,6 @@
             "startDate": "2026-12-20T15:00:00+01:00",
             "venueName": "Paradiso",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Banner_compressed-1774365697.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/haute-freddy/2896237": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/haute-freddy/2896237",
-            "title": "Haute & Freddy + Cabbage",
-            "performers": [
-              "Haute & Freddy"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T19:00:00+01:00",
-            "venueName": "Bitterzoet",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/hautefreddy-2026.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/noha-sare/2907767": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/noha-sare/2907767",
-            "title": "Noha Saré",
-            "performers": [
-              "Noha Saré"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T19:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Noha-Sar%C3%A9_Paradiso-pic1-A2_website-1782459767.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -14824,9 +14726,139 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/leenalchi/2871903": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/leenalchi/2871903",
+            "title": "Leenalchi",
+            "performers": [
+              "Leenalchi"
+            ],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/LEENALCHI_by_Swan_Studio_Photo_03_c-1.jpg",
+            "cancelled": true,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/yndling/2917627": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/yndling/2917627",
+            "title": "Yndling",
+            "performers": [
+              "Yndling"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Yndling-Foto-Ole-Onstad-28-1785505895.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/rays-bday-paradiso-x-oedipus/2947505": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/rays-bday-paradiso-x-oedipus/2947505",
+            "title": "Paradiso x Oedipus: RAY'S BDAY",
+            "performers": [
+              "VALS ALARM",
+              "Gespuys",
+              "Paradiso dj-team"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T19:00:00+01:00",
+            "venueName": "Oedipus Craft Space",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ray-web-header.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/tina-dico/2752660": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/tina-dico/2752660",
+            "title": "Tina Dico",
+            "performers": [
+              "Tina Dico"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T19:30:00+01:00",
+            "venueName": "De Duif",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Tina-Dico-2026.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/basht/2932092": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/basht/2932092",
+            "title": "Basht.",
+            "performers": [
+              "Basht."
+            ],
+            "date": "2027-03-12",
+            "startDate": "2027-03-12T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/IMG_3471-1793969916.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/fata-morgana/2953105": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/fata-morgana/2953105",
+            "title": "Fata Morgana",
+            "performers": [
+              "Fata Morgana"
+            ],
+            "date": "2027-04-04",
+            "startDate": "2027-04-04T17:30:00+02:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/fata-morgana-persfoto.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/mr-cutts/2952988": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/mr-cutts/2952988",
+            "title": "Mr Cutts",
+            "performers": [
+              "Mr Cutts"
+            ],
+            "date": "2027-02-12",
+            "startDate": "2027-02-12T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DSCF4713-1793981921.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/ely-oaks/2950569": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/ely-oaks/2950569",
+            "title": "Ely Oaks",
+            "performers": [
+              "Ely Oaks"
+            ],
+            "date": "2027-03-12",
+            "startDate": "2027-03-12T22:59:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ely.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     },
     "doornroosje": {
       "access": {
@@ -14845,22 +14877,6 @@
             "startDate": "2026-12-03T20:00:00+00:00",
             "venueName": "Doornroosje - Paarse zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/03/20261203-kids-With-Buns-WEB2-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/fischer-z/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/fischer-z/",
-            "title": "Fischer-Z",
-            "performers": [
-              "Fischer-Z"
-            ],
-            "date": "2026-11-08",
-            "startDate": "2026-11-08T19:45:00+00:00",
-            "venueName": "Doornroosje - Rode zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/02/persfoto-fischer-z-web-1200x630.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -17948,9 +17964,41 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.doornroosje.nl/event/house-classix-9/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.doornroosje.nl/event/house-classix-9/",
+            "title": "House Classix",
+            "performers": [
+              "House Classix"
+            ],
+            "date": "2026-12-26",
+            "startDate": "2026-12-26T23:00:00+00:00",
+            "venueName": "Doornroosje",
+            "image": "https://www.doornroosje.nl/app/uploads/2026/11/20261226_HouseClassix_Banner_kleinformaat.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.doornroosje.nl/event/basht/": {
+          "checkedAt": "2026-11-09",
+          "event": {
+            "url": "https://www.doornroosje.nl/event/basht/",
+            "title": "Basht.",
+            "performers": [
+              "Basht."
+            ],
+            "date": "2027-03-13",
+            "startDate": "2027-03-13T20:30:00+00:00",
+            "venueName": "Doornroosje - Paarse zaal",
+            "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-basht-1200x630.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-08"
+      "listedAt": "2026-11-09"
     }
   }
 }

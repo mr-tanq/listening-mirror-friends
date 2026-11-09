@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-08T23:02:07.647Z",
-  "auditedFor": "2026-11-08",
-  "totalPublished": 1902,
-  "greekPublished": 391,
+  "catalogUpdatedAt": "2026-11-09T14:05:08.219Z",
+  "auditedFor": "2026-11-09",
+  "totalPublished": 1895,
+  "greekPublished": 392,
   "imageCoverage": {
-    "withImage": 1029,
+    "withImage": 1022,
     "withoutImage": 873
   },
   "imageCoverageByCountry": {
+    "GR": {
+      "events": 392,
+      "withImage": 347,
+      "withoutImage": 45
+    },
     "NL": {
-      "events": 1402,
-      "withImage": 678,
-      "withoutImage": 724
+      "events": 1395,
+      "withImage": 668,
+      "withoutImage": 727
     },
     "BE": {
-      "events": 109,
-      "withImage": 6,
-      "withoutImage": 103
-    },
-    "GR": {
-      "events": 391,
-      "withImage": 345,
-      "withoutImage": 46
+      "events": 108,
+      "withImage": 7,
+      "withoutImage": 101
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 25,
-      "withImage": 23,
+      "events": 26,
+      "withImage": 24,
       "withoutImage": 2,
-      "greekEvents": 25
+      "greekEvents": 26
     },
     "festivalinfo": {
       "events": 12,
@@ -38,10 +38,10 @@
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 13,
-      "withImage": 13,
+      "events": 14,
+      "withImage": 14,
       "withoutImage": 0,
-      "greekEvents": 13
+      "greekEvents": 14
     },
     "fuzzclub-calendar": {
       "events": 4,
@@ -50,51 +50,51 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 20
     },
     "more": {
-      "events": 262,
-      "withImage": 262,
+      "events": 263,
+      "withImage": 263,
       "withoutImage": 0,
-      "greekEvents": 262
+      "greekEvents": 263
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
-      "events": 1212,
-      "withImage": 394,
-      "withoutImage": 818,
+      "events": 1206,
+      "withImage": 387,
+      "withoutImage": 819,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 63,
-      "withImage": 19,
-      "withoutImage": 44,
-      "greekEvents": 63
+      "events": 61,
+      "withImage": 18,
+      "withoutImage": 43,
+      "greekEvents": 61
     },
     "venue-official": {
-      "events": 285,
-      "withImage": 283,
+      "events": 283,
+      "withImage": 281,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 13,
-      "withImage": 13,
+      "published": 14,
+      "withImage": 14,
       "warning": null
     },
     "fuzzclub-calendar": {
@@ -103,27 +103,20 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 25,
-      "withImage": 23,
+      "published": 26,
+      "withImage": 24,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 27,
-      "withImage": 25,
+      "events": 30,
+      "withImage": 28,
       "sources": [
         "anclub-index",
-        "rocking"
-      ]
-    },
-    {
-      "name": "Το Τρένο Στο Ρουφ",
-      "events": 22,
-      "withImage": 0,
-      "sources": [
-        "rocking"
+        "rocking",
+        "more"
       ]
     },
     {
@@ -137,6 +130,14 @@
       ]
     },
     {
+      "name": "Το Τρένο Στο Ρουφ",
+      "events": 21,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "ΙΛΙΟΝ Plus",
       "events": 17,
       "withImage": 17,
@@ -145,9 +146,17 @@
       ]
     },
     {
+      "name": "Floyd Live Music Venue",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "floyd-calendar"
+      ]
+    },
+    {
       "name": "Kyttaro Live",
-      "events": 15,
-      "withImage": 15,
+      "events": 14,
+      "withImage": 14,
       "sources": [
         "more"
       ]
@@ -169,14 +178,6 @@
       "sources": [
         "more",
         "rocking"
-      ]
-    },
-    {
-      "name": "Floyd Live Music Venue",
-      "events": 13,
-      "withImage": 13,
-      "sources": [
-        "floyd-calendar"
       ]
     },
     {
@@ -260,14 +261,6 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "gazarte roof stage",
       "events": 6,
       "withImage": 6,
@@ -300,6 +293,14 @@
       ]
     },
     {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Temple Athens",
       "events": 5,
       "withImage": 1,
@@ -324,6 +325,14 @@
       ]
     },
     {
+      "name": "Γυαλινο Μουσικο Θεατρο",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Universe | S-2000",
       "events": 4,
       "withImage": 4,
@@ -335,14 +344,6 @@
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
       "events": 4,
       "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Γυαλινο Μουσικο Θεατρο",
-      "events": 3,
-      "withImage": 3,
       "sources": [
         "more"
       ]
@@ -404,14 +405,6 @@
       ]
     },
     {
-      "name": "Gazarte",
-      "events": 2,
-      "withImage": 1,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "ROHAS ATHENS LIVE STAGE",
       "events": 2,
       "withImage": 2,
@@ -429,6 +422,14 @@
     },
     {
       "name": "OAKA - Olympic Velodrome",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Θεατρο Μεταξουργειο",
       "events": 2,
       "withImage": 2,
       "sources": [
