@@ -148,9 +148,11 @@ test('rate limiter never exceeds its window',async()=>{
  assert.deepEqual(starts,[0,0,1000,1000,2000]);
 });
 
-test('candidate selection ignores events that already have posters',()=>{
+test('candidate selection prioritizes missing photos, then collects poster backups',()=>{
  const c=selectArtistCandidates([{...ev('MONO'),image:'https://venue.test/p.jpg'},ev('Mogwai')],{artists:{}},{today:'2026-11-05'});
- assert.deepEqual(c.map(x=>x.key),['mogwai']);
+ assert.deepEqual(c.map(x=>x.key),['mogwai','mono']);
+ assert.equal(c[0].unpicturedCount,1);
+ assert.equal(c[1].unpicturedCount,0);
 });
 
 import {applyArtistImageOverrides} from '../scripts/artist-image-overrides.mjs';
