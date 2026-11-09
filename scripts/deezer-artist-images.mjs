@@ -15,10 +15,14 @@ import {artistKey,verifiedArtistPhoto,headlinerSearchNames,artistImageFor} from 
 import {createRateLimiter,isoDays} from './rate-limit.mjs';
 
 const GENERIC=/^(?:unknown|festival|various artists|special guests?|live music|concert|sold out|uitverkocht|tba|tbc|tbd|dj|djs|line ?up|open mic|jam session|karaoke|silent disco|quiz)$/i;
+// Generic event-night descriptions are not artist names. A standalone
+// "night" word, however, can legitimately belong to a band name (e.g.
+// Night Moves / The Night Flight Orchestra), so never reject it globally.
+const EVENT_NIGHT=/\b(?:open mic|jam session|band night|club night|music night|jazz night|metal night|rock night|tribute night|karaoke night|night of|nacht van)\b/i;
 export const goodName=name=>{
  const key=artistKey(name);
- return key.length>=2&&key.length<=75&&key.split(' ').length<=9&&!GENERIC.test(key)&&
-  !/(?:festival|\bfest\b|w\/|\swith\s|\sversus\s|\svs\s|\slive\sat\s|\bnight\b|\bnacht\b)/i.test(key);
+ return key.length>=2&&key.length<=75&&key.split(' ').length<=9&&!GENERIC.test(key)&&!EVENT_NIGHT.test(key)&&
+  !/(?:festival|\bfest\b|w\/|\swith\s|\sversus\s|\svs\s|\slive\sat\s)/i.test(key);
 };
 const md5Of=url=>(String(url||'').match(/\/images\/(?:artist|cover)\/([a-f0-9]{16,64})\//i)||[])[1]?.toLowerCase()||'';
 
