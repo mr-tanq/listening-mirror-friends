@@ -936,6 +936,29 @@
       "spotifyId": "0zmgqS8lHVypUSBvUogMgz",
       "deezerId": 63946712,
       "checkedAt": "2026-11-09T17:01:51.466Z"
+    },
+    "the ruins of beverast": {
+      "name": "The Ruins Of Beverast",
+      "mbid": "e4ff2368-1744-4048-a338-5a5782499644",
+      "mbName": "The Ruins of Beverast",
+      "country": "DE",
+      "disambiguation": "German black metal",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://theruinsofbeverast.bandcamp.com/",
+      "spotifyId": "1RtWv2DQzIGsnjHPXBRaR5",
+      "deezerId": 4081146,
+      "wikidata": "Q1562090",
+      "checkedAt": "2026-11-09T18:35:30.668Z"
+    },
+    "blood and sun": {
+      "name": "Blood and Sun",
+      "mbid": "2edcaaca-759b-41c3-87f9-d7e612b419a7",
+      "mbName": "Blood and Sun",
+      "country": "US",
+      "disambiguation": "US heathen folk",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://bloodandsun.bandcamp.com/",
+      "checkedAt": "2026-11-09T18:35:37.944Z"
     }
   },
   "attempted": {
@@ -1410,6 +1433,38 @@
       "reason": "not-found"
     },
     "club 3voor12 utrecht": {
+      "retryAfter": "2026-11-11",
+      "reason": "HTTP 503"
+    },
+    "hania derej trio": {
+      "retryAfter": "2026-11-11",
+      "reason": "fetch failed"
+    },
+    "luca st": {
+      "retryAfter": "2026-11-11",
+      "reason": "fetch failed"
+    },
+    "mobilhome": {
+      "retryAfter": "2026-11-11",
+      "reason": "fetch failed"
+    },
+    "the ruins of beverast": {
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
+    },
+    "zelie": {
+      "retryAfter": "2026-12-24",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "6a46ef30-fbe6-4889-9b9c-f128ef1488d0",
+        "36a1d6df-8d49-46a6-ba79-7b895bda1971"
+      ]
+    },
+    "blood and sun": {
+      "retryAfter": "2026-12-24",
+      "reason": "identified-without-free-photo"
+    },
+    "cobrah autumn": {
       "retryAfter": "2026-11-11",
       "reason": "HTTP 503"
     }

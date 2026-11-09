@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:06:43.390Z",
+  "generatedAt": "2026-11-09T18:39:33.493Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -4594,6 +4594,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-doornroosje-2027-02-27-jake-vaadeland",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/jake-vaadeland-2/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/Jake-vaadeland-persfoto_klein.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-effenaar-2027-02-27-vrij-gezellig",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/vrij-gezellig",
@@ -4743,6 +4752,15 @@
       "eventUrl": "https://patronaat.nl/event/rezn-04-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/07/REZN-_-SocialTemplates_REZN-CITID-Main-Press-Vertical-Portrait-819x1024.png",
       "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-03-04-wishy",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/wishy/2951061",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ddcd9541_Wishy-Cutout-Photo-Sensational-Video.jpg",
+      "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
     },

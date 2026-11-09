@@ -1,21 +1,21 @@
 {
-  "catalogUpdatedAt": "2026-11-09T17:03:22.359Z",
+  "catalogUpdatedAt": "2026-11-09T18:36:12.317Z",
   "auditedFor": "2026-11-09",
-  "totalPublished": 1910,
-  "greekPublished": 399,
+  "totalPublished": 1913,
+  "greekPublished": 400,
   "imageCoverage": {
-    "withImage": 1040,
-    "withoutImage": 870
+    "withImage": 1044,
+    "withoutImage": 869
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 399,
-      "withImage": 354,
-      "withoutImage": 45
+      "events": 400,
+      "withImage": 356,
+      "withoutImage": 44
     },
     "NL": {
-      "events": 1403,
-      "withImage": 678,
+      "events": 1405,
+      "withImage": 680,
       "withoutImage": 725
     },
     "BE": {
@@ -50,22 +50,22 @@
       "greekEvents": 5
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 20
     },
     "more": {
-      "events": 268,
-      "withImage": 268,
+      "events": 269,
+      "withImage": 269,
       "withoutImage": 0,
-      "greekEvents": 268
+      "greekEvents": 269
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1207,
@@ -80,16 +80,16 @@
       "greekEvents": 61
     },
     "venue-official": {
-      "events": 290,
-      "withImage": 288,
+      "events": 292,
+      "withImage": 290,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -120,6 +120,16 @@
       ]
     },
     {
+      "name": "Gagarin 205",
+      "events": 22,
+      "withImage": 22,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
+      ]
+    },
+    {
       "name": "Το Τρένο Στο Ρουφ",
       "events": 21,
       "withImage": 0,
@@ -129,8 +139,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 18,
-      "withImage": 18,
+      "events": 19,
+      "withImage": 19,
       "sources": [
         "more"
       ]
@@ -428,14 +438,14 @@
     }
   ],
   "venueWarnings": {
-    "gagarin": "Official venue calendar is not iCalendar",
+    "gagarin": "",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "unrecognized",
-    "message": "Official page structure not recognized",
+    "status": "empty",
+    "message": "Official music category has no announced events",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }

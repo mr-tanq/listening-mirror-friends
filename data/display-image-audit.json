@@ -1,32 +1,32 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T17:06:48.857Z",
-  "catalogUpdatedAt": "2026-11-09T17:03:22.359Z",
+  "generatedAt": "2026-11-09T18:39:33.734Z",
+  "catalogUpdatedAt": "2026-11-09T18:36:12.317Z",
   "auditedFor": "2026-11-09",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1912,
-    "eventPoster": 1042,
+    "total": 1913,
+    "eventPoster": 1044,
     "artistPhoto": 543,
-    "noImage": 327,
-    "posterWithPhotoBackup": 429
+    "noImage": 326,
+    "posterWithPhotoBackup": 464
   },
   "byCountry": {
     "GR": {
-      "total": 399,
-      "eventPoster": 354,
-      "artistPhoto": 14,
+      "total": 400,
+      "eventPoster": 356,
+      "artistPhoto": 13,
       "noImage": 31,
-      "posterWithPhotoBackup": 70
+      "posterWithPhotoBackup": 88
     },
     "NL": {
       "total": 1405,
       "eventPoster": 680,
-      "artistPhoto": 463,
-      "noImage": 262,
-      "posterWithPhotoBackup": 353
+      "artistPhoto": 464,
+      "noImage": 261,
+      "posterWithPhotoBackup": 370
     },
     "BE": {
       "total": 108,
@@ -37,7 +37,7 @@
     }
   },
   "missingReasons": {
-    "artist-not-found": 119,
+    "artist-not-found": 118,
     "album-cover-rejected": 109,
     "ambiguous-artist": 68,
     "other-lookup-cooldown": 20,
@@ -46,14 +46,14 @@
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 716,
+      "deezer": 750,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 36,
+      "attempted": 38,
       "failuresByReason": {
-        "artist-not-in-provider": 30,
-        "photo-license-not-confirmed": 3,
+        "artist-not-in-provider": 31,
+        "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
@@ -687,19 +687,19 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-484042",
-      "artist": "METAL/CORE SUNDAY MATINEE | Mosaic | XII Thorns | Serve",
-      "date": "2026-11-29",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
-    {
       "id": "podiuminfo-474504",
       "artist": "Paradox Jazz Orchestra & James Carter",
       "date": "2026-11-29",
       "country": "NL",
       "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-476509",
+      "artist": "Haunt Me",
+      "date": "2026-11-30",
+      "country": "NL",
+      "venue": "Paradiso",
       "reason": "album-cover-rejected"
     }
   ]
