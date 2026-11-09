@@ -27,22 +27,29 @@ export const goodName=name=>{
 const md5Of=url=>(String(url||'').match(/\/images\/(?:artist|cover)\/([a-f0-9]{16,64})\//i)||[])[1]?.toLowerCase()||'';
 
 /**
- * Upcoming NL/BE/GR events without a poster or cached photo, expanded into
- * headliner names. Sorted so names with the most concerts go first.
+ * Upcoming NL/BE/GR events needing a verified performer portrait, including
+ * posters that lack an artist-photo fallback. Always prioritize shows with
+ * NO usable image over optional poster backups in the shared provider queue.
  */
 export function selectArtistCandidates(events,artistCache,{today=new Date().toISOString().slice(0,10)}={}){
  const all=new Map();
  for(const event of events||[]){
-  if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today||event.image)continue;
+  if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today)continue;
   if(artistImageFor(event,artistCache))continue;
+  const missingPoster=!event.image;
   const variants=headlinerSearchNames(event).filter(goodName);
   // Shared headliner parsing avoids spending finite provider budget on
   // "band night - act", presenter titles or multi-artist bill strings.
   variants.forEach((name,rank)=>{
    const key=artistKey(name);
    const priority=rank;
-   const row=all.get(key)||{name,key,count:0,rank:priority,nextDate:event.date,country:event.country,genre:event.genre||''};
+   const row=all.get(key)||{name,key,count:0,unpicturedCount:0,rank:priority,nextDate:event.date,country:event.country,genre:event.genre||''};
    row.count++;row.rank=Math.min(row.rank,priority);
+   if(missingPoster){
+    row.unpicturedCount++;
+    // Dates for the no-poster queue must not be displaced by poster-backed shows.
+    if(!row.firstUnpicturedDate||event.date<row.firstUnpicturedDate)row.firstUnpicturedDate=event.date;
+   }
    if(event.date<row.nextDate)row.nextDate=event.date;
    all.set(key,row);
   });
@@ -53,9 +60,11 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
  urgentUntil.setUTCDate(urgentUntil.getUTCDate()+14);
  const cutoff=urgentUntil.toISOString().slice(0,10);
  return [...all.values()].sort((a,b)=>
-  Number(b.nextDate<=cutoff)-Number(a.nextDate<=cutoff) ||
-  a.rank-b.rank || b.count-a.count ||
-  a.nextDate.localeCompare(b.nextDate) || a.key.localeCompare(b.key));
+  Number(b.unpicturedCount>0)-Number(a.unpicturedCount>0) ||
+  Number((b.firstUnpicturedDate||b.nextDate)<=cutoff)-Number((a.firstUnpicturedDate||a.nextDate)<=cutoff) ||
+  a.rank-b.rank || b.unpicturedCount-a.unpicturedCount || b.count-a.count ||
+  (a.firstUnpicturedDate||a.nextDate).localeCompare(b.firstUnpicturedDate||b.nextDate) ||
+  a.key.localeCompare(b.key));
 }
 
 /** Pick one unambiguous exact-name artist from a Deezer /search/artist payload. */
