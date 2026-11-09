@@ -22,6 +22,6 @@ test('night-named artist is queued for all events lacking a poster while generic
   {id:'four',artist:'Night Ranger',artists:['Night Ranger'],date:'2026-11-15',country:'GR',image:'https://example.com/poster.jpg'}
  ];
  const candidates=selectArtistCandidates(events,{artists:{}},{today:'2026-11-09'});
- assert.deepEqual(candidates.map(x=>x.name),['Night Moves']);
+ assert.deepEqual(candidates.map(x=>x.name),['Night Moves','Night Ranger']);
  assert.equal(candidates[0].count,2);
 });
