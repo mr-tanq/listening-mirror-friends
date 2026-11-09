@@ -30,7 +30,7 @@ test('verified participant photo is correctly credited, and poster still takes p
  assert.equal(chosen.name,'Mosaic');
  const result=resolveConcertImage(event,cache);
  assert.equal(result.url,portrait);
- assert.match(result.credit.text,/Photo of Mosaic \\(billed act\\)/);
+ assert.ok(result.credit.text.includes('Photo of Mosaic (billed act)'));
  const poster={...event,image:'https://example.org/official-poster.jpg'};
  assert.equal(resolveConcertImage(poster,cache).url,poster.image);
  assert.deepEqual(resolveConcertImageBackups(poster,cache).map(x=>x.url),[portrait,portrait2]);
