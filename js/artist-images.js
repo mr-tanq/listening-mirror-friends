@@ -73,11 +73,11 @@ export function explicitlyBilledArtists(event){
  // "METAL/CORE SUNDAY MATINEE | Mosaic | XII Thorns | Serve".
  // Do not confuse arbitrary pipes (marketing text, venue, times) with a lineup.
  // The leading programme name is NOT a performer and never gets an artist photo.
- if(/\\s+\\|\\s+/.test(title)){
-  const segments=title.split(/\\s+\\|\\s+/).map(x=>x.trim());
+ if(/\s+\|\s+/.test(title)){
+  const segments=title.split(/\s+\|\s+/).map(x=>x.trim());
   const series=segments[0];
   const names=segments.slice(1);
-  const isSeries=/\\b(?:matinee|showcase|band night|club night|music night|concert night|gig night|line[ -]?up|festival|fest|sessions?)\\b/iu.test(series);
+  const isSeries=/\b(?:matinee|showcase|band night|club night|music night|concert night|gig night|line[ -]?up|festival|fest|sessions?)\b/iu.test(series);
   return segments.length>=3&&segments.length<=6&&isSeries&&distinct(names)?names:[];
  }
  // Slash billings require whitespace around the divider: AC/DC stays intact.
