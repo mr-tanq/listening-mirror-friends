@@ -84,15 +84,6 @@
       "sourceUrl": "https://www.deezer.com/artist/79536",
       "checkedAt": "2026-07-29T11:50:20.850Z"
     },
-    "korn": {
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
-      "name": "Korn",
-      "source": "deezer",
-      "kind": "artist-photo",
-      "deezerId": 267400112,
-      "sourceUrl": "https://www.deezer.com/artist/267400112",
-      "checkedAt": "2026-07-29T11:50:22.097Z"
-    },
     "deep purple": {
       "image": "https://cdn-images.dzcdn.net/images/artist/7e0f1ed0bd551dd9d8941bd9f21271b2/1000x1000-000000-80-0-0.jpg",
       "name": "Deep Purple",
@@ -6418,21 +6409,6 @@
       "mbid": "6ac275dd-eb37-42cf-9a60-6b147320c7be",
       "checkedAt": "2026-11-06T05:42:41.264Z"
     },
-    "greek": {
-      "name": "greek",
-      "source": "deezer",
-      "kind": "artist-photo",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
-      "deezerId": 1113999,
-      "matchedBy": "musicbrainz-link",
-      "sourceUrl": "https://www.deezer.com/artist/1113999",
-      "credit": {
-        "text": "Photo via Deezer",
-        "url": "https://www.deezer.com/artist/1113999"
-      },
-      "mbid": "9308287d-5840-487d-8891-58a6d3fe09d9",
-      "checkedAt": "2026-11-06T05:42:44.823Z"
-    },
     "kodaline": {
       "name": "Kodaline",
       "source": "deezer",
@@ -7948,7 +7924,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-10T10:50:42.445Z"
+      "checkedAt": "2026-11-10T13:04:35.638Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7960,7 +7936,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-10T10:50:42.445Z"
+      "checkedAt": "2026-11-10T13:04:35.638Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7980,7 +7956,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-10T10:50:42.445Z"
+      "checkedAt": "2026-11-10T13:04:35.638Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7992,7 +7968,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-10T10:50:42.445Z"
+      "checkedAt": "2026-11-10T13:04:35.638Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -9931,21 +9907,6 @@
       },
       "checkedAt": "2026-11-10T03:21:14.406Z"
     },
-    "mono": {
-      "name": "MONO",
-      "source": "deezer",
-      "kind": "artist-photo",
-      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
-      "deezerId": 9286774,
-      "matchedBy": "musicbrainz-link",
-      "sourceUrl": "https://www.deezer.com/artist/9286774",
-      "credit": {
-        "text": "Photo via Deezer",
-        "url": "https://www.deezer.com/artist/9286774"
-      },
-      "mbid": "93efd85f-2184-4aa1-b8de-eb7ca99e301b",
-      "checkedAt": "2026-11-10T03:21:29.103Z"
-    },
     "marou": {
       "name": "MAROU",
       "source": "deezer",
@@ -10057,6 +10018,501 @@
         "url": "https://www.deezer.com/artist/86243822"
       },
       "checkedAt": "2026-11-10T10:50:17.837Z"
+    },
+    "fulci": {
+      "name": "Fulci",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/847bd27062c97f87533e5cf059db9960/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4595093,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4595093",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4595093"
+      },
+      "checkedAt": "2026-11-10T13:02:42.617Z"
+    },
+    "thomas azier": {
+      "name": "Thomas Azier",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d9e9b4fab569bbedc30cef7c193786fb/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 3607571,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/3607571",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/3607571"
+      },
+      "checkedAt": "2026-11-10T13:02:43.631Z"
+    },
+    "eric vloeimans": {
+      "name": "Eric Vloeimans",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/89d0f87cdaffb5a9b3f15878c28f9860/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1004601,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1004601",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1004601"
+      },
+      "checkedAt": "2026-11-10T13:02:44.690Z"
+    },
+    "blood for blood": {
+      "name": "Blood For Blood",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7d9905aabb5d9d27aa86d95f4e7efb53/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2973,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2973",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2973"
+      },
+      "checkedAt": "2026-11-10T13:02:46.069Z"
+    },
+    "dorian concept": {
+      "name": "Dorian Concept",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e66fa49ba5bf4d29fafa0a2db669a50a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 252956,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/252956",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/252956"
+      },
+      "checkedAt": "2026-11-10T13:02:46.430Z"
+    },
+    "knuckledust": {
+      "name": "Knuckledust",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1b904569eab755af67620af67aff03ec/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 180385,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/180385",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/180385"
+      },
+      "checkedAt": "2026-11-10T13:02:46.993Z"
+    },
+    "nashville pussy": {
+      "name": "Nashville Pussy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f0ac568409cb2d1e659033373583536b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5868,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5868",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5868"
+      },
+      "checkedAt": "2026-11-10T13:02:47.345Z"
+    },
+    "angel crew": {
+      "name": "Angel Crew",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/2854f27731cd1bfc8f74ac35f012b203/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 146844,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/146844",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/146844"
+      },
+      "checkedAt": "2026-11-10T13:02:47.761Z"
+    },
+    "gogo penguin": {
+      "name": "GoGo Penguin",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/75854c1917e555e817df8acf7b64a7d9/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4052492,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4052492",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4052492"
+      },
+      "checkedAt": "2026-11-10T13:02:48.172Z"
+    },
+    "lander adriaan": {
+      "name": "Lander & Adriaan",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/05bc98a947d325aa03f9dcc61eff5427/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 158861972,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/158861972",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/158861972"
+      },
+      "checkedAt": "2026-11-10T13:02:48.857Z"
+    },
+    "ramkot": {
+      "name": "Ramkot",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8077f057ee9a8cd97eb5de75ada8e7cc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 78837572,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/78837572",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/78837572"
+      },
+      "checkedAt": "2026-11-10T13:02:50.749Z"
+    },
+    "earth crisis": {
+      "name": "Earth Crisis",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1f555ae643cb264cc344c865c5495ebf/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1322,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1322",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1322"
+      },
+      "checkedAt": "2026-11-10T13:02:51.066Z"
+    },
+    "maddie ashman": {
+      "name": "Maddie Ashman",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/38e54bbbc37ab5845f9bd1d71ee1ca53/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 65366282,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/65366282",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/65366282"
+      },
+      "checkedAt": "2026-11-10T13:02:51.403Z"
+    },
+    "youth of today": {
+      "name": "Youth of Today",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d0f72ab6b8745d8001bff1571fe751b1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 555888,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/555888",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/555888"
+      },
+      "checkedAt": "2026-11-10T13:02:52.287Z"
+    },
+    "the lords of altamont": {
+      "name": "The Lords of Altamont",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d2bbcc41e529c6fc595c3f8e527d7c33/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11066,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/11066",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11066"
+      },
+      "checkedAt": "2026-11-10T13:02:52.661Z"
+    },
+    "prince daddy": {
+      "name": "Prince Daddy",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9cb9e6311c6e9ab37f8817225b37d585/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 777822,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/777822",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/777822"
+      },
+      "checkedAt": "2026-11-10T13:02:56.905Z"
+    },
+    "the ivy league": {
+      "name": "The Ivy League",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c36b1e8b6d427fa784856760ad8e1981/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 123454,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/123454",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/123454"
+      },
+      "checkedAt": "2026-11-10T13:02:59.144Z"
+    },
+    "nine inch nails": {
+      "name": "Nine Inch Nails",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cb15e0065ad89b90f688a250f46001f4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 407,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/407",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/407"
+      },
+      "checkedAt": "2026-11-10T13:03:00.439Z"
+    },
+    "the hirsch effekt": {
+      "name": "The Hirsch Effekt",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bea4375be3cf6969935baf1dc1bc52bc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 561151,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/561151",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/561151"
+      },
+      "checkedAt": "2026-11-10T13:03:04.536Z"
+    },
+    "methodica": {
+      "name": "Methodica",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f5d8c061a4498b44e6f725461516db4a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1045115,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1045115",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1045115"
+      },
+      "checkedAt": "2026-11-10T13:03:07.414Z"
+    },
+    "marilyn manson": {
+      "name": "Marilyn Manson",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9c29670dd8067bf2cc1f15c1909fb58a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 482,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/482",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/482"
+      },
+      "checkedAt": "2026-11-10T13:03:07.904Z"
+    },
+    "bruno berle": {
+      "name": "Bruno Berle",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b489c5faf438c014a86a637e06b3a267/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7374992,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7374992",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7374992"
+      },
+      "checkedAt": "2026-11-10T13:03:10.258Z"
+    },
+    "grote geelstaart": {
+      "name": "Grote Geelstaart",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a066333094e7faa1d560aaa5444ee6ad/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 280770931,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/280770931",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/280770931"
+      },
+      "checkedAt": "2026-11-10T13:03:11.715Z"
+    },
+    "slaughterday": {
+      "name": "Slaughterday",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/495bd13b1aac7d51daab438e0767fbff/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4534233,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4534233",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4534233"
+      },
+      "checkedAt": "2026-11-10T13:03:12.075Z"
+    },
+    "weird omen": {
+      "name": "Weird Omen",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8c03e153b88176edc441f883dba283ff/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6745723,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/6745723",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6745723"
+      },
+      "checkedAt": "2026-11-10T13:03:12.860Z"
+    },
+    "ontaard": {
+      "name": "ONtaard",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/39845837ed0d38b02dc2b9e94673d876/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 181024127,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/181024127",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/181024127"
+      },
+      "checkedAt": "2026-11-10T13:03:14.771Z"
+    },
+    "dumama": {
+      "name": "Dumama",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/270373c4e69e1e5a408f803d6dcbee96/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 57598792,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/57598792",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/57598792"
+      },
+      "checkedAt": "2026-11-10T13:03:15.266Z"
+    },
+    "firebreather": {
+      "name": "Firebreather",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7d32773de1c1022a023b4a91794a12d0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13341063,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13341063",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13341063"
+      },
+      "checkedAt": "2026-11-10T13:03:17.231Z"
+    },
+    "fulu miziki": {
+      "name": "Fulu Miziki",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/13225d53e45755c19957d669c15efa01/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 137783632,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/137783632",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/137783632"
+      },
+      "checkedAt": "2026-11-10T13:03:18.596Z"
+    },
+    "the grey": {
+      "name": "The Grey",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b4c8dcce8e726f637a9b0784bdf98c0c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1587299,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1587299",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1587299"
+      },
+      "checkedAt": "2026-11-10T13:03:20.840Z"
+    },
+    "eagles of death metal": {
+      "name": "Eagles of Death Metal",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/f32fd17797ac8bacfd24945ef486aff4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5508,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/5508",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5508"
+      },
+      "wikidata": "Q1276886",
+      "checkedAt": "2026-11-10T13:03:45.189Z"
+    },
+    "amenra": {
+      "name": "Amenra",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/57cb09f361d17c59ae1fdc5ee98b1294/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 170152,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/170152",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/170152"
+      },
+      "wikidata": "Q2238317",
+      "checkedAt": "2026-11-10T13:03:57.035Z"
+    },
+    "demented are go": {
+      "name": "Demented Are Go!",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1b92180585fb5fb495a970a311f6b728/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 161621,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/161621",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/161621"
+      },
+      "wikidata": "Q494215",
+      "checkedAt": "2026-11-10T13:04:04.157Z"
+    },
+    "cock sparrer": {
+      "name": "Cock Sparrer",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/afa3f955092865b53ee9410154989c69/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 3929,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/3929",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/3929"
+      },
+      "wikidata": "Q600311",
+      "checkedAt": "2026-11-10T13:04:10.551Z"
+    },
+    "sam gendel": {
+      "name": "Sam Gendel",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6b314389e4b554dfa6b91c98dfdb8c43/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 6975217,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/6975217",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/6975217"
+      },
+      "wikidata": "Q105356824",
+      "checkedAt": "2026-11-10T13:04:21.237Z"
     }
   },
   "attempted": {
@@ -11935,16 +12391,19 @@
       "urgentRetried": true
     },
     "horal": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "italiano party": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "nostalgic vibes by dj timo": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "peacock": {
       "retryAfter": "2026-12-09",
@@ -11960,16 +12419,18 @@
       ]
     },
     "popronde 2026": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "psychobreak": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
     },
     "red bull soundclash": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "stk": {
       "retryAfter": "2027-01-08",
@@ -11982,20 +12443,24 @@
       ]
     },
     "ελεονορα μανονα": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ιωαννα καβρουλακη": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ταξιδι στον χρονο με το ρεμπετικο": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "χαρης νικολαιδης": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "andri j": {
       "retryAfter": "2027-01-08",
@@ -12022,8 +12487,9 @@
       ]
     },
     "fred wesley generations": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "president": {
       "retryAfter": "2027-01-08",
@@ -12040,12 +12506,14 @@
       ]
     },
     "the 3 tenors": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "γ μπιθικωτσης γ πουλοπουλος τ βοσκοπουλος": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "δημητρης γαλακτοπουλος": {
       "retryAfter": "2026-12-09",
@@ -12764,10 +13232,6 @@
       "reason": "not-found"
     },
     "οι ρυθμοι της νοτιας αμερικης": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "φιλανθρωπικη συναυλια": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
@@ -14463,6 +14927,645 @@
     "my turn 40 χρονια an club": {
       "retryAfter": "2026-12-10",
       "reason": "not-found"
+    },
+    "greek": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        100014992,
+        368378202,
+        368379372,
+        368378752
+      ]
+    },
+    "mono": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        3075,
+        9286774,
+        371830,
+        362160582,
+        9286846,
+        170509957,
+        194550787,
+        9286974
+      ]
+    },
+    "any kind": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "kwoon for the first time in 14 years": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "emmet cohen quintet": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "peter pan speedrock": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "jehovah on death": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "sam gendel": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        250210572,
+        6975217,
+        283841081,
+        250210562
+      ]
+    },
+    "michael jackson project": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "mustbejohn": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        125419722,
+        412707181
+      ]
+    },
+    "film": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "jeremy pelt quintet": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "temple fang": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "loma": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        86080,
+        12221348
+      ]
+    },
+    "eagles of death metal": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        5508,
+        413942931
+      ]
+    },
+    "cabal": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        97169822,
+        283410,
+        14206465,
+        97102492,
+        203545937,
+        203546197,
+        421705702,
+        203546027
+      ]
+    },
+    "lucenthia": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "kamerata zuid spelen einaudi": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "no turning back": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the moonlovers the doors": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "funeral dress": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "backfire": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        180384,
+        258798
+      ]
+    },
+    "vespel": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "converge": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        2986,
+        84976812,
+        874232
+      ]
+    },
+    "amenra": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        170152,
+        386223651
+      ]
+    },
+    "true colors": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        186521407,
+        119459,
+        186521397,
+        186521767
+      ]
+    },
+    "morpheus": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        300461821,
+        58234,
+        300461011,
+        300462101,
+        246366352,
+        300461891,
+        300461781,
+        116887882,
+        166422077,
+        221535055
+      ]
+    },
+    "murphy s law": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        248582,
+        150422692,
+        11623483
+      ]
+    },
+    "club guy roni": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "path of resistance": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "demented are go": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        161621,
+        8178
+      ]
+    },
+    "wouter van veldhoven": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "cock sparrer": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        3929,
+        407505792
+      ]
+    },
+    "myra ida van der veen": {
+      "retryAfter": "2026-12-10",
+      "reason": "no-photo",
+      "deezerCandidates": [
+        96409472
+      ]
+    },
+    "la novia": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "apollo brown": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        352569032,
+        1264158,
+        301841121
+      ]
+    },
+    "the protos snackbar apeshit": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "prins s en de geit met residentie orkest": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "mosaic": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        156694872,
+        403525202,
+        582267,
+        271362762,
+        72390252
+      ]
+    },
+    "ζηνα ασλανιδου σαμολης στο christmas theater": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "gripin live": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "the venanzio brothers italo disco night": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "nu art orchestra": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "death angel": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        7103,
+        293403631,
+        293403981
+      ]
+    },
+    "david j bauhaus": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "everlast": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        10897000,
+        3490
+      ]
+    },
+    "pete roth trio": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "one vision of queen": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "alcest agriculture": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "boundaries supports": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "neurosis": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        2981,
+        59317752,
+        131026902
+      ]
+    },
+    "kraanium": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the amsterdam string ensemble": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "moses yoofee": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "στραφι": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "metropole orkest wainwright does weill": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "symphony by scream inc": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "golden caves": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the prodigal sons": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "widersin": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the hyena": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "fellatio": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the brunnsvik sounds": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "the brunnsvick sounds": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "slomosa": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "suffering quota": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "serve": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        191530147,
+        373716641,
+        9449164
+      ]
+    },
+    "sanoya": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "korn": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "infected minds": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "burial": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        71690712,
+        10294722,
+        8816624,
+        92821952,
+        6281,
+        165444137
+      ]
+    },
+    "naga kirana": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "parts labor": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "vulvectomy": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "izegrim": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "fauna": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        112798132,
+        148677
+      ]
+    },
+    "bismut": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "ian": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        415205812,
+        60253,
+        341413861,
+        333974761
+      ]
+    },
+    "basement torture killings": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "severe torture": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "savage": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        76775262,
+        142456302,
+        76777192,
+        76775202,
+        76776452,
+        76777032,
+        83044,
+        121582352,
+        245682842,
+        196572847
+      ]
+    },
+    "heath": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        258545712,
+        365369
+      ]
+    },
+    "rotzorg": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "gorerotted": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "susobrino": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "kulk": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "coalmine canary": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "desaster": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "aufhebung": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "iron lung": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "deafened to death": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "insurrection": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        240267561,
+        5222809
+      ]
+    },
+    "antropoceno": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "xoxo": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        394634881,
+        484278,
+        6458533,
+        421894002
+      ]
+    },
+    "the crown": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        428268,
+        322215071,
+        126742272,
+        126742252
+      ]
+    },
+    "gros coeur": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "rhododendron": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1703229,
+        417999342,
+        417999332,
+        417999352
+      ]
+    },
+    "bliepbloep": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "nervosa": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1693145,
+        189183207
+      ]
+    },
+    "fidju kitxora": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "sadness": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        390982051,
+        1688805,
+        373966121,
+        390181421,
+        392774691,
+        390286271,
+        393303771,
+        393954931,
+        399342361,
+        399907631
+      ]
+    },
+    "bone ripper": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "muco": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "zebulon": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        161283,
+        76971852,
+        84333202
+      ]
+    },
+    "trha": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "phrymerial": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "schammasch": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "mahala": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "steroid": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1596375,
+        399901611
+      ]
     }
   },
   "wikimediaAttempted": {
@@ -16390,6 +17493,106 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-25",
       "reason": "no-confirmed-musician"
+    },
+    "any kind": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "peter pan speedrock": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "jehovah on death": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "no turning back": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-licensed-commons-photo"
+    },
+    "funeral dress": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "path of resistance": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-08",
+      "reason": "ambiguous-musical-identity"
+    },
+    "wouter van veldhoven": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "greek": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-licensed-commons-photo"
+    },
+    "temple fang": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-licensed-commons-photo"
+    },
+    "kwoon for the first time in 14 years": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "emmet cohen quintet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "michael jackson project": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "mustbejohn": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "film": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "βασιλικη μιχαλοπουλου": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "δυο ψυχες": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ετεροτοπια": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "κωστας χατζης daniela": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μπλε 20 νοεμβριοy rohas athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ο σπυρος γραμμενος στο κυτταρο": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
@@ -16565,6 +17768,18 @@
       "reason": "artist-not-in-provider"
     },
     "bartofso": {
+      "retryAfter": "2027-02-08",
+      "reason": "artist-not-in-provider"
+    },
+    "greek": {
+      "retryAfter": "2027-02-08",
+      "reason": "artist-not-in-provider"
+    },
+    "mono": {
+      "retryAfter": "2027-02-08",
+      "reason": "artist-not-in-provider"
+    },
+    "munly the lupercalians": {
       "retryAfter": "2027-02-08",
       "reason": "artist-not-in-provider"
     }

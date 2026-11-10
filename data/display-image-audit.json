@@ -1,36 +1,36 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T10:54:25.888Z",
-  "catalogUpdatedAt": "2026-11-10T10:50:51.911Z",
+  "generatedAt": "2026-11-10T13:08:07.410Z",
+  "catalogUpdatedAt": "2026-11-10T13:04:42.282Z",
   "auditedFor": "2026-11-10",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1921,
-    "eventPoster": 1049,
-    "artistPhoto": 545,
-    "noImage": 327,
+    "total": 1924,
+    "eventPoster": 1052,
+    "artistPhoto": 541,
+    "noImage": 331,
     "posterWithPhotoBackup": 470
   },
   "byCountry": {
     "NL": {
-      "total": 1414,
-      "eventPoster": 689,
-      "artistPhoto": 464,
-      "noImage": 261,
+      "total": 1416,
+      "eventPoster": 691,
+      "artistPhoto": 462,
+      "noImage": 263,
       "posterWithPhotoBackup": 379
     },
     "BE": {
       "total": 110,
       "eventPoster": 7,
-      "artistPhoto": 68,
-      "noImage": 35,
+      "artistPhoto": 66,
+      "noImage": 37,
       "posterWithPhotoBackup": 5
     },
     "GR": {
-      "total": 397,
-      "eventPoster": 353,
+      "total": 398,
+      "eventPoster": 354,
       "artistPhoto": 13,
       "noImage": 31,
       "posterWithPhotoBackup": 86
@@ -39,26 +39,26 @@
   "missingReasons": {
     "album-cover-rejected": 112,
     "artist-not-found": 115,
-    "ambiguous-artist": 69,
+    "ambiguous-artist": 73,
     "other-lookup-cooldown": 20,
     "not-in-artist-cache": 4,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 766,
+      "deezer": 798,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 40,
+      "attempted": 43,
       "failuresByReason": {
-        "artist-not-in-provider": 33,
+        "artist-not-in-provider": 36,
         "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
   },
-  "missingNext14Days": 80,
+  "missingNext14Days": 81,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-499977",
@@ -391,6 +391,14 @@
       "reason": "album-cover-rejected"
     },
     {
+      "id": "podiuminfo-482073",
+      "artist": "Greek",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
+    },
+    {
       "id": "podiuminfo-494889",
       "artist": "Judith Kiddo - Melissa Weikart",
       "date": "2026-11-25",
@@ -693,14 +701,6 @@
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498838",
-      "artist": "Gambling With Goodwill en Bad Joke",
-      "date": "2026-12-02",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "artist-not-found"
     }
   ]
 }

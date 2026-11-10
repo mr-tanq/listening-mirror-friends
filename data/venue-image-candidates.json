@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T10:54:12.953Z",
+  "generatedAt": "2026-11-10T13:08:03.725Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -763,6 +763,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2026-11-20-film",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/film-jazz-on-a-summers-day/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/liggend-paard-1-copy.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-458531",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/frank-boeijen-20/",
@@ -1072,6 +1081,15 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/laura-cox-support-26-11-26/",
       "image": "https://patronaat.nl/app/uploads/2025/12/LAURA-COX24008-copie2_LiRodaGil-scaled-e1765802140689.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2026-11-26-minor-operations-bookings-presents-the-protos-snackbar-apesh",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/1000047214-scaled-e1794306460295.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -3742,6 +3760,15 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/heather-nova/2927142",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/HeatherNova-CREDIT-LOUISE-ROBERTS-1788508074.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-02-03-everlast",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/everlast-europe-2027/2953537",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Everlast-new-DSP-profile-pic_LMG-1794246030.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

@@ -989,6 +989,15 @@
       "spotifyId": "2rzAQ9Tph2BwfW3vfS0KnS",
       "deezerId": 9286774,
       "checkedAt": "2026-11-10T03:21:28.168Z"
+    },
+    "munly the lupercalians": {
+      "name": "Munly & The Lupercalians",
+      "mbid": "03860c86-bde6-4bd8-9726-bed9ca151d24",
+      "mbName": "Munly & The Lupercalians",
+      "country": "",
+      "matchedBy": "unique-name",
+      "spotifyId": "0GYgu8NyVpXbTmqJ5Rqwsu",
+      "checkedAt": "2026-11-10T13:03:30.679Z"
     }
   },
   "attempted": {
@@ -1499,6 +1508,46 @@
       "reason": "fetch failed"
     },
     "lil peep 30th birthday celebration": {
+      "retryAfter": "2026-11-12",
+      "reason": "HTTP 503"
+    },
+    "greek": {
+      "retryAfter": "2026-12-25",
+      "reason": "identified-without-free-photo"
+    },
+    "mono": {
+      "retryAfter": "2026-12-25",
+      "reason": "identified-without-free-photo"
+    },
+    "luca": {
+      "retryAfter": "2026-12-25",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "072b8936-bbbb-40a2-96d0-ade53671d1c3",
+        "314dbbf5-8068-4389-b649-37eaf2cc5c21"
+      ]
+    },
+    "lucky done gone": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "meatallica the art of pantera": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "munly the lupercalians": {
+      "retryAfter": "2026-12-25",
+      "reason": "identified-without-free-photo"
+    },
+    "nothhingspecial": {
+      "retryAfter": "2026-12-25",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "7b92ed1b-749c-4de4-a5bc-f9e94620c58f",
+        "e29ebd7c-9f15-4151-8aea-cb01e46a7ff2"
+      ]
+    },
+    "dub hub": {
       "retryAfter": "2026-11-12",
       "reason": "HTTP 503"
     }

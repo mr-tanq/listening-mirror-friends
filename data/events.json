@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T10:50:51.911Z",
+  "updatedAt": "2026-11-10T13:04:42.282Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -6840,7 +6840,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paard.nl/event/film-jazz-on-a-summers-day/"
+      "officialUrl": "https://www.paard.nl/event/film-jazz-on-a-summers-day/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-472851",
@@ -10421,7 +10426,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/mob-nov-26-26-11-26/"
+      "officialUrl": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-457842",
@@ -11438,6 +11448,30 @@
       }
     },
     {
+      "id": "venue-paard-2026-11-27-paardcafe-gettin-80s-90s-wit-it",
+      "artist": "Paardcafé: Gettin’ 80s 90s Wit It!",
+      "artists": [
+        "Paardcafé: Gettin’ 80s 90s Wit It!"
+      ],
+      "date": "2026-11-27",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-78/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/80S90S-WEB-HEADER-02.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paard",
+        "url": "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-78/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-78/"
+    },
+    {
       "id": "podiuminfo-502012",
       "artist": "Phantom Wizard",
       "artists": [
@@ -11927,6 +11961,30 @@
       "image": "https://www.more.com/getattachment/DA846BE5-2A4C-4621-A4DF-453A32F3C759/evg_endlessmadnessmaquinaptmo_1236_5933.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "venue-paard-2026-11-28-film",
+      "artist": "FILM",
+      "artists": [
+        "FILM"
+      ],
+      "date": "2026-11-28",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paard.nl/event/film-summer-of-soul-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/liggend-paard-2-copy-1.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paard",
+        "url": "https://www.paard.nl/event/film-summer-of-soul-2/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paard.nl/event/film-summer-of-soul-2/"
     },
     {
       "id": "podiuminfo-478220",
@@ -12913,7 +12971,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "fuzzclub-2026-11-29-nile",
+      "id": "more-0d87290e89a45107",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -13621,6 +13679,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "more-8890567abc635ec9",
+      "artist": "ΖΗΝΑ-ΑΣΛΑΝΙΔΟΥ-ΣΑΜΟΛΗΣ ΣΤΟ CHRISTMAS THEATER",
+      "artists": [
+        "ΖΗΝΑ-ΑΣΛΑΝΙΔΟΥ-ΣΑΜΟΛΗΣ ΣΤΟ CHRISTMAS THEATER"
+      ],
+      "date": "2026-11-30",
+      "venue": "CHRISTMAS THEATER",
+      "city": "Galatsi",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/filanthropiki-synaulia-aslanidou-zina-samolis/",
+      "image": "https://www.more.com/getattachment/F7C399AA-0401-4BAA-9AD0-2B01FAA1698B/evg_philanthropikesunauliaasl_1622_6044.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-502d69ab1d95cbae",
       "artist": "ΟΙ ΡΥΘΜΟΙ ΤΗΣ ΝΟΤΙΑΣ ΑΜΕΡΙΚΗΣ",
       "artists": [
@@ -13634,23 +13709,6 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/oi-rythmoi-tis-notias-amerikis/",
       "image": "https://www.more.com/getattachment/527A221F-D914-42CF-983C-A29EB9D969BC/evg_adagiosfromtheunderground_1252_1320.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "more-8890567abc635ec9",
-      "artist": "ΦΙΛΑΝΘΡΩΠΙΚΗ ΣΥΝΑΥΛΙΑ",
-      "artists": [
-        "ΦΙΛΑΝΘΡΩΠΙΚΗ ΣΥΝΑΥΛΙΑ"
-      ],
-      "date": "2026-11-30",
-      "venue": "CHRISTMAS THEATER",
-      "city": "Galatsi",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/filanthropiki-synaulia-aslanidou-zina-samolis/",
-      "image": "https://www.more.com/getattachment/F7C399AA-0401-4BAA-9AD0-2B01FAA1698B/evg_philanthropikesunauliaasl_1622_6044.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -15714,6 +15772,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "more-2e3745c4b6874b63",
+      "artist": "THE VENANZIO BROTHERS ITALO DISCO NIGHT",
+      "artists": [
+        "THE VENANZIO BROTHERS ITALO DISCO NIGHT"
+      ],
+      "date": "2026-12-04",
+      "venue": "Kapani Market",
+      "city": "Metaksourgeio",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/the-venanzio-brothers-italo-disco-night/",
+      "image": "https://www.more.com/getattachment/5CAB38B0-415F-4458-91A3-0FC33AEE736B/evg_thevenanziobrothersitalod_1154_6031.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-481947",
@@ -23505,7 +23580,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-4e6fa66eb79bcb54",
+      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -23968,7 +24043,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
+      "id": "more-e2a0c911d8965d4c",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -30990,7 +31065,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.paradiso.nl/programma/everlast-europe-2027/2953537",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-461059",
@@ -32302,7 +32382,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2027-02-07-%CE%B2%CE%B7%CF%84%CE%B1%20%CF%80%CE%B5%CE%B9%CF%82%2040%20%CF%87%CF%81%CE%BF%CE%BD%CE%B9%CE%B1%20an",
+      "id": "more-8c02486335e8b81d",
       "artist": "ΒΗΤΑ ΠΕΙΣ - ''40 ΧΡΟΝΙΑ AN CLUB''",
       "artists": [
         "ΒΗΤΑ ΠΕΙΣ - ''40 ΧΡΟΝΙΑ AN CLUB''"
@@ -38812,8 +38892,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
-      "artist": "IGORRR",
+      "id": "more-20a9413358deac99",
+      "artist": "Igorrr",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38825,11 +38905,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "",
+      "subgenre": "Avant-Garde Metal",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "official",
+      "verification": "venue-page"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38913,7 +38993,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-03-20-u%20k%20subs",
+      "id": "more-9256f6cbb9511c7d",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40950,7 +41030,7 @@
       }
     },
     {
-      "id": "anclub-2027-04-10-oh%20hiroshima",
+      "id": "more-98f8e3f69d11b04a",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -41148,17 +41228,17 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 397,
+    "greeceEvents": 398,
     "greeceFeedError": "",
     "rockingEvents": 61,
     "rockingWarning": "",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1212,
     "festivalEvents": 13,
-    "officialVenueEvents": 6,
+    "officialVenueEvents": 7,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 46,
+    "sameVenueDuplicatesMerged": 50,
     "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -41175,61 +41255,61 @@
       "remainingWithoutImage": 818
     },
     "artistPhotoCache": {
-      "artists": 770,
+      "artists": 802,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 830,
-        "requests": 35,
-        "found": 8,
-        "notFound": 17,
-        "ambiguous": 0,
-        "coverRejected": 2,
+        "candidates": 960,
+        "requests": 229,
+        "found": 30,
+        "notFound": 87,
+        "ambiguous": 34,
+        "coverRejected": 48,
         "errors": 0,
-        "skipped": 805,
+        "skipped": 809,
         "urgentRetriesUsed": 12,
-        "photos": 770
+        "photos": 797
       },
       "identity": {
-        "candidates": 822,
-        "processed": 2,
-        "identified": 0,
-        "ambiguous": 0,
-        "notFound": 0,
+        "candidates": 930,
+        "processed": 8,
+        "identified": 1,
+        "ambiguous": 2,
+        "notFound": 2,
         "commons": 0,
         "deezerLinked": 0,
-        "errors": 2
+        "errors": 1
       },
       "wikimedia": {
-        "candidates": 462,
+        "candidates": 545,
         "attempted": 25,
-        "found": 0,
-        "noMatch": 25,
-        "ambiguous": 0,
-        "licenceRejected": 0,
+        "found": 5,
+        "noMatch": 16,
+        "ambiguous": 1,
+        "licenceRejected": 3,
         "errors": 0,
-        "depictsQueries": 0,
+        "depictsQueries": 11,
         "depictsFound": 0,
-        "categoryQueries": 0,
+        "categoryQueries": 5,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 0,
+        "subcategoryQueries": 5,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 0,
-        "linkedDeezerFound": 0,
+        "linkedDeezerChecks": 11,
+        "linkedDeezerFound": 5,
         "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0,
         "linkedMbidVerified": 0,
         "linkedMbidConflicts": 0
       },
       "audioDb": {
-        "eligible": 40,
-        "attempted": 0,
+        "eligible": 43,
+        "attempted": 3,
         "found": 0,
         "licenseMissing": 0,
         "identityRejected": 0,
-        "notInProvider": 0,
+        "notInProvider": 3,
         "ambiguousProvider": 0,
         "invalidPayload": 0,
         "missingPhoto": 0,
@@ -41238,7 +41318,7 @@
         "diagnosticRetried": 0
       }
     },
-    "gagarinCalendarEvents": 20,
+    "gagarinCalendarEvents": 19,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -41252,18 +41332,18 @@
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 818,
-    "taggedArtists": 955,
+    "genreTaggedEvents": 819,
+    "taggedArtists": 956,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-10T10:54:12.953Z",
-    "catalogueEvents": 1918,
-    "officialMatches": 656,
-    "imagesPublished": 622,
+    "updatedAt": "2026-11-10T13:08:03.725Z",
+    "catalogueEvents": 1922,
+    "officialMatches": 659,
+    "imagesPublished": 625,
     "imageCandidatesPending": 34,
-    "imagesDirectLinked": 625,
-    "discoveredEvents": 3,
+    "imagesDirectLinked": 627,
+    "discoveredEvents": 2,
     "venueEventsRemoved": {
       "duplicate": 0,
       "policy": 0,
@@ -41272,10 +41352,10 @@
       "gone": 0,
       "nonConcert": 0
     },
-    "venueEventsPublished": 297,
+    "venueEventsPublished": 299,
     "venueGenresFromCache": 0,
     "venueGenresTagged": 114,
     "reviewedOfficialArtworkApplied": 1,
-    "venueGenreLookups": 3
+    "venueGenreLookups": 1
   }
 }
