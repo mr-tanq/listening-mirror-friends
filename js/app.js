@@ -1,8 +1,8 @@
-import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=photo-recovery-v2';
+import { recommendEvent, dateToday, norm, cityKey, normalizeEvent, safeUrl, GENRES, COUNTRIES } from './model.js?v=festival-lineup-fallback-v1';
 import {mergeTasteTags,seedDeciding,suggestedNiches} from './taste-engine.js?v=discovery-v5';
 import {createOnboarding} from './onboarding.js?v=discovery-v5';
 import {mountDecidingDeck,openConcertDetail} from './deciding-deck.js?v=multi-photo-fallback-v1';
-import {verifiedArtistPhoto,resolveConcertImage,resolveConcertImageBackups} from './artist-images.js?v=multi-photo-fallback-v1';
+import {verifiedArtistPhoto,resolveConcertImage,resolveConcertImageBackups} from './artist-images.js?v=festival-lineup-fallback-v1';
 import {concertImageFallbacks} from './image-fallback-chain.js?v=multi-photo-fallback-v1';
 import {applyVerifiedOfficialArtwork} from './verified-official-artwork.js?v=official-fixes-v1';
 import {watchConcertImage,imageLoadReport,recordRenderedConcert} from './image-load-diagnostics.js?v=rendered-v3';
