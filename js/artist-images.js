@@ -311,7 +311,8 @@ export function verifiedArtistPhoto(raw){
    return u.pathname.startsWith('/img/artist/')&&/\.(?:jpe?g|png|webp)$/i.test(u.pathname)?u.href:'';
   // Public high-resolution Deezer ARTIST images (never track/album covers).
   if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
-   return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
+   return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)&&
+    !/^\/images\/artist\/d41d8cd98f00b204e9800998ecf8427e\//i.test(u.pathname)?u.href:'';
   // TheAudioDB only accepts *artist thumbnails* from their official CDN.
   // The collector separately validates an identical MusicBrainz artist ID,
   // an explicit compatible Creative Commons grant and source attribution.
@@ -332,6 +333,18 @@ const safeCredit=credit=>{
  try{const u=new URL(credit.url);if(u.protocol==='https:')url=u.href;}catch{}
  return text?{text,url}:undefined;
 };
+/** Discard unusable stored artist images before provider discovery.
+ * Invalid legacy entries must not keep their name permanently 'resolved'.
+ * Preserve good photos, all independent provider cooldowns and manual blocks.
+ */
+export function pruneInvalidArtistPhotos(existing){
+ const artists={...(existing?.artists||{})};
+ let removed=0;
+ for(const [key,entry] of Object.entries(artists)){
+  if(entry?.image&&!verifiedArtistPhoto(entry.image)){delete artists[key];removed++;}
+ }
+ return {cache:{...(existing||{}),artists},removed};
+}
 export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toISOString()}={}){
  const artists={...(existing?.artists||{})};let added=0;
  for(const record of records||[]){
