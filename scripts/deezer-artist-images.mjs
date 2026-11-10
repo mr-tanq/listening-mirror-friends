@@ -35,19 +35,25 @@ export function selectArtistCandidates(events,artistCache,{today=new Date().toIS
  const all=new Map();
  for(const event of events||[]){
   if(!['NL','BE','GR'].includes(event?.country)||!event.date||event.date<today)continue;
-  if(artistImageFor(event,artistCache))continue;
-  const missingPoster=!event.image;
+  const hasVerifiedPhoto=Boolean(artistImageFor(event,artistCache));
+  const missingPrimary=!event.image&&!hasVerifiedPhoto;
   const variants=headlinerSearchNames(event).filter(goodName);
+  // Once one act has a verified photo, a one-act show is complete.
+  // In a multi-act bill, still look for the other confirmed performers to
+  // provide real browser fallbacks if the first photo cannot load.
+  if(hasVerifiedPhoto&&variants.length<2)continue;
   // Shared headliner parsing avoids spending finite provider budget on
   // "band night - act", presenter titles or multi-artist bill strings.
   variants.forEach((name,rank)=>{
    const key=artistKey(name);
+   if(verifiedArtistPhoto(artistCache?.artists?.[key]?.image))return;
    const priority=rank;
    const row=all.get(key)||{name,key,count:0,unpicturedCount:0,rank:priority,nextDate:event.date,country:event.country,genre:event.genre||''};
    row.count++;row.rank=Math.min(row.rank,priority);
-   if(missingPoster){
+   if(missingPrimary){
     row.unpicturedCount++;
-    // Dates for the no-poster queue must not be displaced by poster-backed shows.
+    // Dates for the truly image-less queue must not be displaced by
+    // already pictured shows seeking additional backup portraits.
     if(!row.firstUnpicturedDate||event.date<row.firstUnpicturedDate)row.firstUnpicturedDate=event.date;
    }
    if(event.date<row.nextDate)row.nextDate=event.date;

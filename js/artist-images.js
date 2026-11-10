@@ -303,6 +303,14 @@ export function headlinerNames(event){
 }
 
 const WIKIMEDIA_PATH=/^\/wikipedia\/commons\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/[^/]+\.(?:jpe?g|png|webp)(?:\/\d+px-[^/]+\.(?:jpe?g|png|webp))?$/i;
+// Deezer's MD5-of-empty thumbnail is a provider placeholder, not a photo.
+export const isEmptyDeezerImage=raw=>{
+ try{
+  const u=new URL(raw);
+  return ['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname)&&
+   /^\/images\/artist\/d41d8cd98f00b204e9800998ecf8427e\//i.test(u.pathname);
+ }catch{return false;}
+};
 export function verifiedArtistPhoto(raw){
  try{
   const u=new URL(raw);
@@ -311,7 +319,8 @@ export function verifiedArtistPhoto(raw){
    return u.pathname.startsWith('/img/artist/')&&/\.(?:jpe?g|png|webp)$/i.test(u.pathname)?u.href:'';
   // Public high-resolution Deezer ARTIST images (never track/album covers).
   if(['cdn-images.dzcdn.net','e-cdns-images.dzcdn.net'].includes(u.hostname))
-   return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)?u.href:'';
+   return /^\/images\/artist\/[a-f0-9]{16,64}\/\d+x\d+-[\w.-]+\.jpg$/i.test(u.pathname)&&
+    !isEmptyDeezerImage(u.href)?u.href:'';
   // TheAudioDB only accepts *artist thumbnails* from their official CDN.
   // The collector separately validates an identical MusicBrainz artist ID,
   // an explicit compatible Creative Commons grant and source attribution.
@@ -332,6 +341,18 @@ const safeCredit=credit=>{
  try{const u=new URL(credit.url);if(u.protocol==='https:')url=u.href;}catch{}
  return text?{text,url}:undefined;
 };
+/** Discard unusable stored artist images before provider discovery.
+ * Invalid legacy entries must not keep their name permanently 'resolved'.
+ * Preserve good photos, all independent provider cooldowns and manual blocks.
+ */
+export function pruneInvalidArtistPhotos(existing){
+ const artists={...(existing?.artists||{})};
+ let removed=0;
+ for(const [key,entry] of Object.entries(artists)){
+  if(entry?.image&&!verifiedArtistPhoto(entry.image)){delete artists[key];removed++;}
+ }
+ return {cache:{...(existing||{}),artists},removed};
+}
 export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toISOString()}={}){
  const artists={...(existing?.artists||{})};let added=0;
  for(const record of records||[]){
@@ -395,7 +416,11 @@ function photoCreditFor(found){
   (existing?.text||'Artist photo'),url:existing?.url||found.entry.sourceUrl||''});
 }
 export function resolveConcertImage(event,artistImages){
- if(event?.image)return {url:event.image,kind:event.imageKind==='artist-photo'?'artist-photo':'event-poster'};
+ // Old event snapshots can embed an invalid provider 'artist' thumbnail.
+ // Do not preserve it as though it were a genuine concert poster.
+ if(event?.image&&!isEmptyDeezerImage(event.image)&&
+  (event.imageKind!=='artist-photo'||verifiedArtistPhoto(event.image)))
+  return {url:event.image,kind:event.imageKind==='artist-photo'?'artist-photo':'event-poster'};
  const found=artistImageFor(event,artistImages);
  if(!found)return {url:'',kind:'fallback'};
  const credit=photoCreditFor(found);
