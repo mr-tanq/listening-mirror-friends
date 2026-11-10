@@ -408,7 +408,10 @@ function photoCreditFor(found){
   (existing?.text||'Artist photo'),url:existing?.url||found.entry.sourceUrl||''});
 }
 export function resolveConcertImage(event,artistImages){
- if(event?.image)return {url:event.image,kind:event.imageKind==='artist-photo'?'artist-photo':'event-poster'};
+ // Old event snapshots can embed an invalid provider 'artist' thumbnail.
+ // Do not preserve it as though it were a genuine concert poster.
+ if(event?.image&&(event.imageKind!=='artist-photo'||verifiedArtistPhoto(event.image)))
+  return {url:event.image,kind:event.imageKind==='artist-photo'?'artist-photo':'event-poster'};
  const found=artistImageFor(event,artistImages);
  if(!found)return {url:'',kind:'fallback'};
  const credit=photoCreditFor(found);
