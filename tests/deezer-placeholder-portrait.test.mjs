@@ -45,3 +45,10 @@ test('expired provider placeholders must not hide real secondary performer portr
  assert.equal(chosen.url,real);
  assert.match(chosen.credit.text,/Mogwai/);
 });
+
+test('archived artist-thumbnail placeholder is not treated as a real event poster',()=>{
+ const embedded={...event('MONO'),image:placeholder,imageKind:'artist-photo'};
+ assert.equal(resolveConcertImage(embedded,{artists:{}}).kind,'fallback');
+ assert.equal(resolveConcertImage(embedded,{artists:{mono:{image:real}}}).url,real);
+ assert.equal(resolveConcertImage({...embedded,imageKind:'event-poster'},{}).url,placeholder);
+});
