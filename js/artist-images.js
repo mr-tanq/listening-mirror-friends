@@ -30,7 +30,7 @@ const SERIES_DASH=/^(?:band\s+night|open[\s-]+mic(?:\s+night)?|club\s+night|arti
 const EVENT_SUFFIX=/\b(?:album|tour|anniversary|special guests?|line[\s-]?up|tickets?|afterparty|new\s+record|presents?)\b/iu;
 // Explicit show descriptors sometimes follow the act without punctuation.
 // Do not strip arbitrary two-word endings or numerals in actual band names.
-const SHOW_TRAILER=/\s+(?:\d{1,3}\s+(?:jaar|years?)\s+(?:live|tour|jubileum|anniversary)|extended\s+set)$/iu;
+const SHOW_TRAILER=/\s+(?:\d{1,3}\s+(?:jaar|years?)\s+(?:live|tour|jubileum|anniversary)|extended\s+set|all\s+night\s+long)$/iu;
 function cleanExplicitAct(raw){
  const name=String(raw||'').replace(/\s+/g,' ').trim();
  if(!name||name.length>180)return '';
@@ -70,6 +70,22 @@ export function explicitlyBilledArtists(event){
  };
  const distinct=parts=>parts.length>=2&&parts.length<=5&&parts.every(valid)&&
   new Set(parts.map(artistKey)).size===parts.length;
+ // Explicitly billed acts after a clearly labelled music programme/presenter.
+ // A colon alone is NOT evidence: "Band: Album Tour" stays one band, and
+ // tribute/cover events must never show the tribute subject's portrait.
+ // Example: "Talent Meets Talent: MAROU & MASSIN".
+ const programme=title.match(/^([^:]{3,90}):\s*([^:]{4,150})$/u);
+ if(programme&&
+   /\b(?:meets?|showcase|sessions?|series|festival|fest|night|club|presents?|presenteert|matinee)\b/iu.test(programme[1])){
+  const billed=explicitlyBilledArtists({artist:programme[2]});
+  if(billed.length)return billed;
+  // Two deliberately uppercase, distinctive names in a programme roster
+  // can be separate solo acts even without two-word names. Never apply
+  // this relaxed rule to an arbitrary ampersand band or an album title.
+  const names=programme[2].split(/\s+&\s+/).map(x=>x.trim());
+  const upper=x=>/^[A-Z][A-Z0-9'’.-]{3,}$/u.test(x)&&/[A-Z]{4}/u.test(x);
+  if(names.length===2&&names.every(upper)&&distinct(names))return names;
+ }
  // A distinctly labelled concert series may bill performers after pipes:
  // "METAL/CORE SUNDAY MATINEE | Mosaic | XII Thorns | Serve".
  // Do not confuse arbitrary pipes (marketing text, venue, times) with a lineup.
@@ -210,6 +226,10 @@ export function headlinerSearchNames(event){
  if(leader)return first&&artistKey(first)===artistKey(leader)?[leader]:[title,leader];
  const explicit=cleanExplicitAct(title)||cleanExplicitAct(first);
  const billed=explicitlyBilledArtists(event);
+ // An explicitly structured multi-artist programme takes precedence over
+ // guessing a single act from the programme's marketing title.
+ if(billed.length&&(!first||artistKey(first)===artistKey(title)||
+  billed.some(name=>artistKey(name)===artistKey(first))))return billed;
  if(explicit)return [explicit];
  // A formatted slash bill is an explicit roster of performers. Keep all
  // names available to the photo resolver, clearly identifying the pictured act.
