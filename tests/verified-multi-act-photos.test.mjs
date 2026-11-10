@@ -26,7 +26,7 @@ test('multi-act bill uses an existing verified photo of one expressly billed art
  assert.match(answer.credit.text,/Photo via Deezer/);
  assert.equal(answer.credit.url,'https://www.deezer.com/artist/123');
  assert.doesNotMatch(answer.credit.text,/headliner/i);
- assert.equal(selectArtistCandidates([e],cache,{today:'2026-11-07'}).length,0);
+ assert.deepEqual(selectArtistCandidates([e],cache,{today:'2026-11-07'}).map(x=>x.key),['any kind','loma']);
 });
 
 test('without an existing photo the common pipeline searches each explicitly billed artist by exact name',()=>{
