@@ -26,7 +26,7 @@ import {enrichMusicBrainzIdentities} from './musicbrainz-identity.mjs';
 import {enrichWikimediaArtistPhotos} from './wikimedia-artist-photos.mjs';
 import {enrichAudioDbArtistPhotos} from './theaudiodb-artist-photos.mjs';
 import {applyArtistImageOverrides} from './artist-image-overrides.mjs';
-import {addPodiuminfoArtists,verifiedArtistPhoto} from '../js/artist-images.js';
+import {addPodiuminfoArtists,verifiedArtistPhoto,pruneInvalidArtistPhotos} from '../js/artist-images.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = async (file, fallback) => {
@@ -843,7 +843,12 @@ export async function buildCatalog({today=dayNow(), sourceDir=process.env.SOURCE
   console.log('Podiuminfo images: '+JSON.stringify(podiumPhotoResult.stats));
   // Separate artist photo cache: a verified photograph can serve multiple
   // concerts by the same band without ever replacing actual event posters.
-  const previousArtistImages=await read('data/artist-images.json',{version:1,artists:{}});
+  const loadedArtistImages=await read('data/artist-images.json',{version:1,artists:{}});
+  // Old cache records can include Deezer's empty-image placeholder. Never let
+  // these block all later artist providers or inflate published URL coverage.
+  const prunedArtistImages=pruneInvalidArtistPhotos(loadedArtistImages);
+  const previousArtistImages=prunedArtistImages.cache;
+  console.log('Invalid cached artist photos retired: '+prunedArtistImages.removed);
   const sourcePhotos=[
     ...Object.entries(podiumPhotoResult.cache.entries||{}).map(([id,entry])=>{
       const event=events.find(e=>e.id===id);
