@@ -76,6 +76,7 @@ export function explicitlyBilledArtists(event){
  // Example: "Talent Meets Talent: MAROU & MASSIN".
  const programme=title.match(/^([^:]{3,90}):\s*([^:]{4,150})$/u);
  if(programme&&
+   !/\b(?:tribute|cover|covers|homage)\b/iu.test(programme[1])&&
    /\b(?:meets?|showcase|sessions?|series|festival|fest|night|club|presents?|presenteert|matinee)\b/iu.test(programme[1])){
   const billed=explicitlyBilledArtists({artist:programme[2]});
   if(billed.length)return billed;
