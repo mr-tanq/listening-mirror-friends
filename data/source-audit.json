@@ -1,17 +1,17 @@
 {
-  "catalogUpdatedAt": "2026-11-10T03:22:36.046Z",
+  "catalogUpdatedAt": "2026-11-10T10:50:51.911Z",
   "auditedFor": "2026-11-10",
-  "totalPublished": 1914,
-  "greekPublished": 395,
+  "totalPublished": 1918,
+  "greekPublished": 397,
   "imageCoverage": {
-    "withImage": 1041,
-    "withoutImage": 873
+    "withImage": 1046,
+    "withoutImage": 872
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1409,
-      "withImage": 683,
-      "withoutImage": 726
+      "events": 1411,
+      "withImage": 686,
+      "withoutImage": 725
     },
     "BE": {
       "events": 110,
@@ -19,17 +19,17 @@
       "withoutImage": 103
     },
     "GR": {
-      "events": 395,
-      "withImage": 351,
+      "events": 397,
+      "withImage": 353,
       "withoutImage": 44
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 27,
-      "withImage": 25,
+      "events": 28,
+      "withImage": 26,
       "withoutImage": 2,
-      "greekEvents": 27
+      "greekEvents": 28
     },
     "festivalinfo": {
       "events": 13,
@@ -50,27 +50,27 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 20
     },
     "more": {
-      "events": 265,
-      "withImage": 265,
+      "events": 266,
+      "withImage": 266,
       "withoutImage": 0,
-      "greekEvents": 265
+      "greekEvents": 266
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1212,
-      "withImage": 393,
-      "withoutImage": 819,
+      "withImage": 394,
+      "withoutImage": 818,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 61
     },
     "venue-official": {
-      "events": 292,
-      "withImage": 290,
+      "events": 294,
+      "withImage": 292,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,8 +103,8 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 27,
-      "withImage": 25,
+      "published": 28,
+      "withImage": 26,
       "warning": null
     }
   },
@@ -325,6 +325,14 @@
       ]
     },
     {
+      "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Universe | S-2000",
       "events": 4,
       "withImage": 4,
@@ -426,14 +434,6 @@
       "withImage": 2,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Ράδιο City",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "rocking"
       ]
     }
   ],

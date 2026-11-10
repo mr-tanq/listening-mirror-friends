@@ -7948,7 +7948,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-10T03:22:04.952Z"
+      "checkedAt": "2026-11-10T10:50:42.445Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7960,7 +7960,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-10T03:22:04.952Z"
+      "checkedAt": "2026-11-10T10:50:42.445Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7980,7 +7980,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-10T03:22:04.952Z"
+      "checkedAt": "2026-11-10T10:50:42.445Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7992,7 +7992,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-10T03:22:04.952Z"
+      "checkedAt": "2026-11-10T10:50:42.445Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -9945,12 +9945,125 @@
       },
       "mbid": "93efd85f-2184-4aa1-b8de-eb7ca99e301b",
       "checkedAt": "2026-11-10T03:21:29.103Z"
+    },
+    "marou": {
+      "name": "MAROU",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d4ba4d0ea0d3065854a0701932343c13/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 54136672,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/54136672",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/54136672"
+      },
+      "checkedAt": "2026-11-10T10:50:10.164Z"
+    },
+    "massin": {
+      "name": "MASSIN",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d4ba4d0ea0d3065854a0701932343c13/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1431313,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1431313",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1431313"
+      },
+      "checkedAt": "2026-11-10T10:50:10.671Z"
+    },
+    "exproz": {
+      "name": "Exproz",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/66c0d297f4b07e3bc150a955fd538647/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 15369831,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/15369831",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/15369831"
+      },
+      "checkedAt": "2026-11-10T10:50:11.694Z"
+    },
+    "jøase": {
+      "name": "JØASE",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/bc9a679657c83cab19158c82e00fafa0/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11367210,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/11367210",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11367210"
+      },
+      "checkedAt": "2026-11-10T10:50:15.158Z"
+    },
+    "jools holland": {
+      "name": "Jools Holland",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/e13057bd92a58ae4cdb2ce8f96b51b91/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 66617,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/66617",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/66617"
+      },
+      "checkedAt": "2026-11-10T10:50:16.186Z"
+    },
+    "laura veirs": {
+      "name": "Laura Veirs",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/98b944f5f14b98348635bcbbce88b314/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2037,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2037",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2037"
+      },
+      "checkedAt": "2026-11-10T10:50:16.654Z"
+    },
+    "palaye royale": {
+      "name": "Palaye Royale",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/08e2cdec09d3ef820efd0de944a8a47b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4029489,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4029489",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4029489"
+      },
+      "checkedAt": "2026-11-10T10:50:17.204Z"
+    },
+    "ray noise": {
+      "name": "Ray Noise",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1cf8ddf8a683bf497e788e8b64e24321/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 86243822,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/86243822",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/86243822"
+      },
+      "checkedAt": "2026-11-10T10:50:17.837Z"
     }
   },
   "attempted": {
     "1550": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "clean pete s kerstshow": {
       "retryAfter": "2026-12-05",
@@ -11076,11 +11189,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "talent meets talent": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "caro": {
       "retryAfter": "2027-01-04",
       "reason": "ambiguous-same-name",
@@ -11581,10 +11689,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "exproz all night long": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "sub rosa label night": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -11753,8 +11857,9 @@
       "urgentRetried": true
     },
     "diggy dex phil": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "george zervos": {
       "retryAfter": "2026-12-09",
@@ -11771,8 +11876,9 @@
       ]
     },
     "the soulful sessions": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "tusky": {
       "retryAfter": "2027-01-08",
@@ -11784,40 +11890,49 @@
       ]
     },
     "warning uk the temple gr": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "xzibit live in athens": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ανδρονικος": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "μια αγκαλια τραγουδια": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "σημαδι παρουσιαση δισκου": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "υπογεια ρευματα": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "biliana voutchkova little sae guests": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "cannibal radio clubnight": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "fiesta macumba": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "horal": {
       "retryAfter": "2026-12-09",
@@ -12108,10 +12223,6 @@
     "house of eden": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
-    },
-    "jøase all night long": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
     },
     "mama africa": {
       "retryAfter": "2026-12-09",
@@ -12864,15 +12975,6 @@
     "blame canada ghost of dopamine": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "death angel": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        7103,
-        293403631,
-        293403981
-      ]
     },
     "new date": {
       "retryAfter": "2026-12-09",
@@ -14138,15 +14240,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "neurosis": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        59317752,
-        2981,
-        131026902
-      ]
-    },
     "dimitris kalantzis 4et": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -14351,115 +14444,25 @@
       "retryAfter": "2026-12-10",
       "reason": "not-found"
     },
-    "parts labor": {
+    "κωστας τουρνας": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "σαν παλιο σινεμα": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "the lilacs": {
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
     },
-    "izegrim": {
+    "mass culture": {
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
     },
-    "ian": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        415205812,
-        60253,
-        341413861,
-        333974761
-      ]
-    },
-    "severe torture": {
+    "my turn 40 χρονια an club": {
       "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "gorerotted": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "kulk": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "desaster": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "iron lung": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "insurrection": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        240267561,
-        5222809
-      ]
-    },
-    "antropoceno": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "the crown": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        428268,
-        322215071,
-        126742272,
-        126742252
-      ]
-    },
-    "rhododendron": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1703229,
-        417999342,
-        417999332,
-        417999352
-      ]
-    },
-    "nervosa": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1693145,
-        189183207
-      ]
-    },
-    "sadness": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1688805,
-        390982051,
-        373966121,
-        390181421,
-        392774691,
-        390286271,
-        393303771,
-        393954931,
-        399342361,
-        399907631
-      ]
-    },
-    "trha": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "schammasch": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
-    "steroid": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        1596375,
-        399901611
-      ]
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -14729,11 +14732,6 @@
       "reason": "ambiguous-musical-identity"
     },
     "niall mccabe": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "talent meets talent": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -15928,11 +15926,6 @@
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
     },
-    "exproz all night long": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
     "sub rosa label night": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
@@ -16269,6 +16262,131 @@
       "reason": "no-confirmed-musician"
     },
     "δημητρης γαλακτοπουλος": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ενας ελευθερος ανθρωπος": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "συναυλια συνδικατου επισιτισμου": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "χρυσπα restart": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "cedrik fermont c drik": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μιμης πλεσσας ποιος το ξερει": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μχ lonely": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "sports us athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "thanasis valsamis quintet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "τραγουδαμε μαζι": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "blues cargo": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "bruce": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "dave mccredie": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "dieversparty patra mods club": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "dune sessions": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "lfrqx": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "loom music": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "revolution calling": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "τακης φαραζης": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "χωμα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "48 ores": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "baba zula tr w": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "lah porella at klakaz": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "lost childhood tapes weird electronica": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "qmusic the party": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "zipelia cress": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-25",
       "reason": "no-confirmed-musician"

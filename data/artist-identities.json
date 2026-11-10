@@ -1128,10 +1128,6 @@
       "retryAfter": "2026-12-22",
       "reason": "identified-without-free-photo"
     },
-    "talent meets talent": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "ultrajazz": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
@@ -1494,11 +1490,15 @@
       "retryAfter": "2026-11-11",
       "reason": "HTTP 503"
     },
-    "exproz all night long": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
-    },
     "gplr 2026": {
+      "retryAfter": "2026-11-12",
+      "reason": "HTTP 503"
+    },
+    "leap": {
+      "retryAfter": "2026-11-12",
+      "reason": "fetch failed"
+    },
+    "lil peep 30th birthday celebration": {
       "retryAfter": "2026-11-12",
       "reason": "HTTP 503"
     }

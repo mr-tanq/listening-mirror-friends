@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T03:22:36.046Z",
+  "updatedAt": "2026-11-10T10:50:51.911Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
     {
@@ -6819,6 +6819,30 @@
       "verification": "venue-calendar"
     },
     {
+      "id": "venue-paard-2026-11-20-film",
+      "artist": "FILM",
+      "artists": [
+        "FILM"
+      ],
+      "date": "2026-11-20",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.paard.nl/event/film-jazz-on-a-summers-day/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/liggend-paard-1-copy.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paard",
+        "url": "https://www.paard.nl/event/film-jazz-on-a-summers-day/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paard.nl/event/film-jazz-on-a-summers-day/"
+    },
+    {
       "id": "podiuminfo-472851",
       "artist": "Flemming",
       "artists": [
@@ -10376,6 +10400,30 @@
       "verification": "agenda-only"
     },
     {
+      "id": "venue-patronaat-2026-11-26-minor-operations-bookings-presents-the-protos-snackbar-apesh",
+      "artist": "Minor Operations Bookings presents: The Protos, Snackbar & Apeshit",
+      "artists": [
+        "Minor Operations Bookings presents: The Protos, Snackbar & Apeshit"
+      ],
+      "date": "2026-11-26",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/1000047214-scaled-e1794306460295.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Patronaat",
+        "url": "https://patronaat.nl/event/mob-nov-26-26-11-26/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://patronaat.nl/event/mob-nov-26-26-11-26/"
+    },
+    {
       "id": "podiuminfo-457842",
       "artist": "Mobilhome",
       "artists": [
@@ -12865,7 +12913,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -22726,7 +22774,13 @@
       "url": "https://www.podiuminfo.nl/concert/450894/The-Dirty-Daddies/Bibelot/",
       "image": "",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://bibelot.net/programma/the-dirty-daddies-4/",
+      "officialMatch": {
+        "venue": "bibelot",
+        "confidence": 0.9,
+        "via": "text-date+opengraph"
+      }
     },
     {
       "id": "podiuminfo-453554",
@@ -23451,7 +23505,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -23914,7 +23968,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -30731,6 +30785,23 @@
       }
     },
     {
+      "id": "more-53768f306e2750f5",
+      "artist": "ΚΩΣΤΑΣ ΤΟΥΡΝΑΣ",
+      "artists": [
+        "ΚΩΣΤΑΣ ΤΟΥΡΝΑΣ"
+      ],
+      "date": "2027-02-01",
+      "venue": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
+      "city": "Volos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/kostas-tournas-live/",
+      "image": "https://www.more.com/getattachment/2AB51539-C6BE-4AFA-B0B7-0C03F4D351F3/evg_kostastournaslive_1041_5183.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-491359",
       "artist": "Basement - WIRED",
       "artists": [
@@ -30895,6 +30966,31 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-paradiso-2027-02-03-everlast",
+      "artist": "Everlast",
+      "artists": [
+        "Everlast"
+      ],
+      "date": "2027-02-03",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "Blues / Country / Hip-Hop / Rock",
+      "subgenre": "",
+      "url": "https://www.paradiso.nl/programma/everlast-europe-2027/2953537",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Everlast-new-DSP-profile-pic_LMG-1794246030.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paradiso",
+        "url": "https://www.paradiso.nl/programma/everlast-europe-2027/2953537"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.paradiso.nl/programma/everlast-europe-2027/2953537",
+      "genreEvidence": "metadata"
     },
     {
       "id": "podiuminfo-461059",
@@ -32206,7 +32302,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-8c02486335e8b81d",
+      "id": "anclub-2027-02-07-%CE%B2%CE%B7%CF%84%CE%B1%20%CF%80%CE%B5%CE%B9%CF%82%2040%20%CF%87%CF%81%CE%BF%CE%BD%CE%B9%CE%B1%20an",
       "artist": "ΒΗΤΑ ΠΕΙΣ - ''40 ΧΡΟΝΙΑ AN CLUB''",
       "artists": [
         "ΒΗΤΑ ΠΕΙΣ - ''40 ΧΡΟΝΙΑ AN CLUB''"
@@ -32576,8 +32672,9 @@
     },
     {
       "id": "more-6fa9a3e5e6e987a9",
-      "artist": "KILLGRAVE",
+      "artist": "KILLGRAVE / MASS CULTURE / MY TURN - ''40 ΧΡΟΝΙΑ AN CLUB''",
       "artists": [
+        "KILLGRAVE / MASS CULTURE / MY TURN - ''40 ΧΡΟΝΙΑ AN CLUB''",
         "KILLGRAVE"
       ],
       "date": "2027-02-11",
@@ -32586,10 +32683,10 @@
       "country": "GR",
       "genre": "Metal",
       "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/offer/killgrave/mass-culture/my-turn-40-xronia-an-club/",
-      "image": "https://www.more.com/getattachment/EFD1D3C7-407C-4BAD-BB76-5A3C0B435A1E/evg_killgrave/massculture/myt_1528_3727.png",
-      "source": "more",
-      "verification": "source-catalog"
+      "url": "https://www.anclub.gr/events/killgrave-mass-culture-my-turn---40-hronia-an-club",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6af2c2175357a9f6d49fe355_KILLGRAVE_AN_INSTA_POST.jpg",
+      "source": "anclub-index",
+      "verification": "venue-index"
     },
     {
       "id": "podiuminfo-455470",
@@ -35347,6 +35444,23 @@
         "url": "https://www.013.nl/programma/137219/the-australian-pink-floyd-show"
       },
       "genreEvidence": "metadata"
+    },
+    {
+      "id": "more-2022721075c9ccab",
+      "artist": "ΣΑΝ ΠΑΛΙΟ ΣΙΝΕΜΑ",
+      "artists": [
+        "ΣΑΝ ΠΑΛΙΟ ΣΙΝΕΜΑ"
+      ],
+      "date": "2027-02-22",
+      "venue": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
+      "city": "Volos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/san-palio-sinema/",
+      "image": "https://www.more.com/getattachment/18C4F800-5971-4433-91C8-39FE56B0EEFE/evg_sanpaliosinema_1051_5183.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-paradiso-2027-02-23-charlotte-adigery-bolis-pupul",
@@ -38698,8 +38812,8 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "more-20a9413358deac99",
-      "artist": "Igorrr",
+      "id": "gagarin-2027-03-20-igorrr",
+      "artist": "IGORRR",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -38711,11 +38825,11 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "Avant-Garde Metal",
+      "subgenre": "",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "official",
-      "verification": "venue-page"
+      "source": "gagarin-calendar",
+      "verification": "venue-calendar"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -38799,7 +38913,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -40675,7 +40789,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://patronaat.nl/event/edwin-evers-band-09-04-27/"
+      "officialUrl": "https://patronaat.nl/event/edwin-evers-band-09-04-27/",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "venue-paradiso-2027-04-09-jools-holland",
@@ -40704,7 +40823,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.paradiso.nl/programma/jools-holland-and-his-rhythm-and-blues-orchestra/2921821",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 1,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-paradiso-2027-04-09-laura-veirs",
@@ -40729,7 +40853,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.paradiso.nl/programma/laura-veirs/2921825",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-013-2027-04-09-palaye-royale",
@@ -40754,7 +40883,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.013.nl/programma/160890/palaye-royale",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-patronaat-2027-04-09-ray-noise",
@@ -40779,7 +40913,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://patronaat.nl/event/ray-noise-09-04-27/",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 0.9,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "venue-paradiso-2027-04-09-the-lilacs",
@@ -40803,10 +40942,15 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/the-lilacs/2886901"
+      "officialUrl": "https://www.paradiso.nl/programma/the-lilacs/2886901",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -41004,18 +41148,18 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 395,
+    "greeceEvents": 397,
     "greeceFeedError": "",
     "rockingEvents": 61,
     "rockingWarning": "",
     "verifiedPodiuminfoEvents": 0,
     "agendaOnlyPodiuminfoEvents": 1212,
     "festivalEvents": 13,
-    "officialVenueEvents": 7,
+    "officialVenueEvents": 6,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 49,
-    "artworkReused": 5,
+    "sameVenueDuplicatesMerged": 46,
+    "artworkReused": 0,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
     "editorialSupplemented": 0,
@@ -41023,56 +41167,56 @@
       "requests": 0,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 819,
+      "skippedBlocked": 818,
       "hostDeniedRequests": 0,
       "hostAccess": "HTTP 403",
       "hostRetryAfter": "2026-11-15",
-      "eligible": 819,
-      "remainingWithoutImage": 819
+      "eligible": 818,
+      "remainingWithoutImage": 818
     },
     "artistPhotoCache": {
-      "artists": 762,
+      "artists": 770,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 847,
-        "requests": 65,
-        "found": 7,
-        "notFound": 28,
-        "ambiguous": 9,
-        "coverRejected": 14,
+        "candidates": 830,
+        "requests": 35,
+        "found": 8,
+        "notFound": 17,
+        "ambiguous": 0,
+        "coverRejected": 2,
         "errors": 0,
-        "skipped": 803,
+        "skipped": 805,
         "urgentRetriesUsed": 12,
-        "photos": 761
+        "photos": 770
       },
       "identity": {
-        "candidates": 821,
-        "processed": 11,
-        "identified": 3,
+        "candidates": 822,
+        "processed": 2,
+        "identified": 0,
         "ambiguous": 0,
-        "notFound": 7,
+        "notFound": 0,
         "commons": 0,
-        "deezerLinked": 1,
-        "errors": 1
+        "deezerLinked": 0,
+        "errors": 2
       },
       "wikimedia": {
-        "candidates": 483,
+        "candidates": 462,
         "attempted": 25,
         "found": 0,
-        "noMatch": 23,
+        "noMatch": 25,
         "ambiguous": 0,
-        "licenceRejected": 2,
+        "licenceRejected": 0,
         "errors": 0,
-        "depictsQueries": 2,
+        "depictsQueries": 0,
         "depictsFound": 0,
-        "categoryQueries": 1,
+        "categoryQueries": 0,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 1,
+        "subcategoryQueries": 0,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 2,
+        "linkedDeezerChecks": 0,
         "linkedDeezerFound": 0,
         "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0,
@@ -41081,11 +41225,11 @@
       },
       "audioDb": {
         "eligible": 40,
-        "attempted": 2,
+        "attempted": 0,
         "found": 0,
         "licenseMissing": 0,
         "identityRejected": 0,
-        "notInProvider": 2,
+        "notInProvider": 0,
         "ambiguousProvider": 0,
         "invalidPayload": 0,
         "missingPhoto": 0,
@@ -41094,7 +41238,7 @@
         "diagnosticRetried": 0
       }
     },
-    "gagarinCalendarEvents": 19,
+    "gagarinCalendarEvents": 20,
     "gagarinPosterEnriched": 7,
     "gagarinWarning": "",
     "floydCalendarEvents": 14,
@@ -41103,35 +41247,35 @@
     "fuzzCalendarEvents": 4,
     "fuzzPosterEnriched": 1,
     "fuzzWarning": "",
-    "anClubIndexEvents": 27,
+    "anClubIndexEvents": 28,
     "anClubPosterEnriched": 0,
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 817,
-    "taggedArtists": 949,
+    "genreTaggedEvents": 818,
+    "taggedArtists": 955,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-10T03:25:57.082Z",
-    "catalogueEvents": 1914,
-    "officialMatches": 649,
-    "imagesPublished": 616,
-    "imageCandidatesPending": 33,
-    "imagesDirectLinked": 622,
-    "discoveredEvents": 6,
+    "updatedAt": "2026-11-10T10:54:12.953Z",
+    "catalogueEvents": 1918,
+    "officialMatches": 656,
+    "imagesPublished": 622,
+    "imageCandidatesPending": 34,
+    "imagesDirectLinked": 625,
+    "discoveredEvents": 3,
     "venueEventsRemoved": {
-      "duplicate": 4,
+      "duplicate": 0,
       "policy": 0,
       "cancelled": 0,
       "rescheduled": 0,
       "gone": 0,
       "nonConcert": 0
     },
-    "venueEventsPublished": 294,
+    "venueEventsPublished": 297,
     "venueGenresFromCache": 0,
-    "venueGenresTagged": 113,
+    "venueGenresTagged": 114,
     "reviewedOfficialArtworkApplied": 1,
-    "venueGenreLookups": 7
+    "venueGenreLookups": 3
   }
 }

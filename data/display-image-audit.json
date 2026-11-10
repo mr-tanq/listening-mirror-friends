@@ -1,25 +1,25 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T03:26:13.355Z",
-  "catalogUpdatedAt": "2026-11-10T03:22:36.046Z",
+  "generatedAt": "2026-11-10T10:54:25.888Z",
+  "catalogUpdatedAt": "2026-11-10T10:50:51.911Z",
   "auditedFor": "2026-11-10",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1916,
-    "eventPoster": 1044,
-    "artistPhoto": 543,
-    "noImage": 329,
-    "posterWithPhotoBackup": 465
+    "total": 1921,
+    "eventPoster": 1049,
+    "artistPhoto": 545,
+    "noImage": 327,
+    "posterWithPhotoBackup": 470
   },
   "byCountry": {
     "NL": {
-      "total": 1411,
-      "eventPoster": 686,
-      "artistPhoto": 462,
-      "noImage": 263,
-      "posterWithPhotoBackup": 374
+      "total": 1414,
+      "eventPoster": 689,
+      "artistPhoto": 464,
+      "noImage": 261,
+      "posterWithPhotoBackup": 379
     },
     "BE": {
       "total": 110,
@@ -29,8 +29,8 @@
       "posterWithPhotoBackup": 5
     },
     "GR": {
-      "total": 395,
-      "eventPoster": 351,
+      "total": 397,
+      "eventPoster": 353,
       "artistPhoto": 13,
       "noImage": 31,
       "posterWithPhotoBackup": 86
@@ -38,7 +38,7 @@
   },
   "missingReasons": {
     "album-cover-rejected": 112,
-    "artist-not-found": 117,
+    "artist-not-found": 115,
     "ambiguous-artist": 69,
     "other-lookup-cooldown": 20,
     "not-in-artist-cache": 4,
@@ -46,7 +46,7 @@
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 758,
+      "deezer": 766,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,7 +58,7 @@
       }
     }
   },
-  "missingNext14Days": 81,
+  "missingNext14Days": 80,
   "missingNext14DaysSamples": [
     {
       "id": "podiuminfo-499977",
@@ -147,14 +147,6 @@
       "country": "NL",
       "venue": "Paard",
       "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-493398",
-      "artist": "Talent Meets Talent: MAROU & MASSIN",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-499978",
@@ -379,6 +371,14 @@
       "country": "NL",
       "venue": "Paradiso",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-494626",
+      "artist": "Songwriter Night",
+      "date": "2026-11-16",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
@@ -508,14 +508,6 @@
       "date": "2026-11-27",
       "country": "NL",
       "venue": "Annabel",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-495638",
-      "artist": "Exproz All Night Long",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Melkweg",
       "reason": "artist-not-found"
     },
     {
@@ -701,6 +693,14 @@
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498838",
+      "artist": "Gambling With Goodwill en Bad Joke",
+      "date": "2026-12-02",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
     }
   ]
 }

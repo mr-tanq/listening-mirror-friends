@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T03:25:57.082Z",
+  "generatedAt": "2026-11-10T10:54:12.953Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -2477,6 +2477,14 @@
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-450894",
+      "venue": "bibelot",
+      "eventUrl": "https://bibelot.net/programma/the-dirty-daddies-4/",
+      "image": "https://bibelot.net/wp-content/uploads/2026/01/The-Dirty-Daddies-1920x1080-af5a.jpg",
+      "confidence": 0.9,
+      "published": false
     },
     {
       "eventId": "podiuminfo-453554",
@@ -5813,6 +5821,60 @@
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/132848/the-elvis-concert-2027",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/The-Elvis-Concert-2027.jpg?mtime=1792398182",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-09-edwin-evers-band-classics-tour",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/edwin-evers-band-09-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/eeb-classicstour-part2-post-square.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-09-jools-holland",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/jools-holland-and-his-rhythm-and-blues-orchestra/2921821",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Jools_Press23_ML-1209-ret.-C-2025-Michael-Leckie-1788180497.jpg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-09-laura-veirs",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/laura-veirs/2921825",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/LVCoverPhotoHiRes-1787661813.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-09-palaye-royale",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/160890/palaye-royale",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/playe-royale-banner-090427.jpg?mtime=1790843554",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-09-ray-noise",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/ray-noise-09-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/04-1024x473.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-09-the-lilacs",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/the-lilacs/2886901",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Lilacs-1777275908.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
