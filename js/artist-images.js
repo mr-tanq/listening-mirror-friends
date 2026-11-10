@@ -6,7 +6,8 @@
  *
  * Precedence: an event's own poster (event.image) always wins. Otherwise
  * a verified ARTIST photo for the headliner is used. Album covers, event
- * posters and loosely matched festival lineups are never stored here.
+ * posters and loosely matched festival lineups are never stored here; only
+ * exact performers on a verified Festivalinfo edition can be looked up.
  */
 export const artistKey=name=>String(name||'').normalize('NFKD')
  .replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
@@ -167,12 +168,36 @@ export function explicitlyNamedEnsembleLeader(event){
  return leader;
 }
 
+/**
+ * Verified Festivalinfo editions carry an explicit billed lineup, not a
+ * single performing headliner. Only this documented source + festival flag
+ * may supply multiple photo subjects; arbitrary event.artists arrays cannot.
+ * A bounded set prevents large festival bills exhausting provider budgets.
+ */
+export function verifiedFestivalLineup(event){
+ if(event?.source!=='festivalinfo'||event?.isFestival!==true||!Array.isArray(event.artists))return [];
+ const out=[],seen=new Set();
+ for(const raw of event.artists){
+  const name=String(raw||'').replace(/\s+/g,' ').trim();
+  const key=artistKey(name);
+  if(key.length<2||name.length>90||name.split(/\s+/).length>10||
+   /^(?:tba|tbc|unknown|various artists|special guests?|line ?up|more (?:to be announced|tba)|to be announced|surprise act|doors?|tickets?|festival|live music)$/iu.test(key)||
+   /[|:]/.test(name)||seen.has(key))continue;
+  out.push(name);seen.add(key);
+  if(out.length>=12)break;
+ }
+ return out;
+}
+
 /** Names eligible for NEW external artist photo searches.
  * The browser photo resolver and all Node enrichers share this shortlist.
  * Venue duplicate matching deliberately retains the older headlinerNames.
  * Suppresses speculative lookups for composite event titles.
  */
 export function headlinerSearchNames(event){
+ // Never search for the festival title as if it were a musical performer.
+ // Confirmed roster entries are actual acts and need exact provider matching.
+ if(event?.source==='festivalinfo'&&event?.isFestival===true)return verifiedFestivalLineup(event);
  const title=String(event?.artist||'').trim();
  const first=String(event?.artists?.[0]||'').trim();
  const sourced=explicitSourceHeadliner(event);
@@ -309,11 +334,14 @@ export function addPodiuminfoArtists(existing,records,{checkedAt=new Date().toIS
  * identical CDN URLs so browser fallback cannot loop on the same photo.
  */
 export function artistImageOptionsFor(event,artistImages){
+ const festival=verifiedFestivalLineup(event);
  const billed=explicitlyBilledArtists(event);
  const featured=explicitFeaturedPair(event);
  const ensembleLeader=explicitlyNamedEnsembleLeader(event);
  const full=String(event?.artist||'').trim();
- const candidates=billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
+ const candidates=event?.source==='festivalinfo'&&event?.isFestival===true?festival:
+  billed.length>1?[full,...headlinerSearchNames(event)]:headlinerSearchNames(event);
+ const festivalKeys=new Set(festival.map(artistKey));
  const out=[],seen=new Set();
  for(const name of candidates){
   const entry=artistImages?.artists?.[artistKey(name)];
@@ -323,9 +351,11 @@ export function artistImageOptionsFor(event,artistImages){
   const url=verifiedArtistPhoto(entry?.image);
   if(!url||seen.has(url))continue;
   const leaderPhoto=Boolean(ensembleLeader&&artistKey(name)===artistKey(ensembleLeader));
-  const lineup=billed.length>1&&artistKey(name)!==artistKey(full)||
+  const festivalAct=festivalKeys.has(artistKey(name));
+  const lineup=festivalAct||billed.length>1&&artistKey(name)!==artistKey(full)||
    featured.length>1&&artistKey(name)===artistKey(featured[1])||leaderPhoto;
-  out.push({url,entry,name,lineup,...(leaderPhoto?{creditRole:'ensemble leader'}:{})});
+  out.push({url,entry,name,lineup,
+   ...(festivalAct?{creditRole:'festival lineup'}:leaderPhoto?{creditRole:'ensemble leader'}:{})});
   seen.add(url);
   if(out.length>=5)break;
  }
