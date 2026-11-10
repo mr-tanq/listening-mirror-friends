@@ -1550,6 +1550,10 @@
     "dub hub": {
       "retryAfter": "2026-11-12",
       "reason": "HTTP 503"
+    },
+    "nos ku nos": {
+      "retryAfter": "2026-11-12",
+      "reason": "HTTP 503"
     }
   }
 }

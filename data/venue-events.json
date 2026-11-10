@@ -15003,6 +15003,54 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/cowboy-hunters/2953143": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/cowboy-hunters/2953143",
+            "title": "Cowboy Hunters",
+            "performers": [
+              "Cowboy Hunters"
+            ],
+            "date": "2027-04-14",
+            "startDate": "2027-04-14T17:30:00+02:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/cd11fe3d_1-MAIN-1794309816.jpeg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/tuning-sessions/2947315": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/tuning-sessions/2947315",
+            "title": "Tuning Sessions",
+            "performers": [
+              "PULSOR by Bloom & Huda"
+            ],
+            "date": "2027-01-31",
+            "startDate": "2027-01-31T10:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/BloomHuda.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/danielle-ponder/2951116": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/danielle-ponder/2951116",
+            "title": "Danielle Ponder",
+            "performers": [
+              "Danielle Ponder"
+            ],
+            "date": "2027-04-08",
+            "startDate": "2027-04-08T18:30:00+02:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Danielle-Ponder026-1794317565.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
       "listedAt": "2026-11-10"

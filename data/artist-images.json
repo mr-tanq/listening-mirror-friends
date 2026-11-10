@@ -7924,7 +7924,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-10T13:04:35.638Z"
+      "checkedAt": "2026-11-10T13:38:50.672Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7936,7 +7936,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-10T13:04:35.638Z"
+      "checkedAt": "2026-11-10T13:38:50.672Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7956,7 +7956,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-10T13:04:35.638Z"
+      "checkedAt": "2026-11-10T13:38:50.672Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7968,7 +7968,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-10T13:04:35.638Z"
+      "checkedAt": "2026-11-10T13:38:50.672Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -10513,6 +10513,35 @@
       },
       "wikidata": "Q105356824",
       "checkedAt": "2026-11-10T13:04:21.237Z"
+    },
+    "xzibit": {
+      "name": "XZIBIT",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/50417a981dfe1d68b694f12154d6b795/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2541,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2541",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2541"
+      },
+      "checkedAt": "2026-11-10T13:38:18.502Z"
+    },
+    "fun": {
+      "name": "Fun",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/04b78dcf94871240e68b556c0a81321c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 380832,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/380832",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/380832"
+      },
+      "wikidata": "Q838984",
+      "checkedAt": "2026-11-10T13:38:28.681Z"
     }
   },
   "attempted": {
@@ -12350,11 +12379,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "xzibit live in athens": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "ανδρονικος": {
       "retryAfter": "2026-12-10",
       "reason": "not-found",
@@ -12516,44 +12540,54 @@
       "urgentRetried": true
     },
     "δημητρης γαλακτοπουλος": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ενας ελευθερος ανθρωπος": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "συναυλια συνδικατου επισιτισμου": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "χρυσπα restart": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "cedrik fermont c drik": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "μιμης πλεσσας ποιος το ξερει": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "μχ lonely": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "sports us athens": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "thanasis valsamis quintet": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "τραγουδαμε μαζι": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "blues cargo": {
       "retryAfter": "2026-12-09",
@@ -13379,10 +13413,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "kovacs live in athens": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "γιωργος θεοφανους": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -13905,10 +13935,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "anorimoi γυροβυζιον live": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "heinoos xxl": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -14124,15 +14150,6 @@
     "robin scherpen": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
-    },
-    "rory gallagher": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        10543,
-        57501362,
-        10260302
-      ]
     },
     "tribute to bob marley": {
       "retryAfter": "2026-12-09",
@@ -14958,11 +14975,13 @@
     },
     "kwoon for the first time in 14 years": {
       "retryAfter": "2026-12-10",
-      "reason": "not-found"
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "emmet cohen quintet": {
       "retryAfter": "2026-12-10",
-      "reason": "not-found"
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "peter pan speedrock": {
       "retryAfter": "2026-12-10",
@@ -14971,16 +14990,6 @@
     "jehovah on death": {
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
-    },
-    "sam gendel": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        250210572,
-        6975217,
-        283841081,
-        250210562
-      ]
     },
     "michael jackson project": {
       "retryAfter": "2026-12-10",
@@ -15012,14 +15021,6 @@
       "deezerCandidates": [
         86080,
         12221348
-      ]
-    },
-    "eagles of death metal": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5508,
-        413942931
       ]
     },
     "cabal": {
@@ -15077,14 +15078,6 @@
         874232
       ]
     },
-    "amenra": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        170152,
-        386223651
-      ]
-    },
     "true colors": {
       "retryAfter": "2027-01-09",
       "reason": "ambiguous-same-name",
@@ -15128,25 +15121,9 @@
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
     },
-    "demented are go": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        161621,
-        8178
-      ]
-    },
     "wouter van veldhoven": {
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
-    },
-    "cock sparrer": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        3929,
-        407505792
-      ]
     },
     "myra ida van der veen": {
       "retryAfter": "2026-12-10",
@@ -15188,10 +15165,6 @@
       ]
     },
     "ζηνα ασλανιδου σαμολης στο christmas theater": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
-    },
-    "gripin live": {
       "retryAfter": "2026-12-10",
       "reason": "not-found"
     },
@@ -15566,6 +15539,26 @@
         1596375,
         399901611
       ]
+    },
+    "conway the machine athens": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "gettin 80s 90s wit it": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "les trois femmes swinging into christmas": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "rory gallagher band of friends gagarin": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "les trois femmes": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -17234,11 +17227,6 @@
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
     },
-    "xzibit live in athens": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
     "ανδρονικος": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
@@ -17590,6 +17578,126 @@
       "reason": "no-confirmed-musician"
     },
     "ο σπυρος γραμμενος στο κυτταρο": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "conway the machine athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "20 χρονια calu cacu": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "blend x seds": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "give it dub": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "hawk": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-licensed-commons-photo"
+    },
+    "hoa hoa hoa rave athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "mama africa": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "pulse tribe kollektiv": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "teach": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "wies": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "zer00s heroes": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "δημητρης μυστακιδης απο την υπογα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μιχαλης σιαμμας": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μπρατιμια το γλεντι αλλιως": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "μωρα στη φωτια": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "σαββερια μαργιολα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "συναυλια": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "10 χρονια χωρις τον φιλαρετο": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "artin muziek friends": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "jeremy pelt quintet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "sorellina": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "the silent rage 10 years": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "θανασης πεθεριωτης και αριστοτελης full band": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "οταν η ποιηση γινεται τραγουδι": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-25",
       "reason": "no-confirmed-musician"

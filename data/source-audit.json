@@ -1,16 +1,16 @@
 {
-  "catalogUpdatedAt": "2026-11-10T13:04:42.282Z",
+  "catalogUpdatedAt": "2026-11-10T13:38:54.160Z",
   "auditedFor": "2026-11-10",
-  "totalPublished": 1922,
-  "greekPublished": 398,
+  "totalPublished": 1925,
+  "greekPublished": 399,
   "imageCoverage": {
-    "withImage": 1050,
+    "withImage": 1053,
     "withoutImage": 872
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1414,
-      "withImage": 689,
+      "events": 1416,
+      "withImage": 691,
       "withoutImage": 725
     },
     "BE": {
@@ -19,8 +19,8 @@
       "withoutImage": 103
     },
     "GR": {
-      "events": 398,
-      "withImage": 354,
+      "events": 399,
+      "withImage": 355,
       "withoutImage": 44
     }
   },
@@ -50,16 +50,16 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 19,
-      "withImage": 19,
+      "events": 3,
+      "withImage": 3,
       "withoutImage": 0,
-      "greekEvents": 19
+      "greekEvents": 3
     },
     "more": {
-      "events": 267,
-      "withImage": 267,
+      "events": 284,
+      "withImage": 284,
       "withoutImage": 0,
-      "greekEvents": 267
+      "greekEvents": 284
     },
     "official": {
       "events": 7,
@@ -80,16 +80,16 @@
       "greekEvents": 61
     },
     "venue-official": {
-      "events": 297,
-      "withImage": 295,
+      "events": 299,
+      "withImage": 297,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 19,
-      "withImage": 19,
+      "published": 3,
+      "withImage": 3,
       "warning": null
     },
     "floyd-calendar": {
@@ -120,16 +120,6 @@
       ]
     },
     {
-      "name": "Gagarin 205",
-      "events": 22,
-      "withImage": 22,
-      "sources": [
-        "gagarin-calendar",
-        "rocking",
-        "official"
-      ]
-    },
-    {
       "name": "Το Τρένο Στο Ρουφ",
       "events": 21,
       "withImage": 0,
@@ -141,6 +131,14 @@
       "name": "ΙΛΙΟΝ Plus",
       "events": 19,
       "withImage": 19,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205 Live Music Space",
+      "events": 16,
+      "withImage": 16,
       "sources": [
         "more"
       ]
@@ -198,8 +196,8 @@
     },
     {
       "name": "Half Note Jazz Club",
-      "events": 9,
-      "withImage": 9,
+      "events": 10,
+      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -274,6 +272,16 @@
       "withImage": 6,
       "sources": [
         "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
       ]
     },
     {
@@ -427,25 +435,17 @@
       "sources": [
         "rocking"
       ]
-    },
-    {
-      "name": "ROHAS ATHENS LIVE STAGE",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
-      ]
     }
   ],
   "venueWarnings": {
-    "gagarin": "",
+    "gagarin": "Official venue calendar is not iCalendar",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "empty",
-    "message": "Official music category has no announced events",
+    "status": "unrecognized",
+    "message": "Official page structure not recognized",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }

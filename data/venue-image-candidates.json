@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:08:03.725Z",
+  "generatedAt": "2026-11-10T13:42:15.063Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
     {
@@ -1211,6 +1211,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2026-11-27-paardcafe-gettin-80s-90s-wit-it",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-78/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/80S90S-WEB-HEADER-02.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-447785",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/the-scene-support-27-11-26/",
@@ -1242,6 +1251,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/classified-6/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/DOORNROOSJE_EVENT_BANNER-classified.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-11-28-film",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/film-summer-of-soul-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/liggend-paard-2-copy-1.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
