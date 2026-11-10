@@ -50,5 +50,5 @@ test('archived artist-thumbnail placeholder is not treated as a real event poste
  const embedded={...event('MONO'),image:placeholder,imageKind:'artist-photo'};
  assert.equal(resolveConcertImage(embedded,{artists:{}}).kind,'fallback');
  assert.equal(resolveConcertImage(embedded,{artists:{mono:{image:real}}}).url,real);
- assert.equal(resolveConcertImage({...embedded,imageKind:'event-poster'},{}).url,placeholder);
+ assert.equal(resolveConcertImage({...embedded,imageKind:'event-poster'},{}).kind,'fallback');
 });
