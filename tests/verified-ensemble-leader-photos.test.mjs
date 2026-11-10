@@ -71,7 +71,7 @@ test('all providers discover the exact ensemble and its soloist without per-conc
  const e=event('Hania Derej Trio');
  const list=selectArtistCandidates([e],{artists:{}},{today:'2026-11-08'});
  assert.deepEqual(list.map(x=>x.key),['hania derej trio','hania derej']);
- assert.equal(selectArtistCandidates([e],{artists:{'hania derej':portrait()}},{today:'2026-11-08'}).length,0);
+ assert.deepEqual(selectArtistCandidates([e],{artists:{'hania derej':portrait()}},{today:'2026-11-08'}).map(x=>x.key),['hania derej trio']);
 });
 test('offline image audit counts the same credited photo and never treats an unrelated soloist as a match',()=>{
  const covered=event('Hania Derej Trio');
