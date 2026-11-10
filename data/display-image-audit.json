@@ -1,73 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T18:39:33.734Z",
-  "catalogUpdatedAt": "2026-11-09T18:36:12.317Z",
-  "auditedFor": "2026-11-09",
+  "generatedAt": "2026-11-10T03:26:13.355Z",
+  "catalogUpdatedAt": "2026-11-10T03:22:36.046Z",
+  "auditedFor": "2026-11-10",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1913,
+    "total": 1916,
     "eventPoster": 1044,
     "artistPhoto": 543,
-    "noImage": 326,
-    "posterWithPhotoBackup": 464
+    "noImage": 329,
+    "posterWithPhotoBackup": 465
   },
   "byCountry": {
-    "GR": {
-      "total": 400,
-      "eventPoster": 356,
-      "artistPhoto": 13,
-      "noImage": 31,
-      "posterWithPhotoBackup": 88
-    },
     "NL": {
-      "total": 1405,
-      "eventPoster": 680,
-      "artistPhoto": 464,
-      "noImage": 261,
-      "posterWithPhotoBackup": 370
+      "total": 1411,
+      "eventPoster": 686,
+      "artistPhoto": 462,
+      "noImage": 263,
+      "posterWithPhotoBackup": 374
     },
     "BE": {
-      "total": 108,
-      "eventPoster": 8,
-      "artistPhoto": 66,
-      "noImage": 34,
-      "posterWithPhotoBackup": 6
+      "total": 110,
+      "eventPoster": 7,
+      "artistPhoto": 68,
+      "noImage": 35,
+      "posterWithPhotoBackup": 5
+    },
+    "GR": {
+      "total": 395,
+      "eventPoster": 351,
+      "artistPhoto": 13,
+      "noImage": 31,
+      "posterWithPhotoBackup": 86
     }
   },
   "missingReasons": {
-    "artist-not-found": 118,
-    "album-cover-rejected": 109,
-    "ambiguous-artist": 68,
+    "album-cover-rejected": 112,
+    "artist-not-found": 117,
+    "ambiguous-artist": 69,
     "other-lookup-cooldown": 20,
     "not-in-artist-cache": 4,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 750,
+      "deezer": 758,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 38,
+      "attempted": 40,
       "failuresByReason": {
-        "artist-not-in-provider": 31,
+        "artist-not-in-provider": 33,
         "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
   },
-  "missingNext14Days": 80,
+  "missingNext14Days": 81,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-490786",
-      "artist": "Band Night - BeylerBand",
-      "date": "2026-11-09",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-499977",
       "artist": "Radar Machine",
@@ -379,25 +371,17 @@
       "country": "NL",
       "venue": "Melkweg",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-467783",
+      "artist": "SOFY",
+      "date": "2026-11-16",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "venue-doornroosje-2026-11-24-actie-aletta",
-      "artist": "Actie Aletta",
-      "date": "2026-11-24",
-      "country": "NL",
-      "venue": "Doornroosje",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-454763",
-      "artist": "Knoll",
-      "date": "2026-11-24",
-      "country": "NL",
-      "venue": "Doornroosje",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-477377",
       "artist": "Chris Eckman",
@@ -701,6 +685,22 @@
       "country": "NL",
       "venue": "Paradiso",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-497151",
+      "artist": "Evanora Unlimited",
+      "date": "2026-12-01",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-487687",
+      "artist": "Frenetik",
+      "date": "2026-12-02",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "ambiguous-artist"
     }
   ]
 }

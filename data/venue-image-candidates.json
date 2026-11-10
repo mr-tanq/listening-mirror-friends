@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-11-09T18:39:33.493Z",
+  "generatedAt": "2026-11-10T03:25:57.082Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-480259",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/boo-seeka/2906005",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/boo-seeka-web2-1781707696.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-452710",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/126189/messa",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/013-web_2026-02-18-102429_hyyv.jpg?mtime=1771410277",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-464817",
       "venue": "paradiso",
@@ -228,6 +210,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-472061",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/big-sleep/2895340",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/5-1-1.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-465385",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/clobber-uk/",
@@ -294,6 +285,15 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/snelle-8/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/01/SNELLE_CLUBTOUR_2026_event.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-497347",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/suzan-freek/2942224",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SuzanFreek2026-1791211859.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4153,39 +4153,39 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-18-isaac-roux",
+      "eventId": "podiuminfo-464837",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/isaac-roux/2890476",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Isaac-Roux-2027.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-02-18-tinlicker",
+      "eventId": "podiuminfo-501526",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/tinlicker/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/Tinlicker_Studio_ShotByMeesterwerk_01_klein-scaled.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-18-turmion-katilot",
+      "eventId": "podiuminfo-495911",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/turmion-katilot-18-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/TK.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-18-wende",
+      "eventId": "podiuminfo-494794",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/wende/2931988",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Wende-2027_2026-09-23-085201_ajek.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {

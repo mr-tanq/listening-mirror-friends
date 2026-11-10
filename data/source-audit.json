@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-09T18:36:12.317Z",
-  "auditedFor": "2026-11-09",
-  "totalPublished": 1913,
-  "greekPublished": 400,
+  "catalogUpdatedAt": "2026-11-10T03:22:36.046Z",
+  "auditedFor": "2026-11-10",
+  "totalPublished": 1914,
+  "greekPublished": 395,
   "imageCoverage": {
-    "withImage": 1044,
-    "withoutImage": 869
+    "withImage": 1041,
+    "withoutImage": 873
   },
   "imageCoverageByCountry": {
-    "GR": {
-      "events": 400,
-      "withImage": 356,
-      "withoutImage": 44
-    },
     "NL": {
-      "events": 1405,
-      "withImage": 680,
-      "withoutImage": 725
+      "events": 1409,
+      "withImage": 683,
+      "withoutImage": 726
     },
     "BE": {
-      "events": 108,
-      "withImage": 8,
-      "withoutImage": 100
+      "events": 110,
+      "withImage": 7,
+      "withoutImage": 103
+    },
+    "GR": {
+      "events": 395,
+      "withImage": 351,
+      "withoutImage": 44
     }
   },
   "sources": {
@@ -32,9 +32,9 @@
       "greekEvents": 27
     },
     "festivalinfo": {
-      "events": 12,
+      "events": 13,
       "withImage": 5,
-      "withoutImage": 7,
+      "withoutImage": 8,
       "greekEvents": 0
     },
     "floyd-calendar": {
@@ -44,33 +44,33 @@
       "greekEvents": 14
     },
     "fuzzclub-calendar": {
-      "events": 5,
-      "withImage": 5,
-      "withoutImage": 0,
-      "greekEvents": 5
-    },
-    "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
-      "withoutImage": 0,
-      "greekEvents": 20
-    },
-    "more": {
-      "events": 269,
-      "withImage": 269,
-      "withoutImage": 0,
-      "greekEvents": 269
-    },
-    "official": {
-      "events": 6,
-      "withImage": 6,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
       "greekEvents": 4
     },
+    "gagarin-calendar": {
+      "events": 19,
+      "withImage": 19,
+      "withoutImage": 0,
+      "greekEvents": 19
+    },
+    "more": {
+      "events": 265,
+      "withImage": 265,
+      "withoutImage": 0,
+      "greekEvents": 265
+    },
+    "official": {
+      "events": 7,
+      "withImage": 7,
+      "withoutImage": 0,
+      "greekEvents": 5
+    },
     "podiuminfo-agenda": {
-      "events": 1207,
-      "withImage": 391,
-      "withoutImage": 816,
+      "events": 1212,
+      "withImage": 393,
+      "withoutImage": 819,
       "greekEvents": 0
     },
     "rocking": {
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 19,
+      "withImage": 19,
       "warning": null
     },
     "floyd-calendar": {
@@ -98,8 +98,8 @@
       "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 5,
-      "withImage": 5,
+      "published": 4,
+      "withImage": 4,
       "warning": null
     },
     "anclub-index": {
@@ -147,8 +147,8 @@
     },
     {
       "name": "Fuzz Club",
-      "events": 16,
-      "withImage": 16,
+      "events": 15,
+      "withImage": 15,
       "sources": [
         "fuzzclub-calendar",
         "official",
@@ -198,8 +198,8 @@
     },
     {
       "name": "Half Note Jazz Club",
-      "events": 10,
-      "withImage": 10,
+      "events": 9,
+      "withImage": 9,
       "sources": [
         "more"
       ]
@@ -222,6 +222,14 @@
     },
     {
       "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -261,14 +269,6 @@
       ]
     },
     {
-      "name": "gazarte roof stage",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "CHRISTMAS THEATER",
       "events": 6,
       "withImage": 6,
@@ -277,23 +277,7 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "name": "gazarte roof stage",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -333,7 +317,23 @@
       ]
     },
     {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Universe | S-2000",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -405,6 +405,14 @@
       ]
     },
     {
+      "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Principal Club Theater: Mylos Area",
       "events": 3,
       "withImage": 1,
@@ -426,14 +434,6 @@
       "withImage": 2,
       "sources": [
         "rocking"
-      ]
-    },
-    {
-      "name": "OAKA - Olympic Velodrome",
-      "events": 2,
-      "withImage": 2,
-      "sources": [
-        "more"
       ]
     }
   ],

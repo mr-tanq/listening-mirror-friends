@@ -488,7 +488,7 @@
           }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "vera": {
       "access": {
@@ -1235,16 +1235,12 @@
           "checkedAt": "2026-11-06",
           "event": null
         },
-        "https://www.vera-groningen.nl/events/downstage-eel-man/": {
-          "checkedAt": "2026-11-06",
-          "event": null
-        },
         "https://www.vera-groningen.nl/events/basht-2027/": {
           "checkedAt": "2026-11-09",
           "event": null
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "effenaar": {
       "access": {
@@ -2694,7 +2690,7 @@
           }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "patronaat": {
       "access": {
@@ -4998,7 +4994,7 @@
           }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "paard": {
       "access": {
@@ -7204,7 +7200,7 @@
           }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "013": {
       "access": {
@@ -9444,22 +9440,6 @@
         "lastStatus": 200
       },
       "pages": {
-        "https://www.paradiso.nl/programma/boo-seeka/2906005": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/boo-seeka/2906005",
-            "title": "Boo Seeka",
-            "performers": [
-              "Boo Seeka"
-            ],
-            "date": "2026-11-09",
-            "startDate": "2026-11-09T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/boo-seeka-web2-1781707696.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/johnny-the-dinosaurs/2949035": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -10586,39 +10566,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paradiso.nl/programma/nick-hakim/2904169": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/nick-hakim/2904169",
-            "title": "Nick Hakim + Martha Arpiri",
-            "performers": [
-              "Nick Hakim",
-              "Marta Arpini"
-            ],
-            "date": "2026-11-09",
-            "startDate": "2026-11-09T18:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Nick-Hakim-ICanSee-JackMcKain.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/sharp-pins/2933525": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/sharp-pins/2933525",
-            "title": "Sharp Pins + The Roves",
-            "performers": [
-              "Sharp Pins"
-            ],
-            "date": "2026-11-09",
-            "startDate": "2026-11-09T18:30:00+01:00",
-            "venueName": "Toekomstmuziek",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SHARP-PINS-press-photo-credit-Jaxon-Whittington.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/harlekino-troupe-courage-remy-van-kesteren-live/2947396": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -11409,22 +11356,6 @@
             "startDate": "2026-11-10T21:00:00+01:00",
             "venueName": "Paradiso",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/piss-bedroom-3000x2000-1793703927.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/lido-pimienta/2906300": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/lido-pimienta/2906300",
-            "title": "Lido Pimienta",
-            "performers": [
-              "Lido Pimienta"
-            ],
-            "date": "2026-11-09",
-            "startDate": "2026-11-09T19:30:00+01:00",
-            "venueName": "Bitterzoet",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Lido-Pimienta-website-1781605442.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -14872,9 +14803,79 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/suzan-freek/2942224": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/suzan-freek/2942224",
+            "title": "Suzan & Freek",
+            "performers": [
+              "Suzan & Freek"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T19:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SuzanFreek2026-1791211859.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/big-sleep/2895340": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/big-sleep/2895340",
+            "title": "Big Sleep",
+            "performers": [
+              "Big Sleep"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/5-1-1.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/bombino/2867107": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/bombino/2867107",
+            "title": "Bombino",
+            "performers": [
+              "Bombino",
+              "Trackvogels"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bombino-IMG_0175-1.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/ziongate-x-moonshine/2941170": {
+          "checkedAt": "2026-11-10",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/ziongate-x-moonshine/2941170",
+            "title": "Ziongate x Moonshine",
+            "performers": [
+              "Omagoqa",
+              "Akiidmusique",
+              "San Farafina",
+              "Doulou",
+              "Sha'man",
+              "Pierre Kwenders"
+            ],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T22:59:00+01:00",
+            "venueName": "Parallel",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/1045062-2.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     },
     "doornroosje": {
       "access": {
@@ -18030,7 +18031,7 @@
           }
         }
       },
-      "listedAt": "2026-11-09"
+      "listedAt": "2026-11-10"
     }
   }
 }

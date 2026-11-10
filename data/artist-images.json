@@ -7948,7 +7948,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-09T18:36:09.047Z"
+      "checkedAt": "2026-11-10T03:22:04.952Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7960,7 +7960,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-09T18:36:09.047Z"
+      "checkedAt": "2026-11-10T03:22:04.952Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7980,7 +7980,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-09T18:36:09.047Z"
+      "checkedAt": "2026-11-10T03:22:04.952Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7992,7 +7992,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-09T18:36:09.047Z"
+      "checkedAt": "2026-11-10T03:22:04.952Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -9832,6 +9832,119 @@
       },
       "wikidata": "Q27058578",
       "checkedAt": "2026-11-09T18:35:42.663Z"
+    },
+    "jigitz": {
+      "name": "jigitz",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/85828e27e4072fd3947647d573c16ab6/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 12063418,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/12063418",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/12063418"
+      },
+      "checkedAt": "2026-11-10T03:21:02.861Z"
+    },
+    "ruth jacott": {
+      "name": "Ruth Jacott",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8f8f3b5e619c70381bb933dc7559e2a6/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 240716,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/240716",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/240716"
+      },
+      "checkedAt": "2026-11-10T03:21:04.177Z"
+    },
+    "legion of the damned": {
+      "name": "Legion of the Damned",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/b368a2cc7e012cdfc2c7a96612162132/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 15946,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/15946",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/15946"
+      },
+      "checkedAt": "2026-11-10T03:21:07.804Z"
+    },
+    "emma ruth rundle": {
+      "name": "Emma Ruth Rundle",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d5994d7cceba3c4205f6c5e54ce7195a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5799810,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5799810",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5799810"
+      },
+      "checkedAt": "2026-11-10T03:21:08.175Z"
+    },
+    "rotting christ": {
+      "name": "Rotting Christ",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5f812ff7324a611c1bf23cabfa3a5f29/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5602,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5602",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5602"
+      },
+      "checkedAt": "2026-11-10T03:21:08.676Z"
+    },
+    "violencia": {
+      "name": "Violencia",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/477c604774faf3a30b27626868302bbc/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 102788902,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/102788902",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/102788902"
+      },
+      "checkedAt": "2026-11-10T03:21:10.539Z"
+    },
+    "merrimack": {
+      "name": "Merrimack",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/ff3cfd422a16c572f4975080c94da542/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 99176,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/99176",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/99176"
+      },
+      "checkedAt": "2026-11-10T03:21:14.406Z"
+    },
+    "mono": {
+      "name": "MONO",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d41d8cd98f00b204e9800998ecf8427e/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9286774,
+      "matchedBy": "musicbrainz-link",
+      "sourceUrl": "https://www.deezer.com/artist/9286774",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9286774"
+      },
+      "mbid": "93efd85f-2184-4aa1-b8de-eb7ca99e301b",
+      "checkedAt": "2026-11-10T03:21:29.103Z"
     }
   },
   "attempted": {
@@ -11240,8 +11353,9 @@
       "urgentRetried": true
     },
     "actie aletta": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "mothica": {
       "retryAfter": "2027-01-05",
@@ -11298,11 +11412,6 @@
     "the sha la lee s": {
       "retryAfter": "2026-12-07",
       "reason": "album-cover-as-portrait"
-    },
-    "beylerband": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "sub zero": {
       "retryAfter": "2027-01-06",
@@ -11467,20 +11576,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "mono": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        3075,
-        9286974,
-        194550787,
-        170509957,
-        362160582,
-        371830,
-        9286846,
-        9286774
-      ]
-    },
     "songwriter night": {
       "retryAfter": "2026-12-09",
       "reason": "not-found",
@@ -11561,47 +11656,10 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "messa": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        9778638,
-        344169301,
-        344169651,
-        344169261,
-        344169291
-      ]
-    },
-    "papazo χωρις φτερα": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "αστεριος πουφτης μαρια μοσχιδου": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "γιαννης παριος": {
       "retryAfter": "2026-12-09",
       "reason": "not-found",
       "urgentRetried": true
-    },
-    "μια νοτα μια φλογα και χιλιες φωνες": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "ο χριστος θεσσαλονικευς στη διελευση": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "picture this": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        4685222,
-        76526052
-      ]
     },
     "amina": {
       "retryAfter": "2027-01-08",
@@ -11620,12 +11678,14 @@
       ]
     },
     "biased wednesdays": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "frankie and the witchfingers": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "haig yazdjian": {
       "retryAfter": "2026-12-09",
@@ -11644,44 +11704,53 @@
       "reason": "album-cover-as-portrait"
     },
     "τα κοριτσια του αυγουστου": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "balothizer w": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "iason ally album release show": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ini movement jam sessions": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "stouraitis papadopoulos quintet": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "the next movement": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
     },
     "γεωργια νταγακη": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "θανασης βουτσας": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "νικολας razastarr": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "90 s now": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "diggy dex phil": {
       "retryAfter": "2026-12-09",
@@ -11763,10 +11832,6 @@
       "reason": "not-found"
     },
     "peacock": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "peter pan speedrock": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
     },
@@ -12140,10 +12205,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "papazo": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
     "sadahzinia": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
@@ -12262,15 +12323,6 @@
     "luup": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
-    },
-    "apollo brown": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        352569032,
-        1264158,
-        301841121
-      ]
     },
     "ghostface killah": {
       "retryAfter": "2027-01-08",
@@ -12666,10 +12718,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "gripin live": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "ila": {
       "retryAfter": "2027-01-08",
       "reason": "ambiguous-same-name",
@@ -12958,10 +13006,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "david j bauhaus": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "live": {
       "retryAfter": "2027-01-08",
       "reason": "ambiguous-same-name",
@@ -13082,26 +13126,6 @@
     "disco arabesquo": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "mosaic": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        403525202,
-        156694872,
-        582267,
-        271362762,
-        72390252
-      ]
-    },
-    "serve": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        191530147,
-        373716641,
-        9449164
-      ]
     },
     "σουρλουλου παρουσιαση δισκου": {
       "retryAfter": "2026-12-09",
@@ -13867,10 +13891,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "one vision of queen": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "saint etienne": {
       "retryAfter": "2027-01-08",
       "reason": "ambiguous-same-name",
@@ -14191,10 +14211,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "στραφι": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "nieuw 2026": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -14223,21 +14239,9 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "symphony by scream inc": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "final dose uk": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "the prodigal sons": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "widersin": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
     },
     "godsleep": {
       "retryAfter": "2026-12-09",
@@ -14288,17 +14292,9 @@
         389981111
       ]
     },
-    "sanoya": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "standards of brutality": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "infected minds": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
     },
     "half gramme of soma": {
       "retryAfter": "2026-12-09",
@@ -14314,9 +14310,164 @@
     "kidney black 40 χρονια an club": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
+    },
+    "groza": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        141576632,
+        73214472
+      ]
+    },
+    "editors": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1181,
+        12205482
+      ]
+    },
+    "grimner": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "lisza": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "meena cryle": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the chris fillmore band": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "αλεξανδρος κτιστακης": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "irida library concerts 2026 2027": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "parts labor": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "izegrim": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "ian": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        415205812,
+        60253,
+        341413861,
+        333974761
+      ]
+    },
+    "severe torture": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "gorerotted": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "kulk": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "desaster": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "iron lung": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "insurrection": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        240267561,
+        5222809
+      ]
+    },
+    "antropoceno": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "the crown": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        428268,
+        322215071,
+        126742272,
+        126742252
+      ]
+    },
+    "rhododendron": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1703229,
+        417999342,
+        417999332,
+        417999352
+      ]
+    },
+    "nervosa": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1693145,
+        189183207
+      ]
+    },
+    "sadness": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1688805,
+        390982051,
+        373966121,
+        390181421,
+        392774691,
+        390286271,
+        393303771,
+        393954931,
+        399342361,
+        399907631
+      ]
+    },
+    "trha": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "schammasch": {
+      "retryAfter": "2026-12-10",
+      "reason": "album-cover-as-portrait"
+    },
+    "steroid": {
+      "retryAfter": "2027-01-09",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        1596375,
+        399901611
+      ]
     }
   },
   "wikimediaAttempted": {
+    "1550": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
     "classic hits": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
@@ -15018,11 +15169,6 @@
       "reason": "no-confirmed-musician"
     },
     "olive": {
-      "strategyVersion": 5,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "beylerband": {
       "strategyVersion": 5,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -15777,11 +15923,6 @@
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
     },
-    "mono": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "photo-license-or-size-rejected"
-    },
     "songwriter night": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
@@ -15813,11 +15954,6 @@
       "reason": "no-confirmed-musician"
     },
     "vapors of morphine": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "photo-license-or-size-rejected"
-    },
-    "peter pan speedrock": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
       "reason": "photo-license-or-size-rejected"
@@ -15897,32 +16033,7 @@
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
     },
-    "messa": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "papazo χωρις φτερα": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "αστεριος πουφτης μαρια μοσχιδου": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
     "γιαννης παριος": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "μια νοτα μια φλογα και χιλιες φωνες": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "ο χριστος θεσσαλονικευς στη διελευση": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
@@ -16040,6 +16151,126 @@
     "μια αγκαλια τραγουδια": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
+      "reason": "no-confirmed-musician"
+    },
+    "σημαδι παρουσιαση δισκου": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "υπογεια ρευματα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "biliana voutchkova little sae guests": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "cannibal radio clubnight": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "fiesta macumba": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "horal": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "italiano party": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "nostalgic vibes by dj timo": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "peacock": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "pina": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "popronde 2026": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "red bull soundclash": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "stk": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ελεονορα μανονα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ιωαννα καβρουλακη": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ταξιδι στον χρονο με το ρεμπετικο": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "χαρης νικολαιδης": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "andri j": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "ash": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "fred wesley generations": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "president": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "the 3 tenors": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "γ μπιθικωτσης γ πουλοπουλος τ βοσκοπουλος": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
+      "reason": "no-confirmed-musician"
+    },
+    "δημητρης γαλακτοπουλος": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-25",
       "reason": "no-confirmed-musician"
     }
   },
@@ -16209,6 +16440,14 @@
     },
     "blood and sun": {
       "retryAfter": "2027-02-07",
+      "reason": "artist-not-in-provider"
+    },
+    "the elvis concert": {
+      "retryAfter": "2027-02-08",
+      "reason": "artist-not-in-provider"
+    },
+    "bartofso": {
+      "retryAfter": "2027-02-08",
       "reason": "artist-not-in-provider"
     }
   }

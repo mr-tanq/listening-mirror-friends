@@ -959,6 +959,36 @@
       "matchedBy": "unique-name",
       "bandcamp": "https://bloodandsun.bandcamp.com/",
       "checkedAt": "2026-11-09T18:35:37.944Z"
+    },
+    "the elvis concert": {
+      "name": "The Elvis Concert",
+      "mbid": "f4eb45d0-ec9e-453b-b943-6c1b9f2ec6ec",
+      "mbName": "The Elvis Concert",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-10T03:21:18.179Z"
+    },
+    "bartofso": {
+      "name": "Bartofso",
+      "mbid": "b1ea248b-ca18-47b9-a875-ef54c2c37d48",
+      "mbName": "Bartofso",
+      "country": "NL",
+      "matchedBy": "unique-name",
+      "spotifyId": "5EBNHekbDwV3Q9POxvSMBI",
+      "wikidata": "Q105479912",
+      "checkedAt": "2026-11-10T03:21:25.705Z"
+    },
+    "mono": {
+      "name": "MONO",
+      "mbid": "93efd85f-2184-4aa1-b8de-eb7ca99e301b",
+      "mbName": "mono._",
+      "country": "",
+      "disambiguation": "lo‐fi beatmaker",
+      "matchedBy": "context:exact-name+genre+performer-type",
+      "bandcamp": "https://monolofi.bandcamp.com/",
+      "spotifyId": "2rzAQ9Tph2BwfW3vfS0KnS",
+      "deezerId": 9286774,
+      "checkedAt": "2026-11-10T03:21:28.168Z"
     }
   },
   "attempted": {
@@ -971,8 +1001,8 @@
       "reason": "not-found"
     },
     "bartofso": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-25",
+      "reason": "identified-without-free-photo"
     },
     "the james brown experience": {
       "retryAfter": "2026-12-08",
@@ -1075,8 +1105,8 @@
       "reason": "identified-without-free-photo"
     },
     "funk legacy allstars": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "architrackz": {
       "retryAfter": "2026-12-22",
@@ -1267,10 +1297,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "beylerband": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
     "hku large ensemble": {
       "retryAfter": "2026-12-07",
       "reason": "not-found"
@@ -1301,12 +1327,12 @@
       ]
     },
     "one block society": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "samba roots x lucas santana": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "seyda perincek": {
       "retryAfter": "2026-12-23",
@@ -1321,8 +1347,8 @@
       "reason": "not-found"
     },
     "finale amsterdamse popprijs 2026": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "jim gardner": {
       "retryAfter": "2026-12-23",
@@ -1349,12 +1375,12 @@
       "reason": "not-found"
     },
     "vrlcht": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "the elvis concert": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-25",
+      "reason": "identified-without-free-photo"
     },
     "delany": {
       "retryAfter": "2026-12-23",
@@ -1397,8 +1423,8 @@
       "reason": "identified-without-free-photo"
     },
     "demo club bandnight auks": {
-      "retryAfter": "2026-11-10",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
     },
     "songwriter night": {
       "retryAfter": "2026-12-09",
@@ -1466,6 +1492,14 @@
     },
     "cobrah autumn": {
       "retryAfter": "2026-11-11",
+      "reason": "HTTP 503"
+    },
+    "exproz all night long": {
+      "retryAfter": "2026-12-10",
+      "reason": "not-found"
+    },
+    "gplr 2026": {
+      "retryAfter": "2026-11-12",
       "reason": "HTTP 503"
     }
   }
