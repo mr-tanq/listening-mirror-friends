@@ -1,70 +1,7 @@
 {
-  "generatedAt": "2026-11-10T13:42:15.063Z",
+  "generatedAt": "2026-11-11T12:58:00.556Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-464817",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/kiwi-jr/2884046",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kiwi-Jr-2026_300dpi_-photo-by-Colin-Medley.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-487624",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/macy-gray-the-trouble-with-the-truth-tour/2915810",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/unnamed-8-3.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-447809",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/picture-this/",
-      "image": "https://www.doornroosje.nl/app/uploads/2025/11/PictureThis_persfoto_web-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-492489",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/piss/2926480",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/piss-bedroom-3000x2000-1793703927.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-495734",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/sharp-pins/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/09/Sharp-Pins-persfoto-web-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-492324",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/takuya-kuroda-2/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-TAKUYA-KURODA.png?t=1788271449&t=1788271449",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-455505",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/127397/the-fray",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/TheFray_2025Press_RobbyKlein-1.jpg?mtime=1773324783",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-479840",
       "venue": "paradiso",
@@ -393,6 +330,33 @@
       "eventUrl": "https://patronaat.nl/event/immersion-colin-newman-wire-malka-spigel-minimal-compact-14-11-26/",
       "image": "https://patronaat.nl/app/uploads/2026/05/Immersion-Colour-scaled.jpg",
       "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-461267",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/julia-sabate/2884623",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Julia-Sabat%C3%A9-1776346869.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-451452",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/merol/2807427",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/banner2-Large_2026-02-04-093840_mvba-1770211510.jpeg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-454969",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/moon-walker/2859765",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2862169/MoonWalker-_-Press-Photo.jpg",
+      "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -3702,6 +3666,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paradiso-2027-01-31-pulsor-by-bloom-huda",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/tuning-sessions/2947315",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/BloomHuda.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-484902",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/radie-peat/2910945",
@@ -4251,7 +4224,7 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-02-19-enslaved-solstafir-gaahls-wyrd",
+      "eventId": "podiuminfo-495742",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/enslaved-solstafir/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/Enslaved-1200x630.jpg",
@@ -4260,12 +4233,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-effenaar-2027-02-19-heideroosjes",
+      "eventId": "podiuminfo-492169",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/erwin-nyhoff-the-prodigal-sons/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/08/PRDps_Mailheader-ERWIN-NYHOFF.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-481159",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/heideroosjes-19feb",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Website%20heideroosje.png",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4287,21 +4269,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-19-obie-trice",
+      "eventId": "podiuminfo-501740",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/obie-trice-support-19-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/10/obietrice3.jpg",
-      "confidence": 1,
-      "published": true,
+      "confidence": 0.9,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-19-wende",
+      "eventId": "podiuminfo-494806",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/wende/2931992",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Wende-2027_2026-09-23-085201_ajek.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {

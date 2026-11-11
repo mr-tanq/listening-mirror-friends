@@ -998,6 +998,20 @@
       "matchedBy": "unique-name",
       "spotifyId": "0GYgu8NyVpXbTmqJ5Rqwsu",
       "checkedAt": "2026-11-10T13:03:30.679Z"
+    },
+    "enslaved": {
+      "name": "Enslaved",
+      "mbid": "29bb04d6-5602-464c-8577-f55a27511b27",
+      "mbName": "Enslaved",
+      "country": "NO",
+      "disambiguation": "Norwegian black metal band",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://enslaved.bandcamp.com/",
+      "spotifyId": "2HmtB6wVRRi3z0JwZHtkiD",
+      "deezerId": 3266,
+      "homepage": "https://enslaved.no/",
+      "wikidata": "Q916688",
+      "checkedAt": "2026-11-11T12:52:13.346Z"
     }
   },
   "attempted": {
@@ -1104,10 +1118,6 @@
     "sophie straat": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "radar machine": {
-      "retryAfter": "2026-12-06",
-      "reason": "not-found"
     },
     "dav id": {
       "retryAfter": "2026-12-21",
@@ -1267,8 +1277,8 @@
       "reason": "not-found"
     },
     "orsini": {
-      "retryAfter": "2026-11-11",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-11",
+      "reason": "not-found"
     },
     "dylan dunnink": {
       "retryAfter": "2026-12-09",
@@ -1464,20 +1474,20 @@
       "reason": "not-found"
     },
     "club 3voor12 utrecht": {
-      "retryAfter": "2026-11-11",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-11",
+      "reason": "not-found"
     },
     "hania derej trio": {
-      "retryAfter": "2026-11-11",
-      "reason": "fetch failed"
+      "retryAfter": "2026-12-11",
+      "reason": "not-found"
     },
     "luca st": {
-      "retryAfter": "2026-11-11",
-      "reason": "fetch failed"
+      "retryAfter": "2026-12-11",
+      "reason": "not-found"
     },
     "mobilhome": {
-      "retryAfter": "2026-11-11",
-      "reason": "fetch failed"
+      "retryAfter": "2026-11-13",
+      "reason": "HTTP 503"
     },
     "the ruins of beverast": {
       "retryAfter": "2026-12-24",

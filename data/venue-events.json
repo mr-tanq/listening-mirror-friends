@@ -502,7 +502,7 @@
           }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "vera": {
       "access": {
@@ -1254,7 +1254,7 @@
           "event": null
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "effenaar": {
       "access": {
@@ -2704,7 +2704,7 @@
           }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "patronaat": {
       "access": {
@@ -5020,9 +5020,23 @@
             "cancelled": false,
             "via": "url-date+opengraph"
           }
+        },
+        "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/",
+            "title": "Maite Hontelé y La Novia",
+            "performers": [],
+            "date": "2027-03-11",
+            "startDate": "2027-03-11",
+            "venueName": "",
+            "image": "https://patronaat.nl/app/uploads/2026/11/maite_adinda_070426-087-edit_internet-scaled.jpg",
+            "cancelled": false,
+            "via": "url-date+opengraph"
+          }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "paard": {
       "access": {
@@ -6191,34 +6205,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paard.nl/event/takuya-kuroda-2/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/takuya-kuroda-2/",
-            "title": "TAKUYA KURODA",
-            "performers": [],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T20:20",
-            "venueName": "Kleine Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-TAKUYA-KURODA.png?t=1788271449&t=1788271449",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/takuya-kuroda/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/takuya-kuroda/",
-            "title": "TAKUYA KURODA",
-            "performers": [],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T20:20",
-            "venueName": "Kleine Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-TAKUYA-KURODA.png?t=1788271400&t=1788271400",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paard.nl/event/the-bug-club-2/": {
           "checkedAt": "2026-11-05",
           "event": {
@@ -7296,9 +7282,345 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-77/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-gettin-80s-90s-wit-it-77/",
+            "title": "Paardcafé: Gettin’ 80s 90s Wit It!",
+            "performers": [],
+            "date": "2026-11-27",
+            "startDate": "2026-11-27T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/10/80S90S-WEB-HEADER-02.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/erwin-nyhoff-the-prodigal-sons/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/erwin-nyhoff-the-prodigal-sons/",
+            "title": "ERWIN NYHOFF & THE PRODIGAL SONS",
+            "performers": [],
+            "date": "2027-02-19",
+            "startDate": "2027-02-19T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/08/PRDps_Mailheader-ERWIN-NYHOFF.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/erwin-nyhoff-the-prodigal-sons-2/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/erwin-nyhoff-the-prodigal-sons-2/",
+            "title": "ERWIN NYHOFF & THE PRODIGAL SONS",
+            "performers": [],
+            "date": "2027-02-19",
+            "startDate": "2027-02-19T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/08/PRDps_Mailheader-ERWIN-NYHOFF.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-haags-hiphop-centrum-2/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-haags-hiphop-centrum-2/",
+            "title": "Paardcafé: Haags Hiphop Centrum",
+            "performers": [],
+            "date": "2026-12-11",
+            "startDate": "2026-12-11T20:00",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/strijderacademie-eindevent11122026.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-haags-hiphop-centrum/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-haags-hiphop-centrum/",
+            "title": "Paardcafé: Haags Hiphop Centrum",
+            "performers": [],
+            "date": "2026-12-11",
+            "startDate": "2026-12-11T20:00",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/strijderacademie-eindevent11122026.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/girls-of-the-internet-2/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/girls-of-the-internet-2/",
+            "title": "GIRLS OF THE INTERNET",
+            "performers": [],
+            "date": "2027-01-20",
+            "startDate": "2027-01-20T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Websiteheader.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/girls-of-the-internet/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/girls-of-the-internet/",
+            "title": "GIRLS OF THE INTERNET",
+            "performers": [],
+            "date": "2027-01-20",
+            "startDate": "2027-01-20T20:00",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Websiteheader.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/40up-49/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/40up-49/",
+            "title": "40UP",
+            "performers": [],
+            "date": "2026-12-28",
+            "startDate": "2026-12-28T20:00",
+            "venueName": "Grote Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Mailheader-40-UP.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/40up-48/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/40up-48/",
+            "title": "40UP",
+            "performers": [],
+            "date": "2026-12-28",
+            "startDate": "2026-12-28T20:00",
+            "venueName": "Grote Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Mailheader-40-UP.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/chefspecial-8/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/chefspecial-8/",
+            "title": "CHEF’SPECIAL",
+            "performers": [],
+            "date": "2027-03-06",
+            "startDate": "2027-03-06T19:30",
+            "venueName": "Grolsch Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/PRDps_Mailheader-CHEFSPECIAL.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/chefspecial-7/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/chefspecial-7/",
+            "title": "CHEF’SPECIAL",
+            "performers": [],
+            "date": "2027-03-06",
+            "startDate": "2027-03-06T19:30",
+            "venueName": "Grolsch Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/09/PRDps_Mailheader-CHEFSPECIAL.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/ready2play/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/ready2play/",
+            "title": "READY2PLAY",
+            "performers": [],
+            "date": "2026-12-11",
+            "startDate": "2026-12-11T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/download.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/ready2play-tour-27/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/ready2play-tour-27/",
+            "title": "READY2PLAY – TOUR 27",
+            "performers": [],
+            "date": "2026-12-11",
+            "startDate": "2026-12-11T19:30",
+            "venueName": "Kleine Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/download.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-121/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-121/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-17",
+            "startDate": "2026-12-17T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-120/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-120/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-17",
+            "startDate": "2026-12-17T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-119/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-119/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-10",
+            "startDate": "2026-12-10T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-118/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-118/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-10",
+            "startDate": "2026-12-10T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-110/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-110/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-11-12",
+            "startDate": "2026-11-12T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-117/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-117/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-03",
+            "startDate": "2026-12-03T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-club-pony-116/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-club-pony-116/",
+            "title": "Paardcafé: Club Pony!",
+            "performers": [],
+            "date": "2026-12-03",
+            "startDate": "2026-12-03T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-boyos-soundsystem-10/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-boyos-soundsystem-10/",
+            "title": "Paardcafé: Boyos Soundsystem",
+            "performers": [],
+            "date": "2026-12-04",
+            "startDate": "2026-12-04T23:59",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/Paard_04_12_26-banner-600x600.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-boyos-soundsystem-9/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-boyos-soundsystem-9/",
+            "title": "Paardcafé: Boyos Soundsystem",
+            "performers": [],
+            "date": "2026-12-04",
+            "startDate": "2026-12-04T23:59",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/11/Paard_04_12_26-banner-600x600.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-thyme-flies-22/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-thyme-flies-22/",
+            "title": "Paardcafé: Thyme Flies",
+            "performers": [],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/05/Pressfoto-Thyme-Flies-2026-600x600.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paard.nl/event/paardcafe-thyme-flies-21/": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paard.nl/event/paardcafe-thyme-flies-21/",
+            "title": "Paardcafé: Thyme Flies",
+            "performers": [],
+            "date": "2026-11-13",
+            "startDate": "2026-11-13T23:30",
+            "venueName": "Café",
+            "image": "https://www.paard.nl/wp-content/uploads/2026/05/Pressfoto-Thyme-Flies-2026-600x600.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "013": {
       "access": {
@@ -11412,101 +11734,6 @@
             "via": "json-ld"
           }
         },
-        "https://www.paradiso.nl/programma/kiwi-jr/2884046": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/kiwi-jr/2884046",
-            "title": "Kiwi Jr.",
-            "performers": [
-              "Kiwi Jr."
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kiwi-Jr-2026_300dpi_-photo-by-Colin-Medley.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/macy-gray-the-trouble-with-the-truth-tour/2915810": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/macy-gray-the-trouble-with-the-truth-tour/2915810",
-            "title": "Macy Gray - The Trouble With The Truth Tour + K.ZIA",
-            "performers": [],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/unnamed-8-3.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/piss/2926480": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/piss/2926480",
-            "title": "PISS",
-            "performers": [
-              "PISS"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T21:00:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/piss-bedroom-3000x2000-1793703927.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/radio-free-alice/2924901": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/radio-free-alice/2924901",
-            "title": "Radio Free Alice + Humane The Moon",
-            "performers": [
-              "Radio Free Alice",
-              "Humane The Moon"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T18:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/260812000000060015-2.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/rita-wilson-sound-of-a-woman-uk-europe-tour/2877728": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/rita-wilson-sound-of-a-woman-uk-europe-tour/2877728",
-            "title": "Rita Wilson - Sound of a Woman UK & Europe Tour + Inge Lamboo",
-            "performers": [
-              "Rita Wilson"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T19:00:00+01:00",
-            "venueName": "Zonnehuis",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/RW-Sound-of-a-Woman-PHOTO2-verkleind-1775135312.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/lily-seabird/2906751": {
-          "checkedAt": "2026-11-06",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/lily-seabird/2906751",
-            "title": "Lily Seabird",
-            "performers": [
-              "Lily Seabird"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T19:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Lily-Seabird-web.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
         "https://www.paradiso.nl/programma/hazlett/2929730": {
           "checkedAt": "2026-11-06",
           "event": {
@@ -15051,9 +15278,153 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/merol/2807427": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/merol/2807427",
+            "title": "Merol + MAHA",
+            "performers": [
+              "MEROL",
+              "MAHA"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/banner2-Large_2026-02-04-093840_mvba-1770211510.jpeg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/julia-sabate/2884623": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/julia-sabate/2884623",
+            "title": "Julia Sabaté",
+            "performers": [
+              "Julia Sabaté"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Julia-Sabat%C3%A9-1776346869.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/moon-walker/2859765": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/moon-walker/2859765",
+            "title": "Moon Walker",
+            "performers": [
+              "Moon Walker"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2862169/MoonWalker-_-Press-Photo.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/lucky-fonz-iii/2747841": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/lucky-fonz-iii/2747841",
+            "title": "Lucky Fonz III + Michiel Balcaen",
+            "performers": [
+              "Lucky Fonz III"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T18:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Lucky-Fonz-III_-by-Sanja-Marusic_3_social-media-1762532743.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/heylucas/2890783": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/heylucas/2890783",
+            "title": "heylucas + Monoko",
+            "performers": [
+              "heylucas"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T18:30:00+01:00",
+            "venueName": "Bitterzoet",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/banner_2026-05-06-071729_gzcw.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/dirty-blond/2939630": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/dirty-blond/2939630",
+            "title": "Dirty Blond + Philine",
+            "performers": [
+              "Dirty Blond",
+              "philine"
+            ],
+            "date": "2026-11-14",
+            "startDate": "2026-11-14T19:15:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2940805/Dirty-Blond-1790682364.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/saad-tiouly/2952999": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/saad-tiouly/2952999",
+            "title": "SAAD TIOULY",
+            "performers": [],
+            "date": "2027-03-24",
+            "startDate": "2027-03-24T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/foto-klein-1794320179.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/joyce-wrice/2953777": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/joyce-wrice/2953777",
+            "title": "Joyce Wrice",
+            "performers": [
+              "Joyce Wrice"
+            ],
+            "date": "2027-05-09",
+            "startDate": "2027-05-09T18:30:00+02:00",
+            "venueName": "Bitterzoet",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Joyce-Wrice-2026.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/funky-times/2951670": {
+          "checkedAt": "2026-11-11",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/funky-times/2951670",
+            "title": "Funky Times",
+            "performers": [
+              "Funky Times"
+            ],
+            "date": "2027-02-17",
+            "startDate": "2027-02-17T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DESCRIPTION-PICTURE-1794234213.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     },
     "doornroosje": {
       "access": {
@@ -15072,38 +15443,6 @@
             "startDate": "2026-12-03T20:00:00+00:00",
             "venueName": "Doornroosje - Paarse zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/03/20261203-kids-With-Buns-WEB2-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/picture-this/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/picture-this/",
-            "title": "Picture This",
-            "performers": [
-              "Picture This"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T19:45:00+00:00",
-            "venueName": "Doornroosje - Rode zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2025/11/PictureThis_persfoto_web-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/sharp-pins/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/sharp-pins/",
-            "title": "Sharp Pins",
-            "performers": [
-              "Sharp Pins"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T20:30:00+00:00",
-            "venueName": "Doornroosje - Paarse zaal",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/09/Sharp-Pins-persfoto-web-1200x630.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -16240,22 +16579,6 @@
             "startDate": "2027-03-11T19:45:00+00:00",
             "venueName": "Doornroosje - Rode zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/jeremy-pinnell/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/jeremy-pinnell/",
-            "title": "Jeremy Pinnell",
-            "performers": [
-              "Jeremy Pinnell"
-            ],
-            "date": "2026-11-10",
-            "startDate": "2026-11-10T20:45:00+00:00",
-            "venueName": "Merleyn",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/03/jp-web-1200x630.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -18257,7 +18580,7 @@
           }
         }
       },
-      "listedAt": "2026-11-10"
+      "listedAt": "2026-11-11"
     }
   }
 }

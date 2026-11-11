@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-10T13:38:54.160Z",
-  "auditedFor": "2026-11-10",
-  "totalPublished": 1925,
-  "greekPublished": 399,
+  "catalogUpdatedAt": "2026-11-11T12:54:39.358Z",
+  "auditedFor": "2026-11-11",
+  "totalPublished": 1938,
+  "greekPublished": 411,
   "imageCoverage": {
-    "withImage": 1053,
-    "withoutImage": 872
+    "withImage": 1065,
+    "withoutImage": 873
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1416,
-      "withImage": 691,
-      "withoutImage": 725
-    },
-    "BE": {
-      "events": 110,
-      "withImage": 7,
-      "withoutImage": 103
+      "events": 1418,
+      "withImage": 690,
+      "withoutImage": 728
     },
     "GR": {
-      "events": 399,
-      "withImage": 355,
-      "withoutImage": 44
+      "events": 411,
+      "withImage": 368,
+      "withoutImage": 43
+    },
+    "BE": {
+      "events": 109,
+      "withImage": 7,
+      "withoutImage": 102
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 28,
-      "withImage": 26,
+      "events": 29,
+      "withImage": 27,
       "withoutImage": 2,
-      "greekEvents": 28
+      "greekEvents": 29
     },
     "festivalinfo": {
       "events": 13,
@@ -50,46 +50,46 @@
       "greekEvents": 4
     },
     "gagarin-calendar": {
-      "events": 3,
-      "withImage": 3,
+      "events": 20,
+      "withImage": 20,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 20
     },
     "more": {
-      "events": 284,
-      "withImage": 284,
+      "events": 280,
+      "withImage": 280,
       "withoutImage": 0,
-      "greekEvents": 284
+      "greekEvents": 280
     },
     "official": {
-      "events": 7,
-      "withImage": 7,
+      "events": 6,
+      "withImage": 6,
       "withoutImage": 0,
-      "greekEvents": 5
+      "greekEvents": 4
     },
     "podiuminfo-agenda": {
       "events": 1212,
-      "withImage": 394,
-      "withoutImage": 818,
+      "withImage": 392,
+      "withoutImage": 820,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 61,
+      "events": 60,
       "withImage": 19,
-      "withoutImage": 42,
-      "greekEvents": 61
+      "withoutImage": 41,
+      "greekEvents": 60
     },
     "venue-official": {
-      "events": 299,
-      "withImage": 297,
+      "events": 300,
+      "withImage": 298,
       "withoutImage": 2,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 3,
-      "withImage": 3,
+      "published": 20,
+      "withImage": 20,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,20 +103,30 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 28,
-      "withImage": 26,
+      "published": 29,
+      "withImage": 27,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 31,
-      "withImage": 29,
+      "events": 32,
+      "withImage": 30,
       "sources": [
         "anclub-index",
         "rocking",
         "more"
+      ]
+    },
+    {
+      "name": "Gagarin 205",
+      "events": 22,
+      "withImage": 22,
+      "sources": [
+        "gagarin-calendar",
+        "rocking",
+        "official"
       ]
     },
     {
@@ -129,16 +139,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 19,
-      "withImage": 19,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205 Live Music Space",
-      "events": 16,
-      "withImage": 16,
+      "events": 20,
+      "withImage": 20,
       "sources": [
         "more"
       ]
@@ -170,6 +172,14 @@
       ]
     },
     {
+      "name": "Death Disco",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Piraeus Club Academy",
       "events": 14,
       "withImage": 12,
@@ -187,14 +197,6 @@
       ]
     },
     {
-      "name": "Death Disco",
-      "events": 13,
-      "withImage": 13,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Half Note Jazz Club",
       "events": 10,
       "withImage": 10,
@@ -203,11 +205,19 @@
       ]
     },
     {
-      "name": "Eightball",
-      "events": 8,
-      "withImage": 3,
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 9,
+      "withImage": 9,
       "sources": [
-        "rocking"
+        "more"
+      ]
+    },
+    {
+      "name": "Circus Entertainment Hub",
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -220,8 +230,8 @@
     },
     {
       "name": "B. & M. THEOCHARAKI FOUNDATION",
-      "events": 7,
-      "withImage": 7,
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
@@ -235,11 +245,11 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "name": "Eightball",
       "events": 7,
-      "withImage": 7,
+      "withImage": 3,
       "sources": [
-        "more"
+        "rocking"
       ]
     },
     {
@@ -259,14 +269,6 @@
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
-      "events": 7,
-      "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "CHRISTMAS THEATER",
       "events": 6,
       "withImage": 6,
@@ -275,17 +277,23 @@
       ]
     },
     {
-      "name": "Gagarin 205",
-      "events": 6,
-      "withImage": 6,
+      "name": "Stage7",
+      "events": 5,
+      "withImage": 5,
       "sources": [
-        "gagarin-calendar",
-        "rocking",
-        "official"
+        "more"
       ]
     },
     {
       "name": "gazarte roof stage",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -302,14 +310,6 @@
     },
     {
       "name": "MIKRI SKINI - Mikri Skini",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Stage7",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -389,14 +389,6 @@
       ]
     },
     {
-      "name": "Klakaz",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -435,17 +427,25 @@
       "sources": [
         "rocking"
       ]
+    },
+    {
+      "name": "ROHAS ATHENS LIVE STAGE",
+      "events": 2,
+      "withImage": 2,
+      "sources": [
+        "more"
+      ]
     }
   ],
   "venueWarnings": {
-    "gagarin": "Official venue calendar is not iCalendar",
+    "gagarin": "",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "unrecognized",
-    "message": "Official page structure not recognized",
+    "status": "empty",
+    "message": "Official music category has no announced events",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }

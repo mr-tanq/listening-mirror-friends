@@ -1,44 +1,44 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T13:42:18.761Z",
-  "catalogUpdatedAt": "2026-11-10T13:38:54.160Z",
-  "auditedFor": "2026-11-10",
+  "generatedAt": "2026-11-11T12:58:34.801Z",
+  "catalogUpdatedAt": "2026-11-11T12:54:39.358Z",
+  "auditedFor": "2026-11-11",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1926,
-    "eventPoster": 1054,
-    "artistPhoto": 541,
-    "noImage": 331,
+    "total": 1947,
+    "eventPoster": 1079,
+    "artistPhoto": 533,
+    "noImage": 335,
     "posterWithPhotoBackup": 472
   },
   "byCountry": {
     "NL": {
-      "total": 1417,
-      "eventPoster": 692,
-      "artistPhoto": 462,
-      "noImage": 263,
+      "total": 1427,
+      "eventPoster": 704,
+      "artistPhoto": 456,
+      "noImage": 267,
       "posterWithPhotoBackup": 380
     },
-    "BE": {
-      "total": 110,
-      "eventPoster": 7,
-      "artistPhoto": 66,
-      "noImage": 37,
-      "posterWithPhotoBackup": 5
-    },
     "GR": {
-      "total": 399,
-      "eventPoster": 355,
-      "artistPhoto": 13,
+      "total": 411,
+      "eventPoster": 368,
+      "artistPhoto": 12,
       "noImage": 31,
       "posterWithPhotoBackup": 87
+    },
+    "BE": {
+      "total": 109,
+      "eventPoster": 7,
+      "artistPhoto": 65,
+      "noImage": 37,
+      "posterWithPhotoBackup": 5
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 112,
-    "artist-not-found": 115,
+    "album-cover-rejected": 114,
+    "artist-not-found": 117,
     "ambiguous-artist": 73,
     "other-lookup-cooldown": 20,
     "not-in-artist-cache": 4,
@@ -46,7 +46,7 @@
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 800,
+      "deezer": 806,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,16 +58,8 @@
       }
     }
   },
-  "missingNext14Days": 81,
+  "missingNext14Days": 85,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-499977",
-      "artist": "Radar Machine",
-      "date": "2026-11-10",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-501470",
       "artist": "Dav ID",
@@ -269,14 +261,6 @@
       "reason": "artist-has-no-photo"
     },
     {
-      "id": "podiuminfo-454969",
-      "artist": "Moon Walker",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-493137",
       "artist": "NEMS Unleashed",
       "date": "2026-11-14",
@@ -379,57 +363,25 @@
       "country": "NL",
       "venue": "Muziekgieterij",
       "reason": "artist-not-found"
-    }
-  ],
-  "missingOtherSamples": [
-    {
-      "id": "podiuminfo-477377",
-      "artist": "Chris Eckman",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-482073",
-      "artist": "Greek",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-494889",
-      "artist": "Judith Kiddo - Melissa Weikart",
-      "date": "2026-11-25",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-480071",
-      "artist": "Lost",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498837",
-      "artist": "Van Asseldonk Cartel",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-479014",
-      "artist": "We All Sing ABBA",
-      "date": "2026-11-25",
+      "id": "podiuminfo-446569",
+      "artist": "Bloc Party & Interpol",
+      "date": "2026-11-17",
       "country": "NL",
       "venue": "AFAS Live",
       "reason": "artist-not-found"
     },
+    {
+      "id": "podiuminfo-499254",
+      "artist": "Man with a Movie Camera",
+      "date": "2026-11-17",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "ambiguous-artist"
+    }
+  ],
+  "missingOtherSamples": [
     {
       "id": "podiuminfo-462642",
       "artist": "Bartofso",
@@ -701,6 +653,54 @@
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498838",
+      "artist": "Gambling With Goodwill en Bad Joke",
+      "date": "2026-12-02",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-493402",
+      "artist": "Q Marsden - Do You See Me? Tour",
+      "date": "2026-12-02",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-484068",
+      "artist": "Raquel Rodriguez",
+      "date": "2026-12-02",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "rocking-20261202-27546",
+      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+      "date": "2026-12-02",
+      "country": "GR",
+      "venue": "Ίλιον Plus",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-469458",
+      "artist": "Gotts Street Park",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-463012",
+      "artist": "MORBID",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Hall Of Fame",
+      "reason": "album-cover-rejected"
     }
   ]
 }
