@@ -1,61 +1,7 @@
 {
-  "generatedAt": "2026-11-11T12:58:00.556Z",
+  "generatedAt": "2026-11-12T14:00:19.468Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-479840",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/amina/2904253",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Amina-website-1781554022.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-451009",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/125158/enter-shikari",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/ES_2026-01-23-091720_vdwa.png?mtime=1769159846",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-453323",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/frankie-and-the-witchfingers-3/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/02/Frankie-and-the-Witch-Fingers-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-494686",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/oh-voyage-3/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/09/Artist-Photo-for-Album-Tour-600x600.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2026-11-11-touching-ice",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/touching-ice/2944055",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ab6761610000e5eb743a6340db706cb77c3ef00b.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-496970",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/trio-bier/2941617",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/trio-bier-2-1.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "venue-effenaar-2026-11-12-early-james",
       "venue": "effenaar",
@@ -106,6 +52,15 @@
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/macy-gray-6/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/07/1PRDps_Mailheader-MACY-GRAY.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-11-12-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-110/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -195,6 +150,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/hiigo-2/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/01/Persfoto-Hiigo_web-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-11-13-paardcafe-thyme-flies",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-thyme-flies-22/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/05/Pressfoto-Thyme-Flies-2026-600x600.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -454,6 +418,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/blof-19/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/07/WEB-foto-4-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-481212",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/bokoesam/2908023",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bokoesam-1782053387.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -1497,6 +1470,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2026-12-03-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-117/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-454132",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/treasure-bruno-mars-tribute-2/",
@@ -1562,6 +1544,15 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/no-barrier-4dec",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20WebsiteNobarrbier.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-12-04-paardcafe-boyos-soundsystem",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-boyos-soundsystem-10/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/11/Paard_04_12_26-banner-600x600.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -1827,6 +1818,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2026-12-10-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-119/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-451096",
       "venue": "bibelot",
       "eventUrl": "https://bibelot.net/programma/paceshifters-play-nirvana/",
@@ -1936,6 +1936,15 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/only10s-11-12-26/",
       "image": "https://patronaat.nl/app/uploads/2026/10/only10s-POST.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-12-11-paardcafe-haags-hiphop-centrum",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-haags-hiphop-centrum-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/11/strijderacademie-eindevent11122026.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2260,6 +2269,15 @@
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/130610/my-baby",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/MY-BABY_juni-2025-2.jpg?mtime=1777891868",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-12-17-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-121/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2707,6 +2725,15 @@
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/160973/up-close-with-d-block-s-te-fan",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/DBSTF-Banner-01.jpg?mtime=1790856645",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-12-28-40up",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/40up-49/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Mailheader-40-UP.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -3202,6 +3229,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-19/",
       "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-scaled.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2027-01-20-girls-of-the-internet",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/girls-of-the-internet-2/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/11/PRDps_Websiteheader.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -3981,12 +4017,12 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-12-mr-cutts",
+      "eventId": "podiuminfo-502426",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/mr-cutts/2952988",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DSCF4713-1793981921.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4287,21 +4323,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-effenaar-2027-02-20-physical-graffiti",
+      "eventId": "podiuminfo-482165",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/physical-graffiti-2027",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20Website%20physical%20gr.png",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-013-2027-02-20-reset-2027",
+      "eventId": "podiuminfo-498655",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/161754/reset-2027",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/RESET-2027-ARTWORK-Banner-1920x1080.jpg?mtime=1791997839",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4314,39 +4350,39 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-02-20-the-reytons",
+      "eventId": "podiuminfo-461827",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/the-reytons/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/04/WEB-foto-3.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-20-tramhaus",
+      "eventId": "podiuminfo-476441",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/tramhaus/2893793",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/R1-04116-0013.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-02-20-tribe",
+      "eventId": "podiuminfo-501941",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/tribe-2/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/11/Web-foto-TRIBE-2-1088x630.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-20-yin-yin",
+      "eventId": "podiuminfo-494342",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/yin-yin-20-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/c-Philine-van-den-Hul10-scaled.jpg",
-      "confidence": 1,
-      "published": true,
+      "confidence": 0.9,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4872,6 +4908,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2027-03-06-chef-special",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/chefspecial-8/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/09/PRDps_Mailheader-CHEFSPECIAL.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-doornroosje-2027-03-06-come-as-you-are",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/come-as-you-are-3/",
@@ -5002,6 +5047,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/wende-12/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-03-11-maite-hontele-y-la-novia",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/maite_adinda_070426-087-edit_internet-scaled.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5902,6 +5956,15 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/the-lilacs/2886901",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Lilacs-1777275908.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-10-hagane",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/hagane-10-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/HAGANE20260623-scaled.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

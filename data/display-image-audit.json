@@ -1,81 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T12:58:34.801Z",
-  "catalogUpdatedAt": "2026-11-11T12:54:39.358Z",
-  "auditedFor": "2026-11-11",
+  "generatedAt": "2026-11-12T14:00:45.717Z",
+  "catalogUpdatedAt": "2026-11-12T13:56:57.689Z",
+  "auditedFor": "2026-11-12",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1947,
-    "eventPoster": 1079,
-    "artistPhoto": 533,
-    "noImage": 335,
-    "posterWithPhotoBackup": 472
+    "total": 1965,
+    "eventPoster": 1098,
+    "artistPhoto": 527,
+    "noImage": 340,
+    "posterWithPhotoBackup": 475
   },
   "byCountry": {
     "NL": {
-      "total": 1427,
-      "eventPoster": 704,
-      "artistPhoto": 456,
-      "noImage": 267,
+      "total": 1431,
+      "eventPoster": 708,
+      "artistPhoto": 452,
+      "noImage": 271,
       "posterWithPhotoBackup": 380
     },
     "GR": {
-      "total": 411,
-      "eventPoster": 368,
+      "total": 425,
+      "eventPoster": 382,
       "artistPhoto": 12,
       "noImage": 31,
-      "posterWithPhotoBackup": 87
+      "posterWithPhotoBackup": 89
     },
     "BE": {
       "total": 109,
-      "eventPoster": 7,
-      "artistPhoto": 65,
-      "noImage": 37,
-      "posterWithPhotoBackup": 5
+      "eventPoster": 8,
+      "artistPhoto": 63,
+      "noImage": 38,
+      "posterWithPhotoBackup": 6
     }
   },
   "missingReasons": {
     "album-cover-rejected": 114,
-    "artist-not-found": 117,
-    "ambiguous-artist": 73,
+    "ambiguous-artist": 75,
     "other-lookup-cooldown": 20,
+    "artist-not-found": 120,
     "not-in-artist-cache": 4,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 806,
+      "deezer": 819,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 43,
+      "attempted": 42,
       "failuresByReason": {
-        "artist-not-in-provider": 36,
+        "artist-not-in-provider": 35,
         "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
   },
-  "missingNext14Days": 85,
+  "missingNext14Days": 91,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-501470",
-      "artist": "Dav ID",
-      "date": "2026-11-11",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-488701",
-      "artist": "Funk Legacy Allstars",
-      "date": "2026-11-11",
-      "country": "NL",
-      "venue": "Patronaat",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-472059",
       "artist": "Architrackz",
@@ -379,73 +363,25 @@
       "country": "NL",
       "venue": "Vera",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-486422",
+      "artist": "Eloise",
+      "date": "2026-11-18",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498836",
+      "artist": "Geel, Changeover en Tray",
+      "date": "2026-11-18",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-462642",
-      "artist": "Bartofso",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Paard",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-500902",
-      "artist": "Club 3voor12 Utrecht",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-500078",
-      "artist": "Def & BrittneySGAT",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-473433",
-      "artist": "Hania Derej Trio",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-497688",
-      "artist": "Luca St",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-457842",
-      "artist": "Mobilhome",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Paard",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-463824",
-      "artist": "The Ruins Of Beverast - Tempelschlaf Tour",
-      "date": "2026-11-26",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-456106",
-      "artist": "Zélie",
-      "date": "2026-11-26",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "ambiguous-artist"
-    },
     {
       "id": "podiuminfo-462644",
       "artist": "Bartofso - Le Tour de Masque",
@@ -700,6 +636,70 @@
       "date": "2026-12-03",
       "country": "NL",
       "venue": "Hall Of Fame",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-454132",
+      "artist": "Treasure (Bruno Mars Tribute)",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-499145",
+      "artist": "3voor12 Song van het jaar",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-474641",
+      "artist": "Ares",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-487156",
+      "artist": "Baroeg Tribute Night: Sex Pistols Expose",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "Baroeg",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-493691",
+      "artist": "Donna's Hot Stuff - Could It Be Magic Tour",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "artist-has-no-photo"
+    },
+    {
+      "id": "podiuminfo-447177",
+      "artist": "Fortunate Sons - Creedence Clearwater Revival Tribute",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "Grenswerk",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-494235",
+      "artist": "Hohnen Ford",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-495854",
+      "artist": "Juwls",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
       "reason": "album-cover-rejected"
     }
   ]

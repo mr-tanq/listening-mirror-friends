@@ -1012,6 +1012,17 @@
       "homepage": "https://enslaved.no/",
       "wikidata": "Q916688",
       "checkedAt": "2026-11-11T12:52:13.346Z"
+    },
+    "hania derej": {
+      "name": "Hania Derej",
+      "mbid": "4f5f79ca-c504-404e-9e82-da7634636ea2",
+      "mbName": "Hania Derej",
+      "country": "PL",
+      "disambiguation": "Polish composer and pianist",
+      "matchedBy": "unique-name",
+      "spotifyId": "2IU2updV8nCbwezu453ame",
+      "homepage": "https://haniaderej.com/",
+      "checkedAt": "2026-11-12T13:54:32.218Z"
     }
   },
   "attempted": {
@@ -1118,14 +1129,6 @@
     "sophie straat": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "dav id": {
-      "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
-    "funk legacy allstars": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
     },
     "architrackz": {
       "retryAfter": "2026-12-22",
@@ -1506,11 +1509,11 @@
       "reason": "identified-without-free-photo"
     },
     "cobrah autumn": {
-      "retryAfter": "2026-11-11",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-12",
+      "reason": "not-found"
     },
     "gplr 2026": {
-      "retryAfter": "2026-11-12",
+      "retryAfter": "2026-11-14",
       "reason": "HTTP 503"
     },
     "leap": {
@@ -1564,6 +1567,14 @@
     "nos ku nos": {
       "retryAfter": "2026-11-12",
       "reason": "HTTP 503"
+    },
+    "hania derej": {
+      "retryAfter": "2026-12-27",
+      "reason": "identified-without-free-photo"
+    },
+    "dinsdagochtend concert": {
+      "retryAfter": "2026-12-12",
+      "reason": "not-found"
     }
   }
 }
