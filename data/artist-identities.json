@@ -1023,6 +1023,15 @@
       "spotifyId": "2IU2updV8nCbwezu453ame",
       "homepage": "https://haniaderej.com/",
       "checkedAt": "2026-11-12T13:54:32.218Z"
+    },
+    "mobilhome": {
+      "name": "Mobilhome",
+      "mbid": "185ba191-de51-4c10-8406-f3fcc619216e",
+      "mbName": "Mobilhome",
+      "country": "BE",
+      "disambiguation": "Belgian jazz quintet of Camille-Alban Spreng",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-13T13:16:41.229Z"
     }
   },
   "attempted": {
@@ -1061,10 +1070,6 @@
     "ares": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
-    },
-    "queen s pleasure": {
-      "retryAfter": "2026-12-20",
-      "reason": "identified-without-free-photo"
     },
     "jazz for lunch": {
       "retryAfter": "2026-12-05",
@@ -1129,30 +1134,6 @@
     "sophie straat": {
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
-    },
-    "architrackz": {
-      "retryAfter": "2026-12-22",
-      "reason": "identified-without-free-photo"
-    },
-    "koala disco": {
-      "retryAfter": "2026-12-22",
-      "reason": "identified-without-free-photo"
-    },
-    "nate smith": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "a1652aa0-8fae-4f6b-b914-6ab6a1291fdd",
-        "eed37141-af0b-45b1-ab26-f018f3962b67"
-      ]
-    },
-    "niall mccabe": {
-      "retryAfter": "2026-12-22",
-      "reason": "identified-without-free-photo"
-    },
-    "ultrajazz": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
     },
     "caro": {
       "retryAfter": "2026-12-22",
@@ -1489,8 +1470,8 @@
       "reason": "not-found"
     },
     "mobilhome": {
-      "retryAfter": "2026-11-13",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-28",
+      "reason": "identified-without-free-photo"
     },
     "the ruins of beverast": {
       "retryAfter": "2026-12-24",
@@ -1517,12 +1498,12 @@
       "reason": "HTTP 503"
     },
     "leap": {
-      "retryAfter": "2026-11-12",
-      "reason": "fetch failed"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
     },
     "lil peep 30th birthday celebration": {
-      "retryAfter": "2026-11-12",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
     },
     "greek": {
       "retryAfter": "2026-12-25",
@@ -1575,6 +1556,10 @@
     "dinsdagochtend concert": {
       "retryAfter": "2026-12-12",
       "reason": "not-found"
+    },
+    "julia jacklin": {
+      "retryAfter": "2026-11-15",
+      "reason": "HTTP 503"
     }
   }
 }

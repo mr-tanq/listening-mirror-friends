@@ -1,137 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T14:00:45.717Z",
-  "catalogUpdatedAt": "2026-11-12T13:56:57.689Z",
-  "auditedFor": "2026-11-12",
+  "generatedAt": "2026-11-13T13:23:07.600Z",
+  "catalogUpdatedAt": "2026-11-13T13:19:13.235Z",
+  "auditedFor": "2026-11-13",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1965,
-    "eventPoster": 1098,
-    "artistPhoto": 527,
-    "noImage": 340,
-    "posterWithPhotoBackup": 475
+    "total": 1955,
+    "eventPoster": 1097,
+    "artistPhoto": 521,
+    "noImage": 337,
+    "posterWithPhotoBackup": 474
   },
   "byCountry": {
     "NL": {
-      "total": 1431,
-      "eventPoster": 708,
-      "artistPhoto": 452,
-      "noImage": 271,
+      "total": 1418,
+      "eventPoster": 703,
+      "artistPhoto": 447,
+      "noImage": 268,
       "posterWithPhotoBackup": 380
     },
     "GR": {
-      "total": 425,
-      "eventPoster": 382,
+      "total": 429,
+      "eventPoster": 386,
       "artistPhoto": 12,
       "noImage": 31,
-      "posterWithPhotoBackup": 89
+      "posterWithPhotoBackup": 88
     },
     "BE": {
-      "total": 109,
+      "total": 108,
       "eventPoster": 8,
-      "artistPhoto": 63,
+      "artistPhoto": 62,
       "noImage": 38,
       "posterWithPhotoBackup": 6
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 114,
     "ambiguous-artist": 75,
-    "other-lookup-cooldown": 20,
-    "artist-not-found": 120,
+    "other-lookup-cooldown": 18,
     "not-in-artist-cache": 4,
+    "artist-not-found": 121,
+    "album-cover-rejected": 112,
     "artist-has-no-photo": 7
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 819,
+      "deezer": 831,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 42,
+      "attempted": 39,
       "failuresByReason": {
-        "artist-not-in-provider": 35,
+        "artist-not-in-provider": 32,
         "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
   },
-  "missingNext14Days": 91,
+  "missingNext14Days": 94,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-472059",
-      "artist": "Architrackz",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-474498",
-      "artist": "Ares - Andere Man Tour",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-496059",
-      "artist": "Jazz For Lunch",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-487978",
-      "artist": "Koala Disco",
-      "date": "2026-11-12",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-462145",
-      "artist": "LEENALCHI",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-458778",
-      "artist": "Nate Smith",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-460280",
-      "artist": "Niall McCabe",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-481299",
-      "artist": "QUEEN’S PLEASURE",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "Paard",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-499978",
-      "artist": "ULTRAJAZZ",
-      "date": "2026-11-12",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-453129",
       "artist": "Caro - Returning to Innocence",
@@ -379,105 +307,81 @@
       "country": "NL",
       "venue": "Willemeen",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-498829",
+      "artist": "Orsini",
+      "date": "2026-11-18",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "rocking-20261118-27545",
+      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
+      "date": "2026-11-18",
+      "country": "GR",
+      "venue": "Ίλιον Plus",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-473188",
+      "artist": "aupinard",
+      "date": "2026-11-19",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-493400",
+      "artist": "Kölsch & the Machine",
+      "date": "2026-11-19",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-491385",
+      "artist": "LAWN",
+      "date": "2026-11-19",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498500",
+      "artist": "Prison Religion",
+      "date": "2026-11-19",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-471767",
+      "artist": "This Is Michael",
+      "date": "2026-11-19",
+      "country": "NL",
+      "venue": "Ziggo Dome",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-453875",
+      "artist": "De Hardheid",
+      "date": "2026-11-20",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-497516",
+      "artist": "Fondip",
+      "date": "2026-11-20",
+      "country": "NL",
+      "venue": "Baroeg",
+      "reason": "album-cover-rejected"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-462644",
-      "artist": "Bartofso - Le Tour de Masque",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-479406",
-      "artist": "Blood and Sun",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-493613",
-      "artist": "COBRAH Autumn",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Annabel",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-496465",
-      "artist": "GPLR 2026: voorronde #3",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-471884",
-      "artist": "LEAP",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-490814",
-      "artist": "Lil Peep 30th Birthday Celebration",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-481186",
-      "artist": "LUCA - Kinderspel",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-479471",
-      "artist": "Lucky Done Gone",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-487102",
-      "artist": "Meatallica & The Art of Pantera",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Grenswerk",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "rocking-20261127-27442",
-      "artist": "Munly & The Lupercalians",
-      "date": "2026-11-27",
-      "country": "GR",
-      "venue": "Temple Athens",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-493139",
-      "artist": "NEMS – Unleashed Tour",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-489717",
-      "artist": "nothhingspecial",
-      "date": "2026-11-27",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-457726",
       "artist": "Dub Hub",
@@ -701,6 +605,102 @@
       "country": "NL",
       "venue": "TivoliVredenburg",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-502147",
+      "artist": "Lunchconcert Jazz - HOT Colors of Hendrix",
+      "date": "2026-12-04",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-498064",
+      "artist": "BLTNM",
+      "date": "2026-12-05",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-498840",
+      "artist": "Reggae Fire - A Tribute to Gregory Isaacs",
+      "date": "2026-12-05",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-490243",
+      "artist": "Syntherklaas: Revenge Of The Synth",
+      "date": "2026-12-05",
+      "country": "NL",
+      "venue": "Baroeg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-486196",
+      "artist": "Vieze Asbak B2B Kruelty All Day Long",
+      "date": "2026-12-05",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-482706",
+      "artist": "Erkan Oğur & İsmail Hakkı Demircioğlu - Masters of Anatolia",
+      "date": "2026-12-06",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "rocking-20261206-27562",
+      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
+      "date": "2026-12-06",
+      "country": "GR",
+      "venue": "Το Τρένο Στο Ρουφ",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-479902",
+      "artist": "Kevin Atwater",
+      "date": "2026-12-06",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-496137",
+      "artist": "Lovesick Duo",
+      "date": "2026-12-06",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "rocking-20261206-27474",
+      "artist": "SPK",
+      "date": "2026-12-06",
+      "country": "GR",
+      "venue": "Temple Athens",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-494427",
+      "artist": "Lelo",
+      "date": "2026-12-07",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498522",
+      "artist": "Nayte",
+      "date": "2026-12-09",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "ambiguous-artist"
     }
   ]
 }

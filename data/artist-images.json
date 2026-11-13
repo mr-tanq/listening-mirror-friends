@@ -7924,7 +7924,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-12T13:55:12.103Z"
+      "checkedAt": "2026-11-13T13:17:26.757Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7936,7 +7936,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-12T13:55:12.103Z"
+      "checkedAt": "2026-11-13T13:17:26.757Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7956,7 +7956,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-12T13:55:12.103Z"
+      "checkedAt": "2026-11-13T13:17:26.757Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7968,7 +7968,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-12T13:55:12.103Z"
+      "checkedAt": "2026-11-13T13:17:26.757Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -10811,6 +10811,176 @@
       },
       "wikidata": "Q281894",
       "checkedAt": "2026-11-12T13:55:07.474Z"
+    },
+    "bill laurance": {
+      "name": "Bill Laurance",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7ab37541fdd4c68681ea97617ebc2f4f/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5832768,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5832768",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5832768"
+      },
+      "checkedAt": "2026-11-13T13:16:30.239Z"
+    },
+    "colour haze": {
+      "name": "Colour Haze",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d6ac4595a44e71ab9dbd2a98e94dc67a/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 328631,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/328631",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/328631"
+      },
+      "checkedAt": "2026-11-13T13:16:30.617Z"
+    },
+    "malcolm todd": {
+      "name": "Malcolm Todd",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/5ecb8fe8b0335deeff7434fd3160199c/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 193142737,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/193142737",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/193142737"
+      },
+      "checkedAt": "2026-11-13T13:16:31.142Z"
+    },
+    "the womack sisters": {
+      "name": "The Womack Sisters",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/7d78986b3a62d026ea072c2ca3db82a9/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 8700030,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/8700030",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/8700030"
+      },
+      "checkedAt": "2026-11-13T13:16:32.187Z"
+    },
+    "lucas van merwijk": {
+      "name": "Lucas van Merwijk",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d053568cc4c70c0141d384541e442cfe/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 7063751,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/7063751",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/7063751"
+      },
+      "checkedAt": "2026-11-13T13:16:32.496Z"
+    },
+    "lacuna coil": {
+      "name": "Lacuna Coil",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/3158d5ac13c152c61fb25d64073a970d/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 2219,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/2219",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/2219"
+      },
+      "checkedAt": "2026-11-13T13:16:36.907Z"
+    },
+    "allus": {
+      "name": "ALLUS",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/c05e24a6e01ed418fdb0c30140c04f29/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 297959501,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/297959501",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/297959501"
+      },
+      "checkedAt": "2026-11-13T13:16:37.677Z"
+    },
+    "dragonforce": {
+      "name": "DRAGONFORCE",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9dfb9d035b3e932de5a2f393b3e4ec71/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4421,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4421",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4421"
+      },
+      "checkedAt": "2026-11-13T13:16:38.083Z"
+    },
+    "motorpsycho": {
+      "name": "Motorpsycho",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/96f3c1387f8ded57903dfe26cd581f58/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 9602,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/9602",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/9602"
+      },
+      "checkedAt": "2026-11-13T13:16:38.797Z"
+    },
+    "uuhai": {
+      "name": "UUHAI",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/dcf7d9fe6a883ba97637b57642350fe4/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 138608312,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/138608312",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/138608312"
+      },
+      "checkedAt": "2026-11-13T13:16:39.783Z"
+    },
+    "evangelia": {
+      "name": "EVANGELIA",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/aee0602d926dd07cb8a67015ddbf2aa3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 11529077,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/11529077",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/11529077"
+      },
+      "wikidata": "Q121361513",
+      "checkedAt": "2026-11-13T13:17:05.732Z"
+    },
+    "murphy s law": {
+      "name": "Murphy's Law",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cd3568bb51e7d9e425797f9b4c10b7d3/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 248582,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/248582",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/248582"
+      },
+      "wikidata": "Q1953822",
+      "checkedAt": "2026-11-13T13:17:24.239Z"
     }
   },
   "attempted": {
@@ -10908,39 +11078,6 @@
     "mercy girl": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "architrackz": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "koala disco": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "nate smith": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        540808,
-        67218672,
-        67218812,
-        147110552,
-        325248061,
-        359621982
-      ]
-    },
-    "niall mccabe": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "queen s pleasure": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "ultrajazz": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "clobber": {
       "retryAfter": "2027-01-04",
@@ -11286,8 +11423,9 @@
       "reason": "album-cover-as-portrait"
     },
     "cobrah autumn": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "leap": {
       "retryAfter": "2027-01-04",
@@ -11303,16 +11441,18 @@
       ]
     },
     "lil peep 30th birthday celebration": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "lucky done gone": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
     },
     "meatallica the art of pantera": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "munly the lupercalians": {
       "retryAfter": "2026-12-05",
@@ -11983,8 +12123,9 @@
       "reason": "album-cover-as-portrait"
     },
     "gplr 2026": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "luca": {
       "retryAfter": "2027-01-04",
@@ -12515,45 +12656,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "balothizer w": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "iason ally album release show": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "ini movement jam sessions": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "stouraitis papadopoulos quintet": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "the next movement": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "γεωργια νταγακη": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "θανασης βουτσας": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "νικολας razastarr": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "90 s now": {
       "retryAfter": "2026-12-10",
       "reason": "not-found",
@@ -12917,20 +13019,24 @@
       "urgentRetried": true
     },
     "ο σπυρος γραμμενος στο κυτταρο": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "20 χρονια calu cacu": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "blend x seds": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "give it dub": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "hawk": {
       "retryAfter": "2027-01-08",
@@ -12946,8 +13052,9 @@
       ]
     },
     "hoa hoa hoa rave athens": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "house of eden": {
       "retryAfter": "2026-12-09",
@@ -12958,8 +13065,9 @@
       "reason": "album-cover-as-portrait"
     },
     "pulse tribe kollektiv": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "teach": {
       "retryAfter": "2027-01-08",
@@ -13045,14 +13153,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "sadahzinia": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "stouraitis papadopoulos": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "warning uk the temple": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -13077,15 +13177,7 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "jk one": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
     "warning uk": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "dj wheel m χωρις τελεια": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
@@ -13140,8 +13232,9 @@
       ]
     },
     "belle sebastian": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "praying mantis": {
       "retryAfter": "2027-01-08",
@@ -13264,15 +13357,6 @@
     "5ο vocalism session": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "carpenter brut": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        4346304,
-        414858642,
-        374717291
-      ]
     },
     "gone country": {
       "retryAfter": "2026-12-09",
@@ -15264,15 +15348,6 @@
       "retryAfter": "2026-12-10",
       "reason": "not-found"
     },
-    "converge": {
-      "retryAfter": "2027-01-09",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        2986,
-        84976812,
-        874232
-      ]
-    },
     "true colors": {
       "retryAfter": "2027-01-09",
       "reason": "ambiguous-same-name",
@@ -15838,8 +15913,9 @@
       ]
     },
     "club pony": {
-      "retryAfter": "2026-12-12",
-      "reason": "not-found"
+      "retryAfter": "2026-12-13",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "sex mask": {
       "retryAfter": "2026-12-12",
@@ -15944,6 +16020,86 @@
     "genital shame": {
       "retryAfter": "2026-12-12",
       "reason": "album-cover-as-portrait"
+    },
+    "andert tysma": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "fuzz top": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "manou gallo": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "the space choir": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "michael league": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "d3lta european tour": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "nalyssa green at klakaz": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "με ποιο δικαιωμα": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "luben φουλ το φουλ party στο oddity": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "papazo χωρις φτερα": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "αννα χρυσανθου": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "ariana grande night": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "gadless foyer sessions": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "dalkance": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "nye 2027": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "χατζηφραγκετα": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "moonspell iotunn todomal": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "fright years": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
+    },
+    "uuhai manticora e a": {
+      "retryAfter": "2026-12-13",
+      "reason": "not-found"
+    },
+    "papazo": {
+      "retryAfter": "2026-12-13",
+      "reason": "album-cover-as-portrait"
     }
   },
   "wikimediaAttempted": {
@@ -15962,22 +16118,7 @@
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
     },
-    "queen s pleasure": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
     "mercy girl": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "architrackz": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-licensed-commons-photo"
-    },
-    "koala disco": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-21",
       "reason": "no-confirmed-musician"
@@ -16188,21 +16329,6 @@
       "reason": "no-confirmed-musician"
     },
     "exxul": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "nate smith": {
-      "strategyVersion": 4,
-      "retryAfter": "2027-02-05",
-      "reason": "ambiguous-musical-identity"
-    },
-    "niall mccabe": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "ultrajazz": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -17487,46 +17613,6 @@
       "retryAfter": "2026-12-24",
       "reason": "no-confirmed-musician"
     },
-    "balothizer w": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "iason ally album release show": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "ini movement jam sessions": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "stouraitis papadopoulos quintet": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "the next movement": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "γεωργια νταγακη": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "θανασης βουτσας": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
-    "νικολας razastarr": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-24",
-      "reason": "no-confirmed-musician"
-    },
     "90 s now": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-24",
@@ -18087,16 +18173,6 @@
       "retryAfter": "2026-12-26",
       "reason": "no-confirmed-musician"
     },
-    "sadahzinia": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-26",
-      "reason": "no-licensed-commons-photo"
-    },
-    "stouraitis papadopoulos": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-26",
-      "reason": "no-confirmed-musician"
-    },
     "warning uk the temple": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-26",
@@ -18222,22 +18298,12 @@
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
     },
-    "jk one": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
     "warning uk": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
     },
     "vespel": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "dj wheel m χωρις τελεια": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
@@ -18256,30 +18322,125 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-27",
       "reason": "no-licensed-commons-photo"
+    },
+    "praying mantis": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "allt": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "belle sebastian": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "d3lta european tour": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "nalyssa green at klakaz": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "με ποιο δικαιωμα": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "acid arab in athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "alex dante": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "brandalarm 16": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "crush xl": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "danai simou challice": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "fuck the cistem": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "gettin 80s 90s wit it": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "nathan ball": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "sharka": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "the big nose attack at klakaz": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "vanity productions": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-licensed-commons-photo"
+    },
+    "zanias live show": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "betray your prophet": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "nymphis": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "live in a van": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "club guy roni": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
+    },
+    "myra ida van der veen": {
+      "strategyVersion": 8,
+      "retryAfter": "2026-12-28",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
     "leenalchi": {
-      "retryAfter": "2027-02-06",
-      "reason": "artist-not-in-provider",
-      "diagnosticRetried": true
-    },
-    "architrackz": {
-      "retryAfter": "2027-02-06",
-      "reason": "artist-not-in-provider",
-      "diagnosticRetried": true
-    },
-    "koala disco": {
-      "retryAfter": "2027-02-06",
-      "reason": "artist-not-in-provider",
-      "diagnosticRetried": true
-    },
-    "niall mccabe": {
-      "retryAfter": "2027-02-06",
-      "reason": "artist-not-in-provider",
-      "diagnosticRetried": true
-    },
-    "queen s pleasure": {
       "retryAfter": "2027-02-06",
       "reason": "artist-not-in-provider",
       "diagnosticRetried": true
@@ -18439,6 +18600,10 @@
     },
     "hania derej": {
       "retryAfter": "2027-02-10",
+      "reason": "artist-not-in-provider"
+    },
+    "mobilhome": {
+      "retryAfter": "2027-02-11",
       "reason": "artist-not-in-provider"
     }
   }

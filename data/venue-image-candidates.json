@@ -1,97 +1,7 @@
 {
-  "generatedAt": "2026-11-12T14:00:19.468Z",
+  "generatedAt": "2026-11-13T13:22:34.714Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "venue-effenaar-2026-11-12-early-james",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/early-james",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-06/%20%E2%80%93%201920x1080%20WebsiteEarly.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-460600",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/eek-a-mouse-jahvolution-rude-boy-jamaican-12-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/04/eekamouse-vierkant.png",
-      "confidence": 1,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-474159",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/froukje-11/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/05/Persfoto-Froukje-web-1-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-498792",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/ini-movement-jam-sessions-12-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/10/SQARE-MISS-MEREDITH-1024x1024.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-477345",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/kojey-radical/2898569",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/GQSTYLEAW2022_KOJEY_RADICAL_ONLINE_6-1780909939.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-487632",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/macy-gray-6/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/07/1PRDps_Mailheader-MACY-GRAY.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paard-2026-11-12-paardcafe-club-pony",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-110/",
-      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-474198",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/prins-s-geit-12nov",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-05/%20%E2%80%93%201920x1080%20WebsitePrinsS.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-475125",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/rijck/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/04/persfoto-Rijck_web-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-457239",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/the-next-movement-love-it-or-leave-it-alone-tour-12-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/03/166b0546-99c7-41c7-9fe7-d1fbaa0d12e8-e1780064349387.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "venue-patronaat-2026-11-13-90-s-now",
       "venue": "patronaat",
@@ -468,6 +378,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-451714",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/amistat/2817534",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Press-photo-Amistat-1770304536.jpg",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-489754",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/blof-20/",
@@ -495,10 +414,28 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-459710",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/bleachers/2871961",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bleachers-by-Alex-Lockett-Option-2-1775222804.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-458100",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/electric-six-4/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/03/PRDps_Mailheader-ELECTRIC-SIX.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-488642",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/fly-anakin/2916903",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Fly-Anakin-Quelle-Chris-1786440880.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -643,6 +580,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/master-boot-record-3/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/03/MBR-FULCI-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-11-19-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-114/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER-2.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -1036,6 +982,15 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/naft/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/06/persfoto-naft-web-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2026-11-26-paardcafe-club-pony",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-108/",
+      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -1998,7 +1953,7 @@
       "eventId": "venue-doornroosje-2026-12-12-freq",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/freq/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/11/FREQ-website-banner-black-1.png",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/FREQ-website-banner-black-1-1200x630.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4386,21 +4341,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-02-21-master-peace",
+      "eventId": "podiuminfo-498455",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/master-peace/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/WEB-foto-3-1200x630.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-21-oskar-med-k",
+      "eventId": "podiuminfo-499915",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/oskar-med-k/2947245",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/oskar-med-k.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4413,21 +4368,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-21-the-tool-experience-previously-the-perfect-tool",
+      "eventId": "podiuminfo-459753",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/the-tool-experience-previous-the-perfect-tool-21-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/04/TPT_LIVESHOT_SPENCER-page_concert_image-image_facebook.jpeg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-21-the-velveteers",
+      "eventId": "podiuminfo-494795",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/the-velveteers/2930750",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/velveteers-web2026.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -5871,15 +5826,6 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-effenaar-2027-04-07-the-hindley-street-country-club",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/hscc-7apr",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2025-11/%20%E2%80%93%20Square%20afbeelding%20only%20hindley%20str.png?itok=gihEOroY",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
       "eventId": "venue-patronaat-2027-04-08-edwin-evers-band-classics-tour",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/edwin-evers-band-08-04-27/",
@@ -5965,6 +5911,60 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/hagane-10-04-27/",
       "image": "https://patronaat.nl/app/uploads/2026/10/HAGANE20260623-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-11-allus",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/eskalatie-allus-fietsband-skas-fest/2948118",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/ALLUS-presskit-062026-www.pulsevisuals.nl-067.jpg",
+      "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-11-dragonforce",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/157445/dragonforce",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/DRAGONFORCE-banner-110427_2026-09-18-102847_ukwj.jpg?mtime=1790103584",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-11-fright-years",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/fright-years/2940795",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/FY_NBW_DumiVisuals_Band-10-2.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-11-motorpsycho",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/motorpsycho-11-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/Motorpsycho-e1791882541101-1024x629.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-11-the-elvis-concert",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/elvis-concert2027",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-05/%20%E2%80%93%201920x1080%20Website_1.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-04-11-uuhai-manticora-e-a",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/uuhai/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/05/Uuhai-Photo-3-1200x630.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

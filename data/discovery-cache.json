@@ -1,791 +1,6 @@
 {
   "day": {
     "entries": {
-      "2026-11-12": {
-        "checkedAt": "2026-11-11T13:22:34.347Z",
-        "candidates": [
-          {
-            "concertId": "458240",
-            "href": "https://www.podiuminfo.nl/concert/458240/Soweto-Gospel-Choir-JOY/Stadsschouwburg-Brugge/",
-            "rawTitle": "Soweto Gospel Choir - JOY"
-          },
-          {
-            "concertId": "458776",
-            "href": "https://www.podiuminfo.nl/concert/458776/Anne-Serierse-kwartet/Jazzroom-Breda/",
-            "rawTitle": "Anne Serierse kwartet"
-          },
-          {
-            "concertId": "471466",
-            "href": "https://www.podiuminfo.nl/concert/471466/Nadar-Ensemble-Happy-Birthday-20-Years-Of-Nadar/De-Singel/",
-            "rawTitle": "Nadar Ensemble - Happy Birthday 20 Years Of Nadar"
-          },
-          {
-            "concertId": "493336",
-            "href": "https://www.podiuminfo.nl/concert/493336/Momoko-Gill/Reflektor/",
-            "rawTitle": "Momoko Gill"
-          },
-          {
-            "concertId": "496059",
-            "href": "https://www.podiuminfo.nl/concert/496059/Jazz-For-Lunch/Muziekgieterij/",
-            "rawTitle": "Jazz For Lunch"
-          },
-          {
-            "concertId": "492009",
-            "href": "https://www.podiuminfo.nl/concert/492009/My-Generation/Poppodium-Cpunt/",
-            "rawTitle": "My Generation"
-          },
-          {
-            "concertId": "465117",
-            "href": "https://www.podiuminfo.nl/concert/465117/Tiny-Tunes-Ao/HA-Concerts/",
-            "rawTitle": "Tiny Tunes: Ão"
-          },
-          {
-            "concertId": "489713",
-            "href": "https://www.podiuminfo.nl/concert/489713/Tour-Iglesia/Maassilo/",
-            "rawTitle": "Tour Iglesia"
-          },
-          {
-            "concertId": "491878",
-            "href": "https://www.podiuminfo.nl/concert/491878/Fontaines-D-C-/AFAS-Dome/",
-            "rawTitle": "Fontaines D.C."
-          },
-          {
-            "concertId": "496290",
-            "href": "https://www.podiuminfo.nl/concert/496290/Sven-Figee/De-Nieuwe-Regentes/",
-            "rawTitle": "Sven Figee"
-          },
-          {
-            "concertId": "491753",
-            "href": "https://www.podiuminfo.nl/concert/491753/Candlelight-Het-beste-van-Ludovico-Einaudi/Posthoornkerk/",
-            "rawTitle": "Candlelight: Het beste van Ludovico Einaudi"
-          },
-          {
-            "concertId": "457523",
-            "href": "https://www.podiuminfo.nl/concert/457523/NO-CIGAR/Kavka/",
-            "rawTitle": "NO CIGAR"
-          },
-          {
-            "concertId": "462010",
-            "href": "https://www.podiuminfo.nl/concert/462010/Wallace-Cleaver-Marcel/Ancienne-Belgique-AB-/",
-            "rawTitle": "Wallace Cleaver - Marcel"
-          },
-          {
-            "concertId": "468397",
-            "href": "https://www.podiuminfo.nl/concert/468397/Rhythmix-Philzuid-Percossa/Parkstad-Limburg-Theaters/",
-            "rawTitle": "Rhythmix - Philzuid & Percossa"
-          },
-          {
-            "concertId": "477054",
-            "href": "https://www.podiuminfo.nl/concert/477054/YARD/Toekomstmuziek/",
-            "rawTitle": "YARD"
-          },
-          {
-            "concertId": "486419",
-            "href": "https://www.podiuminfo.nl/concert/486419/ElGrandeToto/Melkweg/",
-            "rawTitle": "ElGrandeToto"
-          },
-          {
-            "concertId": "487724",
-            "href": "https://www.podiuminfo.nl/concert/487724/De-Donderdag-Jam!/Sound-Dog/",
-            "rawTitle": "De Donderdag Jam!"
-          },
-          {
-            "concertId": "489017",
-            "href": "https://www.podiuminfo.nl/concert/489017/Fly-Anakin-Quelle-Chris/Kavka/",
-            "rawTitle": "Fly Anakin + Quelle Chris"
-          },
-          {
-            "concertId": "498830",
-            "href": "https://www.podiuminfo.nl/concert/498830/Wamen-Furah/Vk-/",
-            "rawTitle": "Wamen + Furah"
-          },
-          {
-            "concertId": "449427",
-            "href": "https://www.podiuminfo.nl/concert/449427/The-Church-of-Cash/Nobel/",
-            "rawTitle": "The Church of Cash"
-          },
-          {
-            "concertId": "456904",
-            "href": "https://www.podiuminfo.nl/concert/456904/Cassia/Trix/",
-            "rawTitle": "Cassia"
-          },
-          {
-            "concertId": "457902",
-            "href": "https://www.podiuminfo.nl/concert/457902/Westside-Cowboy/Botanique/",
-            "rawTitle": "Westside Cowboy"
-          },
-          {
-            "concertId": "468396",
-            "href": "https://www.podiuminfo.nl/concert/468396/Wamen-RUCHE-TOUR/Vk-/",
-            "rawTitle": "Wamen - RUCHE TOUR"
-          },
-          {
-            "concertId": "468572",
-            "href": "https://www.podiuminfo.nl/concert/468572/Lezard/Bootstraat/",
-            "rawTitle": "Lézard"
-          },
-          {
-            "concertId": "469830",
-            "href": "https://www.podiuminfo.nl/concert/469830/40-jaar-Moeskroen-Liefde-voor-Muziek/EKP-gebouw/",
-            "rawTitle": "40 jaar Moeskroen - Liefde voor Muziek"
-          },
-          {
-            "concertId": "472058",
-            "href": "https://www.podiuminfo.nl/concert/472058/Wishful-Singing-Metropolis-Fritz-Langs-filmklassieker-met-live-s-/De-Nieuwe-Kolk-DNK-/",
-            "rawTitle": "Wishful Singing - Metropolis, Fritz Langs filmklassieker met live s..."
-          },
-          {
-            "concertId": "481983",
-            "href": "https://www.podiuminfo.nl/concert/481983/Isaiah-Falls/Melkweg/",
-            "rawTitle": "Isaiah Falls"
-          },
-          {
-            "concertId": "483051",
-            "href": "https://www.podiuminfo.nl/concert/483051/Jazzcafe/Veluvine/",
-            "rawTitle": "Jazzcafé"
-          },
-          {
-            "concertId": "487112",
-            "href": "https://www.podiuminfo.nl/concert/487112/Mauro/P60/",
-            "rawTitle": "Mauro"
-          },
-          {
-            "concertId": "487978",
-            "href": "https://www.podiuminfo.nl/concert/487978/Koala-Disco/Botanique/",
-            "rawTitle": "Koala Disco"
-          },
-          {
-            "concertId": "488334",
-            "href": "https://www.podiuminfo.nl/concert/488334/Willow-Avalon/Botanique/",
-            "rawTitle": "Willow Avalon"
-          },
-          {
-            "concertId": "488965",
-            "href": "https://www.podiuminfo.nl/concert/488965/BIG-BRAVE/Magasin-4/",
-            "rawTitle": "BIG BRAVE"
-          },
-          {
-            "concertId": "489336",
-            "href": "https://www.podiuminfo.nl/concert/489336/Trio-Magioncalda-Nunes-Fongaro/Studio-Blendd/",
-            "rawTitle": "Trio Magioncalda, Nunes & Fongaro"
-          },
-          {
-            "concertId": "490881",
-            "href": "https://www.podiuminfo.nl/concert/490881/Jenna-Raine/Melkweg/",
-            "rawTitle": "Jenna Raine"
-          },
-          {
-            "concertId": "499765",
-            "href": "https://www.podiuminfo.nl/concert/499765/Cafe-Kelder-away!-away!-Hecla-Valerie-and-the-rain/Trix/",
-            "rawTitle": "Café Kelder: away! away! + Hecla + Valerie and the rain"
-          },
-          {
-            "concertId": "446566",
-            "href": "https://www.podiuminfo.nl/concert/446566/The-Clarks-Ft-Rinus-Gerritsen-Cesar-Zuiderwijk/Luxor-Live/",
-            "rawTitle": "The Clarks Ft. Rinus Gerritsen & Cesar Zuiderwijk"
-          },
-          {
-            "concertId": "474159",
-            "href": "https://www.podiuminfo.nl/concert/474159/Froukje/Doornroosje/",
-            "rawTitle": "Froukje"
-          },
-          {
-            "concertId": "446001",
-            "href": "https://www.podiuminfo.nl/concert/446001/TikTok-Tammo-Tammo-Zingt-Folk/Schouwburg-de-Lawei/",
-            "rawTitle": "TikTok Tammo - Tammo Zingt Folk"
-          },
-          {
-            "concertId": "447199",
-            "href": "https://www.podiuminfo.nl/concert/447199/A-Tribute-to-Whitney-Houston/Koninklijk-Circus/",
-            "rawTitle": "A Tribute to Whitney Houston"
-          },
-          {
-            "concertId": "447682",
-            "href": "https://www.podiuminfo.nl/concert/447682/Tina-Dico-Live-2026/SPOT-De-Oosterpoort/",
-            "rawTitle": "Tina Dico - Live 2026"
-          },
-          {
-            "concertId": "449528",
-            "href": "https://www.podiuminfo.nl/concert/449528/Lara-Fabian/Vorst-Nationaal/",
-            "rawTitle": "Lara Fabian"
-          },
-          {
-            "concertId": "453709",
-            "href": "https://www.podiuminfo.nl/concert/453709/OrelSan/ING-Arena/",
-            "rawTitle": "OrelSan"
-          },
-          {
-            "concertId": "453806",
-            "href": "https://www.podiuminfo.nl/concert/453806/Noor/TivoliVredenburg/",
-            "rawTitle": "Noor"
-          },
-          {
-            "concertId": "456401",
-            "href": "https://www.podiuminfo.nl/concert/456401/Meryl/La-Madeleine/",
-            "rawTitle": "Meryl"
-          },
-          {
-            "concertId": "457849",
-            "href": "https://www.podiuminfo.nl/concert/457849/Bombino/Mezz/",
-            "rawTitle": "Bombino"
-          },
-          {
-            "concertId": "458728",
-            "href": "https://www.podiuminfo.nl/concert/458728/Danny-Vera/De-Oostkerk/",
-            "rawTitle": "Danny Vera"
-          },
-          {
-            "concertId": "458961",
-            "href": "https://www.podiuminfo.nl/concert/458961/Stef-Bos-Bloemlezing-2026/Vooruit/",
-            "rawTitle": "Stef Bos - Bloemlezing 2026"
-          },
-          {
-            "concertId": "463634",
-            "href": "https://www.podiuminfo.nl/concert/463634/Against-The-Current/TivoliVredenburg/",
-            "rawTitle": "Against The Current"
-          },
-          {
-            "concertId": "464125",
-            "href": "https://www.podiuminfo.nl/concert/464125/The-Cosmic-Carnival-A-Tribute-to-Fleetwood-Mac/Theater-t-Voorhuys/",
-            "rawTitle": "The Cosmic Carnival - A Tribute to Fleetwood Mac"
-          },
-          {
-            "concertId": "464154",
-            "href": "https://www.podiuminfo.nl/concert/464154/Coming-On-Strong-Onze-Earring/Stadsschouwburg-Middelburg/",
-            "rawTitle": "Coming On Strong - Onze Earring"
-          },
-          {
-            "concertId": "464240",
-            "href": "https://www.podiuminfo.nl/concert/464240/Girls-on-Fire-3-De-ultieme-ladiesnight/Theater-de-Mythe/",
-            "rawTitle": "Girls on Fire 3 - De ultieme ladiesnight"
-          },
-          {
-            "concertId": "468780",
-            "href": "https://www.podiuminfo.nl/concert/468780/Tove-Lo/AFAS-Live/",
-            "rawTitle": "Tove Lo"
-          },
-          {
-            "concertId": "471003",
-            "href": "https://www.podiuminfo.nl/concert/471003/Tangarine-Running-in-the-Family-II/Schaffelaartheater/",
-            "rawTitle": "Tangarine – Running"
-          },
-          {
-            "concertId": "473112",
-            "href": "https://www.podiuminfo.nl/concert/473112/Trio-Da-Kali-The-Zawose-Queens/30CCSchouwburg/",
-            "rawTitle": "Trio Da Kali & The Zawose Queens"
-          },
-          {
-            "concertId": "474458",
-            "href": "https://www.podiuminfo.nl/concert/474458/Iskander-Moon/Mezz/",
-            "rawTitle": "Iskander Moon"
-          },
-          {
-            "concertId": "474496",
-            "href": "https://www.podiuminfo.nl/concert/474496/Boris-Pink-20th-Anniversary/De-Helling/",
-            "rawTitle": "Boris - Pink 20th Anniversary"
-          },
-          {
-            "concertId": "474498",
-            "href": "https://www.podiuminfo.nl/concert/474498/Ares-Andere-Man-Tour/Hall-Of-Fame/",
-            "rawTitle": "Ares - Andere Man Tour"
-          },
-          {
-            "concertId": "476892",
-            "href": "https://www.podiuminfo.nl/concert/476892/Viktor-Griffioen-Cash-Seven-Songs-for-Johnny/Scheldetheater/",
-            "rawTitle": "Viktor Griffioen - Cash - Seven Songs for Johnny"
-          },
-          {
-            "concertId": "477345",
-            "href": "https://www.podiuminfo.nl/concert/477345/Kojey-Radical/Paradiso/",
-            "rawTitle": "Kojey Radical"
-          },
-          {
-            "concertId": "480128",
-            "href": "https://www.podiuminfo.nl/concert/480128/Dry-Cleaning/EKKO/",
-            "rawTitle": "Dry Cleaning"
-          },
-          {
-            "concertId": "480758",
-            "href": "https://www.podiuminfo.nl/concert/480758/Nordic-Giants/Little-Devil/",
-            "rawTitle": "Nordic Giants"
-          },
-          {
-            "concertId": "481299",
-            "href": "https://www.podiuminfo.nl/concert/481299/QUEEN-S-PLEASURE/Paard/",
-            "rawTitle": "QUEEN’S PLEASURE"
-          },
-          {
-            "concertId": "483798",
-            "href": "https://www.podiuminfo.nl/concert/483798/These-Go-To-Eleven-Waste-Shoom-Portray/Hedon/",
-            "rawTitle": "These Go To Eleven - Waste, Shoom, Portray"
-          },
-          {
-            "concertId": "485109",
-            "href": "https://www.podiuminfo.nl/concert/485109/ICP-Orkest/De-Pletterij/",
-            "rawTitle": "ICP Orkest"
-          },
-          {
-            "concertId": "487632",
-            "href": "https://www.podiuminfo.nl/concert/487632/Macy-Gray-The-Trouble-With-The-Truth-Tour/Paard/",
-            "rawTitle": "Macy Gray - The Trouble With The Truth Tour"
-          },
-          {
-            "concertId": "490394",
-            "href": "https://www.podiuminfo.nl/concert/490394/Vals-Alarm/dBs/",
-            "rawTitle": "Vals Alarm"
-          },
-          {
-            "concertId": "490787",
-            "href": "https://www.podiuminfo.nl/concert/490787/Nocturne-Parisienne/Kasteel-Dussen/",
-            "rawTitle": "Nocturne Parisienne"
-          },
-          {
-            "concertId": "491513",
-            "href": "https://www.podiuminfo.nl/concert/491513/Liet-2026/Neushoorn/",
-            "rawTitle": "Liet 2026"
-          },
-          {
-            "concertId": "492239",
-            "href": "https://www.podiuminfo.nl/concert/492239/Abba-Gold-Europe/C-C-Het-Bolwerk/",
-            "rawTitle": "Abba Gold Europe"
-          },
-          {
-            "concertId": "493398",
-            "href": "https://www.podiuminfo.nl/concert/493398/Talent-Meets-Talent-MAROU-MASSIN-DIM/Hall-Of-Fame/",
-            "rawTitle": "Talent Meets Talent: MAROU & MASSIN + DIM"
-          },
-          {
-            "concertId": "493495",
-            "href": "https://www.podiuminfo.nl/concert/493495/RAUW!-Open-stage-for-hiphop-creatives/Het-Depot/",
-            "rawTitle": "RAUW! Open stage for hiphop creatives"
-          },
-          {
-            "concertId": "495179",
-            "href": "https://www.podiuminfo.nl/concert/495179/Ivan-Smeulders-Quintara/KunstAs/",
-            "rawTitle": "Ivan Smeulders - Quintara"
-          },
-          {
-            "concertId": "495331",
-            "href": "https://www.podiuminfo.nl/concert/495331/Die-Verlierer-Die-Knopfke-Cavegirl/OCCII/",
-            "rawTitle": "Die Verlierer, Die Knöpfke & Cavegirl"
-          },
-          {
-            "concertId": "497030",
-            "href": "https://www.podiuminfo.nl/concert/497030/Das-Auge-Souls-in-Bondage-The-Sky-is-Falling/Toekomstmuziek/",
-            "rawTitle": "Das Auge, Souls"
-          },
-          {
-            "concertId": "497512",
-            "href": "https://www.podiuminfo.nl/concert/497512/SKETCH/Fluor/",
-            "rawTitle": "SKETCH"
-          },
-          {
-            "concertId": "497826",
-            "href": "https://www.podiuminfo.nl/concert/497826/Naughty-Elephants-Lovely-Lad-Official-Claire/Stathe/",
-            "rawTitle": "Naughty Elephants, Lovely Lad & Official Claire"
-          },
-          {
-            "concertId": "498792",
-            "href": "https://www.podiuminfo.nl/concert/498792/INI-Movement-Jam-Sessions/Patronaat/",
-            "rawTitle": "INI Movement Jam Sessions"
-          },
-          {
-            "concertId": "499111",
-            "href": "https://www.podiuminfo.nl/concert/499111/Huun-Huur-Tu/Ruigoord-Kerk/",
-            "rawTitle": "Huun-Huur-Tu"
-          },
-          {
-            "concertId": "499489",
-            "href": "https://www.podiuminfo.nl/concert/499489/Sven-Figee-trio-celebrates-Miles-Davis/De-Nieuwe-Kerk/",
-            "rawTitle": "Sven Figee trio celebrates Miles Davis"
-          },
-          {
-            "concertId": "499886",
-            "href": "https://www.podiuminfo.nl/concert/499886/Manouchedrome-Nicolas-Hauzeur/Art-Base/",
-            "rawTitle": "Manouchedrome & Nicolas Hauzeur"
-          },
-          {
-            "concertId": "500130",
-            "href": "https://www.podiuminfo.nl/concert/500130/Verwoord/Groene-Engel/",
-            "rawTitle": "Verwoord"
-          },
-          {
-            "concertId": "501975",
-            "href": "https://www.podiuminfo.nl/concert/501975/Isa-Bornau/t-Rozenknopje/",
-            "rawTitle": "Isa Bornau"
-          },
-          {
-            "concertId": "458216",
-            "href": "https://www.podiuminfo.nl/concert/458216/Roxeanne-Hazes-Met-Heimwee/Schouwburg-Concertzaal-Tilburg/",
-            "rawTitle": "Roxeanne Hazes - ... Met Heimwee"
-          },
-          {
-            "concertId": "458778",
-            "href": "https://www.podiuminfo.nl/concert/458778/Nate-Smith/TivoliVredenburg/",
-            "rawTitle": "Nate Smith"
-          },
-          {
-            "concertId": "459168",
-            "href": "https://www.podiuminfo.nl/concert/459168/Ao/HA-Concerts/",
-            "rawTitle": "Ão"
-          },
-          {
-            "concertId": "463990",
-            "href": "https://www.podiuminfo.nl/concert/463990/BEACH-BOYS-BEST-Greatest-Hits-from-the-Kings-of-Harmony/Agora-Theater-Lelystad/",
-            "rawTitle": "BEACH BOYS’ BEST - Greatest Hits from the Kings of Harmony"
-          },
-          {
-            "concertId": "466236",
-            "href": "https://www.podiuminfo.nl/concert/466236/Centurys-Crime-A-Tribute-to-Supertramp/Theater-Castellum/",
-            "rawTitle": "Century's Crime - A Tribute to Supertramp"
-          },
-          {
-            "concertId": "466545",
-            "href": "https://www.podiuminfo.nl/concert/466545/Nick-Schilder-The-Singer-Songwriter-Show/Kennemer-Theater/",
-            "rawTitle": "Nick Schilder - The Singer Songwriter Show"
-          },
-          {
-            "concertId": "467014",
-            "href": "https://www.podiuminfo.nl/concert/467014/Charlie-Luske-Lo-van-Gorp-The-Story-of-George-Michael/Stadsgehoorzaal-Leiden/",
-            "rawTitle": "Charlie Luske & Lo van Gorp - The Story of George Michael"
-          },
-          {
-            "concertId": "467296",
-            "href": "https://www.podiuminfo.nl/concert/467296/U2-The-Music-U2-50-jaar/Theater-de-Hofnar/",
-            "rawTitle": "U2 The Music - U2 - 50 jaar"
-          },
-          {
-            "concertId": "467574",
-            "href": "https://www.podiuminfo.nl/concert/467574/Numidia-in-concert/De-Maaspoort/",
-            "rawTitle": "Numidia"
-          },
-          {
-            "concertId": "468545",
-            "href": "https://www.podiuminfo.nl/concert/468545/LAKSHMI-Here-I-am-alone-with-You/Hoftheater/",
-            "rawTitle": "LAKSHMI - Here, I am alone with You"
-          },
-          {
-            "concertId": "469144",
-            "href": "https://www.podiuminfo.nl/concert/469144/Maaike-Ouboter/Muziekgebouw-Eindhoven/",
-            "rawTitle": "Maaike Ouboter"
-          },
-          {
-            "concertId": "470412",
-            "href": "https://www.podiuminfo.nl/concert/470412/Lex-Uiting-Truuk-Nao-t-Zuuje/Munttheater/",
-            "rawTitle": "Lex Uiting - Truuk Nao ’t Zuuje"
-          },
-          {
-            "concertId": "471678",
-            "href": "https://www.podiuminfo.nl/concert/471678/Starman-The-Legacy-Tour/Theater-de-Kom/",
-            "rawTitle": "Starman - The Legacy Tour"
-          },
-          {
-            "concertId": "472810",
-            "href": "https://www.podiuminfo.nl/concert/472810/The-Young-Analogues-Best-of-The-Beatles-62-65/Cultuurhuis-De-Klinker/",
-            "rawTitle": "The Young Analogues - Best of The Beatles ’62-’65"
-          },
-          {
-            "concertId": "473804",
-            "href": "https://www.podiuminfo.nl/concert/473804/Charl-zingt-Shaffy-Een-ode-aan-Ramses-Shaffy/Theater-De-Willem/",
-            "rawTitle": "Charl zingt Shaffy - Een ode aan Ramses Shaffy"
-          },
-          {
-            "concertId": "474198",
-            "href": "https://www.podiuminfo.nl/concert/474198/Prins-S-en-De-Geit/Effenaar/",
-            "rawTitle": "Prins S. en De Geit"
-          },
-          {
-            "concertId": "474625",
-            "href": "https://www.podiuminfo.nl/concert/474625/The-Kilkennys-Tunes-from-The-Temple-Bar/Theater-de-Schalm/",
-            "rawTitle": "The Kilkennys - Tunes from The Temple Bar"
-          },
-          {
-            "concertId": "475816",
-            "href": "https://www.podiuminfo.nl/concert/475816/Timebox-64-74-The-British-Years/Stadstheater-de-Bond/",
-            "rawTitle": "Timebox - 64-'74 The British Years"
-          },
-          {
-            "concertId": "479182",
-            "href": "https://www.podiuminfo.nl/concert/479182/Hilde-Vos-band/Het-Kielzog/",
-            "rawTitle": "Hilde Vos & band"
-          },
-          {
-            "concertId": "483149",
-            "href": "https://www.podiuminfo.nl/concert/483149/ELINE-Hart-Ziel-pianotour/Beauforthuis/",
-            "rawTitle": "ELINE - Hart & Ziel pianotour"
-          },
-          {
-            "concertId": "484146",
-            "href": "https://www.podiuminfo.nl/concert/484146/A-Tribute-to-Cliff-Richard-The-Shadows/Markant-Theater-Maashorst/",
-            "rawTitle": "A Tribute to Cliff Richard & The Shadows"
-          },
-          {
-            "concertId": "487018",
-            "href": "https://www.podiuminfo.nl/concert/487018/Syb-van-der-Ploeg-en-Maarten-Peters/De-Sikkel-Tijdelijke-Molenberg-/",
-            "rawTitle": "Syb van der Ploeg en Maarten Peters"
-          },
-          {
-            "concertId": "490560",
-            "href": "https://www.podiuminfo.nl/concert/490560/Hans-Sanneke-Zangduo/De-Weijer/",
-            "rawTitle": "Hans & Sanneke Zangduo"
-          },
-          {
-            "concertId": "490735",
-            "href": "https://www.podiuminfo.nl/concert/490735/Shearwater-Loma-Any-Kind/De-Warande/",
-            "rawTitle": "Shearwater, Loma & Any Kind"
-          },
-          {
-            "concertId": "451089",
-            "href": "https://www.podiuminfo.nl/concert/451089/Paceshifters-play-Nirvana/Gigant/",
-            "rawTitle": "Paceshifters play Nirvana"
-          },
-          {
-            "concertId": "451957",
-            "href": "https://www.podiuminfo.nl/concert/451957/Gavin-James/Metropool-Enschede/",
-            "rawTitle": "Gavin James"
-          },
-          {
-            "concertId": "454532",
-            "href": "https://www.podiuminfo.nl/concert/454532/Tribute-Aan-De-Dijk/Cafe-de-Cactus/",
-            "rawTitle": "Tribute Aan De Dijk"
-          },
-          {
-            "concertId": "456980",
-            "href": "https://www.podiuminfo.nl/concert/456980/Joan-As-Police-Woman/Het-Zonnehuis/",
-            "rawTitle": "Joan As Police Woman"
-          },
-          {
-            "concertId": "457239",
-            "href": "https://www.podiuminfo.nl/concert/457239/The-Next-Movement-Love-It-or-Leave-It-Alone-Tour/Patronaat/",
-            "rawTitle": "The Next Movement - Love It or Leave It Alone Tour"
-          },
-          {
-            "concertId": "457432",
-            "href": "https://www.podiuminfo.nl/concert/457432/Alexander-Broussard-Het-Beste-van-de-Songbook-Sessies/De-Theaterbakkerij/",
-            "rawTitle": "Alexander Broussard - Het Beste van de Songbook Sessies"
-          },
-          {
-            "concertId": "458529",
-            "href": "https://www.podiuminfo.nl/concert/458529/Frank-Boeijen/Hedon/",
-            "rawTitle": "Frank Boeijen"
-          },
-          {
-            "concertId": "460007",
-            "href": "https://www.podiuminfo.nl/concert/460007/Jeremy-Pinnell/De-Casino/",
-            "rawTitle": "Jeremy Pinnell"
-          },
-          {
-            "concertId": "460235",
-            "href": "https://www.podiuminfo.nl/concert/460235/Turpentine-Valley-KaUna/Nieuwe-Nor/",
-            "rawTitle": "Turpentine Valley + Ka'Una"
-          },
-          {
-            "concertId": "460600",
-            "href": "https://www.podiuminfo.nl/concert/460600/Eek-a-Mouse-Jahvolution-Rude-Boy-Jamaican/Patronaat/",
-            "rawTitle": "Eek-a-Mouse + Jahvolution - Rude Boy Jamaican"
-          },
-          {
-            "concertId": "461016",
-            "href": "https://www.podiuminfo.nl/concert/461016/The-Black-Atlantic-Work-In-The-Dark-Tour/Der-Aa-theater/",
-            "rawTitle": "The Black Atlantic - Work"
-          },
-          {
-            "concertId": "462144",
-            "href": "https://www.podiuminfo.nl/concert/462144/Adult-DVD/Tolhuistuin/",
-            "rawTitle": "Adult DVD"
-          },
-          {
-            "concertId": "462882",
-            "href": "https://www.podiuminfo.nl/concert/462882/Sam-Gendel-Sam-Wilkes/Bimhuis/",
-            "rawTitle": "Sam Gendel & Sam Wilkes"
-          },
-          {
-            "concertId": "463541",
-            "href": "https://www.podiuminfo.nl/concert/463541/BENR-Tussen-2-maten/Theater-aan-het-Vrijthof/",
-            "rawTitle": "BENR - Tussen 2 maten"
-          },
-          {
-            "concertId": "470541",
-            "href": "https://www.podiuminfo.nl/concert/470541/Jlin-Third-Coast-Percussion-Vernacular/Parkstad-Limburg-Theaters/",
-            "rawTitle": "Jlin + Third Coast Percussion - Vernacular"
-          },
-          {
-            "concertId": "471789",
-            "href": "https://www.podiuminfo.nl/concert/471789/Big-Sleep/Grenswerk/",
-            "rawTitle": "Big Sleep"
-          },
-          {
-            "concertId": "472059",
-            "href": "https://www.podiuminfo.nl/concert/472059/Architrackz/Paradiso/",
-            "rawTitle": "Architrackz"
-          },
-          {
-            "concertId": "474453",
-            "href": "https://www.podiuminfo.nl/concert/474453/Martin-Luke-Brown-Hetta-Falzon/Rotown/",
-            "rawTitle": "Martin Luke Brown + Hetta Falzon"
-          },
-          {
-            "concertId": "474497",
-            "href": "https://www.podiuminfo.nl/concert/474497/Toontje-Lager/Podium-Victorie/",
-            "rawTitle": "Toontje Lager"
-          },
-          {
-            "concertId": "475125",
-            "href": "https://www.podiuminfo.nl/concert/475125/Rijck/Doornroosje/",
-            "rawTitle": "Rijck"
-          },
-          {
-            "concertId": "476341",
-            "href": "https://www.podiuminfo.nl/concert/476341/Roufaida/Evangelisch-Lutherse-Kerk/",
-            "rawTitle": "Roufaida"
-          },
-          {
-            "concertId": "476952",
-            "href": "https://www.podiuminfo.nl/concert/476952/Mothers-Finest/De-Bosuil/",
-            "rawTitle": "Mother's Finest"
-          },
-          {
-            "concertId": "477561",
-            "href": "https://www.podiuminfo.nl/concert/477561/Maria-BC/Cinetol/",
-            "rawTitle": "Maria BC"
-          },
-          {
-            "concertId": "479181",
-            "href": "https://www.podiuminfo.nl/concert/479181/Naruto-Shippuden-Symphonic-Experience/De-Doelen/",
-            "rawTitle": "Naruto Shippuden Symphonic Experience"
-          },
-          {
-            "concertId": "479270",
-            "href": "https://www.podiuminfo.nl/concert/479270/Early-James/Cafe-Wilhelmina/",
-            "rawTitle": "Early James"
-          },
-          {
-            "concertId": "479609",
-            "href": "https://www.podiuminfo.nl/concert/479609/Dunja-Jocic-Folk/Podium-Hoge-Woerd/",
-            "rawTitle": "Dunja Jocić - Folk"
-          },
-          {
-            "concertId": "480652",
-            "href": "https://www.podiuminfo.nl/concert/480652/Supersuckers/Vera/",
-            "rawTitle": "Supersuckers"
-          },
-          {
-            "concertId": "486731",
-            "href": "https://www.podiuminfo.nl/concert/486731/Alewya/Bitterzoet/",
-            "rawTitle": "Alewya"
-          },
-          {
-            "concertId": "492365",
-            "href": "https://www.podiuminfo.nl/concert/492365/MonkeyJam/Neushoorn/",
-            "rawTitle": "MonkeyJam"
-          },
-          {
-            "concertId": "493075",
-            "href": "https://www.podiuminfo.nl/concert/493075/Stiff-Blusion/Cultuurhuis-Heerlen/",
-            "rawTitle": "Stiff Blusion"
-          },
-          {
-            "concertId": "496754",
-            "href": "https://www.podiuminfo.nl/concert/496754/Arno-Sacco-Soul-Letters/Arenberg-Schouwburg/",
-            "rawTitle": "Arno Sacco - Soul Letters"
-          },
-          {
-            "concertId": "497195",
-            "href": "https://www.podiuminfo.nl/concert/497195/Home-Grown-Sessions-31-The-Future-Is-Female/Dynamo/",
-            "rawTitle": "Home Grown Sessions #31: The Future Is Female"
-          },
-          {
-            "concertId": "497579",
-            "href": "https://www.podiuminfo.nl/concert/497579/Tribute-Night/Altstadt/",
-            "rawTitle": "Tribute Night"
-          },
-          {
-            "concertId": "497638",
-            "href": "https://www.podiuminfo.nl/concert/497638/Damn-the-correction-poem-met-Mar-Fu-Qi-Weiyan-Low/WORM/",
-            "rawTitle": "Damn the correction poem met Mar Fu Qi & Weiyan Low"
-          },
-          {
-            "concertId": "498085",
-            "href": "https://www.podiuminfo.nl/concert/498085/Open-Podium/Podium-Victorie/",
-            "rawTitle": "Open Podium"
-          },
-          {
-            "concertId": "460280",
-            "href": "https://www.podiuminfo.nl/concert/460280/Niall-McCabe/TivoliVredenburg/",
-            "rawTitle": "Niall McCabe"
-          },
-          {
-            "concertId": "497090",
-            "href": "https://www.podiuminfo.nl/concert/497090/Sheer-Terror/Willem-Twee-poppodium/",
-            "rawTitle": "Sheer Terror"
-          },
-          {
-            "concertId": "453083",
-            "href": "https://www.podiuminfo.nl/concert/453083/Thorbjorn-Risager-The-Black-Tornado/Metropool-Enschede/",
-            "rawTitle": "Thorbjørn Risager & The Black Tornado"
-          },
-          {
-            "concertId": "462131",
-            "href": "https://www.podiuminfo.nl/concert/462131/Grote-Geelstaart/V11/",
-            "rawTitle": "Grote Geelstaart"
-          },
-          {
-            "concertId": "462526",
-            "href": "https://www.podiuminfo.nl/concert/462526/Wies/Charlatan/",
-            "rawTitle": "Wies"
-          },
-          {
-            "concertId": "492650",
-            "href": "https://www.podiuminfo.nl/concert/492650/Candlelight-Tribute-aan-Adele/Posthoornkerk/",
-            "rawTitle": "Candlelight: Tribute aan Adele"
-          },
-          {
-            "concertId": "497600",
-            "href": "https://www.podiuminfo.nl/concert/497600/World-Sessions-Santana-Tribute/Grounds/",
-            "rawTitle": "World Sessions: Santana Tribute"
-          },
-          {
-            "concertId": "499978",
-            "href": "https://www.podiuminfo.nl/concert/499978/ULTRAJAZZ/TivoliVredenburg/",
-            "rawTitle": "ULTRAJAZZ"
-          },
-          {
-            "concertId": "500454",
-            "href": "https://www.podiuminfo.nl/concert/500454/Piter-Rupit/Simplon/",
-            "rawTitle": "Piter + Rupit"
-          },
-          {
-            "concertId": "502067",
-            "href": "https://www.podiuminfo.nl/concert/502067/Jamsession/Maloe-Melo/",
-            "rawTitle": "Jamsession"
-          },
-          {
-            "concertId": "471924",
-            "href": "https://www.podiuminfo.nl/concert/471924/Vintage-Brothers/J-C-De-Bunker/",
-            "rawTitle": "Vintage Brothers"
-          },
-          {
-            "concertId": "500456",
-            "href": "https://www.podiuminfo.nl/concert/500456/STAR-TRIP-UNKLE-KOOK/M-C-Kinky-Star/",
-            "rawTitle": "STAR TRIP: UNKLE KOOK"
-          },
-          {
-            "concertId": "457605",
-            "href": "https://www.podiuminfo.nl/concert/457605/Pert-Near-Sandstone/Merleyn/",
-            "rawTitle": "Pert Near Sandstone"
-          },
-          {
-            "concertId": "462145",
-            "href": "https://www.podiuminfo.nl/concert/462145/LEENALCHI/Paradiso/",
-            "rawTitle": "LEENALCHI"
-          },
-          {
-            "concertId": "500381",
-            "href": "https://www.podiuminfo.nl/concert/500381/Jazz-Underground/Theater-de-Richel/",
-            "rawTitle": "Jazz Underground"
-          }
-        ]
-      },
       "2026-11-13": {
         "checkedAt": "2026-11-11T13:22:35.876Z",
         "candidates": [
@@ -43998,6 +43213,446 @@
             "concertId": "495075",
             "href": "https://www.podiuminfo.nl/concert/495075/Max-Dean-b2b-Luke-Dean-All-Night-Long/Ahoy/",
             "rawTitle": "Max Dean b2b Luke Dean All Night Long"
+          }
+        ]
+      },
+      "2027-02-21": {
+        "checkedAt": "2026-11-11T13:24:35.588Z",
+        "candidates": [
+          {
+            "concertId": "494482",
+            "href": "https://www.podiuminfo.nl/concert/494482/Movements/Trix/",
+            "rawTitle": "Movements"
+          },
+          {
+            "concertId": "501892",
+            "href": "https://www.podiuminfo.nl/concert/501892/Echo-Chamber/Kavka/",
+            "rawTitle": "Echo Chamber"
+          },
+          {
+            "concertId": "470390",
+            "href": "https://www.podiuminfo.nl/concert/470390/Zondagochtendconcert/Sint-Jan/",
+            "rawTitle": "Zondagochtendconcert"
+          },
+          {
+            "concertId": "478057",
+            "href": "https://www.podiuminfo.nl/concert/478057/Hotel-Vocal-5-The-Sixties/Fakkeltheater-Hoogstraat-/",
+            "rawTitle": "Hotel Vocal 5 - The Sixties"
+          },
+          {
+            "concertId": "486446",
+            "href": "https://www.podiuminfo.nl/concert/486446/Britta-Maria-Cest-Ma-Vie/Theater-De-Molen/",
+            "rawTitle": "Britta Maria - C'est Ma Vie"
+          },
+          {
+            "concertId": "497999",
+            "href": "https://www.podiuminfo.nl/concert/497999/T-dansant-met-DJ-Brett-Summers/De-Roma/",
+            "rawTitle": "T-dansant met DJ Brett Summers"
+          },
+          {
+            "concertId": "499809",
+            "href": "https://www.podiuminfo.nl/concert/499809/Salsa-Libre-Dans-je-mee-/P3/",
+            "rawTitle": "Salsa Libre Dans je mee?"
+          },
+          {
+            "concertId": "462024",
+            "href": "https://www.podiuminfo.nl/concert/462024/Paskal-Jakobsen-Solo/De-Kleine-Willem/",
+            "rawTitle": "Paskal Jakobsen Solo"
+          },
+          {
+            "concertId": "471966",
+            "href": "https://www.podiuminfo.nl/concert/471966/The-Bentley-s-Celebrating-the-50-s-60-s/TheaterHotel-De-Oranjerie/",
+            "rawTitle": "The Bentley’s - Celebrating the 50’s & 60’s"
+          },
+          {
+            "concertId": "474673",
+            "href": "https://www.podiuminfo.nl/concert/474673/Bluebird-cafe/Theater-de-Schalm/",
+            "rawTitle": "Bluebird café"
+          },
+          {
+            "concertId": "485684",
+            "href": "https://www.podiuminfo.nl/concert/485684/De-Vrienden-van-Vroeger-Band-Verdronken-Vlinder/Cultuurkoepel-Heiloo/",
+            "rawTitle": "De Vrienden van Vroeger Band - Verdronken Vlinder"
+          },
+          {
+            "concertId": "492240",
+            "href": "https://www.podiuminfo.nl/concert/492240/Isabelle-A-Isabelle-A-la-Francaise-2/C-C-Het-Bolwerk/",
+            "rawTitle": "Isabelle A - Isabelle A la Française 2"
+          },
+          {
+            "concertId": "492277",
+            "href": "https://www.podiuminfo.nl/concert/492277/Franks-Hot-Ten/De-Smeltkroes/",
+            "rawTitle": "Frank's Hot Ten"
+          },
+          {
+            "concertId": "495090",
+            "href": "https://www.podiuminfo.nl/concert/495090/Marjolein-Meijers-Vrienden-van-Jan-hebben-een-Rot-middag/Theater-de-Kappen/",
+            "rawTitle": "Marjolein Meijers - Vrienden van Jan hebben een Rot middag"
+          },
+          {
+            "concertId": "461368",
+            "href": "https://www.podiuminfo.nl/concert/461368/Dizzy-Mans-Band-The-Legacy/Poppodium-PX/",
+            "rawTitle": "Dizzy Man's Band - The Legacy"
+          },
+          {
+            "concertId": "464062",
+            "href": "https://www.podiuminfo.nl/concert/464062/Outlander-in-Concert-Echoes-Through-the-Highlands/Koningin-Elisabethzaal/",
+            "rawTitle": "Outlander"
+          },
+          {
+            "concertId": "464461",
+            "href": "https://www.podiuminfo.nl/concert/464461/Luca-Warmer-Je-suis-Zorro/Rijswijkse-Schouwburg/",
+            "rawTitle": "Luca Warmer - Je suis Zorro"
+          },
+          {
+            "concertId": "467543",
+            "href": "https://www.podiuminfo.nl/concert/467543/The-Best-of-Simon-Garfunkel/Bullekerk/",
+            "rawTitle": "The Best of Simon & Garfunkel"
+          },
+          {
+            "concertId": "467565",
+            "href": "https://www.podiuminfo.nl/concert/467565/Legendary-Albums-Live-Laat-me/Cpunt-Theater/",
+            "rawTitle": "Legendary Albums Live - Laat me"
+          },
+          {
+            "concertId": "467871",
+            "href": "https://www.podiuminfo.nl/concert/467871/The-LSB-Experience-Songs-of-Paul-McCartney/Markant-Theater-Maashorst/",
+            "rawTitle": "The LSB Experience | Songs of Paul McCartney"
+          },
+          {
+            "concertId": "468835",
+            "href": "https://www.podiuminfo.nl/concert/468835/Clean-Pete-Parelvissers/Schouwburg-Venray/",
+            "rawTitle": "Clean Pete - Parelvissers"
+          },
+          {
+            "concertId": "472677",
+            "href": "https://www.podiuminfo.nl/concert/472677/Best-of-Ireland/Flint/",
+            "rawTitle": "Best of Ireland"
+          },
+          {
+            "concertId": "476609",
+            "href": "https://www.podiuminfo.nl/concert/476609/Crazy-Tunes-Jazz-Band-The-Roaring-Twenties/Theater-de-Koornbeurs/",
+            "rawTitle": "Crazy Tunes Jazz Band - The Roaring Twenties"
+          },
+          {
+            "concertId": "478058",
+            "href": "https://www.podiuminfo.nl/concert/478058/Liv-Greene-Cahalan-Morrisson/Kantine-Walhalla/",
+            "rawTitle": "Liv Greene & Cahalan Morrisson"
+          },
+          {
+            "concertId": "478353",
+            "href": "https://www.podiuminfo.nl/concert/478353/Manou-Gallo-Lucas-van-Merwijk/TivoliVredenburg/",
+            "rawTitle": "Manou Gallo & Lucas van Merwijk"
+          },
+          {
+            "concertId": "479780",
+            "href": "https://www.podiuminfo.nl/concert/479780/De-Regahs-Groeten-uit-Den-Haag/Het-Klooster/",
+            "rawTitle": "De Règâhs - Groeten uit Den Haag"
+          },
+          {
+            "concertId": "481375",
+            "href": "https://www.podiuminfo.nl/concert/481375/Limelight-Sessions/Cultura/",
+            "rawTitle": "Limelight Sessions"
+          },
+          {
+            "concertId": "490035",
+            "href": "https://www.podiuminfo.nl/concert/490035/Bluesclub-XXL-Wageningen-Leif-de-Leeuw-Band/Junushoff-Theater/",
+            "rawTitle": "Bluesclub XXL Wageningen: Leif de Leeuw Band"
+          },
+          {
+            "concertId": "494919",
+            "href": "https://www.podiuminfo.nl/concert/494919/Dizzy-Mans-Band-The-Legacy/Poppodium-PX/",
+            "rawTitle": "Dizzy Man's Band - The Legacy"
+          },
+          {
+            "concertId": "496788",
+            "href": "https://www.podiuminfo.nl/concert/496788/Colour-Haze-Smokemaster/Baroeg/",
+            "rawTitle": "Colour Haze + Smokemaster"
+          },
+          {
+            "concertId": "498913",
+            "href": "https://www.podiuminfo.nl/concert/498913/Dual-City-Concert-Band-ft-Jesse-van-Ruller/Luxor-Live/",
+            "rawTitle": "Dual City Concert Band ft. Jesse van Ruller"
+          },
+          {
+            "concertId": "499192",
+            "href": "https://www.podiuminfo.nl/concert/499192/Vinyl-Cafe/De-Peppel/",
+            "rawTitle": "Vinyl Café"
+          },
+          {
+            "concertId": "500745",
+            "href": "https://www.podiuminfo.nl/concert/500745/Sam-Ghezzi-Blues-Band-Theaterbakkerij-Blues/De-Theaterbakkerij/",
+            "rawTitle": "Sam Ghezzi Blues Band – Theaterbakkerij Blues"
+          },
+          {
+            "concertId": "501756",
+            "href": "https://www.podiuminfo.nl/concert/501756/Paul-Watchorn/Cafe-de-Cactus/",
+            "rawTitle": "Paul Watchorn"
+          },
+          {
+            "concertId": "463019",
+            "href": "https://www.podiuminfo.nl/concert/463019/HELP!/Poppodium-Phoenix/",
+            "rawTitle": "HELP!"
+          },
+          {
+            "concertId": "468424",
+            "href": "https://www.podiuminfo.nl/concert/468424/Agnietensessie-Rozemarijn-Spruit-Thuiskomen/Agnietenkapel/",
+            "rawTitle": "Agnietensessie: Rozemarijn Spruit - Thuiskomen"
+          },
+          {
+            "concertId": "475343",
+            "href": "https://www.podiuminfo.nl/concert/475343/Douglas-Van-Bavel-From-The-Heart/Theater-De-Boerderij/",
+            "rawTitle": "Douglas & Van Bavel - From The Heart"
+          },
+          {
+            "concertId": "476363",
+            "href": "https://www.podiuminfo.nl/concert/476363/Connolly-Hayes/De-Pul/",
+            "rawTitle": "Connolly Hayes"
+          },
+          {
+            "concertId": "490929",
+            "href": "https://www.podiuminfo.nl/concert/490929/Jazz-Podium-Goirle-Art-of-the-Messengers/Jan-van-Besouw/",
+            "rawTitle": "Jazz Podium Goirle - Art of the Messengers"
+          },
+          {
+            "concertId": "499914",
+            "href": "https://www.podiuminfo.nl/concert/499914/Loek-van-den-Berg-Quintet-Skyfarer/LantarenVenster/",
+            "rawTitle": "Loek van den Berg Quintet - Skyfarer"
+          },
+          {
+            "concertId": "464754",
+            "href": "https://www.podiuminfo.nl/concert/464754/Nashvilles-Bluebird-Cafe-met-Emily-Brooke-en-Wim-van-de-Vliert/t-Rozenknopje/",
+            "rawTitle": "Nashville's Bluebird Cafe met Emily Brooke en Wim van de Vliert"
+          },
+          {
+            "concertId": "483643",
+            "href": "https://www.podiuminfo.nl/concert/483643/Huub-van-der-Lubbe-en-Jan-Robijns-Neem-het-licht/Schouwburg-Odeon/",
+            "rawTitle": "Huub van der Lubbe en Jan Robijns - Neem het licht"
+          },
+          {
+            "concertId": "487786",
+            "href": "https://www.podiuminfo.nl/concert/487786/New-French-Touch-Swing-jazz-avec-une-sauce-Hollandaise/De-Toegift/",
+            "rawTitle": "New French Touch - Swing jazz avec une sauce Hollandaise"
+          },
+          {
+            "concertId": "496373",
+            "href": "https://www.podiuminfo.nl/concert/496373/JazzX-Sorini/De-Pletterij/",
+            "rawTitle": "JazzX Sorini"
+          },
+          {
+            "concertId": "475776",
+            "href": "https://www.podiuminfo.nl/concert/475776/Julia-Jacklin/Botanique/",
+            "rawTitle": "Julia Jacklin"
+          },
+          {
+            "concertId": "482622",
+            "href": "https://www.podiuminfo.nl/concert/482622/Candlelight-Coldplay-Imagine-Dragons-op-de-piano/Abdij-van-Herkenrode/",
+            "rawTitle": "Candlelight: Coldplay & Imagine Dragons op de piano"
+          },
+          {
+            "concertId": "484704",
+            "href": "https://www.podiuminfo.nl/concert/484704/AMBRE/Koninklijk-Circus/",
+            "rawTitle": "AMBRE"
+          },
+          {
+            "concertId": "495535",
+            "href": "https://www.podiuminfo.nl/concert/495535/Hudson-Freeman/Botanique/",
+            "rawTitle": "Hudson Freeman"
+          },
+          {
+            "concertId": "496425",
+            "href": "https://www.podiuminfo.nl/concert/496425/Salvatore-Adamo/Theatre-Royal-de-Mons/",
+            "rawTitle": "Salvatore Adamo"
+          },
+          {
+            "concertId": "502303",
+            "href": "https://www.podiuminfo.nl/concert/502303/Sunday-Jamsession/Poppodium-Phoenix/",
+            "rawTitle": "Sunday Jamsession"
+          },
+          {
+            "concertId": "499193",
+            "href": "https://www.podiuminfo.nl/concert/499193/Mollie-Elizabeth-People-Pleaser-Live/Melkweg/",
+            "rawTitle": "Mollie Elizabeth - People Pleaser Live"
+          },
+          {
+            "concertId": "460773",
+            "href": "https://www.podiuminfo.nl/concert/460773/The-Halo-Effect-Special-Guest-Lacuna-Coil/013/",
+            "rawTitle": "The Halo Effect - Special Guest: Lacuna Coil"
+          },
+          {
+            "concertId": "471510",
+            "href": "https://www.podiuminfo.nl/concert/471510/Freddie-Ballentine-Kunal-Lahiry-Our-People/De-Singel/",
+            "rawTitle": "Freddie Ballentine, Kunal Lahiry - Our People"
+          },
+          {
+            "concertId": "496650",
+            "href": "https://www.podiuminfo.nl/concert/496650/The-Womack-Sisters/TivoliVredenburg/",
+            "rawTitle": "The Womack Sisters"
+          },
+          {
+            "concertId": "500286",
+            "href": "https://www.podiuminfo.nl/concert/500286/Candlelight-Eerbetoon-aan-Michael-Jackson/Le-Delta/",
+            "rawTitle": "Candlelight: Eerbetoon aan Michael Jackson"
+          },
+          {
+            "concertId": "500287",
+            "href": "https://www.podiuminfo.nl/concert/500287/Candlelight-Hommage-aan-Michael-Jackson/Le-Delta/",
+            "rawTitle": "Candlelight: Hommage aan Michael Jackson"
+          },
+          {
+            "concertId": "493293",
+            "href": "https://www.podiuminfo.nl/concert/493293/Vandiekomsa-Albumpresentatie/Paradox/",
+            "rawTitle": "Vandiekomsa - Albumpresentatie"
+          },
+          {
+            "concertId": "494795",
+            "href": "https://www.podiuminfo.nl/concert/494795/The-Velveteers/Paradiso/",
+            "rawTitle": "The Velveteers"
+          },
+          {
+            "concertId": "498455",
+            "href": "https://www.podiuminfo.nl/concert/498455/Master-Peace/Doornroosje/",
+            "rawTitle": "Master Peace"
+          },
+          {
+            "concertId": "499330",
+            "href": "https://www.podiuminfo.nl/concert/499330/Yendry/Tolhuistuin/",
+            "rawTitle": "Yendry"
+          },
+          {
+            "concertId": "499377",
+            "href": "https://www.podiuminfo.nl/concert/499377/YeIdry/Tolhuistuin/",
+            "rawTitle": "YeИdry"
+          },
+          {
+            "concertId": "468948",
+            "href": "https://www.podiuminfo.nl/concert/468948/Starman-The-Legacy-Tour/Amare/",
+            "rawTitle": "Starman - The Legacy Tour"
+          },
+          {
+            "concertId": "464061",
+            "href": "https://www.podiuminfo.nl/concert/464061/Outlander-in-Concert-Echoes-Through-the-Highlands/Koningin-Elisabethzaal/",
+            "rawTitle": "Outlander"
+          },
+          {
+            "concertId": "468733",
+            "href": "https://www.podiuminfo.nl/concert/468733/Take-It-To-The-Limit-A-celebration-of-the-Eagles/Martiniplaza/",
+            "rawTitle": "Take It To The Limit - A celebration of the Eagles"
+          },
+          {
+            "concertId": "482650",
+            "href": "https://www.podiuminfo.nl/concert/482650/Candlelight-Een-tribute-aan-Ludovico-Einaudi/Abdij-van-Herkenrode/",
+            "rawTitle": "Candlelight: Een tribute aan Ludovico Einaudi"
+          },
+          {
+            "concertId": "482857",
+            "href": "https://www.podiuminfo.nl/concert/482857/Donnas-Hot-Stuff-A-Tribute-to-the-Queen-of-Disco/Stadstheater-Zoetermeer/",
+            "rawTitle": "Donna's Hot Stuff - A Tribute to the Queen of Disco"
+          },
+          {
+            "concertId": "492068",
+            "href": "https://www.podiuminfo.nl/concert/492068/Lee-Rocker/Metropool/",
+            "rawTitle": "Lee Rocker"
+          },
+          {
+            "concertId": "493106",
+            "href": "https://www.podiuminfo.nl/concert/493106/Heather-Nova/C-C-Zwaneberg/",
+            "rawTitle": "Heather Nova"
+          },
+          {
+            "concertId": "494044",
+            "href": "https://www.podiuminfo.nl/concert/494044/Malcolm-Todd/AFAS-Live/",
+            "rawTitle": "Malcolm Todd"
+          },
+          {
+            "concertId": "498153",
+            "href": "https://www.podiuminfo.nl/concert/498153/Geoff-Tate-Operation-Mindcrime-The-Final-Chapter/Boerderij/",
+            "rawTitle": "Geoff Tate - Operation Mindcrime: The Final Chapter"
+          },
+          {
+            "concertId": "501529",
+            "href": "https://www.podiuminfo.nl/concert/501529/Tinlicker/TivoliVredenburg/",
+            "rawTitle": "Tinlicker"
+          },
+          {
+            "concertId": "502032",
+            "href": "https://www.podiuminfo.nl/concert/502032/Kiioto/Hedon/",
+            "rawTitle": "Kiiōtō"
+          },
+          {
+            "concertId": "469288",
+            "href": "https://www.podiuminfo.nl/concert/469288/Blackbird-Emmely-de-Wilt-Fleetwood-Mac-50-jaar-Rumours/De-Kleine-Komedie/",
+            "rawTitle": "Blackbird & Emmely de Wilt - Fleetwood Mac: 50 jaar Rumours"
+          },
+          {
+            "concertId": "482291",
+            "href": "https://www.podiuminfo.nl/concert/482291/The-Space-Choir/TivoliVredenburg/",
+            "rawTitle": "The Space Choir"
+          },
+          {
+            "concertId": "491596",
+            "href": "https://www.podiuminfo.nl/concert/491596/Bill-Laurance-Michael-League/TivoliVredenburg/",
+            "rawTitle": "Bill Laurance & Michael League"
+          },
+          {
+            "concertId": "493467",
+            "href": "https://www.podiuminfo.nl/concert/493467/Andert-Tysma/TivoliVredenburg/",
+            "rawTitle": "Andert Tysma"
+          },
+          {
+            "concertId": "496216",
+            "href": "https://www.podiuminfo.nl/concert/496216/Clouseau-in-Amare/Amare/",
+            "rawTitle": "Clouseau"
+          },
+          {
+            "concertId": "459753",
+            "href": "https://www.podiuminfo.nl/concert/459753/The-Tool-Experience-previously-The-Perfect-Tool-/Patronaat/",
+            "rawTitle": "The Tool Experience (previously The Perfect Tool)"
+          },
+          {
+            "concertId": "462054",
+            "href": "https://www.podiuminfo.nl/concert/462054/Ruth-Jacott-De-tijd-van-mijn-leven/SPOT-De-Oosterpoort/",
+            "rawTitle": "Ruth Jacott - De tijd van mijn leven"
+          },
+          {
+            "concertId": "496481",
+            "href": "https://www.podiuminfo.nl/concert/496481/Modder-Youff/Willem-Twee-poppodium/",
+            "rawTitle": "Modder & Youff"
+          },
+          {
+            "concertId": "499915",
+            "href": "https://www.podiuminfo.nl/concert/499915/Oskar-Med-K/Paradiso/",
+            "rawTitle": "Oskar Med K"
+          },
+          {
+            "concertId": "500408",
+            "href": "https://www.podiuminfo.nl/concert/500408/Mick-Flannery/SPOT-De-Oosterpoort/",
+            "rawTitle": "Mick Flannery"
+          },
+          {
+            "concertId": "500605",
+            "href": "https://www.podiuminfo.nl/concert/500605/Re-Freshed-Orchestra-The-Neptunes/Hedon/",
+            "rawTitle": "Re:Freshed Orchestra: The Neptunes"
+          },
+          {
+            "concertId": "501650",
+            "href": "https://www.podiuminfo.nl/concert/501650/Obie-Trice/Nieuwe-Nor/",
+            "rawTitle": "Obie Trice"
+          },
+          {
+            "concertId": "502373",
+            "href": "https://www.podiuminfo.nl/concert/502373/Folk-Hogan/Poppodium-Volt/",
+            "rawTitle": "Folk Hogan"
+          },
+          {
+            "concertId": "486817",
+            "href": "https://www.podiuminfo.nl/concert/486817/Candlelight-Coldplay-en-Imagine-Dragons/Le-Delta/",
+            "rawTitle": "Candlelight: Coldplay en Imagine Dragons"
+          },
+          {
+            "concertId": "491508",
+            "href": "https://www.podiuminfo.nl/concert/491508/Fuzz-Top-ZZ-Top-Tribute-FR-/Bibelot/",
+            "rawTitle": "Fuzz Top - ZZ Top Tribute (FR)"
           }
         ]
       }
