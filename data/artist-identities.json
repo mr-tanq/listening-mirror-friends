@@ -1055,10 +1055,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "de rolf sanchez club": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "disco inferno met discophonic orchestra": {
       "retryAfter": "2026-12-05",
       "reason": "not-found"
@@ -1133,46 +1129,6 @@
     },
     "sophie straat": {
       "retryAfter": "2026-12-21",
-      "reason": "identified-without-free-photo"
-    },
-    "caro": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "66281e64-c672-450f-bb93-1403654c7fe5",
-        "38bbbd07-9d89-4ff1-9a4e-28e48f57d63a"
-      ]
-    },
-    "clobber": {
-      "retryAfter": "2026-12-24",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "1bd509fb-b068-4604-9a70-5f3d470c7915",
-        "54a12bbe-0bea-458f-a61b-5e4ee4a1404d"
-      ]
-    },
-    "flora": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "ca52af2c-a8a4-4771-9b83-b66ec974753b",
-        "c4192e5a-9d53-4e27-9e3f-80d748e0fd54"
-      ]
-    },
-    "jan o en de overige bandleden": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "nes": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "1dbf9747-6ee3-4f43-b7af-89d7dc86f6ed",
-        "1f6a238e-0d3f-4469-9ff5-a136209e4a5c"
-      ]
-    },
-    "sea foam grey": {
-      "retryAfter": "2026-12-22",
       "reason": "identified-without-free-photo"
     },
     "ars musica": {
@@ -1494,7 +1450,7 @@
       "reason": "not-found"
     },
     "gplr 2026": {
-      "retryAfter": "2026-11-14",
+      "retryAfter": "2026-11-16",
       "reason": "HTTP 503"
     },
     "leap": {
