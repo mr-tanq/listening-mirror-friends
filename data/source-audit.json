@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-14T12:22:59.083Z",
-  "auditedFor": "2026-11-14",
-  "totalPublished": 1925,
-  "greekPublished": 432,
+  "catalogUpdatedAt": "2026-11-15T12:56:13.125Z",
+  "auditedFor": "2026-11-15",
+  "totalPublished": 1890,
+  "greekPublished": 416,
   "imageCoverage": {
-    "withImage": 1085,
-    "withoutImage": 840
+    "withImage": 1068,
+    "withoutImage": 822
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 432,
-      "withImage": 389,
-      "withoutImage": 43
+      "events": 416,
+      "withImage": 375,
+      "withoutImage": 41
     },
     "NL": {
-      "events": 1388,
-      "withImage": 688,
-      "withoutImage": 700
+      "events": 1370,
+      "withImage": 685,
+      "withoutImage": 685
     },
     "BE": {
-      "events": 105,
+      "events": 104,
       "withImage": 8,
-      "withoutImage": 97
+      "withoutImage": 96
     }
   },
   "sources": {
@@ -32,8 +32,8 @@
       "greekEvents": 29
     },
     "festivalinfo": {
-      "events": 13,
-      "withImage": 5,
+      "events": 12,
+      "withImage": 4,
       "withoutImage": 8,
       "greekEvents": 0
     },
@@ -44,52 +44,52 @@
       "greekEvents": 12
     },
     "fuzzclub-calendar": {
-      "events": 4,
-      "withImage": 4,
-      "withoutImage": 0,
-      "greekEvents": 4
-    },
-    "gagarin-calendar": {
-      "events": 20,
-      "withImage": 20,
-      "withoutImage": 0,
-      "greekEvents": 20
-    },
-    "more": {
-      "events": 305,
-      "withImage": 305,
-      "withoutImage": 0,
-      "greekEvents": 305
-    },
-    "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 3,
+      "withImage": 3,
       "withoutImage": 0,
       "greekEvents": 3
     },
+    "gagarin-calendar": {
+      "events": 21,
+      "withImage": 21,
+      "withoutImage": 0,
+      "greekEvents": 21
+    },
+    "more": {
+      "events": 293,
+      "withImage": 293,
+      "withoutImage": 0,
+      "greekEvents": 293
+    },
+    "official": {
+      "events": 4,
+      "withImage": 4,
+      "withoutImage": 0,
+      "greekEvents": 2
+    },
     "podiuminfo-agenda": {
-      "events": 1179,
-      "withImage": 394,
-      "withoutImage": 785,
+      "events": 1157,
+      "withImage": 391,
+      "withoutImage": 766,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 59,
-      "withImage": 18,
-      "withoutImage": 41,
-      "greekEvents": 59
+      "events": 56,
+      "withImage": 17,
+      "withoutImage": 39,
+      "greekEvents": 56
     },
     "venue-official": {
-      "events": 299,
-      "withImage": 295,
-      "withoutImage": 4,
+      "events": 303,
+      "withImage": 296,
+      "withoutImage": 7,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 20,
-      "withImage": 20,
+      "published": 21,
+      "withImage": 21,
       "warning": null
     },
     "floyd-calendar": {
@@ -98,8 +98,8 @@
       "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 4,
-      "withImage": 4,
+      "published": 3,
+      "withImage": 3,
       "warning": null
     },
     "anclub-index": {
@@ -125,8 +125,7 @@
       "withImage": 22,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
+        "rocking"
       ]
     },
     {
@@ -139,8 +138,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 18,
-      "withImage": 18,
+      "events": 17,
+      "withImage": 17,
       "sources": [
         "more"
       ]
@@ -155,8 +154,8 @@
     },
     {
       "name": "Fuzz Club",
-      "events": 14,
-      "withImage": 14,
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "fuzzclub-calendar",
         "more"
@@ -164,27 +163,11 @@
     },
     {
       "name": "Piraeus Club Academy",
-      "events": 14,
-      "withImage": 12,
+      "events": 13,
+      "withImage": 11,
       "sources": [
         "more",
         "rocking"
-      ]
-    },
-    {
-      "name": "Kyttaro Live",
-      "events": 12,
-      "withImage": 12,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "gazarte",
-      "events": 12,
-      "withImage": 12,
-      "sources": [
-        "more"
       ]
     },
     {
@@ -204,6 +187,22 @@
       ]
     },
     {
+      "name": "Kyttaro Live",
+      "events": 11,
+      "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "gazarte",
+      "events": 11,
+      "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 10,
       "withImage": 10,
@@ -220,7 +219,7 @@
       ]
     },
     {
-      "name": "ARCH",
+      "name": "Circus Entertainment Hub",
       "events": 9,
       "withImage": 9,
       "sources": [
@@ -228,25 +227,25 @@
       ]
     },
     {
-      "name": "AUX CLUB",
-      "events": 9,
-      "withImage": 9,
+      "name": "ARCH",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
       "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 9,
-      "withImage": 9,
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
-      "events": 9,
-      "withImage": 9,
+      "name": "AUX CLUB",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
@@ -292,14 +291,6 @@
       ]
     },
     {
-      "name": "UNDERFLOW RECORD STORE",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Temple Athens",
       "events": 5,
       "withImage": 1,
@@ -308,15 +299,7 @@
       ]
     },
     {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "gazarte roof stage",
+      "name": "Χωρος Τεχνης Ιδιομελο",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -325,6 +308,14 @@
     },
     {
       "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "UNDERFLOW RECORD STORE",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -356,30 +347,6 @@
       ]
     },
     {
-      "name": "Χωρος Τεχνης Ιδιομελο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "We",
-      "events": 3,
-      "withImage": 2,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
-      "name": "Θεατρο Μεταξουργειο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Stage7",
       "events": 3,
       "withImage": 3,
@@ -404,7 +371,31 @@
       ]
     },
     {
+      "name": "gazarte roof stage",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Athens Conservatoire (in Greek)",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Doryphora Gig Space",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -433,6 +424,14 @@
       "withImage": 3,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "Royal Theater",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
       ]
     }
   ],

@@ -1,145 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T12:26:57.230Z",
-  "catalogUpdatedAt": "2026-11-14T12:22:59.083Z",
-  "auditedFor": "2026-11-14",
+  "generatedAt": "2026-11-15T13:00:07.150Z",
+  "catalogUpdatedAt": "2026-11-15T12:56:13.125Z",
+  "auditedFor": "2026-11-15",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1934,
-    "eventPoster": 1094,
-    "artistPhoto": 510,
-    "noImage": 330,
+    "total": 1890,
+    "eventPoster": 1071,
+    "artistPhoto": 496,
+    "noImage": 323,
     "posterWithPhotoBackup": 471
   },
   "byCountry": {
     "GR": {
-      "total": 432,
-      "eventPoster": 389,
-      "artistPhoto": 12,
-      "noImage": 31,
-      "posterWithPhotoBackup": 89
+      "total": 416,
+      "eventPoster": 375,
+      "artistPhoto": 11,
+      "noImage": 30,
+      "posterWithPhotoBackup": 86
     },
     "NL": {
-      "total": 1397,
-      "eventPoster": 697,
-      "artistPhoto": 438,
-      "noImage": 262,
-      "posterWithPhotoBackup": 376
+      "total": 1370,
+      "eventPoster": 688,
+      "artistPhoto": 425,
+      "noImage": 257,
+      "posterWithPhotoBackup": 379
     },
     "BE": {
-      "total": 105,
+      "total": 104,
       "eventPoster": 8,
       "artistPhoto": 60,
-      "noImage": 37,
+      "noImage": 36,
       "posterWithPhotoBackup": 6
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 111,
-    "ambiguous-artist": 70,
-    "artist-not-found": 121,
-    "artist-has-no-photo": 7,
-    "other-lookup-cooldown": 17,
+    "album-cover-rejected": 107,
+    "ambiguous-artist": 73,
+    "artist-not-found": 117,
+    "artist-has-no-photo": 6,
+    "other-lookup-cooldown": 16,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 838,
+      "deezer": 847,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 38,
+      "attempted": 34,
       "failuresByReason": {
-        "artist-not-in-provider": 31,
+        "artist-not-in-provider": 27,
         "photo-license-not-confirmed": 4,
         "missing-or-ambiguous-artist": 3
       }
     }
   },
-  "missingNext14Days": 91,
+  "missingNext14Days": 83,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-480759",
-      "artist": "Ars Musica: Night Lives - Kristine Tjøgersen",
-      "date": "2026-11-14",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-456929",
-      "artist": "Cassia",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-493825",
-      "artist": "Coos",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-496180",
-      "artist": "Donker Dansen – Darker Levels",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "rocking-20261114-27436",
-      "artist": "Iron Beast: Caught Somewhere in Greece - 40 Years of Somewhere in Time",
-      "date": "2026-11-14",
-      "country": "GR",
-      "venue": "We",
-      "reason": "artist-has-no-photo"
-    },
-    {
-      "id": "podiuminfo-493137",
-      "artist": "NEMS Unleashed",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "013",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-501605",
-      "artist": "Parel",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-498858",
-      "artist": "Prophets of Thwaites",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-486503",
-      "artist": "The Elvis Concert - Special 70th Anniversary “Heartbreak Hotel”",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "Bibelot",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-496625",
-      "artist": "Utrechtse Meezingerij",
-      "date": "2026-11-14",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
     {
       "id": "rocking-20261115-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
@@ -253,14 +173,6 @@
       "reason": "artist-not-found"
     },
     {
-      "id": "podiuminfo-493400",
-      "artist": "Kölsch & the Machine",
-      "date": "2026-11-19",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "artist-not-found"
-    },
-    {
       "id": "podiuminfo-491385",
       "artist": "LAWN",
       "date": "2026-11-19",
@@ -357,14 +269,6 @@
       "reason": "artist-has-no-photo"
     },
     {
-      "id": "podiuminfo-483150",
-      "artist": "Samba Roots x Lucas Santana",
-      "date": "2026-11-20",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "artist-not-found"
-    },
-    {
       "id": "podiuminfo-488186",
       "artist": "Şeyda Perinçek",
       "date": "2026-11-20",
@@ -379,41 +283,105 @@
       "country": "NL",
       "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
-    }
-  ],
-  "missingOtherSamples": [
-    {
-      "id": "podiuminfo-496345",
-      "artist": "Cora Kemperman & de Schuurmachines",
-      "date": "2026-11-29",
-      "country": "NL",
-      "venue": "dB's",
-      "reason": "artist-not-found"
     },
     {
-      "id": "podiuminfo-500079",
-      "artist": "Def & BrittneySGAT - Extra Show",
-      "date": "2026-11-29",
+      "id": "podiuminfo-474757",
+      "artist": "FAY",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-500747",
+      "artist": "Finale Amsterdamse Popprijs 2026",
+      "date": "2026-11-21",
       "country": "NL",
       "venue": "Melkweg",
       "reason": "artist-not-found"
     },
     {
-      "id": "rocking-20261129-27562",
+      "id": "podiuminfo-461409",
+      "artist": "Jim Gardner",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-483516",
+      "artist": "Kurashi - Super-Sonic Jazz Festival Afterparty",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-462434",
+      "artist": "Leenalchi",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "other-lookup-cooldown"
+    },
+    {
+      "id": "podiuminfo-500135",
+      "artist": "Push It",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "venue-doornroosje-2026-11-21-smells-like-80s",
+      "artist": "Smells Like 80s",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Doornroosje",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-494886",
+      "artist": "Soul Birds – The New Chapter",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Annabel",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-499425",
+      "artist": "VRLCHT",
+      "date": "2026-11-21",
+      "country": "NL",
+      "venue": "Vera",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-492492",
+      "artist": "Delany",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "rocking-20261122-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
-      "date": "2026-11-29",
+      "date": "2026-11-22",
       "country": "GR",
       "venue": "Το Τρένο Στο Ρουφ",
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-474504",
-      "artist": "Paradox Jazz Orchestra & James Carter",
-      "date": "2026-11-29",
+      "id": "podiuminfo-490074",
+      "artist": "LORDS OF ALTAMONT",
+      "date": "2026-11-22",
       "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
+      "venue": "dB's",
+      "reason": "artist-not-found"
+    }
+  ],
+  "missingOtherSamples": [
     {
       "id": "podiuminfo-476509",
       "artist": "Haunt Me",
@@ -701,6 +669,38 @@
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-451096",
+      "artist": "Paceshifters play Nirvana",
+      "date": "2026-12-10",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-465732",
+      "artist": "Peter & The Test Tube Babies",
+      "date": "2026-12-10",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-448515",
+      "artist": "Sef",
+      "date": "2026-12-10",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-499753",
+      "artist": "ARRA SCUM w/ My Minds Mine",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
     }
   ]
 }
