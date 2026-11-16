@@ -1,44 +1,44 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T13:00:07.150Z",
-  "catalogUpdatedAt": "2026-11-15T12:56:13.125Z",
-  "auditedFor": "2026-11-15",
+  "generatedAt": "2026-11-16T13:56:07.891Z",
+  "catalogUpdatedAt": "2026-11-16T13:52:14.317Z",
+  "auditedFor": "2026-11-16",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1890,
-    "eventPoster": 1071,
-    "artistPhoto": 496,
-    "noImage": 323,
-    "posterWithPhotoBackup": 471
+    "total": 1883,
+    "eventPoster": 1072,
+    "artistPhoto": 489,
+    "noImage": 322,
+    "posterWithPhotoBackup": 477
   },
   "byCountry": {
+    "NL": {
+      "total": 1362,
+      "eventPoster": 689,
+      "artistPhoto": 417,
+      "noImage": 256,
+      "posterWithPhotoBackup": 382
+    },
     "GR": {
       "total": 416,
-      "eventPoster": 375,
+      "eventPoster": 376,
       "artistPhoto": 11,
-      "noImage": 30,
-      "posterWithPhotoBackup": 86
-    },
-    "NL": {
-      "total": 1370,
-      "eventPoster": 688,
-      "artistPhoto": 425,
-      "noImage": 257,
-      "posterWithPhotoBackup": 379
+      "noImage": 29,
+      "posterWithPhotoBackup": 90
     },
     "BE": {
-      "total": 104,
-      "eventPoster": 8,
-      "artistPhoto": 60,
-      "noImage": 36,
-      "posterWithPhotoBackup": 6
+      "total": 105,
+      "eventPoster": 7,
+      "artistPhoto": 61,
+      "noImage": 37,
+      "posterWithPhotoBackup": 5
     }
   },
   "missingReasons": {
+    "ambiguous-artist": 72,
     "album-cover-rejected": 107,
-    "ambiguous-artist": 73,
     "artist-not-found": 117,
     "artist-has-no-photo": 6,
     "other-lookup-cooldown": 16,
@@ -46,7 +46,7 @@
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 847,
+      "deezer": 858,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,24 +58,8 @@
       }
     }
   },
-  "missingNext14Days": 83,
+  "missingNext14Days": 82,
   "missingNext14DaysSamples": [
-    {
-      "id": "rocking-20261115-27562",
-      "artist": "Glitter Grotesque: Let's Swing in New Orleans",
-      "date": "2026-11-15",
-      "country": "GR",
-      "venue": "Το Τρένο Στο Ρουφ",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-461408",
-      "artist": "NAPA",
-      "date": "2026-11-15",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "ambiguous-artist"
-    },
     {
       "id": "podiuminfo-495231",
       "artist": "CARSICK",
@@ -379,17 +363,25 @@
       "country": "NL",
       "venue": "dB's",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-495360",
+      "artist": "Morbidfest: I Am Morbid, Atheist, Cancer, Narcotic Wasteland",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "Bibelot",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-496906",
+      "artist": "Nightfreak (USA) @ Cafe De Wacht",
+      "date": "2026-11-22",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-476509",
-      "artist": "Haunt Me",
-      "date": "2026-11-30",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-497151",
       "artist": "Evanora Unlimited",
@@ -700,6 +692,14 @@
       "date": "2026-12-11",
       "country": "NL",
       "venue": "Willemeen",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-495583",
+      "artist": "Boogiefest",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "dB's",
       "reason": "artist-not-found"
     }
   ]

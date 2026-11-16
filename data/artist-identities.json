@@ -1127,15 +1127,6 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "napa": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "d76eeba7-d35c-4fe8-bffa-ce2885c97765",
-        "9f3423ee-debe-48ec-b78d-281438aaf626",
-        "8e3b7dac-7845-4f73-bfcb-e8344b68b950"
-      ]
-    },
     "carsick": {
       "retryAfter": "2026-12-22",
       "reason": "ambiguous",
@@ -1414,8 +1405,8 @@
       "reason": "not-found"
     },
     "gplr 2026": {
-      "retryAfter": "2026-11-16",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-16",
+      "reason": "not-found"
     },
     "leap": {
       "retryAfter": "2026-12-13",
@@ -1487,6 +1478,10 @@
     },
     "stay away from dante": {
       "retryAfter": "2026-11-17",
+      "reason": "HTTP 503"
+    },
+    "taqbir": {
+      "retryAfter": "2026-11-18",
       "reason": "HTTP 503"
     }
   }

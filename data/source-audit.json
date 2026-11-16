@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-15T12:56:13.125Z",
-  "auditedFor": "2026-11-15",
-  "totalPublished": 1890,
+  "catalogUpdatedAt": "2026-11-16T13:52:14.317Z",
+  "auditedFor": "2026-11-16",
+  "totalPublished": 1879,
   "greekPublished": 416,
   "imageCoverage": {
     "withImage": 1068,
-    "withoutImage": 822
+    "withoutImage": 811
   },
   "imageCoverageByCountry": {
+    "NL": {
+      "events": 1358,
+      "withImage": 685,
+      "withoutImage": 673
+    },
     "GR": {
       "events": 416,
-      "withImage": 375,
-      "withoutImage": 41
-    },
-    "NL": {
-      "events": 1370,
-      "withImage": 685,
-      "withoutImage": 685
+      "withImage": 376,
+      "withoutImage": 40
     },
     "BE": {
-      "events": 104,
-      "withImage": 8,
-      "withoutImage": 96
+      "events": 105,
+      "withImage": 7,
+      "withoutImage": 98
     }
   },
   "sources": {
@@ -50,10 +50,10 @@
       "greekEvents": 3
     },
     "gagarin-calendar": {
-      "events": 21,
-      "withImage": 21,
+      "events": 22,
+      "withImage": 22,
       "withoutImage": 0,
-      "greekEvents": 21
+      "greekEvents": 22
     },
     "more": {
       "events": 293,
@@ -62,22 +62,22 @@
       "greekEvents": 293
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1157,
-      "withImage": 391,
-      "withoutImage": 766,
+      "events": 1146,
+      "withImage": 390,
+      "withoutImage": 756,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 56,
-      "withImage": 17,
-      "withoutImage": 39,
-      "greekEvents": 56
+      "events": 54,
+      "withImage": 16,
+      "withoutImage": 38,
+      "greekEvents": 54
     },
     "venue-official": {
       "events": 303,
@@ -88,8 +88,8 @@
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 21,
-      "withImage": 21,
+      "published": 22,
+      "withImage": 22,
       "warning": null
     },
     "floyd-calendar": {
@@ -111,8 +111,8 @@
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 32,
-      "withImage": 30,
+      "events": 33,
+      "withImage": 31,
       "sources": [
         "anclub-index",
         "rocking",
@@ -121,16 +121,17 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 22,
-      "withImage": 22,
+      "events": 24,
+      "withImage": 24,
       "sources": [
         "gagarin-calendar",
-        "rocking"
+        "rocking",
+        "official"
       ]
     },
     {
       "name": "Το Τρένο Στο Ρουφ",
-      "events": 21,
+      "events": 20,
       "withImage": 0,
       "sources": [
         "rocking"
@@ -187,7 +188,7 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "Half Note Jazz Club",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -203,7 +204,7 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "name": "Kyttaro Live",
       "events": 10,
       "withImage": 10,
       "sources": [
@@ -211,9 +212,17 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 10,
-      "withImage": 10,
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 9,
+      "withImage": 9,
       "sources": [
         "more"
       ]
@@ -227,25 +236,17 @@
       ]
     },
     {
-      "name": "ARCH",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "AUX CLUB",
       "events": 8,
       "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -260,6 +261,14 @@
     },
     {
       "name": "Klakaz",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -296,14 +305,6 @@
       "withImage": 1,
       "sources": [
         "rocking"
-      ]
-    },
-    {
-      "name": "Χωρος Τεχνης Ιδιομελο",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
       ]
     },
     {
@@ -347,22 +348,6 @@
       ]
     },
     {
-      "name": "Stage7",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Γυαλινο Μουσικο Θεατρο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Ίλιον Plus",
       "events": 3,
       "withImage": 1,
@@ -379,7 +364,7 @@
       ]
     },
     {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "name": "Χωρος Τεχνης Ιδιομελο",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -428,6 +413,22 @@
     },
     {
       "name": "Royal Theater",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Telekom Center Athens",
       "events": 3,
       "withImage": 3,
       "sources": [

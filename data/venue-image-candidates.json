@@ -1,88 +1,7 @@
 {
-  "generatedAt": "2026-11-15T12:59:34.498Z",
+  "generatedAt": "2026-11-16T13:55:35.023Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-451716",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/amistat/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/02/PRDps_MailheaderAMISTAT.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-464778",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/ash",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-05/ASH%20%E2%80%93%20Square%20afbeelding%20only.png?itok=ySxglqgQ",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-495636",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/bartofso-2/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/04/PRDps_Mailheader-BARTOFSO.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-489548",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/blof-19/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/07/WEB-foto-4-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-481212",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/bokoesam/2908023",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bokoesam-1782053387.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-456923",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/fred-wesley-generations-15-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/03/Schermafbeelding-2026-03-19-132956.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-474162",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/froukje-support-15-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/05/Tourbeeld-Froukje-fotograaf-Pasqual-Dominic-scaled-e1779973724516.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-464806",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/immersion/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/04/immersion-persfotow-eb-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-484148",
-      "venue": "013",
-      "eventUrl": "https://www.013.nl/programma/145006/president",
-      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/President.jpg?mtime=1782914581",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-451714",
       "venue": "paradiso",
@@ -386,6 +305,15 @@
       "eventUrl": "https://www.effenaar.nl/agenda/revolution-calling-pre-show",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-08/RC%202026_Posts%20IG%20FB%20Banner%20Story%20Pre_1920x1080.jpg",
       "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2026-11-20-anaiis",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/super-sonic-jazz-festival-friday/2751594",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/sd-hannah-1782296004.jpg",
+      "confidence": 1,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -4254,48 +4182,48 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-013-2027-02-24-de-jukebox",
+      "eventId": "podiuminfo-490348",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/152183/de-jukebox",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Club-Goud-JukeBox-XL-2025-Henny-van-Roomen-Fotografie-042web-2.jpg?mtime=1786455279",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-24-emeli-sande",
+      "eventId": "podiuminfo-492880",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/emeli-sande/2923567",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Afbeelding1_2026-09-03-131545_lzim.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-effenaar-2027-02-24-midge-ure",
+      "eventId": "podiuminfo-455424",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/midge-ure",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-03/%20%E2%80%93%201920x1080%20WebsiteMidge.png",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-02-24-movements",
+      "eventId": "podiuminfo-494503",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/movements-24-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/DSC01383_for-spotify-profile-copy-2-1024x768.png",
-      "confidence": 1,
-      "published": true,
+      "confidence": 0.9,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-24-quinn-oulton",
+      "eventId": "podiuminfo-498430",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/quinn-oulton/2938868",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Quinn-Oulton-2027.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4446,7 +4374,7 @@
       "eventId": "venue-doornroosje-2027-02-27-jake-vaadeland",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/jake-vaadeland-2/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/11/Jake-vaadeland-persfoto_klein.jpg",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/Jake-vaadeland-persfoto_klein-1200x630.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5842,6 +5770,33 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/florrie/2949285",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/The-Times-Lead-Press-Shot-Joe-Connor_1.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-14-16-horsepower",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/161583/16-horsepower",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/16hp.png?mtime=1791440348",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-14-cowboy-hunters",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/cowboy-hunters/2953143",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/cd11fe3d_1-MAIN-1794309816.jpeg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-14-rodrigo-y-gabriela",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/rodrigo-y-gabriela/2895335",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/rodrigoygabriela-1781096858.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
