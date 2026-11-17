@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-16T13:52:14.317Z",
-  "auditedFor": "2026-11-16",
-  "totalPublished": 1879,
+  "catalogUpdatedAt": "2026-11-17T14:43:40.637Z",
+  "auditedFor": "2026-11-17",
+  "totalPublished": 1875,
   "greekPublished": 416,
   "imageCoverage": {
-    "withImage": 1068,
-    "withoutImage": 811
+    "withImage": 1070,
+    "withoutImage": 805
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1358,
-      "withImage": 685,
-      "withoutImage": 673
+      "events": 1357,
+      "withImage": 688,
+      "withoutImage": 669
+    },
+    "BE": {
+      "events": 102,
+      "withImage": 7,
+      "withoutImage": 95
     },
     "GR": {
       "events": 416,
-      "withImage": 376,
-      "withoutImage": 40
-    },
-    "BE": {
-      "events": 105,
-      "withImage": 7,
-      "withoutImage": 98
+      "withImage": 375,
+      "withoutImage": 41
     }
   },
   "sources": {
@@ -50,46 +50,46 @@
       "greekEvents": 3
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 23,
+      "withImage": 23,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 23
     },
     "more": {
-      "events": 293,
-      "withImage": 293,
+      "events": 292,
+      "withImage": 292,
       "withoutImage": 0,
-      "greekEvents": 293
+      "greekEvents": 292
     },
     "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1146,
+      "events": 1139,
       "withImage": 390,
-      "withoutImage": 756,
+      "withoutImage": 749,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 54,
+      "events": 55,
       "withImage": 16,
-      "withoutImage": 38,
-      "greekEvents": 54
+      "withoutImage": 39,
+      "greekEvents": 55
     },
     "venue-official": {
-      "events": 303,
-      "withImage": 296,
+      "events": 306,
+      "withImage": 299,
       "withoutImage": 7,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 23,
+      "withImage": 23,
       "warning": null
     },
     "floyd-calendar": {
@@ -125,8 +125,7 @@
       "withImage": 24,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
+        "rocking"
       ]
     },
     {
@@ -139,8 +138,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 17,
-      "withImage": 17,
+      "events": 16,
+      "withImage": 16,
       "sources": [
         "more"
       ]
@@ -188,14 +187,6 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 11,
-      "withImage": 11,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "gazarte",
       "events": 11,
       "withImage": 11,
@@ -204,7 +195,7 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "Half Note Jazz Club",
       "events": 10,
       "withImage": 10,
       "sources": [
@@ -212,9 +203,9 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 9,
-      "withImage": 9,
+      "name": "Kyttaro Live",
+      "events": 10,
+      "withImage": 10,
       "sources": [
         "more"
       ]
@@ -244,6 +235,22 @@
       ]
     },
     {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "events": 8,
+      "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
+      "events": 8,
+      "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "ARCH",
       "events": 7,
       "withImage": 7,
@@ -253,14 +260,6 @@
     },
     {
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
-      "events": 7,
-      "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Klakaz",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -300,6 +299,14 @@
       ]
     },
     {
+      "name": "Oddity Club",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Temple Athens",
       "events": 5,
       "withImage": 1,
@@ -308,23 +315,7 @@
       ]
     },
     {
-      "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "UNDERFLOW RECORD STORE",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Oddity Club",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -389,6 +380,14 @@
     },
     {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "«THEATRON», (Th. Antigoni), Ellinikos Kosmos",
       "events": 3,
       "withImage": 3,
       "sources": [

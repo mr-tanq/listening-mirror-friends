@@ -1032,6 +1032,16 @@
       "disambiguation": "Belgian jazz quintet of Camille-Alban Spreng",
       "matchedBy": "unique-name",
       "checkedAt": "2026-11-13T13:16:41.229Z"
+    },
+    "stay away from dante": {
+      "name": "Stay Away From Dante!",
+      "mbid": "3d468841-b588-4d94-a588-c21ddff6d4ff",
+      "mbName": "stay away from dante!",
+      "country": "NL",
+      "disambiguation": "Alternative hiphop artist from Amsterdam, The Netherlands",
+      "matchedBy": "unique-name",
+      "spotifyId": "5y47Otq6VIrBjaLR7Zl8nd",
+      "checkedAt": "2026-11-17T14:41:01.199Z"
     }
   },
   "attempted": {
@@ -1127,26 +1137,6 @@
       "retryAfter": "2026-12-21",
       "reason": "identified-without-free-photo"
     },
-    "carsick": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "242940bb-0600-4bfe-a1c0-efb1ab583fec",
-        "fa014bb6-56b7-462c-b882-1ee866461f0b"
-      ]
-    },
-    "faux real": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "80a154ea-28d7-42e8-8409-ca7017780e00",
-        "d48936cc-c76b-47d2-a16c-694cec5dec9b"
-      ]
-    },
-    "flower face": {
-      "retryAfter": "2026-12-22",
-      "reason": "identified-without-free-photo"
-    },
     "sofy": {
       "retryAfter": "2026-12-22",
       "reason": "ambiguous",
@@ -1173,10 +1163,6 @@
     },
     "orsini": {
       "retryAfter": "2026-12-11",
-      "reason": "not-found"
-    },
-    "dylan dunnink": {
-      "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
     "aupinard": {
@@ -1468,20 +1454,24 @@
       "retryAfter": "2026-12-12",
       "reason": "not-found"
     },
-    "julia jacklin": {
-      "retryAfter": "2026-11-15",
-      "reason": "HTTP 503"
-    },
     "shantel bucovina club orkestar de": {
       "retryAfter": "2026-12-15",
       "reason": "not-found"
     },
     "stay away from dante": {
-      "retryAfter": "2026-11-17",
-      "reason": "HTTP 503"
+      "retryAfter": "2027-01-01",
+      "reason": "identified-without-free-photo"
     },
     "taqbir": {
       "retryAfter": "2026-11-18",
+      "reason": "HTTP 503"
+    },
+    "the zouklovers": {
+      "retryAfter": "2026-12-17",
+      "reason": "not-found"
+    },
+    "wrest 7ebra more t b a": {
+      "retryAfter": "2026-11-19",
       "reason": "HTTP 503"
     }
   }

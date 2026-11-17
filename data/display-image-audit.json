@@ -1,113 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T13:56:07.891Z",
-  "catalogUpdatedAt": "2026-11-16T13:52:14.317Z",
-  "auditedFor": "2026-11-16",
+  "generatedAt": "2026-11-17T14:47:39.399Z",
+  "catalogUpdatedAt": "2026-11-17T14:43:40.637Z",
+  "auditedFor": "2026-11-17",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1883,
-    "eventPoster": 1072,
-    "artistPhoto": 489,
-    "noImage": 322,
-    "posterWithPhotoBackup": 477
+    "total": 1884,
+    "eventPoster": 1080,
+    "artistPhoto": 485,
+    "noImage": 319,
+    "posterWithPhotoBackup": 478
   },
   "byCountry": {
     "NL": {
-      "total": 1362,
-      "eventPoster": 689,
-      "artistPhoto": 417,
-      "noImage": 256,
-      "posterWithPhotoBackup": 382
+      "total": 1366,
+      "eventPoster": 698,
+      "artistPhoto": 414,
+      "noImage": 254,
+      "posterWithPhotoBackup": 383
+    },
+    "BE": {
+      "total": 102,
+      "eventPoster": 7,
+      "artistPhoto": 59,
+      "noImage": 36,
+      "posterWithPhotoBackup": 5
     },
     "GR": {
       "total": 416,
-      "eventPoster": 376,
-      "artistPhoto": 11,
+      "eventPoster": 375,
+      "artistPhoto": 12,
       "noImage": 29,
       "posterWithPhotoBackup": 90
-    },
-    "BE": {
-      "total": 105,
-      "eventPoster": 7,
-      "artistPhoto": 61,
-      "noImage": 37,
-      "posterWithPhotoBackup": 5
     }
   },
   "missingReasons": {
-    "ambiguous-artist": 72,
-    "album-cover-rejected": 107,
     "artist-not-found": 117,
+    "ambiguous-artist": 71,
+    "album-cover-rejected": 105,
     "artist-has-no-photo": 6,
     "other-lookup-cooldown": 16,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 858,
+      "deezer": 869,
       "manual-pin": 4
     },
     "theAudioDB": {
       "attempted": 34,
       "failuresByReason": {
-        "artist-not-in-provider": 27,
-        "photo-license-not-confirmed": 4,
-        "missing-or-ambiguous-artist": 3
+        "artist-not-in-provider": 28,
+        "missing-or-ambiguous-artist": 3,
+        "photo-license-not-confirmed": 3
       }
     }
   },
-  "missingNext14Days": 82,
+  "missingNext14Days": 76,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-495231",
-      "artist": "CARSICK",
-      "date": "2026-11-16",
-      "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-502013",
-      "artist": "Dylan Dunnink",
-      "date": "2026-11-16",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-478766",
-      "artist": "Faux Real",
-      "date": "2026-11-16",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-473993",
-      "artist": "Flower Face",
-      "date": "2026-11-16",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-467783",
-      "artist": "SOFY",
-      "date": "2026-11-16",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-494626",
-      "artist": "Songwriter Night",
-      "date": "2026-11-16",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-446569",
       "artist": "Bloc Party & Interpol",
@@ -293,14 +245,6 @@
       "reason": "ambiguous-artist"
     },
     {
-      "id": "podiuminfo-483516",
-      "artist": "Kurashi - Super-Sonic Jazz Festival Afterparty",
-      "date": "2026-11-21",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
-    {
       "id": "podiuminfo-462434",
       "artist": "Leenalchi",
       "date": "2026-11-21",
@@ -379,17 +323,65 @@
       "country": "NL",
       "venue": "Willemeen",
       "reason": "artist-not-found"
-    }
-  ],
-  "missingOtherSamples": [
+    },
     {
-      "id": "podiuminfo-497151",
-      "artist": "Evanora Unlimited",
-      "date": "2026-12-01",
+      "id": "podiuminfo-496060",
+      "artist": "Demo Club Bandnight Auks",
+      "date": "2026-11-23",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-482132",
+      "artist": "greek",
+      "date": "2026-11-23",
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
     },
+    {
+      "id": "venue-doornroosje-2026-11-24-actie-aletta",
+      "artist": "Actie Aletta",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "Doornroosje",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-454763",
+      "artist": "Knoll",
+      "date": "2026-11-24",
+      "country": "NL",
+      "venue": "Doornroosje",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-477377",
+      "artist": "Chris Eckman",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-482073",
+      "artist": "Greek",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "Paradiso",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-494889",
+      "artist": "Judith Kiddo - Melissa Weikart",
+      "date": "2026-11-25",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "album-cover-rejected"
+    }
+  ],
+  "missingOtherSamples": [
     {
       "id": "podiuminfo-487687",
       "artist": "Frenetik",
@@ -701,6 +693,14 @@
       "country": "NL",
       "venue": "dB's",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-449572",
+      "artist": "Clean Pete's Kerstshow",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "Grenswerk",
+      "reason": "other-lookup-cooldown"
     }
   ]
 }
