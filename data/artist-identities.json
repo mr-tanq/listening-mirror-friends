@@ -1042,6 +1042,25 @@
       "matchedBy": "unique-name",
       "spotifyId": "5y47Otq6VIrBjaLR7Zl8nd",
       "checkedAt": "2026-11-17T14:41:01.199Z"
+    },
+    "paradox jazz orchestra": {
+      "name": "Paradox Jazz Orchestra",
+      "mbid": "38c3c090-547e-4455-9cb6-3f2ece443252",
+      "mbName": "Paradox Jazz Orchestra",
+      "country": "",
+      "matchedBy": "unique-name",
+      "checkedAt": "2026-11-18T14:17:41.030Z"
+    },
+    "haunt me": {
+      "name": "Haunt Me",
+      "mbid": "08c0477f-3b12-43ff-9f22-b8fffd04a248",
+      "mbName": "Haunt Me",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://hauntmeofficial.bandcamp.com/",
+      "spotifyId": "0xc6gzkeMKN1R3cAkEKCK6",
+      "deezerId": 116002382,
+      "checkedAt": "2026-11-18T14:17:43.413Z"
     }
   },
   "attempted": {
@@ -1144,14 +1163,6 @@
         "b1df162b-7876-41d3-920f-548c0c78cbb2",
         "0b4982d1-be56-4f08-8515-f2ea6926452e"
       ]
-    },
-    "bloc party interpol": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "man": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
     },
     "eloise": {
       "retryAfter": "2026-12-07",
@@ -1463,8 +1474,8 @@
       "reason": "identified-without-free-photo"
     },
     "taqbir": {
-      "retryAfter": "2026-11-18",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-11-20",
+      "reason": "fetch failed"
     },
     "the zouklovers": {
       "retryAfter": "2026-12-17",
@@ -1472,6 +1483,22 @@
     },
     "wrest 7ebra more t b a": {
       "retryAfter": "2026-11-19",
+      "reason": "HTTP 503"
+    },
+    "cora kemperman": {
+      "retryAfter": "2026-12-18",
+      "reason": "not-found"
+    },
+    "paradox jazz orchestra": {
+      "retryAfter": "2027-01-02",
+      "reason": "identified-without-free-photo"
+    },
+    "haunt me": {
+      "retryAfter": "2027-01-02",
+      "reason": "identified-without-free-photo"
+    },
+    "evanora unlimited": {
+      "retryAfter": "2026-11-20",
       "reason": "HTTP 503"
     }
   }

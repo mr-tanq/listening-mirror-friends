@@ -480,7 +480,7 @@
           }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "vera": {
       "access": {
@@ -1195,10 +1195,6 @@
           "checkedAt": "2026-11-06",
           "event": null
         },
-        "https://www.vera-groningen.nl/events/zienema-x-the-pink-cube-codependent-lesbian-space-alien-seeks-same/": {
-          "checkedAt": "2026-11-06",
-          "event": null
-        },
         "https://www.vera-groningen.nl/events/basht-2027/": {
           "checkedAt": "2026-11-09",
           "event": null
@@ -1218,9 +1214,17 @@
         "https://www.vera-groningen.nl/events/bdrmm-2027/": {
           "checkedAt": "2026-11-17",
           "event": null
+        },
+        "https://www.vera-groningen.nl/events/downstage-schizm/": {
+          "checkedAt": "2026-11-18",
+          "event": null
+        },
+        "https://www.vera-groningen.nl/events/downstage-slome-poema/": {
+          "checkedAt": "2026-11-18",
+          "event": null
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "effenaar": {
       "access": {
@@ -2684,7 +2688,7 @@
           }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "patronaat": {
       "access": {
@@ -4037,7 +4041,7 @@
           }
         },
         "https://patronaat.nl/event/king-buffalo-04-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/king-buffalo-04-03-27/",
             "title": "King Buffalo + Spirit Mother",
@@ -4054,7 +4058,7 @@
           }
         },
         "https://patronaat.nl/event/the-dirty-daddies-05-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/the-dirty-daddies-05-03-27/",
             "title": "The Dirty Daddies – Let The Good Times Roll",
@@ -4068,7 +4072,7 @@
           }
         },
         "https://patronaat.nl/event/made-in-purple-55-years-of-made-in-japan-06-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/made-in-purple-55-years-of-made-in-japan-06-03-27/",
             "title": "Made in Purple - 55 Years of Made in Japan",
@@ -4082,7 +4086,7 @@
           }
         },
         "https://patronaat.nl/event/wende-support-06-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/wende-support-06-03-27/",
             "title": "Wende + support",
@@ -4099,7 +4103,7 @@
           }
         },
         "https://patronaat.nl/event/shantel-07-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/shantel-07-03-27/",
             "title": "Shantel",
@@ -4113,7 +4117,7 @@
           }
         },
         "https://patronaat.nl/event/wende-support-07-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/wende-support-07-03-27/",
             "title": "Wende + support",
@@ -4130,7 +4134,7 @@
           }
         },
         "https://patronaat.nl/event/rudeboy-x-boskat-12-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/rudeboy-x-boskat-12-03-27/",
             "title": "Rudeboy x Boskat",
@@ -4144,7 +4148,7 @@
           }
         },
         "https://patronaat.nl/event/de-kift-13-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/de-kift-13-03-27/",
             "title": "De Kift",
@@ -4172,7 +4176,7 @@
           }
         },
         "https://patronaat.nl/event/mamas-gun-16-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/mamas-gun-16-03-27/",
             "title": "Mamas Gun",
@@ -4200,7 +4204,7 @@
           }
         },
         "https://patronaat.nl/event/hugo-barriol-support-18-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/hugo-barriol-support-18-03-27/",
             "title": "Hugo Barriol + support",
@@ -4217,13 +4221,13 @@
           }
         },
         "https://patronaat.nl/event/personal-trainer-support-18-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/personal-trainer-support-18-03-27/",
-            "title": "Personal Trainer + support",
+            "title": "Personal Trainer + The Hook",
             "performers": [
               "Personal Trainer",
-              "support"
+              "The Hook"
             ],
             "date": "2027-03-18",
             "startDate": "2027-03-18",
@@ -4234,7 +4238,7 @@
           }
         },
         "https://patronaat.nl/event/luicidal-19-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/luicidal-19-03-27/",
             "title": "Luicidal + Grindpad",
@@ -4251,7 +4255,7 @@
           }
         },
         "https://patronaat.nl/event/jet-van-der-steen-19-03-27/": {
-          "checkedAt": "2026-11-07",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/jet-van-der-steen-19-03-27/",
             "title": "jet van der steen",
@@ -4794,7 +4798,7 @@
           }
         },
         "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/": {
-          "checkedAt": "2026-11-11",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/",
             "title": "Maite Hontelé y La Novia",
@@ -4808,7 +4812,7 @@
           }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "paard": {
       "access": {
@@ -5665,34 +5669,6 @@
             "startDate": "2026-12-19T19:30",
             "venueName": "Kleine Zaal",
             "image": "https://www.paard.nl/wp-content/uploads/2026/06/PRDps_MailheaderSP.png",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/electric-six-4/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/electric-six-4/",
-            "title": "ELECTRIC SIX",
-            "performers": [],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T20:00",
-            "venueName": "Grolsch Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/03/PRDps_Mailheader-ELECTRIC-SIX.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paard.nl/event/electric-six-3/": {
-          "checkedAt": "2026-11-05",
-          "event": {
-            "url": "https://www.paard.nl/event/electric-six-3/",
-            "title": "ELECTRIC SIX",
-            "performers": [],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T20:00",
-            "venueName": "Grolsch Zaal",
-            "image": "https://www.paard.nl/wp-content/uploads/2026/03/PRDps_Mailheader-ELECTRIC-SIX.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -7138,9 +7114,23 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paard.nl/event/fatoumata-diawara-7/": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paard.nl/event/fatoumata-diawara-7/",
+            "title": "FATOUMATA DIAWARA",
+            "performers": [],
+            "date": "2027-02-26",
+            "startDate": "2027-02-26T19:30",
+            "venueName": "Grolsch Zaal",
+            "image": "https://www.paard.nl/wp-content/uploads/2025/11/PRDps_Mailheader-FATOUMATA.png",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "013": {
       "access": {
@@ -11641,7 +11631,7 @@
           }
         },
         "https://www.paradiso.nl/programma/zing-nederlands-met-me/2943255": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/zing-nederlands-met-me/2943255",
             "title": "Zing Nederlands Met Me",
@@ -11929,7 +11919,7 @@
           }
         },
         "https://www.paradiso.nl/programma/pornceptual/2933947": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/pornceptual/2933947",
             "title": "Pornceptual",
@@ -12060,7 +12050,7 @@
           }
         },
         "https://www.paradiso.nl/programma/dip-ephemeral-interval/2944874": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/dip-ephemeral-interval/2944874",
             "title": "DIP: Ephemeral Interval",
@@ -12929,7 +12919,7 @@
           }
         },
         "https://www.paradiso.nl/programma/ouwe-stijl-is-botergeil/2933939": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/ouwe-stijl-is-botergeil/2933939",
             "title": "Ouwe Stijl is Botergeil",
@@ -13041,7 +13031,7 @@
           }
         },
         "https://www.paradiso.nl/programma/romy-liz-rose-x-levi-boon/2880461": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/romy-liz-rose-x-levi-boon/2880461",
             "title": "Romy Liz Rose + Levi Boon",
@@ -13177,7 +13167,7 @@
           }
         },
         "https://www.paradiso.nl/programma/science-cocktails-food-health-and-the-limits-to-growth/2925263": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/science-cocktails-food-health-and-the-limits-to-growth/2925263",
             "title": "Science & Cocktails: Food, Health and the Limits to Growth",
@@ -14004,7 +13994,7 @@
           }
         },
         "https://www.paradiso.nl/programma/dayna-kurtz-robert-mache/2905460": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/dayna-kurtz-robert-mache/2905460",
             "title": "Dayna Kurtz & Robert Maché",
@@ -14066,7 +14056,7 @@
           }
         },
         "https://www.paradiso.nl/programma/ariel-posen/2903043": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/ariel-posen/2903043",
             "title": "Ariel Posen + Wendlo",
@@ -14099,7 +14089,7 @@
           }
         },
         "https://www.paradiso.nl/programma/nederlands-blazers-ensemble-raga-rasa-van-guru-tot-shishya/2900616": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/nederlands-blazers-ensemble-raga-rasa-van-guru-tot-shishya/2900616",
             "title": "Nederlands Blazers Ensemble- Raga & Rasa - van guru tot shishya",
@@ -14131,7 +14121,7 @@
           }
         },
         "https://www.paradiso.nl/programma/ruben-hillen/2896215": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/ruben-hillen/2896215",
             "title": "Ruben Hillen",
@@ -14211,7 +14201,7 @@
           }
         },
         "https://www.paradiso.nl/programma/mansur-brown/2822089": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/mansur-brown/2822089",
             "title": "Mansur Brown",
@@ -14259,7 +14249,7 @@
           }
         },
         "https://www.paradiso.nl/programma/10-wie-niet-weg-is-is-gezien-10-jaar-smartlappen-karaoke-in-paradiso/2867814": {
-          "checkedAt": "2026-11-06",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/10-wie-niet-weg-is-is-gezien-10-jaar-smartlappen-karaoke-in-paradiso/2867814",
             "title": "10! WIE NIET WEG IS, IS GEZIEN! 10 jaar Smartlappen Karaoke in Paradiso!",
@@ -14515,7 +14505,7 @@
           }
         },
         "https://www.paradiso.nl/programma/saad-tiouly/2952999": {
-          "checkedAt": "2026-11-11",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/saad-tiouly/2952999",
             "title": "SAAD TIOULY",
@@ -14529,7 +14519,7 @@
           }
         },
         "https://www.paradiso.nl/programma/joyce-wrice/2953777": {
-          "checkedAt": "2026-11-11",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/joyce-wrice/2953777",
             "title": "Joyce Wrice",
@@ -14545,7 +14535,7 @@
           }
         },
         "https://www.paradiso.nl/programma/funky-times/2951670": {
-          "checkedAt": "2026-11-11",
+          "checkedAt": "2026-11-18",
           "event": {
             "url": "https://www.paradiso.nl/programma/funky-times/2951670",
             "title": "Funky Times",
@@ -14556,39 +14546,6 @@
             "startDate": "2027-02-17T19:30:00+01:00",
             "venueName": "Tolhuistuin",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DESCRIPTION-PICTURE-1794234213.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/bleachers/2871961": {
-          "checkedAt": "2026-11-13",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/bleachers/2871961",
-            "title": "Bleachers + Blu DeTiger",
-            "performers": [
-              "Bleachers"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Bleachers-by-Alex-Lockett-Option-2-1775222804.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/fly-anakin/2916903": {
-          "checkedAt": "2026-11-13",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/fly-anakin/2916903",
-            "title": "Fly Anakin & Quelle Chris",
-            "performers": [
-              "Fly Anakin",
-              "Quelle Chris"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T18:30:00+01:00",
-            "venueName": "Paradiso",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Fly-Anakin-Quelle-Chris-1786440880.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -14653,55 +14610,6 @@
             "startDate": "2026-11-19T18:30:00+01:00",
             "venueName": "Paradiso",
             "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/aupinard-2026.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/science-cocktails-fungal-networks-and-the-wave-nature-of-life/2925233": {
-          "checkedAt": "2026-11-14",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/science-cocktails-fungal-networks-and-the-wave-nature-of-life/2925233",
-            "title": "Science & Cocktails: Fungal networks and the wave nature of life",
-            "performers": [
-              "Tom Shimizu",
-              "Schau Schau"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T18:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/banner-fungal-networks-sc.jpeg",
-            "cancelled": true,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/chinchilla/2860814": {
-          "checkedAt": "2026-11-14",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/chinchilla/2860814",
-            "title": "CHINCHILLA",
-            "performers": [
-              "Chinchilla"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T19:30:00+01:00",
-            "venueName": "Bitterzoet",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/CHINCHILLA-compressed-1786006926.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.paradiso.nl/programma/genevieve-stokes-hiding-places-tour/2903076": {
-          "checkedAt": "2026-11-14",
-          "event": {
-            "url": "https://www.paradiso.nl/programma/genevieve-stokes-hiding-places-tour/2903076",
-            "title": "Genevieve Stokes - Hiding Places Tour",
-            "performers": [
-              "Genevieve Stokes"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T19:30:00+01:00",
-            "venueName": "Tolhuistuin",
-            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Hiding-Places-Press-Photo-Robin-Glass_compr-1780924250.jpg",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -15387,9 +15295,191 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.paradiso.nl/programma/slift/2885768": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/slift/2885768",
+            "title": "SLIFT + Yoo Doo Right",
+            "performers": [
+              "SLIFT",
+              "Yoo Doo Right"
+            ],
+            "date": "2026-11-23",
+            "startDate": "2026-11-23T18:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SLIFT-2026.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/mr-cutts/2954630": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/mr-cutts/2954630",
+            "title": "Mr Cutts",
+            "performers": [
+              "Mr Cutts"
+            ],
+            "date": "2027-02-11",
+            "startDate": "2027-02-11T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DSCF4713-1793981921.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/super-sonic-jazz-festival-sunday/2907947": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/super-sonic-jazz-festival-sunday/2907947",
+            "title": "Super-Sonic Jazz Festival · Sunday",
+            "performers": [
+              "Super-Sonic Jam x Gerson Main",
+              "Diana Sidibé",
+              "SMANDEM.",
+              "Lezaam Beets",
+              "Super-Sonic Soundsystem"
+            ],
+            "date": "2026-11-22",
+            "startDate": "2026-11-22T17:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SHF88C_1-1.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/c-o-f-f-i-n/2897509": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/c-o-f-f-i-n/2897509",
+            "title": "C.O.F.F.I.N",
+            "performers": [
+              "C.O.F.F.I.N"
+            ],
+            "date": "2026-11-22",
+            "startDate": "2026-11-22T18:30:00+01:00",
+            "venueName": "Bitterzoet",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DougalGorman-Landscape5.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/isabel-usher/2900846": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/isabel-usher/2900846",
+            "title": "Isabèl Usher",
+            "performers": [
+              "Isabèl Usher"
+            ],
+            "date": "2026-11-22",
+            "startDate": "2026-11-22T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/website-banner-isabel-cms-Large.jpeg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/mighty-oaks/2771079": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/mighty-oaks/2771079",
+            "title": "Mighty Oaks + June Carousel",
+            "performers": [
+              "Mighty Oaks",
+              "June Carousel"
+            ],
+            "date": "2026-11-23",
+            "startDate": "2026-11-23T18:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Main-Press-Shot_2025-12-01-084217_aoaa-1764579034.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/bokkers/2955013": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/bokkers/2955013",
+            "title": "Bökkers",
+            "performers": [
+              "Bökkers"
+            ],
+            "date": "2027-12-11",
+            "startDate": "2027-12-11T19:30:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/bokkersweb-1794993934.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/chamos-club-newroz/2953686": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/chamos-club-newroz/2953686",
+            "title": "CHAMOS - CLUB NEWROZ",
+            "performers": [
+              "CHAMOS"
+            ],
+            "date": "2027-03-20",
+            "startDate": "2027-03-20T22:59:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/2Chamos-NEWROZ-2027_PARADISO-BANNER-1794488887.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/man-woman-chainsaw/2954552": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/man-woman-chainsaw/2954552",
+            "title": "Man/Woman/Chainsaw",
+            "performers": [
+              "Man/Woman/Chainsaw"
+            ],
+            "date": "2027-03-15",
+            "startDate": "2027-03-15T19:30:00+01:00",
+            "venueName": "Tolhuistuin",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/MWC_Charlie-Charlie-Landscape-Web.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/world-news/2954535": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/world-news/2954535",
+            "title": "World News",
+            "performers": [
+              "World News"
+            ],
+            "date": "2027-04-20",
+            "startDate": "2027-04-20T18:30:00+02:00",
+            "venueName": "Bitterzoet",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/World-News-by-Stan-Lerooij-Insta-@stanlerooij.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.paradiso.nl/programma/wizthemc/2954933": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.paradiso.nl/programma/wizthemc/2954933",
+            "title": "WizTheMc",
+            "performers": [
+              "WizTheMc"
+            ],
+            "date": "2027-02-21",
+            "startDate": "2027-02-21T21:00:00+01:00",
+            "venueName": "Paradiso",
+            "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/%C2%A9saybyetoit_wizthemc_sensational-1794948455.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     },
     "doornroosje": {
       "access": {
@@ -16400,22 +16490,6 @@
             "startDate": "2027-03-11T19:45:00+00:00",
             "venueName": "Doornroosje - Rode zaal",
             "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-2-4-e1789644934154-1200x630.jpg",
-            "cancelled": false,
-            "via": "json-ld"
-          }
-        },
-        "https://www.doornroosje.nl/event/mustbejohn/": {
-          "checkedAt": "2026-11-13",
-          "event": {
-            "url": "https://www.doornroosje.nl/event/mustbejohn/",
-            "title": "mustbejohn",
-            "performers": [
-              "mustbejohn"
-            ],
-            "date": "2026-11-17",
-            "startDate": "2026-11-17T20:45:00+00:00",
-            "venueName": "Merleyn",
-            "image": "https://www.doornroosje.nl/app/uploads/2026/06/WEB-foto.png",
             "cancelled": false,
             "via": "json-ld"
           }
@@ -18415,9 +18489,41 @@
             "cancelled": false,
             "via": "json-ld"
           }
+        },
+        "https://www.doornroosje.nl/event/ghinzu/": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.doornroosje.nl/event/ghinzu/",
+            "title": "Ghinzu",
+            "performers": [
+              "Ghinzu"
+            ],
+            "date": "2027-02-04",
+            "startDate": "2027-02-04T20:30:00+00:00",
+            "venueName": "Doornroosje - Paarse zaal",
+            "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-11-1088x630.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
+        },
+        "https://www.doornroosje.nl/event/kiss-kiss-10/": {
+          "checkedAt": "2026-11-18",
+          "event": {
+            "url": "https://www.doornroosje.nl/event/kiss-kiss-10/",
+            "title": "Kiss Kiss",
+            "performers": [
+              "Kiss Kiss"
+            ],
+            "date": "2026-12-19",
+            "startDate": "2026-12-19T23:30:00+00:00",
+            "venueName": "Doornroosje - Paarse zaal",
+            "image": "https://www.doornroosje.nl/app/uploads/2026/11/Kiss-Kiss_EVENT_BANNER_web.jpg",
+            "cancelled": false,
+            "via": "json-ld"
+          }
         }
       },
-      "listedAt": "2026-11-17"
+      "listedAt": "2026-11-18"
     }
   }
 }

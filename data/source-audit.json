@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-17T14:43:40.637Z",
-  "auditedFor": "2026-11-17",
-  "totalPublished": 1875,
-  "greekPublished": 416,
+  "catalogUpdatedAt": "2026-11-18T14:20:38.059Z",
+  "auditedFor": "2026-11-18",
+  "totalPublished": 1900,
+  "greekPublished": 422,
   "imageCoverage": {
-    "withImage": 1070,
-    "withoutImage": 805
+    "withImage": 1090,
+    "withoutImage": 810
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1357,
-      "withImage": 688,
-      "withoutImage": 669
+      "events": 1375,
+      "withImage": 702,
+      "withoutImage": 673
     },
     "BE": {
-      "events": 102,
+      "events": 103,
       "withImage": 7,
-      "withoutImage": 95
+      "withoutImage": 96
     },
     "GR": {
-      "events": 416,
-      "withImage": 375,
+      "events": 422,
+      "withImage": 381,
       "withoutImage": 41
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 29,
-      "withImage": 27,
+      "events": 30,
+      "withImage": 28,
       "withoutImage": 2,
-      "greekEvents": 29
+      "greekEvents": 30
     },
     "festivalinfo": {
       "events": 12,
@@ -38,10 +38,10 @@
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 12,
-      "withImage": 12,
+      "events": 13,
+      "withImage": 13,
       "withoutImage": 0,
-      "greekEvents": 12
+      "greekEvents": 13
     },
     "fuzzclub-calendar": {
       "events": 3,
@@ -50,27 +50,27 @@
       "greekEvents": 3
     },
     "gagarin-calendar": {
-      "events": 23,
-      "withImage": 23,
+      "events": 22,
+      "withImage": 22,
       "withoutImage": 0,
-      "greekEvents": 23
+      "greekEvents": 22
     },
     "more": {
-      "events": 292,
-      "withImage": 292,
+      "events": 296,
+      "withImage": 296,
       "withoutImage": 0,
-      "greekEvents": 292
+      "greekEvents": 296
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1139,
-      "withImage": 390,
-      "withoutImage": 749,
+      "events": 1149,
+      "withImage": 395,
+      "withoutImage": 754,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,21 +80,21 @@
       "greekEvents": 55
     },
     "venue-official": {
-      "events": 306,
-      "withImage": 299,
+      "events": 315,
+      "withImage": 308,
       "withoutImage": 7,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 23,
-      "withImage": 23,
+      "published": 22,
+      "withImage": 22,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 12,
-      "withImage": 12,
+      "published": 13,
+      "withImage": 13,
       "warning": null
     },
     "fuzzclub-calendar": {
@@ -103,8 +103,8 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 29,
-      "withImage": 27,
+      "published": 30,
+      "withImage": 28,
       "warning": null
     }
   },
@@ -125,7 +125,8 @@
       "withImage": 24,
       "sources": [
         "gagarin-calendar",
-        "rocking"
+        "rocking",
+        "official"
       ]
     },
     {
@@ -171,6 +172,14 @@
       ]
     },
     {
+      "name": "Floyd Live Music Venue",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "floyd-calendar"
+      ]
+    },
+    {
       "name": "B. & M. THEOCHARAKI FOUNDATION",
       "events": 12,
       "withImage": 12,
@@ -179,17 +188,9 @@
       ]
     },
     {
-      "name": "Floyd Live Music Venue",
+      "name": "gazarte",
       "events": 12,
       "withImage": 12,
-      "sources": [
-        "floyd-calendar"
-      ]
-    },
-    {
-      "name": "gazarte",
-      "events": 11,
-      "withImage": 11,
       "sources": [
         "more"
       ]
@@ -235,6 +236,14 @@
       ]
     },
     {
+      "name": "ARCH",
+      "events": 8,
+      "withImage": 8,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 8,
       "withImage": 8,
@@ -246,14 +255,6 @@
       "name": "Klakaz",
       "events": 8,
       "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "ARCH",
-      "events": 7,
-      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -331,7 +332,23 @@
       ]
     },
     {
+      "name": "MIKRI SKINI - Mikri Skini",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Μεγαρο Μουσικης Κομοτηνης",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -348,6 +365,14 @@
     },
     {
       "name": "gazarte roof stage",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Θεατρο Μεταξουργειο",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -395,14 +420,6 @@
       ]
     },
     {
-      "name": "MIKRI SKINI - Mikri Skini",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Κύτταρο",
       "events": 3,
       "withImage": 3,
@@ -412,22 +429,6 @@
     },
     {
       "name": "Royal Theater",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Telekom Center Athens",
       "events": 3,
       "withImage": 3,
       "sources": [
