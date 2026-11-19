@@ -1,52 +1,52 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T14:24:33.932Z",
-  "catalogUpdatedAt": "2026-11-18T14:20:38.059Z",
-  "auditedFor": "2026-11-18",
+  "generatedAt": "2026-11-19T14:40:46.479Z",
+  "catalogUpdatedAt": "2026-11-19T14:36:52.689Z",
+  "auditedFor": "2026-11-19",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1903,
-    "eventPoster": 1095,
-    "artistPhoto": 485,
-    "noImage": 323,
-    "posterWithPhotoBackup": 491
+    "total": 1923,
+    "eventPoster": 1115,
+    "artistPhoto": 483,
+    "noImage": 325,
+    "posterWithPhotoBackup": 492
   },
   "byCountry": {
     "NL": {
-      "total": 1378,
-      "eventPoster": 707,
-      "artistPhoto": 415,
-      "noImage": 256,
+      "total": 1374,
+      "eventPoster": 703,
+      "artistPhoto": 414,
+      "noImage": 257,
       "posterWithPhotoBackup": 394
+    },
+    "GR": {
+      "total": 446,
+      "eventPoster": 405,
+      "artistPhoto": 12,
+      "noImage": 29,
+      "posterWithPhotoBackup": 93
     },
     "BE": {
       "total": 103,
       "eventPoster": 7,
-      "artistPhoto": 58,
-      "noImage": 38,
+      "artistPhoto": 57,
+      "noImage": 39,
       "posterWithPhotoBackup": 5
-    },
-    "GR": {
-      "total": 422,
-      "eventPoster": 381,
-      "artistPhoto": 12,
-      "noImage": 29,
-      "posterWithPhotoBackup": 92
     }
   },
   "missingReasons": {
-    "ambiguous-artist": 72,
-    "artist-not-found": 119,
-    "album-cover-rejected": 106,
-    "artist-has-no-photo": 6,
+    "ambiguous-artist": 74,
+    "album-cover-rejected": 108,
+    "artist-not-found": 116,
+    "artist-has-no-photo": 7,
     "other-lookup-cooldown": 16,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 884,
+      "deezer": 898,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,40 +58,8 @@
       }
     }
   },
-  "missingNext14Days": 79,
+  "missingNext14Days": 77,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-486422",
-      "artist": "Eloise",
-      "date": "2026-11-18",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498836",
-      "artist": "Geel, Changeover en Tray",
-      "date": "2026-11-18",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-498829",
-      "artist": "Orsini",
-      "date": "2026-11-18",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "rocking-20261118-27545",
-      "artist": "Stand Up Με Τις Μπάντες: Hλίας Φουντούλης",
-      "date": "2026-11-18",
-      "country": "GR",
-      "venue": "Ίλιον Plus",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-491385",
       "artist": "LAWN",
@@ -379,33 +347,41 @@
       "country": "NL",
       "venue": "Willemeen",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-479014",
+      "artist": "We All Sing ABBA",
+      "date": "2026-11-25",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-462642",
+      "artist": "Bartofso",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "other-lookup-cooldown"
+    },
+    {
+      "id": "podiuminfo-500902",
+      "artist": "Club 3voor12 Utrecht",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "dB's",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-500078",
+      "artist": "Def & BrittneySGAT",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-469458",
-      "artist": "Gotts Street Park",
-      "date": "2026-12-03",
-      "country": "NL",
-      "venue": "Melkweg",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-463012",
-      "artist": "MORBID",
-      "date": "2026-12-03",
-      "country": "NL",
-      "venue": "Hall Of Fame",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-454132",
-      "artist": "Treasure (Bruno Mars Tribute)",
-      "date": "2026-12-03",
-      "country": "NL",
-      "venue": "Bibelot",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-499145",
       "artist": "3voor12 Song van het jaar",
@@ -700,6 +676,30 @@
       "date": "2026-12-11",
       "country": "NL",
       "venue": "Paard",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-477527",
+      "artist": "Sons Of The Culture Clash",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-491317",
+      "artist": "Sophie Straat",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-502020",
+      "artist": "systematic show_case",
+      "date": "2026-12-11",
+      "country": "NL",
+      "venue": "Muziekgieterij",
       "reason": "artist-not-found"
     }
   ]

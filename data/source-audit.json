@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-18T14:20:38.059Z",
-  "auditedFor": "2026-11-18",
-  "totalPublished": 1900,
-  "greekPublished": 422,
+  "catalogUpdatedAt": "2026-11-19T14:36:52.689Z",
+  "auditedFor": "2026-11-19",
+  "totalPublished": 1922,
+  "greekPublished": 446,
   "imageCoverage": {
-    "withImage": 1090,
-    "withoutImage": 810
+    "withImage": 1115,
+    "withoutImage": 807
   },
   "imageCoverageByCountry": {
     "NL": {
-      "events": 1375,
-      "withImage": 702,
-      "withoutImage": 673
+      "events": 1373,
+      "withImage": 703,
+      "withoutImage": 670
+    },
+    "GR": {
+      "events": 446,
+      "withImage": 405,
+      "withoutImage": 41
     },
     "BE": {
       "events": 103,
       "withImage": 7,
       "withoutImage": 96
-    },
-    "GR": {
-      "events": 422,
-      "withImage": 381,
-      "withoutImage": 41
     }
   },
   "sources": {
@@ -50,46 +50,46 @@
       "greekEvents": 3
     },
     "gagarin-calendar": {
-      "events": 22,
-      "withImage": 22,
+      "events": 23,
+      "withImage": 23,
       "withoutImage": 0,
-      "greekEvents": 22
+      "greekEvents": 23
     },
     "more": {
-      "events": 296,
-      "withImage": 296,
+      "events": 319,
+      "withImage": 319,
       "withoutImage": 0,
-      "greekEvents": 296
+      "greekEvents": 319
     },
     "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1149,
-      "withImage": 395,
-      "withoutImage": 754,
+      "events": 1145,
+      "withImage": 394,
+      "withoutImage": 751,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 55,
-      "withImage": 16,
+      "events": 56,
+      "withImage": 17,
       "withoutImage": 39,
-      "greekEvents": 55
+      "greekEvents": 56
     },
     "venue-official": {
-      "events": 315,
-      "withImage": 308,
+      "events": 317,
+      "withImage": 310,
       "withoutImage": 7,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 22,
-      "withImage": 22,
+      "published": 23,
+      "withImage": 23,
       "warning": null
     },
     "floyd-calendar": {
@@ -125,8 +125,7 @@
       "withImage": 24,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
+        "rocking"
       ]
     },
     {
@@ -139,8 +138,8 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 16,
-      "withImage": 16,
+      "events": 17,
+      "withImage": 17,
       "sources": [
         "more"
       ]
@@ -149,6 +148,22 @@
       "name": "Death Disco",
       "events": 16,
       "withImage": 16,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Μουσειο Προσφυγων",
+      "events": 14,
+      "withImage": 14,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "more"
       ]
@@ -180,7 +195,7 @@
       ]
     },
     {
-      "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 12,
       "withImage": 12,
       "sources": [
@@ -196,23 +211,31 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 10,
-      "withImage": 10,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Kyttaro Live",
-      "events": 10,
-      "withImage": 10,
+      "events": 11,
+      "withImage": 11,
       "sources": [
         "more"
       ]
     },
     {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 10,
+      "withImage": 10,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Circus Entertainment Hub",
+      "events": 10,
+      "withImage": 10,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Half Note Jazz Club",
       "events": 9,
       "withImage": 9,
       "sources": [
@@ -220,7 +243,7 @@
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
+      "name": "Klakaz",
       "events": 9,
       "withImage": 9,
       "sources": [
@@ -229,32 +252,16 @@
     },
     {
       "name": "AUX CLUB",
-      "events": 8,
-      "withImage": 8,
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
     },
     {
       "name": "ARCH",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 8,
-      "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Klakaz",
-      "events": 8,
-      "withImage": 8,
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -276,6 +283,14 @@
       ]
     },
     {
+      "name": "Oddity Club",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "CHRISTMAS THEATER",
       "events": 6,
       "withImage": 6,
@@ -292,6 +307,14 @@
       ]
     },
     {
+      "name": "Temple Athens",
+      "events": 6,
+      "withImage": 1,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "Eightball",
       "events": 6,
       "withImage": 2,
@@ -300,19 +323,11 @@
       ]
     },
     {
-      "name": "Oddity Club",
-      "events": 5,
-      "withImage": 5,
+      "name": "gazarte roof stage",
+      "events": 4,
+      "withImage": 4,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Temple Athens",
-      "events": 5,
-      "withImage": 1,
-      "sources": [
-        "rocking"
       ]
     },
     {
@@ -340,6 +355,14 @@
       ]
     },
     {
+      "name": "Κύτταρο",
+      "events": 4,
+      "withImage": 3,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
       "events": 4,
       "withImage": 4,
@@ -351,22 +374,6 @@
       "name": "Μεγαρο Μουσικης Κομοτηνης",
       "events": 4,
       "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Ίλιον Plus",
-      "events": 3,
-      "withImage": 1,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
-      "name": "gazarte roof stage",
-      "events": 3,
-      "withImage": 3,
       "sources": [
         "more"
       ]
@@ -417,14 +424,6 @@
       "withImage": 3,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Κύτταρο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "rocking"
       ]
     },
     {

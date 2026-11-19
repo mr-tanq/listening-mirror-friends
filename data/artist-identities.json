@@ -1108,10 +1108,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "hλιας φουντουλης": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
-    },
     "glitter grotesque": {
       "retryAfter": "2026-12-06",
       "reason": "not-found"
@@ -1163,18 +1159,6 @@
         "b1df162b-7876-41d3-920f-548c0c78cbb2",
         "0b4982d1-be56-4f08-8515-f2ea6926452e"
       ]
-    },
-    "eloise": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "geel changeover en tray": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "orsini": {
-      "retryAfter": "2026-12-11",
-      "reason": "not-found"
     },
     "aupinard": {
       "retryAfter": "2026-12-22",
@@ -1482,8 +1466,8 @@
       "reason": "not-found"
     },
     "wrest 7ebra more t b a": {
-      "retryAfter": "2026-11-19",
-      "reason": "HTTP 503"
+      "retryAfter": "2026-12-19",
+      "reason": "not-found"
     },
     "cora kemperman": {
       "retryAfter": "2026-12-18",
@@ -1499,6 +1483,10 @@
     },
     "evanora unlimited": {
       "retryAfter": "2026-11-20",
+      "reason": "HTTP 503"
+    },
+    "frenetik": {
+      "retryAfter": "2026-11-21",
       "reason": "HTTP 503"
     }
   }
