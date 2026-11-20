@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-19T14:36:52.689Z",
-  "auditedFor": "2026-11-19",
-  "totalPublished": 1922,
-  "greekPublished": 446,
+  "catalogUpdatedAt": "2026-11-20T14:14:04.417Z",
+  "auditedFor": "2026-11-20",
+  "totalPublished": 1915,
+  "greekPublished": 450,
   "imageCoverage": {
-    "withImage": 1115,
-    "withoutImage": 807
+    "withImage": 1106,
+    "withoutImage": 809
   },
   "imageCoverageByCountry": {
-    "NL": {
-      "events": 1373,
-      "withImage": 703,
-      "withoutImage": 670
-    },
     "GR": {
-      "events": 446,
-      "withImage": 405,
+      "events": 450,
+      "withImage": 409,
       "withoutImage": 41
     },
+    "NL": {
+      "events": 1364,
+      "withImage": 690,
+      "withoutImage": 674
+    },
     "BE": {
-      "events": 103,
+      "events": 101,
       "withImage": 7,
-      "withoutImage": 96
+      "withoutImage": 94
     }
   },
   "sources": {
@@ -56,28 +56,28 @@
       "greekEvents": 23
     },
     "more": {
-      "events": 319,
-      "withImage": 319,
+      "events": 321,
+      "withImage": 321,
       "withoutImage": 0,
-      "greekEvents": 319
+      "greekEvents": 321
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1145,
-      "withImage": 394,
-      "withoutImage": 751,
+      "events": 1134,
+      "withImage": 381,
+      "withoutImage": 753,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 56,
-      "withImage": 17,
+      "events": 57,
+      "withImage": 18,
       "withoutImage": 39,
-      "greekEvents": 56
+      "greekEvents": 57
     },
     "venue-official": {
       "events": 317,
@@ -121,11 +121,12 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 24,
-      "withImage": 24,
+      "events": 25,
+      "withImage": 25,
       "sources": [
         "gagarin-calendar",
-        "rocking"
+        "rocking",
+        "official"
       ]
     },
     {
@@ -138,14 +139,6 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 17,
-      "withImage": 17,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Death Disco",
       "events": 16,
       "withImage": 16,
       "sources": [
@@ -153,19 +146,28 @@
       ]
     },
     {
-      "name": "Μουσειο Προσφυγων",
-      "events": 14,
-      "withImage": 14,
+      "name": "Death Disco",
+      "events": 15,
+      "withImage": 15,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "B. & M. THEOCHARAKI FOUNDATION",
-      "events": 13,
-      "withImage": 13,
+      "name": "Μουσειο Προσφυγων",
+      "events": 15,
+      "withImage": 15,
       "sources": [
         "more"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 14,
+      "withImage": 12,
+      "sources": [
+        "more",
+        "rocking"
       ]
     },
     {
@@ -175,15 +177,6 @@
       "sources": [
         "fuzzclub-calendar",
         "more"
-      ]
-    },
-    {
-      "name": "Piraeus Club Academy",
-      "events": 13,
-      "withImage": 11,
-      "sources": [
-        "more",
-        "rocking"
       ]
     },
     {
@@ -211,7 +204,15 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "B. & M. THEOCHARAKI FOUNDATION",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -220,8 +221,16 @@
     },
     {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 10,
-      "withImage": 10,
+      "events": 11,
+      "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Kyttaro Live",
+      "events": 11,
+      "withImage": 11,
       "sources": [
         "more"
       ]
@@ -236,16 +245,8 @@
     },
     {
       "name": "Half Note Jazz Club",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Klakaz",
-      "events": 9,
-      "withImage": 9,
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
@@ -283,6 +284,14 @@
       ]
     },
     {
+      "name": "Eightball",
+      "events": 7,
+      "withImage": 3,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "Oddity Club",
       "events": 6,
       "withImage": 6,
@@ -315,14 +324,6 @@
       ]
     },
     {
-      "name": "Eightball",
-      "events": 6,
-      "withImage": 2,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "gazarte roof stage",
       "events": 4,
       "withImage": 4,
@@ -340,6 +341,14 @@
     },
     {
       "name": "Universe | S-2000",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Doryphora Gig Space",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -379,6 +388,14 @@
       ]
     },
     {
+      "name": "Temple",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Θεατρο Μεταξουργειο",
       "events": 3,
       "withImage": 3,
@@ -403,14 +420,6 @@
       ]
     },
     {
-      "name": "Doryphora Gig Space",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -420,14 +429,6 @@
     },
     {
       "name": "«THEATRON», (Th. Antigoni), Ellinikos Kosmos",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Royal Theater",
       "events": 3,
       "withImage": 3,
       "sources": [

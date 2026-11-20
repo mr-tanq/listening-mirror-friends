@@ -1,89 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-19T14:40:46.479Z",
-  "catalogUpdatedAt": "2026-11-19T14:36:52.689Z",
-  "auditedFor": "2026-11-19",
+  "generatedAt": "2026-11-20T14:17:58.725Z",
+  "catalogUpdatedAt": "2026-11-20T14:14:04.417Z",
+  "auditedFor": "2026-11-20",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1923,
-    "eventPoster": 1115,
-    "artistPhoto": 483,
-    "noImage": 325,
+    "total": 1917,
+    "eventPoster": 1111,
+    "artistPhoto": 479,
+    "noImage": 327,
     "posterWithPhotoBackup": 492
   },
   "byCountry": {
-    "NL": {
-      "total": 1374,
-      "eventPoster": 703,
-      "artistPhoto": 414,
-      "noImage": 257,
-      "posterWithPhotoBackup": 394
-    },
     "GR": {
-      "total": 446,
-      "eventPoster": 405,
+      "total": 450,
+      "eventPoster": 409,
       "artistPhoto": 12,
       "noImage": 29,
-      "posterWithPhotoBackup": 93
+      "posterWithPhotoBackup": 94
+    },
+    "NL": {
+      "total": 1366,
+      "eventPoster": 695,
+      "artistPhoto": 412,
+      "noImage": 259,
+      "posterWithPhotoBackup": 393
     },
     "BE": {
-      "total": 103,
+      "total": 101,
       "eventPoster": 7,
-      "artistPhoto": 57,
+      "artistPhoto": 55,
       "noImage": 39,
       "posterWithPhotoBackup": 5
     }
   },
   "missingReasons": {
-    "ambiguous-artist": 74,
-    "album-cover-rejected": 108,
-    "artist-not-found": 116,
-    "artist-has-no-photo": 7,
+    "album-cover-rejected": 106,
+    "artist-not-found": 118,
+    "ambiguous-artist": 75,
+    "artist-has-no-photo": 8,
     "other-lookup-cooldown": 16,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 898,
+      "deezer": 908,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 36,
+      "attempted": 33,
       "failuresByReason": {
-        "artist-not-in-provider": 30,
+        "artist-not-in-provider": 27,
         "missing-or-ambiguous-artist": 3,
         "photo-license-not-confirmed": 3
       }
     }
   },
-  "missingNext14Days": 77,
+  "missingNext14Days": 81,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-491385",
-      "artist": "LAWN",
-      "date": "2026-11-19",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498500",
-      "artist": "Prison Religion",
-      "date": "2026-11-19",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-471767",
-      "artist": "This Is Michael",
-      "date": "2026-11-19",
-      "country": "NL",
-      "venue": "Ziggo Dome",
-      "reason": "album-cover-rejected"
-    },
     {
       "id": "podiuminfo-453875",
       "artist": "De Hardheid",
@@ -317,14 +293,6 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-482073",
-      "artist": "Greek",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "ambiguous-artist"
-    },
-    {
       "id": "podiuminfo-494889",
       "artist": "Judith Kiddo - Melissa Weikart",
       "date": "2026-11-25",
@@ -379,73 +347,41 @@
       "country": "NL",
       "venue": "Melkweg",
       "reason": "artist-not-found"
-    }
-  ],
-  "missingOtherSamples": [
+    },
     {
-      "id": "podiuminfo-499145",
-      "artist": "3voor12 Song van het jaar",
-      "date": "2026-12-04",
+      "id": "podiuminfo-473433",
+      "artist": "Hania Derej Trio",
+      "date": "2026-11-26",
       "country": "NL",
       "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
     },
     {
-      "id": "podiuminfo-474641",
-      "artist": "Ares",
-      "date": "2026-12-04",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-487156",
-      "artist": "Baroeg Tribute Night: Sex Pistols Expose",
-      "date": "2026-12-04",
-      "country": "NL",
-      "venue": "Baroeg",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-493691",
-      "artist": "Donna's Hot Stuff - Could It Be Magic Tour",
-      "date": "2026-12-04",
-      "country": "NL",
-      "venue": "Bibelot",
-      "reason": "artist-has-no-photo"
-    },
-    {
-      "id": "podiuminfo-447177",
-      "artist": "Fortunate Sons - Creedence Clearwater Revival Tribute",
-      "date": "2026-12-04",
-      "country": "NL",
-      "venue": "Grenswerk",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-494235",
-      "artist": "Hohnen Ford",
-      "date": "2026-12-04",
+      "id": "podiuminfo-497688",
+      "artist": "Luca St",
+      "date": "2026-11-26",
       "country": "NL",
       "venue": "Paradiso",
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-495854",
-      "artist": "Juwls",
-      "date": "2026-12-04",
+      "id": "podiuminfo-457842",
+      "artist": "Mobilhome",
+      "date": "2026-11-26",
       "country": "NL",
-      "venue": "TivoliVredenburg",
+      "venue": "Paard",
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-502147",
-      "artist": "Lunchconcert Jazz - HOT Colors of Hendrix",
-      "date": "2026-12-04",
+      "id": "podiuminfo-463824",
+      "artist": "The Ruins Of Beverast - Tempelschlaf Tour",
+      "date": "2026-11-26",
       "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "artist-not-found"
-    },
+      "venue": "Muziekgieterij",
+      "reason": "album-cover-rejected"
+    }
+  ],
+  "missingOtherSamples": [
     {
       "id": "podiuminfo-498064",
       "artist": "BLTNM",
@@ -700,6 +636,70 @@
       "date": "2026-12-11",
       "country": "NL",
       "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-474075",
+      "artist": "Disco Inferno met Discophonic Orchestra – 5 YEARS MAASTRICHT",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-498525",
+      "artist": "Elias Mazian b2b Tsepo",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-451014",
+      "artist": "Mammoth",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-498444",
+      "artist": "Music Lab - Meervaart Studio x Melkweg",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-449254",
+      "artist": "Muziekfeest van het Jaar",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "Ziggo Dome",
+      "reason": "other-lookup-cooldown"
+    },
+    {
+      "id": "podiuminfo-453741",
+      "artist": "Nacht van de Nederpop XXL",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "AFAS Live",
+      "reason": "not-in-artist-cache"
+    },
+    {
+      "id": "podiuminfo-498678",
+      "artist": "Sub Rosa Label Night",
+      "date": "2026-12-12",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-501648",
+      "artist": "Utrechtse Meezingerij met Dickens Kerstkoor Mizzelto",
+      "date": "2026-12-12",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
     }
   ]
