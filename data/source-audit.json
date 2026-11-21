@@ -1,40 +1,40 @@
 {
-  "catalogUpdatedAt": "2026-11-20T14:14:04.417Z",
-  "auditedFor": "2026-11-20",
-  "totalPublished": 1915,
-  "greekPublished": 450,
+  "catalogUpdatedAt": "2026-11-21T13:39:15.874Z",
+  "auditedFor": "2026-11-21",
+  "totalPublished": 1876,
+  "greekPublished": 439,
   "imageCoverage": {
-    "withImage": 1106,
-    "withoutImage": 809
+    "withImage": 1091,
+    "withoutImage": 785
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 450,
-      "withImage": 409,
-      "withoutImage": 41
+      "events": 439,
+      "withImage": 399,
+      "withoutImage": 40
     },
     "NL": {
-      "events": 1364,
-      "withImage": 690,
-      "withoutImage": 674
+      "events": 1338,
+      "withImage": 683,
+      "withoutImage": 655
     },
     "BE": {
-      "events": 101,
-      "withImage": 7,
-      "withoutImage": 94
+      "events": 99,
+      "withImage": 9,
+      "withoutImage": 90
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 30,
+      "events": 29,
       "withImage": 28,
-      "withoutImage": 2,
-      "greekEvents": 30
+      "withoutImage": 1,
+      "greekEvents": 29
     },
     "festivalinfo": {
-      "events": 12,
-      "withImage": 4,
-      "withoutImage": 8,
+      "events": 10,
+      "withImage": 3,
+      "withoutImage": 7,
       "greekEvents": 0
     },
     "floyd-calendar": {
@@ -44,33 +44,33 @@
       "greekEvents": 13
     },
     "fuzzclub-calendar": {
-      "events": 3,
-      "withImage": 3,
+      "events": 2,
+      "withImage": 2,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 23,
-      "withImage": 23,
+      "events": 25,
+      "withImage": 25,
       "withoutImage": 0,
-      "greekEvents": 23
+      "greekEvents": 25
     },
     "more": {
-      "events": 321,
-      "withImage": 321,
+      "events": 311,
+      "withImage": 311,
       "withoutImage": 0,
-      "greekEvents": 321
+      "greekEvents": 311
     },
     "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1134,
-      "withImage": 381,
-      "withoutImage": 753,
+      "events": 1110,
+      "withImage": 379,
+      "withoutImage": 731,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 57
     },
     "venue-official": {
-      "events": 317,
-      "withImage": 310,
+      "events": 315,
+      "withImage": 308,
       "withoutImage": 7,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 23,
-      "withImage": 23,
+      "published": 25,
+      "withImage": 25,
       "warning": null
     },
     "floyd-calendar": {
@@ -98,12 +98,12 @@
       "warning": null
     },
     "fuzzclub-calendar": {
-      "published": 3,
-      "withImage": 3,
+      "published": 2,
+      "withImage": 2,
       "warning": null
     },
     "anclub-index": {
-      "published": 30,
+      "published": 29,
       "withImage": 28,
       "warning": null
     }
@@ -111,7 +111,7 @@
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 33,
+      "events": 32,
       "withImage": 31,
       "sources": [
         "anclub-index",
@@ -121,12 +121,11 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 25,
-      "withImage": 25,
+      "events": 26,
+      "withImage": 26,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
+        "rocking"
       ]
     },
     {
@@ -139,14 +138,6 @@
     },
     {
       "name": "ΙΛΙΟΝ Plus",
-      "events": 16,
-      "withImage": 16,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Death Disco",
       "events": 15,
       "withImage": 15,
       "sources": [
@@ -162,20 +153,27 @@
       ]
     },
     {
-      "name": "Piraeus Club Academy",
+      "name": "Death Disco",
       "events": 14,
-      "withImage": 12,
+      "withImage": 14,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 13,
+      "withImage": 11,
       "sources": [
         "more",
         "rocking"
       ]
     },
     {
-      "name": "Fuzz Club",
+      "name": "gazarte",
       "events": 13,
       "withImage": 13,
       "sources": [
-        "fuzzclub-calendar",
         "more"
       ]
     },
@@ -196,10 +194,11 @@
       ]
     },
     {
-      "name": "gazarte",
+      "name": "Fuzz Club",
       "events": 12,
       "withImage": 12,
       "sources": [
+        "fuzzclub-calendar",
         "more"
       ]
     },
@@ -207,22 +206,6 @@
       "name": "B. & M. THEOCHARAKI FOUNDATION",
       "events": 12,
       "withImage": 12,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Klakaz",
-      "events": 11,
-      "withImage": 11,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 11,
-      "withImage": 11,
       "sources": [
         "more"
       ]
@@ -244,6 +227,22 @@
       ]
     },
     {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 10,
+      "withImage": 10,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
+      "events": 10,
+      "withImage": 10,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Half Note Jazz Club",
       "events": 8,
       "withImage": 8,
@@ -252,7 +251,7 @@
       ]
     },
     {
-      "name": "AUX CLUB",
+      "name": "Oddity Club",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -268,7 +267,7 @@
       ]
     },
     {
-      "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
+      "name": "CHRISTMAS THEATER",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -276,7 +275,7 @@
       ]
     },
     {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -292,7 +291,7 @@
       ]
     },
     {
-      "name": "Oddity Club",
+      "name": "AUX CLUB",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -300,15 +299,7 @@
       ]
     },
     {
-      "name": "CHRISTMAS THEATER",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -324,17 +315,9 @@
       ]
     },
     {
-      "name": "gazarte roof stage",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "UNDERFLOW RECORD STORE",
-      "events": 4,
-      "withImage": 4,
+      "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
+      "events": 6,
+      "withImage": 6,
       "sources": [
         "more"
       ]
@@ -388,6 +371,14 @@
       ]
     },
     {
+      "name": "gazarte roof stage",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Temple",
       "events": 3,
       "withImage": 3,
@@ -397,6 +388,14 @@
     },
     {
       "name": "Θεατρο Μεταξουργειο",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "UNDERFLOW RECORD STORE",
       "events": 3,
       "withImage": 3,
       "sources": [

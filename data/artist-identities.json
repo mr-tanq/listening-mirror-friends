@@ -1164,51 +1164,6 @@
       "retryAfter": "2026-12-22",
       "reason": "identified-without-free-photo"
     },
-    "fondip": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "hku large ensemble": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
-    },
-    "jim keller": {
-      "retryAfter": "2026-12-22",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "02212f96-0d16-4919-bed2-342d043a1b19",
-        "086171a9-e6f6-4e3b-926e-29921e36a6f0",
-        "3be10a6c-1086-4a14-a096-a67ddf205396"
-      ]
-    },
-    "mietze conte": {
-      "retryAfter": "2026-12-22",
-      "reason": "identified-without-free-photo"
-    },
-    "muna": {
-      "retryAfter": "2026-12-24",
-      "reason": "identified-without-free-photo"
-    },
-    "omar doom": {
-      "retryAfter": "2026-12-23",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "867747f1-62e9-4810-b3cf-e7f41027b6ba",
-        "9366bd69-061b-46c9-8824-0f59739930ee"
-      ]
-    },
-    "one block society": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
-    },
-    "samba roots x lucas santana": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
-    },
-    "seyda perincek": {
-      "retryAfter": "2026-12-23",
-      "reason": "identified-without-free-photo"
-    },
     "bizkit park": {
       "retryAfter": "2026-12-23",
       "reason": "identified-without-free-photo"
@@ -1270,18 +1225,6 @@
       "reason": "not-found"
     },
     "nightfreak usa cafe de wacht": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "eden demise": {
-      "retryAfter": "2026-12-23",
-      "reason": "identified-without-free-photo"
-    },
-    "kaijuju": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "dogma vile": {
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
@@ -1462,7 +1405,7 @@
       "reason": "identified-without-free-photo"
     },
     "evanora unlimited": {
-      "retryAfter": "2026-11-20",
+      "retryAfter": "2026-11-23",
       "reason": "HTTP 503"
     },
     "frenetik": {
