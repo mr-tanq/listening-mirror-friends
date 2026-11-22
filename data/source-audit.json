@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-21T13:39:15.874Z",
-  "auditedFor": "2026-11-21",
-  "totalPublished": 1876,
-  "greekPublished": 439,
+  "catalogUpdatedAt": "2026-11-22T13:31:54.538Z",
+  "auditedFor": "2026-11-22",
+  "totalPublished": 1836,
+  "greekPublished": 424,
   "imageCoverage": {
-    "withImage": 1091,
-    "withoutImage": 785
+    "withImage": 1064,
+    "withoutImage": 772
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 439,
-      "withImage": 399,
-      "withoutImage": 40
+      "events": 424,
+      "withImage": 380,
+      "withoutImage": 44
     },
     "NL": {
-      "events": 1338,
-      "withImage": 683,
-      "withoutImage": 655
+      "events": 1312,
+      "withImage": 673,
+      "withoutImage": 639
     },
     "BE": {
-      "events": 99,
-      "withImage": 9,
-      "withoutImage": 90
+      "events": 100,
+      "withImage": 11,
+      "withoutImage": 89
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 29,
-      "withImage": 28,
+      "events": 28,
+      "withImage": 27,
       "withoutImage": 1,
-      "greekEvents": 29
+      "greekEvents": 28
     },
     "festivalinfo": {
       "events": 10,
@@ -50,46 +50,46 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 25,
-      "withImage": 25,
+      "events": 23,
+      "withImage": 23,
       "withoutImage": 0,
-      "greekEvents": 25
+      "greekEvents": 23
     },
     "more": {
-      "events": 311,
-      "withImage": 311,
+      "events": 294,
+      "withImage": 294,
       "withoutImage": 0,
-      "greekEvents": 311
+      "greekEvents": 294
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1110,
-      "withImage": 379,
-      "withoutImage": 731,
+      "events": 1092,
+      "withImage": 377,
+      "withoutImage": 715,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 57,
+      "events": 61,
       "withImage": 18,
-      "withoutImage": 39,
-      "greekEvents": 57
+      "withoutImage": 43,
+      "greekEvents": 61
     },
     "venue-official": {
-      "events": 315,
-      "withImage": 308,
-      "withoutImage": 7,
+      "events": 308,
+      "withImage": 302,
+      "withoutImage": 6,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 25,
-      "withImage": 25,
+      "published": 23,
+      "withImage": 23,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 29,
-      "withImage": 28,
+      "published": 28,
+      "withImage": 27,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 32,
-      "withImage": 31,
+      "events": 31,
+      "withImage": 30,
       "sources": [
         "anclub-index",
         "rocking",
@@ -121,11 +121,12 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 26,
-      "withImage": 26,
+      "events": 25,
+      "withImage": 25,
       "sources": [
         "gagarin-calendar",
-        "rocking"
+        "rocking",
+        "official"
       ]
     },
     {
@@ -154,23 +155,6 @@
     },
     {
       "name": "Death Disco",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Piraeus Club Academy",
-      "events": 13,
-      "withImage": 11,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
-      "name": "gazarte",
       "events": 13,
       "withImage": 13,
       "sources": [
@@ -186,11 +170,28 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "name": "gazarte",
       "events": 12,
       "withImage": 12,
       "sources": [
         "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 12,
+      "withImage": 10,
+      "sources": [
+        "more",
+        "rocking"
       ]
     },
     {
@@ -211,7 +212,7 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -219,17 +220,9 @@
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
-      "events": 10,
-      "withImage": 10,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 10,
-      "withImage": 10,
+      "name": "Kyttaro Live",
+      "events": 11,
+      "withImage": 11,
       "sources": [
         "more"
       ]
@@ -243,7 +236,15 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
+      "name": "Circus Entertainment Hub",
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 8,
       "withImage": 8,
       "sources": [
@@ -251,17 +252,9 @@
       ]
     },
     {
-      "name": "Oddity Club",
-      "events": 7,
-      "withImage": 7,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "ARCH",
-      "events": 7,
-      "withImage": 7,
+      "name": "Half Note Jazz Club",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
@@ -275,11 +268,11 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "name": "Temple Athens",
       "events": 7,
-      "withImage": 7,
+      "withImage": 1,
       "sources": [
-        "more"
+        "rocking"
       ]
     },
     {
@@ -291,27 +284,11 @@
       ]
     },
     {
-      "name": "AUX CLUB",
+      "name": "Oddity Club",
       "events": 6,
       "withImage": 6,
       "sources": [
         "more"
-      ]
-    },
-    {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Temple Athens",
-      "events": 6,
-      "withImage": 1,
-      "sources": [
-        "rocking"
       ]
     },
     {
@@ -323,9 +300,25 @@
       ]
     },
     {
-      "name": "Universe | S-2000",
-      "events": 4,
-      "withImage": 4,
+      "name": "ARCH",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "events": 5,
+      "withImage": 5,
       "sources": [
         "more"
       ]
@@ -355,7 +348,7 @@
       ]
     },
     {
-      "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
+      "name": "AUX CLUB",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -379,38 +372,6 @@
       ]
     },
     {
-      "name": "Temple",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Θεατρο Μεταξουργειο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "UNDERFLOW RECORD STORE",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Χωρος Τεχνης Ιδιομελο",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Athens Conservatoire (in Greek)",
       "events": 3,
       "withImage": 3,
@@ -428,6 +389,46 @@
     },
     {
       "name": "«THEATRON», (Th. Antigoni), Ellinikos Kosmos",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Royal Theater",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Telekom Center Athens",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Universe | S-2000",
       "events": 3,
       "withImage": 3,
       "sources": [
