@@ -1,35 +1,35 @@
 {
-  "catalogUpdatedAt": "2026-11-22T13:31:54.538Z",
-  "auditedFor": "2026-11-22",
-  "totalPublished": 1836,
-  "greekPublished": 424,
+  "catalogUpdatedAt": "2026-11-23T16:13:52.017Z",
+  "auditedFor": "2026-11-23",
+  "totalPublished": 1832,
+  "greekPublished": 426,
   "imageCoverage": {
-    "withImage": 1064,
-    "withoutImage": 772
+    "withImage": 1071,
+    "withoutImage": 761
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 424,
-      "withImage": 380,
-      "withoutImage": 44
+      "events": 426,
+      "withImage": 383,
+      "withoutImage": 43
     },
     "NL": {
-      "events": 1312,
-      "withImage": 673,
-      "withoutImage": 639
+      "events": 1305,
+      "withImage": 677,
+      "withoutImage": 628
     },
     "BE": {
-      "events": 100,
+      "events": 101,
       "withImage": 11,
-      "withoutImage": 89
+      "withoutImage": 90
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 28,
-      "withImage": 27,
+      "events": 27,
+      "withImage": 26,
       "withoutImage": 1,
-      "greekEvents": 28
+      "greekEvents": 27
     },
     "festivalinfo": {
       "events": 10,
@@ -50,46 +50,46 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 23,
-      "withImage": 23,
+      "events": 24,
+      "withImage": 24,
       "withoutImage": 0,
-      "greekEvents": 23
+      "greekEvents": 24
     },
     "more": {
-      "events": 294,
-      "withImage": 294,
+      "events": 298,
+      "withImage": 298,
       "withoutImage": 0,
-      "greekEvents": 294
+      "greekEvents": 298
     },
     "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1092,
-      "withImage": 377,
-      "withoutImage": 715,
+      "events": 1088,
+      "withImage": 382,
+      "withoutImage": 706,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 61,
+      "events": 60,
       "withImage": 18,
-      "withoutImage": 43,
-      "greekEvents": 61
+      "withoutImage": 42,
+      "greekEvents": 60
     },
     "venue-official": {
-      "events": 308,
-      "withImage": 302,
-      "withoutImage": 6,
+      "events": 306,
+      "withImage": 301,
+      "withoutImage": 5,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 23,
-      "withImage": 23,
+      "published": 24,
+      "withImage": 24,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 28,
-      "withImage": 27,
+      "published": 27,
+      "withImage": 26,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 31,
-      "withImage": 30,
+      "events": 30,
+      "withImage": 29,
       "sources": [
         "anclub-index",
         "rocking",
@@ -125,24 +125,15 @@
       "withImage": 25,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
-      ]
-    },
-    {
-      "name": "Το Τρένο Στο Ρουφ",
-      "events": 20,
-      "withImage": 0,
-      "sources": [
         "rocking"
       ]
     },
     {
-      "name": "ΙΛΙΟΝ Plus",
-      "events": 15,
-      "withImage": 15,
+      "name": "Το Τρένο Στο Ρουφ",
+      "events": 19,
+      "withImage": 0,
       "sources": [
-        "more"
+        "rocking"
       ]
     },
     {
@@ -154,9 +145,9 @@
       ]
     },
     {
-      "name": "Death Disco",
-      "events": 13,
-      "withImage": 13,
+      "name": "ΙΛΙΟΝ Plus",
+      "events": 14,
+      "withImage": 14,
       "sources": [
         "more"
       ]
@@ -170,7 +161,7 @@
       ]
     },
     {
-      "name": "gazarte",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 12,
       "withImage": 12,
       "sources": [
@@ -178,7 +169,15 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "name": "Death Disco",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 12,
       "withImage": 12,
       "sources": [
@@ -212,7 +211,7 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "name": "Kyttaro Live",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -220,7 +219,7 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "gazarte",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -231,6 +230,14 @@
       "name": "Klakaz",
       "events": 10,
       "withImage": 10,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Half Note Jazz Club",
+      "events": 9,
+      "withImage": 9,
       "sources": [
         "more"
       ]
@@ -252,15 +259,15 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 8,
-      "withImage": 8,
+      "name": "CHRISTMAS THEATER",
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "CHRISTMAS THEATER",
+      "name": "Oddity Club",
       "events": 7,
       "withImage": 7,
       "sources": [
@@ -284,7 +291,7 @@
       ]
     },
     {
-      "name": "Oddity Club",
+      "name": "ARCH",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -295,14 +302,6 @@
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
       "events": 6,
       "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "ARCH",
-      "events": 5,
-      "withImage": 5,
       "sources": [
         "more"
       ]
@@ -319,14 +318,6 @@
       "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
       "events": 5,
       "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Doryphora Gig Space",
-      "events": 4,
-      "withImage": 4,
       "sources": [
         "more"
       ]
@@ -372,14 +363,6 @@
       ]
     },
     {
-      "name": "Athens Conservatoire (in Greek)",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
       "events": 3,
       "withImage": 3,
@@ -396,7 +379,23 @@
       ]
     },
     {
+      "name": "METRON STAGE",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Royal Theater",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Doryphora Gig Space",
       "events": 3,
       "withImage": 3,
       "sources": [

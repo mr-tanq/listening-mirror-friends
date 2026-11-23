@@ -1,78 +1,7 @@
 {
-  "generatedAt": "2026-11-22T13:35:15.230Z",
+  "generatedAt": "2026-11-23T16:17:13.814Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-498088",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/artin-muziek-22-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/10/Artin-Muziek.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2026-11-22-isaiah-collier",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/super-sonic-jazz-festival-isaiah-collier-plays-coltrane/2907943",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/IsaiahSF1-%C2%A9-Ausar-Ra.jpg",
-      "confidence": 1,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-449535",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/jembaa-groove-4/",
-      "image": "https://www.paard.nl/wp-content/uploads/2025/12/PRDps_Mailheader-JEMBAA-GROOVE.png",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-495360",
-      "venue": "bibelot",
-      "eventUrl": "https://bibelot.net/programma/morbidfest-i-am-morbid-us-atheist-us-cancer-uk-narcotic-wasteland-us/",
-      "image": "https://bibelot.net/wp-content/uploads/2026/09/I-AM-MORBID_band-photo_photo-by-Felix-Boy-1-53ec-1-scaled.jpg",
-      "confidence": 0.9,
-      "published": false
-    },
-    {
-      "eventId": "podiuminfo-453807",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/noor/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/03/Noor-WEB2-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-495697",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/platina-22-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/09/Platina_tour_poster_Amsterdam-e1790086061917.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2026-11-22-super-sonic-jam-x-gerson-main",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/super-sonic-jazz-festival-sunday/2907947",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/SHF88C_1-1.jpg",
-      "confidence": 1,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-doornroosje-2026-11-22-the-link-up",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/the-link-up/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/10/TheLinkUp2026-4-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-462728",
       "venue": "paradiso",
@@ -140,7 +69,7 @@
       "eventId": "podiuminfo-492326",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/the-bug-club/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/08/THEBUGCLUB_PRDps_Mailheader.png?t=1789040952&t=1789040952",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/08/THEBUGCLUB_PRDps_Mailheader.png?t=1794394036&t=1794394036",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -424,6 +353,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-455500",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/elmiene/2860874",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Elmiene2934-1773405157.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paard-2026-11-28-film",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/film-summer-of-soul-2/",
@@ -474,6 +412,15 @@
       "image": "https://bibelot.net/wp-content/uploads/2025/11/Shantel-liggend-c733.jpg",
       "confidence": 0.9,
       "published": false
+    },
+    {
+      "eventId": "podiuminfo-495639",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/steebs-method/2938326",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/steebs-method-grand-picture-1790083542.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
     },
     {
       "eventId": "venue-013-2026-11-28-subquake",
@@ -2292,6 +2239,14 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-497542",
+      "venue": "bibelot",
+      "eventUrl": "https://bibelot.net/programma/the-wanderers/",
+      "image": "https://bibelot.net/wp-content/uploads/2026/10/The-Wanderers-webbanner-330c.jpg",
+      "confidence": 0.9,
+      "published": false
+    },
+    {
       "eventId": "venue-doornroosje-2027-01-09-vroegzat",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/vroegzat-12/",
@@ -2502,7 +2457,7 @@
       "eventId": "podiuminfo-450996",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/the-james-brown-experience-17-01-27/",
-      "image": "https://patronaat.nl/app/uploads/2026/01/1080x1080.jpg",
+      "image": "https://patronaat.nl/app/uploads/2026/01/JB-Spotlight-sq-1024x1024.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4191,46 +4146,55 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-03-03-camille",
+      "eventId": "podiuminfo-477716",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/camille/2900348",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/camille-1780996986.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-03-03-de-staat",
+      "eventId": "podiuminfo-496151",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/de-staat-16/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/De-Staat-persfoto-web-2-1200x630.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-03-03-mike-lindup-trio",
+      "eventId": "podiuminfo-493475",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/mike-lindup-trio-03-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/1c4e4c45-e51a-460c-b63b-cffbf322c587-scaled.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-03-03-moyka",
+      "eventId": "podiuminfo-493236",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/moyka/2925300",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Moyka-1788704221.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-03-03-rezn-coltaine",
+      "eventId": "podiuminfo-488985",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/rezn-2/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/07/REZN-1200x630.jpg",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-500661",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/winona-riders/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-WINONA-RIDERS.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5779,6 +5743,24 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/yves-berendse/2952764",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Yves-Berendse-1793358305.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-04-21-de-jukebox-22",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/de-jukebox-22/",
+      "image": "https://www.doornroosje.nl/app/uploads/2025/12/De-Jukebox-omslag-2-scaled.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-21-fiep",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/fiep-famous-thoughts-tour/2942879",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/A-Liggend_-Miranda-Gashi.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

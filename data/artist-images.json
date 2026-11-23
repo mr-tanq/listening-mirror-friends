@@ -7924,7 +7924,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-22T13:30:09.843Z"
+      "checkedAt": "2026-11-23T16:12:01.932Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7936,7 +7936,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-22T13:30:09.843Z"
+      "checkedAt": "2026-11-23T16:12:01.932Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7956,7 +7956,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-22T13:30:09.843Z"
+      "checkedAt": "2026-11-23T16:12:01.932Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7968,7 +7968,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-22T13:30:09.843Z"
+      "checkedAt": "2026-11-23T16:12:01.932Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -12208,6 +12208,34 @@
       },
       "wikidata": "Q122781287",
       "checkedAt": "2026-11-22T13:30:06.831Z"
+    },
+    "chad lawson": {
+      "name": "Chad Lawson",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/858f32caadfff204eb486060cb55b111/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1904751,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/1904751",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1904751"
+      },
+      "checkedAt": "2026-11-23T16:11:23.953Z"
+    },
+    "muireann bradley": {
+      "name": "Muireann Bradley",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/1d1118bd96219613053f73bb5cf7481b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 229801315,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/229801315",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/229801315"
+      },
+      "checkedAt": "2026-11-23T16:11:24.434Z"
     }
   },
   "attempted": {
@@ -12300,25 +12328,6 @@
     "de hardheid": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "delany": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        4093955,
-        83841662,
-        123771932
-      ]
-    },
-    "lords of altamont": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "nightfreak usa cafe de wacht": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found",
-      "urgentRetried": true
     },
     "demo club bandnight auks": {
       "retryAfter": "2026-12-09",
@@ -13045,11 +13054,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "morbidfest": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "judith kiddo": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
@@ -13539,35 +13543,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "10 χρονια χωρις τον φιλαρετο": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "artin muziek friends": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "sorellina": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "the silent rage 10 years": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "θανασης πεθεριωτης και αριστοτελης full band": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "οταν η ποιηση γινεται τραγουδι": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "kreator overkill": {
       "retryAfter": "2026-12-15",
       "reason": "not-found",
@@ -13606,14 +13581,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "la pegatina": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        7270684,
-        299712
-      ]
-    },
     "tarja": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
@@ -13621,14 +13588,6 @@
     "rudeboy x boskat": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
-    },
-    "personal trainer": {
-      "retryAfter": "2027-01-08",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        168112097,
-        1703284
-      ]
     },
     "belle sebastian": {
       "retryAfter": "2026-12-13",
@@ -14051,8 +14010,9 @@
       "urgentRetried": true
     },
     "desert winds w valeron": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "echoberyl": {
       "retryAfter": "2026-12-09",
@@ -14405,8 +14365,9 @@
       "reason": "not-found"
     },
     "σουρλουλου παρουσιαση δισκου": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "housequake": {
       "retryAfter": "2027-01-08",
@@ -15524,15 +15485,6 @@
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
     },
-    "jeremy pelt quintet": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "temple fang": {
-      "retryAfter": "2026-12-10",
-      "reason": "album-cover-as-portrait"
-    },
     "la novia": {
       "retryAfter": "2026-12-10",
       "reason": "album-cover-as-portrait"
@@ -16050,11 +16002,6 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "nicole moudaber grace dahl": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "μαγδα βαρουχα ζωντανα στην αθηνα": {
       "retryAfter": "2026-12-16",
       "reason": "not-found",
@@ -16168,12 +16115,14 @@
       "urgentRetried": true
     },
     "luben φουλ το φουλ party στο oddity": {
-      "retryAfter": "2026-12-13",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "papazo χωρις φτερα": {
-      "retryAfter": "2026-12-13",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "αννα χρυσανθου": {
       "retryAfter": "2026-12-13",
@@ -16229,8 +16178,9 @@
       "urgentRetried": true
     },
     "cosmic bordello at klakaz": {
-      "retryAfter": "2026-12-14",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "so indie lair": {
       "retryAfter": "2026-12-14",
@@ -16297,8 +16247,9 @@
       "reason": "not-found"
     },
     "mary sunshine ντερτι": {
-      "retryAfter": "2026-12-15",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "μικροι ανεκπληρωτοι ερωτες": {
       "retryAfter": "2026-12-15",
@@ -16511,10 +16462,6 @@
         65226602
       ]
     },
-    "isaiah collier": {
-      "retryAfter": "2026-12-18",
-      "reason": "album-cover-as-portrait"
-    },
     "we are back": {
       "retryAfter": "2026-12-18",
       "reason": "not-found"
@@ -16595,11 +16542,6 @@
         106524722
       ]
     },
-    "super sonic jam x gerson main": {
-      "retryAfter": "2026-12-20",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "dieversparty 3 years athens": {
       "retryAfter": "2026-12-20",
       "reason": "not-found",
@@ -16631,12 +16573,14 @@
       "urgentRetried": true
     },
     "τροπικες συνθεσεις στο μουσειο": {
-      "retryAfter": "2026-12-19",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "amedee de murcia": {
-      "retryAfter": "2026-12-19",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "stars of samarkand": {
       "retryAfter": "2026-12-19",
@@ -16933,20 +16877,24 @@
       ]
     },
     "γιαγκινηδες": {
-      "retryAfter": "2026-12-22",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "δημητρης ζερβουδακης": {
-      "retryAfter": "2026-12-22",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ο βασιλης λεκκας στον αστερισμο του τολη": {
-      "retryAfter": "2026-12-22",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "στρατακηδες": {
-      "retryAfter": "2026-12-22",
-      "reason": "not-found"
+      "retryAfter": "2026-12-23",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ο βασιλης λεκκας": {
       "retryAfter": "2026-12-22",
@@ -16959,6 +16907,61 @@
     "nick the backbone": {
       "retryAfter": "2026-12-22",
       "reason": "album-cover-as-portrait"
+    },
+    "offo vrae": {
+      "retryAfter": "2026-12-23",
+      "reason": "album-cover-as-portrait"
+    },
+    "winona riders": {
+      "retryAfter": "2026-12-23",
+      "reason": "album-cover-as-portrait"
+    },
+    "david murray quartet": {
+      "retryAfter": "2026-12-23",
+      "reason": "album-cover-as-portrait"
+    },
+    "της καρδιας η διαδρομη κατερινα κυρμιζη": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "francesca cinelli": {
+      "retryAfter": "2026-12-23",
+      "reason": "no-photo",
+      "deezerCandidates": [
+        307114911
+      ]
+    },
+    "νικος γρηγοριαδης": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "παναγιωτης μπερλης διαφανα κρινα x epafis a": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "history book leftovers": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "μπλε 18 δεκεμβριου rohas athens": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "ελενη αλεξανδρη": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "omar souleyman ζωντανα στην αθηνα": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "peter hammill 2027": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "de jukebox 22": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -16986,11 +16989,6 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
-    },
-    "lords of altamont": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "photo-license-or-size-rejected"
     },
     "van asseldonk cartel": {
       "strategyVersion": 4,
@@ -17163,21 +17161,6 @@
       "reason": "no-confirmed-musician"
     },
     "the spunyboys": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "delany": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "morbidfest": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "nightfreak usa cafe de wacht": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -18167,50 +18150,10 @@
       "retryAfter": "2026-12-25",
       "reason": "no-licensed-commons-photo"
     },
-    "temple fang": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-licensed-commons-photo"
-    },
     "film": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-25",
       "reason": "photo-license-or-size-rejected"
-    },
-    "10 χρονια χωρις τον φιλαρετο": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "artin muziek friends": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "jeremy pelt quintet": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "sorellina": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "the silent rage 10 years": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "θανασης πεθεριωτης και αριστοτελης full band": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
-    },
-    "οταν η ποιηση γινεται τραγουδι": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-25",
-      "reason": "no-confirmed-musician"
     },
     "wesghost": {
       "strategyVersion": 8,
@@ -18278,11 +18221,6 @@
       "reason": "no-confirmed-musician"
     },
     "club pony": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "nicole moudaber grace dahl": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
@@ -18837,11 +18775,6 @@
       "retryAfter": "2027-01-01",
       "reason": "no-licensed-commons-photo"
     },
-    "isaiah collier": {
-      "strategyVersion": 8,
-      "retryAfter": "2027-01-02",
-      "reason": "photo-license-or-size-rejected"
-    },
     "costas baltazanis": {
       "strategyVersion": 8,
       "retryAfter": "2027-01-02",
@@ -18935,11 +18868,6 @@
     "fiep": {
       "strategyVersion": 8,
       "retryAfter": "2027-01-02",
-      "reason": "no-confirmed-musician"
-    },
-    "super sonic jam x gerson main": {
-      "strategyVersion": 8,
-      "retryAfter": "2027-01-03",
       "reason": "no-confirmed-musician"
     },
     "dieversparty 3 years athens": {
@@ -19391,6 +19319,131 @@
       "strategyVersion": 8,
       "retryAfter": "2027-01-06",
       "reason": "no-confirmed-musician"
+    },
+    "papazo": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "david murray quartet": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "της καρδιας η διαδρομη κατερινα κυρμιζη": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "andronikos quartet short stories": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "irida library concerts 2026 2027": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "kovacs live in athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "three times three 2": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "γιωργος θεοφανους": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "συννεφα με παντελονια": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "francesca cinelli": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "νικος γρηγοριαδης": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "andronikos quartet": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "18 12": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "inner i": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "infected minds": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "mike lindup trio": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "mike lindup": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "πετρος γαιτανος": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "eosine": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "paradiso korendagen 2027": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "job dutchtuber billy the kit": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "80 s anders": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "sold out βητα πεις": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "aili orson": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
+    },
+    "physical graffiti": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-07",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
@@ -19498,6 +19551,10 @@
     },
     "haunt me": {
       "retryAfter": "2027-02-16",
+      "reason": "artist-not-in-provider"
+    },
+    "evanora unlimited": {
+      "retryAfter": "2027-02-21",
       "reason": "artist-not-in-provider"
     }
   }

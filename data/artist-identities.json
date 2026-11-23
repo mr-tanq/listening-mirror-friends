@@ -1061,6 +1061,16 @@
       "spotifyId": "0xc6gzkeMKN1R3cAkEKCK6",
       "deezerId": 116002382,
       "checkedAt": "2026-11-18T14:17:43.413Z"
+    },
+    "evanora unlimited": {
+      "name": "Evanora Unlimited",
+      "mbid": "cc76256b-7571-46aa-90bc-a2e7e45db857",
+      "mbName": "Evanora Unlimited",
+      "country": "",
+      "matchedBy": "unique-name",
+      "bandcamp": "https://evanoraunlimited.bandcamp.com/",
+      "deezerId": 104402242,
+      "checkedAt": "2026-11-23T16:11:31.760Z"
     }
   },
   "attempted": {
@@ -1163,26 +1173,6 @@
     "the elvis concert": {
       "retryAfter": "2026-12-25",
       "reason": "identified-without-free-photo"
-    },
-    "delany": {
-      "retryAfter": "2026-12-23",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "00f38fc2-355d-498d-9054-547d2b44ac86",
-        "d821ddf4-ff08-413c-b821-8b12eec14290"
-      ]
-    },
-    "lords of altamont": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "morbidfest": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
-    },
-    "nightfreak usa cafe de wacht": {
-      "retryAfter": "2026-12-08",
-      "reason": "not-found"
     },
     "frankie stew": {
       "retryAfter": "2026-12-23",
@@ -1361,11 +1351,27 @@
       "reason": "identified-without-free-photo"
     },
     "evanora unlimited": {
-      "retryAfter": "2026-11-23",
-      "reason": "HTTP 503"
+      "retryAfter": "2027-01-07",
+      "reason": "identified-without-free-photo"
     },
     "frenetik": {
-      "retryAfter": "2026-11-21",
+      "retryAfter": "2027-01-07",
+      "reason": "ambiguous",
+      "mbCandidates": [
+        "105e3ab0-adef-458e-823d-908fa0872c67",
+        "4180f36e-5f13-4cfe-a67d-b79d44da9a04"
+      ]
+    },
+    "gambling": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "q marsden": {
+      "retryAfter": "2026-12-23",
+      "reason": "not-found"
+    },
+    "raquel rodriguez": {
+      "retryAfter": "2026-11-25",
       "reason": "HTTP 503"
     }
   }
