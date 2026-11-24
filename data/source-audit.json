@@ -1,47 +1,47 @@
 {
-  "catalogUpdatedAt": "2026-11-23T16:13:52.017Z",
-  "auditedFor": "2026-11-23",
-  "totalPublished": 1832,
-  "greekPublished": 426,
+  "catalogUpdatedAt": "2026-11-24T16:05:10.262Z",
+  "auditedFor": "2026-11-24",
+  "totalPublished": 1906,
+  "greekPublished": 437,
   "imageCoverage": {
-    "withImage": 1071,
-    "withoutImage": 761
+    "withImage": 1107,
+    "withoutImage": 799
   },
   "imageCoverageByCountry": {
-    "GR": {
-      "events": 426,
-      "withImage": 383,
-      "withoutImage": 43
-    },
     "NL": {
-      "events": 1305,
-      "withImage": 677,
-      "withoutImage": 628
+      "events": 1365,
+      "withImage": 704,
+      "withoutImage": 661
+    },
+    "GR": {
+      "events": 437,
+      "withImage": 393,
+      "withoutImage": 44
     },
     "BE": {
-      "events": 101,
-      "withImage": 11,
-      "withoutImage": 90
+      "events": 104,
+      "withImage": 10,
+      "withoutImage": 94
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 27,
-      "withImage": 26,
+      "events": 29,
+      "withImage": 28,
       "withoutImage": 1,
-      "greekEvents": 27
+      "greekEvents": 29
     },
     "festivalinfo": {
       "events": 10,
-      "withImage": 3,
-      "withoutImage": 7,
+      "withImage": 2,
+      "withoutImage": 8,
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 13,
-      "withImage": 13,
+      "events": 12,
+      "withImage": 12,
       "withoutImage": 0,
-      "greekEvents": 13
+      "greekEvents": 12
     },
     "fuzzclub-calendar": {
       "events": 2,
@@ -50,51 +50,51 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 24,
-      "withImage": 24,
+      "events": 23,
+      "withImage": 23,
       "withoutImage": 0,
-      "greekEvents": 24
+      "greekEvents": 23
     },
     "more": {
-      "events": 298,
-      "withImage": 298,
+      "events": 307,
+      "withImage": 307,
       "withoutImage": 0,
-      "greekEvents": 298
+      "greekEvents": 307
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1088,
-      "withImage": 382,
-      "withoutImage": 706,
+      "events": 1149,
+      "withImage": 407,
+      "withoutImage": 742,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 60,
+      "events": 61,
       "withImage": 18,
-      "withoutImage": 42,
-      "greekEvents": 60
+      "withoutImage": 43,
+      "greekEvents": 61
     },
     "venue-official": {
-      "events": 306,
-      "withImage": 301,
+      "events": 308,
+      "withImage": 303,
       "withoutImage": 5,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 24,
-      "withImage": 24,
+      "published": 23,
+      "withImage": 23,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 13,
-      "withImage": 13,
+      "published": 12,
+      "withImage": 12,
       "warning": null
     },
     "fuzzclub-calendar": {
@@ -103,16 +103,16 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 27,
-      "withImage": 26,
+      "published": 29,
+      "withImage": 28,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 30,
-      "withImage": 29,
+      "events": 32,
+      "withImage": 31,
       "sources": [
         "anclub-index",
         "rocking",
@@ -125,7 +125,8 @@
       "withImage": 25,
       "sources": [
         "gagarin-calendar",
-        "rocking"
+        "rocking",
+        "official"
       ]
     },
     {
@@ -137,7 +138,7 @@
       ]
     },
     {
-      "name": "Μουσειο Προσφυγων",
+      "name": "ΙΛΙΟΝ Plus",
       "events": 15,
       "withImage": 15,
       "sources": [
@@ -145,25 +146,9 @@
       ]
     },
     {
-      "name": "ΙΛΙΟΝ Plus",
-      "events": 14,
-      "withImage": 14,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Floyd Live Music Venue",
-      "events": 13,
-      "withImage": 13,
-      "sources": [
-        "floyd-calendar"
-      ]
-    },
-    {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 12,
-      "withImage": 12,
+      "name": "Μουσειο Προσφυγων",
+      "events": 15,
+      "withImage": 15,
       "sources": [
         "more"
       ]
@@ -194,6 +179,22 @@
       ]
     },
     {
+      "name": "Floyd Live Music Venue",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "floyd-calendar"
+      ]
+    },
+    {
+      "name": "Kyttaro Live",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Fuzz Club",
       "events": 12,
       "withImage": 12,
@@ -211,7 +212,15 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "events": 11,
+      "withImage": 11,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Klakaz",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -227,7 +236,7 @@
       ]
     },
     {
-      "name": "Klakaz",
+      "name": "Circus Entertainment Hub",
       "events": 10,
       "withImage": 10,
       "sources": [
@@ -235,33 +244,17 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Circus Entertainment Hub",
-      "events": 9,
-      "withImage": 9,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "events": 9,
+      "withImage": 9,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Half Note Jazz Club",
       "events": 8,
       "withImage": 8,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "CHRISTMAS THEATER",
-      "events": 7,
-      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -299,11 +292,35 @@
       ]
     },
     {
+      "name": "AUX CLUB",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "CHRISTMAS THEATER",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Ιδρυμα Βασιλη και Ελιζας Γουλανδρη",
       "events": 6,
       "withImage": 6,
       "sources": [
         "more"
+      ]
+    },
+    {
+      "name": "Κύτταρο",
+      "events": 5,
+      "withImage": 3,
+      "sources": [
+        "rocking"
       ]
     },
     {
@@ -323,23 +340,15 @@
       ]
     },
     {
-      "name": "MIKRI SKINI - Mikri Skini",
-      "events": 4,
-      "withImage": 4,
+      "name": "gazarte roof stage",
+      "events": 5,
+      "withImage": 5,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Κύτταρο",
-      "events": 4,
-      "withImage": 3,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
-      "name": "AUX CLUB",
+      "name": "MIKRI SKINI - Mikri Skini",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -355,31 +364,23 @@
       ]
     },
     {
-      "name": "gazarte roof stage",
-      "events": 4,
-      "withImage": 4,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Συνεδριακο & Πολιτιστικο Κεντρο Πατρων",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "«THEATRON», (Th. Antigoni), Ellinikos Kosmos",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "METRON STAGE",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Stage7",
+      "events": 3,
+      "withImage": 3,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Χωρος Τεχνης Ιδιομελο",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -427,7 +428,7 @@
       ]
     },
     {
-      "name": "Universe | S-2000",
+      "name": "Κινηματογραφος Newman",
       "events": 3,
       "withImage": 3,
       "sources": [

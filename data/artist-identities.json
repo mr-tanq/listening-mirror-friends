@@ -1182,10 +1182,6 @@
       "retryAfter": "2026-12-23",
       "reason": "identified-without-free-photo"
     },
-    "demo club bandnight auks": {
-      "retryAfter": "2026-12-10",
-      "reason": "not-found"
-    },
     "songwriter night": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -1327,7 +1323,7 @@
       "reason": "identified-without-free-photo"
     },
     "taqbir": {
-      "retryAfter": "2026-11-24",
+      "retryAfter": "2026-11-26",
       "reason": "HTTP 503"
     },
     "the zouklovers": {
@@ -1373,6 +1369,10 @@
     "raquel rodriguez": {
       "retryAfter": "2026-11-25",
       "reason": "HTTP 503"
+    },
+    "ultrajazz x tivolivredenburg": {
+      "retryAfter": "2026-12-24",
+      "reason": "not-found"
     }
   }
 }

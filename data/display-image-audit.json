@@ -1,52 +1,52 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T16:17:45.640Z",
-  "catalogUpdatedAt": "2026-11-23T16:13:52.017Z",
-  "auditedFor": "2026-11-23",
+  "generatedAt": "2026-11-24T16:09:08.137Z",
+  "catalogUpdatedAt": "2026-11-24T16:05:10.262Z",
+  "auditedFor": "2026-11-24",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1834,
-    "eventPoster": 1076,
-    "artistPhoto": 453,
-    "noImage": 305,
-    "posterWithPhotoBackup": 480
+    "total": 1898,
+    "eventPoster": 1107,
+    "artistPhoto": 463,
+    "noImage": 328,
+    "posterWithPhotoBackup": 491
   },
   "byCountry": {
+    "NL": {
+      "total": 1357,
+      "eventPoster": 704,
+      "artistPhoto": 392,
+      "noImage": 261,
+      "posterWithPhotoBackup": 400
+    },
     "GR": {
-      "total": 426,
-      "eventPoster": 383,
-      "artistPhoto": 14,
+      "total": 437,
+      "eventPoster": 393,
+      "artistPhoto": 15,
       "noImage": 29,
       "posterWithPhotoBackup": 84
     },
-    "NL": {
-      "total": 1307,
-      "eventPoster": 682,
-      "artistPhoto": 387,
-      "noImage": 238,
-      "posterWithPhotoBackup": 389
-    },
     "BE": {
-      "total": 101,
-      "eventPoster": 11,
-      "artistPhoto": 52,
+      "total": 104,
+      "eventPoster": 10,
+      "artistPhoto": 56,
       "noImage": 38,
       "posterWithPhotoBackup": 7
     }
   },
   "missingReasons": {
-    "artist-not-found": 109,
-    "album-cover-rejected": 96,
-    "ambiguous-artist": 74,
+    "artist-not-found": 121,
+    "album-cover-rejected": 103,
+    "ambiguous-artist": 77,
     "other-lookup-cooldown": 15,
-    "artist-has-no-photo": 7,
+    "artist-has-no-photo": 8,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 919,
+      "deezer": 940,
       "manual-pin": 4
     },
     "theAudioDB": {
@@ -58,16 +58,8 @@
       }
     }
   },
-  "missingNext14Days": 64,
+  "missingNext14Days": 68,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-496060",
-      "artist": "Demo Club Bandnight Auks",
-      "date": "2026-11-23",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "artist-not-found"
-    },
     {
       "id": "venue-doornroosje-2026-11-24-actie-aletta",
       "artist": "Actie Aletta",
@@ -171,6 +163,14 @@
       "country": "NL",
       "venue": "Muziekgieterij",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-503289",
+      "artist": "ULTRAJAZZ x TivoliVredenburg",
+      "date": "2026-11-26",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
+      "reason": "artist-not-found"
     },
     {
       "id": "podiuminfo-456106",
@@ -357,6 +357,14 @@
       "reason": "album-cover-rejected"
     },
     {
+      "id": "podiuminfo-503671",
+      "artist": "Sunset Session by Lien Pisters",
+      "date": "2026-11-30",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
+    },
+    {
       "id": "podiuminfo-497151",
       "artist": "Evanora Unlimited",
       "date": "2026-12-01",
@@ -371,14 +379,6 @@
       "country": "BE",
       "venue": "Botanique",
       "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498838",
-      "artist": "Gambling With Goodwill en Bad Joke",
-      "date": "2026-12-02",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "artist-not-found"
     }
   ],
   "missingOtherSamples": [
@@ -527,8 +527,8 @@
       "reason": "other-lookup-cooldown"
     },
     {
-      "id": "venue-paard-2026-12-11-ready2play",
-      "artist": "READY2PLAY",
+      "id": "podiuminfo-502591",
+      "artist": "READY2PLAY – TOUR 27",
       "date": "2026-12-11",
       "country": "NL",
       "venue": "Paard",
