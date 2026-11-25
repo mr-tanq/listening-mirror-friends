@@ -1,27 +1,27 @@
 {
-  "catalogUpdatedAt": "2026-11-24T16:05:10.262Z",
-  "auditedFor": "2026-11-24",
-  "totalPublished": 1906,
-  "greekPublished": 437,
+  "catalogUpdatedAt": "2026-11-25T15:51:18.805Z",
+  "auditedFor": "2026-11-25",
+  "totalPublished": 1919,
+  "greekPublished": 442,
   "imageCoverage": {
-    "withImage": 1107,
-    "withoutImage": 799
+    "withImage": 1118,
+    "withoutImage": 801
   },
   "imageCoverageByCountry": {
-    "NL": {
-      "events": 1365,
-      "withImage": 704,
-      "withoutImage": 661
-    },
     "GR": {
-      "events": 437,
-      "withImage": 393,
+      "events": 442,
+      "withImage": 398,
       "withoutImage": 44
     },
     "BE": {
-      "events": 104,
+      "events": 103,
       "withImage": 10,
-      "withoutImage": 94
+      "withoutImage": 93
+    },
+    "NL": {
+      "events": 1374,
+      "withImage": 710,
+      "withoutImage": 664
     }
   },
   "sources": {
@@ -50,27 +50,27 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 23,
-      "withImage": 23,
+      "events": 25,
+      "withImage": 25,
       "withoutImage": 0,
-      "greekEvents": 23
+      "greekEvents": 25
     },
     "more": {
-      "events": 307,
-      "withImage": 307,
+      "events": 311,
+      "withImage": 311,
       "withoutImage": 0,
-      "greekEvents": 307
+      "greekEvents": 311
     },
     "official": {
-      "events": 5,
-      "withImage": 5,
+      "events": 4,
+      "withImage": 4,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1149,
-      "withImage": 407,
-      "withoutImage": 742,
+      "events": 1166,
+      "withImage": 420,
+      "withoutImage": 746,
       "greekEvents": 0
     },
     "rocking": {
@@ -80,16 +80,16 @@
       "greekEvents": 61
     },
     "venue-official": {
-      "events": 308,
-      "withImage": 303,
-      "withoutImage": 5,
+      "events": 299,
+      "withImage": 296,
+      "withoutImage": 3,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 23,
-      "withImage": 23,
+      "published": 25,
+      "withImage": 25,
       "warning": null
     },
     "floyd-calendar": {
@@ -121,12 +121,11 @@
     },
     {
       "name": "Gagarin 205",
-      "events": 25,
-      "withImage": 25,
+      "events": 26,
+      "withImage": 26,
       "sources": [
         "gagarin-calendar",
-        "rocking",
-        "official"
+        "rocking"
       ]
     },
     {
@@ -154,7 +153,7 @@
       ]
     },
     {
-      "name": "Death Disco",
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 12,
       "withImage": 12,
       "sources": [
@@ -162,7 +161,7 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 12,
       "withImage": 12,
       "sources": [
@@ -212,7 +211,7 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "name": "Klakaz",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -220,7 +219,7 @@
       ]
     },
     {
-      "name": "Klakaz",
+      "name": "Death Disco",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -244,15 +243,15 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
-      "events": 9,
-      "withImage": 9,
+      "name": "Half Note Jazz Club",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Half Note Jazz Club",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
       "events": 8,
       "withImage": 8,
       "sources": [
@@ -284,14 +283,6 @@
       ]
     },
     {
-      "name": "ARCH",
-      "events": 6,
-      "withImage": 6,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "AUX CLUB",
       "events": 6,
       "withImage": 6,
@@ -316,11 +307,35 @@
       ]
     },
     {
+      "name": "gazarte roof stage",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "MIKRI SKINI - Mikri Skini",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
       "name": "Κύτταρο",
       "events": 5,
       "withImage": 3,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 5,
+      "withImage": 5,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -340,15 +355,7 @@
       ]
     },
     {
-      "name": "gazarte roof stage",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "MIKRI SKINI - Mikri Skini",
+      "name": "Μεγαρο Μουσικης Κομοτηνης",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -356,7 +363,7 @@
       ]
     },
     {
-      "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "name": "ROHAS ATHENS LIVE STAGE",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -421,14 +428,6 @@
     },
     {
       "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Κινηματογραφος Newman",
       "events": 3,
       "withImage": 3,
       "sources": [

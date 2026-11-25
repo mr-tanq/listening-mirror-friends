@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-11-24T16:08:36.773Z",
+  "generatedAt": "2026-11-25T15:54:42.192Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-457934",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/imperial-triumphant/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/03/Imperial-Triumphant-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-497622",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/raymond-van-het-groenewoud-albumpresentatie/2942418",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/raymond-web-1791980217.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-495959",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/yaeger/2938680",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/50b9a192_PressPic-laag-1790239991.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-491947",
       "venue": "patronaat",
@@ -888,12 +861,12 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-013-2026-12-08-so-indie-lair",
+      "eventId": "podiuminfo-504168",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/162414/so-indie-lair",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/SO-Indie-Lair-banner-8012026.jpg?mtime=1793980787",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -1222,6 +1195,15 @@
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/160082/gezellige-clubtempo-xxl-2026",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Gezellige-Clubtempo-Banner-01.jpg?mtime=1790604693",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-503979",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/hiphop-dubbel-a-12-12-26/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/HH-DubbelA-1212-Timeline-2.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2256,6 +2238,15 @@
       "published": false
     },
     {
+      "eventId": "venue-effenaar-2027-01-09-turkish-pop-night",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/turkish-pop-night-9jan",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyTPN.png?itok=bvB1cfLK",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-doornroosje-2027-01-09-vroegzat",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/vroegzat-12/",
@@ -2701,6 +2692,15 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/club-x-tour-jda-vince-dj-yves-en-meer",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/1080x1350_LineUp-ClubX2027Indoor.jpg?itok=QSw40qQu",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-01-23-pax-romana-prncptl",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/pax-romana-x-prncptl-ritvs-corporis-ii/2954974",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/PORN_PAX_Nov_Full_aangepast@05x-1795449532.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -3178,6 +3178,15 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/alena-omargalieva-05-02-27/",
       "image": "https://patronaat.nl/app/uploads/2026/11/web-OMARGALIEVA-05.02-amsterdam.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-02-05-beats-drums",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/beats-drums-s-rene-live-with-junya/2955214",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1280x640_crop_center-center_none/HDF25-DJs-NO-LOGO-34.jpeg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -3723,6 +3732,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-504007",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/born-from-pain-inherited-20-02-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/Born-From-Pain-picture-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-482165",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/physical-graffiti-2027",
@@ -4101,6 +4119,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paradiso-2027-02-27-girl-in-the-year-above",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/girl-in-the-year-above/2955698",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/91074ca7_Girl-In-The-Year-Above-PRESS-NEW-1795445976.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-502305",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/jake-vaadeland-2/",
@@ -4317,6 +4344,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-paard-2027-03-04-wende-laatste-kaarten",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/wende-04302027/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/09/wende-header.jpg?t=1794992824&t=1794992824",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-502266",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/wishy/2951061",
@@ -4326,75 +4362,84 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-013-2027-03-05-clouseau",
+      "eventId": "podiuminfo-496220",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/158995/clouseau",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Clouseau-2026-Beeld.jpg?mtime=1790147452",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-03-05-de-staat",
+      "eventId": "podiuminfo-495453",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/de-staat-14/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/De-Staat-persfoto-web-1-1200x630.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-doornroosje-2027-03-05-hallo-venray",
+      "eventId": "podiuminfo-493524",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/hallo-venray-4/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/WEB-foto-3-1200x630.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-03-05-kaya-imani",
+      "eventId": "podiuminfo-462455",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/kaya-imani/2884450",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Kaya-Imani-verkleind-1776351898.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-03-05-nao-yoshioka",
+      "eventId": "podiuminfo-501841",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/nao-yoshioka/2949769",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/01-Nao-Yoshioka_Main_Horizontal-1793196668.jpg",
       "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "podiuminfo-496319",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/slomosa/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/09/AUSTIN-25.jpeg",
+      "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-03-05-sven-ross",
+      "eventId": "podiuminfo-492502",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/sven-ross/2925145",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/PressPic_SvenRoss_by_YzaCreativeStudio1_2026-09-01-094828_ziuh-1788258537.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-effenaar-2027-03-05-the-dead-daisies",
+      "eventId": "podiuminfo-448856",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/dead-daisies-featuring-kelly-hansen",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2025-12/TDD-1080x1920-2027-TOUR-ADMAT-LANDSCAPE.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-03-05-the-dirty-daddies",
+      "eventId": "podiuminfo-450950",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/the-dirty-daddies-05-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/01/thedirtydaddies_letthegoodtimesroll_liggend-scaled.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -5226,6 +5271,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-doornroosje-2027-03-30-bad-nerves",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/bad-nerves-3/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-12-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-03-30-sofy",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/sofy/2954035",
@@ -5545,6 +5599,15 @@
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/hagane-10-04-27/",
       "image": "https://patronaat.nl/app/uploads/2026/10/HAGANE20260623-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paradiso-2027-04-10-newtone-all-night",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/newtone-all-night-long/2954636",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/newtone-klein-1795103519.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5878,6 +5941,51 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/off-the-wall",
       "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/%20%E2%80%93%201920x1080%20Website%20off%20the%20wal.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-patronaat-2027-04-23-blackout-problems",
+      "venue": "patronaat",
+      "eventUrl": "https://patronaat.nl/event/blackout-problems-23-04-27/",
+      "image": "https://patronaat.nl/app/uploads/2026/10/c-Bernhard-Schinn-BP_Albumshoot_HEAL-033_Quer-scaled.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-23-edwin-evers-band",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/edwin-evers-band-classics-part2",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/eeb-classicstour-part2-post-square.png?itok=PT-fcZTE",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-paard-2027-04-23-kim-churchill",
+      "venue": "paard",
+      "eventUrl": "https://www.paard.nl/event/kim-churchill-4/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/10/PRDps_Websiteheader-KIM-CHURCHILL.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-013-2027-04-23-kim-wilde",
+      "venue": "013",
+      "eventUrl": "https://www.013.nl/programma/141146/kim-wilde",
+      "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/KIM-A4-2.jpg?mtime=1782207420",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-23-orgel-vreten",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/orgel-vreten",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-10/%20%E2%80%93%201920x1080%20Website%20orgel.png",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"

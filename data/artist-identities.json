@@ -1186,14 +1186,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "actie aletta": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
-    "knoll": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
-    },
     "chris eckman": {
       "retryAfter": "2026-12-24",
       "reason": "identified-without-free-photo"
@@ -1373,6 +1365,10 @@
     "ultrajazz x tivolivredenburg": {
       "retryAfter": "2026-12-24",
       "reason": "not-found"
+    },
+    "sunset session by lien pisters": {
+      "retryAfter": "2026-11-27",
+      "reason": "HTTP 503"
     }
   }
 }
