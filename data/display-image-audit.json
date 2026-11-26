@@ -1,105 +1,65 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-25T15:55:24.970Z",
-  "catalogUpdatedAt": "2026-11-25T15:51:18.805Z",
-  "auditedFor": "2026-11-25",
+  "generatedAt": "2026-11-26T15:37:10.676Z",
+  "catalogUpdatedAt": "2026-11-26T15:32:32.297Z",
+  "auditedFor": "2026-11-26",
   "definition": "Counts resolved HTTPS image URLs used by cards, not successful browser image loads or image licences.",
   "caveat": "Browser network errors, blocked hotlinks and expired source images may still fall back to typography.",
   "reviewedOfficialArtworkApplied": 0,
   "totals": {
-    "total": 1922,
-    "eventPoster": 1124,
-    "artistPhoto": 459,
-    "noImage": 339,
-    "posterWithPhotoBackup": 493
+    "total": 1959,
+    "eventPoster": 1149,
+    "artistPhoto": 457,
+    "noImage": 353,
+    "posterWithPhotoBackup": 501
   },
   "byCountry": {
     "GR": {
-      "total": 442,
-      "eventPoster": 398,
-      "artistPhoto": 15,
-      "noImage": 29,
-      "posterWithPhotoBackup": 84
-    },
-    "BE": {
-      "total": 103,
-      "eventPoster": 10,
-      "artistPhoto": 55,
-      "noImage": 38,
-      "posterWithPhotoBackup": 7
+      "total": 459,
+      "eventPoster": 414,
+      "artistPhoto": 14,
+      "noImage": 31,
+      "posterWithPhotoBackup": 91
     },
     "NL": {
-      "total": 1377,
-      "eventPoster": 716,
+      "total": 1396,
+      "eventPoster": 725,
       "artistPhoto": 389,
-      "noImage": 272,
-      "posterWithPhotoBackup": 402
+      "noImage": 282,
+      "posterWithPhotoBackup": 403
+    },
+    "BE": {
+      "total": 104,
+      "eventPoster": 10,
+      "artistPhoto": 54,
+      "noImage": 40,
+      "posterWithPhotoBackup": 7
     }
   },
   "missingReasons": {
-    "album-cover-rejected": 106,
-    "ambiguous-artist": 80,
-    "artist-not-found": 126,
     "other-lookup-cooldown": 15,
+    "artist-not-found": 134,
+    "album-cover-rejected": 106,
+    "ambiguous-artist": 86,
     "artist-has-no-photo": 8,
     "not-in-artist-cache": 4
   },
   "providerDiagnostics": {
     "photosBySource": {
-      "deezer": 947,
+      "deezer": 958,
       "manual-pin": 4
     },
     "theAudioDB": {
-      "attempted": 27,
+      "attempted": 24,
       "failuresByReason": {
-        "artist-not-in-provider": 22,
+        "artist-not-in-provider": 20,
         "missing-or-ambiguous-artist": 3,
-        "photo-license-not-confirmed": 2
+        "photo-license-not-confirmed": 1
       }
     }
   },
-  "missingNext14Days": 71,
+  "missingNext14Days": 75,
   "missingNext14DaysSamples": [
-    {
-      "id": "podiuminfo-477377",
-      "artist": "Chris Eckman",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "TivoliVredenburg",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-494889",
-      "artist": "Judith Kiddo - Melissa Weikart",
-      "date": "2026-11-25",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-480071",
-      "artist": "Lost",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Vera",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-498837",
-      "artist": "Van Asseldonk Cartel",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "Willemeen",
-      "reason": "album-cover-rejected"
-    },
-    {
-      "id": "podiuminfo-479014",
-      "artist": "We All Sing ABBA",
-      "date": "2026-11-25",
-      "country": "NL",
-      "venue": "AFAS Live",
-      "reason": "artist-not-found"
-    },
     {
       "id": "podiuminfo-462642",
       "artist": "Bartofso",
@@ -131,6 +91,14 @@
       "country": "NL",
       "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
+    },
+    {
+      "id": "rocking-20261126-27607",
+      "artist": "Kostas Tziros & The Bankrupt Lovers",
+      "date": "2026-11-26",
+      "country": "GR",
+      "venue": "ΕΞΑ",
+      "reason": "album-cover-rejected"
     },
     {
       "id": "podiuminfo-457842",
@@ -333,14 +301,6 @@
       "reason": "album-cover-rejected"
     },
     {
-      "id": "podiuminfo-476509",
-      "artist": "Haunt Me",
-      "date": "2026-11-30",
-      "country": "NL",
-      "venue": "Paradiso",
-      "reason": "album-cover-rejected"
-    },
-    {
       "id": "podiuminfo-503671",
       "artist": "Sunset Session by Lien Pisters",
       "date": "2026-11-30",
@@ -379,57 +339,49 @@
       "country": "NL",
       "venue": "Melkweg",
       "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-484068",
+      "artist": "Raquel Rodriguez",
+      "date": "2026-12-02",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-469458",
+      "artist": "Gotts Street Park",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Melkweg",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-502730",
+      "artist": "Lilith Left The Garden",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Paard",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "podiuminfo-463012",
+      "artist": "MORBID",
+      "date": "2026-12-03",
+      "country": "NL",
+      "venue": "Hall Of Fame",
+      "reason": "album-cover-rejected"
+    },
+    {
+      "id": "rocking-20261203-27599",
+      "artist": "Panzerfaust",
+      "date": "2026-12-03",
+      "country": "GR",
+      "venue": "Temple Athens",
+      "reason": "album-cover-rejected"
     }
   ],
   "missingOtherSamples": [
-    {
-      "id": "podiuminfo-497866",
-      "artist": "30 jaar Rob Acda Awards",
-      "date": "2026-12-10",
-      "country": "NL",
-      "venue": "Patronaat",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-496061",
-      "artist": "Jazz For Lunch",
-      "date": "2026-12-10",
-      "country": "NL",
-      "venue": "Muziekgieterij",
-      "reason": "other-lookup-cooldown"
-    },
-    {
-      "id": "podiuminfo-498676",
-      "artist": "Kevin Richard Martin presents 'Sub Zero'",
-      "date": "2026-12-10",
-      "country": "BE",
-      "venue": "Botanique",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-451096",
-      "artist": "Paceshifters play Nirvana",
-      "date": "2026-12-10",
-      "country": "NL",
-      "venue": "Bibelot",
-      "reason": "artist-not-found"
-    },
-    {
-      "id": "podiuminfo-465732",
-      "artist": "Peter & The Test Tube Babies",
-      "date": "2026-12-10",
-      "country": "NL",
-      "venue": "Bibelot",
-      "reason": "ambiguous-artist"
-    },
-    {
-      "id": "podiuminfo-448515",
-      "artist": "Sef",
-      "date": "2026-12-10",
-      "country": "NL",
-      "venue": "AFAS Live",
-      "reason": "ambiguous-artist"
-    },
     {
       "id": "podiuminfo-499753",
       "artist": "ARRA SCUM w/ My Minds Mine",
@@ -583,6 +535,14 @@
       "reason": "artist-not-found"
     },
     {
+      "id": "podiuminfo-504327",
+      "artist": "Artin Muziek & Friends",
+      "date": "2026-12-13",
+      "country": "NL",
+      "venue": "Patronaat",
+      "reason": "artist-not-found"
+    },
+    {
       "id": "podiuminfo-456935",
       "artist": "Filmconcert Hitchcock: The Lodger",
       "date": "2026-12-13",
@@ -700,6 +660,46 @@
       "date": "2026-12-16",
       "country": "NL",
       "venue": "Muziekgieterij",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-501932",
+      "artist": "Zuidas",
+      "date": "2026-12-16",
+      "country": "NL",
+      "venue": "Willemeen",
+      "reason": "artist-not-found"
+    },
+    {
+      "id": "podiuminfo-500080",
+      "artist": "Def",
+      "date": "2026-12-17",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-504213",
+      "artist": "Louis Cole",
+      "date": "2026-12-17",
+      "country": "NL",
+      "venue": "Muziekgieterij",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-491647",
+      "artist": "Salvia",
+      "date": "2026-12-17",
+      "country": "BE",
+      "venue": "Botanique",
+      "reason": "ambiguous-artist"
+    },
+    {
+      "id": "podiuminfo-467089",
+      "artist": "Top 2000 Live - Listen to the Music",
+      "date": "2026-12-17",
+      "country": "NL",
+      "venue": "TivoliVredenburg",
       "reason": "artist-not-found"
     }
   ]

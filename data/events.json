@@ -1,466 +1,7 @@
 {
-  "updatedAt": "2026-11-25T15:51:18.805Z",
+  "updatedAt": "2026-11-26T15:32:32.297Z",
   "source": "podiuminfo+festivalinfo",
   "events": [
-    {
-      "id": "more-92a790a760aa73d3",
-      "artist": "«Με ποιο δικαίωμα;»",
-      "artists": [
-        "«Με ποιο δικαίωμα;»"
-      ],
-      "date": "2026-11-25",
-      "venue": "METRON STAGE",
-      "city": "Gazi",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/me-poio-dikaioma/",
-      "image": "https://www.more.com/getattachment/F93A466B-2A4D-4E7F-8728-3B4F65137623/evg_mepoiodikaioma_1611_5472.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "podiuminfo-479276",
-      "artist": "Chloe Slater",
-      "artists": [
-        "Chloe Slater"
-      ],
-      "date": "2026-11-25",
-      "venue": "Botanique",
-      "city": "Brussels",
-      "country": "BE",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/479276/Chloe-Slater/Botanique/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-477377",
-      "artist": "Chris Eckman",
-      "artists": [
-        "Chris Eckman"
-      ],
-      "date": "2026-11-25",
-      "venue": "TivoliVredenburg",
-      "city": "Utrecht",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/477377/Chris-Eckman/TivoliVredenburg/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-477152",
-      "artist": "Coilguns",
-      "artists": [
-        "Coilguns"
-      ],
-      "date": "2026-11-25",
-      "venue": "dB's",
-      "city": "Utrecht",
-      "country": "NL",
-      "genre": "Metal",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/477152/Coilguns/dBs/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-491947",
-      "artist": "Diana Arbenina",
-      "artists": [
-        "Diana Arbenina"
-      ],
-      "date": "2026-11-25",
-      "venue": "Patronaat",
-      "city": "Haarlem",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/491947/Diana-Arbenina/Patronaat/",
-      "image": "https://patronaat.nl/app/uploads/2026/08/48f3d889-3738-4329-87f8-19f7585e4174.png",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only",
-      "officialUrl": "https://patronaat.nl/event/diana-arbenina-25-11-26/",
-      "officialMatch": {
-        "venue": "patronaat",
-        "confidence": 0.9,
-        "via": "url-date+opengraph"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Patronaat",
-        "url": "https://patronaat.nl/event/diana-arbenina-25-11-26/"
-      }
-    },
-    {
-      "id": "more-4492b222f6fc7c80",
-      "artist": "Dimitris Kalantzis 4et  \"Master's voice\"  Vassilis Tsitsanis",
-      "artists": [
-        "Dimitris Kalantzis 4et  \"Master's voice\"  Vassilis Tsitsanis"
-      ],
-      "date": "2026-11-25",
-      "venue": "Half Note Jazz Club",
-      "city": "Mets",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/dimitris-kalantzis-4et-masters-voice-vassilis-tsitsanis/",
-      "image": "https://www.more.com/getattachment/A328EBA2-5707-4F01-B89F-7F05C57A7094/evg_dkalantzisquartet_1636_899.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "more-ffe9b8a3dbb831ff",
-      "artist": "Ghetto Tales presents: JOJO at EKEI",
-      "artists": [
-        "Ghetto Tales presents: JOJO at EKEI"
-      ],
-      "date": "2026-11-25",
-      "venue": "EKEI",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/ghetto-tales-presents-jojo-at-ekei/",
-      "image": "https://www.more.com/getattachment/6AE45729-2CAF-469E-B927-3C65E4A77204/evg_ghettotalespresentsjojoat_1626_1767.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "podiuminfo-482073",
-      "artist": "Greek",
-      "artists": [
-        "Greek"
-      ],
-      "date": "2026-11-25",
-      "venue": "Paradiso",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/482073/Greek/Paradiso/",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/greek_IMG_3507_website-1782290989.jpg",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only",
-      "officialUrl": "https://www.paradiso.nl/programma/greek/2908034",
-      "officialMatch": {
-        "venue": "paradiso",
-        "confidence": 0.9,
-        "via": "json-ld"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Paradiso",
-        "url": "https://www.paradiso.nl/programma/greek/2908034"
-      }
-    },
-    {
-      "id": "venue-paradiso-2026-11-25-howard-komproe",
-      "artist": "Howard Komproe",
-      "artists": [
-        "Howard Komproe",
-        "Noni Kooiman",
-        "Duvel Duvel",
-        "Prof. Soortkill",
-        "Muziek op Afstand",
-        "DJ Shug La Sheedah"
-      ],
-      "date": "2026-11-25",
-      "venue": "Paradiso",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.paradiso.nl/programma/peper-zuur-srefidensi-editie/2925090",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/peperzuur0coverfoto0website-Large.jpeg",
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Paradiso",
-        "url": "https://www.paradiso.nl/programma/peper-zuur-srefidensi-editie/2925090"
-      },
-      "source": "venue-official",
-      "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/peper-zuur-srefidensi-editie/2925090",
-      "officialMatch": {
-        "venue": "paradiso",
-        "confidence": 1,
-        "via": "json-ld"
-      }
-    },
-    {
-      "id": "podiuminfo-494889",
-      "artist": "Judith Kiddo - Melissa Weikart",
-      "artists": [
-        "Judith Kiddo - Melissa Weikart"
-      ],
-      "date": "2026-11-25",
-      "venue": "Botanique",
-      "city": "Brussels",
-      "country": "BE",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/494889/Judith-Kiddo-Melissa-Weikart/Botanique/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-474073",
-      "artist": "Kid Kapichi - Down The Rabbit Hole Tour",
-      "artists": [
-        "Kid Kapichi - Down The Rabbit Hole Tour",
-        "Kid Kapichi"
-      ],
-      "date": "2026-11-25",
-      "venue": "Melkweg",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/474073/Kid-Kapichi-Down-The-Rabbit-Hole-Tour/Melkweg/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-480071",
-      "artist": "Lost",
-      "artists": [
-        "Lost"
-      ],
-      "date": "2026-11-25",
-      "venue": "Vera",
-      "city": "Groningen",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/480071/Lost-in-Kyiv/Vera/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-462883",
-      "artist": "Shaking Hand",
-      "artists": [
-        "Shaking Hand"
-      ],
-      "date": "2026-11-25",
-      "venue": "Botanique",
-      "city": "Brussels",
-      "country": "BE",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/462883/Shaking-Hand/Botanique/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-448477",
-      "artist": "Shantel & Bucovina Club Soundsystem",
-      "artists": [
-        "Shantel & Bucovina Club Soundsystem"
-      ],
-      "date": "2026-11-25",
-      "venue": "TivoliVredenburg",
-      "city": "Utrecht",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/448477/Shantel-Bucovina-Club-Soundsystem/TivoliVredenburg/",
-      "image": "https://www.doornroosje.nl/app/uploads/2025/11/Shantel-WEB-1200x630.jpg",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "more-08644c495c4e8369",
-      "artist": "Sound of Color #1",
-      "artists": [
-        "Sound of Color #1"
-      ],
-      "date": "2026-11-25",
-      "venue": "Κεντρο ελεγχου τηλεορασεων",
-      "city": "Kypseli",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/sound-of-color-126/",
-      "image": "https://www.more.com/getattachment/2A889775-A88A-4527-B00F-23B29EC7441A/evg_soundofcolor1_0859_2340.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "podiuminfo-478318",
-      "artist": "strongboi",
-      "artists": [
-        "strongboi",
-        "support"
-      ],
-      "date": "2026-11-25",
-      "venue": "Melkweg",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "Indie",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/478318/strongboi-support/Melkweg/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-492326",
-      "artist": "The Bug Club",
-      "artists": [
-        "The Bug Club"
-      ],
-      "date": "2026-11-25",
-      "venue": "Paard",
-      "city": "Den Haag",
-      "country": "NL",
-      "genre": "Indie",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/492326/The-Bug-Club/Paard/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/08/THEBUGCLUB_PRDps_Mailheader.png?t=1794394036&t=1794394036",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only",
-      "officialUrl": "https://www.paard.nl/event/the-bug-club/",
-      "officialMatch": {
-        "venue": "paard",
-        "confidence": 0.9,
-        "via": "json-ld"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Paard",
-        "url": "https://www.paard.nl/event/the-bug-club/"
-      }
-    },
-    {
-      "id": "podiuminfo-454698",
-      "artist": "The Pogues",
-      "artists": [
-        "The Pogues"
-      ],
-      "date": "2026-11-25",
-      "venue": "TivoliVredenburg",
-      "city": "Utrecht",
-      "country": "NL",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/454698/The-Pogues/TivoliVredenburg/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-498837",
-      "artist": "Van Asseldonk Cartel",
-      "artists": [
-        "Van Asseldonk Cartel",
-        "Bawler"
-      ],
-      "date": "2026-11-25",
-      "venue": "Willemeen",
-      "city": "Arnhem",
-      "country": "NL",
-      "genre": "Pop",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/498837/Van-Asseldonk-Cartel-Bawler/Willemeen/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-479014",
-      "artist": "We All Sing ABBA",
-      "artists": [
-        "We All Sing ABBA"
-      ],
-      "date": "2026-11-25",
-      "venue": "AFAS Live",
-      "city": "Amsterdam",
-      "country": "NL",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/479014/We-All-Sing-ABBA/AFAS-Live/",
-      "image": "",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
-    },
-    {
-      "id": "podiuminfo-469751",
-      "artist": "WesGhost",
-      "artists": [
-        "WesGhost"
-      ],
-      "date": "2026-11-25",
-      "venue": "Patronaat",
-      "city": "Haarlem",
-      "country": "NL",
-      "genre": "Alternative",
-      "subgenre": "",
-      "url": "https://www.podiuminfo.nl/concert/469751/WesGhost/Patronaat/",
-      "image": "https://patronaat.nl/app/uploads/2026/05/0F0A3889-2-scaled.jpg",
-      "source": "podiuminfo-agenda",
-      "verification": "agenda-only",
-      "officialUrl": "https://patronaat.nl/event/wesghost-25-11-26/",
-      "officialMatch": {
-        "venue": "patronaat",
-        "confidence": 0.9,
-        "via": "url-date+opengraph"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Patronaat",
-        "url": "https://patronaat.nl/event/wesghost-25-11-26/"
-      }
-    },
-    {
-      "id": "more-d6520be517971351",
-      "artist": "ΔΗΜΗΤΡΗΣ ΣΑΜΟΛΗΣ",
-      "artists": [
-        "ΔΗΜΗΤΡΗΣ ΣΑΜΟΛΗΣ"
-      ],
-      "date": "2026-11-25",
-      "venue": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "city": "N. Kosmos",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/dimitris-samolis-live-2/",
-      "image": "https://www.more.com/getattachment/97964947-CE63-45F7-9F17-79F351BCB517/evg_demetressamoleslive_1220_6019.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
-    {
-      "id": "more-89593556156520c9",
-      "artist": "Μάγδα Βαρούχα ζωντανά στην Αθήνα",
-      "artists": [
-        "Μάγδα Βαρούχα ζωντανά στην Αθήνα"
-      ],
-      "date": "2026-11-25",
-      "venue": "Klakaz",
-      "city": "Athens",
-      "country": "GR",
-      "genre": "",
-      "subgenre": "",
-      "url": "https://www.more.com/gr-en/tickets/music/magda-barouxa-zontana-stin-athina/",
-      "image": "https://www.more.com/getattachment/B8A9EF70-BB1D-483F-B1DD-F6322AA969FC/evg_magdabaroukhazontanastena_1811_4879.png",
-      "source": "more",
-      "verification": "source-catalog"
-    },
     {
       "id": "more-7034b634c57214a1",
       "artist": "“Rock’n’Roll Night Specials” - LEAVING TOMORROW",
@@ -748,6 +289,24 @@
       "image": "https://www.more.com/getattachment/23E0E517-063D-44D1-AD99-3BB0BCD45455/evg_karaokenightatstoryboard_1821_6015.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "rocking-20261126-27607",
+      "artist": "Kostas Tziros & The Bankrupt Lovers",
+      "artists": [
+        "Kostas Tziros & The Bankrupt Lovers",
+        "Κρόνιζεφ"
+      ],
+      "date": "2026-11-26",
+      "venue": "ΕΞΑ",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2026/11/26/27607",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
     },
     {
       "id": "podiuminfo-449444",
@@ -1896,15 +1455,15 @@
         "NAPALM DEATH"
       ],
       "date": "2026-11-27",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/napalm-death/",
+      "url": "https://www.more.com/gr-en/tickets/music/napalm-death-athens/",
       "image": "https://www.more.com/getattachment/A4781B06-D555-4C71-AF91-FD66EA957D55/evg_napalmdeathathens_1044_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-474760",
@@ -2364,7 +1923,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/afro-fest/2947236"
+      "officialUrl": "https://www.paradiso.nl/programma/afro-fest/2947236",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-462646",
@@ -3425,21 +2989,20 @@
     },
     {
       "id": "more-0d8bc4aec4b5a7ea",
-      "artist": "ΠΑΙΔΙ ΤΡΑΥΜΑ",
+      "artist": "Παιδί Τραύμα",
       "artists": [
-        "ΠΑΙΔΙ ΤΡΑΥΜΑ",
         "Παιδί Τραύμα"
       ],
       "date": "2026-11-28",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Alternative",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/paidi-travma/",
+      "url": "https://www.more.com/gr-en/tickets/music/paidi-trauma-live-gagarin-205/",
       "image": "https://www.more.com/getattachment/CE71D090-E1A4-4A4F-88E0-97107E400AF8/evg_paiditraumalivegagarin205_1943_3524.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "more-9c7a8d7288c179c3",
@@ -3472,6 +3035,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/arab-strap-live-in-athens/",
       "image": "https://www.more.com/getattachment/5646BEE7-DDFE-41A2-9E73-6B1926B4332D/evg_arabstrapliveinathens_1629_1881.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-bf88442c6ce2e0c9",
+      "artist": "Asmosis Quartet at Reei Music Sessions",
+      "artists": [
+        "Asmosis Quartet at Reei Music Sessions"
+      ],
+      "date": "2026-11-29",
+      "venue": "Ρεει Χωρος Τεχνων",
+      "city": "Athena",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/asmosis-quartet-at-reei-music-sessions/",
+      "image": "https://www.more.com/getattachment/892680FB-D610-48C0-AC3A-C3D59F3E5F1B/evg_asmosisquartetatreeimusic_1252_5977.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -3606,7 +3186,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/druk-2026/2843536"
+      "officialUrl": "https://www.paradiso.nl/programma/druk-2026/2843536",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-450977",
@@ -3806,7 +3391,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-0d87290e89a45107",
+      "id": "fuzzclub-2026-11-29-nile",
       "artist": "NILE",
       "artists": [
         "NILE"
@@ -3991,9 +3576,21 @@
       "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/487822/Spike-Fuck/Paradiso/",
-      "image": "",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/LEAD-PRESS-SHOT-Spike-Fuck-2026-Dylan-Marriott-1793109572.jpg",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/spike-fuck/2915085",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paradiso",
+        "url": "https://www.paradiso.nl/programma/spike-fuck/2915085"
+      }
     },
     {
       "id": "podiuminfo-484177",
@@ -4107,7 +3704,13 @@
       "url": "https://www.podiuminfo.nl/concert/452955/The-Veils/Paradiso/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/02/The-Veils-persfoto_web-1200x630.jpg",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/the-veils/2838081",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-486742",
@@ -4405,9 +4008,21 @@
       "genre": "Alternative",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/476509/Haunt-Me/Paradiso/",
-      "image": "",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Haunt-Me-photo-1780304268.jpeg",
       "source": "podiuminfo-agenda",
-      "verification": "agenda-only"
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paradiso.nl/programma/haunt-me/2898537",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paradiso",
+        "url": "https://www.paradiso.nl/programma/haunt-me/2898537"
+      }
     },
     {
       "id": "more-a6a464e23a09ba6c",
@@ -4866,6 +4481,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/ixoxromies-partitoures-tou-xorou/",
       "image": "https://www.more.com/getattachment/3FD272AE-9157-4163-B68C-05ECBF345414/evg_ekhokhromiespartitouresto_1558_1320.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-1148cb888cd1cf06",
+      "artist": "\"Στη Μπουζού του Παραδείσου\"",
+      "artists": [
+        "\"Στη Μπουζού του Παραδείσου\""
+      ],
+      "date": "2026-12-02",
+      "venue": "Πολυχωρος Τεχνης ΘΕΑΤΡΑΛΕ",
+      "city": "N. Kosmos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/sti-mpouzou-tou-paradeisou-live-music-show/",
+      "image": "https://www.more.com/getattachment/2F8615E6-046A-4995-B7C6-71D9086E2A14/evg_stempouzoutouparadeisouli_1301_4780.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -5413,6 +5045,30 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "venue-doornroosje-2026-12-03-beestfeest",
+      "artist": "BeestFeest",
+      "artists": [
+        "BeestFeest"
+      ],
+      "date": "2026-12-03",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/beestfeest-36/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/DOORNROOSJE_beestfeest_banner_web.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Doornroosje",
+        "url": "https://www.doornroosje.nl/event/beestfeest-36/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/beestfeest-36/"
     },
     {
       "id": "podiuminfo-480236",
@@ -6030,15 +5686,15 @@
         "THE OCEAN"
       ],
       "date": "2026-12-03",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Post-Rock / Experimental",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/the-ocean/",
+      "url": "https://www.more.com/gr-en/tickets/music/the-ocean-gagarin/",
       "image": "https://www.more.com/getattachment/673B2AB8-530E-4F1C-9D69-88EF74C06ABD/evg_theocean_1219_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-478345",
@@ -6455,21 +6111,20 @@
     },
     {
       "id": "more-db97e1510031cea8",
-      "artist": "GRIPIN Live",
+      "artist": "Gripin",
       "artists": [
-        "GRIPIN Live",
         "Gripin"
       ],
       "date": "2026-12-04",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Rock",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/gripin-live/",
-      "image": "https://gagarin205.gr/wp-content/uploads/2026/10/GRIPIN.jpg",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "url": "https://www.more.com/gr-en/tickets/music/gripin-live-gagarin205/",
+      "image": "https://www.more.com/getattachment/DF60F6CB-A89C-4235-A184-F3CD65797CC7/evg_gripinlivegagarin205_0911_5296.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-494235",
@@ -6832,6 +6487,23 @@
         "confidence": 0.9,
         "via": "json-ld"
       }
+    },
+    {
+      "id": "podiuminfo-504267",
+      "artist": "Paardcafé: Club 3voor12 Den Haag",
+      "artists": [
+        "Paardcafé: Club 3voor12 Den Haag"
+      ],
+      "date": "2026-12-04",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504267/Paardcafe-Club-3voor12-Den-Haag/Paard/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "more-56a2957ef9744cc3",
@@ -8694,21 +8366,20 @@
     },
     {
       "id": "more-3000821799bfbcca",
-      "artist": "KOVACS live in Athens",
+      "artist": "KOVACS",
       "artists": [
-        "KOVACS live in Athens",
         "KOVACS"
       ],
       "date": "2026-12-07",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Pop",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/kovacs-live-in-athens/",
-      "image": "https://gagarin205.gr/wp-content/uploads/2026/06/KOVACS-ATHENS.jpg",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "url": "https://www.more.com/gr-en/tickets/music/kovacs-live-athina/",
+      "image": "https://www.more.com/getattachment/C04CE2E4-24BF-4860-8B19-2A30FB90DFB9/evg_kovacslive-athena_1030_1972.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-494427",
@@ -10155,6 +9826,23 @@
       }
     },
     {
+      "id": "podiuminfo-504264",
+      "artist": "Popradar Academy XXL: Live Show Feedback Extravaganza",
+      "artists": [
+        "Popradar Academy XXL: Live Show Feedback Extravaganza"
+      ],
+      "date": "2026-12-10",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504264/Popradar-Academy-XXL-Live-Show-Feedback-Extravaganza/Paard/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-474203",
       "artist": "Prins S. en De Geit",
       "artists": [
@@ -10264,6 +9952,23 @@
       }
     },
     {
+      "id": "podiuminfo-504210",
+      "artist": "ULTRAJAZZ x TivoliVredenburg",
+      "artists": [
+        "ULTRAJAZZ x TivoliVredenburg"
+      ],
+      "date": "2026-12-10",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504210/ULTRAJAZZ-x-TivoliVredenburg/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "more-70165f1ee210a785",
       "artist": "Άρης Γραικούσης-Εικαστικές αφηγήσεις σε νότες",
       "artists": [
@@ -10311,6 +10016,23 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/thraks-pankc-sto-kyttaro/",
       "image": "https://www.more.com/getattachment/07573528-81D0-4A0C-AB81-6745717A2C86/evg_thrakspankcstokuttarolive_1403_3549.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-35bf51264d90ace8",
+      "artist": "ΚΑΛΟΓΕΡΑΚΙΑ",
+      "artists": [
+        "ΚΑΛΟΓΕΡΑΚΙΑ"
+      ],
+      "date": "2026-12-10",
+      "venue": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "city": "N. Kosmos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/kalogerakia-ta-paidia-pou-agapiountai-stauros-tou-notou-plus-1/",
+      "image": "https://www.more.com/getattachment/EAF7E55D-1FC3-4EEB-ADAB-727E14C87EC8/evg_kalogerakiatapaidiapouaga_1402_5119.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -11659,6 +11381,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "more-7281976279ea48ae",
+      "artist": "Georgia Spiropoulos: FANTASMAGORIA SONORA – a dramaturgy of listening",
+      "artists": [
+        "Georgia Spiropoulos: FANTASMAGORIA SONORA – a dramaturgy of listening"
+      ],
+      "date": "2026-12-12",
+      "venue": "Κεντρο ελεγχου τηλεορασεων",
+      "city": "Kypseli",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/fantasmagoria-sonora-a-dramaturgy-of-listening/",
+      "image": "https://www.more.com/getattachment/AEA2AF0F-F0EA-45D7-A5E3-D6FEED4EA02D/evg_fantasmagoriasonora-adram_1016_2340.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "venue-013-2026-12-12-gezellige-clubtempo-xxl-2026",
       "artist": "Gezellige Clubtempo XXL 2026",
       "artists": [
@@ -12175,15 +11914,15 @@
         "VODKA JUNIORS"
       ],
       "date": "2026-12-12",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Punk",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/vodka-juniors-3/",
+      "url": "https://www.more.com/gr-en/tickets/music/vodka-juniors-live-in-athens-ft-junkheart/",
       "image": "https://www.more.com/getattachment/9D283C3E-9EF2-4A68-A747-B4C53D32BB7C/evg_vodkajuniorsliveinathensf_1234_2006.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-patronaat-2026-12-12-yuna-xl",
@@ -12232,6 +11971,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "more-7ac25fd834127488",
+      "artist": "Οι Δερβίσηδες & η Αλίκη",
+      "artists": [
+        "Οι Δερβίσηδες & η Αλίκη"
+      ],
+      "date": "2026-12-12",
+      "venue": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "city": "Kypseli",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/oi-derbisides-i-aliki/",
+      "image": "https://www.more.com/getattachment/D525BE0B-AEB8-429F-AE95-80DC23E2D873/evg_oiderbisedesealike_1745_1059.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-f43e944ac028c9d3",
       "artist": "Παναγιώτης Μπερλής (Διάφανα Κρίνα) X-EPAFIS",
       "artists": [
@@ -12265,6 +12021,23 @@
       "image": "https://www.floyd.gr/wp-content/uploads/2026/11/cropped-image-1.jpg",
       "source": "floyd-calendar",
       "verification": "venue-calendar"
+    },
+    {
+      "id": "podiuminfo-504327",
+      "artist": "Artin Muziek & Friends",
+      "artists": [
+        "Artin Muziek & Friends"
+      ],
+      "date": "2026-12-13",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504327/Artin-Muziek-Friends/Patronaat/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "podiuminfo-453495",
@@ -13742,6 +13515,23 @@
       }
     },
     {
+      "id": "podiuminfo-504213",
+      "artist": "Louis Cole",
+      "artists": [
+        "Louis Cole"
+      ],
+      "date": "2026-12-17",
+      "venue": "Muziekgieterij",
+      "city": "Maastricht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504213/Louis-Cole/Muziekgieterij/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-464771",
       "artist": "MY BABY",
       "artists": [
@@ -13798,6 +13588,23 @@
         "confidence": 0.9,
         "via": "json-ld"
       }
+    },
+    {
+      "id": "more-591e798aa8a51231",
+      "artist": "Physical Plastic",
+      "artists": [
+        "Physical Plastic"
+      ],
+      "date": "2026-12-17",
+      "venue": "Κεντρο ελεγχου τηλεορασεων",
+      "city": "Kypseli",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/physical-plastic-marissa-bili/",
+      "image": "https://www.more.com/getattachment/93D87721-F325-4683-894C-5BB34802C83A/evg_physicalplasticmarissabili_1906_2340.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-490588",
@@ -14564,22 +14371,38 @@
       "verification": "agenda-only"
     },
     {
-      "id": "more-8e41596eddb94cb4",
-      "artist": "OLD MAN'S CHILD",
+      "id": "podiuminfo-504214",
+      "artist": "No Screaming At Pigeons",
       "artists": [
-        "OLD MAN'S CHILD",
+        "No Screaming At Pigeons"
+      ],
+      "date": "2026-12-18",
+      "venue": "Vera",
+      "city": "Groningen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504214/No-Screaming-At-Pigeons/Vera/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "more-8e41596eddb94cb4",
+      "artist": "Old Man's Child",
+      "artists": [
         "Old Man's Child"
       ],
       "date": "2026-12-18",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/old-mans-child/",
+      "url": "https://www.more.com/gr-en/tickets/music/omc-live-in-athens/",
       "image": "https://www.more.com/getattachment/85296D06-D9BD-4864-B00E-1B0ADDEE7745/evg_oldmanschild/yothiria/dec_1158_4318.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "more-e911d334cf445e6c",
@@ -14790,6 +14613,40 @@
       "subgenre": "",
       "url": "https://www.more.com/gr-en/tickets/music/mani-meta-ta-mesanyxta-rematch/",
       "image": "https://www.more.com/getattachment/857228C3-8A7F-4835-A7E9-F67143C47A9D/evg_manimetatamesanukhtaremat_1523_4594.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-3b73ff87488bada5",
+      "artist": "ΜΑΝΟΣ ΠΥΡΟΒΟΛΑΚΗΣ",
+      "artists": [
+        "ΜΑΝΟΣ ΠΥΡΟΒΟΛΑΚΗΣ"
+      ],
+      "date": "2026-12-18",
+      "venue": "Stage7",
+      "city": "Athena",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/manos-pyrobolakis-3/",
+      "image": "https://www.more.com/getattachment/EDF175A4-B9E6-419D-83D4-C9F0D5FC5153/evg_manospurobolakes_1626_5243.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "more-55dec9b9ef99d7dc",
+      "artist": "ΜΑΡΙΝΑ ΒΟΛΟΥΔΑΚΗ",
+      "artists": [
+        "ΜΑΡΙΝΑ ΒΟΛΟΥΔΑΚΗ"
+      ],
+      "date": "2026-12-18",
+      "venue": "Doryphora Gig Space",
+      "city": "Egaleo",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/marina-boloudaki-anepafes-synallages/",
+      "image": "https://www.more.com/getattachment/9496EA4B-2338-4FBA-851C-DD514BE9B1BE/evg_marinaboloudakeanepaphess_1817_5711.png",
       "source": "more",
       "verification": "source-catalog"
     },
@@ -15218,21 +15075,20 @@
     },
     {
       "id": "more-59c33c1dd5f58bc7",
-      "artist": "JAMESON CONNECTS \\ GOD IS AN ASTRONAUT",
+      "artist": "JAMESON CONNECTS \\\\ GOD IS AN ASTRONAUT",
       "artists": [
-        "JAMESON CONNECTS \\ GOD IS AN ASTRONAUT",
         "JAMESON CONNECTS \\\\ GOD IS AN ASTRONAUT"
       ],
       "date": "2026-12-19",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/jameson-connects-god-is-an-astronaut/",
+      "url": "https://www.more.com/gr-en/tickets/music/jameson-connects-god-is-an-astronaut/",
       "image": "https://www.more.com/getattachment/2E14EF20-66AB-48A1-94BE-BB93103A5F51/evg_jamesonconnectsgodisanast_1509_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-462721",
@@ -15309,6 +15165,23 @@
         "via": "json-ld"
       },
       "genreEvidence": "metadata"
+    },
+    {
+      "id": "podiuminfo-504215",
+      "artist": "Krimewave",
+      "artists": [
+        "Krimewave"
+      ],
+      "date": "2026-12-19",
+      "venue": "Vera",
+      "city": "Groningen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504215/Krimewave/Vera/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "podiuminfo-474766",
@@ -15871,15 +15744,15 @@
         "Dukys x Billy Sio"
       ],
       "date": "2026-12-20",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/dukys-x-billy-sio/",
+      "url": "https://www.more.com/gr-en/tickets/music/dukys-x-billy-sio-kysion-iii-tour/",
       "image": "https://www.more.com/getattachment/095AACB0-EC37-4017-9191-CFAC226D3AE5/evg_dukysxbillysio-kysioniiit_1300_4594.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-453066",
@@ -16170,6 +16043,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-b41a0cec088c035f",
+      "artist": "THE 3 TENORS",
+      "artists": [
+        "THE 3 TENORS"
+      ],
+      "date": "2026-12-21",
+      "venue": "Stage7",
+      "city": "Athena",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/the-3-tenors/",
+      "image": "https://www.more.com/getattachment/50CBE711-1088-49AF-85B9-25B4B7A79B5C/evg_the3tenors_1517_5243.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-e648107357ca9a22",
       "artist": "GHOSTFACE KILLAH",
       "artists": [
@@ -16270,6 +16160,23 @@
       "imageSource": ""
     },
     {
+      "id": "more-540ac0f353c282a0",
+      "artist": "ΑΓΓΕΛΙΚΗ ΤΟΥΜΠΑΝΑΚΗ",
+      "artists": [
+        "ΑΓΓΕΛΙΚΗ ΤΟΥΜΠΑΝΑΚΗ"
+      ],
+      "date": "2026-12-22",
+      "venue": "Kyttaro Live",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/aggeliki-toumpanaki-live-kykloi-koinotites/",
+      "image": "https://www.more.com/getattachment/D9E6AE52-C2D7-4481-9DBF-3326341012FF/evg_aggeliketoumpanakekukloik_1950_3608.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "more-8c00e131131bab77",
       "artist": "ΣΟΦΙΑ ΜΑΝΟΥΣΑΚΗ - GAZARTE",
       "artists": [
@@ -16350,7 +16257,7 @@
       "verification": "agenda-only"
     },
     {
-      "id": "anclub-2026-12-23-greek%20scene%20sings%20for%20ozzy%20fest%20vol%202",
+      "id": "more-4e6fa66eb79bcb54",
       "artist": "GREEK SCENE SINGS FOR OZZY FEST Vol 2",
       "artists": [
         "GREEK SCENE SINGS FOR OZZY FEST Vol 2"
@@ -16700,6 +16607,23 @@
       }
     },
     {
+      "id": "more-5fbf9400bc399d62",
+      "artist": "ΠΑΛΚΟ",
+      "artists": [
+        "ΠΑΛΚΟ"
+      ],
+      "date": "2026-12-25",
+      "venue": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
+      "city": "N. Kosmos",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/palko-stauros-tou-notou-club-1/",
+      "image": "https://www.more.com/getattachment/1A452204-C6C8-4416-B37F-440CC6B3F9BA/evg_palkostaurostounotouclub_1335_1512.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "venue-013-2026-12-26-4am",
       "artist": "4AM.",
       "artists": [
@@ -17018,7 +16942,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-e2a0c911d8965d4c",
+      "id": "anclub-2026-12-27-eternal%20conspiracy%20of%20warheads%20release%20show%20chemical%20infection%20standards%20of%20brut",
       "artist": "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality",
       "artists": [
         "Eternal (Conspiracy Of Warheads Release Show) / Chemical Infection / Standards Of Brutality"
@@ -17180,21 +17104,20 @@
     },
     {
       "id": "more-21218f9b173fa1f5",
-      "artist": "TANG-RAM",
+      "artist": "Tang-Ram",
       "artists": [
-        "TANG-RAM",
         "Tang-Ram"
       ],
       "date": "2026-12-27",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Hip-Hop",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/tang-ram/",
+      "url": "https://www.more.com/gr-en/tickets/music/tang-ram-27-years-anniversary-athens/",
       "image": "https://www.more.com/getattachment/7EC09B7A-46D4-461E-87C9-519158DCC2D0/evg_tang-ram27yearsanniversar_1822_4594.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-450988",
@@ -17777,6 +17700,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "anclub-2026-12-30-tribute%20to%20dimebag",
+      "artist": "TRIBUTE TO DIMEBAG",
+      "artists": [
+        "TRIBUTE TO DIMEBAG"
+      ],
+      "date": "2026-12-30",
+      "venue": "AN Club",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.anclub.gr/events/tribute-to-dimebag",
+      "image": "https://cdn.prod.website-files.com/62c6793bda9d6e114dad28a1/6b08161c186fc7142e2f82f9_iNSTA-POst_Dimebag%2030-Dec-%20blue%20version.jpg",
+      "source": "anclub-index",
+      "verification": "venue-index"
+    },
+    {
       "id": "venue-paradiso-2026-12-30-voorheen-nacht-van-het-absurdisme",
       "artist": "Voorheen Nacht van het Absurdisme",
       "artists": [
@@ -18076,6 +18016,23 @@
         "confidence": 0.9,
         "via": "url-date+opengraph"
       }
+    },
+    {
+      "id": "more-59171aae22631057",
+      "artist": "UV36 NYE MARATHON with STEF MENDESIDIS (LIVE) & ÜBERKIKZ",
+      "artists": [
+        "UV36 NYE MARATHON with STEF MENDESIDIS (LIVE) & ÜBERKIKZ"
+      ],
+      "date": "2027-01-01",
+      "venue": "Universe | S-2000",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/uv36-nye-marathon-with-uberkikz-stef-mendesidis-live/",
+      "image": "https://www.more.com/getattachment/CE8368A1-CD51-4156-A823-777C9ECD80A0/evg_uv36nyemarathonuberkikzst_1514_5747.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "more-2cc3f8f8bf0a03da",
@@ -18548,6 +18505,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-504217",
+      "artist": "The Pink Stones",
+      "artists": [
+        "The Pink Stones"
+      ],
+      "date": "2027-01-07",
+      "venue": "Vera",
+      "city": "Groningen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504217/The-Pink-Stones/Vera/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-502460",
       "artist": "Wim Naus en Lottie Boermans",
       "artists": [
@@ -18861,21 +18835,20 @@
     },
     {
       "id": "more-35d180071a2616e4",
-      "artist": "Anorimoi \"Γυροβύζιον\" live",
+      "artist": "Anorimoi",
       "artists": [
-        "Anorimoi \"Γυροβύζιον\" live",
         "Anorimoi"
       ],
       "date": "2027-01-09",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/anorimoi-gyrovyzion-live/",
-      "image": "https://gagarin205.gr/wp-content/uploads/2026/10/ANORIMOI.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "url": "https://www.more.com/gr-en/tickets/music/anorimoiath2027/",
+      "image": "https://www.more.com/getattachment/0D477316-C09C-4BBD-8FC5-64D5E16A011F/evg_anorimoigurobuzionliveste_1747_1801.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "rocking-20270109-27459",
@@ -20040,6 +20013,23 @@
       }
     },
     {
+      "id": "rocking-20270114-27606",
+      "artist": "Savatage Greek Legion Live Tribute & Παρουσίαση \"A Thousand Tales Untold\"",
+      "artists": [
+        "Savatage Greek Legion Live Tribute & Παρουσίαση \"A Thousand Tales Untold\""
+      ],
+      "date": "2027-01-14",
+      "venue": "Κύτταρο",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2027/1/14/27606",
+      "image": "",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
       "id": "podiuminfo-453878",
       "artist": "ACinDC",
       "artists": [
@@ -20331,6 +20321,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-4ca8c30e0aa8907c",
+      "artist": "EMO VS KAGOURES PARTY",
+      "artists": [
+        "EMO VS KAGOURES PARTY"
+      ],
+      "date": "2027-01-16",
+      "venue": "AUX CLUB",
+      "city": "Athena",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/emo-vs-kagoures-party/",
+      "image": "https://www.more.com/getattachment/B0C51C79-ADAC-4972-8608-3E9EF904D2C0/evg_emovskagouresparty_1306_5933.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-493286",
       "artist": "Julian Sas",
       "artists": [
@@ -20465,7 +20472,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/163772/only-10s"
+      "officialUrl": "https://www.013.nl/programma/163772/only-10s",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-451020",
@@ -21808,7 +21820,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/special-social-club/2955358"
+      "officialUrl": "https://www.paradiso.nl/programma/special-social-club/2955358",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 1,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-494182",
@@ -22126,6 +22143,23 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "more-3db58ac5a522a986",
+      "artist": "AU PAIRS",
+      "artists": [
+        "AU PAIRS"
+      ],
+      "date": "2027-01-23",
+      "venue": "gazarte",
+      "city": "Gazi",
+      "country": "GR",
+      "genre": "Rock",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/au-pairs-live-in-athens/",
+      "image": "https://www.more.com/getattachment/74329D1B-2656-4011-B1AF-4CCE2842F4AD/evg_aupairsliveinathens_1728_1881.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-482287",
@@ -22702,6 +22736,30 @@
       "verification": "third-party-agenda"
     },
     {
+      "id": "venue-effenaar-2027-01-24-growth-dance-competition",
+      "artist": "Growth Dance Competition",
+      "artists": [
+        "Growth Dance Competition"
+      ],
+      "date": "2027-01-24",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-1",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-1"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-1"
+    },
+    {
       "id": "podiuminfo-501784",
       "artist": "Hamid Motebassem & Ensemble",
       "artists": [
@@ -22827,6 +22885,35 @@
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-504302",
+      "artist": "The Hague Songbook Exchange",
+      "artists": [
+        "The Hague Songbook Exchange"
+      ],
+      "date": "2027-01-24",
+      "venue": "Paard",
+      "city": "Den Haag",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504302/The-Hague-Songbook-Exchange/Paard/",
+      "image": "https://www.paard.nl/wp-content/uploads/2026/11/THSE03-Header-1.jpg",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
+      "officialUrl": "https://www.paard.nl/event/the-hague-songbook-exchange-5/",
+      "officialMatch": {
+        "venue": "paard",
+        "confidence": 0.9,
+        "via": "json-ld"
+      },
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Paard",
+        "url": "https://www.paard.nl/event/the-hague-songbook-exchange-5/"
+      }
     },
     {
       "id": "podiuminfo-497728",
@@ -23031,7 +23118,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.paradiso.nl/programma/bawler-rover-onslow-katie-bitchcoin-glitz/2956373"
+      "officialUrl": "https://www.paradiso.nl/programma/bawler-rover-onslow-katie-bitchcoin-glitz/2956373",
+      "officialMatch": {
+        "venue": "paradiso",
+        "confidence": 1,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-495248",
@@ -24077,21 +24169,20 @@
     },
     {
       "id": "more-485067d93554ee5d",
-      "artist": "BLAKAUT | ΣΗΜΕΙΟ ΜΗΔΕΝ - ΕΤΟΣ ΔΕΚΑ",
+      "artist": "BLAKAUT",
       "artists": [
-        "BLAKAUT | ΣΗΜΕΙΟ ΜΗΔΕΝ - ΕΤΟΣ ΔΕΚΑ",
         "BLAKAUT"
       ],
       "date": "2027-01-30",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Alternative",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/blakaut-simeio-miden-etos-deka/",
-      "image": "https://gagarin205.gr/wp-content/uploads/2026/10/BLAKAUT.jpg",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "url": "https://www.more.com/gr-en/tickets/music/blakaut-simeio-miden-etos-deka/",
+      "image": "https://www.more.com/getattachment/8658258D-8494-4FCC-9231-AD3EB22C9CC8/evg_blakautsemeiomeden-etosde_1544_854.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-485373",
@@ -24452,6 +24543,23 @@
         "text": "Image: Effenaar",
         "url": "https://www.effenaar.nl/agenda/thesmithspresumably"
       }
+    },
+    {
+      "id": "podiuminfo-504405",
+      "artist": "Tony Junior",
+      "artists": [
+        "Tony Junior"
+      ],
+      "date": "2027-01-30",
+      "venue": "Melkweg",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504405/Tony-Junior/Melkweg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "more-d397dc7d801a9ab5",
@@ -26103,6 +26211,23 @@
       }
     },
     {
+      "id": "podiuminfo-504347",
+      "artist": "Super-Sonic Jam",
+      "artists": [
+        "Super-Sonic Jam"
+      ],
+      "date": "2027-02-05",
+      "venue": "Paradiso",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504347/Super-Sonic-Jam/Paradiso/",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Munaycha-Draaibas_Paradiso2-1.jpg",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-483167",
       "artist": "The Black Dahlia Murder - Two decades of Nocturnal",
       "artists": [
@@ -26442,21 +26567,20 @@
     },
     {
       "id": "more-c71718d4f71a41ff",
-      "artist": "Rory Gallagher - Band of Friends",
+      "artist": "Rory Gallagher-Band of Friends-Gagarin",
       "artists": [
-        "Rory Gallagher - Band of Friends",
         "Rory Gallagher-Band of Friends-Gagarin"
       ],
       "date": "2027-02-06",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/rory-gallagher-band-of-friends-4/",
-      "image": "https://gagarin205.gr/wp-content/uploads/2026/10/RORY-GALLAGHER-BAND_OF_FRIENDS-2027.jpg",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "url": "https://www.more.com/gr-en/tickets/music/rory-gallagher-band-of-friends-gagarin-1/",
+      "image": "https://www.more.com/getattachment/789AB473-41F1-45AC-99A3-118A819192A8/evg_rorygallagher-bandoffrien_1353_3700.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "podiuminfo-458231",
@@ -27911,7 +28035,7 @@
       }
     },
     {
-      "id": "anclub-2027-02-12-%CE%B5%CE%B9%CF%83%CE%B2%CE%BF%CE%BB%CE%B5%CE%B1%CF%82%20friends%2040%20%CF%87%CF%81%CE%BF%CE%BD%CE%",
+      "id": "more-68bd5d3c50a0944e",
       "artist": "ΕΙΣΒΟΛΕΑΣ & FRIENDS - ''40 ΧΡΟΝΙΑ AN CLUB''",
       "artists": [
         "ΕΙΣΒΟΛΕΑΣ & FRIENDS - 40 ΧΡΟΝΙΑ AN CLUB",
@@ -28046,6 +28170,23 @@
       "genre": "Electronic",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/502086/Ghost-Cop/Willemeen/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-504276",
+      "artist": "Humpty Dumpty Records 20 ans",
+      "artists": [
+        "Humpty Dumpty Records 20 ans"
+      ],
+      "date": "2027-02-13",
+      "venue": "Botanique",
+      "city": "Brussels",
+      "country": "BE",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504276/Humpty-Dumpty-Records-20-ans/Botanique/",
       "image": "",
       "source": "podiuminfo-agenda",
       "verification": "agenda-only"
@@ -28544,6 +28685,30 @@
       "image": "",
       "source": "rocking",
       "verification": "third-party-agenda"
+    },
+    {
+      "id": "venue-effenaar-2027-02-14-growth-dance-competition",
+      "artist": "Growth Dance Competition",
+      "artists": [
+        "Growth Dance Competition"
+      ],
+      "date": "2027-02-14",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-2",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-2"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-2"
     },
     {
       "id": "podiuminfo-494110",
@@ -29578,6 +29743,23 @@
       "verification": "source-catalog"
     },
     {
+      "id": "podiuminfo-504221",
+      "artist": "Born From Pain",
+      "artists": [
+        "Born From Pain"
+      ],
+      "date": "2027-02-19",
+      "venue": "Baroeg",
+      "city": "Rotterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504221/Born-From-Pain/Baroeg/",
+      "image": "https://patronaat.nl/app/uploads/2026/11/Born-From-Pain-picture-scaled.jpg",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "podiuminfo-495829",
       "artist": "Bullet For My Valentine",
       "artists": [
@@ -29933,7 +30115,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/163821/pi%C3%B1a"
+      "officialUrl": "https://www.013.nl/programma/163821/pi%C3%B1a",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "podiuminfo-472984",
@@ -30095,7 +30282,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "anclub-2027-02-19-%CF%87%CE%B1%CF%84%CE%B6%CE%B7%CF%86%CF%81%CE%B1%CE%B3%CE%BA%CE%B5%CF%84%CE%B1%2040%20%CF%87%CF%81%C",
+      "id": "more-4ee76c8dc6a69da1",
       "artist": "ΧΑΤΖΗΦΡΑΓΚΕΤΑ - ''40 ΧΡΟΝΙΑ ΑΝ CLUB''",
       "artists": [
         "ΧΑΤΖΗΦΡΑΓΚΕΤΑ - ''40 ΧΡΟΝΙΑ ΑΝ CLUB''"
@@ -30600,7 +30787,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-90a1e56a65e8ab45",
+      "id": "anclub-2027-02-20-%CF%84%CE%B1%CE%BA%CE%B9%20%CF%84%CF%83%CE%B1%CE%BD%20dj%20alx%2040%20%CF%87%CF%81%CE%BF%CE%BD%CE%B9",
       "artist": "ΤΑΚΙ ΤΣΑΝ & DJ ALX - ''40 ΧΡΟΝΙΑ AN CLUB''",
       "artists": [
         "ΤΑΚΙ ΤΣΑΝ & DJ ALX - 40 ΧΡΟΝΙΑ AN CLUB",
@@ -33110,6 +33297,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "podiuminfo-504226",
+      "artist": "Girl",
+      "artists": [
+        "Girl"
+      ],
+      "date": "2027-02-28",
+      "venue": "Botanique",
+      "city": "Brussels",
+      "country": "BE",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/504226/Girl-in-the-Year-Above/Botanique/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
       "id": "rocking-20270228-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
       "artists": [
@@ -33582,7 +33786,7 @@
       "venue": "Doornroosje",
       "city": "Nijmegen",
       "country": "NL",
-      "genre": "",
+      "genre": "R&B / Soul",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/502982/Robert-Finley/Doornroosje/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-6-1200x630.jpg",
@@ -33727,6 +33931,23 @@
       "verification": "agenda-only"
     },
     {
+      "id": "more-e054bd58ba244f49",
+      "artist": "LEO MIDDEA",
+      "artists": [
+        "LEO MIDDEA"
+      ],
+      "date": "2027-03-03",
+      "venue": "gazarte",
+      "city": "Gazi",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/leo-middea-live-in-athens/",
+      "image": "https://www.more.com/getattachment/94796854-BFD5-488A-AE86-AC71B4EE458B/evg_leomiddealiveinathens_1451_1881.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
       "id": "podiuminfo-493475",
       "artist": "Mike Lindup Trio",
       "artists": [
@@ -33839,7 +34060,7 @@
       "venue": "TivoliVredenburg",
       "city": "Utrecht",
       "country": "NL",
-      "genre": "",
+      "genre": "R&B / Soul",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/502795/Robert-Finley/TivoliVredenburg/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-6-1200x630.jpg",
@@ -34161,7 +34382,7 @@
       "venue": "Melkweg",
       "city": "Amsterdam",
       "country": "NL",
-      "genre": "",
+      "genre": "R&B / Soul",
       "subgenre": "",
       "url": "https://www.podiuminfo.nl/concert/502983/Robert-Finley/Melkweg/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-6-1200x630.jpg",
@@ -34668,7 +34889,24 @@
       "verification": "source-catalog"
     },
     {
-      "id": "venue-013-2027-03-06-avi",
+      "id": "podiuminfo-474420",
+      "artist": "Angélique Kidjo & Metropole Orkest - African Symphony",
+      "artists": [
+        "Angélique Kidjo & Metropole Orkest - African Symphony"
+      ],
+      "date": "2027-03-06",
+      "venue": "TivoliVredenburg",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/474420/Angelique-Kidjo-Metropole-Orkest-African-Symphony/TivoliVredenburg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-502308",
       "artist": "Avi",
       "artists": [
         "Avi"
@@ -34679,16 +34917,10 @@
       "country": "NL",
       "genre": "",
       "subgenre": "",
-      "url": "https://www.013.nl/programma/162837/avi",
+      "url": "https://www.podiuminfo.nl/concert/502308/Avi/013/",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/AVI-Banner-6327.jpg?mtime=1794303682",
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: 013",
-        "url": "https://www.013.nl/programma/162837/avi"
-      },
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://www.013.nl/programma/162837/avi",
       "officialMatch": {
         "venue": "013",
@@ -34697,10 +34929,27 @@
       }
     },
     {
-      "id": "venue-paard-2027-03-06-chef-special",
-      "artist": "CHEF’SPECIAL",
+      "id": "podiuminfo-492382",
+      "artist": "Blind Channel - Painstream",
       "artists": [
-        "CHEF’SPECIAL"
+        "Blind Channel - Painstream"
+      ],
+      "date": "2027-03-06",
+      "venue": "Melkweg",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/492382/Blind-Channel-Painstream/Melkweg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-495820",
+      "artist": "Chef'Special",
+      "artists": [
+        "Chef'Special"
       ],
       "date": "2027-03-06",
       "venue": "Paard",
@@ -34708,18 +34957,11 @@
       "country": "NL",
       "genre": "Pop",
       "subgenre": "",
-      "url": "https://www.paard.nl/event/chefspecial-8/",
+      "url": "https://www.podiuminfo.nl/concert/495820/ChefSpecial/Paard/",
       "image": "https://www.paard.nl/wp-content/uploads/2026/09/PRDps_Mailheader-CHEFSPECIAL.jpg",
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Paard",
-        "url": "https://www.paard.nl/event/chefspecial-8/"
-      },
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://www.paard.nl/event/chefspecial-8/",
-      "genreEvidence": "metadata",
       "officialMatch": {
         "venue": "paard",
         "confidence": 0.9,
@@ -34757,7 +34999,7 @@
       "genreEvidence": "metadata"
     },
     {
-      "id": "venue-doornroosje-2027-03-06-de-staat",
+      "id": "podiuminfo-495454",
       "artist": "De Staat",
       "artists": [
         "De Staat"
@@ -34768,22 +35010,15 @@
       "country": "NL",
       "genre": "Alternative",
       "subgenre": "",
-      "url": "https://www.doornroosje.nl/event/de-staat-15/",
+      "url": "https://www.podiuminfo.nl/concert/495454/De-Staat/Doornroosje/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/De-Staat-persfoto-web-1-1200x630.jpg",
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://www.doornroosje.nl/event/de-staat-15/",
-      "genreEvidence": "metadata",
       "officialMatch": {
         "venue": "doornroosje",
         "confidence": 0.9,
         "via": "json-ld"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Doornroosje",
-        "url": "https://www.doornroosje.nl/event/de-staat-15/"
       }
     },
     {
@@ -34802,6 +35037,23 @@
       "image": "https://www.more.com/getattachment/FC8E8356-BD8A-4165-9E80-A028ECDC7B13/evg_dieselektion_2231_949.png",
       "source": "more",
       "verification": "source-catalog"
+    },
+    {
+      "id": "podiuminfo-501516",
+      "artist": "Highguest",
+      "artists": [
+        "Highguest"
+      ],
+      "date": "2027-03-06",
+      "venue": "Melkweg",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "Hip-Hop",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/501516/Highguest/Melkweg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "festivalinfo-37169",
@@ -34832,7 +35084,24 @@
       "isFestival": true
     },
     {
-      "id": "venue-paradiso-2027-03-06-longo-longo",
+      "id": "podiuminfo-498596",
+      "artist": "LA Priest",
+      "artists": [
+        "LA Priest"
+      ],
+      "date": "2027-03-06",
+      "venue": "Botanique",
+      "city": "Brussels",
+      "country": "BE",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/498596/LA-Priest/Botanique/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-499335",
       "artist": "Longo Longo",
       "artists": [
         "Longo Longo"
@@ -34843,22 +35112,33 @@
       "country": "NL",
       "genre": "",
       "subgenre": "",
-      "url": "https://www.paradiso.nl/programma/longo-longo/2939233",
+      "url": "https://www.podiuminfo.nl/concert/499335/Longo-Longo/Paradiso/",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Longo-Longo-persfoto-hoge-resolutie.jpg",
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://www.paradiso.nl/programma/longo-longo/2939233",
       "officialMatch": {
         "venue": "paradiso",
         "confidence": 0.9,
         "via": "json-ld"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Paradiso",
-        "url": "https://www.paradiso.nl/programma/longo-longo/2939233"
       }
+    },
+    {
+      "id": "podiuminfo-497554",
+      "artist": "Made",
+      "artists": [
+        "Made"
+      ],
+      "date": "2027-03-06",
+      "venue": "Patronaat",
+      "city": "Haarlem",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/497554/Made-in-Purple-55-Years-of-Made-in-Japan/Patronaat/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "venue-patronaat-2027-03-06-made-in-purple",
@@ -34890,10 +35170,10 @@
       }
     },
     {
-      "id": "venue-013-2027-03-06-one-vision-of-queen-ft-marc-martel",
-      "artist": "One Vision of Queen ft Marc Martel",
+      "id": "podiuminfo-448689",
+      "artist": "One Vision Of Queen Ft Marc Martel",
       "artists": [
-        "One Vision of Queen ft Marc Martel"
+        "One Vision Of Queen Ft Marc Martel"
       ],
       "date": "2027-03-06",
       "venue": "013",
@@ -34901,22 +35181,50 @@
       "country": "NL",
       "genre": "",
       "subgenre": "",
-      "url": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel",
+      "url": "https://www.podiuminfo.nl/concert/448689/One-Vision-Of-Queen-Ft-Marc-Martel/013/",
       "image": "https://013.ams3.cdn.digitaloceanspaces.com/resized/main/events/_1200x630_crop_center-center_82_none/Marc-Martel.jpg?mtime=1774851871",
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel",
       "officialMatch": {
         "venue": "013",
         "confidence": 0.9,
         "via": "json-ld"
-      },
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: 013",
-        "url": "https://www.013.nl/programma/123322/one-vision-of-queen-ft-marc-martel"
       }
+    },
+    {
+      "id": "podiuminfo-496153",
+      "artist": "Orchestre Tout Puissant Marcel Duchamp",
+      "artists": [
+        "Orchestre Tout Puissant Marcel Duchamp"
+      ],
+      "date": "2027-03-06",
+      "venue": "dB's",
+      "city": "Utrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/496153/Orchestre-Tout-Puissant-Marcel-Duchamp/dBs/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-484987",
+      "artist": "OZZYfied",
+      "artists": [
+        "OZZYfied"
+      ],
+      "date": "2027-03-06",
+      "venue": "Bibelot",
+      "city": "Dordrecht",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/484987/OZZYfied/Bibelot/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
     },
     {
       "id": "more-a9315863f15b1b3e",
@@ -34937,11 +35245,112 @@
       "verification": "venue-calendar"
     },
     {
-      "id": "venue-patronaat-2027-03-06-wende",
+      "id": "podiuminfo-461148",
+      "artist": "Russo",
+      "artists": [
+        "Russo"
+      ],
+      "date": "2027-03-06",
+      "venue": "AFAS Live",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/461148/Russo/AFAS-Live/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-488937",
+      "artist": "Russo",
+      "artists": [
+        "Russo"
+      ],
+      "date": "2027-03-06",
+      "venue": "AFAS Live",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/488937/Russo/AFAS-Live/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-503580",
+      "artist": "Sasha Keable",
+      "artists": [
+        "Sasha Keable"
+      ],
+      "date": "2027-03-06",
+      "venue": "Botanique",
+      "city": "Brussels",
+      "country": "BE",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/503580/Sasha-Keable/Botanique/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-449694",
+      "artist": "The Dutch Queen Tribute",
+      "artists": [
+        "The Dutch Queen Tribute"
+      ],
+      "date": "2027-03-06",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/449694/The-Dutch-Queen-Tribute/Effenaar/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-474539",
+      "artist": "Van Dik Hout",
+      "artists": [
+        "Van Dik Hout"
+      ],
+      "date": "2027-03-06",
+      "venue": "Annabel",
+      "city": "Rotterdam",
+      "country": "NL",
+      "genre": "Pop",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/474539/Van-Dik-Hout/Annabel/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-503639",
+      "artist": "Vikkstar",
+      "artists": [
+        "Vikkstar"
+      ],
+      "date": "2027-03-06",
+      "venue": "Melkweg",
+      "city": "Amsterdam",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.podiuminfo.nl/concert/503639/Vikkstar/Melkweg/",
+      "image": "",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only"
+    },
+    {
+      "id": "podiuminfo-501699",
       "artist": "Wende",
       "artists": [
-        "Wende",
-        "support"
+        "Wende"
       ],
       "date": "2027-03-06",
       "venue": "Patronaat",
@@ -34949,20 +35358,14 @@
       "country": "NL",
       "genre": "",
       "subgenre": "",
-      "url": "https://patronaat.nl/event/wende-support-06-03-27/",
+      "url": "https://www.podiuminfo.nl/concert/501699/Wende/Patronaat/",
       "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
-      "imageKind": "event-poster",
-      "imageSource": "venue-official-direct-link",
-      "imageCredit": {
-        "text": "Image: Patronaat",
-        "url": "https://patronaat.nl/event/wende-support-06-03-27/"
-      },
-      "source": "venue-official",
-      "verification": "official-venue-page",
+      "source": "podiuminfo-agenda",
+      "verification": "agenda-only",
       "officialUrl": "https://patronaat.nl/event/wende-support-06-03-27/",
       "officialMatch": {
         "venue": "patronaat",
-        "confidence": 1,
+        "confidence": 0.9,
         "via": "url-date+opengraph"
       }
     },
@@ -35005,7 +35408,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/163077/internationale-vrouwendag"
+      "officialUrl": "https://www.013.nl/programma/163077/internationale-vrouwendag",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "official-tour-moonspell-20270307-eindhoven",
@@ -35267,6 +35675,31 @@
         "text": "Image: Doornroosje",
         "url": "https://www.doornroosje.nl/event/wende-12/"
       }
+    },
+    {
+      "id": "venue-effenaar-2027-03-11-gone-country",
+      "artist": "Gone Country",
+      "artists": [
+        "Gone Country"
+      ],
+      "date": "2027-03-11",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "Country",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/gone-country-0",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-07/%20%E2%80%93%201920x1080%20WebsiteGC.png",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/gone-country-0"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/gone-country-0",
+      "genreEvidence": "metadata"
     },
     {
       "id": "venue-patronaat-2027-03-11-maite-hontele-y-la-novia",
@@ -35950,6 +36383,30 @@
       "verification": "third-party-agenda"
     },
     {
+      "id": "venue-effenaar-2027-03-14-growth-dance-competition",
+      "artist": "Growth Dance Competition",
+      "artists": [
+        "Growth Dance Competition"
+      ],
+      "date": "2027-03-14",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-3",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-3"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-3"
+    },
+    {
       "id": "venue-paradiso-2027-03-14-marlon-pichel",
       "artist": "Marlon Pichel",
       "artists": [
@@ -36174,21 +36631,20 @@
     },
     {
       "id": "more-8b5ef11dcfa7d3c5",
-      "artist": "DELTA GOODREM",
+      "artist": "Delta Goodrem /",
       "artists": [
-        "DELTA GOODREM",
         "Delta Goodrem /"
       ],
       "date": "2027-03-18",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Pop",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/delta-goodrem/",
+      "url": "https://www.more.com/gr-en/tickets/music/delta-goodrem/pure-world-tour/",
       "image": "https://www.more.com/getattachment/8881DB3D-E58D-4DCE-BA6E-2421A4B330FF/evg_deltagoodrem/pureworldto_1204_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-doornroosje-2027-03-18-dressed-like-boys",
@@ -36548,15 +37004,15 @@
         "TARJA"
       ],
       "date": "2027-03-19",
-      "venue": "Gagarin 205",
+      "venue": "Gagarin 205 Live Music Space",
       "city": "Athens",
       "country": "GR",
       "genre": "Metal",
       "subgenre": "",
-      "url": "https://gagarin205.gr/event/tarja/",
+      "url": "https://www.more.com/gr-en/tickets/music/tarja-athens/",
       "image": "https://www.more.com/getattachment/4B638CAE-EA85-4845-8B99-9342976C9083/evg_tarjaathens_1052_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-paradiso-2027-03-19-whethan",
@@ -36617,8 +37073,8 @@
       }
     },
     {
-      "id": "gagarin-2027-03-20-igorrr",
-      "artist": "IGORRR",
+      "id": "more-20a9413358deac99",
+      "artist": "Igorrr",
       "artists": [
         "IGORRR",
         "Igorrr",
@@ -36630,11 +37086,28 @@
       "city": "Athens",
       "country": "GR",
       "genre": "Metal / Experimental / Electronic / Rock",
-      "subgenre": "",
+      "subgenre": "Avant-Garde Metal",
       "url": "https://gagarin205.gr/event/igorrr/",
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
-      "source": "gagarin-calendar",
-      "verification": "venue-calendar"
+      "source": "official",
+      "verification": "venue-page"
+    },
+    {
+      "id": "more-878472c6a5329c18",
+      "artist": "SARA LANDRY & NICO MORENO",
+      "artists": [
+        "SARA LANDRY & NICO MORENO"
+      ],
+      "date": "2027-03-20",
+      "venue": "Faliro sports pavilion",
+      "city": "Faliro",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/2027/blend/seds/for303/hekate/",
+      "image": "https://www.more.com/getattachment/D2639D72-8D5F-4D4C-A81F-C1CD42EC3562/evg_saralandrypresentshekate_1852_4938.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-paradiso-2027-03-20-sophie-straat",
@@ -36718,7 +37191,7 @@
       "verification": "source-catalog"
     },
     {
-      "id": "more-9256f6cbb9511c7d",
+      "id": "anclub-2027-03-20-u%20k%20subs",
       "artist": "U.K. SUBS",
       "artists": [
         "U.K. SUBS"
@@ -36794,6 +37267,30 @@
       "genreEvidence": "metadata"
     },
     {
+      "id": "venue-doornroosje-2027-03-21-davina-michelle",
+      "artist": "Davina Michelle",
+      "artists": [
+        "Davina Michelle"
+      ],
+      "date": "2027-03-21",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/davina-michelle-5/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-13-1088x630.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Doornroosje",
+        "url": "https://www.doornroosje.nl/event/davina-michelle-5/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/davina-michelle-5/"
+    },
+    {
       "id": "rocking-20270321-27562",
       "artist": "Glitter Grotesque: Let's Swing in New Orleans",
       "artists": [
@@ -36828,6 +37325,23 @@
       "image": "https://www.more.com/getattachment/F9A9E263-ECDE-47D1-A543-E7342583B9E6/evg_igorrathens_1452_854.png",
       "source": "official",
       "verification": "ticket-provider"
+    },
+    {
+      "id": "more-03b59045539d2eaf",
+      "artist": "KOOL G RAP (US) -",
+      "artists": [
+        "KOOL G RAP (US) -"
+      ],
+      "date": "2027-03-21",
+      "venue": "ARCH",
+      "city": "Athens",
+      "country": "GR",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/kool-g-rap-us-live-in-athens/",
+      "image": "https://www.more.com/getattachment/C2E9AEDB-D7C7-4406-BAEA-578D58AA3CCB/evg_koolgrapus-liveinathens_1256_5933.png",
+      "source": "more",
+      "verification": "source-catalog"
     },
     {
       "id": "venue-effenaar-2027-03-21-pop-up-koor-xl",
@@ -37414,6 +37928,77 @@
       }
     },
     {
+      "id": "festivalinfo-36262",
+      "artist": "Paaspop Schijndel",
+      "artists": [
+        "De Staat",
+        "Bløf",
+        "Mastodon",
+        "The Opposites",
+        "Rowwen Heze",
+        "Skindred",
+        "Clouseau",
+        "Tröckener Kecks",
+        "Rag'n'Bone Man",
+        "Sub Focus",
+        "Pokey Lafarge",
+        "Bad Nerves",
+        "Monolord",
+        "The Rumjacks",
+        "Fat Dog",
+        "Elmer",
+        "Bertus Staigerpaip",
+        "Jason Derulo",
+        "Daði Freyr",
+        "Bizzey",
+        "Joy Division Undercover",
+        "Joey Valence & Brae",
+        "Toby Lee",
+        "Isabèl Usher",
+        "Famke Louise",
+        "Mula",
+        "Buiten Westen",
+        "DYEN",
+        "Yade Lauren",
+        "Ronnie Flex & The Fam",
+        "KingFisher",
+        "Turfy Gang",
+        "Justen de Wildt",
+        "Eddie 9V",
+        "Politie Warnsveld",
+        "milolaathetlukken",
+        "Lisa Korver",
+        "Koen Vael",
+        "John Tana Et Crapuul",
+        "Jari Hellegers",
+        "Morgan Wallen Tribute",
+        "The Bausa",
+        "Wrecking Crüe",
+        "Toxic Frogs",
+        "Pink Floyd In Symphony",
+        "Golden State Riot",
+        "Coldplace Xl",
+        "Boaz",
+        "Donnies Party comite",
+        "Lil Kleine",
+        "Job Jobse",
+        "Rutger van Barneveld",
+        "Völkerball",
+        "Dopebwoy"
+      ],
+      "date": "2027-03-26",
+      "endDate": "2027-03-28",
+      "venue": "Paaspop Schijndel",
+      "city": "Schijndel",
+      "country": "NL",
+      "genre": "Alternative / Pop / Metal / Hip-Hop / Blues / Country",
+      "subgenre": "",
+      "url": "https://www.festivalinfo.nl/festival/36262/Paaspop-Schijndel/2027/",
+      "image": "https://www.festivalinfo.nl/img/upload/b/4//Paaspop_Schijndel.png",
+      "source": "festivalinfo",
+      "isFestival": true
+    },
+    {
       "id": "venue-paradiso-2027-03-26-the-horse-company",
       "artist": "The Horse Company",
       "artists": [
@@ -37465,7 +38050,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/163685/veulpoepers"
+      "officialUrl": "https://www.013.nl/programma/163685/veulpoepers",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-doornroosje-2027-03-27-absynthe-minded",
@@ -38627,6 +39217,30 @@
       "verification": "third-party-agenda"
     },
     {
+      "id": "venue-effenaar-2027-04-04-growth-dance-competition",
+      "artist": "Growth Dance Competition",
+      "artists": [
+        "Growth Dance Competition"
+      ],
+      "date": "2027-04-04",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/growth-dance-competition-finale",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/growth-dance-competition-finale"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-finale"
+    },
+    {
       "id": "venue-patronaat-2027-04-04-wednesday-campanella",
       "artist": "Wednesday Campanella",
       "artists": [
@@ -39191,7 +39805,7 @@
       }
     },
     {
-      "id": "more-98f8e3f69d11b04a",
+      "id": "anclub-2027-04-10-oh%20hiroshima",
       "artist": "OH HIROSHIMA",
       "artists": [
         "OH HIROSHIMA"
@@ -39829,7 +40443,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/racoon"
+      "officialUrl": "https://www.effenaar.nl/agenda/racoon",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-013-2027-04-16-roadburn-2027",
@@ -40629,7 +41248,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.013.nl/programma/154895/the-pineapple-thief"
+      "officialUrl": "https://www.013.nl/programma/154895/the-pineapple-thief",
+      "officialMatch": {
+        "venue": "013",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "venue-effenaar-2027-04-24-country-club",
@@ -40653,7 +41277,12 @@
       },
       "source": "venue-official",
       "verification": "official-venue-page",
-      "officialUrl": "https://www.effenaar.nl/agenda/country-club"
+      "officialUrl": "https://www.effenaar.nl/agenda/country-club",
+      "officialMatch": {
+        "venue": "effenaar",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
     },
     {
       "id": "more-0119b800f6da8547",
@@ -40696,7 +41325,12 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://patronaat.nl/event/kim-churchill-support-24-04-27/",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "patronaat",
+        "confidence": 1,
+        "via": "url-date+opengraph"
+      }
     },
     {
       "id": "venue-doornroosje-2027-04-24-politie-warnsveld",
@@ -40721,7 +41355,36 @@
       "source": "venue-official",
       "verification": "official-venue-page",
       "officialUrl": "https://www.doornroosje.nl/event/politie-warnsveld-5/",
-      "genreEvidence": "metadata"
+      "genreEvidence": "metadata",
+      "officialMatch": {
+        "venue": "doornroosje",
+        "confidence": 0.9,
+        "via": "json-ld"
+      }
+    },
+    {
+      "id": "venue-doornroosje-2027-04-25-ghøstkid-supports",
+      "artist": "GHØSTKID + supports",
+      "artists": [
+        "GHØSTKID + supports"
+      ],
+      "date": "2027-04-25",
+      "venue": "Doornroosje",
+      "city": "Nijmegen",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.doornroosje.nl/event/ghostkid-1/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/06/GHOSTKID-WEB-1200x630.jpg",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Doornroosje",
+        "url": "https://www.doornroosje.nl/event/ghostkid-1/"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.doornroosje.nl/event/ghostkid-1/"
     },
     {
       "id": "rocking-20270425-27562",
@@ -40739,6 +41402,30 @@
       "image": "",
       "source": "rocking",
       "verification": "third-party-agenda"
+    },
+    {
+      "id": "venue-effenaar-2027-04-25-suicide-silence",
+      "artist": "Suicide Silence",
+      "artists": [
+        "Suicide Silence"
+      ],
+      "date": "2027-04-25",
+      "venue": "Effenaar",
+      "city": "Eindhoven",
+      "country": "NL",
+      "genre": "",
+      "subgenre": "",
+      "url": "https://www.effenaar.nl/agenda/suicidesilence",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/Suicide%20Silence%20%E2%80%93%20Square%20afbeelding%20only.png?itok=xr82sJWI",
+      "imageKind": "event-poster",
+      "imageSource": "venue-official-direct-link",
+      "imageCredit": {
+        "text": "Image: Effenaar",
+        "url": "https://www.effenaar.nl/agenda/suicidesilence"
+      },
+      "source": "venue-official",
+      "verification": "official-venue-page",
+      "officialUrl": "https://www.effenaar.nl/agenda/suicidesilence"
     },
     {
       "id": "gagarin-2027-05-07-as%20i%20lay%20dying",
@@ -40822,9 +41509,61 @@
       "genre": "Metal",
       "subgenre": "",
       "url": "https://www.rocking.gr/agenda/2027/5/13/27594",
-      "image": "",
+      "image": "https://www.more.com/getattachment/731CC9FB-DD42-483C-956A-7A730F685271/evg_crimsonglory/omenuniteds_2348_5053.png",
       "source": "rocking",
       "verification": "third-party-agenda"
+    },
+    {
+      "id": "more-9dad80532c98ddaa",
+      "artist": "CRIMSON GLORY/",
+      "artists": [
+        "CRIMSON GLORY/"
+      ],
+      "date": "2027-05-14",
+      "venue": "Circus Entertainment Hub",
+      "city": "Larisa",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/crimson-glory/omen-united-states-of-metal-at-larissa/",
+      "image": "https://www.more.com/getattachment/731CC9FB-DD42-483C-956A-7A730F685271/evg_crimsonglory/omenuniteds_2348_5053.png",
+      "source": "more",
+      "verification": "source-catalog"
+    },
+    {
+      "id": "rocking-20270515-27595",
+      "artist": "Crimson Glory",
+      "artists": [
+        "Crimson Glory",
+        "Omen"
+      ],
+      "date": "2027-05-15",
+      "venue": "Principal Club Theater: Mylos Area",
+      "city": "Thessaloniki",
+      "country": "GR",
+      "genre": "Metal",
+      "subgenre": "",
+      "url": "https://www.rocking.gr/agenda/2027/5/15/27595",
+      "image": "https://www.more.com/getattachment/731CC9FB-DD42-483C-956A-7A730F685271/evg_crimsonglory/omenuniteds_2348_5053.png",
+      "source": "rocking",
+      "verification": "third-party-agenda"
+    },
+    {
+      "id": "more-7a474c1eda3d9d78",
+      "artist": "EZHEL -",
+      "artists": [
+        "EZHEL -"
+      ],
+      "date": "2027-05-15",
+      "venue": "Fuzz Club",
+      "city": "Tavros",
+      "country": "GR",
+      "genre": "Hip-Hop",
+      "subgenre": "",
+      "url": "https://www.more.com/gr-en/tickets/music/ezhel-live-in-europe-2027/",
+      "image": "https://www.more.com/getattachment/CE7B390A-0F02-49FD-8DC1-F375E91B9691/evg_ezhel-liveineurope2026_1320_1839.png",
+      "source": "more",
+      "verification": "source-catalog"
     }
   ],
   "coverage": {
@@ -40835,17 +41574,17 @@
     ],
     "daysAhead": 100,
     "festivalDaysAhead": 170,
-    "greeceEvents": 442,
+    "greeceEvents": 459,
     "greeceFeedError": "",
-    "rockingEvents": 61,
+    "rockingEvents": 64,
     "rockingWarning": "",
     "verifiedPodiuminfoEvents": 0,
-    "agendaOnlyPodiuminfoEvents": 1166,
-    "festivalEvents": 11,
-    "officialVenueEvents": 4,
+    "agendaOnlyPodiuminfoEvents": 1183,
+    "festivalEvents": 12,
+    "officialVenueEvents": 5,
     "partnerImportedEvents": 0,
     "partnerDuplicates": 0,
-    "sameVenueDuplicatesMerged": 52,
+    "sameVenueDuplicatesMerged": 35,
     "artworkReused": 10,
     "rockingPagePosters": 0,
     "reviewedPostersApplied": 0,
@@ -40854,56 +41593,56 @@
       "requests": 0,
       "found": 0,
       "cacheHits": 0,
-      "skippedBlocked": 746,
+      "skippedBlocked": 757,
       "hostDeniedRequests": 0,
       "hostAccess": "HTTP 403",
       "hostRetryAfter": "2026-11-29",
-      "eligible": 746,
-      "remainingWithoutImage": 746
+      "eligible": 757,
+      "remainingWithoutImage": 757
     },
     "artistPhotoCache": {
-      "artists": 951,
+      "artists": 962,
       "reviewBlocked": 0,
       "reviewPinned": 4,
       "podiuminfoUpdated": 0,
       "deezer": {
-        "candidates": 962,
-        "requests": 59,
-        "found": 7,
-        "notFound": 36,
-        "ambiguous": 3,
-        "coverRejected": 6,
+        "candidates": 995,
+        "requests": 85,
+        "found": 11,
+        "notFound": 45,
+        "ambiguous": 14,
+        "coverRejected": 4,
         "errors": 0,
-        "skipped": 916,
+        "skipped": 925,
         "urgentRetriesUsed": 12,
-        "photos": 951
+        "photos": 962
       },
       "identity": {
-        "candidates": 955,
-        "processed": 1,
+        "candidates": 984,
+        "processed": 2,
         "identified": 0,
         "ambiguous": 0,
-        "notFound": 0,
+        "notFound": 1,
         "commons": 0,
         "deezerLinked": 0,
         "errors": 1
       },
       "wikimedia": {
-        "candidates": 451,
+        "candidates": 471,
         "attempted": 25,
         "found": 0,
-        "noMatch": 25,
+        "noMatch": 24,
         "ambiguous": 0,
-        "licenceRejected": 0,
+        "licenceRejected": 1,
         "errors": 0,
-        "depictsQueries": 0,
+        "depictsQueries": 1,
         "depictsFound": 0,
-        "categoryQueries": 0,
+        "categoryQueries": 1,
         "categoryFound": 0,
         "categoryDescriptionFound": 0,
-        "subcategoryQueries": 0,
+        "subcategoryQueries": 1,
         "subcategoryPhotoFound": 0,
-        "linkedDeezerChecks": 0,
+        "linkedDeezerChecks": 1,
         "linkedDeezerFound": 0,
         "linkedIdentityUsed": 0,
         "linkedIdentityRejected": 0,
@@ -40911,7 +41650,7 @@
         "linkedMbidConflicts": 0
       },
       "audioDb": {
-        "eligible": 27,
+        "eligible": 24,
         "attempted": 0,
         "found": 0,
         "licenseMissing": 0,
@@ -40925,43 +41664,43 @@
         "diagnosticRetried": 0
       }
     },
-    "gagarinCalendarEvents": 25,
-    "gagarinPosterEnriched": 6,
-    "gagarinWarning": "",
+    "gagarinCalendarEvents": 9,
+    "gagarinPosterEnriched": 0,
+    "gagarinWarning": "Official venue calendar is not iCalendar",
     "floydCalendarEvents": 12,
     "floydPosterEnriched": 6,
     "floydWarning": "",
     "fuzzCalendarEvents": 2,
     "fuzzPosterEnriched": 0,
     "fuzzWarning": "",
-    "anClubIndexEvents": 29,
+    "anClubIndexEvents": 30,
     "anClubPosterEnriched": 0,
     "anClubWarning": "",
     "datesUnavailable": 0,
     "festivalIncomplete": false,
-    "genreTaggedEvents": 703,
-    "taggedArtists": 999,
+    "genreTaggedEvents": 704,
+    "taggedArtists": 1004,
     "notes": "NL/BE: Podiuminfo agenda previews (verify original event page) and Festivalinfo. Greece: More.com and Rocking.gr public agenda plus official Gagarin 205 and Floyd iCalendar listings when accessible. Coverage is not exhaustive. All venues/dates must be verified at their source. Favorite genres are incomplete where artist metadata is missing."
   },
   "venueSources": {
-    "updatedAt": "2026-11-25T15:54:42.192Z",
-    "catalogueEvents": 1919,
-    "officialMatches": 667,
-    "imagesPublished": 553,
-    "imageCandidatesPending": 114,
-    "imagesDirectLinked": 566,
-    "discoveredEvents": 13,
+    "updatedAt": "2026-11-26T15:35:54.823Z",
+    "catalogueEvents": 1956,
+    "officialMatches": 679,
+    "imagesPublished": 558,
+    "imageCandidatesPending": 121,
+    "imagesDirectLinked": 567,
+    "discoveredEvents": 9,
     "venueEventsRemoved": {
-      "duplicate": 10,
+      "duplicate": 6,
       "policy": 0,
       "cancelled": 0,
       "rescheduled": 0,
       "gone": 0,
       "nonConcert": 0
     },
-    "venueEventsPublished": 302,
+    "venueEventsPublished": 304,
     "venueGenresFromCache": 1,
-    "venueGenresTagged": 84,
+    "venueGenresTagged": 83,
     "reviewedOfficialArtworkApplied": 0,
     "venueGenreLookups": 12
   }

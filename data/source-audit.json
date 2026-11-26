@@ -1,39 +1,39 @@
 {
-  "catalogUpdatedAt": "2026-11-25T15:51:18.805Z",
-  "auditedFor": "2026-11-25",
-  "totalPublished": 1919,
-  "greekPublished": 442,
+  "catalogUpdatedAt": "2026-11-26T15:32:32.297Z",
+  "auditedFor": "2026-11-26",
+  "totalPublished": 1956,
+  "greekPublished": 459,
   "imageCoverage": {
-    "withImage": 1118,
-    "withoutImage": 801
+    "withImage": 1143,
+    "withoutImage": 813
   },
   "imageCoverageByCountry": {
     "GR": {
-      "events": 442,
-      "withImage": 398,
-      "withoutImage": 44
-    },
-    "BE": {
-      "events": 103,
-      "withImage": 10,
-      "withoutImage": 93
+      "events": 459,
+      "withImage": 414,
+      "withoutImage": 45
     },
     "NL": {
-      "events": 1374,
-      "withImage": 710,
-      "withoutImage": 664
+      "events": 1393,
+      "withImage": 719,
+      "withoutImage": 674
+    },
+    "BE": {
+      "events": 104,
+      "withImage": 10,
+      "withoutImage": 94
     }
   },
   "sources": {
     "anclub-index": {
-      "events": 29,
-      "withImage": 28,
+      "events": 30,
+      "withImage": 29,
       "withoutImage": 1,
-      "greekEvents": 29
+      "greekEvents": 30
     },
     "festivalinfo": {
-      "events": 10,
-      "withImage": 2,
+      "events": 11,
+      "withImage": 3,
       "withoutImage": 8,
       "greekEvents": 0
     },
@@ -50,46 +50,46 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 25,
-      "withImage": 25,
+      "events": 9,
+      "withImage": 9,
       "withoutImage": 0,
-      "greekEvents": 25
+      "greekEvents": 9
     },
     "more": {
-      "events": 311,
-      "withImage": 311,
+      "events": 339,
+      "withImage": 339,
       "withoutImage": 0,
-      "greekEvents": 311
+      "greekEvents": 339
     },
     "official": {
-      "events": 4,
-      "withImage": 4,
+      "events": 5,
+      "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 2
+      "greekEvents": 3
     },
     "podiuminfo-agenda": {
-      "events": 1166,
-      "withImage": 420,
-      "withoutImage": 746,
+      "events": 1183,
+      "withImage": 426,
+      "withoutImage": 757,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 61,
-      "withImage": 18,
-      "withoutImage": 43,
-      "greekEvents": 61
+      "events": 64,
+      "withImage": 20,
+      "withoutImage": 44,
+      "greekEvents": 64
     },
     "venue-official": {
-      "events": 299,
-      "withImage": 296,
+      "events": 301,
+      "withImage": 298,
       "withoutImage": 3,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 25,
-      "withImage": 25,
+      "published": 9,
+      "withImage": 9,
       "warning": null
     },
     "floyd-calendar": {
@@ -103,29 +103,20 @@
       "warning": null
     },
     "anclub-index": {
-      "published": 29,
-      "withImage": 28,
+      "published": 30,
+      "withImage": 29,
       "warning": null
     }
   },
   "topGreekVenues": [
     {
       "name": "AN Club",
-      "events": 32,
-      "withImage": 31,
+      "events": 33,
+      "withImage": 32,
       "sources": [
         "anclub-index",
         "rocking",
         "more"
-      ]
-    },
-    {
-      "name": "Gagarin 205",
-      "events": 26,
-      "withImage": 26,
-      "sources": [
-        "gagarin-calendar",
-        "rocking"
       ]
     },
     {
@@ -134,6 +125,14 @@
       "withImage": 0,
       "sources": [
         "rocking"
+      ]
+    },
+    {
+      "name": "Gagarin 205 Live Music Space",
+      "events": 16,
+      "withImage": 16,
+      "sources": [
+        "more"
       ]
     },
     {
@@ -154,17 +153,34 @@
     },
     {
       "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 12,
-      "withImage": 12,
+      "events": 13,
+      "withImage": 13,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
-      "events": 12,
-      "withImage": 12,
+      "name": "Kyttaro Live",
+      "events": 13,
+      "withImage": 13,
       "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "gazarte",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Fuzz Club",
+      "events": 13,
+      "withImage": 13,
+      "sources": [
+        "fuzzclub-calendar",
         "more"
       ]
     },
@@ -186,19 +202,10 @@
       ]
     },
     {
-      "name": "Kyttaro Live",
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Club",
       "events": 12,
       "withImage": 12,
       "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Fuzz Club",
-      "events": 12,
-      "withImage": 12,
-      "sources": [
-        "fuzzclub-calendar",
         "more"
       ]
     },
@@ -211,7 +218,7 @@
       ]
     },
     {
-      "name": "Klakaz",
+      "name": "Circus Entertainment Hub",
       "events": 11,
       "withImage": 11,
       "sources": [
@@ -227,15 +234,17 @@
       ]
     },
     {
-      "name": "gazarte",
+      "name": "Gagarin 205",
       "events": 11,
       "withImage": 11,
       "sources": [
-        "more"
+        "gagarin-calendar",
+        "rocking",
+        "official"
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
+      "name": "Klakaz",
       "events": 10,
       "withImage": 10,
       "sources": [
@@ -243,17 +252,17 @@
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 8,
-      "withImage": 8,
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "events": 9,
+      "withImage": 9,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
-      "events": 8,
-      "withImage": 8,
+      "name": "Half Note Jazz Club",
+      "events": 7,
+      "withImage": 7,
       "sources": [
         "more"
       ]
@@ -284,6 +293,30 @@
     },
     {
       "name": "AUX CLUB",
+      "events": 7,
+      "withImage": 7,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Κύτταρο",
+      "events": 6,
+      "withImage": 4,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 6,
+      "withImage": 6,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -323,15 +356,7 @@
       ]
     },
     {
-      "name": "Κύτταρο",
-      "events": 5,
-      "withImage": 3,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
-      "name": "ARCH",
+      "name": "Stage7",
       "events": 5,
       "withImage": 5,
       "sources": [
@@ -347,15 +372,23 @@
       ]
     },
     {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
-      "events": 5,
-      "withImage": 5,
+      "name": "Doryphora Gig Space",
+      "events": 4,
+      "withImage": 4,
       "sources": [
         "more"
       ]
     },
     {
       "name": "Μεγαρο Μουσικης Κομοτηνης",
+      "events": 4,
+      "withImage": 4,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Universe | S-2000",
       "events": 4,
       "withImage": 4,
       "sources": [
@@ -371,19 +404,11 @@
       ]
     },
     {
-      "name": "METRON STAGE",
-      "events": 3,
-      "withImage": 3,
+      "name": "Principal Club Theater: Mylos Area",
+      "events": 4,
+      "withImage": 2,
       "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Stage7",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
+        "rocking"
       ]
     },
     {
@@ -403,31 +428,7 @@
       ]
     },
     {
-      "name": "Doryphora Gig Space",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Telekom Center Athens",
-      "events": 3,
-      "withImage": 3,
-      "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Δημοτικο Θεατρο «Βαγγελης Παπαθανασιου»",
       "events": 3,
       "withImage": 3,
       "sources": [
@@ -436,14 +437,14 @@
     }
   ],
   "venueWarnings": {
-    "gagarin": "",
+    "gagarin": "Official venue calendar is not iCalendar",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "empty",
-    "message": "Official music category has no announced events",
+    "status": "unrecognized",
+    "message": "Official page structure not recognized",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }
