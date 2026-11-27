@@ -1,26 +1,26 @@
 {
-  "catalogUpdatedAt": "2026-11-26T15:32:32.297Z",
-  "auditedFor": "2026-11-26",
-  "totalPublished": 1956,
+  "catalogUpdatedAt": "2026-11-27T15:20:26.995Z",
+  "auditedFor": "2026-11-27",
+  "totalPublished": 1948,
   "greekPublished": 459,
   "imageCoverage": {
-    "withImage": 1143,
-    "withoutImage": 813
+    "withImage": 1137,
+    "withoutImage": 811
   },
   "imageCoverageByCountry": {
     "GR": {
       "events": 459,
-      "withImage": 414,
-      "withoutImage": 45
+      "withImage": 409,
+      "withoutImage": 50
     },
     "NL": {
-      "events": 1393,
+      "events": 1386,
       "withImage": 719,
-      "withoutImage": 674
+      "withoutImage": 667
     },
     "BE": {
-      "events": 104,
-      "withImage": 10,
+      "events": 103,
+      "withImage": 9,
       "withoutImage": 94
     }
   },
@@ -38,10 +38,10 @@
       "greekEvents": 0
     },
     "floyd-calendar": {
-      "events": 12,
-      "withImage": 12,
+      "events": 11,
+      "withImage": 11,
       "withoutImage": 0,
-      "greekEvents": 12
+      "greekEvents": 11
     },
     "fuzzclub-calendar": {
       "events": 2,
@@ -50,51 +50,51 @@
       "greekEvents": 2
     },
     "gagarin-calendar": {
-      "events": 9,
-      "withImage": 9,
+      "events": 24,
+      "withImage": 24,
       "withoutImage": 0,
-      "greekEvents": 9
+      "greekEvents": 24
     },
     "more": {
-      "events": 339,
-      "withImage": 339,
+      "events": 322,
+      "withImage": 322,
       "withoutImage": 0,
-      "greekEvents": 339
+      "greekEvents": 322
     },
     "official": {
       "events": 5,
       "withImage": 5,
       "withoutImage": 0,
-      "greekEvents": 3
+      "greekEvents": 2
     },
     "podiuminfo-agenda": {
-      "events": 1183,
-      "withImage": 426,
-      "withoutImage": 757,
+      "events": 1173,
+      "withImage": 423,
+      "withoutImage": 750,
       "greekEvents": 0
     },
     "rocking": {
-      "events": 64,
-      "withImage": 20,
-      "withoutImage": 44,
-      "greekEvents": 64
+      "events": 68,
+      "withImage": 19,
+      "withoutImage": 49,
+      "greekEvents": 68
     },
     "venue-official": {
-      "events": 301,
-      "withImage": 298,
+      "events": 302,
+      "withImage": 299,
       "withoutImage": 3,
       "greekEvents": 0
     }
   },
   "venueAdapters": {
     "gagarin-calendar": {
-      "published": 9,
-      "withImage": 9,
+      "published": 24,
+      "withImage": 24,
       "warning": null
     },
     "floyd-calendar": {
-      "published": 12,
-      "withImage": 12,
+      "published": 11,
+      "withImage": 11,
       "warning": null
     },
     "fuzzclub-calendar": {
@@ -120,19 +120,20 @@
       ]
     },
     {
+      "name": "Gagarin 205",
+      "events": 26,
+      "withImage": 25,
+      "sources": [
+        "gagarin-calendar",
+        "rocking"
+      ]
+    },
+    {
       "name": "Το Τρένο Στο Ρουφ",
       "events": 19,
       "withImage": 0,
       "sources": [
         "rocking"
-      ]
-    },
-    {
-      "name": "Gagarin 205 Live Music Space",
-      "events": 16,
-      "withImage": 16,
-      "sources": [
-        "more"
       ]
     },
     {
@@ -152,19 +153,13 @@
       ]
     },
     {
-      "name": "Κεντρο ελεγχου τηλεορασεων",
-      "events": 13,
+      "name": "Fuzz Club",
+      "events": 14,
       "withImage": 13,
       "sources": [
-        "more"
-      ]
-    },
-    {
-      "name": "Kyttaro Live",
-      "events": 13,
-      "withImage": 13,
-      "sources": [
-        "more"
+        "fuzzclub-calendar",
+        "more",
+        "rocking"
       ]
     },
     {
@@ -176,29 +171,11 @@
       ]
     },
     {
-      "name": "Fuzz Club",
-      "events": 13,
-      "withImage": 13,
-      "sources": [
-        "fuzzclub-calendar",
-        "more"
-      ]
-    },
-    {
-      "name": "Piraeus Club Academy",
-      "events": 12,
-      "withImage": 10,
-      "sources": [
-        "more",
-        "rocking"
-      ]
-    },
-    {
-      "name": "Floyd Live Music Venue",
+      "name": "Κεντρο ελεγχου τηλεορασεων",
       "events": 12,
       "withImage": 12,
       "sources": [
-        "floyd-calendar"
+        "more"
       ]
     },
     {
@@ -218,11 +195,28 @@
       ]
     },
     {
-      "name": "Circus Entertainment Hub",
+      "name": "Kyttaro Live",
+      "events": 12,
+      "withImage": 12,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Floyd Live Music Venue",
       "events": 11,
       "withImage": 11,
       "sources": [
-        "more"
+        "floyd-calendar"
+      ]
+    },
+    {
+      "name": "Piraeus Club Academy",
+      "events": 11,
+      "withImage": 9,
+      "sources": [
+        "more",
+        "rocking"
       ]
     },
     {
@@ -234,13 +228,11 @@
       ]
     },
     {
-      "name": "Gagarin 205",
-      "events": 11,
-      "withImage": 11,
+      "name": "Circus Entertainment Hub",
+      "events": 10,
+      "withImage": 10,
       "sources": [
-        "gagarin-calendar",
-        "rocking",
-        "official"
+        "more"
       ]
     },
     {
@@ -252,17 +244,25 @@
       ]
     },
     {
-      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
-      "events": 9,
-      "withImage": 9,
+      "name": "Eightball",
+      "events": 8,
+      "withImage": 3,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "ARCH",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
     },
     {
-      "name": "Half Note Jazz Club",
-      "events": 7,
-      "withImage": 7,
+      "name": "Σταυρος του Νοτου Κεντρικη Σκηνη - Σταυρος του Νοτου Plus",
+      "events": 8,
+      "withImage": 8,
       "sources": [
         "more"
       ]
@@ -284,14 +284,6 @@
       ]
     },
     {
-      "name": "Eightball",
-      "events": 7,
-      "withImage": 3,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "AUX CLUB",
       "events": 7,
       "withImage": 7,
@@ -308,7 +300,7 @@
       ]
     },
     {
-      "name": "ARCH",
+      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -316,7 +308,7 @@
       ]
     },
     {
-      "name": "Πολυχωρος Πολιτισμου \"Διελευσις\"",
+      "name": "Half Note Jazz Club",
       "events": 6,
       "withImage": 6,
       "sources": [
@@ -348,14 +340,6 @@
       ]
     },
     {
-      "name": "MIKRI SKINI - Mikri Skini",
-      "events": 5,
-      "withImage": 5,
-      "sources": [
-        "more"
-      ]
-    },
-    {
       "name": "Stage7",
       "events": 5,
       "withImage": 5,
@@ -367,6 +351,22 @@
       "name": "Athens Conservatoire - Amphitheatre Ioannis Despotopoulos Conservatory of",
       "events": 5,
       "withImage": 5,
+      "sources": [
+        "more"
+      ]
+    },
+    {
+      "name": "Principal Club Theater: Mylos Area",
+      "events": 5,
+      "withImage": 2,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
+      "name": "MIKRI SKINI - Mikri Skini",
+      "events": 4,
+      "withImage": 4,
       "sources": [
         "more"
       ]
@@ -404,14 +404,6 @@
       ]
     },
     {
-      "name": "Principal Club Theater: Mylos Area",
-      "events": 4,
-      "withImage": 2,
-      "sources": [
-        "rocking"
-      ]
-    },
-    {
       "name": "Χωρος Τεχνης Ιδιομελο",
       "events": 3,
       "withImage": 3,
@@ -428,6 +420,14 @@
       ]
     },
     {
+      "name": "Soul SKG",
+      "events": 3,
+      "withImage": 0,
+      "sources": [
+        "rocking"
+      ]
+    },
+    {
       "name": "Μεγαρο Μουσικης Αθηνων - Αιθουσα Γιαννης Μαρινος",
       "events": 3,
       "withImage": 3,
@@ -437,14 +437,14 @@
     }
   ],
   "venueWarnings": {
-    "gagarin": "Official venue calendar is not iCalendar",
+    "gagarin": "",
     "floyd": "",
     "fuzz": "",
     "anclub": ""
   },
   "technopolisMusic": {
-    "status": "unrecognized",
-    "message": "Official page structure not recognized",
+    "status": "empty",
+    "message": "Official music category has no announced events",
     "url": "https://athens-technopolis.gr/index.php/en/component/djevents/events?cid=16"
   }
 }

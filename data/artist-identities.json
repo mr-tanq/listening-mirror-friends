@@ -1186,34 +1186,6 @@
       "retryAfter": "2026-12-09",
       "reason": "not-found"
     },
-    "club 3voor12 utrecht": {
-      "retryAfter": "2026-12-11",
-      "reason": "not-found"
-    },
-    "hania derej trio": {
-      "retryAfter": "2026-12-11",
-      "reason": "not-found"
-    },
-    "luca st": {
-      "retryAfter": "2026-12-11",
-      "reason": "not-found"
-    },
-    "mobilhome": {
-      "retryAfter": "2026-12-28",
-      "reason": "identified-without-free-photo"
-    },
-    "the ruins of beverast": {
-      "retryAfter": "2026-12-24",
-      "reason": "identified-without-free-photo"
-    },
-    "zelie": {
-      "retryAfter": "2026-12-24",
-      "reason": "ambiguous",
-      "mbCandidates": [
-        "6a46ef30-fbe6-4889-9b9c-f128ef1488d0",
-        "36a1d6df-8d49-46a6-ba79-7b895bda1971"
-      ]
-    },
     "blood and sun": {
       "retryAfter": "2026-12-24",
       "reason": "identified-without-free-photo"
@@ -1273,10 +1245,6 @@
     "nos ku nos": {
       "retryAfter": "2026-12-15",
       "reason": "not-found"
-    },
-    "hania derej": {
-      "retryAfter": "2026-12-27",
-      "reason": "identified-without-free-photo"
     },
     "dinsdagochtend concert": {
       "retryAfter": "2026-12-12",
@@ -1343,12 +1311,8 @@
       "reason": "not-found"
     },
     "sunset session by lien pisters": {
-      "retryAfter": "2026-11-27",
+      "retryAfter": "2026-11-29",
       "reason": "HTTP 503"
-    },
-    "kostas tziros": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
     }
   }
 }

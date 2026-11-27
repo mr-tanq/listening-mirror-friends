@@ -7924,7 +7924,7 @@
         "text": "Photo: heather-c / Wikimedia · CC BY-SA 2.0",
         "url": "https://commons.wikimedia.org/wiki/File:Otis_Gibbs_2009_(cropped).jpg"
       },
-      "checkedAt": "2026-11-26T15:30:44.608Z"
+      "checkedAt": "2026-11-27T15:18:38.391Z"
     },
     "rymden": {
       "name": "Rymden",
@@ -7936,7 +7936,7 @@
         "text": "Photo: Tore Sætre / Wikimedia · CC BY-SA 4.0",
         "url": "https://commons.wikimedia.org/wiki/File:Rymden_Oslo_Jazzfestival_2024_(181721).jpg"
       },
-      "checkedAt": "2026-11-26T15:30:44.608Z"
+      "checkedAt": "2026-11-27T15:18:38.391Z"
     },
     "whitechapel": {
       "name": "Whitechapel",
@@ -7956,7 +7956,7 @@
         "text": "Photo: Abbi London / Wikimedia · CC BY 3.0",
         "url": "https://commons.wikimedia.org/wiki/File:Whitechapel_(c)abbilondon.jpg"
       },
-      "checkedAt": "2026-11-26T15:30:44.608Z"
+      "checkedAt": "2026-11-27T15:18:38.391Z"
     },
     "the bootleg beatles": {
       "name": "The Bootleg Beatles",
@@ -7968,7 +7968,7 @@
         "text": "Photo: TROS / Wikimedia · CC BY-SA 3.0 NL",
         "url": "https://commons.wikimedia.org/wiki/File:The_Bootleg_Beatles.jpg"
       },
-      "checkedAt": "2026-11-26T15:30:44.608Z"
+      "checkedAt": "2026-11-27T15:18:38.391Z"
     },
     "ayra starr": {
       "name": "Ayra Starr",
@@ -12785,6 +12785,177 @@
         "url": "https://www.deezer.com/artist/422233"
       },
       "checkedAt": "2026-11-26T15:30:16.838Z"
+    },
+    "her band": {
+      "name": "Her Band",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9fe50c04a0fe2364c6eb7655d74e0bc5/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 396787,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/396787",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/396787"
+      },
+      "checkedAt": "2026-11-27T15:17:30.844Z"
+    },
+    "band of friends": {
+      "name": "Band Of Friends",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a140f948b78603426cedce120645b732/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 10771062,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/10771062",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/10771062"
+      },
+      "checkedAt": "2026-11-27T15:17:34.254Z"
+    },
+    "van tastik": {
+      "name": "Van Tastik",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/a88660b0cb90b7538632bf112393335b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 13854365,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/13854365",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/13854365"
+      },
+      "checkedAt": "2026-11-27T15:17:36.353Z"
+    },
+    "boombox": {
+      "name": "Boombox",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/93f15ca507096c94061a46b4e107a57b/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 282150,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/282150",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/282150"
+      },
+      "checkedAt": "2026-11-27T15:17:37.093Z"
+    },
+    "evil invaders": {
+      "name": "Evil Invaders",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/66e95fef0d9ddf287dbfba26bcf11386/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4350050,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/4350050",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4350050"
+      },
+      "checkedAt": "2026-11-27T15:17:37.755Z"
+    },
+    "ineke vandoorn": {
+      "name": "Ineke Vandoorn",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/95fc9f7c421deb09e292258927d25a98/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 5445704,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/5445704",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/5445704"
+      },
+      "checkedAt": "2026-11-27T15:17:39.274Z"
+    },
+    "yuri honing": {
+      "name": "Yuri Honing",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/9de5f2b722ba48bbc0747f67c2e2e5a6/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 583039,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/583039",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/583039"
+      },
+      "checkedAt": "2026-11-27T15:17:40.490Z"
+    },
+    "suicide silence": {
+      "name": "Suicide Silence",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/4650083eb25b840cf7a7ea977916c820/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 170672,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/170672",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/170672"
+      },
+      "checkedAt": "2026-11-27T15:17:46.796Z"
+    },
+    "ghøstkid": {
+      "name": "GHØSTKID",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/cb7d9ebd89fc6d1566895b8697f1e510/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 92203912,
+      "matchedBy": "exact-unique-name",
+      "sourceUrl": "https://www.deezer.com/artist/92203912",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/92203912"
+      },
+      "checkedAt": "2026-11-27T15:17:47.470Z"
+    },
+    "the crown": {
+      "name": "The Crown",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/6ce8526191deb3b2cc5ef682c86ef3be/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 428268,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/428268",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/428268"
+      },
+      "wikidata": "Q1473361",
+      "checkedAt": "2026-11-27T15:18:01.255Z"
+    },
+    "nervosa": {
+      "name": "Nervosa",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/d09dcd2995cd7d7ae1fed3da97ebedd1/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 1693145,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/1693145",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/1693145"
+      },
+      "wikidata": "Q10336372",
+      "checkedAt": "2026-11-27T15:18:07.617Z"
+    },
+    "carcass": {
+      "name": "Carcass",
+      "source": "deezer",
+      "kind": "artist-photo",
+      "image": "https://cdn-images.dzcdn.net/images/artist/8fb5ea68fa31cc62728deb64b88a32bb/1000x1000-000000-80-0-0.jpg",
+      "deezerId": 4502,
+      "matchedBy": "wikidata-p2722",
+      "sourceUrl": "https://www.deezer.com/artist/4502",
+      "credit": {
+        "text": "Photo via Deezer",
+        "url": "https://www.deezer.com/artist/4502"
+      },
+      "wikidata": "Q283835",
+      "checkedAt": "2026-11-27T15:18:23.432Z"
     }
   },
   "attempted": {
@@ -12877,33 +13048,6 @@
     "de hardheid": {
       "retryAfter": "2026-12-05",
       "reason": "album-cover-as-portrait"
-    },
-    "club 3voor12 utrecht": {
-      "retryAfter": "2026-12-12",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "hania derej trio": {
-      "retryAfter": "2026-12-12",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "luca st": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "mobilhome": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
-    "zelie": {
-      "retryAfter": "2027-01-04",
-      "reason": "ambiguous-same-name",
-      "deezerCandidates": [
-        5435777,
-        187910367,
-        243188321
-      ]
     },
     "blood and sun": {
       "retryAfter": "2026-12-05",
@@ -13147,16 +13291,19 @@
       ]
     },
     "arra scum w my minds mine": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "boogiefest": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "concours circuit 2026": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "memorials": {
       "retryAfter": "2027-01-04",
@@ -13570,10 +13717,6 @@
       "retryAfter": "2026-12-05",
       "reason": "not-found"
     },
-    "the ruins of beverast": {
-      "retryAfter": "2026-12-05",
-      "reason": "album-cover-as-portrait"
-    },
     "gplr 2026": {
       "retryAfter": "2026-12-13",
       "reason": "not-found",
@@ -13642,8 +13785,9 @@
       ]
     },
     "arra scum": {
-      "retryAfter": "2026-12-05",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "music lab": {
       "retryAfter": "2027-01-04",
@@ -13829,8 +13973,9 @@
       ]
     },
     "systematic show case": {
-      "retryAfter": "2026-12-07",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "dinsdagochtend concert": {
       "retryAfter": "2026-12-07",
@@ -13980,10 +14125,6 @@
       "retryAfter": "2026-12-08",
       "reason": "not-found"
     },
-    "hania derej": {
-      "retryAfter": "2026-12-08",
-      "reason": "album-cover-as-portrait"
-    },
     "grimner waylander vansind": {
       "retryAfter": "2026-12-09",
       "reason": "not-found"
@@ -14114,8 +14255,9 @@
       "urgentRetried": true
     },
     "eindhoven metal meeting 2026": {
-      "retryAfter": "2026-12-09",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "ηχητικες αποκλισεις": {
       "retryAfter": "2026-12-09",
@@ -14167,35 +14309,11 @@
       "reason": "not-found",
       "urgentRetried": true
     },
-    "5ο vocalism session": {
-      "retryAfter": "2026-12-17",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "gone country": {
       "retryAfter": "2026-12-09",
       "reason": "album-cover-as-portrait"
     },
-    "rock n roll night specials": {
-      "retryAfter": "2026-12-17",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "snackbar the ambassador": {
-      "retryAfter": "2026-12-09",
-      "reason": "album-cover-as-portrait"
-    },
-    "αλεξανδρος δαικος": {
-      "retryAfter": "2026-12-17",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "καλογερακια": {
-      "retryAfter": "2026-12-17",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
-    "ντινος σαδικης μικρη σκηνη θεσσαλονικη": {
       "retryAfter": "2026-12-17",
       "reason": "not-found",
       "urgentRetried": true
@@ -15939,11 +16057,6 @@
         301841121
       ]
     },
-    "the protos snackbar apeshit": {
-      "retryAfter": "2026-12-17",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "prins s en de geit met residentie orkest": {
       "retryAfter": "2026-12-18",
       "reason": "not-found",
@@ -16436,8 +16549,9 @@
       "reason": "not-found"
     },
     "ready2play": {
-      "retryAfter": "2026-12-12",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "γιωργος παπαγεωργιου και οι polkar": {
       "retryAfter": "2026-12-12",
@@ -17150,11 +17264,6 @@
       "retryAfter": "2026-12-20",
       "reason": "album-cover-as-portrait"
     },
-    "λενα πλατωνος στο κλακαζ": {
-      "retryAfter": "2026-12-21",
-      "reason": "not-found",
-      "urgentRetried": true
-    },
     "οι mamasingsfire επιστρεφουν στο κλακαζ": {
       "retryAfter": "2026-12-21",
       "reason": "not-found",
@@ -17727,21 +17836,15 @@
       "retryAfter": "2026-12-25",
       "reason": "album-cover-as-portrait"
     },
-    "kostas tziros": {
-      "retryAfter": "2026-12-26",
-      "reason": "album-cover-as-portrait"
-    },
     "club 3voor12 den haag": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "popradar academy xxl": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
-    },
-    "the bankrupt lovers": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "russo": {
       "retryAfter": "2027-01-25",
@@ -17826,16 +17929,19 @@
       "reason": "not-found"
     },
     "asmosis quartet at reei music sessions": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "druk 2026": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "στη μπουζου του παραδεισου": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
+      "retryAfter": "2026-12-27",
+      "reason": "not-found",
+      "urgentRetried": true
     },
     "georgia spiropoulos": {
       "retryAfter": "2026-12-26",
@@ -17895,10 +18001,6 @@
       "deezerCandidates": [
         160525152
       ]
-    },
-    "rory gallagher band of friends gagarin": {
-      "retryAfter": "2026-12-26",
-      "reason": "not-found"
     },
     "pina": {
       "retryAfter": "2027-01-25",
@@ -17979,6 +18081,96 @@
         11214,
         416448692
       ]
+    },
+    "carcass": {
+      "retryAfter": "2027-01-26",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        4502,
+        191677387,
+        130041452
+      ]
+    },
+    "fabel all night": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "bloom huda": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "flo": {
+      "retryAfter": "2027-01-26",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        168790157,
+        6096998,
+        353221762,
+        379192281,
+        379192311,
+        349458741
+      ]
+    },
+    "graveyard blues pills": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "marika hackman": {
+      "retryAfter": "2027-01-26",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        3714521,
+        225916245
+      ]
+    },
+    "marc van vugt when we were birds": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "beestfeest": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "gripin live": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "μαγδα βαρουχα ζωντανα στην αθηνα": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "valisia odell": {
+      "retryAfter": "2026-12-27",
+      "reason": "album-cover-as-portrait"
+    },
+    "growth dance competition": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "ταξιδι raptrip gr εθισμος αθηνα πατρα": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "anorimoi γυροβυζιον live": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "αεον παρουσιαση δισκου": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
+    },
+    "rory gallagher": {
+      "retryAfter": "2027-01-26",
+      "reason": "ambiguous-same-name",
+      "deezerCandidates": [
+        10543,
+        10260302,
+        57501362
+      ]
+    },
+    "ghøstkid supports": {
+      "retryAfter": "2026-12-27",
+      "reason": "not-found"
     }
   },
   "wikimediaAttempted": {
@@ -18006,21 +18198,6 @@
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
       "reason": "no-licensed-commons-photo"
-    },
-    "luca st": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "mobilhome": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-21",
-      "reason": "no-confirmed-musician"
-    },
-    "the ruins of beverast": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "photo-license-or-size-rejected"
     },
     "blood and sun": {
       "strategyVersion": 4,
@@ -18173,21 +18350,6 @@
       "reason": "no-confirmed-musician"
     },
     "the spunyboys": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "club 3voor12 utrecht": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "hania derej trio": {
-      "strategyVersion": 4,
-      "retryAfter": "2026-12-22",
-      "reason": "no-confirmed-musician"
-    },
-    "zelie": {
       "strategyVersion": 4,
       "retryAfter": "2026-12-22",
       "reason": "no-confirmed-musician"
@@ -19012,11 +19174,6 @@
       "retryAfter": "2026-12-23",
       "reason": "no-confirmed-musician"
     },
-    "hania derej": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-23",
-      "reason": "no-confirmed-musician"
-    },
     "arra scum": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-23",
@@ -19152,37 +19309,7 @@
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
     },
-    "5ο vocalism session": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "rock n roll night specials": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "snackbar the ambassador": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "the protos snackbar apeshit": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "αλεξανδρος δαικος": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
     "καλογερακια": {
-      "strategyVersion": 8,
-      "retryAfter": "2026-12-27",
-      "reason": "no-confirmed-musician"
-    },
-    "ντινος σαδικης μικρη σκηνη θεσσαλονικη": {
       "strategyVersion": 8,
       "retryAfter": "2026-12-27",
       "reason": "no-confirmed-musician"
@@ -19867,11 +19994,6 @@
       "retryAfter": "2027-01-04",
       "reason": "no-confirmed-musician"
     },
-    "λενα πλατωνος στο κλακαζ": {
-      "strategyVersion": 8,
-      "retryAfter": "2027-01-04",
-      "reason": "no-confirmed-musician"
-    },
     "οι mamasingsfire επιστρεφουν στο κλακαζ": {
       "strategyVersion": 8,
       "retryAfter": "2027-01-04",
@@ -20547,11 +20669,6 @@
       "retryAfter": "2027-01-09",
       "reason": "no-confirmed-musician"
     },
-    "kostas tziros": {
-      "strategyVersion": 8,
-      "retryAfter": "2027-01-10",
-      "reason": "no-confirmed-musician"
-    },
     "asmosis quartet at reei music sessions": {
       "strategyVersion": 8,
       "retryAfter": "2027-01-10",
@@ -20573,11 +20690,6 @@
       "reason": "no-confirmed-musician"
     },
     "popradar academy xxl": {
-      "strategyVersion": 8,
-      "retryAfter": "2027-01-10",
-      "reason": "no-confirmed-musician"
-    },
-    "the bankrupt lovers": {
       "strategyVersion": 8,
       "retryAfter": "2027-01-10",
       "reason": "no-confirmed-musician"
@@ -20671,6 +20783,116 @@
       "strategyVersion": 8,
       "retryAfter": "2027-01-10",
       "reason": "no-confirmed-musician"
+    },
+    "beestfeest": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "gripin live": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "μαγδα βαρουχα ζωντανα στην αθηνα": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "valisia odell": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "blame canada": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "the alternadivas": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "insurrection": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-02-25",
+      "reason": "ambiguous-musical-identity"
+    },
+    "growth dance competition": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "beats drums": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "shantel": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "photo-license-or-size-rejected"
+    },
+    "bad bunny party athens": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "danae": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "electroclash": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "freq": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "gemma": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "georgia spiropoulos": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "gezellige clubtempo xxl 2026": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "hiphop dubbel a": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "iconic": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "latin district": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "marou massin": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
+    },
+    "the art of return": {
+      "strategyVersion": 8,
+      "retryAfter": "2027-01-11",
+      "reason": "no-confirmed-musician"
     }
   },
   "audioDbAttempted": {
@@ -20693,8 +20915,9 @@
       "diagnosticRetried": true
     },
     "sophie straat": {
-      "retryAfter": "2026-12-23",
-      "reason": "missing-or-ambiguous-artist"
+      "retryAfter": "2027-02-25",
+      "reason": "artist-not-in-provider",
+      "diagnosticRetried": true
     },
     "the hillbilly moonshiners": {
       "retryAfter": "2027-02-06",
@@ -20724,10 +20947,6 @@
       "retryAfter": "2027-02-07",
       "reason": "artist-not-in-provider"
     },
-    "the ruins of beverast": {
-      "retryAfter": "2026-12-24",
-      "reason": "photo-license-not-confirmed"
-    },
     "blood and sun": {
       "retryAfter": "2027-02-07",
       "reason": "artist-not-in-provider"
@@ -20746,14 +20965,6 @@
     },
     "munly the lupercalians": {
       "retryAfter": "2027-02-08",
-      "reason": "artist-not-in-provider"
-    },
-    "hania derej": {
-      "retryAfter": "2027-02-10",
-      "reason": "artist-not-in-provider"
-    },
-    "mobilhome": {
-      "retryAfter": "2027-02-11",
       "reason": "artist-not-in-provider"
     },
     "stay away from dante": {

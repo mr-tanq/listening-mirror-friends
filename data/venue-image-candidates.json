@@ -1,115 +1,7 @@
 {
-  "generatedAt": "2026-11-26T15:35:54.823Z",
+  "generatedAt": "2026-11-27T15:23:49.490Z",
   "note": "Official artwork matched to catalogue concerts. Images can be direct-linked from validated official public event pages without rehosting when imageUse is direct-link. Explicitly permitted assets remain separately supported; pending and denied do not publish.",
   "candidates": [
-    {
-      "eventId": "podiuminfo-484666",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/boy-harsher/2913007",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/BoyHarsher_2026-1785756675.jpg",
-      "confidence": 1,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-452924",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/davina-michelle-support-26-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/02/Davina-Michelle-persfoto_s-202533789-scaled-e1771921027793.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-effenaar-2026-11-26-gone-country",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/gone-country",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-07/%20%E2%80%93%20Square%20afbeelding%20onlyGC.png?itok=S1PYboqV",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-456168",
-      "venue": "effenaar",
-      "eventUrl": "https://www.effenaar.nl/agenda/kaat-van-stralen",
-      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-03/%E2%80%93%201920x1080%20Website%20KaatVanStralen.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-449444",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/laura-cox-support-26-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2025/12/LAURA-COX24008-copie2_LiRodaGil-scaled-e1765802140689.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-497688",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/luca-st/2942875",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Luca-St-2026.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-476729",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/naft/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/06/persfoto-naft-web-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paard-2026-11-26-paardcafe-club-pony",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/paardcafe-club-pony-108/",
-      "image": "https://www.paard.nl/wp-content/uploads/2025/04/CLUB-PONY-HEADER.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-448474",
-      "venue": "doornroosje",
-      "eventUrl": "https://www.doornroosje.nl/event/shantel-2/",
-      "image": "https://www.doornroosje.nl/app/uploads/2025/11/Shantel-WEB-1200x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-497380",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/snackbar-the-ambassador-2/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/09/Press-photo-SNACKBAR-the-Ambassador-Foto-2026_websize-600x600.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-453796",
-      "venue": "paard",
-      "eventUrl": "https://www.paard.nl/event/sons-4/",
-      "image": "https://www.paard.nl/wp-content/uploads/2026/03/SONS_Wout_Vloeberghs_6-kopie.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "podiuminfo-502604",
-      "venue": "patronaat",
-      "eventUrl": "https://patronaat.nl/event/mob-nov-26-26-11-26/",
-      "image": "https://patronaat.nl/app/uploads/2026/11/1000047214-scaled-e1794306460295.jpg",
-      "confidence": 0.9,
-      "published": false,
-      "displayMode": "direct-link"
-    },
     {
       "eventId": "podiuminfo-482778",
       "venue": "013",
@@ -495,6 +387,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-484894",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/tank-and-the-bangas/2911492",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Tank-The-Bangas-Jul-2025-102-of-1783436174.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-496642",
       "venue": "paard",
       "eventUrl": "https://www.paard.nl/event/apollo-brown-skyzoo/",
@@ -581,6 +482,15 @@
       "eventUrl": "https://patronaat.nl/event/terror-02-12-26/",
       "image": "https://patronaat.nl/app/uploads/2026/07/STILL-SUFFER-MAIN-PROMO-MARK-MILLER-scaled.jpeg",
       "confidence": 1,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2026-12-03-beestfeest",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/beestfeest-36/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/DOORNROOSJE_beestfeest_banner_web.jpg",
+      "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
     },
@@ -1848,7 +1758,7 @@
       "eventId": "podiuminfo-484896",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/hang-youth-hardkoor-nachtmis/2913084",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/JdH-20260620-Hang-Youth-039_Foto-Jelmer-de-Haas_WEB.jpg",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/HY_KERST_00-6.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2028,7 +1938,7 @@
       "eventId": "venue-doornroosje-2026-12-31-parasol-nye",
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/parasol-nye-5/",
-      "image": "https://www.doornroosje.nl/app/uploads/2026/11/teaser-banner-1920x1080-1.jpg",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/teaser-banner-1920x1080-1-1200x630.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -2742,6 +2652,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-effenaar-2027-01-24-growth-dance-competition",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-1",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-496230",
       "venue": "013",
       "eventUrl": "https://www.013.nl/programma/159540/job-dutchtuber-billy-the-kit",
@@ -3039,6 +2958,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-504578",
+      "venue": "paradiso",
+      "eventUrl": "https://www.paradiso.nl/programma/bloom-huda---pulsor-phase-one---a-deep-listening-session/2954657",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/BloomHuda.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "podiuminfo-503778",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/emre-fel",
@@ -3219,12 +3147,12 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-paradiso-2027-02-05-beats-drums",
+      "eventId": "podiuminfo-504581",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/beats-drums-s-rene-live-with-junya/2955214",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1280x640_crop_center-center_none/HDF25-DJs-NO-LOGO-34.jpeg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -3552,6 +3480,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-effenaar-2027-02-14-growth-dance-competition",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-2",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-02-14-rnb-singalong-3-year-anniversary",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/irwans-rnb-singalong/2945690",
@@ -3609,7 +3546,7 @@
       "eventId": "podiuminfo-498576",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/madra-salach/2944059",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Press-Shot_-Madra-Salach-c-Emily-Lipson-1791912582.jpg",
+      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/Press-Shot_-Madra-Salach-c-Emily-Lipson-1795443595.jpg",
       "confidence": 0.9,
       "published": false,
       "displayMode": "direct-link"
@@ -4578,6 +4515,24 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "podiuminfo-497443",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/moonspell",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/Moonspell%20header.png",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "rec-official-6d63dee936ca7b1c",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/moonspell",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-09/Moonspell%20header.png",
+      "confidence": 0.9,
+      "published": false,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-paradiso-2027-03-07-saint-etienne",
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/saint-etienne/2948998",
@@ -4587,21 +4542,21 @@
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-03-07-shantel",
+      "eventId": "podiuminfo-492965",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/shantel-07-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/08/Shantel_BCO_HaraldHSchroeder-scaled.jpg",
       "confidence": 0.9,
-      "published": true,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
-      "eventId": "venue-patronaat-2027-03-07-wende",
+      "eventId": "podiuminfo-494797",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/wende-support-07-03-27/",
       "image": "https://patronaat.nl/app/uploads/2026/09/Wende_Persfoto_Credit-Paul-Kooiker_02-scaled.jpg",
-      "confidence": 1,
-      "published": true,
+      "confidence": 0.9,
+      "published": false,
       "displayMode": "direct-link"
     },
     {
@@ -4650,6 +4605,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-effenaar-2027-03-11-gone-country",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/gone-country-0",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/2026-07/%20%E2%80%93%201920x1080%20WebsiteGC.png",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-patronaat-2027-03-11-maite-hontele-y-la-novia",
       "venue": "patronaat",
       "eventUrl": "https://patronaat.nl/event/maite-hontele-y-la-novia-11-03-27/",
@@ -4663,15 +4627,6 @@
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/meltheads-11mrt",
       "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-10/%20%E2%80%93%20Square%20afbeelding%20only%20meltheads.png?itok=93pbNYK3",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2027-03-11-tiny-habits",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/tiny-habits/2932820",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/DSP_Option1Album-Release-1789662096.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -4843,6 +4798,15 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/banji/2939819",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/BANJI-TOURPOSTER_no-data-1.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-03-14-growth-dance-competition",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-voorronde-3",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5046,6 +5010,15 @@
       "displayMode": "direct-link"
     },
     {
+      "eventId": "venue-doornroosje-2027-03-21-davina-michelle",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/davina-michelle-5/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/11/WEB-foto-13-1088x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
       "eventId": "venue-effenaar-2027-03-21-pop-up-koor-xl",
       "venue": "effenaar",
       "eventUrl": "https://www.effenaar.nl/agenda/pop-koor-xl-21mrt",
@@ -5230,15 +5203,6 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/absynthe-minded-2/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/10/WEB-foto-7-1088x630.jpg",
-      "confidence": 0.9,
-      "published": true,
-      "displayMode": "direct-link"
-    },
-    {
-      "eventId": "venue-paradiso-2027-03-27-ash-grunwald",
-      "venue": "paradiso",
-      "eventUrl": "https://www.paradiso.nl/programma/ash-grunwald/2921715",
-      "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/IMGL6118-1787147151.jpg",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -5518,6 +5482,15 @@
       "venue": "paradiso",
       "eventUrl": "https://www.paradiso.nl/programma/fata-morgana/2953105",
       "image": "https://assets.paradiso.nl/images/transforms/event/_1200x630_crop_center-center_none/fata-morgana-persfoto.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-04-growth-dance-competition",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/growth-dance-competition-finale",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/%20%E2%80%93%20Square%20afbeelding%20onlyGrowth.png?itok=bqQYkCr0",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
@@ -6094,6 +6067,24 @@
       "venue": "doornroosje",
       "eventUrl": "https://www.doornroosje.nl/event/politie-warnsveld-5/",
       "image": "https://www.doornroosje.nl/app/uploads/2026/09/Politie-Warnsveld-1-1088x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-doornroosje-2027-04-25-ghøstkid-supports",
+      "venue": "doornroosje",
+      "eventUrl": "https://www.doornroosje.nl/event/ghostkid-1/",
+      "image": "https://www.doornroosje.nl/app/uploads/2026/06/GHOSTKID-WEB-1200x630.jpg",
+      "confidence": 0.9,
+      "published": true,
+      "displayMode": "direct-link"
+    },
+    {
+      "eventId": "venue-effenaar-2027-04-25-suicide-silence",
+      "venue": "effenaar",
+      "eventUrl": "https://www.effenaar.nl/agenda/suicidesilence",
+      "image": "https://d12y285rxlbnxt.cloudfront.net/styles/1400w/s3/2026-11/Suicide%20Silence%20%E2%80%93%20Square%20afbeelding%20only.png?itok=xr82sJWI",
       "confidence": 0.9,
       "published": true,
       "displayMode": "direct-link"
